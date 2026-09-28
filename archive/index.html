@@ -8,35 +8,32 @@ permalink: /archive/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Архив выпусков EASYBASS.MASTER">
-  <title>Архив · EASYBASS.MASTER</title>
+  <meta name="description" content="Подшивка объявлений EasyBassMaster">
+  <title>Подшивка · EasyBassMaster</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <header class="masthead">
-    <div class="rule"></div>
-    <div class="meta"><span>ПОДШИВКА</span><span>ВСЕ ВЫПУСКИ</span><span>2026</span></div>
-    <h1><a href="{{ site.baseurl }}/" style="color:inherit;text-decoration:none">EASYBASS.MASTER</a></h1>
-    <p class="tagline">Архив сигналов · Каждый номер сохраняет собственный адрес</p>
-    <div class="rule heavy"></div>
-  </header>
+  <div class="topline"></div>
+  <div class="meta"><span>ПОДШИВКА</span><span>ЧАСТНАЯ МАСТЕРСКАЯ</span><span>МОСКВА</span></div>
+  <p class="workshop">EasyBassMaster</p>
+  <section class="hero-grid">
+    <h1 class="hero-title"><a href="{{ site.baseurl }}/" style="text-decoration:none">АРХИВ</a></h1>
+    <div class="hero-side"><span>Контрабасы</span><span>Объявления</span><span>История</span></div>
+  </section>
   <main>
-    <article class="lead">
-      <p class="kicker">ПОДШИВКА</p>
-      <h2>Вышедшее не исчезает.</h2>
-      <p class="deck">Главная меняется. Адрес каждого номера остаётся.</p>
-      <div class="archive-list">
-      {% assign issues = site.pages | where: "layout", "issue" | sort: "number" | reverse %}
-      {% for item in issues %}
-        <article style="padding:24px 0;border-top:1px solid #aaa49a">
-          <span style="font:800 10px Arial,sans-serif;letter-spacing:.13em;color:var(--signal)">№ {{ item.number }} · {{ item.edition }}</span>
-          <h3 style="font-size:clamp(26px,4vw,44px);margin:8px 0 8px"><a href="{{ site.baseurl }}{{ item.url }}" style="color:inherit;text-decoration:none">{{ item.title }}</a></h3>
-          <p style="margin:0;color:var(--muted)">{{ item.description }}</p>
-        </article>
-      {% endfor %}
-      </div>
-    </article>
+    <h2 class="sale">Вышедшее не исчезает.</h2>
+    <p class="deck">Каждый инструмент и каждое объявление сохраняют свой адрес.</p>
+    <div class="archive-list">
+    {% assign issues = site.pages | where: "layout", "issue" | sort: "number" | reverse %}
+    {% for item in issues %}
+      <article style="padding:24px 0;border-top:1px solid var(--line)">
+        <span style="font:800 10px Arial,sans-serif;letter-spacing:.13em;color:var(--signal)">№ {{ item.number }} · {{ item.edition }}</span>
+        <h3 style="font-size:clamp(26px,4vw,44px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h3>
+        <p style="margin:0;color:var(--muted)">{{ item.description }}</p>
+      </article>
+    {% endfor %}
+    </div>
   </main>
-  <footer><span>EASYBASS.MASTER</span><span>Подшивка остаётся.</span></footer>
+  <footer><span>EasyBassMaster</span><span>Москва</span></footer>
 </body>
 </html>
