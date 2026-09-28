@@ -4,19 +4,35 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
-  <title>{{ page.title }} · {{ site.title }}</title>
+  <title>{{ page.title }} · EASYBASS.MASTER</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <div class="rule"></div>
-  <div class="meta"><span>{{ page.date_label }}</span><span>{{ page.edition }}</span><span>№ {{ page.number }}</span></div>
-  <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">{{ site.title }}</a></h1>
-  <p class="tagline">{{ site.description }}</p>
-  <div class="heavy"></div>
+  <header class="masthead">
+    <div class="rule"></div>
+    <div class="meta">
+      <span>{{ page.date_label | default: "28 СЕНТЯБРЯ 2026" }}</span>
+      <span>{{ page.edition | default: "ВЫПУСК" }}</span>
+      <span>№ {{ page.number }}</span>
+    </div>
+    <h1><a href="{{ site.baseurl }}/" style="color:inherit;text-decoration:none">EASYBASS.MASTER</a></h1>
+    <p class="tagline">Контрабасы · мастерская · прокат · продажа · Москва</p>
+    <div class="rule heavy"></div>
+  </header>
+
   <main>
-    <article class="lead issue-body">{{ content }}</article>
-    <p style="margin-top:40px;font:700 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase"><a href="{{ site.baseurl }}/archive/">← Подшивка</a></p>
+    <article class="lead issue-body">
+      {{ content }}
+    </article>
+
+    <p style="margin:40px 0 0;font:700 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase">
+      <a href="{{ site.baseurl }}/archive/" style="color:inherit">← Подшивка EASYBASS.MASTER</a>
+    </p>
   </main>
-  <footer><span>{{ site.title }} · № {{ page.number }}</span><span>Сигнал остаётся в эфире.</span></footer>
+
+  <footer>
+    <span>EASYBASS.MASTER · № {{ page.number }}</span>
+    <span>Сигнал остаётся в эфире.</span>
+  </footer>
 </body>
 </html>
