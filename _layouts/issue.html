@@ -8,38 +8,25 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <div class="board">
-    <header class="board-head">
-      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">Доска объявлений</a></h1>
-      <p>Москва · музыкальные инструменты<br>частные объявления</p>
-    </header>
-
-    <article class="note">
-      <div class="note-meta">
-        <span>{{ page.date_label }}</span>
-        <span>объявление №{{ page.number }}</span>
-      </div>
-
-      <div class="issue-body">
-        {{ content }}
-      </div>
-
-      <div class="tearoff">
-        <p class="tearoff-title">EasyBassMaster</p>
-        <div class="slips">
-          <span>EasyBassMaster · Москва</span>
-          <span>EasyBassMaster · Москва</span>
-          <span>EasyBassMaster · Москва</span>
-          <span>EasyBassMaster · Москва</span>
-          <span>EasyBassMaster · Москва</span>
-        </div>
-      </div>
-    </article>
-
-    <div class="board-caption">
-      <span>человек ↔ инструмент ↔ объявление</span>
-      <span><a href="{{ site.baseurl }}/archive/">← архив объявлений</a></span>
-    </div>
+  <div class="rule"></div>
+  <div class="meta">
+    <span>{{ page.date_label }}</span>
+    <span>№ {{ page.number }}</span>
   </div>
+
+  <section class="hero">
+    <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">КОНТРАБАС<span>.</span></a></h1>
+  </section>
+
+  <main class="issue-body">
+    {{ content }}
+    <div class="signature">EasyBassMaster</div>
+    <div class="archive-link"><a href="{{ site.baseurl }}/archive/">← Подшивка</a></div>
+  </main>
+
+  <footer>
+    <span>EasyBassMaster</span>
+    <span>Москва</span>
+  </footer>
 </body>
 </html>
