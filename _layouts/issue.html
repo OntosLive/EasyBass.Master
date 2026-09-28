@@ -4,34 +4,41 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="{{ page.description | default: site.description | escape }}">
-  <title>{{ page.title }} · EASY.BASS master</title>
+  <title>{{ page.title }} · EasyBassMaster</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <header class="masthead">
-    <div class="rule"></div>
-    <div class="meta">
-      <span>{{ page.date_label | default: "28 СЕНТЯБРЯ 2026" }}</span>
-      <span>{{ page.edition | default: "ВЫПУСК" }}</span>
+  <div class="topline"></div>
+  <div class="meta">
+    <span>{{ page.date_label }}</span>
+    <span>{{ page.edition }}</span>
+    <span>№ {{ page.number }}</span>
+  </div>
+
+  <p class="workshop">Москва · частная контрабасная мастерская</p>
+
+  <section class="hero-grid">
+    <h1 class="hero-title"><a href="{{ site.baseurl }}/" style="text-decoration:none">КОНТРАБАС</a></h1>
+    <div class="hero-side">
+      <span>EasyBassMaster</span>
+      <span>Москва</span>
       <span>№ {{ page.number }}</span>
     </div>
-    <a class="brand-link" href="{{ site.baseurl }}/"><div class="brand-lockup"><div class="brand-main">EASY<span>.</span>BASS</div><div class="brand-sub">master</div></div></a>
-    <p class="tagline">Контрабасы · мастерская · прокат · продажа · Москва</p>
-    <div class="rule heavy"></div>
-  </header>
+  </section>
 
   <main>
-    <article class="lead issue-body">
+    <article class="issue-body">
       {{ content }}
     </article>
 
-    <p style="margin:40px 0 0;font:700 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase">
-      <a href="{{ site.baseurl }}/archive/" style="color:inherit">← Подшивка EASYBASS.MASTER</a>
-    </p>
+    <div class="signature">
+      <div class="name">EasyBassMaster</div>
+      <div class="small"><a href="{{ site.baseurl }}/archive/">← подшивка объявлений</a></div>
+    </div>
   </main>
 
   <footer>
-    <span>EASYBASS.MASTER · № {{ page.number }}</span>
+    <span>Частная контрабасная мастерская</span>
     <span>Сигнал остаётся в эфире.</span>
   </footer>
 </body>
