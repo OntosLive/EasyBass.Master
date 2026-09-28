@@ -8,25 +8,38 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <div class="rule"></div>
+  <div class="topline"></div>
   <div class="meta">
     <span>{{ page.date_label }}</span>
+    <span>{{ page.edition }}</span>
     <span>№ {{ page.number }}</span>
   </div>
 
-  <section class="hero">
-    <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">КОНТРАБАС<span>.</span></a></h1>
+  <p class="workshop">Москва · частная контрабасная мастерская</p>
+
+  <section class="hero-grid">
+    <h1 class="hero-title"><a href="{{ site.baseurl }}/" style="text-decoration:none">КОНТРАБАС</a></h1>
+    <div class="hero-side">
+      <span>EasyBassMaster</span>
+      <span>Москва</span>
+      <span>№ {{ page.number }}</span>
+    </div>
   </section>
 
-  <main class="issue-body">
-    {{ content }}
-    <div class="signature">EasyBassMaster</div>
-    <div class="archive-link"><a href="{{ site.baseurl }}/archive/">← Подшивка</a></div>
+  <main>
+    <article class="issue-body">
+      {{ content }}
+    </article>
+
+    <div class="signature">
+      <div class="name">EasyBassMaster</div>
+      <div class="small"><a href="{{ site.baseurl }}/archive/">← подшивка объявлений</a></div>
+    </div>
   </main>
 
   <footer>
-    <span>EasyBassMaster</span>
-    <span>Москва</span>
+    <span>Частная контрабасная мастерская</span>
+    <span>Сигнал остаётся в эфире.</span>
   </footer>
 </body>
 </html>
