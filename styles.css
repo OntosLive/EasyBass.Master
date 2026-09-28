@@ -16,3 +16,20 @@ h3{margin:9px 0 10px;font-size:25px;line-height:1.03}.dispatches p{margin:0;font
 blockquote{margin:48px auto;max-width:900px;text-align:center;font-size:clamp(27px,4vw,49px);line-height:1.06;font-style:italic}
 footer{display:flex;justify-content:space-between;border-top:5px solid var(--ink);padding-top:10px;font:700 11px Arial,sans-serif;letter-spacing:.12em;text-transform:uppercase}
 @media(max-width:700px){body{padding:22px 18px 34px}.meta{font-size:9px}.meta span:nth-child(2){display:none}.columns{columns:1}.dispatches{grid-template-columns:1fr}.dispatches article{padding:20px 0}.dispatches article+article{padding-left:0;border-left:0;border-top:1px solid #aaa49a}}
+.brand-link{color:inherit;text-decoration:none}
+.brand-lockup{position:relative;margin:4px 0 2px;text-align:center;line-height:.8}
+.brand-main{font-size:clamp(54px,10vw,118px);font-weight:700;letter-spacing:-.075em}
+.brand-main span{color:var(--signal)}
+.brand-sub{
+  margin-top:8px;
+  padding-right:clamp(8px,4vw,52px);
+  text-align:right;
+  font:italic 700 clamp(15px,2vw,24px)/1 Georgia,"Times New Roman",serif;
+  letter-spacing:.12em;
+  text-transform:lowercase;
+  color:var(--muted)
+}
+@media(max-width:700px){
+  .brand-main{font-size:clamp(48px,15vw,86px)}
+  .brand-sub{margin-top:6px;padding-right:8px;font-size:15px}
+}
