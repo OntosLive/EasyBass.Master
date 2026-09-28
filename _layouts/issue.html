@@ -8,38 +8,38 @@
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <div class="topline"></div>
-  <div class="meta">
-    <span>{{ page.date_label }}</span>
-    <span>{{ page.edition }}</span>
-    <span>№ {{ page.number }}</span>
-  </div>
+  <div class="board">
+    <header class="board-head">
+      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">Доска объявлений</a></h1>
+      <p>Москва · музыкальные инструменты<br>частные объявления</p>
+    </header>
 
-  <p class="workshop">Москва · частная контрабасная мастерская</p>
+    <article class="note">
+      <div class="note-meta">
+        <span>{{ page.date_label }}</span>
+        <span>объявление №{{ page.number }}</span>
+      </div>
 
-  <section class="hero-grid">
-    <h1 class="hero-title"><a href="{{ site.baseurl }}/" style="text-decoration:none">КОНТРАБАС</a></h1>
-    <div class="hero-side">
-      <span>EasyBassMaster</span>
-      <span>Москва</span>
-      <span>№ {{ page.number }}</span>
-    </div>
-  </section>
+      <div class="issue-body">
+        {{ content }}
+      </div>
 
-  <main>
-    <article class="issue-body">
-      {{ content }}
+      <div class="tearoff">
+        <p class="tearoff-title">EasyBassMaster</p>
+        <div class="slips">
+          <span>EasyBassMaster · Москва</span>
+          <span>EasyBassMaster · Москва</span>
+          <span>EasyBassMaster · Москва</span>
+          <span>EasyBassMaster · Москва</span>
+          <span>EasyBassMaster · Москва</span>
+        </div>
+      </div>
     </article>
 
-    <div class="signature">
-      <div class="name">EasyBassMaster</div>
-      <div class="small"><a href="{{ site.baseurl }}/archive/">← подшивка объявлений</a></div>
+    <div class="board-caption">
+      <span>человек ↔ инструмент ↔ объявление</span>
+      <span><a href="{{ site.baseurl }}/archive/">← архив объявлений</a></span>
     </div>
-  </main>
-
-  <footer>
-    <span>Частная контрабасная мастерская</span>
-    <span>Сигнал остаётся в эфире.</span>
-  </footer>
+  </div>
 </body>
 </html>
