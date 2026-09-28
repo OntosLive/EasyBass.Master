@@ -9,11 +9,11 @@
 html{background:#070605}
 body{
   margin:0 auto;
-  max-width:1180px;
+  max-width:1100px;
   min-height:100vh;
-  padding:28px clamp(18px,5vw,68px) 56px;
+  padding:24px clamp(18px,4vw,54px) 48px;
   background:
-    radial-gradient(circle at 80% 8%,rgba(168,61,49,.08),transparent 26%),
+    radial-gradient(circle at 78% 6%,rgba(168,61,49,.07),transparent 24%),
     linear-gradient(180deg,#15110d 0%,var(--bg) 100%);
   color:var(--paper);
   font-family:Georgia,"Times New Roman",serif;
@@ -26,154 +26,161 @@ a{color:inherit}
   gap:16px;
   padding:9px 0 8px;
   font:700 10px/1.2 Arial,sans-serif;
-  letter-spacing:.15em;
+  letter-spacing:.14em;
   text-transform:uppercase;
   color:var(--muted)
 }
 .hero{
   display:grid;
-  grid-template-columns:minmax(0,1fr) 130px;
-  gap:24px;
+  grid-template-columns:minmax(0,1fr) 110px;
+  gap:20px;
   align-items:end;
-  border-top:5px solid var(--paper);
+  border-top:4px solid var(--paper);
   border-bottom:1px solid var(--line);
-  padding:22px 0 28px
+  padding:20px 0 24px
 }
 .hero h1{
   margin:0;
-  font-size:clamp(72px,14vw,168px);
-  line-height:.76;
-  letter-spacing:-.075em;
+  font-size:clamp(58px,10vw,118px);
+  line-height:.82;
+  letter-spacing:-.065em;
   text-transform:uppercase
 }
 .hero h1 span{color:var(--signal)}
 .hero-side{
   border-left:1px solid var(--line);
-  padding-left:18px;
-  min-height:100%;
+  padding-left:16px;
   display:flex;
   flex-direction:column;
-  justify-content:flex-end;
-  gap:14px;
-  font:700 10px/1.45 Arial,sans-serif;
-  letter-spacing:.14em;
+  gap:10px;
+  font:700 9px/1.4 Arial,sans-serif;
+  letter-spacing:.13em;
   text-transform:uppercase;
   color:var(--muted)
 }
-.lead{
-  padding:38px 0 28px
-}
+.lead{padding:30px 0 24px}
 .lead h2{
-  max-width:920px;
+  max-width:780px;
   margin:0;
-  font-size:clamp(40px,6vw,76px);
-  line-height:.94;
-  letter-spacing:-.045em
+  font-size:clamp(30px,4.6vw,54px);
+  line-height:.98;
+  letter-spacing:-.035em
 }
 .deck{
-  max-width:760px;
-  margin:20px 0 0;
-  font-size:clamp(20px,2.5vw,30px);
-  line-height:1.24;
-  color:#cec1ad
+  max-width:680px;
+  margin:14px 0 0;
+  font-size:clamp(18px,2vw,24px);
+  line-height:1.28;
+  color:#c9bca8
 }
 .columns{
-  columns:3 240px;
-  column-gap:34px;
+  columns:3 220px;
+  column-gap:28px;
   column-rule:1px solid var(--line);
-  padding:28px 0 6px;
-  font-size:18px;
-  line-height:1.55
+  padding:24px 0 4px;
+  font-size:17px;
+  line-height:1.5
 }
 .columns p:first-child{margin-top:0}
 .columns strong{font-weight:700}
 .dispatches{
   display:grid;
   grid-template-columns:repeat(3,1fr);
-  border-top:5px solid var(--paper);
+  border-top:4px solid var(--paper);
   border-bottom:1px solid var(--line)
 }
-.dispatches article{padding:22px 22px 26px 0}
-.dispatches article+article{padding-left:22px;border-left:1px solid var(--line)}
+.dispatches article{padding:18px 18px 20px 0}
+.dispatches article+article{padding-left:18px;border-left:1px solid var(--line)}
 .dispatches span{
   color:var(--signal);
-  font:800 10px Arial,sans-serif;
+  font:800 9px Arial,sans-serif;
   letter-spacing:.13em
 }
 .dispatches h3{
-  margin:9px 0 10px;
-  font-size:27px;
-  line-height:1.03
+  margin:7px 0 8px;
+  font-size:22px;
+  line-height:1.05
 }
 .dispatches p{
   margin:0;
   color:#cbbda9;
-  font-size:16px;
-  line-height:1.48
+  font-size:15px;
+  line-height:1.45
 }
 blockquote{
-  max-width:900px;
-  margin:48px auto;
+  max-width:760px;
+  margin:38px auto;
   text-align:center;
-  font-size:clamp(28px,4vw,50px);
-  line-height:1.05;
+  font-size:clamp(24px,3.2vw,38px);
+  line-height:1.08;
   font-style:italic
 }
 .signature{
-  margin-top:44px;
+  margin-top:38px;
   display:flex;
   justify-content:space-between;
   gap:20px;
   align-items:flex-end;
   border-top:1px solid var(--line);
-  padding-top:16px
+  padding-top:14px
 }
 .signature .name{
-  font-size:clamp(30px,4.5vw,54px);
+  font-size:clamp(26px,3.8vw,44px);
   line-height:1;
-  letter-spacing:-.04em
+  letter-spacing:-.035em
 }
 .signature .small{
   text-align:right;
   color:var(--muted);
-  font:700 10px/1.5 Arial,sans-serif;
-  letter-spacing:.13em;
+  font:700 9px/1.5 Arial,sans-serif;
+  letter-spacing:.12em;
   text-transform:uppercase
 }
-.issue-body{padding:36px 0 10px;font-size:19px;line-height:1.58}
-.issue-body h1{font-size:clamp(44px,7vw,84px);line-height:.92;letter-spacing:-.04em}
-.issue-body h2{font-size:clamp(28px,4vw,44px);margin-top:38px}
+.issue-body{padding:30px 0 10px;font-size:18px;line-height:1.55}
+.issue-body h1{font-size:clamp(38px,6vw,68px);line-height:.95;letter-spacing:-.035em}
+.issue-body h2{font-size:clamp(26px,3.5vw,38px);margin-top:32px}
 .issue-body blockquote{
   text-align:left;
-  margin:32px 0;
-  padding:18px 0;
+  margin:28px 0;
+  padding:16px 0;
   border-top:1px solid var(--line);
   border-bottom:1px solid var(--line);
-  font-size:28px
+  font-size:24px
 }
-.archive-list article{padding:24px 0;border-top:1px solid var(--line)}
+.archive-list article{padding:20px 0;border-top:1px solid var(--line)}
 footer{
-  margin-top:44px;
-  border-top:5px solid var(--paper);
-  padding-top:10px;
+  margin-top:38px;
+  border-top:4px solid var(--paper);
+  padding-top:9px;
   display:flex;
   justify-content:space-between;
   gap:18px;
-  font:700 10px/1.3 Arial,sans-serif;
-  letter-spacing:.13em;
+  font:700 9px/1.3 Arial,sans-serif;
+  letter-spacing:.12em;
   text-transform:uppercase;
   color:var(--muted)
 }
 @media(max-width:760px){
-  body{padding:22px 18px 36px}
-  .hero{grid-template-columns:1fr}
-  .hero-side{border-left:0;border-top:1px solid var(--line);padding:14px 0 0;display:grid;grid-template-columns:repeat(3,1fr)}
-  .columns{columns:1}
+  body{padding:20px 16px 32px}
+  .hero{grid-template-columns:1fr;padding:18px 0 20px}
+  .hero h1{font-size:clamp(52px,15vw,78px)}
+  .hero-side{
+    border-left:0;
+    border-top:1px solid var(--line);
+    padding:10px 0 0;
+    display:grid;
+    grid-template-columns:repeat(3,1fr)
+  }
+  .lead{padding:26px 0 20px}
+  .lead h2{font-size:clamp(30px,9vw,44px)}
+  .deck{font-size:18px}
+  .columns{columns:1;font-size:17px;padding-top:20px}
   .dispatches{grid-template-columns:1fr}
-  .dispatches article{padding:20px 0}
+  .dispatches article{padding:16px 0}
   .dispatches article+article{border-left:0;border-top:1px solid var(--line);padding-left:0}
+  blockquote{font-size:26px;margin:32px auto}
   .signature{display:block}
-  .signature .small{text-align:left;margin-top:12px}
+  .signature .small{text-align:left;margin-top:10px}
   footer{display:block}
-  footer span{display:block;margin-bottom:6px}
+  footer span{display:block;margin-bottom:5px}
 }
