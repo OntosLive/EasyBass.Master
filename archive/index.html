@@ -8,32 +8,32 @@ permalink: /archive/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Подшивка объявлений EasyBassMaster">
-  <title>Подшивка · EasyBassMaster</title>
+  <meta name="description" content="Архив объявлений EasyBassMaster">
+  <title>Архив объявлений · EasyBassMaster</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <div class="topline"></div>
-  <div class="meta"><span>ПОДШИВКА</span><span>ЧАСТНАЯ МАСТЕРСКАЯ</span><span>МОСКВА</span></div>
-  <p class="workshop">EasyBassMaster</p>
-  <section class="hero-grid">
-    <h1 class="hero-title"><a href="{{ site.baseurl }}/" style="text-decoration:none">АРХИВ</a></h1>
-    <div class="hero-side"><span>Контрабасы</span><span>Объявления</span><span>История</span></div>
-  </section>
-  <main>
-    <h2 class="sale">Вышедшее не исчезает.</h2>
-    <p class="deck">Каждый инструмент и каждое объявление сохраняют свой адрес.</p>
+  <div class="board">
+    <header class="board-head">
+      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">Доска объявлений</a></h1>
+      <p>Москва · подшивка<br>частные объявления</p>
+    </header>
+
     <div class="archive-list">
-    {% assign issues = site.pages | where: "layout", "issue" | sort: "number" | reverse %}
-    {% for item in issues %}
-      <article style="padding:24px 0;border-top:1px solid var(--line)">
-        <span style="font:800 10px Arial,sans-serif;letter-spacing:.13em;color:var(--signal)">№ {{ item.number }} · {{ item.edition }}</span>
-        <h3 style="font-size:clamp(26px,4vw,44px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h3>
-        <p style="margin:0;color:var(--muted)">{{ item.description }}</p>
-      </article>
-    {% endfor %}
+      {% assign issues = site.pages | where: "layout", "issue" | sort: "number" | reverse %}
+      {% for item in issues %}
+        <article>
+          <span style="font:800 10px Arial,sans-serif;letter-spacing:.13em;color:var(--pin)">ОБЪЯВЛЕНИЕ №{{ item.number }}</span>
+          <h2 style="font-size:clamp(28px,4vw,48px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h2>
+          <p style="margin:0;color:var(--muted)">{{ item.description }}</p>
+        </article>
+      {% endfor %}
     </div>
-  </main>
-  <footer><span>EasyBassMaster</span><span>Москва</span></footer>
+
+    <div class="board-caption">
+      <span>EasyBassMaster</span>
+      <span>Москва</span>
+    </div>
+  </div>
 </body>
 </html>
