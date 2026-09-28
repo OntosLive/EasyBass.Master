@@ -1,0 +1,8 @@
+title: "EASYBASS.MASTER"
+description: "Контрабасы · мастерская · прокат · продажа · Москва"
+baseurl: "/EasyBass.Master"
+url: "https://ontoslive.github.io"
+markdown: kramdown
+permalink: pretty
+exclude:
+  - README.md
