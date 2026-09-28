@@ -1,6 +1,6 @@
 ---
 layout: null
-title: Архив
+title: Подшивка
 permalink: /archive/
 ---
 <!doctype html>
@@ -8,32 +8,30 @@ permalink: /archive/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Архив объявлений EasyBassMaster">
-  <title>Архив объявлений · EasyBassMaster</title>
+  <meta name="description" content="Подшивка EasyBassMaster">
+  <title>Подшивка · EasyBassMaster</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
-  <div class="board">
-    <header class="board-head">
-      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">Доска объявлений</a></h1>
-      <p>Москва · подшивка<br>частные объявления</p>
-    </header>
+  <div class="rule"></div>
+  <div class="meta"><span>ПОДШИВКА</span><span>EasyBassMaster</span></div>
 
+  <section class="hero">
+    <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">КОНТРАБАС<span>.</span></a></h1>
+  </section>
+
+  <main class="issue-body">
     <div class="archive-list">
-      {% assign issues = site.pages | where: "layout", "issue" | sort: "number" | reverse %}
-      {% for item in issues %}
-        <article>
-          <span style="font:800 10px Arial,sans-serif;letter-spacing:.13em;color:var(--pin)">ОБЪЯВЛЕНИЕ №{{ item.number }}</span>
-          <h2 style="font-size:clamp(28px,4vw,48px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h2>
-          <p style="margin:0;color:var(--muted)">{{ item.description }}</p>
-        </article>
-      {% endfor %}
+    {% assign issues = site.pages | where: "layout", "issue" | sort: "number" | reverse %}
+    {% for item in issues %}
+      <article>
+        <div class="meta"><span>№ {{ item.number }}</span><span>{{ item.date_label }}</span></div>
+        <h2 style="font-size:clamp(28px,5vw,52px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h2>
+      </article>
+    {% endfor %}
     </div>
+  </main>
 
-    <div class="board-caption">
-      <span>EasyBassMaster</span>
-      <span>Москва</span>
-    </div>
-  </div>
+  <footer><span>EasyBassMaster</span><span>Москва</span></footer>
 </body>
 </html>
