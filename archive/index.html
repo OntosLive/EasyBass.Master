@@ -8,18 +8,20 @@ permalink: /archive/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Подшивка ONTOS.BASS">
-  <title>Подшивка · ONTOS.BASS</title>
+  <meta name="description" content="Подшивка ONTOS.DEEP">
+  <title>Подшивка · ONTOS.DEEP</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
   <div class="rule"></div>
-  <div class="meta"><span>ПОДШИВКА</span><span>ONTOS.BASS</span></div>
+  <div class="meta"><span>ПОДШИВКА</span><span>ONTOS.DEEP</span></div>
 
-  <section class="hero">
-    <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">КОНТРАБАС<span>.</span></a></h1>
-    <div class="hero-side"><span>Москва</span><span>Архив</span><span>Выпуски</span></div>
-  </section>
+  <header class="mast">
+    <div class="mastline">
+      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">ONTOS<span>.</span>DEEP</a></h1>
+      <small>звук · тело · время</small>
+    </div>
+  </header>
 
   <main class="issue-body">
     <div class="archive-list">
@@ -27,13 +29,13 @@ permalink: /archive/
     {% for item in issues %}
       <article>
         <div class="meta"><span>№ {{ item.number }}</span><span>{{ item.date_label }}</span></div>
-        <h2 style="font-size:clamp(28px,5vw,52px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h2>
+        <h2 style="font-size:clamp(26px,4vw,48px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h2>
         <p style="margin:0;color:var(--muted)">{{ item.description }}</p>
       </article>
     {% endfor %}
     </div>
   </main>
 
-  <footer><span>ONTOS.BASS</span><span>Москва</span></footer>
+  <footer><span>ONTOS.DEEP</span><span>EasyBassMaster · Москва</span></footer>
 </body>
 </html>
