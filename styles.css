@@ -166,3 +166,14 @@ footer{
   footer{display:block}
   footer span{display:block;margin-bottom:5px}
 }
+/* 2026-09-29: center the publication field, keep the issue editorially left-aligned */
+.mastline{
+  grid-template-columns:1fr;
+  justify-items:center;
+  text-align:center;
+}
+.mast small{
+  display:block;
+  margin-top:10px;
+  text-align:center;
+}
