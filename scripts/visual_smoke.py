@@ -18,6 +18,7 @@ ROUTES = [
     ("meeting", "meeting/index.html"),
     ("access", "kupit-masterovoy-kontrabas-v-moskve/index.html"),
     ("knowledge", "details/masterovoy-kontrabas/index.html"),
+    ("essay", "details/vybor-kontrabasa-kak-znakomstvo/index.html"),
     ("standalone", "kupit-kontrabas-v-moskve/index.html"),
 ]
 WIDTHS = (390, 760, 820, 1366)
@@ -60,7 +61,7 @@ async def run(site: Path, output: Path) -> dict:
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:
                         raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px")
-                    if name in {"home", "archive", "collection", "access", "knowledge", "standalone"}:
+                    if name in {"home", "archive", "collection", "access", "knowledge", "standalone", "essay"}:
                         await page.screenshot(path=str(output / f"{name}-{width}.png"),
                                               full_page=True)
                 await page.close()
