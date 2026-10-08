@@ -92,6 +92,48 @@ def inspect_records(root: Path) -> list[dict]:
     return pages
 
 
+def inspect_entrances(root: Path, paired: list[dict] | None = None) -> list[dict]:
+    """Accept distinct edited entrance scenes; never fabricate knowledge pairs."""
+    paired = paired if paired is not None else inspect_records(root)
+    occupied = {p["entry_slug"] for p in paired}
+    occupied |= {p["slug"] for p in paired}
+    occupied |= {"archive", "collection", "meeting", "workshop", "details"}
+    titles = {norm(p["search_title"]) for p in paired}
+    descriptions = set()
+    ready = []
+    records = sorted((root / "content/entrances").glob("*.json"))
+    for path in records:
+        data = read_json(path)
+        if data.get("version") != 1:
+            raise ValueError(f"{path.name}: invalid entrance schema version")
+        for p in data.get("entries", []):
+            slug = p.get("slug", "")
+            if not SLUG.fullmatch(slug) or slug in occupied:
+                raise ValueError(f"{path.name}: invalid, duplicated or reserved entrance URL: {slug}")
+            occupied.add(slug)
+            if (root / slug / "index.html").exists():
+                raise ValueError(f"{slug}: existing handwritten page must not be replaced")
+            if p.get("status") != "ready" or p.get("origin") != "editorial_hypothesis":
+                raise ValueError(f"{slug}: unreviewed entrance or unsupported source origin")
+            for field in ("search_title", "lead", "body", "open_question", "group"):
+                if not isinstance(p.get(field), str) or not p[field].strip():
+                    raise ValueError(f"{slug}: missing original {field}")
+            if len(p["search_title"]) > 120 or len(p["lead"]) > 230:
+                raise ValueError(f"{slug}: title/lead exceeds editorial bounds")
+            if len(p["body"].split()) < 24 or len(p["body"].split()) > 115:
+                raise ValueError(f"{slug}: body should contain a specific complete scene")
+            if len(p["open_question"].split()) < 5 or not p["open_question"].rstrip().endswith("?"):
+                raise ValueError(f"{slug}: meaningful residual question missing")
+            if norm(p["search_title"]) in titles:
+                raise ValueError(f"{slug}: duplicate search_title")
+            titles.add(norm(p["search_title"]))
+            if norm(p["lead"]) in descriptions:
+                raise ValueError(f"{slug}: repeated generic lead")
+            descriptions.add(norm(p["lead"]))
+            ready.append(p)
+    return ready
+
+
 def heading(doc: dict, name: str) -> str:
     return escape(str(doc[name]))
 
@@ -157,6 +199,22 @@ def make_entry(p: dict, contact: str) -> str:
     return frame(p, "entry", content, contact)
 
 
+def make_standalone_entrance(p: dict, contact: str) -> str:
+    """A complete contact opening, not a counterfeit abbreviated deep article."""
+    source = {
+        "entry_slug": p["slug"],
+        "search_title": p["search_title"],
+        "description": p["lead"],
+        "entry_kicker": p["group"].upper(),
+        "entry_deck": p["lead"],
+    }
+    content = ('<section class="master-text">'
+               f'<p>{escape(p["body"])}</p>'
+               f'<p class="entrance-question">{escape(p["open_question"])}</p>'
+               '</section>')
+    return frame(source, "entry", content, contact)
+
+
 def make_deep(p: dict, by_slug: dict[str, dict], contact: str) -> str:
     paragraphs = "".join(f'<p>{escape(v)}</p>' for v in p["editorial_paragraphs"])
     links = [(f"../../{p['entry_slug']}/", "Покупка и знакомство"),
@@ -172,7 +230,7 @@ def write(site: Path, route: str, html: str) -> None:
     file.write_text(html, encoding="utf-8")
 
 
-def archive_index(site: Path, pages: list[dict]) -> None:
+def archive_index(site: Path, pages: list[dict], entrances: list[dict]) -> None:
     path = site / "archive/index.html"
     text = path.read_text(encoding="utf-8")
     token = "<!-- GENERATED_SUBJECT_INDEX -->"
@@ -191,6 +249,25 @@ def archive_index(site: Path, pages: list[dict]) -> None:
     generated = ('<section class="archive-list" aria-label="Предметная подшивка">'
                  '<p class="issue-kicker">КОНТРАБАСЫ · ПОДШИВКА</p>'
                  + "".join(entries) + '</section>')
+    if entrances:
+        grouped = {}
+        for item in entrances:
+            grouped.setdefault(item["group"], []).append(item)
+        out = ['<section class="archive-entrances" aria-label="Входы и объявления">',
+               '<p class="issue-kicker">САМОСТОЯТЕЛЬНЫЕ ВХОДЫ</p>']
+        for group, records in grouped.items():
+            out.append('<details class="archive-group"><summary>'
+                       + escape(group) + f' <span>{len(records)}</span></summary>'
+                       '<div class="archive-list">')
+            for item in records:
+                url = f"{BASE}/{item['slug']}/"
+                out.append('<article>'
+                           f'<h2><a href="{escape(url, quote=True)}">{escape(item["search_title"])}</a></h2>'
+                           f'<p>{escape(item["lead"])}</p>'
+                           '</article>')
+            out.append('</div></details>')
+        out.append('</section>')
+        generated += "".join(out)
     path.write_text(text.replace(token, generated), encoding="utf-8")
 
 
@@ -239,19 +316,24 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
         raise ValueError("Original stylesheet missing in Jekyll output")
     pages = inspect_records(root)
     by_slug = {p["slug"]: p for p in pages}
+    entrances = inspect_entrances(root, pages)
     contact = contact_from_home(site)
     for p in pages:
         write(site, "/" + p["entry_slug"] + "/", make_entry(p, contact))
         write(site, "/details/" + p["slug"] + "/", make_deep(p, by_slug, contact))
-    archive_index(site, pages)
+    for item in entrances:
+        write(site, "/" + item["slug"] + "/", make_standalone_entrance(item, contact))
+    archive_index(site, pages, entrances)
     urls = canonicals_and_sitemap(site)
     return {
         "generated_subjects": len(pages),
         "generated_pair_pages": 2 * len(pages),
+        "standalone_entrances": len(entrances),
         "hypotheses_retained": len(read_json(root / "content/candidates.json")["candidates"]),
         "public_documents_in_sitemap": len(urls),
         "site": str(site),
         "source_hash": sha256((root / "content/topics.json").read_bytes()).hexdigest()[:16],
+        "entrance_routes": ["/" + p["slug"] + "/" for p in entrances],
         "pages": [{"slug": p["slug"], "entry": "/" + p["entry_slug"] + "/",
                    "deep": "/details/" + p["slug"] + "/"} for p in pages],
     }
