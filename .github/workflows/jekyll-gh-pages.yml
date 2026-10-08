@@ -27,6 +27,8 @@ jobs:
         run: python scripts/link_audit.py --report _audit/links.json
       - name: Audit full research atlas and model sources
         run: python scripts/atlas_core.py --output _audit/atlas.json
+      - name: Check purchase/sale editorial tone
+        run: python scripts/tone_audit.py --output _audit/tone.json
       - name: Compile-check and run regression tests
         run: |
           python -m compileall -q scripts tests
