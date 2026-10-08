@@ -8,22 +8,28 @@ permalink: /archive/
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1">
-  <meta name="description" content="Подшивка ONTOS.DEEP">
-  <title>Подшивка · ONTOS.DEEP</title>
+  <meta name="description" content="Подшивка мастерской контрабаса">
+  <title>Подшивка · EasyBassMaster</title>
   <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
 </head>
 <body>
   <div class="rule"></div>
-  <div class="meta"><span>ПОДШИВКА</span><span>ONTOS.DEEP</span></div>
+  <div class="meta"><span>ПОДШИВКА</span><span>МАСТЕРСКАЯ КОНТРАБАСА</span></div>
 
   <header class="mast">
     <div class="mastline">
-      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">ONTOS<span>.</span>DEEP</a></h1>
-      <small>звук · тело · время</small>
+      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">EASYBASS<span>.</span>MASTER</a></h1>
+      <small>Мастерская контрабаса</small>
     </div>
   </header>
 
   <main class="issue-body">
+    <section class="archive-list" aria-label="Контрабасы">
+      <p class="issue-kicker">КОНТРАБАСЫ · ПРЕДМЕТНАЯ ПОДШИВКА</p>
+      <article><h2><a href="{{ site.baseurl }}/details/masterovoy-kontrabas/">Мастеровой контрабас</a></h2><p>Происхождение, конструкция, настройка и характер инструмента.</p><a href="{{ site.baseurl }}/kupit-masterovoy-kontrabas-v-moskve/">Купить мастеровой контрабас в Москве</a></article>
+      <article><h2><a href="{{ site.baseurl }}/details/moskovskiy-kontrabas/">Московский контрабас</a></h2><p>Изготовление, история мастерской и проверка конкретного экземпляра.</p><a href="{{ site.baseurl }}/kupit-moskovskiy-kontrabas-v-moskve/">Купить московский контрабас в Москве</a></article>
+    </section>
+    <h2 class="archive-old-heading">Выпуски мастерской</h2>
     <div class="archive-list">
     {% assign issues = site.pages | where: "layout", "issue" | sort: "number" | reverse %}
     {% for item in issues %}
@@ -36,6 +42,6 @@ permalink: /archive/
     </div>
   </main>
 
-  <footer><span>ONTOS.DEEP</span><span>EasyBassMaster · Москва</span></footer>
+  <footer><span>EASYBASSMASTER</span><span>EasyBassMaster · Москва</span></footer>
 </body>
 </html>
