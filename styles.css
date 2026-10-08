@@ -215,25 +215,25 @@ footer{
 .master-directions{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:36px}
 .master-directions a{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;font-size:clamp(19px,2.3vw,29px)}
 .master-directions a small{font:400 13px/1.4 Arial,sans-serif;color:var(--muted)}
-.master-directions a:nth-child(even){padding-left:0;border-left:0}
-.master-directions a:nth-child(n+3){border-top:0}
-.master-directions a+a{border-left:1px solid var(--line);padding-left:20px!important}
+
+
+
 .contact-phone{font-weight:400;font-size:min(clamp(27px,3.6vw,43px),calc((100cqw - 112px)/8.2))}
 .contact-icons{gap:4px}
 .contact-icons a{width:36px;height:36px}
 .contact-icons svg{width:25px;height:25px}
 .contact-icons .max-contact-pending{width:36px;height:36px;font-size:10px;border-color:var(--line)}
-@media(max-width:700px){.master-directions{grid-template-columns:1fr}.master-directions a,.master-directions a+a{border-left:0;padding-left:0!important}.master-directions a:nth-child(n+2){border-top:1px solid var(--line)}.contact-phone{font-size:min(clamp(22px,6.2vw,34px),calc((100cqw - 112px)/8.2))}.contact-icons a,.contact-icons .max-contact-pending{width:30px;height:30px}.contact-icons svg{width:23px;height:23px}}
 
-/* Quiet editorial index; all subject articles are kept in the podshivka. */
-.master-directions>div{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:21px 20px 21px 0;font-size:clamp(19px,2.3vw,29px);line-height:1.13}
-.master-directions>div small{font:400 13px/1.4 Arial,sans-serif;color:var(--muted)}
-.master-directions>div+div{border-left:1px solid var(--line);padding-left:20px}
+
+/* Quiet editorial index: subject articles live only in the podshivka. */
+
+
+
 .archive-list a{text-decoration:none}.archive-list a:hover{text-decoration:underline;text-underline-offset:3px}
 .archive-list article p{color:var(--muted);margin:5px 0 9px}
 .archive-list article>a{font:700 13px/1.4 Arial,sans-serif;letter-spacing:.02em}
 .archive-old-heading{font-size:clamp(25px,3.7vw,40px);margin-top:38px}
-@media(max-width:700px){.master-directions>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}.master-directions>div{padding:16px 0}}
+
 
 /* Compiler's shared entry/deep typography. Master publication is otherwise unchanged. */
 .new-master .mast .brand-title{margin:0;font-size:clamp(34px,6.1vw,72px);line-height:.86;letter-spacing:-.065em;white-space:nowrap;text-transform:uppercase;font-weight:700}
@@ -241,3 +241,17 @@ footer{
 .new-master .issue h1{max-width:920px;margin:0;font-size:clamp(34px,5.4vw,66px);line-height:.96;letter-spacing:-.04em;hyphens:none}
 @media(max-width:760px){.new-master .mast .brand-title{font-size:min(8.4vw,58px)}.new-master .issue h1{font-size:clamp(30px,8.5vw,44px)}}
 @media(max-width:420px){.new-master .mast .brand-title{font-size:8.2vw}.new-master .issue h1{overflow-wrap:break-word}}
+
+/* Stable three-part navigation: equal-column dividers across browsers. */
+.new-master nav.master-links.master-directions > a{border-top:0}
+.new-master nav.master-links.master-directions > a:not(:first-child){border-left:1px solid var(--line);padding-left:20px}
+@media(max-width:760px){
+  .new-master nav.master-links.master-directions{grid-template-columns:1fr}
+  .new-master nav.master-links.master-directions > a{border-left:0;padding-left:0;border-top:0}
+  .new-master nav.master-links.master-directions > a:not(:first-child){border-left:0;padding-left:0;border-top:1px solid var(--line)}
+}
+@media(max-width:700px){
+  .contact-phone{font-size:min(clamp(22px,6.2vw,34px),calc((100cqw - 112px)/8.2))}
+  .contact-icons a{width:30px;height:30px}
+  .contact-icons svg{width:23px;height:23px}
+}
