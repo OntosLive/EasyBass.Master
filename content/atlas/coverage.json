@@ -1,7 +1,7 @@
 {
-  "version": 1,
+  "version": 2,
   "checked_at": "2026-10-09",
-  "notice": "Coverage records existing public URLs. Mapping to root fields is approximate; no automatic assertion that any research leaf has been fully answered. This is not a search-indexing report.",
+  "notice": "Public URL coverage uses broad roots only; no research question can be marked solved by a generated page. This is not a search-indexing report.",
   "published_entrances": [
     {
       "slug": "kupit-kontrabas-v-moskve",
@@ -1802,6 +1802,366 @@
       "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-slishkom-tyazhelyy-dlya-muzykanta/",
       "source_status": "published_editorial_hypothesis",
       "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-restavratsii",
+      "title": "Купить контрабас после реставрации",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-restavratsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-istoriey-remontov",
+      "title": "Купить контрабас с историей ремонтов",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-istoriey-remontov/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-vozmozhnostyu-povtornoy-proby",
+      "title": "Купить контрабас с возможностью повторной пробы",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-vozmozhnostyu-povtornoy-proby/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-sravneniya-v-masterskoy",
+      "title": "Купить контрабас после сравнения в мастерской",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-sravneniya-v-masterskoy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-bez-predvaritelnogo-video",
+      "title": "Купить контрабас без предварительного видео",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-bez-predvaritelnogo-video/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-ne-znaya-tochnoy-modeli",
+      "title": "Купить контрабас, не зная точной модели",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-ne-znaya-tochnoy-modeli/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-drugoy-menzuroy",
+      "title": "Купить контрабас с другой мензурой",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-drugoy-menzuroy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-smeny-orkestra",
+      "title": "Купить контрабас для смены оркестра",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-smeny-orkestra/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-pered-dlitelnymi-gastrolyami",
+      "title": "Купить контрабас перед длительными гастролями",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-pered-dlitelnymi-gastrolyami/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-po-sovetu-prepodavatelya",
+      "title": "Купить контрабас по совету преподавателя",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-po-sovetu-prepodavatelya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-prepodavaniya",
+      "title": "Купить контрабас для преподавания",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-prepodavaniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-neobychnoy-formoy-korpusa",
+      "title": "Купить контрабас с необычной формой корпуса",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-neobychnoy-formoy-korpusa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-pyatistrunnym-diapazonom",
+      "title": "Купить контрабас с пятиструнным диапазоном",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-pyatistrunnym-diapazonom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-dolgogo-poiska",
+      "title": "Купить контрабас после долгого поиска",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-dolgogo-poiska/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-vmesto-remonta-starogo",
+      "title": "Купить контрабас вместо ремонта старого",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-vmesto-remonta-starogo/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-bez-yasnogo-byudzheta",
+      "title": "Купить контрабас без ясного бюджета",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-bez-yasnogo-byudzheta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-igry-na-horoshem-instrumente",
+      "title": "Купить контрабас после игры на хорошем инструменте",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-igry-na-horoshem-instrumente/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-proverennoy-istoriey",
+      "title": "Купить контрабас с проверенной историей",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-proverennoy-istoriey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-orkestrovogo-proslushivaniya",
+      "title": "Купить контрабас после оркестрового прослушивания",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-orkestrovogo-proslushivaniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-po-vnutrennemu-oschuscheniyu",
+      "title": "Купить контрабас по внутреннему ощущению",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-po-vnutrennemu-oschuscheniyu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-kotoryy-esche-ispolzuetsya",
+      "title": "Продать контрабас, который ещё используется",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-kotoryy-esche-ispolzuetsya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-iz-chastnoy-kollektsii",
+      "title": "Продать контрабас из частной коллекции",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-iz-chastnoy-kollektsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-bez-publichnogo-obyavleniya",
+      "title": "Продать контрабас без публичного объявления",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-bez-publichnogo-obyavleniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-bez-vozmozhnosti-privezti-ego",
+      "title": "Продать контрабас без возможности привезти его",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-bez-vozmozhnosti-privezti-ego/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-nestandartnoy-menzuroy",
+      "title": "Продать контрабас с нестандартной мензурой",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-nestandartnoy-menzuroy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-pyatistrunnyy-kontrabas",
+      "title": "Продать пятиструнный контрабас",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-pyatistrunnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-nebolshogo-razmera",
+      "title": "Продать контрабас небольшого размера",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-nebolshogo-razmera/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-so-smychkom-i-chehlom",
+      "title": "Продать контрабас со смычком и чехлом",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-so-smychkom-i-chehlom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-smeny-prepodavatelya",
+      "title": "Продать контрабас после смены преподавателя",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-smeny-prepodavatelya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-neproverennoy-atributsiey",
+      "title": "Продать контрабас с непроверенной атрибуцией",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-neproverennoy-atributsiey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-okonchaniya-orkestrovoy-raboty",
+      "title": "Продать контрабас после окончания оркестровой работы",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-okonchaniya-orkestrovoy-raboty/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-neudachnogo-remonta",
+      "title": "Продать контрабас после неудачного ремонта",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-neudachnogo-remonta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-redkoy-konstruktsiey",
+      "title": "Продать контрабас с редкой конструкцией",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-redkoy-konstruktsiey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-kotoryy-hochetsya-sohranit",
+      "title": "Продать контрабас, который хочется сохранить",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-kotoryy-hochetsya-sohranit/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-radi-pokupki-drugogo",
+      "title": "Продать контрабас ради покупки другого",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-radi-pokupki-drugogo/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-professionalnoy-zapisi",
+      "title": "Продать контрабас после профессиональной записи",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-professionalnoy-zapisi/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-gastrolnoy-istoriey",
+      "title": "Продать контрабас с гастрольной историей",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-gastrolnoy-istoriey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-dorogoy-restavratsii",
+      "title": "Продать контрабас после дорогой реставрации",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-dorogoy-restavratsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-bez-opredelennogo-sroka",
+      "title": "Продать контрабас без определённого срока",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-bez-opredelennogo-sroka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-sohraniv-ego-istoriyu",
+      "title": "Продать контрабас, сохранив его историю",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-sohraniv-ego-istoriyu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
     }
   ],
   "published_pairs": [
@@ -1825,8 +2185,8 @@
     }
   ],
   "counts": {
-    "standalone": 200,
+    "standalone": 240,
     "pairs": 2,
-    "public_documents": 204
+    "public_documents": 244
   }
 }
