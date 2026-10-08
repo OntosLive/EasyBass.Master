@@ -6,15 +6,13 @@
   --signal:#a53b31;
 }
 *{box-sizing:border-box}
-html{background:#070605}
+html{background:#171717}
 body{
   margin:0 auto;
   max-width:1120px;
   min-height:100vh;
   padding:24px clamp(18px,4.5vw,58px) 52px;
-  background:
-    radial-gradient(circle at 82% 7%,rgba(165,59,49,.08),transparent 24%),
-    linear-gradient(180deg,#15110d 0%,var(--bg) 100%);
+  background:#2d2924;
   color:var(--paper);
   font-family:Georgia,"Times New Roman",serif;
 }
@@ -209,3 +207,20 @@ footer{
 
 /* MAX is visible but not a link until the verified personal profile URL is provided. */
 .contact-icons .max-contact-pending{width:29px;height:29px;display:grid;place-items:center;flex:none;font:700 9px/1 Arial,sans-serif;letter-spacing:-.04em;color:var(--paper);border:1px solid currentColor;border-radius:6px;cursor:default}
+
+/* ONTOS.TIMES editorial surface: flat paper tone, no light effects. */
+.new-master{background:#2d2924}
+.new-master .master-lead{padding-top:48px}
+.new-master .master-lead h2{max-width:900px}
+.master-directions{grid-template-columns:repeat(3,minmax(0,1fr));margin-top:36px}
+.master-directions a{display:flex;flex-direction:column;align-items:flex-start;justify-content:flex-start;gap:8px;font-size:clamp(19px,2.3vw,29px)}
+.master-directions a small{font:400 13px/1.4 Arial,sans-serif;color:var(--muted)}
+.master-directions a:nth-child(even){padding-left:0;border-left:0}
+.master-directions a:nth-child(n+3){border-top:0}
+.master-directions a+a{border-left:1px solid var(--line);padding-left:20px!important}
+.contact-phone{font-weight:400;font-size:min(clamp(27px,3.6vw,43px),calc((100cqw - 112px)/8.2))}
+.contact-icons{gap:4px}
+.contact-icons a{width:36px;height:36px}
+.contact-icons svg{width:25px;height:25px}
+.contact-icons .max-contact-pending{width:36px;height:36px;font-size:10px;border-color:var(--line)}
+@media(max-width:700px){.master-directions{grid-template-columns:1fr}.master-directions a,.master-directions a+a{border-left:0;padding-left:0!important}.master-directions a:nth-child(n+2){border-top:1px solid var(--line)}.contact-phone{font-size:min(clamp(22px,6.2vw,34px),calc((100cqw - 112px)/8.2))}.contact-icons a,.contact-icons .max-contact-pending{width:30px;height:30px}.contact-icons svg{width:23px;height:23px}}
