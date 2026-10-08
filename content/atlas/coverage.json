@@ -1,5 +1,5 @@
 {
-  "version": 2,
+  "version": 3,
   "checked_at": "2026-10-09",
   "notice": "Public URL coverage uses broad roots only; no research question can be marked solved by a generated page. This is not a search-indexing report.",
   "published_entrances": [
@@ -2187,6 +2187,150 @@
   "counts": {
     "standalone": 240,
     "pairs": 2,
-    "public_documents": 244
-  }
+    "independent_knowledge": 8,
+    "manufacturer_reference_pages": 6,
+    "public_documents": 258
+  },
+  "published_knowledge": [
+    {
+      "slug": "vybor-kontrabasa-kak-znakomstvo",
+      "entrance_slug": "kupit-kontrabas-v-moskve",
+      "title": "Выбор контрабаса: пространство знакомства",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/vybor-kontrabasa-kak-znakomstvo/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodazha-kontrabasa-kak-peredacha-istorii",
+      "entrance_slug": "prodat-kontrabas-v-moskve",
+      "title": "Продажа контрабаса: дальнейшая жизнь инструмента",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/prodazha-kontrabasa-kak-peredacha-istorii/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "stoimost-kontrabasa-i-vremya",
+      "entrance_slug": "otsenit-kontrabas-pered-prodazhey",
+      "title": "Стоимость контрабаса: предмет, время, маршрут",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/stoimost-kontrabasa-i-vremya/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "starinnyy-kontrabas-vremya-i-sostoyanie",
+      "entrance_slug": "kupit-starinnyy-kontrabas",
+      "title": "Старинный контрабас: время внутри инструмента",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/starinnyy-kontrabas-vremya-i-sostoyanie/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "proishozhdenie-kontrabasa-i-dokazatelstva",
+      "entrance_slug": "kak-ponyat-proishozhdenie-kontrabasa",
+      "title": "Происхождение контрабаса: доказательства и версии",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/proishozhdenie-kontrabasa-i-dokazatelstva/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "razmer-menzura-i-posadka-kontrabasa",
+      "entrance_slug": "kak-vybrat-razmer-kontrabasa",
+      "title": "Размер контрабаса: мензура, корпус, движение",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/razmer-menzura-i-posadka-kontrabasa/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vremennyy-kontrabas-i-svoboda-igry",
+      "entrance_slug": "dolgosrochnaya-arenda-kontrabasa",
+      "title": "Контрабас в пользовании: музыка раньше собственности",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/vremennyy-kontrabas-i-svoboda-igry/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "restavratsiya-kontrabasa-i-ego-zhizn",
+      "entrance_slug": "restavratsiya-starinnogo-kontrabasa",
+      "title": "Реставрация контрабаса: сохранить и услышать",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/details/restavratsiya-kontrabasa-i-ego-zhizn/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    }
+  ],
+  "published_models": [
+    {
+      "slug": "eastman-vb65",
+      "model_id": "MODEL-001",
+      "title": "Eastman VB65: гибридный корпус и разные размеры",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/models/eastman-vb65/",
+      "source_status": "verified_manufacturer_editorial_model",
+      "stock": null,
+      "price": null,
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "eastman-vb305",
+      "model_id": "MODEL-006",
+      "title": "Eastman VB305: корпус, размеры и мастерская настройка",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/models/eastman-vb305/",
+      "source_status": "verified_manufacturer_editorial_model",
+      "stock": null,
+      "price": null,
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "eastman-vb605",
+      "model_id": "MODEL-007",
+      "title": "Eastman VB605: Busan, Gamba и варианты корпуса",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/models/eastman-vb605/",
+      "source_status": "verified_manufacturer_editorial_model",
+      "stock": null,
+      "price": null,
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "yamaha-slb300",
+      "model_id": "MODEL-038",
+      "title": "Yamaha SLB300: электронный контрабас с рамой",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/models/yamaha-slb300/",
+      "source_status": "verified_manufacturer_editorial_model",
+      "stock": null,
+      "price": null,
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "yamaha-slb300pro",
+      "model_id": "MODEL-039",
+      "title": "Yamaha SLB300PRO: материалы и отличия от SLB300",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/models/yamaha-slb300pro/",
+      "source_status": "verified_manufacturer_editorial_model",
+      "stock": null,
+      "price": null,
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "hofner-h5-7-3-4",
+      "model_id": "MODEL-042",
+      "title": "Höfner H5/7-B3/4: оркестровый корпус 3/4",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/models/hofner-h5-7-3-4/",
+      "source_status": "verified_manufacturer_editorial_model",
+      "stock": null,
+      "price": null,
+      "atlas_leaf_id": null
+    }
+  ]
 }
