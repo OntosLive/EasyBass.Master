@@ -14,10 +14,12 @@ ROUTES = [
     ("home", "index.html"),
     ("archive", "archive/index.html"),
     ("collection", "collection/index.html"),
+    ("workshop", "workshop/index.html"),
+    ("meeting", "meeting/index.html"),
     ("access", "kupit-masterovoy-kontrabas-v-moskve/index.html"),
     ("knowledge", "details/masterovoy-kontrabas/index.html"),
 ]
-WIDTHS = (390, 1366)
+WIDTHS = (390, 760, 820, 1366)
 
 
 async def run(site: Path, output: Path) -> dict:
@@ -40,11 +42,24 @@ async def run(site: Path, output: Path) -> dict:
                         scroll: document.documentElement.scrollWidth,
                         css: !!document.querySelector('link[rel="stylesheet"]')
                     })""")
+                    if name == "home":
+                        border_widths = await page.locator(".master-directions > a").evaluate_all(
+                            "(items) => items.map(item => parseFloat(getComputedStyle(item).borderLeftWidth))")
+                        if len(border_widths) != 3:
+                            raise AssertionError("Homepage must retain three independent linked spaces")
+                        if width > 760 and any(border < 1 for border in border_widths[1:]):
+                            raise AssertionError(f"Missing desktop column divider at {width}px: {border_widths}")
+                        if width <= 760 and any(border > 0 for border in border_widths):
+                            raise AssertionError(f"Spurious mobile column divider at {width}px: {border_widths}")
+                    if name in {"collection", "workshop", "meeting"}:
+                        redundant = await page.locator("nav.master-links").count()
+                        if redundant:
+                            raise AssertionError(f"{name}: subject/navigation grid belongs to podshivka")
                     overflow = max(0, dims["scroll"] - dims["width"])
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:
                         raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px")
-                    if name in {"home", "archive", "access", "knowledge"}:
+                    if name in {"home", "archive", "collection", "access", "knowledge"}:
                         await page.screenshot(path=str(output / f"{name}-{width}.png"),
                                               full_page=True)
                 await page.close()
