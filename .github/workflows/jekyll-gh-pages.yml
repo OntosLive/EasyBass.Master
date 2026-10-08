@@ -35,6 +35,8 @@ jobs:
         with:
           source: ./
           destination: ./_site
+      - name: Restore permissions after containerized Jekyll build
+        run: sudo chown -R "$(id -u):$(id -g)" _site
       - name: Compile canonical subject pages and archive
         run: python scripts/site_core.py --site _site --report _audit/build.json
       - name: Validate complete public artifact
