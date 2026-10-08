@@ -206,3 +206,6 @@ footer{
 .master-text p{font-size:clamp(18px,2.1vw,24px);line-height:1.49;color:#cbbda8;margin:0 0 22px}
 .master-footer{display:flex;justify-content:space-between;gap:14px;border-top:4px solid var(--paper);padding-top:11px;font:700 10px/1.3 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
 @media(max-width:760px){.new-master .mast h1{font-size:min(10vw,58px)}.master-links{grid-template-columns:1fr}.master-links a:nth-child(even){padding-left:0;border-left:0}.master-links a:nth-child(n+2){border-top:1px solid var(--line)}}
+
+/* MAX is visible but not a link until the verified personal profile URL is provided. */
+.contact-icons .max-contact-pending{width:29px;height:29px;display:grid;place-items:center;flex:none;font:700 9px/1 Arial,sans-serif;letter-spacing:-.04em;color:var(--paper);border:1px solid currentColor;border-radius:6px;cursor:default}
