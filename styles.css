@@ -234,3 +234,10 @@ footer{
 .archive-list article>a{font:700 13px/1.4 Arial,sans-serif;letter-spacing:.02em}
 .archive-old-heading{font-size:clamp(25px,3.7vw,40px);margin-top:38px}
 @media(max-width:700px){.master-directions>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}.master-directions>div{padding:16px 0}}
+
+/* Compiler's shared entry/deep typography. Master publication is otherwise unchanged. */
+.new-master .mast .brand-title{margin:0;font-size:clamp(34px,6.1vw,72px);line-height:.86;letter-spacing:-.065em;white-space:nowrap;text-transform:uppercase;font-weight:700}
+.new-master .mast .brand-title span{color:var(--signal)}
+.new-master .issue h1{max-width:920px;margin:0;font-size:clamp(34px,5.4vw,66px);line-height:.96;letter-spacing:-.04em;hyphens:none}
+@media(max-width:760px){.new-master .mast .brand-title{font-size:min(8.4vw,58px)}.new-master .issue h1{font-size:clamp(30px,8.5vw,44px)}}
+@media(max-width:420px){.new-master .mast .brand-title{font-size:8.2vw}.new-master .issue h1{overflow-wrap:break-word}}
