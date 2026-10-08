@@ -181,7 +181,6 @@ footer{
 
 /* Reusable phone + monochrome messenger block, adapted from ONTOS.RENT. */
 .contact-block{margin:38px 0 24px;padding:20px 0;border-top:4px solid var(--paper);border-bottom:1px solid var(--line);container-type:inline-size}
-.contact-caption{margin:0 0 18px;text-align:center;font:700 10px/1.4 Arial,sans-serif;letter-spacing:.13em;color:var(--muted)}
 .contact{display:flex;justify-content:center;align-items:center;gap:8px;min-width:0}
 .contact-phone{flex:none;font:600 min(clamp(28px,3.8vw,46px),calc((100cqw - 70px)/8.2))/1 Arial,sans-serif;letter-spacing:-.025em;white-space:nowrap;text-decoration:none}
 .contact-icons{display:flex;align-items:center;gap:2px;flex:none;margin-left:2px}
