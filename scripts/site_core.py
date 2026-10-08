@@ -85,10 +85,12 @@ def inspect_records(root: Path) -> list[dict]:
     implemented = {c["subject_slug"] for c in candidates if c["status"] == "implemented"}
     if not implemented <= slugs:
         raise ValueError("Published candidates missing from ready records")
-    if any(c["status"] not in {"implemented", "research"} for c in candidates):
+    if any(c["status"] not in {"implemented", "research", "entrance"} for c in candidates):
         raise ValueError("Unexpected candidate status")
-    if any(c["status"] == "research" and c.get("subject_slug") for c in candidates):
+    if any(c["status"] == "research" and (c.get("subject_slug") or c.get("entrance_slug")) for c in candidates):
         raise ValueError("An unreviewed research hypothesis pretends to have a page")
+    if any(c["status"] == "entrance" and (not c.get("entrance_slug") or c.get("subject_slug")) for c in candidates):
+        raise ValueError("Standalone entrance must have its own route, not a forged deep pair")
     return pages
 
 
@@ -131,6 +133,11 @@ def inspect_entrances(root: Path, paired: list[dict] | None = None) -> list[dict
                 raise ValueError(f"{slug}: repeated generic lead")
             descriptions.add(norm(p["lead"]))
             ready.append(p)
+    accepted = {p["slug"] for p in ready}
+    previous = read_json(root / "content/candidates.json")["candidates"]
+    for c in previous:
+        if c["status"] == "entrance" and c["entrance_slug"] not in accepted:
+            raise ValueError(f"Tracked query #{c['id']} points to missing entrance {c['entrance_slug']}")
     return ready
 
 
