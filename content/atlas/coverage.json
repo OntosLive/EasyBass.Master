@@ -1,0 +1,2192 @@
+{
+  "version": 2,
+  "checked_at": "2026-10-09",
+  "notice": "Public URL coverage uses broad roots only; no research question can be marked solved by a generated page. This is not a search-indexing report.",
+  "published_entrances": [
+    {
+      "slug": "kupit-kontrabas-v-moskve",
+      "title": "Купить контрабас в Москве",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-v-moskve/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-starinnyy-kontrabas",
+      "title": "Купить старинный контрабас",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-starinnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-manufakturnyy-kontrabas",
+      "title": "Купить мануфактурный контрабас",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-manufakturnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-orkestra",
+      "title": "Купить контрабас для оркестра",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-orkestra/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-dzhaza",
+      "title": "Купить контрабас для джаза",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-dzhaza/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-studentu",
+      "title": "Купить контрабас студенту",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-studentu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-arendy",
+      "title": "Купить контрабас после аренды",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-arendy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vybrat-kontrabas-s-vozmozhnostyu-proby",
+      "title": "Выбрать контрабас с возможностью пробы",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vybrat-kontrabas-s-vozmozhnostyu-proby/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-poderzhannyy-kontrabas",
+      "title": "Купить подержанный контрабас",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-poderzhannyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-rebenka",
+      "title": "Купить контрабас для ребёнка",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-rebenka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vybrat-kontrabas-vzroslomu-nachinayuschemu",
+      "title": "Выбрать контрабас взрослому начинающему",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vybrat-kontrabas-vzroslomu-nachinayuschemu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-solnyh-vystupleniy",
+      "title": "Купить контрабас для сольных выступлений",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-solnyh-vystupleniy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-pered-postupleniem",
+      "title": "Купить контрабас перед поступлением",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-pered-postupleniem/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-muzykalnoy-shkoly",
+      "title": "Купить контрабас после музыкальной школы",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-muzykalnoy-shkoly/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-domashney-praktiki",
+      "title": "Купить контрабас для домашней практики",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-domashney-praktiki/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-izvestnym-proishozhdeniem",
+      "title": "Купить контрабас с известным происхождением",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-izvestnym-proishozhdeniem/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-udobnym-grifom",
+      "title": "Купить контрабас с удобным грифом",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-udobnym-grifom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-raboty-so-smychkom",
+      "title": "Купить контрабас для работы со смычком",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-raboty-so-smychkom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-pervyh-kontsertov",
+      "title": "Купить контрабас для первых концертов",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-pervyh-kontsertov/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-iz-chastnoy-kollektsii",
+      "title": "Контрабас из частной коллекции",
+      "group": "Покупка и подбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-iz-chastnoy-kollektsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "dolgosrochnaya-arenda-kontrabasa",
+      "title": "Долгосрочная аренда контрабаса",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/dolgosrochnaya-arenda-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-zanyatiy",
+      "title": "Аренда контрабаса для занятий",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-zanyatiy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-studentu-konservatorii",
+      "title": "Аренда контрабаса студенту консерватории",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-studentu-konservatorii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-na-uchebnyy-god",
+      "title": "Аренда контрабаса на учебный год",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-na-uchebnyy-god/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-pered-pokupkoy",
+      "title": "Аренда контрабаса перед покупкой",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-pered-pokupkoy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-na-vremya-remonta",
+      "title": "Аренда контрабаса на время ремонта",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-na-vremya-remonta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-gastroley",
+      "title": "Аренда контрабаса для гастролей",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-gastroley/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-orkestrovogo-kontrabasa",
+      "title": "Аренда оркестрового контрабаса",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-orkestrovogo-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-3-4",
+      "title": "Аренда контрабаса 3/4",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-3-4/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-na-mesyats",
+      "title": "Аренда контрабаса на месяц",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-na-mesyats/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-na-semestr",
+      "title": "Аренда контрабаса на семестр",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-na-semestr/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-muzykalnoy-shkoly",
+      "title": "Аренда контрабаса для музыкальной школы",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-muzykalnoy-shkoly/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-orkestrovoy-repetitsii",
+      "title": "Аренда контрабаса для оркестровой репетиции",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-orkestrovoy-repetitsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-zapisi",
+      "title": "Аренда контрабаса для записи",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-zapisi/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-kontserta",
+      "title": "Аренда контрабаса для концерта",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-kontserta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-dzhazovogo-proekta",
+      "title": "Аренда контрабаса для джазового проекта",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-dzhazovogo-proekta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-nachinayuschego-vzroslogo",
+      "title": "Аренда контрабаса для начинающего взрослого",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-nachinayuschego-vzroslogo/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-probnogo-obucheniya",
+      "title": "Аренда контрабаса для пробного обучения",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-probnogo-obucheniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "arenda-kontrabasa-dlya-domashnego-muzitsirovaniya",
+      "title": "Аренда контрабаса для домашнего музицирования",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/arenda-kontrabasa-dlya-domashnego-muzitsirovaniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vremennyy-kontrabas-vmesto-pokupki",
+      "title": "Временный контрабас вместо покупки",
+      "group": "Аренда и пользование",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vremennyy-kontrabas-vmesto-pokupki/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-v-moskve",
+      "title": "Продать контрабас в Москве",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-v-moskve/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "otsenit-kontrabas-pered-prodazhey",
+      "title": "Оценить контрабас перед продажей",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/otsenit-kontrabas-pered-prodazhey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vykup-kontrabasa-masterskoy",
+      "title": "Выкуп контрабаса мастерской",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vykup-kontrabasa-masterskoy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-masterovoy-kontrabas",
+      "title": "Продать мастеровой контрабас",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-masterovoy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-starinnyy-kontrabas",
+      "title": "Продать старинный контрабас",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-starinnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-obucheniya",
+      "title": "Продать контрабас после обучения",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-obucheniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-trebuyuschiy-remonta",
+      "title": "Продать контрабас, требующий ремонта",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-trebuyuschiy-remonta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-neizvestnym-proishozhdeniem",
+      "title": "Продать контрабас с неизвестным происхождением",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-neizvestnym-proishozhdeniem/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-poluchennyy-po-nasledstvu",
+      "title": "Продать контрабас, полученный по наследству",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-poluchennyy-po-nasledstvu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-dolgogo-hraneniya",
+      "title": "Продать контрабас после долгого хранения",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-dolgogo-hraneniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-srochno",
+      "title": "Продать контрабас срочно",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-srochno/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-pered-pereezdom",
+      "title": "Продать контрабас перед переездом",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-pered-pereezdom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-povrezhdennyy-kontrabas",
+      "title": "Продать повреждённый контрабас",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-povrezhdennyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-dokumentami",
+      "title": "Продать контрабас с документами",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-dokumentami/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-uchenicheskiy-kontrabas",
+      "title": "Продать ученический контрабас",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-uchenicheskiy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-bez-dokumentov",
+      "title": "Продать контрабас без документов",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-bez-dokumentov/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-3-4",
+      "title": "Продать контрабас 3/4",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-3-4/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-pri-smene-razmera",
+      "title": "Продать контрабас при смене размера",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-pri-smene-razmera/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-iz-orkestra",
+      "title": "Продать контрабас из оркестра",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-iz-orkestra/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-restavratsii",
+      "title": "Продать контрабас после реставрации",
+      "group": "Продажа владельцем и оценка",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-restavratsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "remont-kontrabasa-v-moskve",
+      "title": "Ремонт контрабаса в Москве",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/remont-kontrabasa-v-moskve/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "restavratsiya-starinnogo-kontrabasa",
+      "title": "Реставрация старинного контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/restavratsiya-starinnogo-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "remont-treschiny-deki-kontrabasa",
+      "title": "Ремонт трещины деки контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/remont-treschiny-deki-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "otoshel-shov-na-kontrabase",
+      "title": "Отошёл шов на контрабасе",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/otoshel-shov-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "nastroyka-podstavki-kontrabasa",
+      "title": "Настройка подставки контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/nastroyka-podstavki-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "ustanovka-i-regulirovka-dushki-kontrabasa",
+      "title": "Установка и регулировка душки контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/ustanovka-i-regulirovka-dushki-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "remont-grifa-kontrabasa",
+      "title": "Ремонт грифа контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/remont-grifa-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vysota-strun-na-kontrabase",
+      "title": "Высота струн на контрабасе",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vysota-strun-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "podgotovka-kontrabasa-k-prodazhe",
+      "title": "Подготовка контрабаса к продаже",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/podgotovka-kontrabasa-k-prodazhe/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "osmotr-kontrabasa-pered-pokupkoy",
+      "title": "Осмотр контрабаса перед покупкой",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/osmotr-kontrabasa-pered-pokupkoy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-drebezzhit-pri-igre",
+      "title": "Контрабас дребезжит при игре",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-drebezzhit-pri-igre/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-perestal-derzhat-stroy",
+      "title": "Контрабас перестал держать строй",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-perestal-derzhat-stroy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "zamena-strun-na-kontrabase",
+      "title": "Замена струн на контрабасе",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/zamena-strun-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "neudobnaya-nakladka-grifa-kontrabasa",
+      "title": "Неудобная накладка грифа контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/neudobnaya-nakladka-grifa-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "remont-kolkov-kontrabasa",
+      "title": "Ремонт колков контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/remont-kolkov-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "slomalas-podstavka-kontrabasa",
+      "title": "Сломалась подставка контрабаса",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/slomalas-podstavka-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-ploho-otvechaet-na-smychok",
+      "title": "Контрабас плохо отвечает на смычок",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-ploho-otvechaet-na-smychok/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vosstanovlenie-kontrabasa-posle-perevozki",
+      "title": "Восстановление контрабаса после перевозки",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vosstanovlenie-kontrabasa-posle-perevozki/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-posle-dlitelnogo-hraneniya",
+      "title": "Контрабас после длительного хранения",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-posle-dlitelnogo-hraneniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "restavratsiya-kontrabasa-s-istoriey",
+      "title": "Реставрация контрабаса с историей",
+      "group": "Ремонт и реставрация",
+      "root_id": "R-craft",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/restavratsiya-kontrabasa-s-istoriey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-vybrat-razmer-kontrabasa",
+      "title": "Как выбрать размер контрабаса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-vybrat-razmer-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-1-2-ili-3-4",
+      "title": "Контрабас 1/2 или 3/4",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-1-2-ili-3-4/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-3-4-ili-4-4",
+      "title": "Контрабас 3/4 или 4/4",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-3-4-ili-4-4/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "menzura-kontrabasa-i-udobstvo-igry",
+      "title": "Мензура контрабаса и удобство игры",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/menzura-kontrabasa-i-udobstvo-igry/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "starinnyy-ili-sovremennyy-kontrabas",
+      "title": "Старинный или современный контрабас",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/starinnyy-ili-sovremennyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "masterovoy-ili-manufakturnyy-kontrabas",
+      "title": "Мастеровой или мануфактурный контрабас",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/masterovoy-ili-manufakturnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "ploskaya-ili-vypuklaya-zadnyaya-deka",
+      "title": "Плоская или выпуклая задняя дека",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/ploskaya-ili-vypuklaya-zadnyaya-deka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "chetyrehstrunnyy-ili-pyatistrunnyy-kontrabas",
+      "title": "Четырёхструнный или пятиструнный контрабас",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/chetyrehstrunnyy-ili-pyatistrunnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "proverka-sostoyaniya-kontrabasa",
+      "title": "Проверка состояния контрабаса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/proverka-sostoyaniya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-ponyat-proishozhdenie-kontrabasa",
+      "title": "Как понять происхождение контрабаса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-ponyat-proishozhdenie-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-vybrat-kontrabas-po-rostu",
+      "title": "Как выбрать контрабас по росту",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-vybrat-kontrabas-po-rostu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-opredelit-vozrast-kontrabasa",
+      "title": "Как определить возраст контрабаса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-opredelit-vozrast-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "forma-plech-kontrabasa-i-igra-v-vysokih-pozitsiyah",
+      "title": "Форма плеч контрабаса и игра в высоких позициях",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/forma-plech-kontrabasa-i-igra-v-vysokih-pozitsiyah/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-7-8-i-razmer-korpusa",
+      "title": "Контрабас 7/8 и размер корпуса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-7-8-i-razmer-korpusa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "pyatistrunnyy-kontrabas-dlya-orkestra",
+      "title": "Пятиструнный контрабас для оркестра",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/pyatistrunnyy-kontrabas-dlya-orkestra/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "skripichnaya-ili-violnaya-forma-kontrabasa",
+      "title": "Скрипичная или виольная форма контрабаса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/skripichnaya-ili-violnaya-forma-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "tolschina-grifa-kontrabasa",
+      "title": "Толщина грифа контрабаса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/tolschina-grifa-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-slushat-kontrabas-v-bolshom-zale",
+      "title": "Как слушать контрабас в большом зале",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-slushat-kontrabas-v-bolshom-zale/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-proverit-smychkovyy-otklik-kontrabasa",
+      "title": "Как проверить смычковый отклик контрабаса",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-proverit-smychkovyy-otklik-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-sravnit-zvuchanie-dvuh-kontrabasov",
+      "title": "Как сравнить звучание двух контрабасов",
+      "group": "Конструкция и выбор",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-sravnit-zvuchanie-dvuh-kontrabasov/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-pervogo-goda-obucheniya",
+      "title": "Контрабас для первого года обучения",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-pervogo-goda-obucheniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-muzykalnogo-uchilischa",
+      "title": "Контрабас для музыкального училища",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-muzykalnogo-uchilischa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-postupleniya-v-konservatoriyu",
+      "title": "Контрабас для поступления в консерваторию",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-postupleniya-v-konservatoriyu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-simfonicheskogo-orkestra",
+      "title": "Контрабас для симфонического оркестра",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-simfonicheskogo-orkestra/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-solnoy-programmy",
+      "title": "Контрабас для сольной программы",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-solnoy-programmy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-pitstsikato-i-dzhaza",
+      "title": "Контрабас для пиццикато и джаза",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-pitstsikato-i-dzhaza/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "smychkovyy-otklik-kontrabasa",
+      "title": "Смычковый отклик контрабаса",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/smychkovyy-otklik-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "na-kontrabase-trudno-prizhimat-struny",
+      "title": "На контрабасе трудно прижимать струны",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/na-kontrabase-trudno-prizhimat-struny/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "perehod-s-uchebnogo-na-professionalnyy-kontrabas",
+      "title": "Переход с учебного на профессиональный контрабас",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/perehod-s-uchebnogo-na-professionalnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "znakomstvo-s-neskolkimi-kontrabasami",
+      "title": "Знакомство с несколькими контрабасами",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/znakomstvo-s-neskolkimi-kontrabasami/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-prepodavatelya-i-uchenikov",
+      "title": "Контрабас для преподавателя и учеников",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-prepodavatelya-i-uchenikov/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-kamernogo-ansamblya",
+      "title": "Контрабас для камерного ансамбля",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-kamernogo-ansamblya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-orkestrovogo-proslushivaniya",
+      "title": "Контрабас для оркестрового прослушивания",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-orkestrovogo-proslushivaniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-starinnoy-muzyki",
+      "title": "Контрабас для старинной музыки",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-starinnoy-muzyki/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-nebolshogo-kontsertnogo-zala",
+      "title": "Контрабас для небольшого концертного зала",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-nebolshogo-kontsertnogo-zala/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-studiynoy-solnoy-zapisi",
+      "title": "Контрабас для студийной сольной записи",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-studiynoy-solnoy-zapisi/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-igry-v-vysokih-pozitsiyah",
+      "title": "Контрабас для игры в высоких позициях",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-igry-v-vysokih-pozitsiyah/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "perehod-s-violoncheli-na-kontrabas",
+      "title": "Переход с виолончели на контрабас",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/perehod-s-violoncheli-na-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-konkursa-ispolniteley",
+      "title": "Контрабас для конкурса исполнителей",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-konkursa-ispolniteley/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vozvraschenie-k-kontrabasu-posle-dolgogo-pereryva",
+      "title": "Возвращение к контрабасу после долгого перерыва",
+      "group": "Исполнительские ситуации",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vozvraschenie-k-kontrabasu-posle-dolgogo-pereryva/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vybrat-struny-dlya-kontrabasa",
+      "title": "Выбрать струны для контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vybrat-struny-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "struny-dlya-orkestrovogo-kontrabasa",
+      "title": "Струны для оркестрового контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/struny-dlya-orkestrovogo-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "struny-dlya-dzhaza-na-kontrabase",
+      "title": "Струны для джаза на контрабасе",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/struny-dlya-dzhaza-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "struny-dlya-solnogo-stroya-kontrabasa",
+      "title": "Струны для сольного строя контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/struny-dlya-solnogo-stroya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "solnyy-i-orkestrovyy-stroy-kontrabasa",
+      "title": "Сольный и оркестровый строй контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/solnyy-i-orkestrovyy-stroy-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kanifol-dlya-kontrabasnogo-smychka",
+      "title": "Канифоль для контрабасного смычка",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kanifol-dlya-kontrabasnogo-smychka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-smychok-dlya-kontrabasa",
+      "title": "Купить смычок для контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-smychok-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "nemetskiy-ili-frantsuzskiy-kontrabasnyy-smychok",
+      "title": "Немецкий или французский контрабасный смычок",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/nemetskiy-ili-frantsuzskiy-kontrabasnyy-smychok/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabasnyy-smychok-dlya-nachinayuschego",
+      "title": "Контрабасный смычок для начинающего",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabasnyy-smychok-dlya-nachinayuschego/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "smychok-dlya-orkestrovoy-igry",
+      "title": "Смычок для оркестровой игры",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/smychok-dlya-orkestrovoy-igry/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-vybrat-ves-kontrabasnogo-smychka",
+      "title": "Как выбрать вес контрабасного смычка",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-vybrat-ves-kontrabasnogo-smychka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "balans-smychka-dlya-kontrabasa",
+      "title": "Баланс смычка для контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/balans-smychka-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "volos-smychka-i-nachalo-zvuka",
+      "title": "Волос смычка и начало звука",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/volos-smychka-i-nachalo-zvuka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-uhazhivat-za-kontrabasnym-smychkom",
+      "title": "Как ухаживать за контрабасным смычком",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-uhazhivat-za-kontrabasnym-smychkom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "smychok-ploho-derzhit-kanifol",
+      "title": "Смычок плохо держит канифоль",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/smychok-ploho-derzhit-kanifol/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "pereyti-na-drugie-struny-kontrabasa",
+      "title": "Перейти на другие струны контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/pereyti-na-drugie-struny-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "struny-dlya-starinnogo-kontrabasa",
+      "title": "Струны для старинного контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/struny-dlya-starinnogo-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "zvukosnimatel-dlya-kontrabasa",
+      "title": "Звукосниматель для контрабаса",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/zvukosnimatel-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-podklyuchit-kontrabas-k-usilitelyu",
+      "title": "Как подключить контрабас к усилителю",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-podklyuchit-kontrabas-k-usilitelyu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabasnye-struny-dlya-pitstsikato-i-smychka",
+      "title": "Контрабасные струны для пиццикато и смычка",
+      "group": "Струны, смычки и звук",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabasnye-struny-dlya-pitstsikato-i-smychka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "chehol-dlya-kontrabasa",
+      "title": "Чехол для контрабаса",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/chehol-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-vybrat-chehol-dlya-kontrabasa",
+      "title": "Как выбрать чехол для контрабаса",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-vybrat-chehol-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "telezhka-dlya-kontrabasa",
+      "title": "Тележка для контрабаса",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/telezhka-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "perevozka-kontrabasa-v-avtomobile",
+      "title": "Перевозка контрабаса в автомобиле",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/perevozka-kontrabasa-v-avtomobile/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "perevozka-kontrabasa-samoletom",
+      "title": "Перевозка контрабаса самолётом",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/perevozka-kontrabasa-samoletom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "perevozka-kontrabasa-poezdom",
+      "title": "Перевозка контрабаса поездом",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/perevozka-kontrabasa-poezdom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "hranenie-kontrabasa-doma",
+      "title": "Хранение контрабаса дома",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/hranenie-kontrabasa-doma/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "vlazhnost-dlya-kontrabasa-zimoy",
+      "title": "Влажность для контрабаса зимой",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/vlazhnost-dlya-kontrabasa-zimoy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-posle-smeny-temperatury",
+      "title": "Контрабас после смены температуры",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-posle-smeny-temperatury/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "stoyka-dlya-kontrabasa",
+      "title": "Стойка для контрабаса",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/stoyka-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-perenosit-kontrabas-po-lestnitse",
+      "title": "Как переносить контрабас по лестнице",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-perenosit-kontrabas-po-lestnitse/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "shpil-dlya-kontrabasa",
+      "title": "Шпиль для контрабаса",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/shpil-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "podstavka-dlya-hraneniya-kontrabasa",
+      "title": "Подставка для хранения контрабаса",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/podstavka-dlya-hraneniya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "futlyar-dlya-kontrabasnogo-smychka",
+      "title": "Футляр для контрабасного смычка",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/futlyar-dlya-kontrabasnogo-smychka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-na-vyezdnoy-repetitsii",
+      "title": "Контрабас на выездной репетиции",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-na-vyezdnoy-repetitsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-na-ulitse-zimoy",
+      "title": "Контрабас на улице зимой",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-na-ulitse-zimoy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-kino-i-semok",
+      "title": "Контрабас для кино и съёмок",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-kino-i-semok/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-na-tesnoy-stsene",
+      "title": "Контрабас на тесной сцене",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-na-tesnoy-stsene/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-izmerit-kontrabas-dlya-chehla",
+      "title": "Как измерить контрабас для чехла",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-izmerit-kontrabas-dlya-chehla/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-dlya-dlitelnyh-poezdok",
+      "title": "Контрабас для длительных поездок",
+      "group": "Хранение и перевозка",
+      "root_id": "R-equipment",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-dlya-dlitelnyh-poezdok/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "starinnyy-kontrabas-bez-etiketki",
+      "title": "Старинный контрабас без этикетки",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/starinnyy-kontrabas-bez-etiketki/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "opredelit-mastera-kontrabasa-po-fotografii",
+      "title": "Определить мастера контрабаса по фотографии",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/opredelit-mastera-kontrabasa-po-fotografii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "etiketka-vnutri-kontrabasa",
+      "title": "Этикетка внутри контрабаса",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/etiketka-vnutri-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "nomer-kontrabasa-v-kollektsii",
+      "title": "Номер контрабаса в коллекции",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/nomer-kontrabasa-v-kollektsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "istoriya-restavratsiy-kontrabasa",
+      "title": "История реставраций контрабаса",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/istoriya-restavratsiy-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "moskovskie-mastera-kontrabasov",
+      "title": "Московские мастера контрабасов",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/moskovskie-mastera-kontrabasov/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "italyanskiy-kontrabas-proishozhdenie",
+      "title": "Итальянский контрабас: происхождение",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/italyanskiy-kontrabas-proishozhdenie/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "nemetskiy-kontrabas-istoriya-i-konstruktsiya",
+      "title": "Немецкий контрабас: история и конструкция",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/nemetskiy-kontrabas-istoriya-i-konstruktsiya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "cheshskiy-manufakturnyy-kontrabas",
+      "title": "Чешский мануфактурный контрабас",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/cheshskiy-manufakturnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "fabrichnyy-kontrabas-nachala-xx-veka",
+      "title": "Фабричный контрабас начала XX века",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/fabrichnyy-kontrabas-nachala-xx-veka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-neizvestnogo-goda-izgotovleniya",
+      "title": "Контрабас неизвестного года изготовления",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-neizvestnogo-goda-izgotovleniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "frantsuzskiy-kontrabas-masterskaya-traditsiya",
+      "title": "Французский контрабас: мастерская традиция",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/frantsuzskiy-kontrabas-masterskaya-traditsiya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "starinnyy-kontrabas-posle-peredelki",
+      "title": "Старинный контрабас после переделки",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/starinnyy-kontrabas-posle-peredelki/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "staraya-etiketka-na-kontrabase",
+      "title": "Старая этикетка на контрабасе",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/staraya-etiketka-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-s-sohranivshimsya-starym-lakom",
+      "title": "Контрабас с сохранившимся старым лаком",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-s-sohranivshimsya-starym-lakom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "starinnyy-kontrabas-s-zamenennym-grifom",
+      "title": "Старинный контрабас с заменённым грифом",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/starinnyy-kontrabas-s-zamenennym-grifom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-s-orkestrovoy-biografiey",
+      "title": "Контрабас с оркестровой биографией",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-s-orkestrovoy-biografiey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "masterskoy-nomer-na-kontrabase",
+      "title": "Мастерской номер на контрабасе",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/masterskoy-nomer-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-sohranit-biografiyu-kontrabasa",
+      "title": "Как сохранить биографию контрабаса",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-sohranit-biografiyu-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-s-istoriey-neskolkih-vladeltsev",
+      "title": "Контрабас с историей нескольких владельцев",
+      "group": "Происхождение и история",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-s-istoriey-neskolkih-vladeltsev/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "volchiy-ton-na-kontrabase",
+      "title": "Волчий тон на контрабасе",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/volchiy-ton-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-stal-zvuchat-gluho",
+      "title": "Контрабас стал звучать глухо",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-stal-zvuchat-gluho/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-zvuchit-slishkom-yarko",
+      "title": "Контрабас звучит слишком ярко",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-zvuchit-slishkom-yarko/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "slabyy-zvuk-na-odnoy-strune-kontrabasa",
+      "title": "Слабый звук на одной струне контрабаса",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/slabyy-zvuk-na-odnoy-strune-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-nerovno-zvuchit-po-registram",
+      "title": "Контрабас неровно звучит по регистрам",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-nerovno-zvuchit-po-registram/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-ne-stroit-v-vysokih-pozitsiyah",
+      "title": "Контрабас не строит в высоких позициях",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-ne-stroit-v-vysokih-pozitsiyah/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "struny-drebezzhat-pri-pitstsikato",
+      "title": "Струны дребезжат при пиццикато",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/struny-drebezzhat-pri-pitstsikato/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-shumit-na-zapisi",
+      "title": "Контрабас шумит на записи",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-shumit-na-zapisi/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "niz-kontrabasa-teryaetsya-v-ansamble",
+      "title": "Низ контрабаса теряется в ансамбле",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/niz-kontrabasa-teryaetsya-v-ansamble/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-ploho-slyshno-v-orkestre",
+      "title": "Контрабас плохо слышно в оркестре",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-ploho-slyshno-v-orkestre/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-ploho-zvuchit-v-malenkoy-komnate",
+      "title": "Контрабас плохо звучит в маленькой комнате",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-ploho-zvuchit-v-malenkoy-komnate/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "silnyy-rezonans-odnoy-noty-kontrabasa",
+      "title": "Сильный резонанс одной ноты контрабаса",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/silnyy-rezonans-odnoy-noty-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "trudno-igrat-tiho-na-kontrabase",
+      "title": "Трудно играть тихо на контрабасе",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/trudno-igrat-tiho-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "trudno-igrat-bystryy-shtrih-na-kontrabase",
+      "title": "Трудно играть быстрый штрих на контрабасе",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/trudno-igrat-bystryy-shtrih-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "zvuk-teryaetsya-v-verhnih-pozitsiyah-kontrabasa",
+      "title": "Звук теряется в верхних позициях контрабаса",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/zvuk-teryaetsya-v-verhnih-pozitsiyah-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "raznye-struny-kontrabasa-zvuchat-neodinakovo",
+      "title": "Разные струны контрабаса звучат неодинаково",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/raznye-struny-kontrabasa-zvuchat-neodinakovo/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-posle-zameny-strun-zvuchit-inache",
+      "title": "Контрабас после замены струн звучит иначе",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-posle-zameny-strun-zvuchit-inache/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-stal-zvuchat-huzhe-posle-nastroyki-podstavki",
+      "title": "Контрабас стал звучать хуже после настройки подставки",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-stal-zvuchat-huzhe-posle-nastroyki-podstavki/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-zvuchit-s-hripom",
+      "title": "Контрабас звучит с хрипом",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-zvuchit-s-hripom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-slishkom-tyazhelyy-dlya-muzykanta",
+      "title": "Контрабас слишком тяжёлый для музыканта",
+      "group": "Звучание и исполнительские препятствия",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-slishkom-tyazhelyy-dlya-muzykanta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-restavratsii",
+      "title": "Купить контрабас после реставрации",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-restavratsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-istoriey-remontov",
+      "title": "Купить контрабас с историей ремонтов",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-istoriey-remontov/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-vozmozhnostyu-povtornoy-proby",
+      "title": "Купить контрабас с возможностью повторной пробы",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-vozmozhnostyu-povtornoy-proby/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-sravneniya-v-masterskoy",
+      "title": "Купить контрабас после сравнения в мастерской",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-sravneniya-v-masterskoy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-bez-predvaritelnogo-video",
+      "title": "Купить контрабас без предварительного видео",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-bez-predvaritelnogo-video/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-ne-znaya-tochnoy-modeli",
+      "title": "Купить контрабас, не зная точной модели",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-ne-znaya-tochnoy-modeli/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-drugoy-menzuroy",
+      "title": "Купить контрабас с другой мензурой",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-drugoy-menzuroy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-smeny-orkestra",
+      "title": "Купить контрабас для смены оркестра",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-smeny-orkestra/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-pered-dlitelnymi-gastrolyami",
+      "title": "Купить контрабас перед длительными гастролями",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-pered-dlitelnymi-gastrolyami/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-po-sovetu-prepodavatelya",
+      "title": "Купить контрабас по совету преподавателя",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-po-sovetu-prepodavatelya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-dlya-prepodavaniya",
+      "title": "Купить контрабас для преподавания",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-dlya-prepodavaniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-neobychnoy-formoy-korpusa",
+      "title": "Купить контрабас с необычной формой корпуса",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-neobychnoy-formoy-korpusa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-pyatistrunnym-diapazonom",
+      "title": "Купить контрабас с пятиструнным диапазоном",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-pyatistrunnym-diapazonom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-dolgogo-poiska",
+      "title": "Купить контрабас после долгого поиска",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-dolgogo-poiska/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-vmesto-remonta-starogo",
+      "title": "Купить контрабас вместо ремонта старого",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-vmesto-remonta-starogo/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-bez-yasnogo-byudzheta",
+      "title": "Купить контрабас без ясного бюджета",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-bez-yasnogo-byudzheta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-igry-na-horoshem-instrumente",
+      "title": "Купить контрабас после игры на хорошем инструменте",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-igry-na-horoshem-instrumente/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-s-proverennoy-istoriey",
+      "title": "Купить контрабас с проверенной историей",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-s-proverennoy-istoriey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-orkestrovogo-proslushivaniya",
+      "title": "Купить контрабас после оркестрового прослушивания",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-orkestrovogo-proslushivaniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-po-vnutrennemu-oschuscheniyu",
+      "title": "Купить контрабас по внутреннему ощущению",
+      "group": "Покупка: обстоятельства и выбор",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-po-vnutrennemu-oschuscheniyu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-kotoryy-esche-ispolzuetsya",
+      "title": "Продать контрабас, который ещё используется",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-kotoryy-esche-ispolzuetsya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-iz-chastnoy-kollektsii",
+      "title": "Продать контрабас из частной коллекции",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-iz-chastnoy-kollektsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-bez-publichnogo-obyavleniya",
+      "title": "Продать контрабас без публичного объявления",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-bez-publichnogo-obyavleniya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-bez-vozmozhnosti-privezti-ego",
+      "title": "Продать контрабас без возможности привезти его",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-bez-vozmozhnosti-privezti-ego/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-nestandartnoy-menzuroy",
+      "title": "Продать контрабас с нестандартной мензурой",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-nestandartnoy-menzuroy/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-pyatistrunnyy-kontrabas",
+      "title": "Продать пятиструнный контрабас",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-pyatistrunnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-nebolshogo-razmera",
+      "title": "Продать контрабас небольшого размера",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-nebolshogo-razmera/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-so-smychkom-i-chehlom",
+      "title": "Продать контрабас со смычком и чехлом",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-so-smychkom-i-chehlom/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-smeny-prepodavatelya",
+      "title": "Продать контрабас после смены преподавателя",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-smeny-prepodavatelya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-neproverennoy-atributsiey",
+      "title": "Продать контрабас с непроверенной атрибуцией",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-neproverennoy-atributsiey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-okonchaniya-orkestrovoy-raboty",
+      "title": "Продать контрабас после окончания оркестровой работы",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-okonchaniya-orkestrovoy-raboty/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-neudachnogo-remonta",
+      "title": "Продать контрабас после неудачного ремонта",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-neudachnogo-remonta/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-redkoy-konstruktsiey",
+      "title": "Продать контрабас с редкой конструкцией",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-redkoy-konstruktsiey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-kotoryy-hochetsya-sohranit",
+      "title": "Продать контрабас, который хочется сохранить",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-kotoryy-hochetsya-sohranit/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-radi-pokupki-drugogo",
+      "title": "Продать контрабас ради покупки другого",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-radi-pokupki-drugogo/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-professionalnoy-zapisi",
+      "title": "Продать контрабас после профессиональной записи",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-professionalnoy-zapisi/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-s-gastrolnoy-istoriey",
+      "title": "Продать контрабас с гастрольной историей",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-s-gastrolnoy-istoriey/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-posle-dorogoy-restavratsii",
+      "title": "Продать контрабас после дорогой реставрации",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-posle-dorogoy-restavratsii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-bez-opredelennogo-sroka",
+      "title": "Продать контрабас без определённого срока",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-bez-opredelennogo-sroka/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "prodat-kontrabas-sohraniv-ego-istoriyu",
+      "title": "Продать контрабас, сохранив его историю",
+      "group": "Продажа: история и выбор маршрута",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-sohraniv-ego-istoriyu/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    }
+  ],
+  "published_pairs": [
+    {
+      "slug": "kupit-masterovoy-kontrabas-v-moskve",
+      "title": "Купить мастеровой контрабас в Москве",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-masterovoy-kontrabas-v-moskve/",
+      "source_status": "published_full_pair",
+      "knowledge_url": "https://ontoslive.github.io/EasyBass.Master/details/masterovoy-kontrabas/",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-moskovskiy-kontrabas-v-moskve",
+      "title": "Купить московский контрабас в Москве",
+      "root_id": "R-relations",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-moskovskiy-kontrabas-v-moskve/",
+      "source_status": "published_full_pair",
+      "knowledge_url": "https://ontoslive.github.io/EasyBass.Master/details/moskovskiy-kontrabas/",
+      "atlas_leaf_id": null
+    }
+  ],
+  "counts": {
+    "standalone": 240,
+    "pairs": 2,
+    "public_documents": 244
+  }
+}

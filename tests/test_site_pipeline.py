@@ -39,7 +39,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["generated_subjects"], 2)
         self.assertEqual(result["generated_pair_pages"], 4)
         self.assertEqual(result["hypotheses_retained"], 60)
-        self.assertEqual(result["standalone_entrances"], 200)
+        self.assertEqual(result["standalone_entrances"], 240)
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
@@ -63,7 +63,7 @@ class PublicationTests(unittest.TestCase):
     def test_prepublication_research_is_not_a_public_offer(self):
         records = inspect_records(ROOT)
         self.assertEqual(len(records), 2)
-        self.assertEqual(len(inspect_entrances(ROOT)), 200)
+        self.assertEqual(len(inspect_entrances(ROOT)), 240)
         self.assertEqual(len(read_json(ROOT / "content/candidates.json")["candidates"]), 60)
         self.assertEqual(audit(ROOT)["errors"], [])
         candidates = read_json(ROOT / "content/candidates.json")["candidates"]
