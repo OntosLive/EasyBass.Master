@@ -1,8 +1,17 @@
-title: ONTOS.DEEP
-description: Глубокий регистр · возбуждение · форма · звук
+title: EasyBassMaster
+description: Мастерская контрабаса · Москва
 baseurl: "/EasyBass.Master"
 url: "https://ontoslive.github.io"
 markdown: kramdown
 permalink: pretty
 exclude:
   - README.md
+  - docs
+  - content
+  - scripts
+  - tests
+  - _audit
+  - .github
+  - requirements-site.txt
+  - requirements-test.txt
+  - node_modules
