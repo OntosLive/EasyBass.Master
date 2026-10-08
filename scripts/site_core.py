@@ -201,6 +201,61 @@ def inspect_knowledge(root: Path, entrances: list[dict], paired: list[dict]) -> 
     return result
 
 
+def inspect_model_publications(root: Path) -> list[dict]:
+    """Only verified manufacturer model IDs gain reference articles, never stock pages."""
+    folder = root / "content/model-publications"
+    if not folder.exists():
+        return []
+    registry = {m["id"]: m for m in read_json(root / "content/model-registry.json")["models"]}
+    used_slug, used_models, result = set(), set(), []
+    for file in sorted(folder.glob("*.json")):
+        data = read_json(file)
+        if data.get("version") != 1:
+            raise ValueError(f"{file.name}: invalid model article schema")
+        for item in data.get("articles", []):
+            id = item.get("model_id", "")
+            slug = item.get("slug", "")
+            if id not in registry or id in used_models or not SLUG.fullmatch(slug) or slug in used_slug:
+                raise ValueError(f"{file.name}: invalid or duplicate verified model")
+            model = registry[id]
+            if model["source_status"] != "official_model_page" or model.get("availability") != "unverified":
+                raise ValueError(f"{file.name}: model is not publication-ready")
+            if item.get("status") != "ready" or not item.get("reviewed") or not item.get("provenance"):
+                raise ValueError(f"{file.name}: unreviewed model article")
+            if model["model_name"] not in item.get("title", "") or not item.get("lead"):
+                raise ValueError(f"{file.name}: exact model identity not retained in title")
+            facts = item.get("facts", [])
+            if len(facts) < 3 or any(
+                not isinstance(fact.get("label"), str) or not isinstance(fact.get("value"), str)
+                for fact in facts
+            ):
+                raise ValueError(f"{file.name}: insufficient attributable official facts")
+            sections = item.get("sections", [])
+            if len(sections) < 3:
+                raise ValueError(f"{file.name}: not a complete model-specific article")
+            words = 0
+            for section in sections:
+                if not section.get("heading") or not section.get("paragraphs"):
+                    raise ValueError(f"{file.name}: section incomplete")
+                for para in section["paragraphs"]:
+                    if len(para.split()) < 18:
+                        raise ValueError(f"{file.name}: thin paragraph")
+                    words += len(para.split())
+            if words < 180:
+                raise ValueError(f"{file.name}: not enough model-specific explanation")
+            sources = item.get("sources", [])
+            if not sources or not any(s.get("url") == model["source"] for s in sources):
+                raise ValueError(f"{file.name}: missing verified manufacturer reference")
+            if any(not s.get("url", "").startswith("https://") for s in sources):
+                raise ValueError(f"{file.name}: invalid source URL")
+            if item.get("availability") is not None or item.get("price") is not None:
+                raise ValueError(f"{file.name}: cannot invent model inventory")
+            used_models.add(id)
+            used_slug.add(slug)
+            result.append(item)
+    return result
+
+
 def heading(doc: dict, name: str) -> str:
     return escape(str(doc[name]))
 
@@ -227,10 +282,12 @@ def contact_from_home(site: Path) -> str:
     return str(block)
 
 
-def frame(p: dict, role: str, content: str, contact: str) -> str:
+def frame(p: dict, role: str, content: str, contact: str, route_override: str | None = None) -> str:
     access = role == "entry"
     level = "../" if access else "../../"
     route = "/" + (p["entry_slug"] if access else f"details/{p['slug']}") + "/"
+    if route_override:
+        route = route_override
     page_title = p["search_title"] if access else p["editorial_title"]
     desc = p["description"] if access else p["editorial_description"]
     kicker = p["entry_kicker"] if access else p["editorial_kicker"]
@@ -323,13 +380,34 @@ def make_knowledge_article(item: dict, contact: str) -> str:
     return frame(source, "deep", "".join(parts), contact)
 
 
+def make_model_publication(item: dict, contact: str) -> str:
+    spec = "".join('<div><dt>' + escape(f["label"]) + '</dt><dd>'
+                   + escape(f["value"]) + '</dd></div>' for f in item["facts"])
+    body = ('<article class="knowledge-text model-article">'
+            '<dl class="model-facts">' + spec + '</dl>')
+    for section in item["sections"]:
+        body += '<section><h2>' + escape(section["heading"]) + '</h2>'
+        body += "".join('<p>' + escape(paragraph) + '</p>' for paragraph in section["paragraphs"])
+        body += '</section>'
+    body += '</article><details class="knowledge-sources"><summary>Данные изготовителя</summary><ul>'
+    for source in item["sources"]:
+        body += '<li><a rel="noopener noreferrer" href="' + escape(source["url"], quote=True) + '">' + escape(source["title"]) + '</a></li>'
+    body += '</ul></details>'
+    p = {"slug": item["slug"],
+         "editorial_title": item["title"],
+         "editorial_description": item.get("description", item["lead"]),
+         "editorial_kicker": "МОДЕЛЬ · ДАННЫЕ ИЗГОТОВИТЕЛЯ",
+         "editorial_deck": item["lead"]}
+    return frame(p, "deep", body, contact, route_override=f"/models/{item['slug']}/")
+
+
 def write(site: Path, route: str, html: str) -> None:
     file = site / route.strip("/") / "index.html"
     file.parent.mkdir(parents=True, exist_ok=True)
     file.write_text(html, encoding="utf-8")
 
 
-def archive_index(site: Path, pages: list[dict], entrances: list[dict], knowledge: list[dict]) -> None:
+def archive_index(site: Path, pages: list[dict], entrances: list[dict], knowledge: list[dict], models: list[dict]) -> None:
     path = site / "archive/index.html"
     text = path.read_text(encoding="utf-8")
     token = "<!-- GENERATED_SUBJECT_INDEX -->"
@@ -356,6 +434,15 @@ def archive_index(site: Path, pages: list[dict], entrances: list[dict], knowledg
         generated += ('<section class="archive-list" aria-label="Большие предметные статьи">'
                       '<p class="issue-kicker">ИССЛЕДОВАНИЯ · ПРЕДМЕТНОЕ ЗНАНИЕ</p>'
                       + articles + '</section>')
+    if models:
+        model_links = "".join(
+            '<article><h2><a href="' + BASE + '/models/' + escape(m["slug"]) + '/">'
+            + escape(m["title"]) + '</a></h2><p>' + escape(m["lead"]) + '</p></article>'
+            for m in models
+        )
+        generated += ('<section class="archive-list" aria-label="Каталог подтверждённых моделей">'
+                      '<p class="issue-kicker">МОДЕЛИ · ПЕРВОИСТОЧНИКИ</p>'
+                      + model_links + '</section>')
     if entrances:
         grouped = {}
         for item in entrances:
@@ -425,6 +512,7 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
     by_slug = {p["slug"]: p for p in pages}
     entrances = inspect_entrances(root, pages)
     knowledge = inspect_knowledge(root, entrances, pages)
+    models = inspect_model_publications(root)
     by_entrance = {item["entrance_slug"]: item for item in knowledge}
     contact = contact_from_home(site)
     for p in pages:
@@ -434,19 +522,23 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
         write(site, "/" + item["slug"] + "/", make_standalone_entrance(item, contact, by_entrance))
     for item in knowledge:
         write(site, "/details/" + item["slug"] + "/", make_knowledge_article(item, contact))
-    archive_index(site, pages, entrances, knowledge)
+    for item in models:
+        write(site, "/models/" + item["slug"] + "/", make_model_publication(item, contact))
+    archive_index(site, pages, entrances, knowledge, models)
     urls = canonicals_and_sitemap(site)
     return {
         "generated_subjects": len(pages),
         "generated_pair_pages": 2 * len(pages),
         "standalone_entrances": len(entrances),
         "independent_knowledge_articles": len(knowledge),
+        "official_model_articles": len(models),
         "hypotheses_retained": len(read_json(root / "content/candidates.json")["candidates"]),
         "public_documents_in_sitemap": len(urls),
         "site": str(site),
         "source_hash": sha256((root / "content/topics.json").read_bytes()).hexdigest()[:16],
         "entrance_routes": ["/" + p["slug"] + "/" for p in entrances],
         "knowledge_routes": ["/details/" + p["slug"] + "/" for p in knowledge],
+        "model_routes": ["/models/" + p["slug"] + "/" for p in models],
         "pages": [{"slug": p["slug"], "entry": "/" + p["entry_slug"] + "/",
                    "deep": "/details/" + p["slug"] + "/"} for p in pages],
     }
