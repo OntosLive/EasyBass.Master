@@ -224,3 +224,13 @@ footer{
 .contact-icons svg{width:25px;height:25px}
 .contact-icons .max-contact-pending{width:36px;height:36px;font-size:10px;border-color:var(--line)}
 @media(max-width:700px){.master-directions{grid-template-columns:1fr}.master-directions a,.master-directions a+a{border-left:0;padding-left:0!important}.master-directions a:nth-child(n+2){border-top:1px solid var(--line)}.contact-phone{font-size:min(clamp(22px,6.2vw,34px),calc((100cqw - 112px)/8.2))}.contact-icons a,.contact-icons .max-contact-pending{width:30px;height:30px}.contact-icons svg{width:23px;height:23px}}
+
+/* Quiet editorial index; all subject articles are kept in the podshivka. */
+.master-directions>div{display:flex;flex-direction:column;align-items:flex-start;gap:8px;padding:21px 20px 21px 0;font-size:clamp(19px,2.3vw,29px);line-height:1.13}
+.master-directions>div small{font:400 13px/1.4 Arial,sans-serif;color:var(--muted)}
+.master-directions>div+div{border-left:1px solid var(--line);padding-left:20px}
+.archive-list a{text-decoration:none}.archive-list a:hover{text-decoration:underline;text-underline-offset:3px}
+.archive-list article p{color:var(--muted);margin:5px 0 9px}
+.archive-list article>a{font:700 13px/1.4 Arial,sans-serif;letter-spacing:.02em}
+.archive-old-heading{font-size:clamp(25px,3.7vw,40px);margin-top:38px}
+@media(max-width:700px){.master-directions>div+div{border-left:0;border-top:1px solid var(--line);padding-left:0}.master-directions>div{padding:16px 0}}
