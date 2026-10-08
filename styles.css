@@ -269,3 +269,17 @@ footer{
 .archive-group .archive-list h2{font-size:clamp(17px,2vw,25px);line-height:1.15;margin:4px 0}
 .archive-group .archive-list p{font-size:15px;line-height:1.45;margin:6px 0}
 .entrance-question{font-style:italic;border-top:1px solid var(--line);padding-top:20px;margin-top:28px!important;color:var(--paper)!important}
+
+/* N.1 editorial articles: sober reading rhythm, source documentation after text. */
+.knowledge-text{max-width:860px;margin:26px 0 38px}
+.knowledge-text>section{padding:19px 0 17px;border-top:1px solid var(--line)}
+.knowledge-text>section:first-child{border-top:4px solid var(--paper)}
+.knowledge-text h2{font-size:clamp(27px,3.1vw,40px);line-height:1.05;letter-spacing:-.02em;margin:5px 0 15px}
+.knowledge-text p{font-size:clamp(18px,2vw,23px);line-height:1.47;color:var(--paper);margin:0 0 15px}
+.knowledge-text p:last-child{margin-bottom:0}
+.knowledge-sources{border-top:1px solid var(--line);border-bottom:1px solid var(--line);margin:26px 0 38px;padding:10px 0;color:var(--muted)}
+.knowledge-sources summary{cursor:pointer;font:600 12px/1.4 Arial,sans-serif;letter-spacing:.1em;text-transform:uppercase}
+.knowledge-sources ul{padding-left:24px;margin:16px 0;font:14px/1.5 Arial,sans-serif}
+.knowledge-sources li+li{margin-top:10px}
+.knowledge-sources a{text-decoration:underline;text-underline-offset:3px}
+@media(max-width:760px){.knowledge-text>section{padding:18px 0}.knowledge-text h2{font-size:clamp(24px,7vw,33px)}}
