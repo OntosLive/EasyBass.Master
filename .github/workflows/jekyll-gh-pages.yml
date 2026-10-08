@@ -41,6 +41,8 @@ jobs:
         run: python scripts/site_core.py --site _site --report _audit/build.json
       - name: Validate complete public artifact
         run: python scripts/validate_site.py --site _site --output _audit/validation.json
+      - name: Check real browser layout at 390 and 1366 pixels
+        run: python scripts/visual_smoke.py --site _site --output _audit/screens
       - name: Save diagnostic reports
         if: always()
         uses: actions/upload-artifact@v4
