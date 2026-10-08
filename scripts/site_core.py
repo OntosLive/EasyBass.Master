@@ -351,7 +351,7 @@ def make_deep(p: dict, by_slug: dict[str, dict], contact: str) -> str:
     return frame(p, "deep", content, contact)
 
 
-def make_knowledge_article(item: dict, contact: str) -> str:
+def make_knowledge_article(item: dict, contact: str, entrance_names: dict[str, str]) -> str:
     """Use the same sober publication frame, with sectioned real editorial text."""
     slug = item["slug"]
     source = {
@@ -375,7 +375,7 @@ def make_knowledge_article(item: dict, contact: str) -> str:
                          f'{escape(source_item["title"])}</a></li>')
         parts.append('</ul></details>')
     links = [(f"../../{item['entrance_slug']}/", "Вернуться к вопросу")]
-    links += [(f"../../{target}/", target.replace("-", " ")) for target in item.get("related", [])]
+    links += [(f"../../{target}/", entrance_names[target]) for target in item.get("related", [])]
     parts.append(nav(links))
     return frame(source, "deep", "".join(parts), contact)
 
@@ -514,6 +514,7 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
     knowledge = inspect_knowledge(root, entrances, pages)
     models = inspect_model_publications(root)
     by_entrance = {item["entrance_slug"]: item for item in knowledge}
+    entrance_names = {item["slug"]: item["search_title"] for item in entrances}
     contact = contact_from_home(site)
     for p in pages:
         write(site, "/" + p["entry_slug"] + "/", make_entry(p, contact))
@@ -521,7 +522,7 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
     for item in entrances:
         write(site, "/" + item["slug"] + "/", make_standalone_entrance(item, contact, by_entrance))
     for item in knowledge:
-        write(site, "/details/" + item["slug"] + "/", make_knowledge_article(item, contact))
+        write(site, "/details/" + item["slug"] + "/", make_knowledge_article(item, contact, entrance_names))
     for item in models:
         write(site, "/models/" + item["slug"] + "/", make_model_publication(item, contact))
     archive_index(site, pages, entrances, knowledge, models)
