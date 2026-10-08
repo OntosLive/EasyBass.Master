@@ -92,6 +92,20 @@ def audit(root: Path = ROOT) -> dict:
     if any(item.get("atlas_leaf_id") for item in coverage["published_entrances"]):
         errors.append("unverified coverage link masquerades as confirmed research review")
 
+    knowledge = []
+    for file in sorted((root / "content/knowledge").glob("*.json")):
+        knowledge.extend(read(file)["articles"])
+    models_ready = []
+    for file in sorted((root / "content/model-publications").glob("*.json")):
+        models_ready.extend(read(file)["articles"])
+    if {a["slug"] for a in knowledge} != {a["slug"] for a in coverage.get("published_knowledge", [])}:
+        errors.append("Editor-reviewed knowledge pages missing or extraneous in coverage")
+    if {a["model_id"] for a in models_ready} != {a["model_id"] for a in coverage.get("published_models", [])}:
+        errors.append("Manufacturer model publications missing or extraneous in coverage")
+    if any(a.get("stock") is not None or a.get("price") is not None for a in coverage.get("published_models", [])):
+        errors.append("Model catalog cannot be confused with actual stock")
+    if len({a["entrance_slug"] for a in knowledge}) != len(knowledge):
+        errors.append("One search entrance maps to multiple full knowledge pages")
     expected = {
         "roots": len(seeds["categories"]),
         "scenes": scene_count,
@@ -119,6 +133,8 @@ def audit(root: Path = ROOT) -> dict:
         "all_research_leaf_nodes": atlas["totals"]["total_research_leaves"],
         "mapped_published_entrances": len(existing),
         "mapped_published_pairs": len(paired),
+        "mapped_knowledge_pages": len(knowledge),
+        "mapped_manufacturer_pages": len(models_ready),
         "source_catalog_is_not_stock": True,
         "errors": errors[:100]
     }
