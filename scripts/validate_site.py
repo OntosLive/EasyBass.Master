@@ -106,7 +106,13 @@ def validate(site: Path, root: Path = ROOT) -> dict:
                 errors.append(f"{route}: edited entrance title differs from source")
             if not d.select_one(".entrance-question"):
                 errors.append(f"{route}: no meaningful final question")
-            if d.select_one('.master-links'):
+            contextual = [e for e in essays if e["entrance_slug"] == entry["slug"]]
+            navlinks = d.select(".master-links a[href]")
+            if contextual:
+                target = f"../details/{contextual[0]['slug']}/"
+                if len(navlinks) != 1 or navlinks[0].get("href") != target:
+                    errors.append(f"{route}: expected one editorial continuation, not a menu")
+            elif navlinks:
                 errors.append(f"{route}: invented navigation instead of a direct relationship")
     for essay in essays:
         route = f"/details/{essay['slug']}/"
