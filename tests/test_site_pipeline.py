@@ -39,7 +39,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["generated_subjects"], 2)
         self.assertEqual(result["generated_pair_pages"], 4)
         self.assertEqual(result["hypotheses_retained"], 60)
-        self.assertIn(b"Пространство", (self.site / "index.html").read_bytes())
+        self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
