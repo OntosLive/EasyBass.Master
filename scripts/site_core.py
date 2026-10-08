@@ -141,6 +141,66 @@ def inspect_entrances(root: Path, paired: list[dict] | None = None) -> list[dict
     return ready
 
 
+def inspect_knowledge(root: Path, entrances: list[dict], paired: list[dict]) -> list[dict]:
+    """Independent, source-aware N.1 editorial essays attached to existing N.0."""
+    d = root / "content/knowledge"
+    if not d.exists():
+        return []
+    entry_map = {p["slug"]: p for p in entrances}
+    occupied = {p["slug"] for p in paired}
+    result = []
+    titles = set()
+    subjects = set()
+    for file in sorted(d.glob("*.json")):
+        source = read_json(file)
+        if source.get("version") != 1:
+            raise ValueError(f"{file.name}: unsupported essay format")
+        for item in source.get("articles", []):
+            slug = item.get("slug", "")
+            target = item.get("entrance_slug", "")
+            if not SLUG.fullmatch(slug) or slug in occupied:
+                raise ValueError(f"Duplicate or invalid knowledge slug: {slug}")
+            if target not in entry_map or target in subjects:
+                raise ValueError(f"{slug}: missing or already-claimed entrance {target}")
+            if item.get("status") != "ready" or not item.get("reviewed"):
+                raise ValueError(f"{slug}: cannot publish an unreviewed essay")
+            if not item.get("provenance") or not item.get("title") or not item.get("lead"):
+                raise ValueError(f"{slug}: missing provenance, title or lead")
+            if norm(item["title"]) == norm(entry_map[target]["search_title"]):
+                raise ValueError(f"{slug}: knowledge H1 is identical to commercial H1")
+            if norm(item["title"]) in titles:
+                raise ValueError(f"{slug}: repeated knowledge title")
+            if len(item["title"]) > 120 or len(item["lead"]) > 250:
+                raise ValueError(f"{slug}: excessively long page title or lead")
+            sections = item.get("sections", [])
+            if len(sections) < 4 or len(sections) > 15:
+                raise ValueError(f"{slug}: substantial independent sections required")
+            section_titles = set()
+            body_words = 0
+            for section in sections:
+                if not section.get("heading") or norm(section["heading"]) in section_titles:
+                    raise ValueError(f"{slug}: repeated or missing section heading")
+                section_titles.add(norm(section["heading"]))
+                if not isinstance(section.get("paragraphs"), list) or not section["paragraphs"]:
+                    raise ValueError(f"{slug}: heading has no content")
+                for para in section["paragraphs"]:
+                    if len(para.split()) < 17 or len(para.split()) > 180:
+                        raise ValueError(f"{slug}: a paragraph is missing or excessively large")
+                    body_words += len(para.split())
+            if body_words < 360:
+                raise ValueError(f"{slug}: fewer than 360 authored words; not substantive")
+            if any(s.get("url", "").startswith(("http://", "")) for s in item.get("sources", [])):
+                raise ValueError(f"{slug}: invalid cited source URL")
+            if item.get("related") is not None:
+                if not isinstance(item["related"], list) or any(x not in entry_map for x in item["related"]):
+                    raise ValueError(f"{slug}: related entrances must exist")
+            occupied.add(slug)
+            titles.add(norm(item["title"]))
+            subjects.add(target)
+            result.append(item)
+    return result
+
+
 def heading(doc: dict, name: str) -> str:
     return escape(str(doc[name]))
 
@@ -206,7 +266,7 @@ def make_entry(p: dict, contact: str) -> str:
     return frame(p, "entry", content, contact)
 
 
-def make_standalone_entrance(p: dict, contact: str) -> str:
+def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | None = None) -> str:
     """A complete contact opening, not a counterfeit abbreviated deep article."""
     source = {
         "entry_slug": p["slug"],
@@ -219,6 +279,9 @@ def make_standalone_entrance(p: dict, contact: str) -> str:
                f'<p>{escape(p["body"])}</p>'
                f'<p class="entrance-question">{escape(p["open_question"])}</p>'
                '</section>')
+    if deeper and p["slug"] in deeper:
+        article = deeper[p["slug"]]
+        content += nav([(f"../details/{article['slug']}/", article["title"])])
     return frame(source, "entry", content, contact)
 
 
@@ -231,13 +294,43 @@ def make_deep(p: dict, by_slug: dict[str, dict], contact: str) -> str:
     return frame(p, "deep", content, contact)
 
 
+def make_knowledge_article(item: dict, contact: str) -> str:
+    """Use the same sober publication frame, with sectioned real editorial text."""
+    slug = item["slug"]
+    source = {
+        "slug": slug,
+        "editorial_title": item["title"],
+        "editorial_description": item.get("description", item["lead"]),
+        "editorial_kicker": item.get("kicker", "КОНТРАБАС · ПРЕДМЕТНОЕ ЗНАНИЕ"),
+        "editorial_deck": item["lead"]
+    }
+    parts = ['<article class="knowledge-text" aria-label="Предметная статья">']
+    for section in item["sections"]:
+        parts.append(f'<section><h2>{escape(section["heading"])}</h2>')
+        parts.extend(f'<p>{escape(para)}</p>' for para in section["paragraphs"])
+        parts.append('</section>')
+    parts.append('</article>')
+    if item.get("sources"):
+        parts.append('<details class="knowledge-sources"><summary>Документы и источники</summary><ul>')
+        for source_item in item["sources"]:
+            parts.append(f'<li><a href="{escape(source_item["url"], quote=True)}" '
+                         'rel="noopener noreferrer">'
+                         f'{escape(source_item["title"])}</a></li>')
+        parts.append('</ul></details>')
+    links = [(f"../../{item['entrance_slug']}/", "Вернуться к вопросу")]
+    links += [(f"../../{slug}/", "") for slug in []]
+    links += [(f"../../{target}/", target.replace("-", " ")) for target in item.get("related", [])]
+    parts.append(nav(links))
+    return frame(source, "deep", "".join(parts), contact)
+
+
 def write(site: Path, route: str, html: str) -> None:
     file = site / route.strip("/") / "index.html"
     file.parent.mkdir(parents=True, exist_ok=True)
     file.write_text(html, encoding="utf-8")
 
 
-def archive_index(site: Path, pages: list[dict], entrances: list[dict]) -> None:
+def archive_index(site: Path, pages: list[dict], entrances: list[dict], knowledge: list[dict]) -> None:
     path = site / "archive/index.html"
     text = path.read_text(encoding="utf-8")
     token = "<!-- GENERATED_SUBJECT_INDEX -->"
@@ -256,6 +349,14 @@ def archive_index(site: Path, pages: list[dict], entrances: list[dict]) -> None:
     generated = ('<section class="archive-list" aria-label="Предметная подшивка">'
                  '<p class="issue-kicker">КОНТРАБАСЫ · ПОДШИВКА</p>'
                  + "".join(entries) + '</section>')
+    if knowledge:
+        articles = "".join(
+            '<article><h2><a href="' + BASE + '/details/' + escape(a["slug"]) + '/">'
+            + escape(a["title"]) + '</a></h2><p>' + escape(a["lead"]) + '</p></article>'
+            for a in knowledge)
+        generated += ('<section class="archive-list" aria-label="Большие предметные статьи">'
+                      '<p class="issue-kicker">ИССЛЕДОВАНИЯ · ПРЕДМЕТНОЕ ЗНАНИЕ</p>'
+                      + articles + '</section>')
     if entrances:
         grouped = {}
         for item in entrances:
@@ -324,23 +425,29 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
     pages = inspect_records(root)
     by_slug = {p["slug"]: p for p in pages}
     entrances = inspect_entrances(root, pages)
+    knowledge = inspect_knowledge(root, entrances, pages)
+    by_entrance = {item["entrance_slug"]: item for item in knowledge}
     contact = contact_from_home(site)
     for p in pages:
         write(site, "/" + p["entry_slug"] + "/", make_entry(p, contact))
         write(site, "/details/" + p["slug"] + "/", make_deep(p, by_slug, contact))
     for item in entrances:
-        write(site, "/" + item["slug"] + "/", make_standalone_entrance(item, contact))
-    archive_index(site, pages, entrances)
+        write(site, "/" + item["slug"] + "/", make_standalone_entrance(item, contact, by_entrance))
+    for item in knowledge:
+        write(site, "/details/" + item["slug"] + "/", make_knowledge_article(item, contact))
+    archive_index(site, pages, entrances, knowledge)
     urls = canonicals_and_sitemap(site)
     return {
         "generated_subjects": len(pages),
         "generated_pair_pages": 2 * len(pages),
         "standalone_entrances": len(entrances),
+        "independent_knowledge_articles": len(knowledge),
         "hypotheses_retained": len(read_json(root / "content/candidates.json")["candidates"]),
         "public_documents_in_sitemap": len(urls),
         "site": str(site),
         "source_hash": sha256((root / "content/topics.json").read_bytes()).hexdigest()[:16],
         "entrance_routes": ["/" + p["slug"] + "/" for p in entrances],
+        "knowledge_routes": ["/details/" + p["slug"] + "/" for p in knowledge],
         "pages": [{"slug": p["slug"], "entry": "/" + p["entry_slug"] + "/",
                    "deep": "/details/" + p["slug"] + "/"} for p in pages],
     }
