@@ -189,7 +189,7 @@ def inspect_knowledge(root: Path, entrances: list[dict], paired: list[dict]) -> 
                     body_words += len(para.split())
             if body_words < 360:
                 raise ValueError(f"{slug}: fewer than 360 authored words; not substantive")
-            if any(s.get("url", "").startswith(("http://", "")) for s in item.get("sources", [])):
+            if any(not source.get("url", "").startswith("https://") for source in item.get("sources", [])):
                 raise ValueError(f"{slug}: invalid cited source URL")
             if item.get("related") is not None:
                 if not isinstance(item["related"], list) or any(x not in entry_map for x in item["related"]):
@@ -318,7 +318,6 @@ def make_knowledge_article(item: dict, contact: str) -> str:
                          f'{escape(source_item["title"])}</a></li>')
         parts.append('</ul></details>')
     links = [(f"../../{item['entrance_slug']}/", "Вернуться к вопросу")]
-    links += [(f"../../{slug}/", "") for slug in []]
     links += [(f"../../{target}/", target.replace("-", " ")) for target in item.get("related", [])]
     parts.append(nav(links))
     return frame(source, "deep", "".join(parts), contact)
