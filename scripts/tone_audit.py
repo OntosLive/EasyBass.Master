@@ -25,9 +25,17 @@ def report(root: Path = ROOT) -> dict:
         doc = json.loads(path.read_text(encoding="utf-8"))
         for entry in doc["entries"]:
             count += 1
-            matches = [m.group(1).lower() for m in PATTERN.finditer(" ".join(
-                (entry["lead"], entry["body"], entry["open_question"])
-            ))]
+            written = " ".join((entry["lead"], entry["body"], entry["open_question"]))
+            matches = []
+            for m in PATTERN.finditer(written):
+                word = m.group(1).lower()
+                # "задача стоит перед вами" and "сколько стоит" are not imperatives.
+                if word == "стоит" and (
+                    written[m.end():].lstrip().lower().startswith("перед ")
+                    or written[:m.start()].rstrip().lower().endswith("сколько")
+                ):
+                    continue
+                matches.append(word)
             if matches:
                 flags.append({"path": path.relative_to(root).as_posix(),
                               "title": entry["search_title"], "terms": matches,
