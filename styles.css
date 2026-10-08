@@ -255,3 +255,17 @@ footer{
   .contact-icons a{width:30px;height:30px}
   .contact-icons svg{width:23px;height:23px}
 }
+
+/* The podshivka holds all entry points, not institutional master pages. */
+.archive-entrances{margin:35px 0 50px;border-top:4px solid var(--paper);padding-top:18px}
+.archive-group{border-bottom:1px solid var(--line)}
+.archive-group summary{list-style:none;cursor:pointer;padding:17px 0;font:700 clamp(18px,2.4vw,26px)/1.22 Georgia,"Times New Roman",serif;display:flex;align-items:baseline;justify-content:space-between;gap:16px}
+.archive-group summary::-webkit-details-marker{display:none}
+.archive-group summary::before{content:"+";font:400 17px Arial,sans-serif;color:var(--signal);margin-right:12px}
+.archive-group[open] summary::before{content:"−"}
+.archive-group summary span{font:600 11px Arial,sans-serif;color:var(--muted);margin-left:auto}
+.archive-group .archive-list{padding:0 0 12px 24px}
+.archive-group .archive-list article{padding:12px 0}
+.archive-group .archive-list h2{font-size:clamp(17px,2vw,25px);line-height:1.15;margin:4px 0}
+.archive-group .archive-list p{font-size:15px;line-height:1.45;margin:6px 0}
+.entrance-question{font-style:italic;border-top:1px solid var(--line);padding-top:20px;margin-top:28px!important;color:var(--paper)!important}

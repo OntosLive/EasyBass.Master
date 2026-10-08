@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
-from site_core import BASE, DOMAIN, PHONE, ROOT, SITEMAP_NS, inspect_records, pretty_route
+from site_core import BASE, DOMAIN, PHONE, ROOT, SITEMAP_NS, inspect_records, inspect_entrances, pretty_route
 
 
 def doc(path: Path) -> BeautifulSoup:
@@ -36,8 +36,10 @@ def local_path(site: Path, relative_url: str, href: str) -> Path | None:
 
 def validate(site: Path, root: Path = ROOT) -> dict:
     ready = inspect_records(root)
+    entries = inspect_entrances(root, ready)
     expected = {f"/{p['entry_slug']}/" for p in ready}
     expected |= {f"/details/{p['slug']}/" for p in ready}
+    expected |= {f"/{e['slug']}/" for e in entries}
     errors, graph = [], defaultdict(set)
     docs = {}
     all_files = sorted(site.rglob("*.html"))
@@ -92,6 +94,16 @@ def validate(site: Path, root: Path = ROOT) -> dict:
                 errors.append(f"{route}: masthead not shared")
             if d.select_one('meta[name="robots"][content*="noindex"]'):
                 errors.append(f"{route}: canonical page accidentally noindex")
+    for entry in entries:
+        route = "/" + entry["slug"] + "/"
+        d = docs.get(route)
+        if d:
+            if not d.h1 or d.h1.get_text(" ", strip=True) != entry["search_title"]:
+                errors.append(f"{route}: edited entrance title differs from source")
+            if not d.select_one(".entrance-question"):
+                errors.append(f"{route}: no meaningful final question")
+            if d.select_one('.master-links'):
+                errors.append(f"{route}: invented navigation instead of a direct relationship")
     archive = docs.get("/archive/")
     if not archive:
         errors.append("Archive missing")
@@ -135,7 +147,8 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     for rule in ("@media(max-width:760px)", ".contact-phone", ".master-directions", ".new-master .issue h1"):
         if rule not in css:
             errors.append(f"Missing responsive CSS contract: {rule}")
-    return {"html_documents": len(all_files), "expected_pair_documents": len(expected),
+    return {"html_documents": len(all_files), "expected_pair_documents": 2 * len(ready),
+            "expected_standalone_entrances": len(entries),
             "sitemap_entries": len(locations), "reachable_pair_documents": len(expected & seen),
             "errors": errors}
 

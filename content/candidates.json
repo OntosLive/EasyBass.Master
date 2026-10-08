@@ -6,8 +6,9 @@
       "id": 1,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Купить контрабас в Москве",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kupit-kontrabas-v-moskve"
     },
     {
       "id": 2,
@@ -27,176 +28,201 @@
       "id": 4,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Купить старинный контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kupit-starinnyy-kontrabas"
     },
     {
       "id": 5,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Купить мануфактурный контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kupit-manufakturnyy-kontrabas"
     },
     {
       "id": 6,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Купить контрабас для оркестра",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kupit-kontrabas-dlya-orkestra"
     },
     {
       "id": 7,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Купить контрабас для джаза",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kupit-kontrabas-dlya-dzhaza"
     },
     {
       "id": 8,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Купить контрабас студенту",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kupit-kontrabas-studentu"
     },
     {
       "id": 9,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Выбрать контрабас с возможностью пробы",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "vybrat-kontrabas-s-vozmozhnostyu-proby"
     },
     {
       "id": 10,
       "group": "Покупка и коллекция",
       "query_hypothesis": "Купить контрабас после аренды",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kupit-kontrabas-posle-arendy"
     },
     {
       "id": 11,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Долгосрочная аренда контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "dolgosrochnaya-arenda-kontrabasa"
     },
     {
       "id": 12,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса для занятий",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-dlya-zanyatiy"
     },
     {
       "id": 13,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса студенту консерватории",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-studentu-konservatorii"
     },
     {
       "id": 14,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса на учебный год",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-na-uchebnyy-god"
     },
     {
       "id": 15,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса перед покупкой",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-pered-pokupkoy"
     },
     {
       "id": 16,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса на время ремонта",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-na-vremya-remonta"
     },
     {
       "id": 17,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса для гастролей",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-dlya-gastroley"
     },
     {
       "id": 18,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда оркестрового контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-orkestrovogo-kontrabasa"
     },
     {
       "id": 19,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса 3/4",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-3-4"
     },
     {
       "id": 20,
       "group": "Аренда и временный доступ",
       "query_hypothesis": "Аренда контрабаса на месяц",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "arenda-kontrabasa-na-mesyats"
     },
     {
       "id": 21,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Продать контрабас в Москве",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "prodat-kontrabas-v-moskve"
     },
     {
       "id": 22,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Оценить контрабас перед продажей",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "otsenit-kontrabas-pered-prodazhey"
     },
     {
       "id": 23,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Выкуп контрабаса мастерской",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "vykup-kontrabasa-masterskoy"
     },
     {
       "id": 24,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Продать мастеровой контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "prodat-masterovoy-kontrabas"
     },
     {
       "id": 25,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Продать старинный контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "prodat-starinnyy-kontrabas"
     },
     {
       "id": 26,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Продать контрабас после обучения",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "prodat-kontrabas-posle-obucheniya"
     },
     {
       "id": 27,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Продать контрабас, требующий ремонта",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "prodat-kontrabas-trebuyuschiy-remonta"
     },
     {
       "id": 28,
       "group": "Выкуп и движение инструмента",
       "query_hypothesis": "Продать контрабас с неизвестным происхождением",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "prodat-kontrabas-s-neizvestnym-proishozhdeniem"
     },
     {
       "id": 29,
@@ -216,211 +242,241 @@
       "id": 31,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Ремонт контрабаса в Москве",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "remont-kontrabasa-v-moskve"
     },
     {
       "id": 32,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Реставрация старинного контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "restavratsiya-starinnogo-kontrabasa"
     },
     {
       "id": 33,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Ремонт трещин деки контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "remont-treschiny-deki-kontrabasa"
     },
     {
       "id": 34,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Восстановление швов контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "otoshel-shov-na-kontrabase"
     },
     {
       "id": 35,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Настройка подставки контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "nastroyka-podstavki-kontrabasa"
     },
     {
       "id": 36,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Установка и регулировка душки",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "ustanovka-i-regulirovka-dushki-kontrabasa"
     },
     {
       "id": 37,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Ремонт и коррекция грифа",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "remont-grifa-kontrabasa"
     },
     {
       "id": 38,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Высота струн и удобство игры",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "vysota-strun-na-kontrabase"
     },
     {
       "id": 39,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Подготовка контрабаса к продаже",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "podgotovka-kontrabasa-k-prodazhe"
     },
     {
       "id": 40,
       "group": "Ремесло и реставрация",
       "query_hypothesis": "Осмотр контрабаса перед покупкой",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "osmotr-kontrabasa-pered-pokupkoy"
     },
     {
       "id": 41,
       "group": "Конструкция и различение",
       "query_hypothesis": "Как выбрать размер контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kak-vybrat-razmer-kontrabasa"
     },
     {
       "id": 42,
       "group": "Конструкция и различение",
       "query_hypothesis": "Контрабас 1/2 или 3/4",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-1-2-ili-3-4"
     },
     {
       "id": 43,
       "group": "Конструкция и различение",
       "query_hypothesis": "Различия контрабасов 3/4 и 4/4",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-3-4-ili-4-4"
     },
     {
       "id": 44,
       "group": "Конструкция и различение",
       "query_hypothesis": "Мензура контрабаса и удобство игры",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "menzura-kontrabasa-i-udobstvo-igry"
     },
     {
       "id": 45,
       "group": "Конструкция и различение",
       "query_hypothesis": "Старинный и современный контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "starinnyy-ili-sovremennyy-kontrabas"
     },
     {
       "id": 46,
       "group": "Конструкция и различение",
       "query_hypothesis": "Мастеровой и мануфактурный контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "masterovoy-ili-manufakturnyy-kontrabas"
     },
     {
       "id": 47,
       "group": "Конструкция и различение",
       "query_hypothesis": "Плоская и выпуклая задняя дека",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "ploskaya-ili-vypuklaya-zadnyaya-deka"
     },
     {
       "id": 48,
       "group": "Конструкция и различение",
       "query_hypothesis": "Четырёхструнный или пятиструнный контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "chetyrehstrunnyy-ili-pyatistrunnyy-kontrabas"
     },
     {
       "id": 49,
       "group": "Конструкция и различение",
       "query_hypothesis": "Проверка состояния контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "proverka-sostoyaniya-kontrabasa"
     },
     {
       "id": 50,
       "group": "Конструкция и различение",
       "query_hypothesis": "Как понять происхождение контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kak-ponyat-proishozhdenie-kontrabasa"
     },
     {
       "id": 51,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Контрабас для первого года обучения",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-dlya-pervogo-goda-obucheniya"
     },
     {
       "id": 52,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Контрабас для музыкального училища",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-dlya-muzykalnogo-uchilischa"
     },
     {
       "id": 53,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Контрабас для поступления в консерваторию",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-dlya-postupleniya-v-konservatoriyu"
     },
     {
       "id": 54,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Контрабас для симфонического оркестра",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-dlya-simfonicheskogo-orkestra"
     },
     {
       "id": 55,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Контрабас для сольной программы",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-dlya-solnoy-programmy"
     },
     {
       "id": 56,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Контрабас для пиццикато и джаза",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "kontrabas-dlya-pitstsikato-i-dzhaza"
     },
     {
       "id": 57,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Смычковый отклик контрабаса",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "smychkovyy-otklik-kontrabasa"
     },
     {
       "id": 58,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Контрабас, который трудно прижимать",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "na-kontrabase-trudno-prizhimat-struny"
     },
     {
       "id": 59,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Переход с учебного на профессиональный контрабас",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "perehod-s-uchebnogo-na-professionalnyy-kontrabas"
     },
     {
       "id": 60,
       "group": "Исполнительские сцены",
       "query_hypothesis": "Знакомство с несколькими контрабасами",
-      "status": "research",
-      "subject_slug": null
+      "status": "entrance",
+      "subject_slug": null,
+      "entrance_slug": "znakomstvo-s-neskolkimi-kontrabasami"
     }
   ]
 }

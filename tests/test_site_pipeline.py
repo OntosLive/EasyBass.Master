@@ -11,7 +11,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from link_audit import audit
-from site_core import DOMAIN, build, inspect_records, read_json
+from site_core import DOMAIN, build, inspect_records, inspect_entrances, read_json
 from validate_site import validate
 
 
@@ -39,6 +39,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["generated_subjects"], 2)
         self.assertEqual(result["generated_pair_pages"], 4)
         self.assertEqual(result["hypotheses_retained"], 60)
+        self.assertEqual(result["standalone_entrances"], 200)
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
@@ -62,8 +63,21 @@ class PublicationTests(unittest.TestCase):
     def test_prepublication_research_is_not_a_public_offer(self):
         records = inspect_records(ROOT)
         self.assertEqual(len(records), 2)
+        self.assertEqual(len(inspect_entrances(ROOT)), 200)
         self.assertEqual(len(read_json(ROOT / "content/candidates.json")["candidates"]), 60)
         self.assertEqual(audit(ROOT)["errors"], [])
+        candidates = read_json(ROOT / "content/candidates.json")["candidates"]
+        self.assertEqual(sum(x["status"] == "entrance" for x in candidates), 56)
+        self.assertEqual(sum(x["status"] == "implemented" for x in candidates), 2)
+        self.assertEqual(sum(x["status"] == "research" for x in candidates), 2)
+
+    def test_no_entry_fabricates_unwritten_knowledge_page(self):
+        build(ROOT, self.site)
+        example = inspect_entrances(ROOT)[0]
+        self.assertTrue((self.site / example["slug"] / "index.html").exists())
+        self.assertFalse((self.site / "details" / example["slug"] / "index.html").exists())
+        self.assertIn(example["search_title"],
+                      (self.site / example["slug"] / "index.html").read_text(encoding="utf-8"))
 
     def test_broken_archive_marker_stops_build(self):
         (self.site / "archive/index.html").write_text("<html><head></head><body></body></html>")

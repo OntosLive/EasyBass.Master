@@ -7,7 +7,7 @@ import json
 from pathlib import Path
 import re
 
-from site_core import ROOT, inspect_records, norm, read_json
+from site_core import ROOT, inspect_records, inspect_entrances, norm, read_json
 
 
 def audit(root: Path = ROOT) -> dict:
@@ -15,6 +15,11 @@ def audit(root: Path = ROOT) -> dict:
     pages = []
     try:
         pages = inspect_records(root)
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        errors.append(str(exc))
+    entrances = []
+    try:
+        entrances = inspect_entrances(root, pages)
     except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
         errors.append(str(exc))
     candidates = read_json(root / "content/candidates.json").get("candidates", [])
@@ -35,7 +40,8 @@ def audit(root: Path = ROOT) -> dict:
     for p in pages:
         if not (root / p["parent"] / "index.html").exists():
             errors.append(f'{p["slug"]}: missing parent page')
-    return {"ready_subjects": len(pages), "hypotheses": len(candidates),
+    return {"ready_subjects": len(pages), "ready_entrances": len(entrances),
+            "hypotheses": len(candidates),
             "hypothesis_repetitions": len(hypotheses) - len(set(hypotheses)),
             "errors": errors}
 
