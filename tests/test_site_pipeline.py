@@ -11,7 +11,7 @@ import unittest
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from link_audit import audit
-from site_core import DOMAIN, build, inspect_records, inspect_entrances, read_json
+from site_core import DOMAIN, build, inspect_records, inspect_entrances, inspect_knowledge, read_json
 from validate_site import validate
 
 
@@ -40,6 +40,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["generated_pair_pages"], 4)
         self.assertEqual(result["hypotheses_retained"], 60)
         self.assertEqual(result["standalone_entrances"], 240)
+        self.assertEqual(result["independent_knowledge_articles"], 8)
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
@@ -78,6 +79,17 @@ class PublicationTests(unittest.TestCase):
         self.assertFalse((self.site / "details" / example["slug"] / "index.html").exists())
         self.assertIn(example["search_title"],
                       (self.site / example["slug"] / "index.html").read_text(encoding="utf-8"))
+
+    def test_knowledge_is_independent_and_both_documents_are_indexable(self):
+        essays = inspect_knowledge(ROOT, inspect_entrances(ROOT), inspect_records(ROOT))
+        self.assertEqual(len(essays), 8)
+        build(ROOT, self.site)
+        for essay in essays:
+            entry = (self.site / essay["entrance_slug"] / "index.html").read_text(encoding="utf-8")
+            deep = (self.site / "details" / essay["slug"] / "index.html").read_text(encoding="utf-8")
+            self.assertIn(essay["title"], deep)
+            self.assertIn('<link rel="canonical" href="' + DOMAIN + "/details/" + essay["slug"] + '/">', deep)
+            self.assertIn("../details/" + essay["slug"] + "/", entry)
 
     def test_broken_archive_marker_stops_build(self):
         (self.site / "archive/index.html").write_text("<html><head></head><body></body></html>")
