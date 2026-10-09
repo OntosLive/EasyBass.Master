@@ -119,7 +119,7 @@ class PublicationTests(unittest.TestCase):
 
     def test_knowledge_is_independent_and_both_documents_are_indexable(self):
         essays = inspect_knowledge(ROOT, inspect_entrances(ROOT), inspect_records(ROOT))
-        self.assertEqual(len(essays), 8)
+        self.assertEqual(len(essays), 11)
         build(ROOT, self.site)
         for essay in essays:
             entry = (self.site / essay["entrance_slug"] / "index.html").read_text(encoding="utf-8")
