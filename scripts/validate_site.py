@@ -11,6 +11,7 @@ import xml.etree.ElementTree as ET
 from bs4 import BeautifulSoup
 
 from site_core import BASE, DOMAIN, PHONE, ROOT, SITEMAP_NS, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, pretty_route
+from sensor_n0 import records as sensor_records
 
 
 def doc(path: Path) -> BeautifulSoup:
@@ -39,11 +40,15 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     entries = inspect_entrances(root, ready)
     essays = inspect_knowledge(root, entries, ready)
     models = inspect_model_publications(root)
+    n0 = sensor_records(root)
+    n0_urls = {p["route"] for p in n0}
+    n0_hubs = {p["hub"] for p in n0} | {"/vhod/"}
     expected = {f"/{p['entry_slug']}/" for p in ready}
     expected |= {f"/details/{p['slug']}/" for p in ready}
     expected |= {f"/{e['slug']}/" for e in entries}
     expected |= {f"/details/{e['slug']}/" for e in essays}
     expected |= {f"/models/{m['slug']}/" for m in models}
+    expected |= n0_urls
     errors, graph = [], defaultdict(set)
     docs = {}
     all_files = sorted(site.rglob("*.html"))
@@ -78,7 +83,7 @@ def validate(site: Path, root: Path = ROOT) -> dict:
                 fragment = urlsplit(href).fragment
                 if fragment and not doc(dest).find(id=fragment):
                     errors.append(f"{route}: missing anchor {href}")
-        if route in expected:
+        if route in expected or route in n0_hubs:
             if len(d.find_all("h1")) != 1:
                 errors.append(f"{route}: one semantic H1 required")
             if len(d.select(".contact-block")) != 1:
@@ -148,6 +153,23 @@ def validate(site: Path, root: Path = ROOT) -> dict:
         if any(token in d.get_text(" ", strip=True).lower() for token in
                ("имеется в наличии", "купить сейчас", "доступен к заказу")):
             errors.append(f"{route}: unverifiable sales claim on reference page")
+    for topic in n0:
+        route = topic["route"]
+        page = docs.get(route)
+        if not page:
+            errors.append(f"Missing scene-question page {route}")
+            continue
+        if not page.h1 or page.h1.get_text(" ", strip=True) != topic["title"]:
+            errors.append(f"{route}: semantic scene/question title lost")
+        if len(page.select(".n0-sensor .entrance-question")) != 1:
+            errors.append(f"{route}: one focused residual question required")
+        if not any(a.get("href") == "../" for a in page.select(".n0-return a[href]")):
+            errors.append(f"{route}: parent family link missing")
+    for route in n0_hubs:
+        if route not in docs:
+            errors.append(f"Missing N.0 family index {route}")
+    if not any(a.get("href", "").endswith("/vhod/") for a in docs.get("/archive/", BeautifulSoup("", "html.parser")).select("a[href]")):
+        errors.append("Archive has no entry to 3290 N.0 questions")
     archive = docs.get("/archive/")
     if not archive:
         errors.append("Archive missing")
@@ -162,7 +184,7 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             continue
         seen.add(route)
         queue.extend(graph[route] - seen)
-    for route in expected:
+    for route in expected | n0_hubs:
         if route not in seen:
             errors.append(f"Unreachable publication: {route}")
     try:
@@ -175,11 +197,16 @@ def validate(site: Path, root: Path = ROOT) -> dict:
         if DOMAIN + route not in locations:
             errors.append(f"{route}: pair missing from sitemap")
     counts = Counter(locations)
+    sitemap_index = set(locations)
+    for route in n0_urls | n0_hubs:
+        if DOMAIN + route not in sitemap_index:
+            errors.append(f"Missing N.0 URL from sitemap: {route}")
     errors += [f"Duplicate sitemap URL: {link}" for link, count in counts.items() if count != 1]
+    existent_urls = {DOMAIN + url for url in docs}
     for loc in locations:
         if not loc or not loc.startswith(DOMAIN + "/"):
             errors.append(f"Foreign sitemap URL: {loc}")
-        if not any(loc == DOMAIN + url for url in docs):
+        if loc not in existent_urls:
             errors.append(f"Sitemap points to missing HTML: {loc}")
     robots = site / "robots.txt"
     if not robots.exists() or DOMAIN + "/sitemap.xml" not in robots.read_text(encoding="utf-8"):
@@ -194,6 +221,8 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     return {"html_documents": len(all_files), "expected_pair_documents": 2 * len(ready),
             "independent_knowledge_articles": len(essays),
             "official_model_articles": len(models),
+            "short_sensor_pages": len(n0),
+            "n0_family_index_pages": len(n0_hubs),
             "expected_standalone_entrances": len(entries),
             "sitemap_entries": len(locations), "reachable_pair_documents": len(expected & seen),
             "errors": errors}
