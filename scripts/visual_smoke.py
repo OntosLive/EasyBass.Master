@@ -15,6 +15,10 @@ ROUTES = [
     ("archive", "archive/index.html"),
     ("collection", "collection/index.html"),
     ("workshop", "workshop/index.html"),
+    ("workshop-maps", "workshop/maps/index.html"),
+    ("repair-map-seams", "details/pochemu-raskleivaetsya-kontrabas-shov-i-treschina/index.html"),
+    ("repair-map-neck", "details/geometriya-grifa-kontrabasa-sheyka-nakladka/index.html"),
+    ("repair-map-inspection", "details/starinnyy-kontrabas-pered-remontom-osmotr-i-istoriya/index.html"),
     ("meeting", "meeting/index.html"),
     ("experience", "experience/index.html"),
     ("delivery", "delivery/index.html"),
@@ -85,10 +89,30 @@ async def run(site: Path, output: Path) -> dict:
                                 raise AssertionError("The bridge must lead into, not follow, the telephone")
                         if name == "sensor-n0" and await page.locator(".entry-modulation").count() != 1:
                             raise AssertionError("The reviewed Musima example needs its own pre-phone modulation")
+                    if name in {"workshop-maps", "repair-map-seams", "repair-map-neck",
+                                "repair-map-inspection"}:
+                        expected = 5 if name == "workshop-maps" else (1 if name == "repair-map-neck" else 2)
+                        image_count = await page.locator(".atlas-figure img").count()
+                        if image_count != expected:
+                            raise AssertionError(f"{name}: expected {expected} valid technical maps, got {image_count}")
+                        ready = await page.locator(".atlas-figure img").evaluate_all(
+                            "(images) => images.every(img => img.complete && img.naturalWidth > 0)"
+                        )
+                        if not ready:
+                            raise AssertionError(f"{name}: an SVG plate failed to load in Chromium")
+                        if width <= 760:
+                            panel = await page.locator(".atlas-pan").first.evaluate(
+                                "(el) => ({client: el.clientWidth, scroll: el.scrollWidth})"
+                            )
+                            if panel["scroll"] <= panel["client"]:
+                                raise AssertionError(f"{name}: mobile maps must scroll rather than shrink labels")
                     overflow = max(0, dims["scroll"] - dims["width"])
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:
                         raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px")
+                    if name == "workshop-maps" and width in (390, 1366):
+                        await page.locator(".atlas-hub-figure").first.screenshot(
+                            path=str(output / f"workshop-maps-{width}.png"))
                     if name in {"home", "archive", "collection", "access", "knowledge", "standalone", "essay", "model", "sensor-n0", "sensor-long", "size-compare", "experience", "delivery"}:
                         await page.screenshot(path=str(output / f"{name}-{width}.png"),
                                               full_page=True)
