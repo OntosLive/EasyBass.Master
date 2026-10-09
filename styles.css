@@ -205,9 +205,6 @@ footer{
 .master-footer{display:flex;justify-content:space-between;gap:14px;border-top:4px solid var(--paper);padding-top:11px;font:700 10px/1.3 Arial,sans-serif;letter-spacing:.13em;text-transform:uppercase;color:var(--muted)}
 @media(max-width:760px){.new-master .mast h1{font-size:min(10vw,58px)}.master-links{grid-template-columns:1fr}.master-links a:nth-child(even){padding-left:0;border-left:0}.master-links a:nth-child(n+2){border-top:1px solid var(--line)}}
 
-/* MAX is visible but not a link until the verified personal profile URL is provided. */
-.contact-icons .max-contact-pending{width:29px;height:29px;display:grid;place-items:center;flex:none;font:700 9px/1 Arial,sans-serif;letter-spacing:-.04em;color:var(--paper);border:1px solid currentColor;border-radius:6px;cursor:default}
-
 /* ONTOS.TIMES editorial surface: flat paper tone, no light effects. */
 .new-master{background:#2d2924}
 .new-master .master-lead{padding-top:48px}
@@ -222,7 +219,6 @@ footer{
 .contact-icons{gap:4px}
 .contact-icons a{width:36px;height:36px}
 .contact-icons svg{width:25px;height:25px}
-.contact-icons .max-contact-pending{width:36px;height:36px;font-size:10px;border-color:var(--line)}
 
 
 /* Quiet editorial index: subject articles live only in the podshivka. */
@@ -540,14 +536,21 @@ footer{
 }
 
 
-/* MAX is a monochrome noninteractive placeholder until a verified profile URL exists. */
-.contact-icons .max-contact-pending{width:29px;height:29px;display:grid;place-items:center;flex:none;cursor:default;color:inherit}
-.contact-icons .max-contact-pending svg{width:18px;height:18px;display:block;fill:none}
+/* MAX uses the same unframed monochrome glyph treatment as Telegram and WhatsApp.
+   Its placeholder is deliberately not clickable until a verified profile URL is provided. */
+.contact-icons .max-contact-pending{
+  width:29px;height:29px;display:grid;place-items:center;flex:none;
+  color:inherit;cursor:default;border:0;border-radius:0;background:transparent;
+  padding:0;margin:0;box-shadow:none;
+}
+.contact-icons .max-contact-pending svg{width:18px;height:18px;display:block;fill:currentColor}
 .new-master .contact-icons .max-contact-pending{width:36px;height:36px}
 .new-master .contact-icons .max-contact-pending svg{width:25px;height:25px}
 .new-master.entry-router .contact-icons .max-contact-pending{width:30px;height:30px}
 .new-master.entry-router .contact-icons .max-contact-pending svg{width:19px;height:19px}
 @media(max-width:700px){
+  .new-master .contact-icons .max-contact-pending{width:30px;height:30px}
+  .new-master .contact-icons .max-contact-pending svg{width:23px;height:23px}
   .new-master.entry-router .contact-icons .max-contact-pending{width:27px;height:27px}
   .new-master.entry-router .contact-icons .max-contact-pending svg{width:18px;height:18px}
 }
