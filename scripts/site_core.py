@@ -300,8 +300,9 @@ def frame(p: dict, role: str, content: str, contact: str, route_override: str | 
     mast = (f'<div class="rule"></div><div class="meta"><a href="{level}">'
             'EASYBASSMASTER</a><span>МОСКВА</span></div>' + ('' if access else brand()))
 
-    # A few ambiguous requests need one genuine human bridge BEFORE the phone.
-    # Never synthesize it for every topic or repeat the full SEO description.
+    # Each N.0 needs one independently written GPT-6 modulation before the phone.
+    # Legacy entries without one remain in an explicit editorial queue.
+    # The compiler must never synthesize words from the SEO description.
     bridge = str(p.get("entry_modulation", "")).strip() if access else ""
     if bridge and (len(bridge) > 160 or "?" in bridge):
         raise ValueError(f"Entry modulation must be one brief assertion: {route}")
@@ -349,7 +350,8 @@ def make_entry(p: dict, contact: str) -> str:
     """A real N.0 newspaper entrance with its already-written N.1 as 'Подробнее'."""
     route = f"/{p['entry_slug']}/"
     source = {**p, "footer_href": f"../details/{p['slug']}/",
-              "footer_label": "Подробнее"}
+              "footer_label": "Подробнее",
+              "entry_modulation": p.get("bridge", "")}
     return frame(source, "entry", route_panel(route), contact)
 
 def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | None = None) -> str:

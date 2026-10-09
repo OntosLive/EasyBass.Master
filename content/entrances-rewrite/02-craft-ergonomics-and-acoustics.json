@@ -13,7 +13,9 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Эргономика и удобство, наш конёк. Дорабатываем гриф под конкретную руку и технику."
+          "bridge": "Гриф можно сделать под вашу руку: вывести профиль, точно обработать накладку и выставить высоту струн для свободной беглой игры.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "grif-kontrabasa-dlya-begloy-igry",
@@ -30,7 +32,9 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Гриф, накладка и высота струн настраиваются под конкретного музыканта."
+          "bridge": "Посадка, профиль грифа и высота струн связаны между собой. Эти детали можно доработать под вашу технику и привычное движение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dorabotka-grifa-kontrabasa-pod-ruku",
@@ -159,7 +163,9 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Удобство высоких позиций можно обсудить на вашем инструменте, в знакомой музыке."
+          "bridge": "Свобода верхних позиций зависит и от грифа, и от формы корпуса. Можно доработать те места, которые мешают движению руки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "neudobno-derzhat-kontrabas-pri-igre",
@@ -302,7 +308,9 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Доработка звука начинается с вашего инструмента и того, как вы на нём играете."
+          "bridge": "Подставка, душка, струны и корпус работают вместе. Их настройкой можно изменить отклик и тембр вашего контрабаса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "akusticheskaya-dorabotka-kontrabasa-dlya-solo",
@@ -327,7 +335,9 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Настройку отклика проверяем на конкретном инструменте, в игре."
+          "bridge": "Тихая атака требует лёгкого ответа струны на смычок. Подставку, душку и комплект струн можно настроить под вашу игру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-tyazhelo-nachinaet-zvuk-smychkom",

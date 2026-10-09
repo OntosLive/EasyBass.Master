@@ -11,7 +11,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "В мастерской можно подобрать размер на реальных инструментах, по руке и привычной технике."
+      "bridge": "Размер удобнее выбирать в игре: как стоит корпус, насколько свободна левая рука и какая мензура подходит. У нас можно сравнить несколько инструментов.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-1-2-ili-3-4",
@@ -22,7 +24,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Размер определим при знакомстве: по руке, посадке и свободе движения, а не одной дроби."
+      "bridge": "Важно, как рука достаёт позиции, как стоит корпус и насколько свободно ребёнку играть. Оба размера можно попробовать рядом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-3-4-ili-4-4",
@@ -33,7 +37,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Сравним конкретные инструменты по звуку, корпусу и удобству игры."
+      "bridge": "Разницу между 3/4 и 4/4 лучше почувствовать в игре: посадка, расстояния под рукой и звук. Можно попробовать оба размера.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "menzura-kontrabasa-i-udobstvo-igry",
@@ -44,7 +50,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Можно сравнить разные мензуры и подобрать удобную геометрию инструмента."
+      "bridge": "Мензура ощущается в расстояниях между позициями. В коллекции можно сравнить контрабасы с разной геометрией под вашу руку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "starinnyy-ili-sovremennyy-kontrabas",
@@ -55,7 +63,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "В коллекции можно познакомиться с инструментами разных эпох и выбрать свой в игре."
+      "bridge": "У каждого старинного и современного контрабаса свой голос и характер под рукой. Инструменты разных эпох можно послушать рядом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "masterovoy-ili-manufakturnyy-kontrabas",
@@ -66,7 +76,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Знакомство с разными традициями изготовления начинается с реальных инструментов."
+      "bridge": "В одной коллекции можно сыграть на фабричных и мастеровых инструментах и почувствовать разницу в звуке и отклике.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "ploskaya-ili-vypuklaya-zadnyaya-deka",
@@ -77,7 +89,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Различия конструкции лучше почувствовать, сыграв на нескольких инструментах."
+      "bridge": "Плоская и выпуклая деки по-разному устроены. Их звучание и ощущения удобнее сравнить на реальных контрабасах.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "chetyrehstrunnyy-ili-pyatistrunnyy-kontrabas",
@@ -88,7 +102,9 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Подбор начинается с вашей музыки: нижний регистр, строй и удобство грифа."
+      "bridge": "Пятая струна добавляет нижний регистр и меняет ощущение грифа. Выбор лучше сделать на вашей музыке, попробовав обе системы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "proverka-sostoyaniya-kontrabasa",

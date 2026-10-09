@@ -83,8 +83,8 @@ async def run(site: Path, output: Path) -> dict:
                             bridgebox = await bridge.bounding_box()
                             if not bridgebox or bridgebox["y"] + bridgebox["height"] >= phone["y"]:
                                 raise AssertionError("The bridge must lead into, not follow, the telephone")
-                        if name == "sensor-n0" and await page.locator(".entry-modulation").count():
-                            raise AssertionError("A clear branded request needs no generic filler")
+                        if name == "sensor-n0" and await page.locator(".entry-modulation").count() != 1:
+                            raise AssertionError("The reviewed Musima example needs its own pre-phone modulation")
                     overflow = max(0, dims["scroll"] - dims["width"])
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:

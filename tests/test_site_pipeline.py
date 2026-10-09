@@ -16,6 +16,7 @@ from site_core import DOMAIN, build, inspect_records, inspect_entrances, inspect
 from entry_router import destination_for_family, destination_for_editorial_group
 from validate_site import validate
 from sensor_n0 import records as sensor_records
+from modulation_audit import audit as modulation_audit
 
 
 class PublicationTests(unittest.TestCase):
@@ -192,17 +193,32 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(old.select(".master-footer a[href]")[-1].get("href"), "../" + dest)
         self.assertEqual(len(archive.select("a[href*='/vhod/']")), 0)
 
-    def test_curated_pre_phone_bridge_only_when_the_request_needs_it(self):
+    def test_request_specific_modulation_before_the_phone(self):
         build(ROOT, self.site)
         page = BeautifulSoup((self.site / "kontrabas-1-2-ili-3-4/index.html").read_text(encoding="utf-8"), "html.parser")
         bridge = page.select_one(".entry-modulation")
         self.assertIsNotNone(bridge)
-        self.assertIn("по руке", bridge.get_text())
+        self.assertIn("рука достаёт позиции", bridge.get_text())
         self.assertLess(str(page).index('class="entry-modulation"'), str(page).index('class="contact-block'))
         musima = BeautifulSoup((self.site / "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html").read_text(encoding="utf-8"), "html.parser")
-        self.assertIsNone(musima.select_one(".entry-modulation"))
+        self.assertIsNotNone(musima.select_one(".entry-modulation"))
         griff = BeautifulSoup((self.site / "vhod/ergonomic-neck/virtuoznyy-grif-dlya-kontrabasa/index.html").read_text(encoding="utf-8"), "html.parser")
-        self.assertIn("наш конёк", griff.select_one(".entry-modulation").get_text())
+        self.assertIn("накладку", griff.select_one(".entry-modulation").get_text())
+        self.assertIn("высоту струн", griff.select_one(".entry-modulation").get_text())
+        self.assertNotIn("наш конёк", griff.select_one(".entry-modulation").get_text())
+
+    def test_all_modulation_debt_is_visible_in_editorial_audit(self):
+        result = modulation_audit(ROOT)
+        expected = len(inspect_records(ROOT)) + len(inspect_entrances(ROOT)) + len(sensor_records(ROOT))
+        self.assertEqual(result["published_n0"], expected)
+        self.assertEqual(result["critical_errors"], [])
+        self.assertGreater(result["individual_gpt6_drafts"], 0)
+        self.assertEqual(
+            result["published_n0"],
+            result["individual_gpt6_drafts"] + result["individual_gpt6_reviewed"] + result["editorial_backlog"]
+        )
+        # Existing indexed N.0 pages remain online while each gets its own GPT-6 text.
+        self.assertGreater(result["editorial_backlog"], 0)
 
     def test_ranges_are_real_editorial_collection_anchors(self):
         from entry_router import RANGES, FACTS

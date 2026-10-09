@@ -13,7 +13,10 @@
           "lead": "Ищете «Музиму»? Обсудим конкретный инструмент, состояние, подготовку к игре и возможность знакомства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У старой «Музимы» важен конкретный экземпляр: звук, гриф и история его настройки. Можно сыграть на инструменте до выбора.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-nemetskiy-kontrabas-muzima",
@@ -643,7 +646,10 @@
           "lead": "Ищете «чеха» без большого бюджета? Можно обсудить реальные экземпляры и их подготовку к занятиям.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У недорогого чешского контрабаса важны звук, состояние корпуса и подготовка грифа. Всё это лучше почувствовать в игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nedorogoy-kontrabas-dlya-dzhaza",
