@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """Report each published N.0 that still needs an individually authored GPT-6 bridge.
 
-A missing modulation is an editorial backlog item, not a reason to silently
-generate text or delete an already indexed URL. --strict is the release gate
-for a future fully reviewed corpus; the existing legacy set is audited.
+Every N.0 must have individually authored copy. The --complete release gate
+requires zero missing entries; --strict additionally requires all entries to
+pass the editorial review state before considering the corpus final.
 """
 from __future__ import annotations
 
@@ -78,6 +78,7 @@ def audit(root: Path = ROOT) -> dict:
         "editorial_backlog": len(missing),
         "missing_sample": missing[:30],
         "critical_errors": issues,
+        "complete": len(missing) == 0 and len(issues) == 0,
         "strict_ready": len(missing) == 0 and len(drafted) == 0 and len(issues) == 0,
         "note": "Model labels are editorial declarations, not proof of an underlying execution engine. Human/LLM substantive review remains necessary.",
     }
@@ -88,12 +89,13 @@ def main() -> None:
     parser.add_argument("--root", type=Path, default=ROOT)
     parser.add_argument("--output", type=Path, default=Path("_audit/modulations.json"))
     parser.add_argument("--strict", action="store_true", help="Require all published N.0 to have reviewed GPT-6 modulation")
+    parser.add_argument("--complete", action="store_true", help="Require an individually written bridge on every published N.0")
     args = parser.parse_args()
     result = audit(args.root)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, ensure_ascii=False, indent=2) + "\n", encoding="utf-8")
     print(json.dumps({k: v for k, v in result.items() if k not in ("missing_sample", "critical_errors", "note")}, ensure_ascii=False))
-    if result["critical_errors"] or (args.strict and not result["strict_ready"]):
+    if result["critical_errors"] or (args.complete and not result["complete"]) or (args.strict and not result["strict_ready"]):
         raise SystemExit(1)
 
 
