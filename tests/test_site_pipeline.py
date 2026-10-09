@@ -12,7 +12,8 @@ from bs4 import BeautifulSoup
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
 from link_audit import audit
-from site_core import DOMAIN, build, group_anchor, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, read_json
+from site_core import DOMAIN, build, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, read_json
+from entry_router import destination_for_family, destination_for_editorial_group
 from validate_site import validate
 from sensor_n0 import records as sensor_records
 
@@ -34,7 +35,7 @@ class PublicationTests(unittest.TestCase):
             'content="width=device-width,initial-scale=1"><title>Подшивка</title>'
             '<link rel="stylesheet" href="../styles.css"></head><body>'
             '<h1>Подшивка</h1><a href="../">Главная</a>'
-            '<!-- GENERATED_SUBJECT_INDEX --><!-- SENSOR_N0_INDEX --></body></html>', encoding="utf-8")
+            '<!-- GENERATED_SUBJECT_INDEX --></body></html>', encoding="utf-8")
 
     def test_full_compilation_preserves_existing_home_and_publishes_only_ready(self):
         original = (self.site / "index.html").read_bytes()
@@ -48,7 +49,8 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["sensor_n0"]["n0_pages"], len(sensor_records(ROOT)))
         self.assertEqual(result["sensor_n0"]["synthetic_cartesian_pages"], 0)
         self.assertGreater(len(sensor_records(ROOT)), 100)
-        self.assertEqual(result["sensor_n0"]["hubs"], len({r["family_id"] for r in sensor_records(ROOT)}) + 1)
+        self.assertEqual(result["sensor_n0"]["hubs"], 0)
+        self.assertTrue(result["sensor_n0"]["closed_entrances"])
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
@@ -140,6 +142,8 @@ class PublicationTests(unittest.TestCase):
             soup = BeautifulSoup(html, "html.parser")
             self.assertEqual(len(soup.select(".entry-range-grid a[href]")), 4)
             self.assertEqual(len(soup.select(".entry-utilities a[href]")), 4)
+            self.assertEqual(len(soup.select(".master-footer a[href]")), 2)
+            self.assertEqual(len(soup.select(".footer-workshop-home[href]")), 1)
             for anchor in ("vremya-proishozhdenie", "uroven", "muzyka", "dostupnost"):
                 self.assertIn("collection/#" + anchor, html)
             self.assertNotIn("showroom/", html)
@@ -162,29 +166,43 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("entry-short", doc.body["class"])
             self.assertIsNone(doc.select_one(".master-lead .deck"))
             self.assertEqual(len(doc.select(".entry-signal,.n0-return,.entry-continuation")), 0)
-            self.assertEqual(len(doc.select(".master-footer a[href]")), 1)
+            self.assertEqual(len(doc.select(".master-footer a[href]")), 2)
+            self.assertNotIn("По теме", doc.get_text(" ", strip=True))
+            self.assertNotIn("↗", doc.select_one(".master-footer").get_text(" ", strip=True))
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
-    def test_nested_directory_and_contextual_archive_links(self):
-        from sensor_n0 import families as authored_families
+    def test_announcements_are_search_only_and_send_visitors_into_the_workshop(self):
         build(ROOT, self.site)
-        root = BeautifulSoup((self.site / "vhod/index.html").read_text(encoding="utf-8"), "html.parser")
-        self.assertEqual(len(root.select(".n0-chapter")), 6)
-        self.assertEqual(len(root.select(".n0-chapter .n0-directory a[href]")), len(authored_families(ROOT)))
-        self.assertEqual(root.select_one(".master-footer a").get("href"), "../archive/")
-        family = BeautifulSoup((self.site / "vhod/familiar-instruments/index.html").read_text(encoding="utf-8"), "html.parser")
-        self.assertTrue(family.select(".n0-directory a[href]"))
-        self.assertEqual(family.select_one(".master-footer a").get("href"), "../")
-        topic = sensor_records(ROOT)[0]
-        page = BeautifulSoup((self.site / topic["route"].strip("/") / "index.html").read_text(encoding="utf-8"), "html.parser")
-        self.assertEqual(page.select_one(".master-footer a").get("href"), "../")
-        deep_slugs = {essay["entrance_slug"] for essay in inspect_knowledge(ROOT, inspect_entrances(ROOT), inspect_records(ROOT))}
-        first = next(item for item in inspect_entrances(ROOT) if item["slug"] not in deep_slugs)
-        old = BeautifulSoup((self.site / first["slug"] / "index.html").read_text(encoding="utf-8"), "html.parser")
-        expected = f"../archive/#{group_anchor(first['group'])}"
-        self.assertEqual(old.select_one(".master-footer a").get("href"), expected)
-        self.assertIsNotNone(BeautifulSoup((self.site / "archive/index.html").read_text(encoding="utf-8"), "html.parser")
-                             .find(id=group_anchor(first["group"])))
+        self.assertFalse((self.site / "vhod/index.html").exists())
+        self.assertFalse((self.site / "vhod/familiar-instruments/index.html").exists())
+        archive = BeautifulSoup((self.site / "archive/index.html").read_text(encoding="utf-8"), "html.parser")
+        self.assertFalse(archive.select(".archive-entrances,.n0-index-link"))
+        self.assertNotIn("/vhod/", str(archive))
+        example = sensor_records(ROOT)[0]
+        ad = BeautifulSoup((self.site / example["route"].strip("/") / "index.html").read_text(encoding="utf-8"), "html.parser")
+        target, label = destination_for_family(example["family_id"])
+        self.assertEqual(ad.select(".master-footer a[href]")[-1].get("href"), "../../../" + target)
+        self.assertEqual(ad.select(".footer-workshop-home")[0].get("href"), "../../../")
+        self.assertEqual(len(ad.select("a[href*='/vhod/'],a[href='../']")), 0)
+        unrelated = next(item for item in inspect_entrances(ROOT)
+                         if item["slug"] not in {essay["entrance_slug"] for essay in
+                         inspect_knowledge(ROOT, inspect_entrances(ROOT), inspect_records(ROOT))})
+        old = BeautifulSoup((self.site / unrelated["slug"] / "index.html").read_text(encoding="utf-8"), "html.parser")
+        dest, label = destination_for_editorial_group(unrelated["group"])
+        self.assertEqual(old.select(".master-footer a[href]")[-1].get("href"), "../" + dest)
+        self.assertEqual(len(archive.select("a[href*='/vhod/']")), 0)
+
+    def test_curated_pre_phone_bridge_only_when_the_request_needs_it(self):
+        build(ROOT, self.site)
+        page = BeautifulSoup((self.site / "kontrabas-1-2-ili-3-4/index.html").read_text(encoding="utf-8"), "html.parser")
+        bridge = page.select_one(".entry-modulation")
+        self.assertIsNotNone(bridge)
+        self.assertIn("по руке", bridge.get_text())
+        self.assertLess(str(page).index('class="entry-modulation"'), str(page).index('class="contact-block'))
+        musima = BeautifulSoup((self.site / "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html").read_text(encoding="utf-8"), "html.parser")
+        self.assertIsNone(musima.select_one(".entry-modulation"))
+        griff = BeautifulSoup((self.site / "vhod/ergonomic-neck/virtuoznyy-grif-dlya-kontrabasa/index.html").read_text(encoding="utf-8"), "html.parser")
+        self.assertIn("наш конёк", griff.select_one(".entry-modulation").get_text())
 
     def test_ranges_are_real_editorial_collection_anchors(self):
         from entry_router import RANGES, FACTS
