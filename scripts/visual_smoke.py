@@ -89,7 +89,7 @@ async def run(site: Path, output: Path) -> dict:
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:
                         raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px")
-                    if name in {"home", "archive", "collection", "access", "knowledge", "standalone", "essay", "model", "sensor-n0", "sensor-long", "size-compare", "experience", "delivery":
+                    if name in {"home", "archive", "collection", "access", "knowledge", "standalone", "essay", "model", "sensor-n0", "sensor-long", "size-compare", "experience", "delivery"}:
                         await page.screenshot(path=str(output / f"{name}-{width}.png"),
                                               full_page=True)
                 await page.close()
