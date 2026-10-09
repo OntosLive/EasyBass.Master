@@ -359,7 +359,8 @@ def frame(p: dict, role: str, content: str, contact: str, route_override: str | 
             f'<title>{escape(page_title)} · EasyBassMaster</title>'
             f'<meta name="description" content="{escape(desc, quote=True)}">'
             f'<link rel="canonical" href="{DOMAIN}{route}">'
-            f'<link rel="stylesheet" href="{level}styles.css"></head>'
+            f'<link rel="stylesheet" href="{level}styles.css">'
+            f'<link rel="stylesheet" href="{level}assets/visual/scene.css"></head>'
             f'<body class="new-master {page_class}">{full}</body></html>')
 
 def nav(items: list[tuple[str, str]]) -> str:
