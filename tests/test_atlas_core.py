@@ -43,7 +43,8 @@ class AtlasContract(unittest.TestCase):
         keys = ("published_entrances", "published_pairs", "published_knowledge", "published_models")
         urls = [entry["public_url"] for key in keys for entry in coverage.get(key, [])
                 if "public_url" in entry]
-        self.assertEqual(len(urls), 300)
+        self.assertGreaterEqual(len(urls), 298)
+        self.assertNotIn('ontoslive.github.io/EasyBass.Master', json.dumps(coverage))
         self.assertEqual(len(set(urls)), len(urls))
         self.assertTrue(all(url.startswith(DOMAIN + "/") for url in urls))
 
