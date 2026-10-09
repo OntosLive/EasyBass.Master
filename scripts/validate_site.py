@@ -190,8 +190,8 @@ def validate(site: Path, root: Path = ROOT) -> dict:
         foot = page.select_one(".master-footer a[href]")
         if foot is None or foot.get("href") != "../":
             errors.append(f"{route}: short announcement must link to its family directory")
-        if not any(a.get("href") == "../" for a in page.select(".n0-return a[href]")):
-            errors.append(f"{route}: parent family link missing")
+        if not any(a.get("href") == "../" for a in page.select(".master-footer a[href]")):
+            errors.append(f"{route}: contextual footer must lead to parent family")
     for route in n0_hubs:
         if route not in docs:
             errors.append(f"Missing N.0 family index {route}")
