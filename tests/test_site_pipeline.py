@@ -159,7 +159,7 @@ class PublicationTests(unittest.TestCase):
                       (self.site / examples[0]).read_text(encoding="utf-8"))
         self.assertEqual(
             BeautifulSoup((self.site / examples[0]).read_text(encoding="utf-8"), "html.parser")
-            .select_one(".master-footer a").get("href"), "../details/masterovoy-kontrabas/")
+            .select(".master-footer a")[-1].get("href"), "../details/masterovoy-kontrabas/")
         for relative in examples:
             doc = BeautifulSoup((self.site / relative).read_text(encoding="utf-8"), "html.parser")
             self.assertTrue(doc.body.has_attr("class"))
