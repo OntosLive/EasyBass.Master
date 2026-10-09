@@ -295,8 +295,13 @@ def contact_from_home(site: Path) -> str:
     for name in ("Telegram", "WhatsApp"):
         if not block.select_one(f'a[aria-label="{name}"] svg'):
             raise ValueError(f"Missing verified {name} contact icon")
-    if block.select_one(".max-contact-pending"):
-        raise ValueError("Disabled MAX markup must not leak into generated pages")
+    if block.select_one('a[aria-label="Telegram"]')["href"] != "https://t.me/+79096945544":
+        raise ValueError("Telegram must open the workshop phone contact")
+    pending = block.select(".max-contact-pending")
+    if len(pending) != 1 or not pending[0].select_one("svg") or pending[0].name != "span":
+        raise ValueError("Exactly one noninteractive MAX placeholder is required")
+    if block.select_one('a[aria-label="MAX"],a[href*="max.ru"]'):
+        raise ValueError("MAX cannot be an active link without a verified profile URL")
     return str(block)
 
 

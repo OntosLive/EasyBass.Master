@@ -538,3 +538,25 @@ footer{
   .atlas-figure figcaption{font-size:12px;padding:11px}
   .atlas-figure figcaption a{white-space:normal}
 }
+
+
+/* MAX is intentionally a visible noninteractive placeholder until a verified link exists. */
+.contact-icons .max-contact-pending{
+  border:0;
+  background:none;
+  border-radius:50%;
+  width:29px;height:29px;
+  display:grid;place-items:center;
+  flex:none;
+  cursor:default;
+  opacity:.88;
+}
+.contact-icons .max-contact-pending svg{width:22px;height:22px;display:block;fill:none}
+.new-master .contact-icons .max-contact-pending{width:36px;height:36px;border:0}
+.new-master .contact-icons .max-contact-pending svg{width:27px;height:27px}
+.new-master.entry-router .contact-icons .max-contact-pending{width:30px;height:30px}
+.new-master.entry-router .contact-icons .max-contact-pending svg{width:21px;height:21px}
+@media(max-width:700px){
+  .new-master.entry-router .contact-icons .max-contact-pending{width:27px;height:27px}
+  .new-master.entry-router .contact-icons .max-contact-pending svg{width:19px;height:19px}
+}
