@@ -45,8 +45,10 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["standalone_entrances"], 282)
         self.assertEqual(result["independent_knowledge_articles"], 8)
         self.assertEqual(result["official_model_articles"], 6)
-        self.assertEqual(result["sensor_n0"]["n0_pages"], 3290)
-        self.assertEqual(result["sensor_n0"]["hubs"], 21)
+        self.assertEqual(result["sensor_n0"]["research_intersections"], 3290)
+        self.assertEqual(result["sensor_n0"]["n0_pages"], 0)
+        self.assertEqual(result["sensor_n0"]["hubs"], 0)
+        self.assertFalse((self.site / "vhod").exists())
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
@@ -108,48 +110,36 @@ class PublicationTests(unittest.TestCase):
             self.assertIn(model["sources"][0]["url"], html)
             self.assertNotIn("в наличии", html.lower())
 
-    def test_3290_short_entries_are_real_pages_with_stable_canonical_and_no_fake_details(self):
+    def test_unreviewed_research_never_creates_a_public_page(self):
         subjects = sensor_records(ROOT)
         self.assertEqual(len(subjects), 3290)
         self.assertEqual(len({s["route"] for s in subjects}), 3290)
-        self.assertTrue(all("?" in s["residual_question"] for s in subjects))
         build(ROOT, self.site)
         for topic in [subjects[0], subjects[len(subjects)//2], subjects[-1]]:
-            filename = self.site / topic["route"].strip("/") / "index.html"
-            self.assertTrue(filename.exists())
-            html = filename.read_text(encoding="utf-8")
-            self.assertIn(topic["title"], html)
-            self.assertIn(DOMAIN + topic["route"], html)
-            self.assertIn("tel:+79096945544", html)
-            self.assertNotIn('href="../../../details/', html)
+            self.assertFalse((self.site / topic["route"].strip("/") / "index.html").exists())
+        self.assertFalse((self.site / "vhod").exists())
+        self.assertNotIn("/vhod/", (self.site / "sitemap.xml").read_text(encoding="utf-8"))
 
-    def test_short_pages_route_to_contact_and_eight_live_site_paths(self):
+    def test_authored_entrances_print_own_body_and_never_show_eight_generic_links(self):
         build(ROOT, self.site)
-        examples = [
+        samples = [
             "kupit-masterovoy-kontrabas-v-moskve/index.html",
             "kupit-kontrabas-v-moskve/index.html",
-            "vhod/buy-entry/pervyy-kontrabas-dlya-rebenka-tochnoe-polozhenie-levoy-ruki/index.html",
         ]
-        # Resolve the generated sensor route from the actual registry.
-        examples[-1] = sensor_records(ROOT)[0]["route"].strip("/") + "/index.html"
-        for relative in examples:
+        for relative in samples:
             html = (self.site / relative).read_text(encoding="utf-8")
             soup = BeautifulSoup(html, "html.parser")
-            self.assertEqual(len(soup.select(".entry-range-grid a[href]")), 4)
-            self.assertEqual(len(soup.select(".entry-utilities a[href]")), 4)
-            for anchor in ("vremya-proishozhdenie", "uroven", "muzyka", "dostupnost"):
-                self.assertIn("collection/#" + anchor, html)
-            self.assertNotIn("showroom/", html)
-            self.assertIn("collection/", html)
-            self.assertIn("delivery/", html)
+            self.assertEqual(len(soup.select(".entry-range-grid a[href]")), 0)
+            self.assertEqual(len(soup.select(".entry-utilities a[href]")), 0)
             self.assertEqual(len(soup.select(".contact-block")), 1)
             self.assertIsNone(soup.select_one(".brand-title"))
             self.assertIsNotNone(soup.select_one(".meta a[href]"))
-            self.assertLess(html.index('class="contact-block'), html.index('class="entry-range-grid'))
             self.assertIn('href="tel:+79096945544"', html)
-            self.assertNotIn("MAX", html)
-        self.assertIn("../details/masterovoy-kontrabas/",
-                      (self.site / examples[0]).read_text(encoding="utf-8"))
+        authored = inspect_entrances(ROOT)[0]
+        html = (self.site / authored["slug"] / "index.html").read_text(encoding="utf-8")
+        soup = BeautifulSoup(html, "html.parser")
+        self.assertEqual(soup.select_one(".entry-authored-body").get_text(" ", strip=True), authored["body"])
+        self.assertEqual(soup.select_one(".entrance-question").get_text(" ", strip=True), authored["open_question"])
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
     def test_ranges_are_real_editorial_collection_anchors(self):
