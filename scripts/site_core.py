@@ -19,6 +19,7 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
+from entry_router import route_panel
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = "https://ontoslive.github.io/EasyBass.Master"
@@ -300,14 +301,15 @@ def frame(p: dict, role: str, content: str, contact: str, route_override: str | 
             f'<p class="issue-kicker">{escape(kicker)}</p>'
             f'<h1>{escape(page_title)}</h1>'
             f'<p class="deck">{escape(p["entry_deck"] if access else p["editorial_deck"])}</p>'
-            '</section>' + content + contact + footer + '</main>')
+            '</section>' + (contact + content if access else content + contact) + footer + '</main>')
+    page_class = 'entry-router' if access else 'deep-editorial'
     return (f'<!doctype html><html lang="ru"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{escape(page_title)} · EasyBassMaster</title>'
             f'<meta name="description" content="{escape(desc, quote=True)}">'
             f'<link rel="canonical" href="{DOMAIN}{route}">'
             f'<link rel="stylesheet" href="{level}styles.css"></head>'
-            f'<body class="new-master">{full}</body></html>')
+            f'<body class="new-master {page_class}">{full}</body></html>')
 
 
 def nav(items: list[tuple[str, str]]) -> str:
@@ -317,15 +319,20 @@ def nav(items: list[tuple[str, str]]) -> str:
 
 
 def make_entry(p: dict, contact: str) -> str:
-    links = [(f"../details/{p['slug']}/", "Подробнее об инструменте"),
-             (f"../{p['parent']}/", "Коллекция" if p["parent"] == "collection" else "Мастерская")]
-    content = (f'<section class="master-text"><p>{escape(p["entry_body"])}</p></section>'
-               + nav(links))
+    """Short transactional signal; the optional knowledge page remains independent."""
+    route = f"/{p['entry_slug']}/"
+    content = (
+        '<section class="entry-signal"><p>'
+        + escape(p["entry_body"]) + '</p></section>'
+        + route_panel(route)
+        + '<p class="entry-continuation"><a href="../details/'
+        + escape(p["slug"], quote=True)
+        + '/">Подробнее об инструменте</a></p>'
+    )
     return frame(p, "entry", content, contact)
 
-
 def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | None = None) -> str:
-    """A complete contact opening, not a counterfeit abbreviated deep article."""
+    """A newspaper opening: one recognizable question, phone, and eight routes."""
     source = {
         "entry_slug": p["slug"],
         "search_title": p["search_title"],
@@ -333,15 +340,20 @@ def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | No
         "entry_kicker": p["group"].upper(),
         "entry_deck": p["lead"],
     }
-    content = ('<section class="master-text">'
-               f'<p>{escape(p["body"])}</p>'
-               f'<p class="entrance-question">{escape(p["open_question"])}</p>'
-               '</section>')
+    route = f"/{p['slug']}/"
+    content = (
+        '<section class="entry-signal"><p class="entrance-question">'
+        + escape(p["open_question"]) + '</p></section>'
+        + route_panel(route)
+    )
     if deeper and p["slug"] in deeper:
         article = deeper[p["slug"]]
-        content += nav([(f"../details/{article['slug']}/", article["title"])])
+        content += (
+            '<p class="entry-continuation"><a href="../details/'
+            + escape(article["slug"], quote=True)
+            + '/">' + escape(article["title"]) + '</a></p>'
+        )
     return frame(source, "entry", content, contact)
-
 
 def make_deep(p: dict, by_slug: dict[str, dict], contact: str) -> str:
     paragraphs = "".join(f'<p>{escape(v)}</p>' for v in p["editorial_paragraphs"])

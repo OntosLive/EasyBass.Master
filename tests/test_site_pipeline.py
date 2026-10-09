@@ -7,6 +7,7 @@ import shutil
 import sys
 import tempfile
 import unittest
+from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
@@ -120,6 +121,28 @@ class PublicationTests(unittest.TestCase):
             self.assertIn(DOMAIN + topic["route"], html)
             self.assertIn("tel:+79096945544", html)
             self.assertNotIn('href="../../../details/', html)
+
+    def test_short_pages_route_to_contact_and_eight_live_site_paths(self):
+        build(ROOT, self.site)
+        examples = [
+            "kupit-masterovoy-kontrabas-v-moskve/index.html",
+            "kupit-kontrabas-v-moskve/index.html",
+            "vhod/buy-entry/pervyy-kontrabas-dlya-rebenka-tochnoe-polozhenie-levoy-ruki/index.html",
+        ]
+        # Resolve the generated sensor route from the actual registry.
+        examples[-1] = sensor_records(ROOT)[0]["route"].strip("/") + "index.html"
+        for relative in examples:
+            html = (self.site / relative).read_text(encoding="utf-8")
+            soup = BeautifulSoup(html, "html.parser")
+            self.assertEqual(len(soup.select(".entry-range-grid a[href]")), 4)
+            self.assertEqual(len(soup.select(".entry-utilities a[href]")), 4)
+            self.assertEqual(len(soup.select(".contact-block")), 1)
+            self.assertLess(html.index('class="contact-block'), html.index('class="entry-range-grid'))
+            self.assertIn('href="tel:+79096945544"', html)
+            self.assertNotIn("MAX", html)
+        self.assertIn("../details/masterovoy-kontrabas/",
+                      (self.site / examples[0]).read_text(encoding="utf-8"))
+        self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
     def test_broken_archive_marker_stops_build(self):
         (self.site / "archive/index.html").write_text("<html><head></head><body></body></html>")

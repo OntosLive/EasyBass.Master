@@ -43,6 +43,7 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     n0 = sensor_records(root)
     n0_urls = {p["route"] for p in n0}
     n0_hubs = {p["hub"] for p in n0} | {"/vhod/"}
+    entry_urls = {f"/{p['entry_slug']}/" for p in ready} | {f"/{e['slug']}/" for e in entries} | n0_urls
     expected = {f"/{p['entry_slug']}/" for p in ready}
     expected |= {f"/details/{p['slug']}/" for p in ready}
     expected |= {f"/{e['slug']}/" for e in entries}
@@ -103,6 +104,21 @@ def validate(site: Path, root: Path = ROOT) -> dict:
                 errors.append(f"{route}: masthead not shared")
             if d.select_one('meta[name="robots"][content*="noindex"]'):
                 errors.append(f"{route}: canonical page accidentally noindex")
+        if route in entry_urls:
+            primary = d.select(".entry-range-grid a[href]")
+            secondary = d.select(".entry-utilities a[href]")
+            if len(primary) != 4 or len(secondary) != 4:
+                errors.append(f"{route}: short router must have 4 + 4 routes")
+            if len(d.select(".contact-block")) == 1 and primary:
+                phone = d.select_one(".contact-block")
+                if not phone or not phone.find_previous("h1"):
+                    errors.append(f"{route}: phone should follow the query headline")
+                if not phone or not phone.find_next("nav", class_="entry-range-grid"):
+                    errors.append(f"{route}: router should follow immediate contact")
+            for a in primary + secondary:
+                target = local_path(site, route, a.get("href", ""))
+                if target and target.exists() and pretty_route(site, target) == route:
+                    errors.append(f"{route}: short router may not self-link")
     for entry in entries:
         route = "/" + entry["slug"] + "/"
         d = docs.get(route)
@@ -112,13 +128,13 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             if not d.select_one(".entrance-question"):
                 errors.append(f"{route}: no meaningful final question")
             contextual = [e for e in essays if e["entrance_slug"] == entry["slug"]]
-            navlinks = d.select(".master-links a[href]")
+            navlinks = d.select(".entry-continuation a[href]")
             if contextual:
                 target = f"../details/{contextual[0]['slug']}/"
                 if len(navlinks) != 1 or navlinks[0].get("href") != target:
-                    errors.append(f"{route}: expected one editorial continuation, not a menu")
+                    errors.append(f"{route}: expected one optional N.1 continuation")
             elif navlinks:
-                errors.append(f"{route}: invented navigation instead of a direct relationship")
+                errors.append(f"{route}: invented N.1 continuation")
     for essay in essays:
         route = f"/details/{essay['slug']}/"
         d = docs.get(route)
