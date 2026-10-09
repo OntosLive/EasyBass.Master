@@ -14,7 +14,7 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "У старой «Музимы» важен конкретный экземпляр: звук, гриф и история его настройки. Можно сыграть на инструменте до выбора.",
+          "bridge": "У каждой старой «Музимы» свой гриф, голос и история настройки. Начать знакомство лучше с конкретного инструмента.",
           "bridge_model": "gpt-6",
           "bridge_status": "gpt6_draft"
         },
@@ -24,7 +24,10 @@
           "lead": "Контрабасы Musima различаются по году и состоянию. В мастерской можно обсудить поиск и знакомство с подходящим экземпляром.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Немецкая «Музима» бывает очень разной в игре. Можно сравнить состояние корпуса, мензуру и отклик, а затем выбрать подходящий экземпляр.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-musima-vremen-gdr",
@@ -32,7 +35,10 @@
           "lead": "Нужен инструмент именно этой производственной традиции? Уточним, какой контрабас интересует, и возможность его осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У инструмента времён ГДР важны не только этикетка и год: после десятилетий игры многое зависит от грифа, деки и прежней настройки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "muzima-dlya-orkestra",
@@ -40,7 +46,10 @@
           "lead": "Если ищете Musima для оркестровой работы, важнее всего сыграть на конкретном экземпляре. Начать можно с разговора с мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для оркестра «Музиму» стоит услышать под смычком: как начинается тихая нота, держится низ и ощущается рука на длинной репетиции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "muzima-dlya-dzhaza",
@@ -48,7 +57,10 @@
           "lead": "Ищете старую «Музиму» для пиццикато? Обсудим настройку, струны и пригодность конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для джазовой «Музимы» важны атака пальцами, высота струн и устойчивый низ. Подготовку можно обсудить вместе с самим контрабасом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-musima-3-4",
@@ -56,7 +68,10 @@
           "lead": "Размер 3/4 ещё не говорит об удобстве отдельной «Музимы». Можно обсудить экземпляры и договориться о пробе.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У Musima 3/4 размер корпуса ещё не рассказывает, как инструмент ложится под руку. Можно сравнить мензуру, гриф и реальный звук.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-musima-4-4",
@@ -64,7 +79,10 @@
           "lead": "Полноразмерная Musima интересует для регулярной игры? Уточним размеры, состояние и возможность знакомства с инструментом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Полноразмерная Musima интересна своим корпусом и нижним регистром. Посадку и удобство стоит оценивать на конкретном инструменте.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vosstanovit-kontrabas-musima",
@@ -72,7 +90,10 @@
           "lead": "Привозите свою «Музиму» в мастерскую. Осмотрим корпус, гриф и настройку, обсудим необходимые работы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старую «Музиму» можно вернуть к полноценной игре: начать с корпуса и швов, затем заняться грифом, подставкой и звуком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroyka-kontrabasa-musima",
@@ -80,7 +101,10 @@
           "lead": "Старая «Музима» может играть совсем иначе после грамотной подготовки. Работаем с конкретным инструментом, а не с этикеткой.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Высота струн, подставка и душка меняют привычное ощущение «Музимы». Настройку можно выполнить под вашу смычковую или джазовую игру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-musima",
@@ -88,7 +112,10 @@
           "lead": "Если у вас Musima, расскажите о её состоянии и истории. Обсудим осмотр и возможный маршрут продажи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если «Музима» меняет владельца, её состояние важнее общего названия фабрики. Инструмент можно показать мастерской и обсудить передачу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenit-kontrabas-musima",
@@ -96,7 +123,10 @@
           "lead": "Прежде чем говорить о стоимости «Музимы», полезно увидеть её нынешнее состояние и прежние ремонты. Можно обратиться в мастерскую.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Стоимость Musima складывается из конкретного корпуса, ремонта и игровой подготовки. Очное знакомство поможет оценить именно ваш инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nemetskiy-kontrabas-iz-gdr",
@@ -104,7 +134,10 @@
           "lead": "Ищете немецкий инструмент советского времени? Обсудим происхождение, возможные экземпляры и знакомство с ними.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У контрабасов из ГДР встречается разная конструкция и сохранность. Поиск можно начать с размеров, звука и работы грифа конкретного экземпляра.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-moskvich-kupit",
@@ -112,7 +145,10 @@
           "lead": "«Москвич» остаётся понятным именем в контрабасной среде. В мастерской можно обсудить покупку конкретного экземпляра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "«Москвич» стоит выбирать не по одному названию. Сравним фабричные инструменты по корпусу, грифу и тому, как они откликаются на игру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "moskovskiy-fabrichnyy-kontrabas",
@@ -120,7 +156,10 @@
           "lead": "Ищете контрабас московской фабрики? Уточним размер, год, состояние и возможность живого сравнения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Московский фабричный контрабас может стать удобным рабочим инструментом после подготовки грифа и подставки. Важен сам экземпляр.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "moskvich-kontrabas-4-4",
@@ -128,7 +167,10 @@
           "lead": "Нужен «Москвич» большого размера? Важны габариты именно выбранного корпуса и подготовка грифа под руку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Большой «Москвич» нужен не всякой руке. Полноразмерный корпус, мензуру и нижний регистр удобнее попробовать в живой игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "moskvich-kontrabas-3-4",
@@ -136,7 +178,10 @@
           "lead": "«Москвич» 3/4 для занятий или работы? Можно обсудить доступные варианты и согласовать знакомство.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "«Москвич» 3/4 можно подобрать и для регулярных занятий, и для ансамбля. Ощущение грифа и звук зависят от его состояния и настройки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "moskvich-s-derevyannymi-dekami",
@@ -144,7 +189,10 @@
           "lead": "Ищете не просто московский фабричный контрабас, а определённую конструкцию? Начнём с осмотра и конкретных экземпляров.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если ищете «Москвич» с массивными деревянными деками, стоит посмотреть конкретный корпус и историю работ, не полагаясь на название.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "moskvich-s-fanernoy-dekoy",
@@ -152,7 +200,10 @@
           "lead": "Фанерный «Москвич» может быть рабочим инструментом после правильной настройки. Обсудим состояние и назначение.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Фанерный «Москвич» тоже может быть хорошим рабочим басом. Гораздо интереснее, насколько свободно он играет после настройки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "moskvich-posle-restavratsii",
@@ -160,7 +211,10 @@
           "lead": "Ищете подготовленный «Москвич»? Можно познакомиться с конкретным инструментом и обсудить выполненные работы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После реставрации «Москвич» может ощутимо измениться в звуке и под руками. Познакомиться стоит именно с результатом работы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-kontrabasa-moskvich",
@@ -168,7 +222,10 @@
           "lead": "Знакомая московская фабрика, незнакомые повреждения. Привозите инструмент на осмотр, определим объём работ.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Трещины, разошедшиеся швы и усталый гриф «Москвича» можно рассматривать вместе: ремонт начинается с состояния всего инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroit-grif-moskvicha",
@@ -176,7 +233,10 @@
           "lead": "Старый гриф может затруднять беглую игру. В мастерской возможна индивидуальная эргономическая работа после осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Гриф старого «Москвича» можно вывести под свободную руку: профиль, накладка, порожек и высота струн работают как одна система.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-moskvich",
@@ -184,7 +244,10 @@
           "lead": "Если решили расстаться с «Москвичом», можно предложить его специализированной мастерской для осмотра и обсуждения условий.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед продажей «Москвича» полезно увидеть состояние деки, грифа и механики. Можно познакомить мастерскую с вашим инструментом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "cheshskiy-kontrabas-kupit",
@@ -192,7 +255,10 @@
           "lead": "Ищете «чеха»? Важно познакомиться с конкретным экземпляром, а не выбирать только по стране изготовления.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Под словом «чех» скрываются разные контрабасы. Состояние конкретного корпуса, настройка и звук скажут больше происхождения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-cheh-3-4",
@@ -200,7 +266,10 @@
           "lead": "Чешский 3/4 для учёбы или профессиональных занятий? Обсудим размеры, мензуру и возможность сравнить инструменты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Чешский 3/4 можно попробовать в привычных позициях: мензура и профиль грифа бывают разными даже при одинаковом обозначении размера.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-cheh-4-4",
@@ -208,7 +277,10 @@
           "lead": "Полноразмерный чешский контрабас нужен для оркестра или джаза? Можно начать с подбора и знакомства в мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У большого чешского контрабаса важны посадка и свобода под смычком. Сравнение экземпляров поможет найти подходящую геометрию.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "cheshskiy-kontrabas-cremona-kupit",
@@ -216,7 +288,10 @@
           "lead": "У чешской Cremona своя фабричная история. Приходите обсуждать конкретные инструменты и их нынешнее состояние.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Чешская Cremona имеет свою фабричную историю, но выбирать лучше ушами и руками. Можно познакомиться с инструментами этого происхождения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-strunal-kupit",
@@ -224,7 +299,10 @@
           "lead": "Ищете Strunal определённой конструкции? Поможем сориентироваться в обозначениях и возможности знакомства с экземпляром.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если ищете Strunal, начнём с нужного размера и конструкции. Название серии имеет смысл проверить на самом экземпляре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-cremona-luby",
@@ -232,7 +310,10 @@
           "lead": "Интересует инструмент из Луб? Уточним историческое название, размер и то, что действительно написано на инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Cremona из Луб встречается в разном состоянии и исполнении. По этикетке можно начать поиск, а выбор продолжить игрой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "strunal-cremona-5-5wa",
@@ -240,7 +321,10 @@
           "lead": "Нужна модель 5/5WA? Обсудим конкретную конфигурацию и возможность подобрать или найти инструмент.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для Strunal/Cremona 5/5WA важно уточнить конкретный выпуск, размер и состояние грифа. Модельное обозначение только начало знакомства.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "strunal-cremona-50-1-d",
@@ -248,7 +332,10 @@
           "lead": "Если ищете 50/1 D, полезно сопоставить индекс модели с реальным инструментом. Для начала достаточно обращения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если интересует Cremona 50/1 D, сравним требуемую конфигурацию с настоящим инструментом и его сегодняшним звуком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-cheshskiy-kontrabas",
@@ -256,7 +343,10 @@
           "lead": "Прежде чем выставлять «чеха» по чужой цене, можно показать его мастерам и обсудить состояние и продажу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Чешский контрабас можно предложить мастерской с его историей: где играл, что ремонтировали и в каком состоянии он сейчас.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-cheshskogo-kontrabasa",
@@ -264,7 +354,10 @@
           "lead": "Привозите чешский инструмент на осмотр. Мастерская работает с конструкцией, акустической настройкой и реставрацией.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Чешскому контрабасу можно вернуть удобство и отклик, занявшись накладкой, подставкой, швами или акустической настройкой по состоянию.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-rubner-kupit",
@@ -272,7 +365,10 @@
           "lead": "Ищете Rubner? Здесь важно понимать, идёт речь об изготовителе корпуса, серии или механике на другом инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В поиске Rubner важно различать изготовителя контрабаса и механику с тем же именем. Для знакомства нужен конкретный инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-otto-rubner",
@@ -280,7 +376,10 @@
           "lead": "Если интересует инструмент Отто Рубнера, обсудим атрибуцию и возможности знакомства с конкретным экземпляром.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабас Otto Rubner стоит рассматривать вместе с его происхождением, корпусом и сохранностью. Подлинный экземпляр важнее легенды.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "rubner-model-62-kontrabas",
@@ -288,7 +387,10 @@
           "lead": "Модель Rubner №62 ищут по имени. Уточним вариант, размер и возможность приобрести или сравнить подходящий инструмент.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У Rubner №62 многое решает конкретное исполнение и его состояние. Знакомство можно начать с размеров и нужной вам музыкальной задачи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "rubner-model-66-kontrabas",
@@ -296,7 +398,10 @@
           "lead": "Интересует Rubner №66? Обсудим именно нужную версию и доступные пути знакомства с инструментом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если ищете Rubner №66, важны не только цифры модели, но и гриф, голос и история ремонта отдельного экземпляра.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "rubner-model-67-kontrabas",
@@ -304,7 +409,10 @@
           "lead": "Для Rubner №67 имеет значение конкретный экземпляр и его состояние. Начнём с уточнения запроса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Rubner №67 интересно услышать в своей программе: под смычком, в низком регистре и при смене позиций.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "rubner-model-68-kontrabas",
@@ -312,7 +420,10 @@
           "lead": "Ищете Rubner №68? Сопоставим обозначение и ваши требования, обсудим возможность знакомства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для Rubner №68 имеет значение конфигурация и подготовка. Поиск можно соотнести с вашим ростом, рукой и репертуаром.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "rubner-model-69-kontrabas",
@@ -320,7 +431,10 @@
           "lead": "Нужен Rubner №69 для серьёзной исполнительской работы? Уточним конфигурацию и возможные предложения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Rubner №69 лучше оценить как конкретный музыкальный инструмент: насколько свободно начинается звук и отвечает гриф.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "pyatistrunnyy-rubner",
@@ -328,7 +442,10 @@
           "lead": "Ищете пятиструнный Rubner? Обсудим диапазон, исполнение и возможность получить инструмент под вашу задачу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пятиструнный Rubner нужен для определённого диапазона. Важны ширина грифа, низкая струна и удобство всей рабочей системы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenit-kontrabas-rubner",
@@ -336,7 +453,10 @@
           "lead": "Если у вас Rubner, можем обсудить очный осмотр и различение марки на механике и изготовителя инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если перед вами Rubner, начнём с атрибуции и состояния. Надпись на механике и происхождение самого контрабаса могут различаться.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-kontrabasa-rubner",
@@ -344,7 +464,10 @@
           "lead": "Профессиональному инструменту нужен предметный подход к реставрации. Расскажите, что произошло, и договоримся об осмотре.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При ремонте Rubner важно сохранить устройство и характер конкретного инструмента. Подготовку грифа и корпуса рассмотрим вместе с историей работ.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
