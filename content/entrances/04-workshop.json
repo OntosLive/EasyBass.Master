@@ -10,7 +10,10 @@
       "open_question": "Что изменилось в поведении контрабаса и когда вы впервые это заметили?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В специализированной мастерской контрабаса можно работать с корпусом, грифом, подставкой и звуком как с одним инструментом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "restavratsiya-starinnogo-kontrabasa",
@@ -20,7 +23,10 @@
       "open_question": "Какие части инструмента вызывают беспокойство и известна ли история прежней реставрации?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Старинный контрабас восстанавливают с уважением к его конструкции и прежним работам, сохраняя собственный голос.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "remont-treschiny-deki-kontrabasa",
@@ -30,7 +36,10 @@
       "open_question": "Где находится трещина и изменился ли звук после её появления?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Трещина на деке меняет работу корпуса. Её восстановление требует точного соединения древесины и бережного отношения к звуку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "otoshel-shov-na-kontrabase",
@@ -40,7 +49,10 @@
       "open_question": "В каком месте отошёл шов и появились ли новые звуки при игре?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Раскрывшийся шов важно вернуть в правильное соединение без напряжения деки. После ремонта контрабас снова должен свободно звучать.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "nastroyka-podstavki-kontrabasa",
@@ -50,7 +62,10 @@
       "open_question": "Что сейчас неудобно: высота струн, звук в отдельном регистре или устойчивость подставки?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Подставка влияет одновременно на высоту струн и акустическую передачу. Её можно подогнать под корпус и вашу игру.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "ustanovka-i-regulirovka-dushki-kontrabasa",
@@ -60,7 +75,10 @@
       "open_question": "После какого изменения инструмент стал отвечать иначе и какие настройки уже проводились?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Душка помогает сбалансировать отклик струн. Её устанавливают и регулируют, слушая конкретный контрабас.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "remont-grifa-kontrabasa",
@@ -70,7 +88,10 @@
       "open_question": "В какой части грифа игра стала неудобной и было ли это раньше?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Гриф можно восстановить по профилю и геометрии, вернуть ровную накладку и свободное движение руки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vysota-strun-na-kontrabase",
@@ -80,7 +101,10 @@
       "open_question": "При каком штрихе и в каком регистре высота струн мешает вам больше всего?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Высота струн должна подходить и смычку, и вашей технике. Подставку и порожек можно точно настроить.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "podgotovka-kontrabasa-k-prodazhe",
@@ -90,7 +114,10 @@
       "open_question": "Что из состояния контрабаса уже известно и какие работы вы считаете обязательными?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед продажей контрабасу полезно вернуть чистую атаку, удобный гриф и надёжный строй.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "osmotr-kontrabasa-pered-pokupkoy",
@@ -100,7 +127,10 @@
       "open_question": "Есть ли уже выбранный контрабас и можно ли увидеть его до заключения сделки?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед покупкой старого инструмента можно проверить швы, гриф и прежние ремонты, а затем сыграть на нём.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-drebezzhit-pri-igre",
@@ -110,7 +140,10 @@
       "open_question": "На какой ноте возникает дребезг и сохраняется ли он при игре без смычка?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Дребезг мешает каждой фразе. Причина может быть в накладке, струнах или деталях корпуса, с которыми работает мастерская.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-perestal-derzhat-stroy",
@@ -120,7 +153,10 @@
       "open_question": "Строй уходит на всех струнах или преимущественно на одной?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если строй уходит, важны колковая механика, струны и крепления. Работу можно начать с устойчивости всего инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "zamena-strun-na-kontrabase",
@@ -130,7 +166,10 @@
       "open_question": "На каких струнах вы играете сейчас и какого изменения звука или удобства ждёте?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Новый комплект меняет натяжение и ощущение грифа. Струны лучше устанавливать вместе с проверкой высоты и звука.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "neudobnaya-nakladka-grifa-kontrabasa",
@@ -140,7 +179,10 @@
       "open_question": "В каких позициях появляется неудобство и слышны ли призвуки на отдельных нотах?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Накладка определяет лёгкость движения и чистоту ноты. Её можно обработать и согласовать с рабочей высотой струн.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "remont-kolkov-kontrabasa",
@@ -150,7 +192,10 @@
       "open_question": "Колок прокручивается, идёт слишком туго или просто перестал надёжно держать натяжение?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Изношенные колки создают постоянную борьбу со строем. Механику можно восстановить или подобрать замену под корпус.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "slomalas-podstavka-kontrabasa",
@@ -160,7 +205,10 @@
       "open_question": "Подставка треснула, упала или постепенно начала деформироваться под струнами?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Подставка несёт струны и передаёт звук. После повреждения её можно восстановить или изготовить заново под инструмент.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-ploho-otvechaet-na-smychok",
@@ -170,7 +218,10 @@
       "open_question": "Какой смычковый штрих и какая струна проявляют проблему особенно заметно?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если смычок требует лишнего давления, акустическую настройку можно вести через подставку, душку и струны.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vosstanovlenie-kontrabasa-posle-perevozki",
@@ -180,7 +231,10 @@
       "open_question": "Какие изменения вы заметили сразу после дороги и в каком чехле перевозился контрабас?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После перевозки меняются не только швы. Полезно вернуть контрабасу устойчивый строй и привычный звук.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-posle-dlitelnogo-hraneniya",
@@ -190,7 +244,10 @@
       "open_question": "Где контрабас находился во время хранения и насколько давно его последний раз настраивали?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После долгого молчания инструмент может вновь играть: швы, колки, гриф и подставку нужно привести в рабочее состояние.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "restavratsiya-kontrabasa-s-istoriey",
@@ -200,7 +257,10 @@
       "open_question": "Какие следы истории инструмента для вас особенно важно сохранить при восстановлении?",
       "group": "Ремонт и реставрация",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "У контрабаса с историей важно сохранить его голос и конструкцию. Реставрация продолжает жизнь конкретного инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }
