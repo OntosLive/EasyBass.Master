@@ -163,7 +163,8 @@ def index_page(hub: str, family: dict, subset: list[dict], contact: str, frame) 
                      + escape(lead["scene"]) + f' <small>{len(group)}</small></summary><ul>')
         for p in group:
             label = p["angle"]
-            items.append('<li><a href="' + escape(p["route"], quote=True)
+            # Project Pages is mounted under /EasyBass.Master/, not the domain root.
+            items.append('<li><a href="' + escape("/EasyBass.Master" + p["route"], quote=True)
                          + '">' + escape(label) + '</a></li>')
         items.append('</ul></details>')
     items.append('</section>')
