@@ -52,6 +52,7 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     expected |= n0_urls
     errors, graph = [], defaultdict(set)
     docs = {}
+    anchor_cache: dict[Path, set[str]] = {}
     all_files = sorted(site.rglob("*.html"))
     for path in all_files:
         route = pretty_route(site, path)
@@ -82,8 +83,11 @@ def validate(site: Path, root: Path = ROOT) -> dict:
                 except ValueError:
                     errors.append(f"{route}: escaping site path {href}")
                 fragment = urlsplit(href).fragment
-                if fragment and not doc(dest).find(id=fragment):
-                    errors.append(f"{route}: missing anchor {href}")
+                if fragment:
+                    if dest not in anchor_cache:
+                        anchor_cache[dest] = {e["id"] for e in doc(dest).find_all(id=True)}
+                    if fragment not in anchor_cache[dest]:
+                        errors.append(f"{route}: missing anchor {href}")
         if route in expected or route in n0_hubs:
             if len(d.find_all("h1")) != 1:
                 errors.append(f"{route}: one semantic H1 required")
