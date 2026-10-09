@@ -54,6 +54,39 @@ async def run(site: Path, output: Path) -> dict:
                         scroll: document.documentElement.scrollWidth,
                         css: !!document.querySelector('link[rel="stylesheet"]')
                     })""")
+                    if await page.locator(".contact-icons").count():
+                        icons = await page.locator(".contact-icons").evaluate("""(container) => {
+                            const tg = container.querySelector('a[aria-label="Telegram"]');
+                            const wa = container.querySelector('a[aria-label="WhatsApp"]');
+                            const max = container.querySelector('.max-contact-pending');
+                            if (!tg || !wa || !max) return { missing: true };
+                            const measured = (el) => {
+                                const rect = el.getBoundingClientRect();
+                                return { width: rect.width, centerY: rect.y + rect.height / 2,
+                                         iconWidth: el.querySelector('svg').getBoundingClientRect().width,
+                                         color: getComputedStyle(el).color };
+                            };
+                            const style = getComputedStyle(max);
+                            return {
+                                telegram: measured(tg), whatsapp: measured(wa), max: measured(max),
+                                border: style.borderTopWidth,
+                                radius: style.borderTopLeftRadius,
+                                background: style.backgroundColor,
+                                isSpan: max.tagName === 'SPAN',
+                                bareGlyph: !!max.querySelector('svg path') && !max.querySelector('svg circle'),
+                                activeMaxLink: !!container.querySelector('a[aria-label="MAX"]')
+                            };
+                        }""")
+                        if icons.get("missing") or not icons["isSpan"] or not icons["bareGlyph"] or icons["activeMaxLink"]:
+                            raise AssertionError(f"{name}: MAX must be a bare inert glyph: {icons}")
+                        if icons["border"] != "0px" or icons["radius"] != "0px":
+                            raise AssertionError(f"{name}: MAX has an unwanted square frame: {icons}")
+                        for prop in ("width", "iconWidth", "centerY"):
+                            target = icons["telegram"][prop]
+                            if abs(icons["max"][prop] - target) > 0.5:
+                                raise AssertionError(f"{name} {width}px: MAX {prop} differs from Telegram: {icons}")
+                        if icons["max"]["color"] != icons["telegram"]["color"]:
+                            raise AssertionError(f"{name}: MAX is not monochrome like Telegram")
                     if name == "home":
                         border_widths = await page.locator(".master-directions > a").evaluate_all(
                             "(items) => items.map(item => parseFloat(getComputedStyle(item).borderLeftWidth))")
