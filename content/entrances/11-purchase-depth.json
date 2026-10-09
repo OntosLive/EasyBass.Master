@@ -10,7 +10,10 @@
       "open_question": "Что известно о реставрации и какая часть звучания заинтересовала вас сильнее всего?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После реставрации инструмент нужно услышать и почувствовать заново. Важны сохранённый голос и удобство сегодняшней игры.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-istoriey-remontov",
@@ -20,7 +23,10 @@
       "open_question": "Какие работы на инструменте вам уже известны и что остаётся непонятным?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "История ремонтов помогает понять контрабас: какие части менялись и что осталось прежним в звуке и конструкции.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-vozmozhnostyu-povtornoy-proby",
@@ -30,7 +36,10 @@
       "open_question": "Какие свойства хочется проверить во второй раз после первого знакомства?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если после первой пробы остались сомнения, можно вернуться к инструменту и сыграть на нём другую знакомую музыку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-posle-sravneniya-v-masterskoy",
@@ -40,7 +49,10 @@
       "open_question": "Какой из попробованных инструментов вы захотели услышать повторно?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Сравнение в мастерской позволяет услышать разные голоса рядом. После этого проще выбрать инструмент без спешки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-bez-predvaritelnogo-video",
@@ -50,7 +62,10 @@
       "open_question": "Вы уже знаете, какой характер звука ищете, или хотите открыть его при сравнении?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Видео не передаёт движение грифа под рукой. При личном знакомстве слышны и звук, и настоящее сопротивление струны.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-ne-znaya-tochnoy-modeli",
@@ -60,7 +75,10 @@
       "open_question": "Какая музыкальная разница для вас важна, даже если пока трудно назвать её моделью?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Точную модель знать необязательно. Можно начать с инструмента, который удобно держать и на котором хочется играть.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-drugoy-menzuroy",
@@ -70,7 +88,10 @@
       "open_question": "На каком участке грифа разница мензуры ощущается для вас сильнее всего?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Другая мензура меняет расстояния и технику. Её лучше почувствовать на нескольких реальных контрабасах.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-smeny-orkestra",
@@ -80,7 +101,10 @@
       "open_question": "Что изменилось после перехода в другой коллектив и какая задача теперь стала основной?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После смены оркестра могут понадобиться иной нижний регистр или отклик. Выбор можно начать с новой программы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-pered-dlitelnymi-gastrolyami",
@@ -90,7 +114,10 @@
       "open_question": "Какой маршрут ожидается и на каком инструменте вы обычно путешествуете?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед долгими гастролями важны удобство ежедневной игры и устойчивый строй. Бас стоит испытать на знакомых партиях.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-po-sovetu-prepodavatelya",
@@ -100,7 +127,10 @@
       "open_question": "Что именно заметил преподаватель и что на своём инструменте чувствуете вы сами?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Совет преподавателя помогает начать поиск. Конкретный инструмент всё равно важно попробовать своей рукой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-prepodavaniya",
@@ -110,7 +140,10 @@
       "open_question": "Какие упражнения и фрагменты чаще всего звучат на ваших уроках?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для преподавания нужен контрабас, на котором комфортно и играть самому, и показывать движение ученику.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-neobychnoy-formoy-korpusa",
@@ -120,7 +153,10 @@
       "open_question": "Что вас привлекло в форме инструмента и удалось ли уже попробовать подобную конструкцию?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Необычная форма корпуса меняет посадку и доступ к грифу. Её лучше почувствовать, сыграв на самом инструменте.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-pyatistrunnym-diapazonom",
@@ -130,7 +166,10 @@
       "open_question": "Какие нижние ноты действительно нужны в ваших нынешних партиях?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для расширенного низа важны пятая струна, строй и ширина грифа. На таком басе удобно проверить настоящую партию.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-posle-dolgogo-poiska",
@@ -140,7 +179,10 @@
       "open_question": "Какие инструменты за время поиска оказались наиболее близкими и почему?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После долгого поиска иногда решает одна пьеса на неожиданном инструменте. Коллекция открыта для спокойного знакомства.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-vmesto-remonta-starogo",
@@ -150,7 +192,10 @@
       "open_question": "Что именно изменилось в вашем контрабасе и пробовали ли вы сыграть на другом после этого?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если старый контрабас не восстановить до нужного результата, можно сравнить его с другим и выбрать следующий.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-bez-yasnogo-byudzheta",
@@ -160,7 +205,10 @@
       "open_question": "Какой инструмент вас заинтересовал независимо от предварительных представлений о цене?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Без точного бюджета можно сначала услышать диапазон коллекции, от самого доступного до редкого инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-posle-igry-na-horoshem-instrumente",
@@ -170,7 +218,10 @@
       "open_question": "Какое движение или музыкальная фраза впервые прозвучали иначе?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Игра на хорошем инструменте меняет собственные требования к звуку и грифу. Эти ощущения можно проверить снова.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-proverennoy-istoriey",
@@ -180,7 +231,10 @@
       "open_question": "Какие сведения о происхождении вам уже известны и что хочется подтвердить при встрече?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Подтверждённая история инструмента дополняет его голос. Важно знать, что происходило с корпусом и грифом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-posle-orkestrovogo-proslushivaniya",
@@ -190,7 +244,10 @@
       "open_question": "Какие именно места программы стали причиной новых вопросов к инструменту?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После прослушивания уже понятны требования к отклику и свободе руки. Теперь можно выбрать инструмент под будущую работу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-po-vnutrennemu-oschuscheniyu",
@@ -200,7 +257,10 @@
       "open_question": "Что вы почувствовали в игре раньше, чем смогли описать словами?",
       "group": "Покупка: обстоятельства и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Иногда инструмент узнаётся раньше слов о его достоинствах. Можно сыграть на нескольких басах и довериться собственному слуху.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }
