@@ -23,7 +23,10 @@
           "lead": "Настроим разговор вокруг вашей техники: профиль, высота струн и переходы оцениваются на самом инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для быстрых смен позиций нужны точный профиль грифа, ровная накладка и высота струн, при которой рука двигается свободно.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "individualnaya-ergonomika-kontrabasa",
@@ -32,7 +35,7 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Посадка, профиль грифа и высота струн связаны между собой. Эти детали можно доработать под вашу технику и привычное движение.",
+          "bridge": "Посадку и ощущение грифа можно изменить настройкой: накладка, порожек и струны подчиняются вашей привычной технике.",
           "bridge_model": "gpt-6",
           "bridge_status": "gpt6_draft"
         },
@@ -42,7 +45,10 @@
           "lead": "Если положение руки не устраивает, обсудим профиль грифа и возможность корректировки после осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если рука не находит свободы на грифе, можно изменить его профиль и обработать накладку под движения музыканта.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "umenshit-tolschinu-grifa-kontrabasa",
@@ -50,7 +56,10 @@
           "lead": "Толстый гриф мешает движению? Мастерская может оценить целесообразность индивидуальной доработки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Слишком массивный гриф мешает беглости. Его форму и возможность обработки можно оценить по конструкции инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "izmenit-profil-grifa-kontrabasa",
@@ -58,7 +67,10 @@
           "lead": "Если руке не подходит нынешняя форма грифа, привозите инструмент для обсуждения конкретного решения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Поперечный профиль грифа чувствуется в каждой смене позиции. В мастерской его можно сделать удобнее для вашей руки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "udobnaya-nakladka-grifa-kontrabasa",
@@ -66,7 +78,10 @@
           "lead": "Неровная или неудобная накладка может мешать игре. Посмотрим её состояние и возможности подготовки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Накладка должна позволять струне чисто звучать, а пальцам свободно двигаться. Её поверхность можно точно обработать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "pereshlifovka-nakladki-kontrabasa",
@@ -74,7 +89,10 @@
           "lead": "При износе накладки и проблемах в позициях можно обсудить работу мастерской после осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После шлифовки накладки меняются и ощущение позиции, и рабочая высота струн. Работа начинается с геометрии грифа.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vyravnivanie-nakladki-kontrabasa",
@@ -82,7 +100,10 @@
           "lead": "Если слышите призвуки или ощущаете неровность под пальцами, приезжайте оценить накладку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Неровная накладка даёт лишние призвуки и сопротивление. Можно выровнять её и согласовать высоту струн с вашей игрой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "individualnaya-nastroyka-menzury-kontrabasa",
@@ -90,7 +111,10 @@
           "lead": "Расстояния не устраивают руку? Посмотрим устройство конкретного инструмента и реальные возможности настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Мензура задаёт расстояния под рукой. Если они не подходят, стоит сравнить геометрию инструментов и возможности конкретного грифа.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-udobnymi-verhnimi-pozitsiyami",
@@ -98,7 +122,10 @@
           "lead": "Если работа наверху грифа затруднена, можно обсудить конструкцию и возможные эргономические изменения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В верхних позициях особенно заметны форма плеч и переход к корпусу. Удобство можно проверить на вашей сольной музыке.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otkryt-vysokie-pozitsii-na-kontrabase",
@@ -106,7 +133,10 @@
           "lead": "Переход в верхний регистр упирается в плечи и гриф? Мастерская может оценить инструмент и предложить варианты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Доступ к высоким нотам зависит и от формы грифа, и от плеч корпуса. Мастерская работает с удобством этого движения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dorabotka-plech-kontrabasa-dlya-solo",
@@ -114,7 +144,10 @@
           "lead": "Если корпус мешает движениям в верхнем регистре, обсудим конструкцию и допустимость работ с ним.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Широкие плечи могут ограничивать работу наверху. Варианты изменения стоит соотнести с устройством и ценностью корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "ergonomicheskaya-nastroyka-starinnogo-kontrabasa",
@@ -122,7 +155,10 @@
           "lead": "Старинный инструмент требует бережного подхода. Можно рассмотреть удобство игры без поспешных необратимых вмешательств.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На старинном контрабасе эргономику можно улучшать бережно, сохраняя его историю и выбирая соразмерную работу с грифом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vysota-strun-dlya-begloy-igry-na-kontrabase",
@@ -130,7 +166,10 @@
           "lead": "Большое усилие мешает быстрым пассажам? Проверим настройку и то, что можно изменить.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для беглой игры струны должны оставаться управляемыми. Высоту выбирают вместе с формой накладки и характером атаки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "sdelat-struny-na-kontrabase-nizhe",
@@ -138,7 +177,10 @@
           "lead": "Когда струны стоят слишком высоко, не всегда нужна замена инструмента. Обсудим регулировку на вашем контрабасе.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Слишком высокие струны требуют лишней силы. Подставку и порожек можно отрегулировать, сохранив чистое звучание.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "slishkom-zhestkiy-kontrabas-dlya-igry",
@@ -146,7 +188,10 @@
           "lead": "Инструмент сопротивляется руке? Посмотрим струны, геометрию и настройку как рабочую задачу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда контрабас сопротивляется руке, часто помогают другие струны и точная геометрия накладки, а не новый инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-tyazhelo-prizhimat-na-nizhnih-pozitsiyah",
@@ -154,7 +199,10 @@
           "lead": "Если на первых позициях приходится тратить слишком много силы, привозите контрабас на настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В первых позициях особенно чувствуется высота у верхнего порожка. Её можно привести к удобному уровню вместе с грифом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "na-kontrabase-tyazhelo-igrat-v-verhnih-pozitsiyah",
@@ -163,7 +211,7 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Свобода верхних позиций зависит и от грифа, и от формы корпуса. Можно доработать те места, которые мешают движению руки.",
+          "bridge": "Для высоких позиций важны форма накладки, высота струн и доступ к грифу. Все три детали можно рассмотреть в работе.",
           "bridge_model": "gpt-6",
           "bridge_status": "gpt6_draft"
         },
@@ -173,7 +221,10 @@
           "lead": "Можно изменить не только положение музыканта, но иногда и подготовку инструмента. Начнём с осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Неудобное положение контрабаса меняет обе руки. Шпиль, баланс и посадку можно подстроить под вашу игру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-zazhimaet-levuyu-ruku",
@@ -181,7 +232,10 @@
           "lead": "Если напряжение появляется именно на этом инструменте, можно сравнить его с другими и рассмотреть эргономику.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если рука постоянно напряжена, полезно сравнить гриф вашего инструмента с другим и доработать его геометрию.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-i-korotkie-paltsy",
@@ -189,7 +243,10 @@
           "lead": "Необязательно выбирать инструмент только по размеру корпуса. Приглашаем сравнить разные грифы и мензуры.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Небольшой кисти важен не статус размера, а расстояния между нотами и профиль шейки. Это можно почувствовать при пробе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-malenkoy-ruki-s-nastroykoy",
@@ -197,7 +254,10 @@
           "lead": "Можно обсудить подбор и индивидуальную подготовку под удобное движение руки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для маленькой руки можно выбрать подходящую мензуру или доработать гриф уже знакомого инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dlinnyh-ruk-i-vysokogo-rosta",
@@ -205,7 +265,10 @@
           "lead": "Ищете удобную постановку при большом росте? Сравним геометрию нескольких инструментов.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Высокому музыканту тоже может быть удобен 3/4. Здесь важны высота корпуса, шпиль и свобода обеих рук.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ne-daet-bystro-smenit-pozitsiyu",
@@ -213,7 +276,10 @@
           "lead": "Если ощущение глиссирования и смены позиций мешает репертуару, мастерская может исследовать гриф.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При смене позиций рука чувствует каждую неровность грифа. Профиль и накладку можно привести к более свободному движению.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroyka-kontrabasa-pod-solnuyu-tehniku",
@@ -221,7 +287,10 @@
           "lead": "Инструмент можно готовить под конкретные исполнительские требования. Обсудим работу на вашем экземпляре.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для сольной техники удобно работать с высотой струн, формой накладки и доступом к верхнему регистру как с одной задачей.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "podgotovka-kontrabasa-dlya-orkestrovoy-ruki",
@@ -229,7 +298,10 @@
           "lead": "Длинная репетиция выявляет лишнее усилие. Посмотрим посадку инструмента и регулировку струн.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Долгая оркестровая игра требует экономии движения. Гриф и высоту струн можно настроить для привычной смычковой работы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otregulirovat-porozhek-kontrabasa",
@@ -237,7 +309,10 @@
           "lead": "Слишком высокие струны у порожка меняют ощущение первых позиций. Можно проверить и обсудить работу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Высота у порожка определяет усилие на первых нотах. Его можно точно обработать вместе с общей настройкой грифа.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-zameny-nakladki-stal-neudoben",
@@ -245,7 +320,10 @@
           "lead": "Если ощущения изменились после ремонта, привозите инструмент: сравним состояние до и после по вашей игре.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После замены накладки стоит вновь проверить профиль и высоту струн. Привычное ощущение руки можно восстановить настройкой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-nastroyki-slishkom-tyazhelyy",
@@ -253,7 +331,10 @@
           "lead": "Если после вмешательства работать стало труднее, обсудим контрольную настройку и возможную коррекцию.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если после настройки стало тяжелее играть, сравним положение струн, порожка и подставки с вашей привычной техникой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroyka-vysoty-strun-po-sezonam",
@@ -261,7 +342,10 @@
           "lead": "Если удобство изменяется с влажностью, можно осмотреть инструмент и согласовать сезонную подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Дерево реагирует на сезонную влажность, а рука ощущает перемену высоты струн. Инструмент можно подготовить к сезону.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "udobnaya-nastroyka-pyatistrunnogo-kontrabasa",
@@ -269,7 +353,10 @@
           "lead": "Нижняя струна и ширина грифа меняют геометрию. Обсудим настройку пятиструнного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На пятиструнном контрабасе важен профиль широкого грифа и свободный доступ ко всем струнам. Настройка здесь индивидуальна.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dorabotka-starogo-moskvicha-dlya-udobnoy-igry",
@@ -277,7 +364,10 @@
           "lead": "Даже недорогой фабричный контрабас можно рассматривать как объект серьёзной эргономической работы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старому «Москвичу» можно сделать удобный гриф: точно вывести накладку, обработать профиль и выставить высоту струн.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "ergonomicheskaya-dorabotka-muzimy",
@@ -285,7 +375,10 @@
           "lead": "У старой «Музимы» есть своя геометрия. Привозите её для обсуждения удобства и настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У «Музимы» гриф может стать легче под рукой после обработки накладки и настройки порожка с подставкой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dorabotka-cheshskogo-kontrabasa-pod-muzykanta",
@@ -293,7 +386,10 @@
           "lead": "Если «чех» неудобен в руке, можно обсудить не замену по бренду, а работу с конкретным грифом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Удобство чешского контрабаса зависит от конкретного грифа. Его можно доработать под ваши позиции и привычный смычок.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
