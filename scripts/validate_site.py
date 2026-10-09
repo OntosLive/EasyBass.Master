@@ -183,20 +183,20 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             continue
         if not page.h1 or page.h1.get_text(" ", strip=True) != topic["title"]:
             errors.append(f"{route}: semantic scene/question title lost")
-        if len(page.select(".n0-sensor .entrance-question")) != 1:
-            errors.append(f"{route}: one focused residual question required")
+        if len(page.select(".issue.master-lead .deck")) != 1:
+            errors.append(f"{route}: authored short announcement missing")
         if not any(a.get("href") == "../" for a in page.select(".n0-return a[href]")):
             errors.append(f"{route}: parent family link missing")
     for route in n0_hubs:
         if route not in docs:
             errors.append(f"Missing N.0 family index {route}")
     if not any(a.get("href", "").endswith("/vhod/") for a in docs.get("/archive/", BeautifulSoup("", "html.parser")).select("a[href]")):
-        errors.append("Archive has no entry to 3290 N.0 questions")
+        errors.append("Archive has no entry to authored short announcements")
     archive = docs.get("/archive/")
     if not archive:
         errors.append("Archive missing")
     else:
-        # The 3,290 very short entrance pages live under twenty family indexes.
+        # Authored short announcements live under human-editable family indexes.
         # Archive links to /vhod/, which links families, then individual entries.
         for route in expected - n0_urls:
             if not any(link.get("href", "").endswith(route) for link in archive.select('a[href]')):

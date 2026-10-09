@@ -45,8 +45,10 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["standalone_entrances"], 282)
         self.assertEqual(result["independent_knowledge_articles"], 8)
         self.assertEqual(result["official_model_articles"], 6)
-        self.assertEqual(result["sensor_n0"]["n0_pages"], 3290)
-        self.assertEqual(result["sensor_n0"]["hubs"], 21)
+        self.assertEqual(result["sensor_n0"]["n0_pages"], len(sensor_records(ROOT)))
+        self.assertEqual(result["sensor_n0"]["synthetic_cartesian_pages"], 0)
+        self.assertGreater(len(sensor_records(ROOT)), 100)
+        self.assertEqual(result["sensor_n0"]["hubs"], len({r["family_id"] for r in sensor_records(ROOT)}) + 1)
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
@@ -108,11 +110,12 @@ class PublicationTests(unittest.TestCase):
             self.assertIn(model["sources"][0]["url"], html)
             self.assertNotIn("в наличии", html.lower())
 
-    def test_3290_short_entries_are_real_pages_with_stable_canonical_and_no_fake_details(self):
+    def test_authored_short_entries_have_valid_canonical_and_no_fake_details(self):
         subjects = sensor_records(ROOT)
-        self.assertEqual(len(subjects), 3290)
-        self.assertEqual(len({s["route"] for s in subjects}), 3290)
-        self.assertTrue(all("?" in s["residual_question"] for s in subjects))
+        self.assertGreater(len(subjects), 100)
+        self.assertEqual(len({s["route"] for s in subjects}), len(subjects))
+        self.assertTrue(all(s["source_status"] == "editorial_hypothesis_not_measured" for s in subjects))
+        self.assertTrue(all("разница между размером и мензурой" not in s["title"] for s in subjects))
         build(ROOT, self.site)
         for topic in [subjects[0], subjects[len(subjects)//2], subjects[-1]]:
             filename = self.site / topic["route"].strip("/") / "index.html"
@@ -128,7 +131,7 @@ class PublicationTests(unittest.TestCase):
         examples = [
             "kupit-masterovoy-kontrabas-v-moskve/index.html",
             "kupit-kontrabas-v-moskve/index.html",
-            "vhod/buy-entry/pervyy-kontrabas-dlya-rebenka-tochnoe-polozhenie-levoy-ruki/index.html",
+            "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html",
         ]
         # Resolve the generated sensor route from the actual registry.
         examples[-1] = sensor_records(ROOT)[0]["route"].strip("/") + "/index.html"
