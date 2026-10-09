@@ -218,7 +218,9 @@ class PublicationTests(unittest.TestCase):
             result["individual_gpt6_drafts"] + result["individual_gpt6_reviewed"] + result["editorial_backlog"]
         )
         # Existing indexed N.0 pages remain online while each gets its own GPT-6 text.
-        self.assertGreater(result["editorial_backlog"], 0)
+        self.assertEqual(result["editorial_backlog"], 0)
+        self.assertEqual(result["individual_gpt6_drafts"] + result["individual_gpt6_reviewed"], result["published_n0"])
+        self.assertTrue(result["complete"])
 
     def test_ranges_are_real_editorial_collection_anchors(self):
         from entry_router import RANGES, FACTS
