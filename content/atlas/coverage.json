@@ -2565,10 +2565,10 @@
   "counts": {
     "standalone": 282,
     "pairs": 2,
-    "independent_knowledge": 8,
+    "independent_knowledge": 11,
     "manufacturer_reference_pages": 6,
-    "public_documents": 3611,
-    "short_sensor_n0": 3290
+    "public_documents": 824,
+    "short_sensor_n0": 511
   },
   "published_knowledge": [
     {
@@ -2640,6 +2640,33 @@
       "title": "Реставрация контрабаса: сохранить и услышать",
       "root_id": "R-craft",
       "public_url": "https://easybassmaster.ru/details/restavratsiya-kontrabasa-i-ego-zhizn/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "pochemu-raskleivaetsya-kontrabas-shov-i-treschina",
+      "entrance_slug": "otoshel-shov-na-kontrabase",
+      "title": "Шов и трещина контрабаса: почему раскрывается корпус",
+      "root_id": "R-craft",
+      "public_url": "https://easybassmaster.ru/details/pochemu-raskleivaetsya-kontrabas-shov-i-treschina/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "geometriya-grifa-kontrabasa-sheyka-nakladka",
+      "entrance_slug": "remont-grifa-kontrabasa",
+      "title": "Гриф, шейка и накладка контрабаса: геометрия свободной игры",
+      "root_id": "R-craft",
+      "public_url": "https://easybassmaster.ru/details/geometriya-grifa-kontrabasa-sheyka-nakladka/",
+      "source_status": "reviewed_editorial_knowledge",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "starinnyy-kontrabas-pered-remontom-osmotr-i-istoriya",
+      "entrance_slug": "kontrabas-posle-dlitelnogo-hraneniya",
+      "title": "Старинный контрабас перед ремонтом: как читать его состояние",
+      "root_id": "R-craft",
+      "public_url": "https://easybassmaster.ru/details/starinnyy-kontrabas-pered-remontom-osmotr-i-istoriya/",
       "source_status": "reviewed_editorial_knowledge",
       "atlas_leaf_id": null
     }
@@ -2715,13 +2742,13 @@
   "short_sensor": {
     "generator": "scripts/sensor_n0.py",
     "source": "content/entrances-rewrite/*.json",
-    "status": "Authored search-only N.0; no public ad browsing directories or archive links",
-    "count": 497,
+    "status": "511 authored search-only N.0; all 795 published N.0 closed to ad browsing; no public directory",
+    "count": 511,
     "category_index_pages": 0,
     "root_index": null,
     "retired_cartesian_count": 3290,
     "retired_synthetic_publication": true,
-    "site_html_documents": 807,
+    "site_html_documents": 824,
     "last_confirmed_release": "fc09cff2551eeb42d986c9ed8e62cd29632b72e7",
     "closed_entrances": true,
     "confirmed_ci_run": 37880881357
