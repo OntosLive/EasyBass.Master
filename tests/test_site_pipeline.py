@@ -130,7 +130,7 @@ class PublicationTests(unittest.TestCase):
             "vhod/buy-entry/pervyy-kontrabas-dlya-rebenka-tochnoe-polozhenie-levoy-ruki/index.html",
         ]
         # Resolve the generated sensor route from the actual registry.
-        examples[-1] = sensor_records(ROOT)[0]["route"].strip("/") + "index.html"
+        examples[-1] = sensor_records(ROOT)[0]["route"].strip("/") + "/index.html"
         for relative in examples:
             html = (self.site / relative).read_text(encoding="utf-8")
             soup = BeautifulSoup(html, "html.parser")
