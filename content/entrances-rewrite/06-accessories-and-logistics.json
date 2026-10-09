@@ -359,7 +359,10 @@
           "lead": "Контрабас большой и хрупкий. Обсудим конкретный инструмент, упаковку и возможный способ отправки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабас можно отправить из Москвы по России. Для конкретного корпуса подбирают защиту, перевозку и условия передачи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "perevozka-kontrabasa-po-moskve",
@@ -367,7 +370,10 @@
           "lead": "Если инструмент нужно переместить в пределах города, обсудим размер корпуса, упаковку и нужный маршрут.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "По Москве контрабасу нужны аккуратная перевозка и подходящий транспорт. Высота корпуса и время встречи важны заранее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dostavka-kontrabasa-do-kontsertnoy-ploschadki",
@@ -375,7 +381,10 @@
           "lead": "Площадка, время заноса и размер инструмента влияют на передачу. Уточним условия заранее.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К сцене инструмент должен приехать до музыканта и успеть настроиться. Доставку можно связать с графиком репетиции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dostavka-kontrabasa-v-studiyu-zvukozapisi",
@@ -383,7 +392,10 @@
           "lead": "Если инструмент нужен к началу сессии, обсудим репетицию, транспорт и время настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К записи контрабас важно привезти с запасом времени на строй и знакомство с помещением. Маршрут можно согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-v-poezdku-na-poezde",
@@ -391,7 +403,10 @@
           "lead": "Если везёте большой инструмент поездом, можно обсудить защиту корпуса и варианты временной аренды на месте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В поездке на поезде басу нужна защита корпуса и грифа. Иногда удобнее познакомиться с инструментом уже на месте.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-gastroley-bez-svoego-instrumenta",
@@ -399,7 +414,10 @@
           "lead": "Когда свой инструмент остаётся дома, можно обсудить знакомство с контрабасом на месте выступления.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если свой контрабас остаётся дома, для гастролей можно обсудить аренду местного инструмента и время на привыкание.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "chehol-dlya-dalnih-perevozok-kontrabasa",
@@ -407,7 +425,10 @@
           "lead": "Если обычная защита не устраивает, расскажите о корпусе и способе поездок. Обсудим варианты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для дальнего пути чехол или футляр выбирают по реальным размерам и рискам перевозки конкретного корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "perevozka-starinnogo-kontrabasa",
@@ -415,7 +436,10 @@
           "lead": "Для редкого инструмента подготовка к дороге особенно важна. Можно проконсультироваться с мастерской о его состоянии.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старинный контрабас требует особенно бережной дороги. Состояние швов и защита деки здесь имеют значение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-aviatsionnoy-perevozki",
@@ -423,7 +447,10 @@
           "lead": "Если после полёта появились новые проблемы, привозите инструмент на осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После перелёта инструмент стоит услышать и проверить по швам, подставке и строю. При повреждении возможен ремонт.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-zimney-perevozki",
@@ -431,7 +458,10 @@
           "lead": "Резкая смена температуры может изменить состояние корпуса. Можно оценить инструмент после поездки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После зимней перевозки корпус и швы могут реагировать на смену температуры. Инструмент можно привести к рабочему состоянию.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "hranenie-kontrabasa-posle-pereezda",
@@ -439,7 +469,10 @@
           "lead": "Если инструмент пока не используется, обсудим осмотр и разумные условия дальнейшего хранения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если после переезда контрабас пока не играет, важно сохранить корпус и гриф в подходящей среде хранения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ne-pomeschaetsya-v-mashinu",
@@ -447,7 +480,10 @@
           "lead": "Если перевозка стала постоянной проблемой, можно обсудить более удобную геометрию или временный инструмент на месте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда бас не входит в машину, размер и форма корпуса становятся практической задачей. Можно обсудить перевозку или аренду.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otpravit-kontrabas-s-chehlom-i-smychkom",
@@ -455,7 +491,10 @@
           "lead": "Если передаётся комплект, важно согласовать упаковку всех предметов. Обсудим детали.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Вместе с контрабасом часто едут смычок и чехол. Для каждого предмета важно выбрать безопасный способ передачи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-dolgogo-hraneniya-na-balkone",
@@ -463,7 +502,10 @@
           "lead": "Если инструмент много лет подвергался перепадам температуры, сначала нужен осмотр состояния.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Долгое хранение на балконе может сказаться на швах и грифе. Перед возвращением к игре инструмент лучше увидеть целиком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-sezon-v-drugom-gorode",
@@ -471,7 +513,10 @@
           "lead": "Если едете работать в другом городе, можно обсудить временный доступ вместо перевозки собственного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На сезон в другом городе можно взять подходящий контрабас на время, не перевозя собственный между концертами.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "poluchit-kontrabas-iz-moskvy-po-dogovorennosti",
@@ -479,7 +524,10 @@
           "lead": "Если нашли интересный инструмент в мастерской, детали передачи согласуются после знакомства с экземпляром.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Передача контрабаса из Москвы начинается с знакомства с конкретным инструментом, затем согласуются дорога и получение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }
