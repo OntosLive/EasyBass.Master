@@ -40,7 +40,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["generated_subjects"], 2)
         self.assertEqual(result["generated_pair_pages"], 4)
         self.assertEqual(result["hypotheses_retained"], 60)
-        self.assertEqual(result["standalone_entrances"], 240)
+        self.assertEqual(result["standalone_entrances"], 282)
         self.assertEqual(result["independent_knowledge_articles"], 8)
         self.assertEqual(result["official_model_articles"], 6)
         self.assertEqual(result["sensor_n0"]["n0_pages"], 3290)
@@ -68,7 +68,7 @@ class PublicationTests(unittest.TestCase):
     def test_prepublication_research_is_not_a_public_offer(self):
         records = inspect_records(ROOT)
         self.assertEqual(len(records), 2)
-        self.assertEqual(len(inspect_entrances(ROOT)), 240)
+        self.assertEqual(len(inspect_entrances(ROOT)), 282)
         self.assertEqual(len(read_json(ROOT / "content/candidates.json")["candidates"]), 60)
         self.assertEqual(audit(ROOT)["errors"], [])
         candidates = read_json(ROOT / "content/candidates.json")["candidates"]
