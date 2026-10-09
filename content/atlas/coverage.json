@@ -2716,10 +2716,12 @@
     "generator": "scripts/sensor_n0.py",
     "source": "content/entrances-rewrite/*.json",
     "status": "Authored human-intent N.0; atlas hypotheses never published automatically",
-    "count": null,
-    "category_index_pages": null,
+    "count": 497,
+    "category_index_pages": 18,
     "root_index": "/vhod/",
     "retired_cartesian_count": 3290,
-    "retired_synthetic_publication": true
+    "retired_synthetic_publication": true,
+    "site_html_documents": 826,
+    "last_confirmed_release": "f2660dc31d37dec1bf612db05c07b6d1a6299d39"
   }
 }
