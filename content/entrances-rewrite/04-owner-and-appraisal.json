@@ -12,7 +12,10 @@
           "lead": "Есть московский фабричный контрабас, с которым хотите расстаться? Мастерская может обсудить осмотр и дальнейший маршрут.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если «Москвич» ищет нового музыканта, важно увидеть его корпус, гриф и нынешнюю настройку. С этим можно обратиться в мастерскую.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-muzimu-kontrabas",
@@ -20,7 +23,10 @@
           "lead": "Если у вас Musima, расскажите об инструменте и его состоянии. Можно договориться о знакомстве с ним.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У старой «Музимы» есть история игры и ремонта. Её состояние и характер станут частью разговора о передаче инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-rubner-kontrabas",
@@ -28,7 +34,10 @@
           "lead": "Передавать инструмент такого класса лучше с ясной историей и осмотром. Обсудим возможные условия.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При продаже Rubner значимы история инструмента, конструкция и работы с корпусом. Для знакомства полезен сам экземпляр.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-cheshskiy-kontrabas-posle-ucheby",
@@ -36,7 +45,10 @@
           "lead": "Когда занятия закончились, контрабас может найти нового музыканта. Обсудим состояние и возможный путь передачи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После окончания учёбы чешский контрабас может продолжить играть у другого человека. Его стоит показать в нынешнем состоянии.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-posle-smeny-razmera-u-rebenka",
@@ -44,7 +56,10 @@
           "lead": "Если прежний размер больше не нужен, можно обсудить продажу и выбор следующего инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда ребёнок вырос из размера, прежний контрабас может перейти следующему ученику. Состояние и настройку можно оценить.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-posle-orkestrovoy-karery",
@@ -52,7 +67,10 @@
           "lead": "Инструмент много лет работал на сцене? Обсудим его состояние, документы и возможность знакомства с новым владельцем.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После оркестровых лет контрабас сохраняет свой голос и историю. Новый владелец должен услышать именно этот инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-posle-okonchaniya-konservatorii",
@@ -60,7 +78,10 @@
           "lead": "Музыкальная жизнь меняется, и инструмент может сменить владельца. Приглашаем обсудить конкретный экземпляр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После консерватории музыкальные планы меняются. Контрабас можно предложить мастерской, рассказав о его игре и состоянии.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-posle-pereezda-za-granitsu",
@@ -68,7 +89,10 @@
           "lead": "Если инструмент невозможно увезти, расскажите о сроках и состоянии. Обсудим возможный маршрут продажи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед переездом особенно важны сроки передачи. История и состояние контрабаса помогут выбрать реальный маршрут продажи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-staryy-kontrabas-iz-kvartiry",
@@ -76,7 +100,10 @@
           "lead": "Контрабас давно стоит без игры? Сначала важно увидеть его состояние. Договоримся об осмотре.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Инструмент, который долго стоял в квартире, может снова зазвучать. Сначала стоит увидеть корпус, гриф и сохранившуюся настройку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-pered-srochnym-pereezdom",
@@ -84,7 +111,10 @@
           "lead": "Когда времени мало, важны реальные сроки и возможности сделки. Расскажите, какой инструмент и когда нужно передать.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если переезд близко, важны конкретный инструмент и срок. Можно обсудить осмотр и возможный способ передачи без лишней переписки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-dva-kontrabasa-iz-kollektsii",
@@ -92,7 +122,10 @@
           "lead": "Если хотите уменьшить личное собрание, можно познакомить мастерскую с несколькими экземплярами и обсудить их судьбу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Два контрабаса могут быть очень разными по истории и состоянию. Каждый можно представить мастерской отдельно.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-radi-pokupki-drugogo",
@@ -100,7 +133,10 @@
           "lead": "Смена инструмента может начинаться с оценки прежнего. В мастерской можно обсудить обе стороны перехода.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При смене инструмента прежний контрабас остаётся частью выбора. Его можно показать и рядом познакомиться с другим.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-posle-smeny-muzykalnogo-zhanra",
@@ -108,7 +144,10 @@
           "lead": "Если прежняя настройка больше не отвечает вашему репертуару, сначала можно обсудить её изменение либо продажу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Новая музыка иногда требует другого звука или настройки. Прежде чем расставаться, можно сравнить свой бас с другими.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-kotoryy-bolshe-ne-ispolzuetsya",
@@ -116,7 +155,10 @@
           "lead": "Если инструмент просто стоит, можно предложить его мастерской для знакомства и обсуждения передачи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабасу лучше продолжать звучать, чем оставаться без движения. Можно познакомить мастерскую с инструментом и его историей.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-po-nasledstvu-v-moskve",
@@ -124,7 +166,10 @@
           "lead": "Если инструмент достался семье, поможем начать с осмотра и выяснения того, что о нём известно.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Семейный контрабас может хранить неизвестную музыкальную биографию. Начнём с самого инструмента и сохранившихся сведений.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-bez-etiketki-mastera",
@@ -132,7 +177,10 @@
           "lead": "Отсутствие этикетки не отменяет предметной ценности. Можно обсудить инструмент и предварительный осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Отсутствие этикетки не лишает контрабас истории. Его конструкция и состояние помогут предметно поговорить о продаже.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-posle-restavratsii-masterskoy",
@@ -140,7 +188,10 @@
           "lead": "Есть документы и фотографии проведённых работ? Они помогут начать разговор о конкретном инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После реставрации важно показать результат: как звучит инструмент, что сохранили и какие работы выполнили.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-trebuyuschiy-kapitalnogo-remonta",
@@ -148,7 +199,10 @@
           "lead": "Если восстановление слишком дорого для владельца, можно обсудить состояние и возможные способы передачи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабас с серьёзными повреждениями тоже имеет свою ценность и путь. Его состояние стоит рассмотреть до решения о передаче.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-s-zamenennym-grifom",
@@ -156,7 +210,10 @@
           "lead": "Смена грифа является частью истории инструмента. Покажите, что было сделано, и обсудим продажу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Заменённый гриф меняет биографию и игру инструмента. При продаже это стоит видеть и слышать на конкретном контрабасе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-s-novoy-podstavkoy",
@@ -164,7 +221,10 @@
           "lead": "Недавняя работа может быть важна для следующего музыканта. Приглашаем осмотреть инструмент.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Новая подставка может изменить звук и удобство. Перед продажей полезно показать инструмент после окончательной настройки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "predlozhit-starinnyy-kontrabas-chastnoy-kollektsii",
@@ -172,7 +232,10 @@
           "lead": "Если у вас редкий инструмент, можно рассказать его историю и обсудить возможность личной встречи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старинный контрабас может войти в новую коллекцию через знакомство с его происхождением, звуком и историей владения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-uchenicheskiy-kontrabas-drugogo-razmera",
@@ -180,7 +243,10 @@
           "lead": "Если ребёнок перерос инструмент, обсудим его передачу и знакомство с подходящим следующим размером.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Маленький ученический контрабас может понадобиться следующему ребёнку. Состояние корпуса и высоту струн стоит проверить.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-s-neskolkimi-povrezhdeniyami",
@@ -188,7 +254,10 @@
           "lead": "Передача возможна только после понимания состояния. Привозите на осмотр или обсудим первые сведения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Повреждения не всегда определяют судьбу инструмента. Мастерская может рассмотреть, что можно восстановить и как передать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-s-chehlom-i-smychkom",
@@ -196,7 +265,10 @@
           "lead": "Если хотите передать комплект целиком, расскажите об инструменте и принадлежностях; обсудим осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Чехол и смычок делают комплект удобным для нового музыканта. Их состояние тоже важно при передаче контрабаса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-pyatistrunnyy-kontrabas",
@@ -204,7 +276,10 @@
           "lead": "Пятиструнный инструмент нужен не каждому музыканту. Можно обсудить его конфигурацию и возможного следующего владельца.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пятиструнный контрабас нужен под особый репертуар. При продаже важны строй, удобство грифа и характер нижнего регистра.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodat-kontrabas-posle-neudachnoy-pokupki",
@@ -212,7 +287,10 @@
           "lead": "Если экземпляр не подошёл, покажите его мастерской: обсудим состояние, настройку или передачу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если контрабас не подошёл, возможно, дело в настройке, а возможно, нужен другой инструмент. Оба пути можно рассмотреть.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-komissiyu-v-masterskoy",
@@ -220,7 +298,10 @@
           "lead": "Если рассматриваете комиссионную продажу, сначала выясним, возможен ли такой формат для конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Комиссионная передача требует согласованных условий и понимания конкретного контрабаса. Начать можно с его осмотра.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "obmenyat-staryy-kontrabas-na-drugoy",
@@ -228,7 +309,10 @@
           "lead": "Если прежний инструмент перестал устраивать, можно обсудить его состояние и возможные пути смены.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При обмене прежний инструмент и будущий выбор связаны. Можно обсудить состояние своего баса и познакомиться с коллекцией.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "prodazha-kontrabasa-posle-dolgogo-hraneniya",
@@ -236,7 +320,10 @@
           "lead": "До объявления стоит узнать, что произошло с инструментом за годы простоя. Начнём с осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После долгого хранения важно услышать звук и проверить швы, гриф и строй. Затем можно решать, как передать инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "peredat-kontrabas-drugomu-muzykantu-cherez-masterskuyu",
@@ -244,7 +331,10 @@
           "lead": "Если важно найти следующего исполнителя, можно обсудить осмотр и способ знакомства с инструментом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если хотите, чтобы контрабас нашёл другого музыканта, начнём с его нынешнего голоса, состояния и истории.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
