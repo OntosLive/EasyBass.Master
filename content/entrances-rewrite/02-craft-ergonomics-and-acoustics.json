@@ -404,7 +404,7 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Подставка, душка, струны и корпус работают вместе. Их настройкой можно изменить отклик и тембр вашего контрабаса.",
+          "bridge": "Звук складывается из работы корпуса, душки, подставки и струн. Их согласованная настройка меняет отклик вашего контрабаса.",
           "bridge_model": "gpt-6",
           "bridge_status": "gpt6_draft"
         },
@@ -414,7 +414,10 @@
           "lead": "В сольном репертуаре важен отклик в разных регистрах. Можно обсудить работу с вашим контрабасом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для сольной игры особенно слышны начало тихой ноты и верхний регистр. Акустическую настройку можно вести от вашей программы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "akusticheskaya-dorabotka-kontrabasa-dlya-orkestra",
@@ -422,7 +425,10 @@
           "lead": "Если инструмент теряется в группе, привозите его: рассмотрим настройку и работу со звуком.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В оркестре важны читаемый низ и свободная смычковая атака. Подставку и душку можно подготовить под такую работу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ploho-otvechaet-na-tihiy-smychok",
@@ -431,7 +437,7 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Тихая атака требует лёгкого ответа струны на смычок. Подставку, душку и комплект струн можно настроить под вашу игру.",
+          "bridge": "Тихая нота должна начинаться без лишнего давления. Отклик струны связан с подставкой, душкой и общим состоянием инструмента.",
           "bridge_model": "gpt-6",
           "bridge_status": "gpt6_draft"
         },
@@ -441,7 +447,10 @@
           "lead": "Если приходится давить, чтобы получить атаку, обсудим подставку, душку и общую подготовку инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если звук не начинается с лёгкого смычка, можно заняться настройкой инструмента и характером сопротивления струны.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ne-uspevaet-za-bystrym-smychkom",
@@ -449,7 +458,10 @@
           "lead": "На быстрых штрихах инструмент становится тяжёлым? Можно обсудить акустический отклик и удобство.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Быстрый штрих требует мгновенного ответа. Подставка, комплект струн и акустическая настройка помогают найти нужный отклик.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "slabyy-zvuk-struny-sol-na-kontrabase",
@@ -457,7 +469,10 @@
           "lead": "Когда верхняя струна заметно слабее остальных, стоит исследовать конкретный инструмент. Запишитесь на осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда струна соль звучит слабее соседних, стоит услышать весь инструмент: баланс зависит и от струн, и от корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "gluhaya-struna-mi-na-kontrabase",
@@ -465,7 +480,10 @@
           "lead": "Нижняя струна потеряла ясность? В мастерской можно проверить струну и акустическую подготовку корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Глухая струна ми может измениться после работы с комплектом, подставкой и душкой. Важно сохранить общий баланс.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ne-zvuchit-na-strune-re",
@@ -473,7 +491,10 @@
           "lead": "Если одна струна выпадает из общего баланса, можно оценить настройку и состояние инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Одна неотвечающая струна нарушает целую фразу. Настройка начинается с её звука в сравнении с остальными.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-slishkom-gluho-zvuchit",
@@ -481,7 +502,10 @@
           "lead": "Если привычный звук стал закрытым, привозите контрабас на осмотр и обсуждение акустической настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Закрытый звук контрабаса можно раскрывать акустической настройкой, сохраняя привычный характер инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-zvuchit-rezko-i-zhestko",
@@ -489,7 +513,10 @@
           "lead": "Если хочется иного тембрального ответа, можно исследовать струны, подставку и акустику конкретного корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Слишком резкая атака утомляет и музыканта, и слушателя. Тембр можно смягчать подбором струн и настройкой корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nerovnyy-zvuk-kontrabasa-po-strunam",
@@ -497,7 +524,10 @@
           "lead": "Когда струны по-разному отвечают на одинаковое усилие, обсудим акустическую доработку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Ровность четырёх струн слышна в каждой гамме. Подставку, душку и комплект можно согласовать по всему диапазону.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "ne-hvataet-basa-v-zvuke-kontrabasa",
@@ -505,7 +535,10 @@
           "lead": "Хотите более уверенную нижнюю струну? Начнём со знакомства с нынешним звучанием инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Глубокий бас рождается во всём инструменте, а не только в толстой струне. Настройка нижнего регистра здесь возможна.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "slabyy-verhniy-registr-kontrabasa",
@@ -513,7 +546,10 @@
           "lead": "Если наверху звук не держится, мастерская может проверить настройку и состояние грифа и корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если наверху звук быстро гаснет, важно услышать верхние позиции на вашем инструменте и настроить общий отклик.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-yarkim-solisticheskim-zvukom",
@@ -521,7 +557,10 @@
           "lead": "Ищете отклик для соло? Можно сыграть на нескольких инструментах и обсудить их подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Солистический звук проверяется на знакомой фразе: насколько легко нота рождается, поёт и переходит в следующую.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-glubokim-orkestrovym-zvukom",
@@ -529,7 +568,10 @@
           "lead": "Если важно звучание в группе, приглашаем к сравнению инструментов и обсуждению настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Оркестровый низ должен сохранять ясную атаку. Такой звук лучше сравнить на реальных контрабасах под вашим смычком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "proverit-zvuk-kontrabasa-posle-remonta",
@@ -537,7 +579,10 @@
           "lead": "Если вмешательство изменило звучание, можно привести инструмент на контрольное знакомство и настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После ремонта стоит вновь услышать инструмент по всем струнам. Акустическую настройку можно продолжить по результату.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-zvuchit-huzhe-posle-smeny-strun",
@@ -545,7 +590,10 @@
           "lead": "Не устраивает новый комплект? Обсудим совместимость струн с конкретным инструментом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Новые струны меняют напряжение и баланс звука. Подставку и отклик инструмента можно настроить под новый комплект.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroyka-kontrabasa-posle-ustanovki-podstavki",
@@ -553,7 +601,10 @@
           "lead": "Новая подставка меняет и удобство, и звук. Можно проверить готовый результат в мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После установки подставки важно вернуть удобную высоту и свободную атаку. Настройка соединяет эргономику со звуком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "akusticheskaya-nastroyka-podstavki-kontrabasa",
@@ -561,7 +612,10 @@
           "lead": "Подставку оцениваем вместе с инструментом и его звуком, а не отдельно от корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Подставка передаёт колебания корпусу. Её форма, прилегание и высота могут изменить и отклик, и ощущение руки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "regulirovka-dushki-dlya-zvuchaniya-kontrabasa",
@@ -569,7 +623,10 @@
           "lead": "Если изменился отклик инструмента, можно обсудить осмотр и профессиональную регулировку душки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Душка влияет на баланс струн и характер ответа корпуса. Её положение можно настроить по звуку вашего контрабаса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-zvuchit-slishkom-tiho-dlya-orkestra",
@@ -577,7 +634,10 @@
           "lead": "Если собственный инструмент теряется в оркестре, можно рассмотреть настройку или другой экземпляр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если контрабас теряется в оркестре, можно поработать с читаемостью атаки и балансом регистров без погони за громкостью.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ploho-slyshno-v-dzhazovom-ansamble",
@@ -585,7 +645,10 @@
           "lead": "Обсудим акустический инструмент и сценическое усиление как одну задачу живой игры.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В джазовой группе контрабасу нужны и акустический отклик, и ясный сигнал в усилении. Эти задачи лучше согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-zapisi-zvuchit-mutno",
@@ -593,7 +656,10 @@
           "lead": "Если студийный звук расходится с ощущением под рукой, можно обсудить подготовку инструмента к записи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Студийный микрофон слышит то, что в комнате скрыто. Подготовку баса можно начать с ровности струн и чистоты атаки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-shumit-pri-smychkovoy-atake",
@@ -601,7 +667,10 @@
           "lead": "Лишний шум начала ноты может иметь разные причины. Можно приехать с инструментом и показать проблему.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Шум смычка иногда возникает там, где струна сопротивляется. Рабочую высоту и акустический ответ можно настроить вместе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "volchiy-ton-na-kontrabase-pri-igre",
@@ -609,7 +678,10 @@
           "lead": "Если одна нота резко выделяется и мешает репертуару, обсудим её на конкретном инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Волчья нота проявляется на конкретной высоте и при определённом штрихе. Её можно услышать вместе и искать рабочую настройку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-neravnomernymi-rezonansami",
@@ -617,7 +689,10 @@
           "lead": "Если инструмент слишком усиливает отдельные ноты, можно проверить его акустическую подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если отдельные ноты резко выделяются, настройку лучше вести по всему диапазону, сохраняя характер звучания.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nizkiy-stroy-na-kontrabase-i-otklik",
@@ -625,7 +700,10 @@
           "lead": "При изменении строя меняется ощущение струн. Обсудим комплект и настройку под нужный репертуар.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При низком строе меняется натяжение и отклик. Подходящие струны и настройка помогают инструменту отвечать свободнее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "solnyy-stroy-kontrabasa-i-nastroyka",
@@ -633,7 +711,10 @@
           "lead": "Если вы играете в сольном строе, мастерская может обсудить струны и подготовку конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для сольного строя важны соответствующий комплект и работа корпуса с новым натяжением. Подготовка делается под программу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-igry-pitstsikato-s-silnoy-atakoy",
@@ -641,7 +722,10 @@
           "lead": "Обсудим выбор или настройку инструмента, который отвечает на пальцевую атаку в вашей музыке.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Хорошее пиццикато чувствуется в первой атаке и длительности звука. Высоту струн и отклик можно настроить под пальцы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-slepa-s-udobnym-otklikom",
@@ -649,7 +733,10 @@
           "lead": "Для рокабилли важна рабочая высота и характер струны. Можно обсудить подготовку своего инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для слэпа нужны свободное движение струны и удобная высота. Подставку и комплект можно подготовить под ваш ритм.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ploho-zvuchit-posle-zimy",
@@ -657,7 +744,10 @@
           "lead": "Изменились ощущения после сезона отопления? Привозите инструмент для осмотра и настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После сухой зимы меняются швы, высота и звук. Контрабас можно привести к привычному состоянию после осмотра.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-zvuchit-inache-v-raznyh-zalah",
@@ -665,7 +755,10 @@
           "lead": "Если инструмент отвечает по-разному на сцене и дома, обсудим, что можно проверить до нового выступления.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Зал меняет то, как слышен бас, а сам инструмент остаётся вашим. Сценическую подготовку можно связать с реальной акустикой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }
