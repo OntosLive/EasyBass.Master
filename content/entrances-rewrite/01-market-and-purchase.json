@@ -482,7 +482,10 @@
           "lead": "В мастерской есть самый дешёвый контрабас на рынке. Начните с него, а затем сыграйте на других инструментах коллекции.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Самый дешёвый контрабас можно взять за точку входа: попробовать его и рядом услышать другие инструменты нашей коллекции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-bez-pereplaty",
@@ -490,7 +493,10 @@
           "lead": "Можно начать с самого доступного инструмента, сравнить несколько экземпляров и выбрать тот, который понравится в игре.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Можно начать с самого доступного инструмента и сравнить, что меняется в звуке и удобстве, не выбирая по ценнику вслепую.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "pervyy-kontrabas-po-minimalnoy-tsene",
@@ -498,7 +504,10 @@
           "lead": "Если цена покупки определяет решение, покажем путь к доступному инструменту и возможности знакомства с коллекцией.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Первый контрабас по минимальной цене тоже должен быть удобным для занятий. Важны высота струн, гриф и настройка.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-s-podgotovlennym-grifom",
@@ -506,7 +515,10 @@
           "lead": "Готовность контрабаса к игре начинается с удобства. Обсудим инструмент, на котором не нужно бороться с грифом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Подготовленный гриф чувствуется в первых же позициях. Выбирайте контрабас, на котором удобно играть вашей рукой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-posle-nastroyki",
@@ -514,7 +526,10 @@
           "lead": "Ищете не фабричную заготовку, а подготовленный к игре инструмент? Поговорим о конкретных экземплярах.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабас после настройки стоит послушать и попробовать: высота струн, подставка и звук уже работают вместе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-s-udobnoy-nakladkoy",
@@ -522,7 +537,10 @@
           "lead": "Удобная накладка важнее рекламной категории. Можно подобрать экземпляр и обсудить доработку под вашу руку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Хорошая накладка помогает свободно вести руку по грифу. Можно попробовать несколько инструментов и почувствовать разницу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-professionalnoy-dorabotki",
@@ -530,7 +548,10 @@
           "lead": "В мастерской инструмент можно оценить после настройки, а не только по его исходной конструкции.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После индивидуальной доработки даже знакомый корпус ощущается иначе. Разницу лучше проверить своей музыкой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-i-srazu-nastroit",
@@ -538,7 +559,10 @@
           "lead": "Покупку можно совместить с индивидуальной подготовкой. Обсудим инструмент и будущую исполнительскую задачу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Выбранный контрабас можно подготовить к вашей игре: настроить гриф, высоту струн и акустический ответ.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "priehat-poigrat-na-raznyh-kontrabasah",
@@ -546,7 +570,10 @@
           "lead": "В частной коллекции можно услышать разницу между экземплярами. Договоримся о времени знакомства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Коллекция существует для живого знакомства. Один знакомый пассаж на нескольких контрабасах расскажет больше фотографий.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-posle-sravneniya",
@@ -554,7 +581,10 @@
           "lead": "Необязательно решать по фотографии. В мастерской можно сравнить инструменты и затем обсудить покупку выбранного.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Здесь можно сначала сыграть на нескольких инструментах, почувствовать их характер, а затем остановиться на своём.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "posmotret-kontrabasy-pered-pokupkoy",
@@ -562,7 +592,10 @@
           "lead": "Если ещё не знаете, какой экземпляр нужен, начните с посещения коллекции и игры на инструментах.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Приезжайте познакомиться с контрабасами в одной комнате: услышать звук и попробовать посадку до покупки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-kupit-s-vozmozhnostyu-nastroyki",
@@ -570,7 +603,10 @@
           "lead": "Выбирайте не только нынешний характер инструмента: мастерская может обсудить индивидуальные изменения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если инструмент близок по голосу, гриф и высоту струн можно доработать под руку. Покупка и мастерская здесь рядом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-s-horoshim-smychkovym-otklikom",
@@ -578,7 +614,10 @@
           "lead": "Если приоритет смычок, подберём направление знакомства и обсудим подготовку конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Под смычком слышно, насколько легко начинается нота. Можно сравнить этот отклик на разных контрабасах.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-uverennoy-begloy-igry",
@@ -586,7 +625,10 @@
           "lead": "Ищете инструмент, который отвечает на быстрое движение? Начать можно со сравнения грифов и индивидуальной настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Беглость связана и с грифом: профиль, накладка и высота струн помогают свободно менять позиции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-legkoy-levoy-ruki",
@@ -594,7 +636,10 @@
           "lead": "Необязательно мириться с тяжёлой посадкой и высоким усилием. Подбор и доработка обсуждаются на конкретном инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если левая рука быстро устаёт, стоит сравнить контрабасы по профилю грифа и сопротивлению струн.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-muzykanta-vysokogo-rosta",
@@ -602,7 +647,10 @@
           "lead": "Для высокого музыканта один лишь размер 4/4 не решает вопроса удобства. Можно подобрать подходящую геометрию.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Высокому музыканту не всегда требуется самый большой корпус. Посадка, шпиль и мензура важнее одной цифры размера.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-nebolshoy-kisti",
@@ -610,7 +658,10 @@
           "lead": "Ищете инструмент без лишнего растяжения? В коллекции можно сравнить разные грифы и мензуры.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для небольшой кисти особенно заметны расстояния между позициями и форма грифа. Эти различия можно почувствовать в игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-vzroslogo-posle-pereryva",
@@ -618,7 +669,10 @@
           "lead": "Вернуться к игре легче на инструменте, который удобно держать и чувствовать. Приезжайте знакомиться с коллекцией.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После перерыва удобно возвращаться к инструменту, который легко отвечает на знакомые движения. Попробуйте разные грифы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-perehoda-s-bas-gitary",
@@ -626,7 +680,10 @@
           "lead": "Если знакомый басовый звук теперь нужен на акустическом инструменте, можно начать с живой пробы контрабасов.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Переход с бас-гитары начинается с нового ощущения корпуса и струны. Знакомую линию можно сыграть на акустическом басе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-posle-violoncheli",
@@ -634,7 +691,10 @@
           "lead": "Опыт смычковой игры остаётся с вами, но новый корпус ощущается иначе. Договоримся о знакомстве с инструментами.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После виолончели контрабас открывает другую геометрию рук и звука. Подходящий корпус лучше выбрать в живой пробе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-dlya-ansamblya",
@@ -642,7 +702,10 @@
           "lead": "Ищете инструмент для камерной работы? Можно познакомиться с несколькими контрабасами и выбрать по реальной музыке.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для ансамбля важны не только басовые ноты, но и лёгкость атаки, интонация и то, как инструмент отвечает партнёрам.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-postupleniya-v-orkestr-kupit",
@@ -650,7 +713,10 @@
           "lead": "Если впереди прослушивание, обсудим инструмент для знакомой программы и время на привыкание.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Оркестровые соло лучше сыграть на нескольких контрабасах: смычковая атака и свобода смены позиций сразу проявятся.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "podobrat-kontrabas-po-repertuaru",
@@ -658,7 +724,10 @@
           "lead": "Привозите знакомые пассажи. Вместе с вами можно сравнить, как разные инструменты отвечают на них.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Привезите знакомые трудные места программы. Именно они покажут, какой гриф и отклик нужны вашему контрабасу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "podobrat-kontrabas-po-zvuchaniyu",
@@ -666,7 +735,10 @@
           "lead": "Слов «тёмный» или «яркий» мало до встречи. Можно сыграть на нескольких инструментах в одной комнате.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Сравнивать тембр проще в одной комнате и на одной музыке. Коллекция даёт такую возможность без поспешного выбора.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-po-rekomendatsii-prepodavatelya-kupit",
@@ -674,7 +746,10 @@
           "lead": "Если педагог назвал требования, можно сопоставить их с несколькими реальными экземплярами.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Требования преподавателя можно проверить на реальных инструментах: посадка, мензура, высота струн и звук в занятиях.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-v-chastnoy-masterskoy",
@@ -682,7 +757,10 @@
           "lead": "Здесь можно познакомиться с инструментом и обсудить его подготовку. Контакт напрямую с контрабасной мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Покупка в мастерской даёт возможность познакомиться с инструментом и тут же обсудить его игровую подготовку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-bez-internet-korziny",
@@ -690,7 +768,10 @@
           "lead": "Контрабас лучше сначала услышать. Договоримся о знакомстве с коллекцией и обсуждении условий.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У контрабаса нет необходимости быть безликой картинкой в корзине. Здесь на инструменте можно сначала сыграть.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-s-izvestnoy-istoriey",
@@ -698,7 +779,10 @@
           "lead": "Ищете инструмент с биографией? Обсудим происхождение конкретных экземпляров и подтверждённые сведения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "История ремонтов и владельцев важна для старого инструмента. О конкретных экземплярах можно поговорить при знакомстве.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-dlya-mnogoletney-igry",
@@ -706,7 +790,10 @@
           "lead": "Если ищете свой инструмент надолго, полезнее сравнить несколько экземпляров, чем выбирать только по описанию.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для многолетней игры важен комфорт не только в первые минуты. Сравните инструмент на знакомой программе и длинных фразах.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-redkiy-kollektsionnyy-kontrabas",
@@ -714,7 +801,10 @@
           "lead": "Редкий инструмент требует личного знакомства и разговора о его происхождении. Обсудим интересующие экземпляры.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Редкий контрабас живёт собственным голосом и историей. К такому инструменту лучше приходить через личное знакомство.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
