@@ -1,0 +1,562 @@
+{
+  "version": 1,
+  "description": "Human-authored short workshop entrances; never cross-product generated",
+  "families": [
+    {
+      "id": "ergonomic-neck",
+      "title": "Гриф, беглость и индивидуальная эргономика",
+      "entries": [
+        {
+          "slug": "virtuoznyy-grif-dlya-kontrabasa",
+          "search_title": "Виртуозный гриф для контрабаса",
+          "lead": "Если беглая игра упирается в гриф, привозите инструмент на осмотр. Возможна индивидуальная эргономическая доработка.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "grif-kontrabasa-dlya-begloy-igry",
+          "search_title": "Гриф контрабаса для беглой игры",
+          "lead": "Настроим разговор вокруг вашей техники: профиль, высота струн и переходы оцениваются на самом инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "individualnaya-ergonomika-kontrabasa",
+          "search_title": "Индивидуальная эргономика контрабаса",
+          "lead": "Работаем с удобством игры под конкретного музыканта. Можно приехать со своим контрабасом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "dorabotka-grifa-kontrabasa-pod-ruku",
+          "search_title": "Доработка грифа контрабаса под руку",
+          "lead": "Если положение руки не устраивает, обсудим профиль грифа и возможность корректировки после осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "umenshit-tolschinu-grifa-kontrabasa",
+          "search_title": "Уменьшить толщину грифа контрабаса",
+          "lead": "Толстый гриф мешает движению? Мастерская может оценить целесообразность индивидуальной доработки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "izmenit-profil-grifa-kontrabasa",
+          "search_title": "Изменить профиль грифа контрабаса",
+          "lead": "Если руке не подходит нынешняя форма грифа, привозите инструмент для обсуждения конкретного решения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "udobnaya-nakladka-grifa-kontrabasa",
+          "search_title": "Удобная накладка грифа контрабаса",
+          "lead": "Неровная или неудобная накладка может мешать игре. Посмотрим её состояние и возможности подготовки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "pereshlifovka-nakladki-kontrabasa",
+          "search_title": "Перешлифовка накладки контрабаса",
+          "lead": "При износе накладки и проблемах в позициях можно обсудить работу мастерской после осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vyravnivanie-nakladki-kontrabasa",
+          "search_title": "Выравнивание накладки контрабаса",
+          "lead": "Если слышите призвуки или ощущаете неровность под пальцами, приезжайте оценить накладку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "individualnaya-nastroyka-menzury-kontrabasa",
+          "search_title": "Индивидуальная настройка мензуры контрабаса",
+          "lead": "Расстояния не устраивают руку? Посмотрим устройство конкретного инструмента и реальные возможности настройки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-udobnymi-verhnimi-pozitsiyami",
+          "search_title": "Контрабас с удобными верхними позициями",
+          "lead": "Если работа наверху грифа затруднена, можно обсудить конструкцию и возможные эргономические изменения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otkryt-vysokie-pozitsii-na-kontrabase",
+          "search_title": "Открыть высокие позиции на контрабасе",
+          "lead": "Переход в верхний регистр упирается в плечи и гриф? Мастерская может оценить инструмент и предложить варианты.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "dorabotka-plech-kontrabasa-dlya-solo",
+          "search_title": "Доработка плеч контрабаса для соло",
+          "lead": "Если корпус мешает движениям в верхнем регистре, обсудим конструкцию и допустимость работ с ним.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "ergonomicheskaya-nastroyka-starinnogo-kontrabasa",
+          "search_title": "Эргономическая настройка старинного контрабаса",
+          "lead": "Старинный инструмент требует бережного подхода. Можно рассмотреть удобство игры без поспешных необратимых вмешательств.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vysota-strun-dlya-begloy-igry-na-kontrabase",
+          "search_title": "Высота струн для беглой игры на контрабасе",
+          "lead": "Большое усилие мешает быстрым пассажам? Проверим настройку и то, что можно изменить.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "sdelat-struny-na-kontrabase-nizhe",
+          "search_title": "Сделать струны на контрабасе ниже",
+          "lead": "Когда струны стоят слишком высоко, не всегда нужна замена инструмента. Обсудим регулировку на вашем контрабасе.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "slishkom-zhestkiy-kontrabas-dlya-igry",
+          "search_title": "Слишком жёсткий контрабас для игры",
+          "lead": "Инструмент сопротивляется руке? Посмотрим струны, геометрию и настройку как рабочую задачу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-tyazhelo-prizhimat-na-nizhnih-pozitsiyah",
+          "search_title": "Контрабас тяжело прижимать на нижних позициях",
+          "lead": "Если на первых позициях приходится тратить слишком много силы, привозите контрабас на настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "na-kontrabase-tyazhelo-igrat-v-verhnih-pozitsiyah",
+          "search_title": "На контрабасе тяжело играть в верхних позициях",
+          "lead": "Инструмент требует излишнего усилия наверху? Обсудим накладку, подставку и индивидуальную подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "neudobno-derzhat-kontrabas-pri-igre",
+          "search_title": "Неудобно держать контрабас при игре",
+          "lead": "Можно изменить не только положение музыканта, но иногда и подготовку инструмента. Начнём с осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-zazhimaet-levuyu-ruku",
+          "search_title": "Контрабас зажимает левую руку",
+          "lead": "Если напряжение появляется именно на этом инструменте, можно сравнить его с другими и рассмотреть эргономику.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-i-korotkie-paltsy",
+          "search_title": "Контрабас и короткие пальцы",
+          "lead": "Необязательно выбирать инструмент только по размеру корпуса. Приглашаем сравнить разные грифы и мензуры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-malenkoy-ruki-s-nastroykoy",
+          "search_title": "Контрабас для маленькой руки с настройкой",
+          "lead": "Можно обсудить подбор и индивидуальную подготовку под удобное движение руки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dlinnyh-ruk-i-vysokogo-rosta",
+          "search_title": "Контрабас для длинных рук и высокого роста",
+          "lead": "Ищете удобную постановку при большом росте? Сравним геометрию нескольких инструментов.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ne-daet-bystro-smenit-pozitsiyu",
+          "search_title": "Контрабас не даёт быстро сменить позицию",
+          "lead": "Если ощущение глиссирования и смены позиций мешает репертуару, мастерская может исследовать гриф.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nastroyka-kontrabasa-pod-solnuyu-tehniku",
+          "search_title": "Настройка контрабаса под сольную технику",
+          "lead": "Инструмент можно готовить под конкретные исполнительские требования. Обсудим работу на вашем экземпляре.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "podgotovka-kontrabasa-dlya-orkestrovoy-ruki",
+          "search_title": "Подготовка контрабаса для оркестровой руки",
+          "lead": "Длинная репетиция выявляет лишнее усилие. Посмотрим посадку инструмента и регулировку струн.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otregulirovat-porozhek-kontrabasa",
+          "search_title": "Отрегулировать порожек контрабаса",
+          "lead": "Слишком высокие струны у порожка меняют ощущение первых позиций. Можно проверить и обсудить работу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-zameny-nakladki-stal-neudoben",
+          "search_title": "Контрабас после замены накладки стал неудобен",
+          "lead": "Если ощущения изменились после ремонта, привозите инструмент: сравним состояние до и после по вашей игре.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-nastroyki-slishkom-tyazhelyy",
+          "search_title": "Контрабас после настройки слишком тяжёлый",
+          "lead": "Если после вмешательства работать стало труднее, обсудим контрольную настройку и возможную коррекцию.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nastroyka-vysoty-strun-po-sezonam",
+          "search_title": "Настройка высоты струн по сезонам",
+          "lead": "Если удобство изменяется с влажностью, можно осмотреть инструмент и согласовать сезонную подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "udobnaya-nastroyka-pyatistrunnogo-kontrabasa",
+          "search_title": "Удобная настройка пятиструнного контрабаса",
+          "lead": "Нижняя струна и ширина грифа меняют геометрию. Обсудим настройку пятиструнного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "dorabotka-starogo-moskvicha-dlya-udobnoy-igry",
+          "search_title": "Доработка старого Москвича для удобной игры",
+          "lead": "Даже недорогой фабричный контрабас можно рассматривать как объект серьёзной эргономической работы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "ergonomicheskaya-dorabotka-muzimy",
+          "search_title": "Эргономическая доработка Музимы",
+          "lead": "У старой «Музимы» есть своя геометрия. Привозите её для обсуждения удобства и настройки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "dorabotka-cheshskogo-kontrabasa-pod-muzykanta",
+          "search_title": "Доработка чешского контрабаса под музыканта",
+          "lead": "Если «чех» неудобен в руке, можно обсудить не замену по бренду, а работу с конкретным грифом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    },
+    {
+      "id": "acoustic-response",
+      "title": "Звук, акустический отклик и настройка",
+      "entries": [
+        {
+          "slug": "individualnaya-akusticheskaya-nastroyka-kontrabasa",
+          "search_title": "Индивидуальная акустическая настройка контрабаса",
+          "lead": "Если звучание не устраивает, начнём с вашего инструмента. Обсудим акустическую подготовку под вашу игру.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "akusticheskaya-dorabotka-kontrabasa-dlya-solo",
+          "search_title": "Акустическая доработка контрабаса для соло",
+          "lead": "В сольном репертуаре важен отклик в разных регистрах. Можно обсудить работу с вашим контрабасом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "akusticheskaya-dorabotka-kontrabasa-dlya-orkestra",
+          "search_title": "Акустическая доработка контрабаса для оркестра",
+          "lead": "Если инструмент теряется в группе, привозите его: рассмотрим настройку и работу со звуком.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ploho-otvechaet-na-tihiy-smychok",
+          "search_title": "Контрабас плохо отвечает на тихий смычок",
+          "lead": "Тихое вступление требует уверенного начала ноты. Мастерская может изучить инструмент и настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-tyazhelo-nachinaet-zvuk-smychkom",
+          "search_title": "Контрабас тяжело начинает звук смычком",
+          "lead": "Если приходится давить, чтобы получить атаку, обсудим подставку, душку и общую подготовку инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ne-uspevaet-za-bystrym-smychkom",
+          "search_title": "Контрабас не успевает за быстрым смычком",
+          "lead": "На быстрых штрихах инструмент становится тяжёлым? Можно обсудить акустический отклик и удобство.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "slabyy-zvuk-struny-sol-na-kontrabase",
+          "search_title": "Слабый звук струны соль на контрабасе",
+          "lead": "Когда верхняя струна заметно слабее остальных, стоит исследовать конкретный инструмент. Запишитесь на осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "gluhaya-struna-mi-na-kontrabase",
+          "search_title": "Глухая струна ми на контрабасе",
+          "lead": "Нижняя струна потеряла ясность? В мастерской можно проверить струну и акустическую подготовку корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ne-zvuchit-na-strune-re",
+          "search_title": "Контрабас не звучит на струне ре",
+          "lead": "Если одна струна выпадает из общего баланса, можно оценить настройку и состояние инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-slishkom-gluho-zvuchit",
+          "search_title": "Контрабас слишком глухо звучит",
+          "lead": "Если привычный звук стал закрытым, привозите контрабас на осмотр и обсуждение акустической настройки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-zvuchit-rezko-i-zhestko",
+          "search_title": "Контрабас звучит резко и жёстко",
+          "lead": "Если хочется иного тембрального ответа, можно исследовать струны, подставку и акустику конкретного корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nerovnyy-zvuk-kontrabasa-po-strunam",
+          "search_title": "Неровный звук контрабаса по струнам",
+          "lead": "Когда струны по-разному отвечают на одинаковое усилие, обсудим акустическую доработку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "ne-hvataet-basa-v-zvuke-kontrabasa",
+          "search_title": "Не хватает баса в звуке контрабаса",
+          "lead": "Хотите более уверенную нижнюю струну? Начнём со знакомства с нынешним звучанием инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "slabyy-verhniy-registr-kontrabasa",
+          "search_title": "Слабый верхний регистр контрабаса",
+          "lead": "Если наверху звук не держится, мастерская может проверить настройку и состояние грифа и корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-yarkim-solisticheskim-zvukom",
+          "search_title": "Контрабас с ярким солистическим звуком",
+          "lead": "Ищете отклик для соло? Можно сыграть на нескольких инструментах и обсудить их подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-glubokim-orkestrovym-zvukom",
+          "search_title": "Контрабас с глубоким оркестровым звуком",
+          "lead": "Если важно звучание в группе, приглашаем к сравнению инструментов и обсуждению настройки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "proverit-zvuk-kontrabasa-posle-remonta",
+          "search_title": "Проверить звук контрабаса после ремонта",
+          "lead": "Если вмешательство изменило звучание, можно привести инструмент на контрольное знакомство и настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-zvuchit-huzhe-posle-smeny-strun",
+          "search_title": "Контрабас звучит хуже после смены струн",
+          "lead": "Не устраивает новый комплект? Обсудим совместимость струн с конкретным инструментом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nastroyka-kontrabasa-posle-ustanovki-podstavki",
+          "search_title": "Настройка контрабаса после установки подставки",
+          "lead": "Новая подставка меняет и удобство, и звук. Можно проверить готовый результат в мастерской.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "akusticheskaya-nastroyka-podstavki-kontrabasa",
+          "search_title": "Акустическая настройка подставки контрабаса",
+          "lead": "Подставку оцениваем вместе с инструментом и его звуком, а не отдельно от корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "regulirovka-dushki-dlya-zvuchaniya-kontrabasa",
+          "search_title": "Регулировка душки для звучания контрабаса",
+          "lead": "Если изменился отклик инструмента, можно обсудить осмотр и профессиональную регулировку душки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-zvuchit-slishkom-tiho-dlya-orkestra",
+          "search_title": "Контрабас звучит слишком тихо для оркестра",
+          "lead": "Если собственный инструмент теряется в оркестре, можно рассмотреть настройку или другой экземпляр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ploho-slyshno-v-dzhazovom-ansamble",
+          "search_title": "Контрабас плохо слышно в джазовом ансамбле",
+          "lead": "Обсудим акустический инструмент и сценическое усиление как одну задачу живой игры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-zapisi-zvuchit-mutno",
+          "search_title": "Контрабас на записи звучит мутно",
+          "lead": "Если студийный звук расходится с ощущением под рукой, можно обсудить подготовку инструмента к записи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-shumit-pri-smychkovoy-atake",
+          "search_title": "Контрабас шумит при смычковой атаке",
+          "lead": "Лишний шум начала ноты может иметь разные причины. Можно приехать с инструментом и показать проблему.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "volchiy-ton-na-kontrabase-pri-igre",
+          "search_title": "Волчий тон на контрабасе при игре",
+          "lead": "Если одна нота резко выделяется и мешает репертуару, обсудим её на конкретном инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-neravnomernymi-rezonansami",
+          "search_title": "Контрабас с неравномерными резонансами",
+          "lead": "Если инструмент слишком усиливает отдельные ноты, можно проверить его акустическую подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nizkiy-stroy-na-kontrabase-i-otklik",
+          "search_title": "Низкий строй на контрабасе и отклик",
+          "lead": "При изменении строя меняется ощущение струн. Обсудим комплект и настройку под нужный репертуар.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "solnyy-stroy-kontrabasa-i-nastroyka",
+          "search_title": "Сольный строй контрабаса и настройка",
+          "lead": "Если вы играете в сольном строе, мастерская может обсудить струны и подготовку конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-igry-pitstsikato-s-silnoy-atakoy",
+          "search_title": "Контрабас для игры пиццикато с сильной атакой",
+          "lead": "Обсудим выбор или настройку инструмента, который отвечает на пальцевую атаку в вашей музыке.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-slepa-s-udobnym-otklikom",
+          "search_title": "Контрабас для слэпа с удобным откликом",
+          "lead": "Для рокабилли важна рабочая высота и характер струны. Можно обсудить подготовку своего инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ploho-zvuchit-posle-zimy",
+          "search_title": "Контрабас плохо звучит после зимы",
+          "lead": "Изменились ощущения после сезона отопления? Привозите инструмент для осмотра и настройки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-zvuchit-inache-v-raznyh-zalah",
+          "search_title": "Контрабас звучит иначе в разных залах",
+          "lead": "Если инструмент отвечает по-разному на сцене и дома, обсудим, что можно проверить до нового выступления.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    }
+  ]
+}
