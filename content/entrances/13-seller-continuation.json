@@ -10,7 +10,10 @@
       "open_question": "Что для вас важнее при расставании: срок, цена или история инструмента?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После оркестровой работы инструмент сохраняет привычный голос и историю сцены. С новым музыкантом он может продолжить её.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-posle-neudachnogo-remonta",
@@ -20,7 +23,10 @@
       "open_question": "Какие работы проводились и что именно стало ощущаться иначе после них?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Неудачный ремонт не означает конца инструмента. Состояние можно рассмотреть, прежде чем выбирать способ передачи.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-s-redkoy-konstruktsiey",
@@ -30,7 +36,10 @@
       "open_question": "Какая особенность делает контрабас необычным и проявляется ли она в звучании?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Редкая конструкция делает контрабас интересным конкретному исполнителю. Её стоит показать вместе со звуком и состоянием.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-kotoryy-hochetsya-sohranit",
@@ -40,7 +49,10 @@
       "open_question": "Какая сторона истории удерживает вас рядом с инструментом?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Инструмент иногда хочется оставить частью семейной истории. Можно обсудить передачу, сохранив сведения о его прошлом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-radi-pokupki-drugogo",
@@ -50,7 +62,10 @@
       "open_question": "Какое свойство другого контрабаса заставило задуматься о продаже своего?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "При смене контрабаса можно обсудить судьбу прежнего и рядом познакомиться с другим инструментом из коллекции.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-posle-professionalnoy-zapisi",
@@ -60,7 +75,10 @@
       "open_question": "Что именно в записи изменило ваше отношение к инструменту?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Запись сохраняет голос контрабаса в определённый момент. Она может стать частью его истории при передаче.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-s-gastrolnoy-istoriey",
@@ -70,7 +88,10 @@
       "open_question": "Какие концертные маршруты входят в известную историю инструмента?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Гастрольная биография живёт в инструменте вместе со следами обслуживания. Состояние и звук стоит показать будущему владельцу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-posle-dorogoy-restavratsii",
@@ -80,7 +101,10 @@
       "open_question": "Какие изменения после реставрации ощущаются в игре наиболее отчётливо?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Дорогая реставрация не заменяет живого знакомства с басом. Документы работ и нынешний звук помогают видеть целое.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-bez-opredelennogo-sroka",
@@ -90,7 +114,10 @@
       "open_question": "Есть ли у вас представление о возможной цене и обстоятельствах передачи?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Необязательно назначать срок расставания заранее. Мастерская может познакомиться с контрабасом и его историей.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-sohraniv-ego-istoriyu",
@@ -100,7 +127,10 @@
       "open_question": "Какие записи о контрабасе вы хотите передать, а какие сохранить для себя?",
       "group": "Продажа: история и выбор маршрута",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Сведения о мастерах, владельцах и записях можно сохранить вместе с инструментом, даже когда он переходит в другие руки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }
