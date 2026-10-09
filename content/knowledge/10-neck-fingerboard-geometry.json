@@ -91,6 +91,14 @@
           "title": "Guild of American Luthiers: рецензия на The Setup and Repair of the Double Bass for Optimum Sound",
           "url": "https://luth.org/2005_0232400-condino-rev-chuck/"
         }
+      ],
+      "maps": [
+        {
+          "file": "neck-geometry.svg",
+          "after_section": 2,
+          "alt": "Техническая карта угла шейки контрабаса, продольного прогиба и поперечного профиля накладки, высоты струны и положения подставки.",
+          "caption": "Геометрия грифа складывается из установки шейки, формы накладки и положения струны."
+        }
       ]
     }
   ]
