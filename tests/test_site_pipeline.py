@@ -198,7 +198,7 @@ class PublicationTests(unittest.TestCase):
         page = BeautifulSoup((self.site / "kontrabas-1-2-ili-3-4/index.html").read_text(encoding="utf-8"), "html.parser")
         bridge = page.select_one(".entry-modulation")
         self.assertIsNotNone(bridge)
-        self.assertIn("по руке", bridge.get_text())
+        self.assertIn("рука достаёт позиции", bridge.get_text())
         self.assertLess(str(page).index('class="entry-modulation"'), str(page).index('class="contact-block'))
         musima = BeautifulSoup((self.site / "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html").read_text(encoding="utf-8"), "html.parser")
         self.assertIsNotNone(musima.select_one(".entry-modulation"))
