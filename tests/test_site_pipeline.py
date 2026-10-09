@@ -31,6 +31,12 @@ class PublicationTests(unittest.TestCase):
             target = self.site / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / path, target)
+        # Simulate Jekyll copying the shared stylesheet and photographic assets.
+        for source in ([ROOT / "assets/visual/scene.css"] +
+                       sorted((ROOT / "assets/photography").glob("*.webp"))):
+            target = self.site / source.relative_to(ROOT)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
         # Jekyll carries immutable, hand-authored vectors to the public build.
         for source in sorted((ROOT / "assets/maps").glob("*.svg")):
             target = self.site / "assets/maps" / source.name
@@ -60,6 +66,38 @@ class PublicationTests(unittest.TestCase):
         self.assertTrue(result["sensor_n0"]["closed_entrances"])
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
+        self.assertEqual(validate(self.site, ROOT)["errors"], [])
+
+    def test_new_photo_salon_wraps_site_without_mutating_search_content(self):
+        home = BeautifulSoup((ROOT / "index.html").read_text(encoding="utf-8"), "html.parser")
+        self.assertEqual(len(home.find_all("h1")), 1)
+        self.assertEqual(len(home.select(".master-directions > a")), 3)
+        self.assertEqual(len(home.select(".contact-block")), 1)
+        self.assertEqual(len(home.select(".cb-editorial-card img")), 2)
+        self.assertIsNotNone(home.select_one("button#cb-atmosphere"))
+        self.assertEqual(home.select_one('a.cb-contact-link')["href"], "tel:+79096945544")
+        self.assertEqual(len(list((ROOT / "assets/photography").glob("*.webp"))), 3)
+        for photo in (ROOT / "assets/photography").glob("*.webp"):
+            self.assertLess(photo.stat().st_size, 300_000)
+        self.assertIn("assets/visual/scene.css", home.decode() if isinstance(home, bytes) else str(home))
+
+        build(ROOT, self.site)
+        expected = (
+            ("vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html", "МАСТЕРСКАЯ КОНТРАБАСА"),
+            ("details/pochemu-raskleivaetsya-kontrabas-shov-i-treschina/index.html", "Шов и трещина"),
+            ("models/eastman-vb305/index.html", "Eastman"),
+        )
+        for route, fragment in expected:
+            page = BeautifulSoup((self.site / route).read_text(encoding="utf-8"), "html.parser")
+            self.assertTrue(any("assets/visual/scene.css" in x.get("href", "")
+                                for x in page.select('link[rel="stylesheet"]')))
+            self.assertIn(fragment.lower(), page.get_text(" ", strip=True).lower())
+            self.assertEqual(len(page.select(".contact-block")), 1)
+            self.assertEqual(len(page.select('link[rel="canonical"]')), 1)
+        short = BeautifulSoup((self.site / expected[0][0]).read_text(encoding="utf-8"), "html.parser")
+        self.assertEqual(len(short.select(".entry-range-grid a[href]")), 4)
+        self.assertEqual(len(short.select(".entry-utilities a[href]")), 4)
+        self.assertEqual(len(short.select(".master-footer a[href]")), 2)
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
     def test_custom_domain_is_root_canonical_in_every_public_url(self):
