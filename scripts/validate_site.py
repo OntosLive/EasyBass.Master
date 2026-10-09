@@ -113,8 +113,14 @@ def validate(site: Path, root: Path = ROOT) -> dict:
                 for name in ("Telegram", "WhatsApp"):
                     if not c.select_one(f'a[aria-label="{name}"] svg'):
                         errors.append(f"{route}: {name} icon absent")
-                if c.select_one(".max-contact-pending"):
-                    errors.append(f"{route}: inactive MAX icon leaked")
+                telegram = c.select_one('a[aria-label="Telegram"]')
+                if telegram and telegram.get("href") != "https://t.me/+79096945544":
+                    errors.append(f"{route}: Telegram link does not use the workshop phone")
+                placeholders = c.select(".max-contact-pending")
+                if len(placeholders) != 1 or placeholders[0].name != "span" or not placeholders[0].select_one("svg"):
+                    errors.append(f"{route}: exactly one noninteractive MAX placeholder required")
+                if c.select_one('a[aria-label="MAX"],a[href*="max.ru"]'):
+                    errors.append(f"{route}: MAX must not link without verified profile URL")
             if route not in (entry_urls | n0_hubs) and not d.select_one(".brand-title"):
                 errors.append(f"{route}: masthead not shared")
             if route in (entry_urls | n0_hubs) and not d.select_one(".meta a[href]"):
