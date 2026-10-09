@@ -10,7 +10,10 @@
       "open_question": "На каких струнах вы играете сейчас и какого изменения звука ожидаете?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Струны меняют и звук, и усилие под пальцами. Выбирать комплект лучше вместе с конкретным контрабасом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "struny-dlya-orkestrovogo-kontrabasa",
@@ -20,7 +23,10 @@
       "open_question": "Какие струны стоят сейчас и при каком штрихе им особенно не хватает отклика?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Оркестровому комплекту нужен уверенный захват смычка и ровный отклик по струнам. Настройка инструмента тоже важна.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "struny-dlya-dzhaza-na-kontrabase",
@@ -30,7 +36,10 @@
       "open_question": "Вы хотите больше чёткости атаки, мягкости под рукой или продолжительности тона?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для джаза струна должна легко отвечать пальцу и сохранять ясный низ. Натяжение связано с высотой подставки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "struny-dlya-solnogo-stroya-kontrabasa",
@@ -40,7 +49,10 @@
       "open_question": "Какой строй и программу вы готовите и какие струны установлены сейчас?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Сольный строй требует другого рабочего натяжения и привычной певучести. Комплект можно подобрать под вашу программу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "solnyy-i-orkestrovyy-stroy-kontrabasa",
@@ -50,7 +62,10 @@
       "open_question": "Вы переходите между строями на одном инструменте или используете отдельный комплект?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Между сольным и оркестровым строем меняется поведение струн. Подготовку контрабаса можно связать с нужной музыкой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kanifol-dlya-kontrabasnogo-smychka",
@@ -60,7 +75,10 @@
       "open_question": "Что сейчас происходит при начале звука: смычок скользит или цепляет струну слишком резко?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Канифоль влияет на начало смычкового звука. Подходящий состав лучше выбирать под волос и свой комплект струн.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-smychok-dlya-kontrabasa",
@@ -70,7 +88,10 @@
       "open_question": "Какой смычок вы используете сейчас и каких возможностей вам в нём недостаёт?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Смычок стоит попробовать на своём контрабасе: вес, баланс и лёгкость тихой атаки становятся ясны сразу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "nemetskiy-ili-frantsuzskiy-kontrabasnyy-smychok",
@@ -80,7 +101,10 @@
       "open_question": "На каком смычке вы учились и почему задумываетесь о переходе на другой хват?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Немецкая и французская системы по-разному лежат в руке. Выбор начинается с привычного движения и игры.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabasnyy-smychok-dlya-nachinayuschego",
@@ -90,7 +114,10 @@
       "open_question": "Какую систему хвата рекомендует преподаватель и какой смычок уже удалось попробовать?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Начинающему важен смычок, который удобно держать и которым легко начинать ноту. Баланс лучше почувствовать лично.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "smychok-dlya-orkestrovoy-igry",
@@ -100,7 +127,10 @@
       "open_question": "Какие оркестровые штрихи и динамические переходы требуют у вас наибольшей точности?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В оркестре смычок должен уверенно работать и на тихом начале, и в плотной группе. Подходящий баланс слышен в игре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-vybrat-ves-kontrabasnogo-smychka",
@@ -110,7 +140,10 @@
       "open_question": "Что сейчас утомляет руку: общий вес смычка, баланс или необходимость удерживать давление?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Вес смычка ощущается не сам по себе, а в распределении по трости. На знакомом штрихе это сразу заметно.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "balans-smychka-dlya-kontrabasa",
@@ -120,7 +153,10 @@
       "open_question": "На каком участке смычка вы теряете контроль звука чаще всего?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Баланс меняет управляемость смычка в руке. На одной фразе можно почувствовать, какой вариант свободнее.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "volos-smychka-i-nachalo-zvuka",
@@ -130,7 +166,10 @@
       "open_question": "Когда менялся волос и как ведёт себя смычок на разных струнах?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Волос должен уверенно захватывать струну с начала ноты. Если сцепление пропало, стоит проверить состояние смычка.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-uhazhivat-za-kontrabasnym-smychkom",
@@ -140,7 +179,10 @@
       "open_question": "Где хранится смычок и какое изменение в его поведении вас беспокоит?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Уход за смычком сохраняет работу волоса и механики. По состоянию конкретного смычка можно выбрать нужное обслуживание.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "smychok-ploho-derzhit-kanifol",
@@ -150,7 +192,10 @@
       "open_question": "Смычок плохо цепляет все струны или проблема возникает только на отдельных нотах?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Когда канифоль перестала держаться, причина может быть в состоянии волоса и его поверхности. Смычок можно осмотреть.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "pereyti-na-drugie-struny-kontrabasa",
@@ -160,7 +205,10 @@
       "open_question": "Что сейчас не устраивает в струнах и что вы уже пробовали менять?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Новый комплект способен изменить отклик баса. Полезно подбирать струны вместе с высотой и характером грифа.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "struny-dlya-starinnogo-kontrabasa",
@@ -170,7 +218,10 @@
       "open_question": "Известен ли прежний комплект струн и в каком строе инструмент использовался?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Старинному контрабасу важно подобрать струны по его конструкции и нынешней настройке, сохраняя характер голоса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "zvukosnimatel-dlya-kontrabasa",
@@ -180,7 +231,10 @@
       "open_question": "В каком ансамбле вы играете и с какой проблемой усиления сталкиваетесь?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Звукосниматель помогает вынести акустический бас на сцену. Его работа связана с подставкой и способом атаки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-podklyuchit-kontrabas-k-usilitelyu",
@@ -190,7 +244,10 @@
       "open_question": "Какой у вас звукосниматель и какое оборудование уже используется на репетициях?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для усиления контрабаса важны чистый сигнал, подходящий вход и настройка под ваш звукосниматель.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabasnye-struny-dlya-pitstsikato-i-smychka",
@@ -200,7 +257,10 @@
       "open_question": "Какая часть вашей программы требует большего внимания: смычок или пиццикато?",
       "group": "Струны, смычки и звук",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если вы играете и пальцами, и смычком, комплект струн должен поддерживать обе техники. Такой баланс ищут в игре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }
