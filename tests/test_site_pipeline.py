@@ -67,7 +67,8 @@ class PublicationTests(unittest.TestCase):
         self.assertIn('url: "https://easybassmaster.ru"', jekyll)
 
         result = build(ROOT, self.site)
-        self.assertEqual(result["public_documents_in_sitemap"], 807)
+        # Local tests do not run Jekyll, so three issue pages join only during the real CI build.
+        self.assertEqual(result["public_documents_in_sitemap"], len(list(self.site.rglob("*.html"))))
         sitemap = (self.site / "sitemap.xml").read_text(encoding="utf-8")
         robots = (self.site / "robots.txt").read_text(encoding="utf-8")
         home = (self.site / "index.html").read_text(encoding="utf-8")
