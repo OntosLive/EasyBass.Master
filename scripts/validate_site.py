@@ -70,6 +70,16 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             target = local_path(site, route, link["href"])
             if target is not None and not target.exists():
                 errors.append(f"{route}: CSS missing {link['href']}")
+        for visual in d.select('img[src]'):
+            src = visual.get("src", "")
+            if not visual.get("alt", "").strip():
+                errors.append(f"{route}: image without meaningful alt: {src}")
+            asset = local_path(site, route, src)
+            if asset is not None and not asset.is_file():
+                errors.append(f"{route}: missing visual asset: {src}")
+            if src.endswith(".svg") and (visual.get("width") != "1280" or
+                                         visual.get("height") != "760"):
+                errors.append(f"{route}: unbounded workshop SVG: {src}")
         for link in d.select('a[href]'):
             href = link["href"]
             dest = local_path(site, route, href)
