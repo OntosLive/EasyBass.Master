@@ -283,26 +283,45 @@ def contact_from_home(site: Path) -> str:
     return str(block)
 
 
+def group_anchor(label: str) -> str:
+    """An unchanging archive anchor for each existing editorial family."""
+    return "entrance-" + sha256(label.encode("utf-8")).hexdigest()[:10]
+
+
 def frame(p: dict, role: str, content: str, contact: str, route_override: str | None = None) -> str:
     access = role == "entry"
     route = "/" + (p["entry_slug"] if access else f"details/{p['slug']}") + "/"
     if route_override:
         route = route_override
-    # Every publication, including deeply nested N.0, links back to root.
     level = "../" * len([part for part in route.strip("/").split("/") if part])
     page_title = p["search_title"] if access else p["editorial_title"]
     desc = p["description"] if access else p["editorial_description"]
     kicker = p["entry_kicker"] if access else p["editorial_kicker"]
     mast = (f'<div class="rule"></div><div class="meta"><a href="{level}">'
             'EASYBASSMASTER</a><span>МОСКВА</span></div>' + ('' if access else brand()))
+
+    # ONTOS.RENT short-page principle: H1 -> telephone -> four ranges -> four facts
+    # -> contextual editorial footer. Rich explanatory copy stays in the separately
+    # indexed N.1 or the family directory; metadata retains the authored N.0 lead.
+    lead = '' if access else f'<p class="deck">{escape(p["editorial_deck"])}</p>'
+    header = ('<section class="issue master-lead">'
+              f'<p class="issue-kicker">{escape(kicker)}</p>'
+              f'<h1>{escape(page_title)}</h1>' + lead + '</section>')
+
+    footer_href = p.get("footer_href", level + "archive/")
+    footer_label = p.get("footer_label", "Подшивка")
+    footer_title = p.get("footer_title", "")
+    footer_attr = f' title="{escape(footer_title, quote=True)}"' if footer_title else ""
     footer = (f'<footer class="master-footer"><span>МАСТЕРСКАЯ КОНТРАБАСА</span>'
-              f'<a href="{level}archive/">Подшивка</a></footer>')
-    full = (mast + '<main><section class="issue master-lead">'
-            f'<p class="issue-kicker">{escape(kicker)}</p>'
-            f'<h1>{escape(page_title)}</h1>'
-            f'<p class="deck">{escape(p["entry_deck"] if access else p["editorial_deck"])}</p>'
-            '</section>' + (contact + content if access else content + contact) + footer + '</main>')
-    page_class = 'entry-router' if access else 'deep-editorial'
+              f'<a href="{escape(footer_href, quote=True)}"{footer_attr}>'
+              f'{escape(footer_label)}</a></footer>')
+
+    main_content = contact + content if access else content + contact
+    full = mast + '<main>' + header + main_content + footer + '</main>'
+    if access:
+        page_class = 'entry-router entry-index' if p.get("is_index") else 'entry-router entry-short'
+    else:
+        page_class = 'deep-editorial'
     return (f'<!doctype html><html lang="ru"><head><meta charset="utf-8">'
             f'<meta name="viewport" content="width=device-width,initial-scale=1">'
             f'<title>{escape(page_title)} · EasyBassMaster</title>'
@@ -311,7 +330,6 @@ def frame(p: dict, role: str, content: str, contact: str, route_override: str | 
             f'<link rel="stylesheet" href="{level}styles.css"></head>'
             f'<body class="new-master {page_class}">{full}</body></html>')
 
-
 def nav(items: list[tuple[str, str]]) -> str:
     cells = "".join(f'<a href="{escape(href, quote=True)}">{escape(label)}'
                     '<span aria-hidden="true">↗</span></a>' for href, label in items)
@@ -319,41 +337,30 @@ def nav(items: list[tuple[str, str]]) -> str:
 
 
 def make_entry(p: dict, contact: str) -> str:
-    """Short transactional signal; the optional knowledge page remains independent."""
+    """A real N.0 newspaper entrance with its already-written N.1 as 'Подробнее'."""
     route = f"/{p['entry_slug']}/"
-    content = (
-        '<section class="entry-signal"><p>'
-        + escape(p["entry_body"]) + '</p></section>'
-        + route_panel(route)
-        + '<p class="entry-continuation"><a href="../details/'
-        + escape(p["slug"], quote=True)
-        + '/">Подробнее об инструменте</a></p>'
-    )
-    return frame(p, "entry", content, contact)
+    source = {**p, "footer_href": f"../details/{p['slug']}/",
+              "footer_label": "Подробнее"}
+    return frame(source, "entry", route_panel(route), contact)
 
 def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | None = None) -> str:
-    """A newspaper opening: one recognizable question, phone, and eight routes."""
+    """One direct human request, eight routes, and one deep editorial exit."""
+    route = f"/{p['slug']}/"
     source = {
         "entry_slug": p["slug"],
         "search_title": p["search_title"],
         "description": p["lead"],
-        "entry_kicker": p["group"].upper(),
+        "entry_kicker": "МАСТЕРСКАЯ КОНТРАБАСА",
         "entry_deck": p["lead"],
+        "footer_href": f"../archive/#{group_anchor(p['group'])}",
+        "footer_label": "По теме",
+        "footer_title": p["group"],
     }
-    route = f"/{p['slug']}/"
-    content = (
-        '<section class="entry-signal"><p class="entrance-question">'
-        + escape(p["open_question"]) + '</p></section>'
-        + route_panel(route)
-    )
     if deeper and p["slug"] in deeper:
-        article = deeper[p["slug"]]
-        content += (
-            '<p class="entry-continuation"><a href="../details/'
-            + escape(article["slug"], quote=True)
-            + '/">' + escape(article["title"]) + '</a></p>'
-        )
-    return frame(source, "entry", content, contact)
+        source["footer_href"] = f"../details/{deeper[p['slug']]['slug']}/"
+        source["footer_label"] = "Подробнее"
+        source["footer_title"] = deeper[p["slug"]]["title"]
+    return frame(source, "entry", route_panel(route), contact)
 
 def make_deep(p: dict, by_slug: dict[str, dict], contact: str) -> str:
     paragraphs = "".join(f'<p>{escape(v)}</p>' for v in p["editorial_paragraphs"])
@@ -463,7 +470,7 @@ def archive_index(site: Path, pages: list[dict], entrances: list[dict], knowledg
         out = ['<section class="archive-entrances" aria-label="Входы и объявления">',
                '<p class="issue-kicker">САМОСТОЯТЕЛЬНЫЕ ВХОДЫ</p>']
         for group, records in grouped.items():
-            out.append('<details class="archive-group"><summary>'
+            out.append('<details class="archive-group" id="' + group_anchor(group) + '"><summary>'
                        + escape(group) + f' <span>{len(records)}</span></summary>'
                        '<div class="archive-list">')
             for item in records:

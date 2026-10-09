@@ -105,64 +105,100 @@ def records(root: Path = ROOT) -> list[dict]:
     return published
 
 
+"""Two-level topic directory and standalone human-phrased N.0 notices.
+
+For short N.0 we intentionally follow ONTOS.RENT: H1, direct contact,
+four meaningful ranges, four workshop facts, and contextual 'Подробнее'.
+The separately edited lead is preserved as SEO description, never as an
+extraneous sales speech on the public newspaper surface.
+"""
+DIRECTORY_SECTIONS = (
+    ("Инструменты и коллекция", (
+        "familiar-instruments", "sizes-and-form", "private-collection", "learning-and-families",
+    )),
+    ("Покупка и знакомство", ("buy-and-compare", "price-and-ownership")),
+    ("Мастерская и звук", (
+        "ergonomic-neck", "acoustic-response", "repair-restoration", "body-compatibility",
+    )),
+    ("Музыка и сцена", (
+        "classical-performance", "jazz-rockabilly", "recording-film-stage",
+    )),
+    ("Пользование и дорога", (
+        "temporary-access", "strings-bows-hardware", "movement-and-logistics",
+    )),
+    ("Передача и оценка", ("sell-and-transition", "appraisal-and-authentication")),
+)
+
+
 def html_for(record: dict, contact: str, frame) -> str:
     route = record["route"]
     source = {
         "entry_slug": route.strip("/"),
         "search_title": record["title"],
-        "entry_kicker": record["family_title"].upper(),
+        "entry_kicker": "МАСТЕРСКАЯ КОНТРАБАСА",
         "entry_deck": record["lead"],
         "description": record["description"],
+        "footer_href": "../",
+        "footer_label": "По теме",
+        "footer_title": record["family_title"],
     }
-    # No instruction, textbook, residual diagnostic question or invented stock.
-    # The phone is inserted by frame() directly after the single authored line.
-    content = (route_panel(route)
-               + '<nav class="n0-return" aria-label="Соседние объявления">'
-               '<a href="../">Другие объявления этого направления</a></nav>')
-    return frame(source, "entry", content, contact, route_override=route)
+    return frame(source, "entry", route_panel(route), contact, route_override=route)
 
 
 def index_page(hub: str, family: dict, subset: list[dict], contact: str, frame) -> str:
     source = {
         "entry_slug": hub.strip("/"),
         "search_title": family["title"],
-        "entry_kicker": "ПОДШИВКА · ОБЪЯВЛЕНИЯ",
-        "entry_deck": "Обращения к частной мастерской контрабаса. Каждое объявление открывает прямой контакт.",
-        "description": f"{family['title']}. Мастерская контрабаса в Москве.",
+        "entry_kicker": "ПОДШИВКА · ПО ТЕМЕ",
+        "entry_deck": family["title"],
+        "description": f"{family['title']}. Объявления мастерской контрабаса в Москве.",
+        "is_index": True,
+        "footer_href": "../",
+        "footer_label": "Все направления",
     }
     links = "".join(
-        '<li><a href="' + escape("/EasyBass.Master" + item["route"], quote=True)
-        + '">' + escape(item["title"]) + '</a></li>' for item in subset
+        '<a href="' + escape("/EasyBass.Master" + item["route"], quote=True)
+        + '">' + escape(item["title"]) + '</a>' for item in subset
     )
-    content = ('<section class="n0-list" aria-label="Объявления этой темы"><ul>'
-               + links + '</ul></section>'
-               '<nav class="n0-return"><a href="../">Все направления</a></nav>')
+    content = ('<nav class="n0-directory" aria-label="Объявления этого направления">'
+               + links + '</nav>')
     return frame(source, "entry", content, contact, route_override=hub)
 
 
 def root_page(groups: list[dict], rows: list[dict], contact: str, frame) -> str:
+    indexed = {item["id"]: item for item in groups}
     counts = Counter(item["family_id"] for item in rows)
-    sections = ['<section class="n0-list" aria-label="Направления объявлений">']
-    for family in groups:
-        n = counts[family["id"]]
-        if not n:
-            continue
-        url = f"/EasyBass.Master/vhod/{family['id']}/"
-        sections.append(
-            '<article class="n0-family-line"><h2><a href="' + escape(url, quote=True)
-            + '">' + escape(family["title"]) + '</a></h2>'
-            + f'<p>{n} самостоятельных объявлений</p></article>'
-        )
-    sections.append('</section>')
+    published = {name for name, n in counts.items() if n}
+    assigned = {name for _, family_ids in DIRECTORY_SECTIONS for name in family_ids}
+    if published != assigned:
+        raise ValueError("Directory chapters do not cover each live announcement family exactly")
+    if len(assigned) != sum(len(ids) for _, ids in DIRECTORY_SECTIONS):
+        raise ValueError("Directory chapter has a duplicate family")
+
+    sections = ['<div class="n0-chapters">']
+    for heading, family_ids in DIRECTORY_SECTIONS:
+        links = []
+        for family_id in family_ids:
+            family = indexed[family_id]
+            url = f"/EasyBass.Master/vhod/{family_id}/"
+            links.append('<a href="' + escape(url, quote=True) + '">'
+                         '<span>' + escape(family["title"]) + '</span>'
+                         f'<small>{counts[family_id]}</small></a>')
+        sections.append('<section class="n0-chapter"><h2>' + escape(heading) + '</h2>'
+                        '<nav class="n0-directory" aria-label="' + escape(heading, quote=True)
+                        + '">' + ''.join(links) + '</nav></section>')
+    sections.append('</div>')
     source = {
         "entry_slug": "vhod",
         "search_title": "Объявления мастерской контрабаса",
-        "entry_kicker": "МАСТЕРСКАЯ КОНТРАБАСА · ПОДШИВКА",
-        "entry_deck": "Инструменты, настройка, реставрация и приглашение к знакомству.",
+        "entry_kicker": "ПОДШИВКА · ВСЕ НАПРАВЛЕНИЯ",
+        "entry_deck": "Инструменты, мастерская, работа, выбор и знакомство.",
         "description": "Короткие объявления частной мастерской контрабаса.",
+        "is_index": True,
+        "footer_href": "../archive/",
+        "footer_label": "Подшивка мастерской",
     }
-    return frame(source, "entry", "".join(sections), contact, route_override="/vhod/")
-
+    return frame(source, "entry", ''.join(sections), contact, route_override="/vhod/")
 
 def compile_site(root: Path, site: Path, contact: str, frame, write) -> dict:
     authored = families(root)

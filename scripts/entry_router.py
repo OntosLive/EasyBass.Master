@@ -1,26 +1,26 @@
-"""Shared eight-link navigator on short EasyBassMaster newspaper entrances.
+"""Eight concise, meaningful directions shared by newspaper entries.
 
-One upper cell represents one RANGE; the first cell combines time and making.
-Four lower cells introduce genuine features of the private master workshop.
-No catalogue stock or lowest-market-price guarantee is inferred from these labels.
+Each of the four primary cells represents one RANGE of the collection,
+not four product categories. Four small links open the real workshop.
 """
 from html import escape
 
 RANGES = (
-    ("collection/#vremya-proishozhdenie", "От старинных до современных\nОт фабричных до мастеровых"),
-    ("collection/#uroven", "От ученических до профессиональных"),
-    ("collection/#muzyka", "От сольной и оркестровой игры до джаза и рокабилли"),
-    ("collection/#dostupnost", "От самых доступных до редких коллекционных"),
+    ("collection/#vremya-proishozhdenie", "Старинные · современные\nФабричные · мастеровые"),
+    ("collection/#uroven", "Ученические · профессиональные"),
+    ("collection/#muzyka", "Соло · оркестр\nДжаз · рокабилли"),
+    ("collection/#dostupnost", "Доступные · коллекционные"),
 )
 FACTS = (
-    ("experience/", "15 лет · более 1000 контрабасов"),
+    ("experience/", "15 лет · 1000+ инструментов"),
     ("workshop/", "Только контрабасы"),
-    ("collection/", "Частная коллекция · более 50"),
+    ("collection/", "Коллекция · 50+"),
     ("delivery/", "Доставка по России"),
 )
 
+
 def route_panel(route: str) -> str:
-    """Four meaningful ranges + four direct doors to the workshop."""
+    """Eight site-internal links, no self-links, no synthetic pages."""
     if not (route.startswith("/") and route.endswith("/")):
         raise ValueError(f"Invalid entry route: {route}")
     prefix = "../" * len([part for part in route.strip("/").split("/") if part])
