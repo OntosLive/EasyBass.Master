@@ -540,23 +540,14 @@ footer{
 }
 
 
-/* MAX is intentionally a visible noninteractive placeholder until a verified link exists. */
-.contact-icons .max-contact-pending{
-  border:0;
-  background:none;
-  border-radius:50%;
-  width:29px;height:29px;
-  display:grid;place-items:center;
-  flex:none;
-  cursor:default;
-  opacity:.88;
-}
-.contact-icons .max-contact-pending svg{width:22px;height:22px;display:block;fill:none}
-.new-master .contact-icons .max-contact-pending{width:36px;height:36px;border:0}
-.new-master .contact-icons .max-contact-pending svg{width:27px;height:27px}
+/* MAX is a monochrome noninteractive placeholder until a verified profile URL exists. */
+.contact-icons .max-contact-pending{width:29px;height:29px;display:grid;place-items:center;flex:none;cursor:default;color:inherit}
+.contact-icons .max-contact-pending svg{width:18px;height:18px;display:block;fill:none}
+.new-master .contact-icons .max-contact-pending{width:36px;height:36px}
+.new-master .contact-icons .max-contact-pending svg{width:25px;height:25px}
 .new-master.entry-router .contact-icons .max-contact-pending{width:30px;height:30px}
-.new-master.entry-router .contact-icons .max-contact-pending svg{width:21px;height:21px}
+.new-master.entry-router .contact-icons .max-contact-pending svg{width:19px;height:19px}
 @media(max-width:700px){
   .new-master.entry-router .contact-icons .max-contact-pending{width:27px;height:27px}
-  .new-master.entry-router .contact-icons .max-contact-pending svg{width:19px;height:19px}
+  .new-master.entry-router .contact-icons .max-contact-pending svg{width:18px;height:18px}
 }
