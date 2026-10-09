@@ -284,10 +284,11 @@ def contact_from_home(site: Path) -> str:
 
 def frame(p: dict, role: str, content: str, contact: str, route_override: str | None = None) -> str:
     access = role == "entry"
-    level = "../" if access else "../../"
     route = "/" + (p["entry_slug"] if access else f"details/{p['slug']}") + "/"
     if route_override:
         route = route_override
+    # Every publication, including deeply nested N.0, links back to root.
+    level = "../" * len([part for part in route.strip("/").split("/") if part])
     page_title = p["search_title"] if access else p["editorial_title"]
     desc = p["description"] if access else p["editorial_description"]
     kicker = p["entry_kicker"] if access else p["editorial_kicker"]
@@ -526,11 +527,14 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
     for item in models:
         write(site, "/models/" + item["slug"] + "/", make_model_publication(item, contact))
     archive_index(site, pages, entrances, knowledge, models)
+    from sensor_n0 import compile_site as compile_sensor
+    n0_report = compile_sensor(root, site, contact, frame, write)
     urls = canonicals_and_sitemap(site)
     return {
         "generated_subjects": len(pages),
         "generated_pair_pages": 2 * len(pages),
         "standalone_entrances": len(entrances),
+        "sensor_n0": n0_report,
         "independent_knowledge_articles": len(knowledge),
         "official_model_articles": len(models),
         "hypotheses_retained": len(read_json(root / "content/candidates.json")["candidates"]),

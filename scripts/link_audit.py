@@ -8,6 +8,7 @@ from pathlib import Path
 import re
 
 from site_core import ROOT, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, norm, read_json
+from sensor_n0 import records as sensor_records
 
 
 def audit(root: Path = ROOT) -> dict:
@@ -32,6 +33,11 @@ def audit(root: Path = ROOT) -> dict:
         models = inspect_model_publications(root)
     except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
         errors.append(str(exc))
+    try:
+        n0 = sensor_records(root)
+    except (OSError, ValueError, KeyError, TypeError, json.JSONDecodeError) as exc:
+        errors.append(str(exc))
+        n0 = []
     candidates = read_json(root / "content/candidates.json").get("candidates", [])
     hypotheses = [norm(x["query_hypothesis"]) for x in candidates]
     for name, count in Counter(hypotheses).items():
@@ -43,6 +49,8 @@ def audit(root: Path = ROOT) -> dict:
     archive = (root / "archive/index.html").read_text(encoding="utf-8")
     if archive.count("<!-- GENERATED_SUBJECT_INDEX -->") != 1:
         errors.append("Archive must have exactly one generated index marker")
+    if archive.count("<!-- SENSOR_N0_INDEX -->") != 1:
+        errors.append("Archive must contain exactly one short-sensor insertion marker")
     if "site.pages" not in archive:
         errors.append("Historical Jekyll issue collection lost from archive")
     if "Пространство, в котором можно найти свой." not in (root / "index.html").read_text(encoding="utf-8"):
@@ -51,7 +59,7 @@ def audit(root: Path = ROOT) -> dict:
         if not (root / p["parent"] / "index.html").exists():
             errors.append(f'{p["slug"]}: missing parent page')
     return {"ready_subjects": len(pages), "ready_entrances": len(entrances),
-            "ready_knowledge": len(knowledge), "verified_model_articles": len(models),
+            "ready_knowledge": len(knowledge), "verified_model_articles": len(models), "short_sensor_pages": len(n0),
             "hypotheses": len(candidates),
             "hypothesis_repetitions": len(hypotheses) - len(set(hypotheses)),
             "errors": errors}

@@ -1,0 +1,312 @@
+{
+  "version": 1,
+  "group": "Марки, школы и названия инструментов",
+  "entries": [
+    {
+      "slug": "cheshskiy-kontrabas-cremona-ili-strunal",
+      "search_title": "Чешский контрабас Cremona или Strunal",
+      "lead": "У названий Cremona и Strunal есть общая история чешской фабричной традиции, но конкретный инструмент остаётся отдельной вещью.",
+      "body": "Заводская история города Лубы помогает понять, откуда появились оба названия. На рынке встречаются разные годы изготовления, модели и состояния корпуса. Сходство фабричного происхождения не гарантирует одинаковой мензуры, настройки или звучания каждого контрабаса.",
+      "open_question": "Что написано на этикетке вашего чешского инструмента?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "chto-takoe-musima-na-kontrabase",
+      "search_title": "Что такое Musima на контрабасе",
+      "lead": "Musima относится к восточногерманской истории массового производства музыкальных инструментов.",
+      "body": "Музей Markneukirchen документирует историю этой фабричной системы. В разговоре музыкантов «немец» иногда означает инструмент подобной традиции, но географическое слово не доказывает изготовителя. На конкретном контрабасе история складывается из маркировки, конструкции и предыдущих работ.",
+      "open_question": "Какие признаки Musima сохранились на рассматриваемом инструменте?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "strunal-cremona-5-5wa",
+      "search_title": "Strunal Cremona 5/5WA",
+      "lead": "Обозначение Strunal Cremona 5/5WA встречается в российских торговых каталогах, но само название не сообщает состояния конкретного инструмента.",
+      "body": "Эта модельная запись может стать началом поиска технических сведений о корпусе и размере. Для выбора дальше появляется самостоятельный вопрос: какой экземпляр, с какой мензурой и историей настройки перед нами. Наличие модели в мастерской здесь не утверждается.",
+      "open_question": "Вы ищете определённую версию 5/5WA или хотите понять различия чешских контрабасов?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "strunal-cremona-50-1-d",
+      "search_title": "Strunal Cremona 50/1 D",
+      "lead": "Запись Cremona 50/1 D известна по частным русскоязычным объявлениям и требует точного чтения маркировки.",
+      "body": "На вторичном рынке легко спутать название фабрики, код модели и индивидуальные изменения инструмента. Поэтому фотография этикетки и конструкции может оказаться полезнее краткого торгового заголовка. Живой экземпляр при этом продолжает иметь собственное состояние и звук.",
+      "open_question": "Какая маркировка осталась на инструменте и известно ли время его покупки?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "cheshskiy-kontrabas-i-nemetskiy-kontrabas",
+      "search_title": "Чешский контрабас и немецкий контрабас",
+      "lead": "Слова «чех» и «немец» в музыкальном разговоре часто обозначают две узнаваемые торговые истории, а не два стандарта звучания.",
+      "body": "У инструментов различаются мастерские, фабрики, периоды изготовления и последующие ремонты. Упрощённое сравнение стран способно скрыть настоящий предмет: мензуру, корпус и отклик. Интереснее познакомиться с конкретными экземплярами без заранее назначенного победителя.",
+      "open_question": "Какие два инструмента вы уже сравнивали и где услышали разницу?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "cheshskaya-cremona-i-bolgarskaya-kremona",
+      "search_title": "Чешская Cremona и болгарская Kremona",
+      "lead": "Два похожих названия легко спутать, хотя за ними стоят разные производственные истории.",
+      "body": "Чешская Cremona связана с фабрикой в Лубы, позднее Strunal. Болгарская Kremona ведёт собственную историю из Казанлыка и известна прежде всего гитарами. Слово на этикетке само по себе ещё не сообщает тип изделия или происхождение конкретного контрабаса.",
+      "open_question": "Как именно написано название на этикетке и к какому инструменту оно относится?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "hora-kontrabas-iz-rumynii",
+      "search_title": "HORA контрабас из Румынии",
+      "lead": "Румынская HORA публикует собственный перечень контрабасов разных учебных и мастеровых серий.",
+      "body": "В официальном каталоге можно встретить формы Gamba и корпуса с углами, варианты Academy, Master, Elite и Student. Это предметная карта производителя, а не описание нынешнего наличия у мастерской. Состояние подержанного инструмента всегда имеет свою историю.",
+      "open_question": "Какая серия HORA вас заинтересовала и какой размер рассматривается?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "hora-master-gamba",
+      "search_title": "HORA Master Gamba",
+      "lead": "Master Gamba является самостоятельным названием в каталоге контрабасов HORA.",
+      "body": "Официальная страница производителя помогает уточнить, что речь идёт о румынской мастерской традиции и форме корпуса Gamba. Но надпись не заменяет выбора конкретного размера и осмотра физического экземпляра. Исполнительское ощущение складывается из настройки и взаимодействия с музыкантом.",
+      "open_question": "Известен ли год и размер вашего HORA Master Gamba?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "hora-student-flat-back",
+      "search_title": "HORA Student Flat Back",
+      "lead": "Student Flat Back показывает, что производитель разделяет модели и по форме задней деки.",
+      "body": "У HORA есть отдельные учебные конфигурации корпуса, включая плоскую заднюю деку. Для музыканта само обозначение Flat Back ещё не предсказывает характер звучания. Важно знакомство с конкретным контрабасом и его нынешней настройкой.",
+      "open_question": "Вы ищете учебный инструмент или сравниваете формы корпуса HORA?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "gewa-germania-i-gewa-premium",
+      "search_title": "GEWA Germania и GEWA Premium",
+      "lead": "В большом каталоге GEWA названия Germania и Premium принадлежат разным предметным линиям.",
+      "body": "Сравнение начинается с точного артикула, конструкции и периода производства. Даже общий бренд не превращает все варианты в одну модель. Реальная мензура, состояние и материалы конкретного инструмента раскрываются позже, во время предметного знакомства.",
+      "open_question": "Какая надпись или серийное обозначение GEWA вас интересует?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "gewa-maestro-rubner",
+      "search_title": "GEWA Maestro Rubner",
+      "lead": "Название Maestro Rubner встречается в модельном семействе GEWA, где разные числа обозначают отдельные варианты.",
+      "body": "У одной торговой марки могут существовать разные конструктивные конфигурации. Отсюда возникает полезная граница между названием линейки, моделью и конкретным экземпляром. Модельный список помогает уточнить предмет разговора, но не утверждает наличия или текущей цены.",
+      "open_question": "Известен ли точный номер Rubner и что привлекло вас в этой линейке?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "stentor-student-ii-dlya-kontrabasa",
+      "search_title": "Stentor Student II для контрабаса",
+      "lead": "Student II представляет собой модельное имя в каталоге Stentor, но не единый эталон для каждого ученика.",
+      "body": "Параметры инструмента интересны вместе с размером, текущей настройкой и этапом обучения. Один экземпляр может быть подготовлен к занятиям, другой потребует внимания мастерской. Выбор возникает не из слова Student, а из знакомства с инструментом и музыкантом.",
+      "open_question": "Какой размер Stentor вы рассматриваете и на чём сейчас занимается ученик?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "eastman-vb65-i-vb305",
+      "search_title": "Eastman VB65 и VB305",
+      "lead": "Два обозначения Eastman принадлежат разным конструктивным семействам контрабасов.",
+      "body": "У VB65 производитель указывает гибридный корпус, а у VB305 другую технологию изготовления и варианты форм. Эти сведения помогают точнее сформулировать вопрос при поиске. Но реальное состояние и удобство физического контрабаса остаются за пределами каталога.",
+      "open_question": "Какая версия корпуса и мензура Eastman вас заинтересовала?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "eastman-vb605-i-forma-busan",
+      "search_title": "Eastman VB605 и форма Busan",
+      "lead": "В каталоге VB605 Eastman связывает Busan с отдельной формой и размером корпуса.",
+      "body": "Название модели открывает целую группу конструктивных вариантов. Для человека, который ищет большой оркестровый инструмент, такая разница может быть существенной ещё до первой пробы. Ни один код не отменяет необходимости исследовать реальный гриф и звук.",
+      "open_question": "Какая форма VB605 вам знакома и что хочется сравнить с Busan?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "yamaha-silent-bass-i-obychnyy-kontrabas",
+      "search_title": "Yamaha SILENT Bass и обычный контрабас",
+      "lead": "Линейка Yamaha SILENT Bass соединяет вертикальную технику с иной электрической конструкцией.",
+      "body": "SLB300 и SLB300PRO имеют общую длину звучащей струны по спецификации производителя, но отличаются отдельными материалами. Сравнение с акустическим контрабасом выводит разговор за пределы сантиметров: меняются корпус, звук и усиление.",
+      "open_question": "Что в электронном вертикальном басе интереснее всего: перевозка, громкость или техника?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "h-fner-h5-7-i-razmery-korpusa",
+      "search_title": "Höfner H5/7 и размеры корпуса",
+      "lead": "Höfner различает варианты H5/7 по размеру и количеству струн, поэтому семейство шире одного артикула.",
+      "body": "Модель 3/4, исполнение 4/4 и пятиструнный вариант представляют разные конфигурации. Даже точное название серии не сообщает состояние конкретного контрабаса после лет игры. История и исполнительское ощущение дополняют заводскую спецификацию.",
+      "open_question": "Какой размер и количество струн H5/7 вы рассматриваете?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "moskvich-kontrabas-4-4",
+      "search_title": "Москвич контрабас 4/4",
+      "lead": "Слово «москвич» встречается в русскоязычных объявлениях о контрабасах, но остаётся разговорным определением.",
+      "body": "За этим названием может скрываться московская мастерская, изготовитель или просто история обслуживания в Москве. Все эти обстоятельства интересно различать отдельно. Конкретный экземпляр может иметь собственную биографию, не сводимую к географическому ярлыку.",
+      "open_question": "Какие сведения о мастере или ремонтах московского инструмента известны?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    },
+    {
+      "slug": "nemetskiy-kontrabas-gdr",
+      "search_title": "Немецкий контрабас ГДР",
+      "lead": "Обозначение «ГДР» задаёт исторический контекст, но не является самостоятельной моделью.",
+      "body": "В Маркнойкирхене существовала большая индустрия смычковых и других музыкальных инструментов, включая Musima. Разные годы и мастерские могли давать различные результаты. Для понимания конкретного контрабаса остаются важны этикетка, конструкция и история последующих работ.",
+      "open_question": "Какая маркировка сохранилась внутри немецкого контрабаса?",
+      "group": "Марки, школы и названия инструментов",
+      "status": "ready",
+      "origin": "editorial_hypothesis",
+      "source_context": [
+        "manufacturer-strunal",
+        "manufacturer-musima",
+        "manufacturer-hora",
+        "ru-retailer",
+        "ru-market-listing"
+      ]
+    }
+  ]
+}

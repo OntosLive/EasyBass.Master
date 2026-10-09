@@ -38,7 +38,7 @@ class AtlasContract(unittest.TestCase):
             self.assertTrue(model["source"].startswith("https://"))
 
     def test_public_coverage_mapping_does_not_pretend_full_editorial_pass(self):
-        self.assertEqual(self.report["mapped_published_entrances"], 240)
+        self.assertEqual(self.report["mapped_published_entrances"], 282)
         self.assertEqual(self.report["mapped_published_pairs"], 2)
         self.assertEqual(self.report["mapped_knowledge_pages"], 8)
         self.assertEqual(self.report["mapped_manufacturer_pages"], 6)

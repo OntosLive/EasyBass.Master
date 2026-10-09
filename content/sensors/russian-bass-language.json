@@ -1,0 +1,628 @@
+{
+  "version": 1,
+  "researched": "2026-10-09",
+  "use": "editorial_sensor_only",
+  "warnings": [
+    "Forum user language is not a maker specification",
+    "All prices and stock in external listings are historical, not ours",
+    "Slang is primarily for recognizing incoming queries; public text should use clear Russian",
+    "Do not reproduce forum advice on structural repair as instructions"
+  ],
+  "sources": [
+    {
+      "id": "ru-jazz-transition",
+      "url": "https://www.musicforums.ru/bass_arc/1185805069.html",
+      "kind": "discussion",
+      "what": "Бас-гитарист одновременно занимается контрабасом; учёба и профессиональная программа"
+    },
+    {
+      "id": "ru-old-cupboard",
+      "url": "https://www.musicforums.ru/bass/full_1465073173.html",
+      "kind": "discussion",
+      "what": "Переход из бас-гитары к старым акустическим контрабасам; «шкаф», гриф и накладка"
+    },
+    {
+      "id": "ru-electric-upright",
+      "url": "https://www.musicforums.ru/bass/full_1234562224.html",
+      "kind": "discussion",
+      "what": "Электроконтрабас, безлад, сравнение звукоизвлечения, сленг"
+    },
+    {
+      "id": "ru-bows-slap",
+      "url": "https://www.musicforums.ru/bass/1422562708.html",
+      "kind": "discussion",
+      "what": "Жаргон слэпа, материалов струн, рокабилли, пьезы и магнитов"
+    },
+    {
+      "id": "ru-crossover-strings",
+      "url": "https://www.musicforums.ru/bass/1480188379.html",
+      "kind": "discussion",
+      "what": "Мензура, бас-гитара, безлад, несовместимость длинных струн"
+    },
+    {
+      "id": "ru-setup",
+      "url": "https://www.musicforums.ru/bass/1295946364.html",
+      "kind": "discussion",
+      "what": "Разговоры о душе/распорке и подставке; потенциально ошибочные DIY-сведения не перепечатывать как инструкцию"
+    },
+    {
+      "id": "ru-workshop",
+      "url": "https://margashov.com/price",
+      "kind": "craft-source",
+      "what": "Реальные названия операций ремонта контрабаса; цены сторонней мастерской не переносить"
+    },
+    {
+      "id": "ru-master-association",
+      "url": "https://violincenter.ru/",
+      "kind": "craft-source",
+      "what": "Работа со смычковыми и предметная мастерская"
+    },
+    {
+      "id": "ru-market-listing",
+      "url": "https://www.musicforums.ru/viola_buysell/156",
+      "kind": "classified-archive",
+      "what": "Москвич, чех Strunal/Cremona, размеры, продажа, покупка низкой B; архивные объявления"
+    },
+    {
+      "id": "ru-retailer",
+      "url": "https://accordmusic.ru/catalog/kontrabasy/",
+      "kind": "retailer",
+      "what": "Strunal Cremona 5/5WA как название/марка в российском торговом контексте, не утверждение о текущем наличии"
+    },
+    {
+      "id": "manufacturer-strunal",
+      "url": "https://www.laubach-shop.de/%D1%80%D1%83%D1%81%D1%81%D0%BA%D0%B8%D0%B9/%D1%84%D0%B8%D1%80%D0%BC%D1%8B-%D0%B8%D0%B7%D0%B3%D0%BE%D1%82%D0%BE%D0%B2%D0%B8%D1%82%D0%B5%D0%BB%D0%B8/strunal/",
+      "kind": "maker-history",
+      "what": "Чешская Cremona/Luby, Strunal, экспорт в Россию"
+    },
+    {
+      "id": "manufacturer-musima",
+      "url": "https://museum-markneukirchen.de/sammlungen-ausstellungen/ausstellungen/musima",
+      "kind": "museum",
+      "what": "Музейная история восточногерманского MUSIMA и производственных практик"
+    },
+    {
+      "id": "manufacturer-hora",
+      "url": "https://hora-instruments.com/category/bowed-instruments/double-basses/",
+      "kind": "manufacturer",
+      "what": "Румынский производитель Hora и документированные семейства контрабасов"
+    },
+    {
+      "id": "foreign-bass-comparison",
+      "url": "https://www.talkbass.com/threads/strunal-bass-info-needed.1640209/",
+      "kind": "discussion",
+      "what": "Форумная оценка Strunal, соотнесение с Cremona и Musima; мнение, не техпаспорт"
+    },
+    {
+      "id": "foreign-rockabilly",
+      "url": "https://www.talkbass.com/threads/rockabilly-bass-question-with-electric-bass.1598533/",
+      "kind": "discussion",
+      "what": "Связь EUB, fretless, рокабилли, контрабасного слэпа и портативности"
+    },
+    {
+      "id": "google-quality",
+      "url": "https://developers.google.com/search/docs/essentials/spam-policies",
+      "kind": "search-quality-policy",
+      "what": "Doorway и массовые низкоценные страницы; самостоятельная ценность прежде индексации"
+    }
+  ],
+  "terms": [
+    {
+      "term": "контра",
+      "meaning": "контрабас в разговоре музыкантов",
+      "register": "colloquial",
+      "support": [
+        "ru-electric-upright",
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "контр",
+      "meaning": "сокращённое контрабас",
+      "register": "colloquial",
+      "support": [
+        "ru-electric-upright"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "к-бас",
+      "meaning": "сокращённое написание контрабаса",
+      "register": "colloquial",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "шкаф",
+      "meaning": "старый крупный контрабас; образное обозначение",
+      "register": "slang",
+      "support": [
+        "ru-old-cupboard"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "чех",
+      "meaning": "контрабас чешского изготовления; география, а не конкретная модель",
+      "register": "slang",
+      "support": [
+        "ru-market-listing",
+        "ru-retailer"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "фанерный чех",
+      "meaning": "разговорное описание чешского инструмента с ламинированным корпусом; тип конструкции требует проверки",
+      "register": "slang",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "москвич",
+      "meaning": "контрабас, обозначенный продавцом как московский; место изготовления требует уточнения",
+      "register": "slang",
+      "support": [
+        "ru-market-listing"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "немец",
+      "meaning": "разговорное географическое обозначение контрабаса; не равняется Musima",
+      "register": "slang",
+      "support": [
+        "ru-electric-upright",
+        "manufacturer-musima"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "электроконтра",
+      "meaning": "электрический вертикальный бас, электроконтрабас",
+      "register": "colloquial",
+      "support": [
+        "ru-electric-upright"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "безлад",
+      "meaning": "безладовая бас-гитара, fretless bass",
+      "register": "colloquial",
+      "support": [
+        "ru-electric-upright",
+        "ru-crossover-strings"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "безладовый",
+      "meaning": "бас с грифом без ладов",
+      "register": "colloquial",
+      "support": [
+        "ru-electric-upright"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "фретлесс",
+      "meaning": "англоязычное обозначение безладового баса",
+      "register": "borrowing",
+      "support": [
+        "ru-electric-upright",
+        "foreign-rockabilly"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "upright",
+      "meaning": "вертикальный бас / контрабас в англоязычной среде",
+      "register": "borrowing",
+      "support": [
+        "foreign-rockabilly"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "EUB",
+      "meaning": "electric upright bass, электроконтрабас",
+      "register": "technical",
+      "support": [
+        "foreign-rockabilly"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "пьеза",
+      "meaning": "пьезоэлектрический звукосниматель",
+      "register": "colloquial",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "магниты",
+      "meaning": "магнитные звукосниматели",
+      "register": "colloquial",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "подзвучка",
+      "meaning": "снятие и усиление акустического звука инструмента",
+      "register": "colloquial",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "фидбэк",
+      "meaning": "акустическая обратная связь при усилении",
+      "register": "borrowing",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "комбарь",
+      "meaning": "комбоусилитель; разговорная форма",
+      "register": "slang",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "железки",
+      "meaning": "металлические струны в отличие от пластиковых или жильных",
+      "register": "slang",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "пластик",
+      "meaning": "нейлоновые / синтетические струны; точный материал смотреть отдельно",
+      "register": "slang",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "жилы",
+      "meaning": "струны с натуральным жильным сердечником, gut strings",
+      "register": "colloquial",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "корд",
+      "meaning": "сердечник струны, иногда стальной тросик",
+      "register": "technical",
+      "support": [
+        "ru-bows-slap",
+        "ru-crossover-strings"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "слэп",
+      "meaning": "ударная техника извлечения звука в рокабилли-контрабасе или бас-гитаре; различать техники",
+      "register": "technical-colloquial",
+      "support": [
+        "ru-bows-slap",
+        "foreign-rockabilly"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "рокабилли",
+      "meaning": "жанр и особая техника контрабасного баса",
+      "register": "music-style",
+      "support": [
+        "ru-bows-slap",
+        "foreign-rockabilly"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "душка",
+      "meaning": "внутренняя опора корпуса смычкового инструмента",
+      "register": "craft-term",
+      "support": [
+        "ru-setup"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "распорка",
+      "meaning": "встречающееся бытовое описание душки, не официальный эквивалент",
+      "register": "noncanonical",
+      "support": [
+        "ru-setup"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "подставка",
+      "meaning": "мост под струнами контрабаса; не бытовая стойка",
+      "register": "craft-term",
+      "support": [
+        "ru-setup"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "мензура",
+      "meaning": "длина звучащей струны; для бас-гитар и контрабасов разные диапазоны и измерения",
+      "register": "technical",
+      "support": [
+        "ru-crossover-strings"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "низкая Си",
+      "meaning": "нижняя струна B(H) для пятиструнного контрабаса",
+      "register": "technical-colloquial",
+      "support": [
+        "ru-market-listing"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "пиццикато",
+      "meaning": "звукоизвлечение щипком",
+      "register": "technical",
+      "support": [
+        "ru-jazz-transition",
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "смычок",
+      "meaning": "музыкальный смычок; метод игры, баланс и волос",
+      "register": "technical",
+      "support": [
+        "ru-jazz-transition",
+        "ru-setup"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "дрова",
+      "meaning": "жаргонная субъективная оценка дешёвого или неудобного инструмента; не объективный класс",
+      "register": "slang",
+      "support": [
+        "ru-bows-slap"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "гриф отклеился",
+      "meaning": "разговорное описание повреждения соединения грифа с корпусом",
+      "register": "user-situation",
+      "support": [
+        "ru-old-cupboard"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    },
+    {
+      "term": "пятая струна",
+      "meaning": "низкая дополнительная струна контрабаса, обычно B/H в оркестровом контексте",
+      "register": "technical",
+      "support": [
+        "ru-market-listing"
+      ],
+      "public_use": "recognize_query_not_copy_verbatim"
+    }
+  ],
+  "makers": [
+    {
+      "name": "Strunal",
+      "origin": "Cremona / Luby, Czech Republic",
+      "status": "verified-maker",
+      "source_id": "manufacturer-strunal",
+      "market_context": "observed-in-Russia",
+      "public_stock": null
+    },
+    {
+      "name": "Cremona Luby",
+      "origin": "former Czech factory name, distinct from Bulgarian Kremona",
+      "status": "historic-maker",
+      "source_id": "manufacturer-strunal",
+      "market_context": "observed-in-Russia",
+      "public_stock": null
+    },
+    {
+      "name": "Musima",
+      "origin": "Markneukirchen, East Germany historical industrial maker",
+      "status": "historic-maker",
+      "source_id": "manufacturer-musima",
+      "market_context": "regional-history",
+      "public_stock": null
+    },
+    {
+      "name": "Hora",
+      "origin": "Reghin, Romania",
+      "status": "verified-maker",
+      "source_id": "manufacturer-hora",
+      "market_context": "foreign-manufacturer",
+      "public_stock": null
+    },
+    {
+      "name": "Kremona (Bulgaria)",
+      "origin": "Bulgarian workshop/company, must not be confused with Czech Cremona; bass line not established in current sources",
+      "status": "name-disambiguation",
+      "source_id": null,
+      "market_context": "not-a-confirmed-bass-brand-here",
+      "public_stock": null
+    },
+    {
+      "name": "Eastman",
+      "origin": "international double bass series",
+      "status": "verified-maker",
+      "source_id": null,
+      "market_context": "already-in-model-registry",
+      "public_stock": null
+    },
+    {
+      "name": "GEWA",
+      "origin": "double bass catalogue and maestro series",
+      "status": "verified-maker",
+      "source_id": null,
+      "market_context": "already-in-model-registry",
+      "public_stock": null
+    },
+    {
+      "name": "Stentor",
+      "origin": "double bass catalogue",
+      "status": "verified-maker",
+      "source_id": null,
+      "market_context": "already-in-model-registry",
+      "public_stock": null
+    },
+    {
+      "name": "Yamaha SILENT Bass",
+      "origin": "electric upright line",
+      "status": "verified-maker",
+      "source_id": null,
+      "market_context": "already-in-model-registry",
+      "public_stock": null
+    },
+    {
+      "name": "Höfner",
+      "origin": "German maker, H5/7 double bass",
+      "status": "verified-maker",
+      "source_id": null,
+      "market_context": "already-in-model-registry",
+      "public_stock": null
+    },
+    {
+      "name": "Ioan Bucur",
+      "origin": "Romanian luthier; Czech showroom named distributor",
+      "status": "maker-evidence",
+      "source_id": null,
+      "market_context": "needs-own-source-file",
+      "public_stock": null
+    },
+    {
+      "name": "Kay",
+      "origin": "historic US double bass manufacturer; identity to verify",
+      "status": "research-lead",
+      "source_id": null,
+      "market_context": "unverified",
+      "public_stock": null
+    },
+    {
+      "name": "Engelhardt",
+      "origin": "US maker; identity to verify",
+      "status": "research-lead",
+      "source_id": null,
+      "market_context": "unverified",
+      "public_stock": null
+    },
+    {
+      "name": "Shen",
+      "origin": "Chinese double bass maker; identity to verify",
+      "status": "research-lead",
+      "source_id": null,
+      "market_context": "unverified",
+      "public_stock": null
+    },
+    {
+      "name": "Gliga",
+      "origin": "Romanian bowed-string maker; bass models to verify",
+      "status": "research-lead",
+      "source_id": null,
+      "market_context": "unverified",
+      "public_stock": null
+    },
+    {
+      "name": "Strunal Cremona 5/5WA",
+      "origin": "specific listing in Russian retailer",
+      "status": "listed-model",
+      "source_id": "ru-retailer",
+      "market_context": "market-observation",
+      "public_stock": null
+    },
+    {
+      "name": "Strunal Cremona 50/1 D",
+      "origin": "historic Russian private listing",
+      "status": "listed-model",
+      "source_id": "ru-market-listing",
+      "market_context": "market-observation",
+      "public_stock": null
+    }
+  ],
+  "branches": [
+    {
+      "name": "бас-гитара → контрабас",
+      "scene": "бас-гитарист, решивший играть на акустическом контрабасе",
+      "support": [
+        "ru-jazz-transition",
+        "ru-old-cupboard"
+      ]
+    },
+    {
+      "name": "безладовый бас → контрабас",
+      "scene": "музыкант с опытом fretless, ищущий иной акустический отклик",
+      "support": [
+        "ru-electric-upright",
+        "ru-crossover-strings"
+      ]
+    },
+    {
+      "name": "электроконтрабас → акустический",
+      "scene": "сравнение portability и акустического опыта",
+      "support": [
+        "ru-electric-upright"
+      ]
+    },
+    {
+      "name": "рокабилли и слэп",
+      "scene": "музыкант ищет контрабас, звуковую атаку и усиление под конкретную группу",
+      "support": [
+        "ru-bows-slap",
+        "foreign-rockabilly"
+      ]
+    },
+    {
+      "name": "оркестровый музыкант → джаз",
+      "scene": "разные требования смычка и пиццикато",
+      "support": [
+        "ru-bows-slap"
+      ]
+    },
+    {
+      "name": "мастерская → первая встреча",
+      "scene": "владелец проблемного старого инструмента знакомится с ремеслом",
+      "support": [
+        "ru-workshop"
+      ]
+    },
+    {
+      "name": "семейное наследство → инструмент",
+      "scene": "человек владеет контрабасом без музыкальной биографии",
+      "support": [
+        "ru-market-listing"
+      ]
+    }
+  ]
+}

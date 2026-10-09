@@ -1,5 +1,5 @@
 {
-  "version": 3,
+  "version": 4,
   "checked_at": "2026-10-09",
   "notice": "Public URL coverage uses broad roots only; no research question can be marked solved by a generated page. This is not a search-indexing report.",
   "published_entrances": [
@@ -2162,6 +2162,384 @@
       "public_url": "https://ontoslive.github.io/EasyBass.Master/prodat-kontrabas-sohraniv-ego-istoriyu/",
       "source_status": "published_editorial_hypothesis",
       "atlas_leaf_id": null
+    },
+    {
+      "slug": "bas-gitarist-vpervye-probuet-kontrabas",
+      "title": "Бас-гитарист впервые пробует контрабас",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/bas-gitarist-vpervye-probuet-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "s-bas-gitary-na-kontrabas-dlya-dzhaza",
+      "title": "С бас-гитары на контрабас для джаза",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/s-bas-gitary-na-kontrabas-dlya-dzhaza/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "elektrobas-i-kontrabas-v-odnom-sostave",
+      "title": "Электробас и контрабас в одном составе",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/elektrobas-i-kontrabas-v-odnom-sostave/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "bezladovaya-bas-gitara-i-kontrabas",
+      "title": "Безладовая бас-гитара и контрабас",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/bezladovaya-bas-gitara-i-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "chto-takoe-elektrokontrabas",
+      "title": "Что такое электроконтрабас",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/chto-takoe-elektrokontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "elektrokontrabas-protiv-akusticheskogo",
+      "title": "Электроконтрабас против акустического",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/elektrokontrabas-protiv-akusticheskogo/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-bas-gitaristu-privyknut-k-kontrabasnoy-menzure",
+      "title": "Как бас-гитаристу привыкнуть к контрабасной мензуре",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-bas-gitaristu-privyknut-k-kontrabasnoy-menzure/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "slep-na-kontrabase-i-slep-na-bas-gitare",
+      "title": "Слэп на контрабасе и слэп на бас-гитаре",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/slep-na-kontrabase-i-slep-na-bas-gitare/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "rokabilli-kontrabas-dlya-bas-gitarista",
+      "title": "Рокабилли-контрабас для бас-гитариста",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/rokabilli-kontrabas-dlya-bas-gitarista/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "pitstsikato-na-kontrabase-posle-elektrobasa",
+      "title": "Пиццикато на контрабасе после электробаса",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/pitstsikato-na-kontrabase-posle-elektrobasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-basistu-vpervye-vzyat-kontrabasnyy-smychok",
+      "title": "Как басисту впервые взять контрабасный смычок",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-basistu-vpervye-vzyat-kontrabasnyy-smychok/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabasnaya-partiya-posle-bas-gitary",
+      "title": "Контрабасная партия после бас-гитары",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabasnaya-partiya-posle-bas-gitary/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "bas-gitara-ili-kontrabas-dlya-zapisi",
+      "title": "Бас-гитара или контрабас для записи",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/bas-gitara-ili-kontrabas-dlya-zapisi/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "mozhno-li-igrat-kontrabas-cherez-basovyy-kombik",
+      "title": "Можно ли играть контрабас через басовый комбик",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/mozhno-li-igrat-kontrabas-cherez-basovyy-kombik/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "peza-ili-magnit-na-kontrabas",
+      "title": "Пьеза или магнит на контрабас",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/peza-ili-magnit-na-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "neylonovye-struny-i-kontrabasnyy-slep",
+      "title": "Нейлоновые струны и контрабасный слэп",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/neylonovye-struny-i-kontrabasnyy-slep/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabas-i-bezladovyy-bas-intonatsiya",
+      "title": "Контрабас и безладовый бас: интонация",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabas-i-bezladovyy-bas-intonatsiya/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "pereyti-na-kontrabas-posle-violoncheli",
+      "title": "Перейти на контрабас после виолончели",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/pereyti-na-kontrabas-posle-violoncheli/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kontrabasist-igraet-na-bas-gitare",
+      "title": "Контрабасист играет на бас-гитаре",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kontrabasist-igraet-na-bas-gitare/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "chem-kontrabas-otlichaetsya-ot-bas-gitary",
+      "title": "Чем контрабас отличается от бас-гитары",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/chem-kontrabas-otlichaetsya-ot-bas-gitary/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kak-uslyshat-kontrabasnyy-zvuk-na-bezlade",
+      "title": "Как услышать контрабасный звук на безладе",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kak-uslyshat-kontrabasnyy-zvuk-na-bezlade/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "rokabilli-i-kontrabas-v-odnoy-gruppe",
+      "title": "Рокабилли и контрабас в одной группе",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/rokabilli-i-kontrabas-v-odnoy-gruppe/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "cheshskiy-kontrabas-glazami-bas-gitarista",
+      "title": "Чешский контрабас глазами бас-гитариста",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/cheshskiy-kontrabas-glazami-bas-gitarista/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "kupit-kontrabas-posle-rokabilli-na-elektrobase",
+      "title": "Купить контрабас после рокабилли на электробасе",
+      "group": "Бас-гитара, безлад и переход к контрабасу",
+      "root_id": "R-music",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/kupit-kontrabas-posle-rokabilli-na-elektrobase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "cheshskiy-kontrabas-cremona-ili-strunal",
+      "title": "Чешский контрабас Cremona или Strunal",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/cheshskiy-kontrabas-cremona-ili-strunal/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "chto-takoe-musima-na-kontrabase",
+      "title": "Что такое Musima на контрабасе",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/chto-takoe-musima-na-kontrabase/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "strunal-cremona-5-5wa",
+      "title": "Strunal Cremona 5/5WA",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/strunal-cremona-5-5wa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "strunal-cremona-50-1-d",
+      "title": "Strunal Cremona 50/1 D",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/strunal-cremona-50-1-d/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "cheshskiy-kontrabas-i-nemetskiy-kontrabas",
+      "title": "Чешский контрабас и немецкий контрабас",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/cheshskiy-kontrabas-i-nemetskiy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "cheshskaya-cremona-i-bolgarskaya-kremona",
+      "title": "Чешская Cremona и болгарская Kremona",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/cheshskaya-cremona-i-bolgarskaya-kremona/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "hora-kontrabas-iz-rumynii",
+      "title": "HORA контрабас из Румынии",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/hora-kontrabas-iz-rumynii/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "hora-master-gamba",
+      "title": "HORA Master Gamba",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/hora-master-gamba/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "hora-student-flat-back",
+      "title": "HORA Student Flat Back",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/hora-student-flat-back/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "gewa-germania-i-gewa-premium",
+      "title": "GEWA Germania и GEWA Premium",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/gewa-germania-i-gewa-premium/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "gewa-maestro-rubner",
+      "title": "GEWA Maestro Rubner",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/gewa-maestro-rubner/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "stentor-student-ii-dlya-kontrabasa",
+      "title": "Stentor Student II для контрабаса",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/stentor-student-ii-dlya-kontrabasa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "eastman-vb65-i-vb305",
+      "title": "Eastman VB65 и VB305",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/eastman-vb65-i-vb305/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "eastman-vb605-i-forma-busan",
+      "title": "Eastman VB605 и форма Busan",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/eastman-vb605-i-forma-busan/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "yamaha-silent-bass-i-obychnyy-kontrabas",
+      "title": "Yamaha SILENT Bass и обычный контрабас",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/yamaha-silent-bass-i-obychnyy-kontrabas/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "h-fner-h5-7-i-razmery-korpusa",
+      "title": "Höfner H5/7 и размеры корпуса",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/h-fner-h5-7-i-razmery-korpusa/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "moskvich-kontrabas-4-4",
+      "title": "Москвич контрабас 4/4",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/moskvich-kontrabas-4-4/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
+    },
+    {
+      "slug": "nemetskiy-kontrabas-gdr",
+      "title": "Немецкий контрабас ГДР",
+      "group": "Марки, школы и названия инструментов",
+      "root_id": "R-instruments",
+      "public_url": "https://ontoslive.github.io/EasyBass.Master/nemetskiy-kontrabas-gdr/",
+      "source_status": "published_editorial_hypothesis",
+      "atlas_leaf_id": null
     }
   ],
   "published_pairs": [
@@ -2185,11 +2563,12 @@
     }
   ],
   "counts": {
-    "standalone": 240,
+    "standalone": 282,
     "pairs": 2,
     "independent_knowledge": 8,
     "manufacturer_reference_pages": 6,
-    "public_documents": 258
+    "public_documents": 3611,
+    "short_sensor_n0": 3290
   },
   "published_knowledge": [
     {
@@ -2332,5 +2711,14 @@
       "price": null,
       "atlas_leaf_id": null
     }
-  ]
+  ],
+  "short_sensor": {
+    "generator": "scripts/sensor_n0.py",
+    "source": "content/atlas/family-seeds.json",
+    "source_copy": "content/atlas/n0-sensor-copy.json",
+    "status": "N.0 publication of 3290 scene/question combinations; not full N.1 and not measured search demand",
+    "count": 3290,
+    "category_index_pages": 20,
+    "root_index": "/vhod/"
+  }
 }
