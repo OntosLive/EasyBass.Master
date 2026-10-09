@@ -178,7 +178,8 @@ class PublicationTests(unittest.TestCase):
         topic = sensor_records(ROOT)[0]
         page = BeautifulSoup((self.site / topic["route"].strip("/") / "index.html").read_text(encoding="utf-8"), "html.parser")
         self.assertEqual(page.select_one(".master-footer a").get("href"), "../")
-        first = inspect_entrances(ROOT)[0]
+        deep_slugs = {essay["entrance_slug"] for essay in inspect_knowledge(ROOT, inspect_entrances(ROOT), inspect_records(ROOT))}
+        first = next(item for item in inspect_entrances(ROOT) if item["slug"] not in deep_slugs)
         old = BeautifulSoup((self.site / first["slug"] / "index.html").read_text(encoding="utf-8"), "html.parser")
         expected = f"../archive/#{group_anchor(first['group'])}"
         self.assertEqual(old.select_one(".master-footer a").get("href"), expected)
