@@ -192,6 +192,23 @@ def inspect_knowledge(root: Path, entrances: list[dict], paired: list[dict]) -> 
                 raise ValueError(f"{slug}: fewer than 360 authored words; not substantive")
             if any(not source.get("url", "").startswith("https://") for source in item.get("sources", [])):
                 raise ValueError(f"{slug}: invalid cited source URL")
+            # Technical maps are fixed, independently authored SVG assets, never HTML/scripts.
+            maps = item.get("maps", [])
+            if not isinstance(maps, list):
+                raise ValueError(f"{slug}: invalid drawing manifest")
+            used_maps = set()
+            for drawing in maps:
+                name = drawing.get("file", "")
+                after = drawing.get("after_section")
+                if (not isinstance(name, str) or not re.fullmatch(r"[a-z0-9-]+[.]svg", name)
+                        or name in used_maps or not (root / "assets/maps" / name).is_file()):
+                    raise ValueError(f"{slug}: absent or duplicate technical map {name}")
+                if type(after) is not int or not 0 <= after < len(sections):
+                    raise ValueError(f"{slug}: invalid technical map placement")
+                if not all(isinstance(drawing.get(k), str) and len(drawing[k]) >= 20
+                           for k in ("caption", "alt")):
+                    raise ValueError(f"{slug}: technical map lacks readable caption/alt")
+                used_maps.add(name)
             if item.get("related") is not None:
                 if not isinstance(item["related"], list) or any(x not in entry_map for x in item["related"]):
                     raise ValueError(f"{slug}: related entrances must exist")
@@ -394,10 +411,27 @@ def make_knowledge_article(item: dict, contact: str, entrance_names: dict[str, s
         "editorial_deck": item["lead"]
     }
     parts = ['<article class="knowledge-text" aria-label="Предметная статья">']
-    for section in item["sections"]:
+    for section_number, section in enumerate(item["sections"]):
         parts.append(f'<section><h2>{escape(section["heading"])}</h2>')
         parts.extend(f'<p>{escape(para)}</p>' for para in section["paragraphs"])
         parts.append('</section>')
+        for drawing in item.get("maps", []):
+            if drawing["after_section"] != section_number:
+                continue
+            href = "../../assets/maps/" + drawing["file"]
+            link = escape(href, quote=True)
+            alt = escape(drawing["alt"], quote=True)
+            caption = escape(drawing["caption"])
+            parts.append(
+                '<figure class="atlas-figure">'
+                f'<div class="atlas-pan"><a href="{link}" target="_blank" '
+                f'rel="noopener noreferrer" aria-label="Открыть мастерскую карту: {alt}">'
+                f'<img src="{link}" alt="{alt}" width="1280" height="760" '
+                'loading="lazy" decoding="async"></a></div>'
+                f'<figcaption>{caption} '
+                f'<a href="{link}" target="_blank" rel="noopener noreferrer">'
+                'Открыть карту в полном размере ↗</a></figcaption></figure>'
+            )
     parts.append('</article>')
     if item.get("sources"):
         parts.append('<details class="knowledge-sources"><summary>Документы и источники</summary><ul>')
@@ -409,6 +443,8 @@ def make_knowledge_article(item: dict, contact: str, entrance_names: dict[str, s
     # Essays lead into the real institution rather than back into search ads.
     links = [("../../collection/", "Коллекция"), ("../../workshop/", "Мастерская"),
              ("../../meeting/", "Знакомство")]
+    if item.get("maps"):
+        links.append(("../../workshop/maps/", "Мастерские карты"))
     parts.append(nav(links))
     return frame(source, "deep", "".join(parts), contact)
 
