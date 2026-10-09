@@ -189,6 +189,15 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     for route in expected | n0_hubs:
         if route not in seen:
             errors.append(f"Unreachable publication: {route}")
+    if n0_urls - seen:
+        print("REACHABILITY_DIAGNOSTIC", {
+            "root": sorted(graph["/"])[:12],
+            "archive": sorted(graph["/archive/"])[:12],
+            "sensor_root": sorted(graph["/vhod/"])[:12],
+            "first_family": sorted(graph["/vhod/buy-entry/"])[:12],
+            "sensor_seen": len(seen & (n0_urls | n0_hubs)),
+            "sensor_total": len(n0_urls | n0_hubs),
+        })
     try:
         xml = ET.parse(site / "sitemap.xml").getroot()
         locations = [n.text for n in xml.findall(f"{{{SITEMAP_NS}}}url/{{{SITEMAP_NS}}}loc")]
