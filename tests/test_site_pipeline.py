@@ -23,7 +23,8 @@ class PublicationTests(unittest.TestCase):
         self.addCleanup(self.temporary.cleanup)
         self.site = Path(self.temporary.name)
         for path in ("index.html", "styles.css", "collection/index.html",
-                     "workshop/index.html", "meeting/index.html"):
+                     "workshop/index.html", "meeting/index.html",
+                     "experience/index.html", "showroom/index.html", "delivery/index.html"):
             target = self.site / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / path, target)
@@ -136,6 +137,10 @@ class PublicationTests(unittest.TestCase):
             soup = BeautifulSoup(html, "html.parser")
             self.assertEqual(len(soup.select(".entry-range-grid a[href]")), 4)
             self.assertEqual(len(soup.select(".entry-utilities a[href]")), 4)
+            for anchor in ("obuchenie", "orkestr", "solo", "dzhaz"):
+                self.assertIn("collection/#" + anchor, html)
+            self.assertIn("showroom/", html)
+            self.assertIn("delivery/", html)
             self.assertEqual(len(soup.select(".contact-block")), 1)
             self.assertIsNone(soup.select_one(".brand-title"))
             self.assertIsNotNone(soup.select_one(".meta a[href]"))
@@ -145,6 +150,19 @@ class PublicationTests(unittest.TestCase):
         self.assertIn("../details/masterovoy-kontrabas/",
                       (self.site / examples[0]).read_text(encoding="utf-8"))
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
+
+    def test_ranges_are_real_editorial_collection_anchors(self):
+        from entry_router import RANGES, FACTS
+        from bs4 import BeautifulSoup
+        collection = BeautifulSoup((self.site / "collection/index.html").read_text(encoding="utf-8"), "html.parser")
+        for target, label in RANGES:
+            self.assertTrue(label)
+            self.assertEqual(target.split("#")[0], "collection/")
+            self.assertIsNotNone(collection.find(id=target.split("#")[1]))
+        for target, label in FACTS:
+            self.assertTrue(label)
+            self.assertTrue((self.site / target / "index.html").exists())
+        self.assertIn("пятидесяти", (self.site / "showroom/index.html").read_text(encoding="utf-8"))
 
     def test_broken_archive_marker_stops_build(self):
         (self.site / "archive/index.html").write_text("<html><head></head><body></body></html>")
