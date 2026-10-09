@@ -219,6 +219,30 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(old.select(".master-footer a[href]")[-1].get("href"), "../" + dest)
         self.assertEqual(len(archive.select("a[href*='/vhod/']")), 0)
 
+    def test_generic_rental_and_setup_have_independent_commercial_entries(self):
+        entries = {r["route"]: r for r in sensor_records(ROOT)}
+        routes = {
+            "/vhod/temporary-access/arenda-kontrabasa-v-moskve/": "Аренда контрабаса в Москве",
+            "/vhod/acoustic-response/nastroyka-kontrabasa-v-moskve/": "Настройка контрабаса в Москве",
+        }
+        for route, heading in routes.items():
+            self.assertIn(route, entries)
+            self.assertEqual(entries[route]["title"], heading)
+            self.assertTrue(entries[route]["bridge"])
+
+        self.assertNotEqual(
+            entries["/vhod/temporary-access/arenda-kontrabasa-v-moskve/"]["bridge"],
+            entries["/vhod/acoustic-response/nastroyka-kontrabasa-v-moskve/"]["bridge"],
+        )
+        build(ROOT, self.site)
+        for route, heading in routes.items():
+            html = (self.site / route.strip("/") / "index.html").read_text(encoding="utf-8")
+            parsed = BeautifulSoup(html, "html.parser")
+            self.assertEqual(parsed.h1.get_text(strip=True), heading)
+            self.assertEqual(parsed.select_one(".entry-modulation").get_text(strip=True), entries[route]["bridge"])
+            self.assertIn("https://easybassmaster.ru" + route, html)
+        self.assertEqual(validate(self.site, ROOT)["errors"], [])
+
     def test_request_specific_modulation_before_the_phone(self):
         build(ROOT, self.site)
         page = BeautifulSoup((self.site / "kontrabas-1-2-ili-3-4/index.html").read_text(encoding="utf-8"), "html.parser")
