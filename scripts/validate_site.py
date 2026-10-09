@@ -10,7 +10,7 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
-from site_core import BASE, DOMAIN, PHONE, ROOT, SITEMAP_NS, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, pretty_route
+from site_core import BASE, DOMAIN, PHONE, ROOT, SITEMAP_NS, group_anchor, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, pretty_route
 from sensor_n0 import records as sensor_records
 
 
@@ -111,6 +111,10 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             if d.select_one('meta[name="robots"][content*="noindex"]'):
                 errors.append(f"{route}: canonical page accidentally noindex")
         if route in entry_urls:
+            if d.select_one(".master-lead .deck") or d.select_one(".entry-signal") or d.select_one(".n0-return"):
+                errors.append(f"{route}: newspaper entry repeats explanatory or related-call text")
+            if len(d.select(".master-footer a[href]")) != 1:
+                errors.append(f"{route}: contextual footer must have exactly one route")
             primary = d.select(".entry-range-grid a[href]")
             secondary = d.select(".entry-utilities a[href]")
             if len(primary) != 4 or len(secondary) != 4:
@@ -131,16 +135,12 @@ def validate(site: Path, root: Path = ROOT) -> dict:
         if d:
             if not d.h1 or d.h1.get_text(" ", strip=True) != entry["search_title"]:
                 errors.append(f"{route}: edited entrance title differs from source")
-            if not d.select_one(".entrance-question"):
-                errors.append(f"{route}: no meaningful final question")
             contextual = [e for e in essays if e["entrance_slug"] == entry["slug"]]
-            navlinks = d.select(".entry-continuation a[href]")
-            if contextual:
-                target = f"../details/{contextual[0]['slug']}/"
-                if len(navlinks) != 1 or navlinks[0].get("href") != target:
-                    errors.append(f"{route}: expected one optional N.1 continuation")
-            elif navlinks:
-                errors.append(f"{route}: invented N.1 continuation")
+            foot = d.select_one(".master-footer a[href]")
+            expected_foot = (f"../details/{contextual[0]['slug']}/" if contextual
+                             else f"../archive/#{group_anchor(entry['group'])}")
+            if foot is None or foot.get("href") != expected_foot:
+                errors.append(f"{route}: footer must lead to its own knowledge or thematic archive")
     for essay in essays:
         route = f"/details/{essay['slug']}/"
         d = docs.get(route)
@@ -183,13 +183,24 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             continue
         if not page.h1 or page.h1.get_text(" ", strip=True) != topic["title"]:
             errors.append(f"{route}: semantic scene/question title lost")
-        if len(page.select(".issue.master-lead .deck")) != 1:
-            errors.append(f"{route}: authored short announcement missing")
+        if page.select_one(".issue.master-lead .deck"):
+            errors.append(f"{route}: H1 must turn straight to the phone")
+        if page.select_one(".n0-return") or page.select_one(".entry-signal"):
+            errors.append(f"{route}: redundant copy under the telephone")
+        foot = page.select_one(".master-footer a[href]")
+        if foot is None or foot.get("href") != "../":
+            errors.append(f"{route}: short announcement must link to its family directory")
         if not any(a.get("href") == "../" for a in page.select(".n0-return a[href]")):
             errors.append(f"{route}: parent family link missing")
     for route in n0_hubs:
         if route not in docs:
             errors.append(f"Missing N.0 family index {route}")
+    directory = docs.get("/vhod/")
+    if directory:
+        if len(directory.select(".n0-chapter")) != 6:
+            errors.append("The entrance archive needs six broad editorial chapters")
+        if len(directory.select(".n0-chapter .n0-directory a[href]")) != len(n0_hubs) - 1:
+            errors.append("Each independent family needs its own visible entrance in the directory")
     if not any(a.get("href", "").endswith("/vhod/") for a in docs.get("/archive/", BeautifulSoup("", "html.parser")).select("a[href]")):
         errors.append("Archive has no entry to authored short announcements")
     archive = docs.get("/archive/")
