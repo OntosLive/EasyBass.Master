@@ -354,5 +354,6 @@ footer{
 .collection-range{padding:22px 0 25px;border-bottom:1px solid var(--line);scroll-margin-top:24px}
 .collection-range h3{font:500 clamp(25px,3vw,36px)/1.12 Georgia,serif;letter-spacing:-.025em;margin:7px 0 13px}
 .collection-range>p:not(.issue-kicker){font:400 clamp(16px,1.8vw,20px)/1.45 Georgia,serif;color:#cbbda8;max-width:800px;margin:0}
-.collection-showroom-link{font:700 14px/1.5 Arial,sans-serif;letter-spacing:.01em;margin:22px 0 34px}
-.collection-showroom-link a{text-underline-offset:4px}
+.collection-invitation-link{font:700 14px/1.5 Arial,sans-serif;letter-spacing:.01em;margin:22px 0 34px}
+.collection-invitation-link a{text-underline-offset:4px}
+.entry-range-grid a span{white-space:pre-line}

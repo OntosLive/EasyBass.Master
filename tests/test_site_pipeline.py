@@ -24,7 +24,7 @@ class PublicationTests(unittest.TestCase):
         self.site = Path(self.temporary.name)
         for path in ("index.html", "styles.css", "collection/index.html",
                      "workshop/index.html", "meeting/index.html",
-                     "experience/index.html", "showroom/index.html", "delivery/index.html"):
+                     "experience/index.html", "delivery/index.html"):
             target = self.site / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / path, target)
@@ -137,9 +137,10 @@ class PublicationTests(unittest.TestCase):
             soup = BeautifulSoup(html, "html.parser")
             self.assertEqual(len(soup.select(".entry-range-grid a[href]")), 4)
             self.assertEqual(len(soup.select(".entry-utilities a[href]")), 4)
-            for anchor in ("obuchenie", "orkestr", "solo", "dzhaz"):
+            for anchor in ("vremya-proishozhdenie", "uroven", "muzyka", "dostupnost"):
                 self.assertIn("collection/#" + anchor, html)
-            self.assertIn("showroom/", html)
+            self.assertNotIn("showroom/", html)
+            self.assertIn("collection/", html)
             self.assertIn("delivery/", html)
             self.assertEqual(len(soup.select(".contact-block")), 1)
             self.assertIsNone(soup.select_one(".brand-title"))
@@ -162,7 +163,8 @@ class PublicationTests(unittest.TestCase):
         for target, label in FACTS:
             self.assertTrue(label)
             self.assertTrue((self.site / target / "index.html").exists())
-        self.assertIn("пятидесяти", (self.site / "showroom/index.html").read_text(encoding="utf-8"))
+        self.assertIn("пятидесяти", (self.site / "collection/index.html").read_text(encoding="utf-8"))
+        self.assertFalse((self.site / "showroom/index.html").exists())
 
     def test_broken_archive_marker_stops_build(self):
         (self.site / "archive/index.html").write_text("<html><head></head><body></body></html>")
