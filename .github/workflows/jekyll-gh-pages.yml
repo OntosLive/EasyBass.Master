@@ -30,7 +30,7 @@ jobs:
       - name: Check purchase/sale editorial tone
         run: python scripts/tone_audit.py --output _audit/tone.json
       - name: Audit individually written GPT-6 modulations and legacy backlog
-        run: python scripts/modulation_audit.py --output _audit/modulations.json
+        run: python scripts/modulation_audit.py --complete --output _audit/modulations.json
       - name: Compile-check and run regression tests
         run: |
           python -m compileall -q scripts tests
