@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "description": "Bows, strings, hardware, transit, instrument transfers",
+  "description": "Bows, strings, hardware, transit, instrument transfers; country-wide delivery is one meaning, city-only permutations not new pages",
   "families": [
     {
       "id": "strings-bows-hardware",
@@ -264,62 +264,6 @@
           "slug": "dostavka-kontrabasa-v-drugoy-gorod-rossii",
           "search_title": "Доставка контрабаса в другой город России",
           "lead": "Контрабас большой и хрупкий. Обсудим конкретный инструмент, упаковку и возможный способ отправки.",
-          "origin": "authored_research_hypothesis",
-          "review_state": "candidate",
-          "intent": "contact"
-        },
-        {
-          "slug": "dostavka-kontrabasa-v-sankt-peterburg",
-          "search_title": "Доставка контрабаса в Санкт-Петербург",
-          "lead": "Если инструмент нужен в Петербурге, можно обсудить отправку, подготовку и условия передачи.",
-          "origin": "authored_research_hypothesis",
-          "review_state": "candidate",
-          "intent": "contact"
-        },
-        {
-          "slug": "dostavka-kontrabasa-v-kazan",
-          "search_title": "Доставка контрабаса в Казань",
-          "lead": "Расскажите, какой инструмент интересует. Согласуем возможность отправки и дальнейшего знакомства с ним.",
-          "origin": "authored_research_hypothesis",
-          "review_state": "candidate",
-          "intent": "contact"
-        },
-        {
-          "slug": "kontrabas-s-dostavkoy-v-nizhniy-novgorod",
-          "search_title": "Контрабас с доставкой в Нижний Новгород",
-          "lead": "Не обязательно приезжать в Москву первым шагом. Можно обсудить инструмент и его передачу.",
-          "origin": "authored_research_hypothesis",
-          "review_state": "candidate",
-          "intent": "contact"
-        },
-        {
-          "slug": "otpravit-kontrabas-v-ekaterinburg",
-          "search_title": "Отправить контрабас в Екатеринбург",
-          "lead": "Доставка крупного смычкового инструмента требует отдельного согласования. Обсудим маршрут под конкретный корпус.",
-          "origin": "authored_research_hypothesis",
-          "review_state": "candidate",
-          "intent": "contact"
-        },
-        {
-          "slug": "kontrabas-s-dostavkoy-v-novosibirsk",
-          "search_title": "Контрабас с доставкой в Новосибирск",
-          "lead": "Если вы далеко от мастерской, начнём со знакомства с инструментом и согласования условий отправки.",
-          "origin": "authored_research_hypothesis",
-          "review_state": "candidate",
-          "intent": "contact"
-        },
-        {
-          "slug": "kontrabas-s-dostavkoy-v-krasnodar",
-          "search_title": "Контрабас с доставкой в Краснодар",
-          "lead": "Если инструмент нужен на Кубани, обсудим возможность доставки из Москвы и подготовку к дороге.",
-          "origin": "authored_research_hypothesis",
-          "review_state": "candidate",
-          "intent": "contact"
-        },
-        {
-          "slug": "kontrabas-s-dostavkoy-v-samaru",
-          "search_title": "Контрабас с доставкой в Самару",
-          "lead": "Можно обсудить покупку или аренду конкретного экземпляра и согласовать маршрут передачи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact"
