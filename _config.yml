@@ -1,7 +1,7 @@
 title: EasyBassMaster
 description: Мастерская контрабаса · Москва
-baseurl: "/EasyBass.Master"
-url: "https://ontoslive.github.io"
+baseurl: ""
+url: "https://easybassmaster.ru"
 markdown: kramdown
 permalink: pretty
 exclude:

@@ -22,8 +22,8 @@ from bs4 import BeautifulSoup
 from entry_router import route_panel, destination_for_editorial_group
 
 ROOT = Path(__file__).resolve().parents[1]
-DOMAIN = "https://ontoslive.github.io/EasyBass.Master"
-BASE = "/EasyBass.Master"
+DOMAIN = "https://easybassmaster.ru"
+BASE = ""
 SLUG = re.compile(r"^[a-z0-9]+(?:-[a-z0-9]+)*$")
 PHONE = "+7 (909) 694-55-44"
 SITEMAP_NS = "http://www.sitemaps.org/schemas/sitemap/0.9"
