@@ -13,6 +13,7 @@ from playwright.async_api import async_playwright
 ROUTES = [
     ("home", "index.html"),
     ("archive", "archive/index.html"),
+    ("archive-issue", "archive/001/index.html"),
     ("collection", "collection/index.html"),
     ("workshop", "workshop/index.html"),
     ("workshop-maps", "workshop/maps/index.html"),
@@ -105,6 +106,22 @@ async def run(site: Path, output: Path) -> dict:
                         await mood.click()
                         if await mood.get_attribute("aria-pressed") != "false":
                             raise AssertionError("Home's light switch did not reset")
+                    if name == "archive":
+                        banner=page.locator(".scene-banner img")
+                        if await banner.count() != 1:
+                            raise AssertionError("Archive lacks one photographic edition cover")
+                        await banner.evaluate("(img) => img.loading = 'eager'")
+                        await page.wait_for_function(
+                            "() => { const img=document.querySelector('.scene-banner img');"
+                            " return !!img && img.complete && img.naturalWidth > 0 }", timeout=12000)
+                        overflow_x = await banner.evaluate("(img) => img.getBoundingClientRect().width")
+                        if overflow_x > width:
+                            raise AssertionError("Archive illustration must fit viewport")
+                    if name in {"archive", "archive-issue"}:
+                        visual_loaded = await page.evaluate(
+                            "() => [...document.styleSheets].some(s => s.href && s.href.endsWith('/assets/visual/scene.css'))")
+                        if not visual_loaded:
+                            raise AssertionError(f"{name}: shared photographic CSS did not load")
                     if name in {"collection", "workshop", "meeting", "experience", "delivery"}:
                         image = page.locator(".scene-banner img")
                         if await image.count() != 1:
