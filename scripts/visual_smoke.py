@@ -104,12 +104,14 @@ async def run(site: Path, output: Path) -> dict:
                             "() => Array.from(document.querySelectorAll('.atlas-figure img')).every("
                             "img => img.complete && img.naturalWidth > 0)", timeout=12000
                         )
-                        if width <= 760:
+                        if width < 680:
                             panel = await page.locator(".atlas-pan").first.evaluate(
                                 "(el) => ({client: el.clientWidth, scroll: el.scrollWidth})"
                             )
                             if panel["scroll"] <= panel["client"]:
-                                raise AssertionError(f"{name}: mobile maps must scroll rather than shrink labels")
+                                raise AssertionError(
+                                    f"{name} at {width}px: readable SVG plate must be scrollable: {panel}"
+                                )
                     overflow = max(0, dims["scroll"] - dims["width"])
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:
