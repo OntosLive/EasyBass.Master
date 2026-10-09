@@ -174,7 +174,9 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     if not archive:
         errors.append("Archive missing")
     else:
-        for route in expected:
+        # The 3,290 very short entrance pages live under twenty family indexes.
+        # Archive links to /vhod/, which links families, then individual entries.
+        for route in expected - n0_urls:
             if not any(link.get("href", "").endswith(route) for link in archive.select('a[href]')):
                 errors.append(f"Archive does not link to {route}")
     seen, queue = set(), deque(["/"])
