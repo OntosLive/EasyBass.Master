@@ -10,7 +10,10 @@
       "open_question": "Кто начинает занятия и какие первые требования преподавателя уже известны?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Первый год требует удобного корпуса и свободной руки. Контрабас можно подготовить к ежедневным занятиям.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-muzykalnogo-uchilischa",
@@ -20,7 +23,10 @@
       "open_question": "Какие произведения и технические упражнения сейчас занимают большую часть занятий?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для училища нужен инструмент, который уверенно отвечает на смычок и позволяет расти в сольной технике.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-postupleniya-v-konservatoriyu",
@@ -30,7 +36,10 @@
       "open_question": "Какая часть вступительной программы лучше всего показывает ограничения нынешнего контрабаса?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На вступительных прослушиваниях слышны и звук, и свобода руки. Контрабас стоит проверять на своей конкурсной программе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-simfonicheskogo-orkestra",
@@ -40,7 +49,10 @@
       "open_question": "В какой группе и с каким репертуаром предстоит работать исполнителю?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В симфоническом оркестре особенно важны ясная атака и нижний регистр. Разные инструменты можно сравнить под смычком.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-solnoy-programmy",
@@ -50,7 +62,10 @@
       "open_question": "Какая пьеса вашей программы требует от инструмента наибольшей свободы?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для сольной программы значимы певучий верх и быстрые переходы. Гриф и отклик лучше проверить на сложных местах пьесы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-pitstsikato-i-dzhaza",
@@ -60,7 +75,10 @@
       "open_question": "Играете вы преимущественно акустически и какой характер атаки предпочитаете?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В джазе контрабас раскрывается в ритме и длительности пальцевой ноты. Удобную высоту струн можно подобрать под вашу игру.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "smychkovyy-otklik-kontrabasa",
@@ -70,7 +88,10 @@
       "open_question": "При каких штрихах вы особенно чувствуете разницу между инструментами?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Лёгкий смычковый отклик слышен с первой тихой ноты. Струны, подставку и душку можно настроить под ваш штрих.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "na-kontrabase-trudno-prizhimat-struny",
@@ -80,7 +101,10 @@
       "open_question": "Какая струна или участок грифа требует необычно большого усилия?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Когда струны тяжело прижимать, лишнее усилие иногда снимают обработкой накладки и регулировкой подставки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "perehod-s-uchebnogo-na-professionalnyy-kontrabas",
@@ -90,7 +114,10 @@
       "open_question": "Что вы научились делать, но пока не можете устойчиво повторить на своём контрабасе?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Переход к профессиональному басу начинается с новых ощущений под рукой, а не с ярлыка класса. Сыграйте свою программу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "znakomstvo-s-neskolkimi-kontrabasami",
@@ -100,7 +127,10 @@
       "open_question": "Есть ли контрабас, с которым вы хотели бы сравнивать остальные инструменты?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В одной комнате разные контрабасы показывают свой характер сразу. Можно слушать и играть без заранее назначенной цены.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-prepodavatelya-i-uchenikov",
@@ -110,7 +140,10 @@
       "open_question": "Сколько учеников пользуются инструментом и какого размера контрабас им необходим?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Преподавателю и ученику могут быть нужны разные грифы и размеры. Коллекция позволяет почувствовать эти различия.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-kamernogo-ansamblya",
@@ -120,7 +153,10 @@
       "open_question": "С какими инструментами вы играете и какие моменты ансамблевой работы сейчас труднее всего?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В камерном ансамбле легко услышать тембр каждой басовой ноты. Инструмент стоит выбирать по знакомой камерной музыке.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-orkestrovogo-proslushivaniya",
@@ -130,7 +166,10 @@
       "open_question": "Какие оркестровые отрывки вызывают наибольшую неопределённость перед прослушиванием?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Оркестровые соло раскрывают реакцию струны на смычок и свободу позиций. Так удобнее сравнить инструменты.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-starinnoy-muzyki",
@@ -140,7 +179,10 @@
       "open_question": "Какую эпоху и программу вы исполняете и есть ли требования к исторической настройке?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для старинной музыки важны строй, фразировка и характер звучания. Подходящий бас лучше услышать в вашем репертуаре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-nebolshogo-kontsertnogo-zala",
@@ -150,7 +192,10 @@
       "open_question": "Какой размер зала и с каким составом вам предстоит выступать?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В небольшом зале каждая деталь атаки становится заметной. Контрабас можно подобрать по естественному отклику.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-studiynoy-solnoy-zapisi",
@@ -160,7 +205,10 @@
       "open_question": "Какой характер звука вы хотите сохранить в записи и чем обычно снимаете контрабас?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для студийного соло нужны чистый звук и ровная интонация. Инструмент можно подготовить к вашей записи.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-igry-v-vysokih-pozitsiyah",
@@ -170,7 +218,10 @@
       "open_question": "В каком месте перехода к верхнему регистру инструмент начинает сковывать движение?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Высокие позиции требуют свободного грифа и удобной формы плеч. Эти качества лучше проверять на сольной фразе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "perehod-s-violoncheli-na-kontrabas",
@@ -180,7 +231,10 @@
       "open_question": "Какая виолончельная техника уже привычна вам и есть ли преподаватель по контрабасу?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После виолончели контрабас ощущается другим корпусом и расстояниями. Можно попробовать несколько размеров и грифов.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-konkursa-ispolniteley",
@@ -190,7 +244,10 @@
       "open_question": "Какой срок до конкурса и какая часть программы предъявляет наибольшие требования к инструменту?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Конкурсная программа требует уверенности в верхних позициях и атаке. Трудные пассажи помогут сравнить контрабасы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vozvraschenie-k-kontrabasu-posle-dolgogo-pereryva",
@@ -200,7 +257,10 @@
       "open_question": "Как давно вы не играли и что сейчас изменилось в ощущении контрабаса?",
       "group": "Исполнительские ситуации",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После долгой паузы легче вернуться к инструменту, который не сопротивляется руке. Можно начать со спокойной пробы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }
