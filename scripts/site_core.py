@@ -294,7 +294,7 @@ def frame(p: dict, role: str, content: str, contact: str, route_override: str | 
     desc = p["description"] if access else p["editorial_description"]
     kicker = p["entry_kicker"] if access else p["editorial_kicker"]
     mast = (f'<div class="rule"></div><div class="meta"><a href="{level}">'
-            'EASYBASSMASTER</a><span>МОСКВА</span></div>' + brand())
+            'EASYBASSMASTER</a><span>МОСКВА</span></div>' + ('' if access else brand()))
     footer = (f'<footer class="master-footer"><span>МАСТЕРСКАЯ КОНТРАБАСА</span>'
               f'<a href="{level}archive/">Подшивка</a></footer>')
     full = (mast + '<main><section class="issue master-lead">'

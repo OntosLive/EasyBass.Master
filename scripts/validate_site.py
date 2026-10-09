@@ -100,8 +100,10 @@ def validate(site: Path, root: Path = ROOT) -> dict:
                         errors.append(f"{route}: {name} icon absent")
                 if c.select_one(".max-contact-pending"):
                     errors.append(f"{route}: inactive MAX icon leaked")
-            if not d.select_one(".brand-title"):
+            if route not in entry_urls and not d.select_one(".brand-title"):
                 errors.append(f"{route}: masthead not shared")
+            if route in entry_urls and not d.select_one(".meta a[href]"):
+                errors.append(f"{route}: compact entry masthead missing")
             if d.select_one('meta[name="robots"][content*="noindex"]'):
                 errors.append(f"{route}: canonical page accidentally noindex")
         if route in entry_urls:

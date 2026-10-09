@@ -137,6 +137,8 @@ class PublicationTests(unittest.TestCase):
             self.assertEqual(len(soup.select(".entry-range-grid a[href]")), 4)
             self.assertEqual(len(soup.select(".entry-utilities a[href]")), 4)
             self.assertEqual(len(soup.select(".contact-block")), 1)
+            self.assertIsNone(soup.select_one(".brand-title"))
+            self.assertIsNotNone(soup.select_one(".meta a[href]"))
             self.assertLess(html.index('class="contact-block'), html.index('class="entry-range-grid'))
             self.assertIn('href="tel:+79096945544"', html)
             self.assertNotIn("MAX", html)

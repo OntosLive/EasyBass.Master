@@ -15,7 +15,7 @@ ACTION_ROUTES = (
     ("prodat-kontrabas-v-moskve/", "Продать контрабас",
      "otsenit-kontrabas-pered-prodazhey/"),
     ("remont-kontrabasa-v-moskve/", "Ремонт и настройка",
-     "osmotr-kontrabasa-pered-pokupkoy/"),
+     "nastroyka-podstavki-kontrabasa/"),
 )
 
 SPACE_ROUTES = (
