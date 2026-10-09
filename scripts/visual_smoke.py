@@ -95,11 +95,15 @@ async def run(site: Path, output: Path) -> dict:
                         image_count = await page.locator(".atlas-figure img").count()
                         if image_count != expected:
                             raise AssertionError(f"{name}: expected {expected} valid technical maps, got {image_count}")
-                        ready = await page.locator(".atlas-figure img").evaluate_all(
-                            "(images) => images.every(img => img.complete && img.naturalWidth > 0)"
+                        # The figures intentionally lazy-load on public pages. Force
+                        # them eager in this browser test before checking decoding.
+                        await page.locator(".atlas-figure img").evaluate_all(
+                            "(images) => images.forEach(img => img.loading = 'eager')"
                         )
-                        if not ready:
-                            raise AssertionError(f"{name}: an SVG plate failed to load in Chromium")
+                        await page.wait_for_function(
+                            "() => Array.from(document.querySelectorAll('.atlas-figure img')).every("
+                            "img => img.complete && img.naturalWidth > 0)", timeout=12000
+                        )
                         if width <= 760:
                             panel = await page.locator(".atlas-pan").first.evaluate(
                                 "(el) => ({client: el.clientWidth, scroll: el.scrollWidth})"
