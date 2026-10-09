@@ -88,6 +88,38 @@ async def run(site: Path, output: Path) -> dict:
                         if icons["max"]["color"] != icons["telegram"]["color"]:
                             raise AssertionError(f"{name}: MAX is not monochrome like Telegram")
                     if name == "home":
+                        if not await page.locator('link[href="assets/visual/scene.css"]').count():
+                            raise AssertionError("Photographic shell stylesheet missing on homepage")
+                        if await page.locator(".cb-hero h1").count() != 1:
+                            raise AssertionError("Cinematic home must retain one meaningful H1")
+                        await page.wait_for_function(
+                            "() => { const img=document.querySelector('#cb-hero-image');"
+                            " return img && img.complete && img.naturalWidth > 0 }", timeout=10000)
+                        mood = page.locator("#cb-atmosphere")
+                        await mood.click()
+                        if await mood.get_attribute("aria-pressed") != "true":
+                            raise AssertionError("Home's light switch did not activate")
+                        await page.wait_for_function(
+                            "() => document.querySelector('#cb-hero-image')?.currentSrc.includes('room-evening.webp')",
+                            timeout=10000)
+                        await mood.click()
+                        if await mood.get_attribute("aria-pressed") != "false":
+                            raise AssertionError("Home's light switch did not reset")
+                    if name in {"collection", "workshop", "meeting", "experience", "delivery"}:
+                        image = page.locator(".scene-banner img")
+                        if await image.count() != 1:
+                            raise AssertionError(f"{name}: expected one photographic institutional banner")
+                        await image.evaluate("(img)=>img.loading='eager'")
+                        await page.wait_for_function(
+                            "() => document.querySelector('.scene-banner img')?.complete"
+                            " && document.querySelector('.scene-banner img')?.naturalWidth > 0",
+                            timeout=12000)
+                    if name in {"access", "standalone", "sensor-n0", "sensor-long", "size-compare", "knowledge", "essay", "model"}:
+                        bg = await page.locator(".master-lead").evaluate(
+                            "(el) => getComputedStyle(el).backgroundImage")
+                        if ".webp" not in bg:
+                            raise AssertionError(f"{name}: photographic visual skin not applied: {bg}")
+                    if name == "home":
                         border_widths = await page.locator(".master-directions > a").evaluate_all(
                             "(items) => items.map(item => parseFloat(getComputedStyle(item).borderLeftWidth))")
                         if len(border_widths) != 3:
