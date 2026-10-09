@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "description": "Temporary access and physical instrument configuration",
+  "families": [
+    {
+      "id": "temporary-access",
+      "title": "Аренда и временная замена",
+      "entries": [
+        {
+          "slug": "kontrabas-v-arendu-poka-svoy-u-mastera",
+          "search_title": "Контрабас в аренду пока свой у мастера",
+          "lead": "Если собственный инструмент сейчас в ремонте, можно обсудить временный экземпляр, чтобы занятия не прерывались.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-zamenu-pered-kontsertom",
+          "search_title": "Контрабас на замену перед концертом",
+          "lead": "Если свой инструмент неожиданно недоступен, расскажите о программе и сроке. Обсудим возможную замену.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-odin-kontsert-v-moskve",
+          "search_title": "Контрабас на один концерт в Москве",
+          "lead": "Для одного выступления можно обсудить конкретный инструмент, время знакомства и передачу на площадку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-v-arendu-dlya-priezzhego-muzykanta",
+          "search_title": "Контрабас в аренду для приезжего музыканта",
+          "lead": "Если вы приехали без своего баса, обсудим подходящий инструмент и время, когда можно его попробовать.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-naprokat-dlya-orkestrovogo-proekta",
+          "search_title": "Контрабас напрокат для оркестрового проекта",
+          "lead": "Если участие ограничено репетициями и концертами, можно обсудить инструмент на время проекта.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-v-arendu-dlya-dzhazovogo-sostava",
+          "search_title": "Контрабас в аренду для джазового состава",
+          "lead": "Нужен акустический инструмент на несколько репетиций? Уточним стиль игры и сроки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-mesyats-dlya-pervyh-zanyatiy",
+          "search_title": "Контрабас на месяц для первых занятий",
+          "lead": "Начало обучения не обязательно требует немедленной покупки. Обсудим аренду подходящего размера.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-semestr-dlya-studenta",
+          "search_title": "Контрабас на семестр для студента",
+          "lead": "Если инструмент нужен до конца семестра, можно рассмотреть временный доступ и необходимые условия.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-uchebnyy-sezon-dlya-orkestranta",
+          "search_title": "Контрабас на учебный сезон для оркестранта",
+          "lead": "Когда работа ограничена сезоном, обсудим аренду инструмента и подготовку к программе.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-vremya-gastroley-v-moskve",
+          "search_title": "Контрабас на время гастролей в Москве",
+          "lead": "Если неудобно перевозить свой, можно заранее договориться о знакомстве с местным инструментом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-nedelyu-dlya-master-klassa",
+          "search_title": "Контрабас на неделю для мастер-класса",
+          "lead": "Если мероприятие проходит в Москве, обсудим временный контрабас и время на привыкание.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-priglashennogo-solista-v-arendu",
+          "search_title": "Контрабас для приглашённого солиста в аренду",
+          "lead": "Если выступаете не на своём инструменте, важно иметь время для пробы. Уточним условия заранее.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vremennyy-kontrabas-dlya-studiynoy-zapisi",
+          "search_title": "Временный контрабас для студийной записи",
+          "lead": "Если инструмент нужен только на сессию, обсудим передачу, рабочий комплект и репетицию.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-posle-polomki-svoego",
+          "search_title": "Аренда контрабаса после поломки своего",
+          "lead": "Если поломка прервала работу, можно обсудить ремонт и временную замену в одном обращении.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-s-udobnym-grifom",
+          "search_title": "Аренда контрабаса с удобным грифом",
+          "lead": "Если временный инструмент нужен для сложной программы, обсудим геометрию и возможность знакомства.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-s-korotkoy-menzuroy",
+          "search_title": "Аренда контрабаса с короткой мензурой",
+          "lead": "Если рука требует меньшего расстояния, обсудим конкретные инструменты для временного пользования.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-dlya-igry-pitstsikato",
+          "search_title": "Аренда контрабаса для игры пиццикато",
+          "lead": "Под джазовую практику важна настройка струн. Уточним доступные условия и возможный экземпляр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-pod-smychkovuyu-programmu",
+          "search_title": "Аренда контрабаса под смычковую программу",
+          "lead": "Если готовите классику, можно обсудить инструмент с подходящим откликом и время привыкания.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-dlya-semochnogo-dnya",
+          "search_title": "Аренда контрабаса для съёмочного дня",
+          "lead": "Нужен контрабас в кадре? Уточним, будут ли на нём играть, и обсудим передачу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-dlya-muzykalnogo-spektaklya",
+          "search_title": "Аренда контрабаса для музыкального спектакля",
+          "lead": "Если спектакль идёт несколько вечеров, обсудим инструмент и график использования.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-repetitsiy-pered-pokupkoy",
+          "search_title": "Контрабас для репетиций перед покупкой",
+          "lead": "Если хотите сначала пожить с инструментом, обсудим возможность отдельной аренды до решения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vzyat-kontrabas-v-arendu-na-leto",
+          "search_title": "Взять контрабас в аренду на лето",
+          "lead": "Если впереди летние занятия или проект, обсудим размер инструмента и возможный срок пользования.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-pyatistrunnogo-kontrabasa-v-moskve",
+          "search_title": "Аренда пятиструнного контрабаса в Москве",
+          "lead": "Если партия требует расширенного низа, уточним необходимый строй и возможность временного доступа.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-gastrolnyy-tur-po-rossii",
+          "search_title": "Контрабас на гастрольный тур по России",
+          "lead": "Если нужен инструмент на несколько городов, обсудим срок, передачу и обслуживание по маршруту.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-kontrabasa-dlya-podgotovki-k-proslushivaniyu",
+          "search_title": "Аренда контрабаса для подготовки к прослушиванию",
+          "lead": "Если привычного инструмента нет, можно обсудить временный экземпляр под ваши оркестровые соло.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "arenda-nedorogogo-kontrabasa-dlya-vzroslogo",
+          "search_title": "Аренда недорогого контрабаса для взрослого",
+          "lead": "Если хотите начать занятия без покупки, обсудим инструмент доступного класса на нужный период.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-v-arendu-na-vyhodnye-dlya-zapisi",
+          "search_title": "Контрабас в аренду на выходные для записи",
+          "lead": "Если студийная работа короткая, уточним время знакомства и возможный срок доступа.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    },
+    {
+      "id": "sizes-and-form",
+      "title": "Размеры, мензура, корпус и строй",
+      "entries": [
+        {
+          "slug": "kontrabas-1-16-dlya-malenkogo-rebenka",
+          "search_title": "Контрабас 1/16 для маленького ребёнка",
+          "lead": "Если нужен действительно небольшой инструмент, обсудим размер и возможность знакомства с конкретным экземпляром.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-1-8-dlya-pervyh-urokov",
+          "search_title": "Контрабас 1/8 для первых уроков",
+          "lead": "Для первых занятий можно обсудить небольшие размеры и условия пользования, а не выбирать по одной цифре.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-1-4-kupit-v-moskve",
+          "search_title": "Контрабас 1/4 купить в Москве",
+          "lead": "Если педагог советует четверть, можно обсудить инструмент с нужными габаритами и его подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-1-2-kupit-v-moskve",
+          "search_title": "Контрабас 1/2 купить в Москве",
+          "lead": "Если ребёнок переходит к половинному размеру, можно познакомиться с подходящими экземплярами.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-3-4-dlya-vzroslogo-kupit",
+          "search_title": "Контрабас 3/4 для взрослого купить",
+          "lead": "Три четверти не означает ученический класс. В коллекции можно сравнить такие инструменты разного уровня.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-4-4-dlya-orkestra-kupit",
+          "search_title": "Контрабас 4/4 для оркестра купить",
+          "lead": "Если нужен большой корпус, обсудим размеры, мензуру, нижний регистр и конкретные экземпляры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-7-8-dlya-professionalnoy-igry",
+          "search_title": "Контрабас 7/8 для профессиональной игры",
+          "lead": "Если ищете промежуточный размер, можно обсудить реальные размеры и возможность личной пробы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "korotkomenzurnyy-kontrabas-kupit",
+          "search_title": "Короткомензурный контрабас купить",
+          "lead": "Если длинная мензура неудобна, можно сравнить инструменты по расстояниям под рукой.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-dlinnoy-menzuroy",
+          "search_title": "Контрабас с длинной мензурой",
+          "lead": "Если ищете длинный рабочий размер, обсудим корпус и геометрию конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-ploskoy-zadney-dekoy-kupit",
+          "search_title": "Контрабас с плоской задней декой купить",
+          "lead": "Если важна конструкция flat back, можно обсудить инструменты разного происхождения и их состояние.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-vypukloy-zadney-dekoy-kupit",
+          "search_title": "Контрабас с выпуклой задней декой купить",
+          "lead": "Ищете round back? Обсудим несколько реальных экземпляров и их исполнительский характер.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-violnoy-formoy-korpusa",
+          "search_title": "Контрабас с виольной формой корпуса",
+          "lead": "Если интересует форма viol, можно обсудить старинные и современные инструменты этой традиции.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-so-skripichnoy-formoy-korpusa",
+          "search_title": "Контрабас со скрипичной формой корпуса",
+          "lead": "Если ищете скрипичную форму, можно сравнить инструменты и уточнить реальные габариты.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-uzkimi-plechami-kupit",
+          "search_title": "Контрабас с узкими плечами купить",
+          "lead": "Если нужны свободные верхние позиции, обсудим форму плеч и профиль грифа конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-shirokimi-plechami",
+          "search_title": "Контрабас с широкими плечами",
+          "lead": "Если предпочитаете большой корпус определённой формы, можно познакомиться с разными вариантами.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-nizkoy-do",
+          "search_title": "Контрабас с низкой до",
+          "lead": "Если партии требуют низкую C, уточним четырёхструнную систему расширения или пятиструнный вариант.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-mashinkoy-na-strune-mi",
+          "search_title": "Контрабас с машинкой на струне ми",
+          "lead": "Если нужен расширитель нижнего регистра, обсудим систему и установку на конкретный инструмент.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "chetyrehstrunnyy-professionalnyy-kontrabas",
+          "search_title": "Четырёхструнный профессиональный контрабас",
+          "lead": "Если ищете четырёхструнный экземпляр для серьёзной игры, можно сравнить инструменты разных школ.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "pyatistrunnyy-starinnyy-kontrabas",
+          "search_title": "Пятиструнный старинный контрабас",
+          "lead": "Если интересует старая пятиструнная конструкция, начнём с происхождения и конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-peredelannym-grifom-kupit",
+          "search_title": "Контрабас с переделанным грифом купить",
+          "lead": "Если прошлые работы изменили геометрию, важно сыграть на самом инструменте перед решением.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-nastroennoy-vysokoy-podstavkoy",
+          "search_title": "Контрабас с настроенной высокой подставкой",
+          "lead": "Для разных стилей высота требует отдельного согласования. Обсудим инструмент под вашу музыку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-so-smennoy-podstavkoy",
+          "search_title": "Контрабас со сменной подставкой",
+          "lead": "Если нужен разный рабочий режим для смычка и пиццикато, обсудим варианты на конкретном инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-udobnym-raspolozheniem-shpilya",
+          "search_title": "Контрабас с удобным расположением шпиля",
+          "lead": "Если баланс важнее общего размера, можно обсудить опору и положение корпуса при игре.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-neglubokim-korpusom",
+          "search_title": "Контрабас с неглубоким корпусом",
+          "lead": "Если тесное пространство или положение тела ограничивает выбор, можно обсудить подходящие формы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-shirokim-grifom-dlya-pyati-strun",
+          "search_title": "Контрабас с широким грифом для пяти струн",
+          "lead": "Пятиструнный инструмент требует своего профиля. Договоримся о знакомстве с геометрией.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-vysokogo-registra-solo",
+          "search_title": "Контрабас для высокого регистра соло",
+          "lead": "Если ваш репертуар живёт наверху, можно сравнить корпуса и грифы на конкретных пассажах.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-pod-nemetskuyu-smychkovuyu-shkolu",
+          "search_title": "Контрабас под немецкую смычковую школу",
+          "lead": "Если у вас сложившаяся техника, можно подобрать инструмент по ответу и удобству.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-smeny-stroya-v-orkestre",
+          "search_title": "Контрабас для смены строя в оркестре",
+          "lead": "Если нужны разные строи под программу, обсудим инструмент и комплект струн.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    }
+  ]
+}

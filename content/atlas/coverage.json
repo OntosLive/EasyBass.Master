@@ -2714,11 +2714,12 @@
   ],
   "short_sensor": {
     "generator": "scripts/sensor_n0.py",
-    "source": "content/atlas/family-seeds.json",
-    "source_copy": "content/atlas/n0-sensor-copy.json",
-    "status": "N.0 publication of 3290 scene/question combinations; not full N.1 and not measured search demand",
-    "count": 3290,
-    "category_index_pages": 20,
-    "root_index": "/vhod/"
+    "source": "content/entrances-rewrite/*.json",
+    "status": "Authored human-intent N.0; atlas hypotheses never published automatically",
+    "count": null,
+    "category_index_pages": null,
+    "root_index": "/vhod/",
+    "retired_cartesian_count": 3290,
+    "retired_synthetic_publication": true
   }
 }

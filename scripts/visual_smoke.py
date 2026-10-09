@@ -23,8 +23,8 @@ ROUTES = [
     ("essay", "details/vybor-kontrabasa-kak-znakomstvo/index.html"),
     ("model", "models/eastman-vb305/index.html"),
     ("sensor-root", "vhod/index.html"),
-    ("sensor-hub", "vhod/buy-entry/index.html"),
-    ("sensor-n0", "vhod/buy-entry/pervyy-kontrabas-dlya-rebenka-tochnoe-polozhenie-levoy-ruki/index.html"),
+    ("sensor-hub", "vhod/familiar-instruments/index.html"),
+    ("sensor-n0", "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html"),
     ("standalone", "kupit-kontrabas-v-moskve/index.html"),
 ]
 WIDTHS = (390, 760, 820, 1366)

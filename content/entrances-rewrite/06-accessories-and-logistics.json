@@ -1,0 +1,394 @@
+{
+  "version": 1,
+  "description": "Bows, strings, hardware, transit, instrument transfers; country-wide delivery is one meaning, city-only permutations not new pages",
+  "families": [
+    {
+      "id": "strings-bows-hardware",
+      "title": "Струны, смычки, мехaника и принадлежности",
+      "entries": [
+        {
+          "slug": "smychok-dlya-starogo-kontrabasa",
+          "search_title": "Смычок для старого контрабаса",
+          "lead": "Если нужен смычок под уже знакомый инструмент, обсудим баланс, школу держания и возможность личной пробы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kupit-nemetskiy-kontrabasnyy-smychok-v-moskve",
+          "search_title": "Купить немецкий контрабасный смычок в Москве",
+          "lead": "Если играете немецкой системой, можно обсудить подходящие смычки и знакомство с ними.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kupit-frantsuzskiy-smychok-dlya-kontrabasa",
+          "search_title": "Купить французский смычок для контрабаса",
+          "lead": "Если нужна французская колодка, уточним ваш опыт и возможность подобрать конкретный смычок.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nastroit-kontrabas-pod-nemetskiy-smychok",
+          "search_title": "Настроить контрабас под немецкий смычок",
+          "lead": "Если нынешний инструмент тяжело отвечает при немецкой технике, обсудим акустическую подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nastroit-kontrabas-pod-frantsuzskiy-smychok",
+          "search_title": "Настроить контрабас под французский смычок",
+          "lead": "Если атака требует избыточного усилия, можно исследовать инструмент именно с вашей техникой.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "perevolosit-kontrabasnyy-smychok",
+          "search_title": "Переволосить контрабасный смычок",
+          "lead": "Если волос изношен или потерял захват, расскажите о смычке: обсудим возможный маршрут обслуживания.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-kolodki-kontrabasnogo-smychka",
+          "search_title": "Ремонт колодки контрабасного смычка",
+          "lead": "При повреждении колодки нужен осмотр конкретного смычка. Уточним, какую работу можно выполнить.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-trosti-kontrabasnogo-smychka",
+          "search_title": "Ремонт трости контрабасного смычка",
+          "lead": "Если смычок получил повреждение, его можно сначала показать мастерам, прежде чем решать судьбу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "smychok-dlya-solnoy-programmy-kontrabasa",
+          "search_title": "Смычок для сольной программы контрабаса",
+          "lead": "При подготовке сольного репертуара полезно попробовать подходящий смычок на вашем инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "smychok-dlya-orkestrovogo-kontrabasa",
+          "search_title": "Смычок для оркестрового контрабаса",
+          "lead": "В длинной оркестровой работе баланс и отклик имеют значение. Обсудим возможное знакомство со смычками.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kanifol-dlya-kontrabasnogo-smychka-kupit",
+          "search_title": "Канифоль для контрабасного смычка купить",
+          "lead": "Если привычная канифоль не устраивает, можно уточнить тип смычка, струны и нужный отклик.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-starogo-kontrabasa-musima",
+          "search_title": "Струны для старого контрабаса Musima",
+          "lead": "При смене струн на Musima учитывают конкретный инструмент. Обсудим комплект и настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-kontrabasa-moskvich",
+          "search_title": "Струны для контрабаса Москвич",
+          "lead": "Если хотите поменять струны на «Москвиче», обсудим игровую задачу и подготовку инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-cheshskogo-kontrabasa",
+          "search_title": "Струны для чешского контрабаса",
+          "lead": "У чешских инструментов разный размер и настройка. Поможем обсудить подходящий комплект.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-rubner-kontrabasa",
+          "search_title": "Струны для Rubner контрабаса",
+          "lead": "Если меняете комплект на Rubner, важно сохранить привычный отклик. Обсудим строй и задачу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "orkestrovye-struny-dlya-kontrabasa-kupit",
+          "search_title": "Оркестровые струны для контрабаса купить",
+          "lead": "Нужен комплект под регулярную смычковую работу? Обсудим инструмент, строй и предпочтения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-solnogo-stroya-kupit",
+          "search_title": "Струны для сольного строя купить",
+          "lead": "Если играете в сольном строе, уточним нужный комплект и его совместимость с контрабасом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nizkonatyazhnye-struny-dlya-kontrabasa",
+          "search_title": "Низконатяжные струны для контрабаса",
+          "lead": "Если струны тяжело прижимать, можно обсудить более подходящий комплект и регулировку инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-dzhazovogo-pitstsikato",
+          "search_title": "Струны для джазового пиццикато",
+          "lead": "Если играете пальцами, выбор струн связан с высотой, атакой и характером инструмента. Обсудим комплект.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-rokabilli-i-slepa",
+          "search_title": "Струны для рокабилли и слэпа",
+          "lead": "Нужен иной отклик для слэпа? Можно обсудить струны и подготовку своего контрабаса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "perestavit-struny-na-kontrabase-dlya-solo",
+          "search_title": "Переставить струны на контрабасе для соло",
+          "lead": "Если меняете оркестровый строй на сольный, обсудим комплект и настройку инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "zamenit-struny-na-starinnom-kontrabase",
+          "search_title": "Заменить струны на старинном контрабасе",
+          "lead": "Для старого инструмента можно обсудить совместимый комплект и подготовку без поспешного вмешательства.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "shpil-dlya-kontrabasa-kupit",
+          "search_title": "Шпиль для контрабаса купить",
+          "lead": "Если прежний шпиль неудобен или повреждён, уточним конструкцию инструмента и возможную замену.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-shpilya-kontrabasa",
+          "search_title": "Ремонт шпиля контрабаса",
+          "lead": "Когда опора не фиксируется, привезите контрабас на осмотр механизма.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kolkovaya-mehanika-rubner-dlya-kontrabasa",
+          "search_title": "Колковая механика Rubner для контрабаса",
+          "lead": "Ищете именно механику Rubner? Уточним размеры, тип и совместимость с вашим корпусом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "zamena-kolkovoy-mehaniki-na-moskviche",
+          "search_title": "Замена колковой механики на Москвиче",
+          "lead": "Если старые колки плохо работают, можно обсудить ремонт или замену подходящего комплекта.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "zvukosnimatel-dlya-kontrabasa-pitstsikato",
+          "search_title": "Звукосниматель для контрабаса пиццикато",
+          "lead": "Если выходите на сцену с акустическим басом, обсудим звукосниматель и рабочую настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "zvukosnimatel-dlya-rokabilli-kontrabasa",
+          "search_title": "Звукосниматель для рокабилли-контрабаса",
+          "lead": "Для слэпа важно передать и низ, и атаку. Уточним вашу сценическую цепочку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "chehol-dlya-starogo-bolshogo-kontrabasa",
+          "search_title": "Чехол для старого большого контрабаса",
+          "lead": "Если обычный чехол не подходит по плечам или длине, обсудим размеры конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "chehol-dlya-kontrabasa-moskvich",
+          "search_title": "Чехол для контрабаса Москвич",
+          "lead": "При выборе чехла важны реальные габариты «Москвича». Можно обсудить измерение корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "telezhka-dlya-perevozki-tyazhelogo-kontrabasa",
+          "search_title": "Тележка для перевозки тяжёлого контрабаса",
+          "lead": "Если инструмент сложно носить, поговорим о транспортировке и подходящем приспособлении.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    },
+    {
+      "id": "movement-and-logistics",
+      "title": "Перевозка, хранение и передача контрабаса",
+      "entries": [
+        {
+          "slug": "dostavka-kontrabasa-v-drugoy-gorod-rossii",
+          "search_title": "Доставка контрабаса в другой город России",
+          "lead": "Контрабас большой и хрупкий. Обсудим конкретный инструмент, упаковку и возможный способ отправки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "perevozka-kontrabasa-po-moskve",
+          "search_title": "Перевозка контрабаса по Москве",
+          "lead": "Если инструмент нужно переместить в пределах города, обсудим размер корпуса, упаковку и нужный маршрут.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "dostavka-kontrabasa-do-kontsertnoy-ploschadki",
+          "search_title": "Доставка контрабаса до концертной площадки",
+          "lead": "Площадка, время заноса и размер инструмента влияют на передачу. Уточним условия заранее.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "dostavka-kontrabasa-v-studiyu-zvukozapisi",
+          "search_title": "Доставка контрабаса в студию звукозаписи",
+          "lead": "Если инструмент нужен к началу сессии, обсудим репетицию, транспорт и время настройки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-v-poezdku-na-poezde",
+          "search_title": "Контрабас в поездку на поезде",
+          "lead": "Если везёте большой инструмент поездом, можно обсудить защиту корпуса и варианты временной аренды на месте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-gastroley-bez-svoego-instrumenta",
+          "search_title": "Контрабас для гастролей без своего инструмента",
+          "lead": "Когда свой инструмент остаётся дома, можно обсудить знакомство с контрабасом на месте выступления.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "chehol-dlya-dalnih-perevozok-kontrabasa",
+          "search_title": "Чехол для дальних перевозок контрабаса",
+          "lead": "Если обычная защита не устраивает, расскажите о корпусе и способе поездок. Обсудим варианты.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "perevozka-starinnogo-kontrabasa",
+          "search_title": "Перевозка старинного контрабаса",
+          "lead": "Для редкого инструмента подготовка к дороге особенно важна. Можно проконсультироваться с мастерской о его состоянии.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-aviatsionnoy-perevozki",
+          "search_title": "Контрабас после авиационной перевозки",
+          "lead": "Если после полёта появились новые проблемы, привозите инструмент на осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-zimney-perevozki",
+          "search_title": "Контрабас после зимней перевозки",
+          "lead": "Резкая смена температуры может изменить состояние корпуса. Можно оценить инструмент после поездки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "hranenie-kontrabasa-posle-pereezda",
+          "search_title": "Хранение контрабаса после переезда",
+          "lead": "Если инструмент пока не используется, обсудим осмотр и разумные условия дальнейшего хранения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ne-pomeschaetsya-v-mashinu",
+          "search_title": "Контрабас не помещается в машину",
+          "lead": "Если перевозка стала постоянной проблемой, можно обсудить более удобную геометрию или временный инструмент на месте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otpravit-kontrabas-s-chehlom-i-smychkom",
+          "search_title": "Отправить контрабас с чехлом и смычком",
+          "lead": "Если передаётся комплект, важно согласовать упаковку всех предметов. Обсудим детали.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-dolgogo-hraneniya-na-balkone",
+          "search_title": "Контрабас после долгого хранения на балконе",
+          "lead": "Если инструмент много лет подвергался перепадам температуры, сначала нужен осмотр состояния.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-sezon-v-drugom-gorode",
+          "search_title": "Контрабас на сезон в другом городе",
+          "lead": "Если едете работать в другом городе, можно обсудить временный доступ вместо перевозки собственного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "poluchit-kontrabas-iz-moskvy-po-dogovorennosti",
+          "search_title": "Получить контрабас из Москвы по договорённости",
+          "lead": "Если нашли интересный инструмент в мастерской, детали передачи согласуются после знакомства с экземпляром.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    }
+  ]
+}

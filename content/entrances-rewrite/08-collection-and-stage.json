@@ -1,0 +1,402 @@
+{
+  "version": 1,
+  "description": "Personal introduction, film, recording, live event needs",
+  "families": [
+    {
+      "id": "private-collection",
+      "title": "Коллекция, клуб и личное знакомство",
+      "entries": [
+        {
+          "slug": "poznakomitsya-s-kollektsiey-kontrabasov-v-moskve",
+          "search_title": "Познакомиться с коллекцией контрабасов в Москве",
+          "lead": "В частном музыкальном салоне можно сравнить несколько инструментов и поговорить с мастерами без обязательной покупки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "poslushat-raznye-starinnye-kontrabasy",
+          "search_title": "Послушать разные старинные контрабасы",
+          "lead": "Если интересен звук инструментов разных эпох, можно договориться о знакомстве с экземплярами коллекции.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "poprobovat-deshevyy-i-dorogoy-kontrabas-ryadom",
+          "search_title": "Попробовать дешёвый и дорогой контрабас рядом",
+          "lead": "Цена не должна мешать услышать разницу. Приезжайте сравнить инструменты до разговора об условиях.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "poigrat-na-kontrabase-rubner",
+          "search_title": "Поиграть на контрабасе Rubner",
+          "lead": "Если интересует инструмент Rubner, обсудим возможность знакомства с конкретным экземпляром или его аналогами.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "poigrat-na-starom-moskviche",
+          "search_title": "Поиграть на старом Москвиче",
+          "lead": "Если хотите услышать привычный фабричный инструмент не по записи, начнём с разговора о возможных экземплярах.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "sravnit-cheshskiy-i-nemetskiy-kontrabas",
+          "search_title": "Сравнить чешский и немецкий контрабас",
+          "lead": "Разные школы изготовления можно обсуждать в игре, а не по фотографии. Договоримся о знакомстве.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "sravnit-muzimu-i-moskvich",
+          "search_title": "Сравнить Музиму и Москвич",
+          "lead": "Если выбираете между знакомыми фабричными инструментами, можно обсудить конкретные экземпляры и их настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "sravnit-cheshskiy-kontrabas-i-muzimu",
+          "search_title": "Сравнить чешский контрабас и Музиму",
+          "lead": "Интересуют два исторически привычных инструмента? Обсудим, какие можно послушать лично.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "posmotret-kontrabasy-raznyh-razmerov-vmeste",
+          "search_title": "Посмотреть контрабасы разных размеров вместе",
+          "lead": "Рядом легче почувствовать разницу в посадке и руке. Приглашаем договориться о посещении коллекции.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "znakomstvo-s-masterovymi-kontrabasami",
+          "search_title": "Знакомство с мастеровыми контрабасами",
+          "lead": "Если хотите попробовать инструменты мастеров, можно предварительно обсудить имеющиеся экземпляры и их историю.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "znakomstvo-s-kontrabasom-pered-nachalom-ucheby",
+          "search_title": "Знакомство с контрабасом перед началом учёбы",
+          "lead": "Если ещё нет своего инструмента, можно приехать посмотреть и попробовать несколько вариантов.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vybrat-kontrabas-bez-zaranee-naznachennoy-tseny",
+          "search_title": "Выбрать контрабас без заранее назначенной цены",
+          "lead": "Если пока не знаете собственных предпочтений, начните с прослушивания коллекции и игры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "sravnit-tri-kontrabasa-na-odnoy-pese",
+          "search_title": "Сравнить три контрабаса на одной пьесе",
+          "lead": "Если хотите различить отклик, приезжайте со знакомым фрагментом. Договоримся о времени встречи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "sravnit-nastroyku-dvuh-kontrabasov",
+          "search_title": "Сравнить настройку двух контрабасов",
+          "lead": "Если инструмент кажется неудобным, можно сопоставить его с другим и обсудить возможную доработку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "priehat-v-masterskuyu-so-svoim-kontrabasom",
+          "search_title": "Приехать в мастерскую со своим контрабасом",
+          "lead": "Знакомство может начаться с вашего инструмента: его звука, состояния или сравнения с другими.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "pokazat-kontrabas-masteram-bez-resheniya-o-prodazhe",
+          "search_title": "Показать контрабас мастерам без решения о продаже",
+          "lead": "Если хотите разобраться в своём инструменте, можно договориться об осмотре и разговоре.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabasnaya-masterskaya-tolko-dlya-kontrabasov",
+          "search_title": "Контрабасная мастерская только для контрабасов",
+          "lead": "Специализация здесь не рекламная категория: мастерская работает с контрабасами и их исполнительскими свойствами.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "chastnyy-muzykalnyy-salon-kontrabasov",
+          "search_title": "Частный музыкальный салон контрабасов",
+          "lead": "Можно прийти знакомиться с инструментами, слушать их и общаться с мастерами по предварительной договорённости.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "klub-kontrabasistov-v-moskve",
+          "search_title": "Клуб контрабасистов в Москве",
+          "lead": "Если ищете профессиональное пространство для разговора об инструментах, можно связаться с нашей мастерской.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kollektsiya-kontrabasov-posle-restavratsii",
+          "search_title": "Коллекция контрабасов после реставрации",
+          "lead": "Если интересуют инструменты с историей восстановления, можно обсудить сохранившиеся сведения и конкретные экземпляры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabasy-iz-staroy-moskovskoy-masterskoy",
+          "search_title": "Контрабасы из старой московской мастерской",
+          "lead": "Если ищете инструмент с московской историей, можно обсудить коллекцию и происхождение конкретных контрабасов.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "muzykalnyy-salon-s-redkimi-kontrabasami",
+          "search_title": "Музыкальный салон с редкими контрабасами",
+          "lead": "Старинные и редкие инструменты здесь являются предметом знакомства, а не безличными товарами.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "sravnit-fabrichnyy-i-masterovoy-kontrabas",
+          "search_title": "Сравнить фабричный и мастеровой контрабас",
+          "lead": "И фабричный, и мастеровой инструмент нужно слышать. Приезжайте познакомиться с реальными экземплярами.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "poznakomitsya-s-kontrabasom-posle-dolgogo-poiska",
+          "search_title": "Познакомиться с контрабасом после долгого поиска",
+          "lead": "Если объявления не дали ответа, можно встретиться с инструментами и попробовать их в одной комнате.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    },
+    {
+      "id": "recording-film-stage",
+      "title": "Студия, концерты, съёмки и сценические комплекты",
+      "entries": [
+        {
+          "slug": "kontrabas-na-odin-den-zvukozapisi",
+          "search_title": "Контрабас на один день звукозаписи",
+          "lead": "Для записи важны не только часы студии, но и возможность познакомиться с инструментом заранее. Обсудим аренду.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-zapisi-klassicheskoy-muzyki",
+          "search_title": "Контрабас для записи классической музыки",
+          "lead": "Если пишете смычковую партию, обсудим нужный отклик, настройку и время подготовки к сессии.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-zapisi-dzhazovogo-alboma",
+          "search_title": "Контрабас для записи джазового альбома",
+          "lead": "В студии пиццикато слышно во всех деталях. Обсудим инструмент и сценическую конфигурацию.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-semki-muzykalnogo-filma",
+          "search_title": "Контрабас на съёмки музыкального фильма",
+          "lead": "Если инструмент должен прозвучать в кадре, уточним исполнительскую задачу и возможность аренды.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-kak-rekvizit-dlya-kino",
+          "search_title": "Контрабас как реквизит для кино",
+          "lead": "Если нужен только внешний образ контрабаса, условия отличаются от аренды рабочего инструмента. Обсудим запрос.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-fotosessiyu-muzykanta",
+          "search_title": "Контрабас на фотосессию музыканта",
+          "lead": "Если инструмент нужен для съёмки, заранее уточним время, место и возможность передачи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-teatralnoy-postanovki",
+          "search_title": "Контрабас для театральной постановки",
+          "lead": "В театре инструмент может звучать или быть частью сцены. Расскажите о постановке, обсудим вариант.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-kontsertnogo-zala-v-moskve",
+          "search_title": "Контрабас для концертного зала в Москве",
+          "lead": "Если инструмент нужен на площадке к конкретному часу, обсудим сроки и возможность доставки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-v-komplekt-s-orkestrovym-smychkom",
+          "search_title": "Контрабас в комплект с оркестровым смычком",
+          "lead": "Если нужен рабочий комплект, уточним систему смычка и программу, под которую он требуется.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-akusticheskoy-zapisi-bez-pezy",
+          "search_title": "Контрабас для акустической записи без пьезы",
+          "lead": "Если звукосниматель не нужен, обсудим инструмент и работу с микрофонами в студии.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-pezodatchikom-dlya-stseny",
+          "search_title": "Контрабас с пьезодатчиком для сцены",
+          "lead": "Если играете через усиление, обсудим подготовку выхода и настройку под площадку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dzhazovogo-festivalya",
+          "search_title": "Контрабас для джазового фестиваля",
+          "lead": "Если инструмент нужен на несколько выступлений, уточним график и условия временного доступа.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-festivalya-klassicheskoy-muzyki",
+          "search_title": "Контрабас для фестиваля классической музыки",
+          "lead": "Большой инструмент не всегда удобно везти между городами. Обсудим местный экземпляр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-gastrolnyy-kontsert-priezzhego-solista",
+          "search_title": "Контрабас на гастрольный концерт приезжего солиста",
+          "lead": "Если свой инструмент остаётся дома, можно договориться о знакомстве до репетиции.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-muzykalnoe-video",
+          "search_title": "Контрабас на музыкальное видео",
+          "lead": "Если снимаете клип, уточним, будет ли живая игра, и обсудим аренду подходящего инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-reklamnoy-semki",
+          "search_title": "Контрабас для рекламной съёмки",
+          "lead": "Если нужен инструмент в кадре, можно обсудить условия передачи и бережного обращения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-saundcheka-pered-kontsertom",
+          "search_title": "Контрабас для саундчека перед концертом",
+          "lead": "Если будете играть на временном инструменте, обсудим время знакомства и подготовку к первому звуку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-muzykalnogo-nomera-na-meropriyatii",
+          "search_title": "Контрабас для музыкального номера на мероприятии",
+          "lead": "Если музыкант приглашён на вечер, уточним требования исполнителя и условия предоставления инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-zamenu-vo-vremya-festivalya",
+          "search_title": "Контрабас на замену во время фестиваля",
+          "lead": "Если основной инструмент недоступен, обсудим возможный резерв и необходимый срок.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-kamernoy-zapisi-ansamblya",
+          "search_title": "Контрабас для камерной записи ансамбля",
+          "lead": "Когда инструменты пишутся вместе, важен баланс тембров. Можно обсудить подбор под существующий состав.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-kontsertnogo-raydera",
+          "search_title": "Контрабас для концертного райдера",
+          "lead": "Если в техническом райдере указана конфигурация, пришлите её: выясним возможности и условия выполнения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-po-zaprosu-priglashennogo-dirizhera",
+          "search_title": "Контрабас по запросу приглашённого дирижёра",
+          "lead": "Если нужен особый состав или расширенный нижний регистр, обсудим именно требуемые инструменты.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-repetitsii-pered-studiey",
+          "search_title": "Контрабас для репетиции перед студией",
+          "lead": "Если нужно освоить временный инструмент заранее, можно обсудить доступ до записи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-vystupleniya-na-otkrytoy-ploschadke",
+          "search_title": "Контрабас для выступления на открытой площадке",
+          "lead": "Если концерт под открытым небом, согласуем акустическую задачу, усиление и перевозку инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    }
+  ]
+}

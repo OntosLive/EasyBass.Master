@@ -1,0 +1,466 @@
+{
+  "version": 1,
+  "description": "Manually reasoned workshop situations; no Cartesian generation",
+  "families": [
+    {
+      "id": "repair-restoration",
+      "title": "Ремонт, реставрация и подготовка инструмента",
+      "entries": [
+        {
+          "slug": "restavratsiya-kontrabasa-moskovskoy-fabriki",
+          "search_title": "Реставрация контрабаса московской фабрики",
+          "lead": "Старый «Москвич» можно вернуть к игре после предметного осмотра. Обсудим состояние и необходимую работу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "restavratsiya-kontrabasa-musima",
+          "search_title": "Реставрация контрабаса Musima",
+          "lead": "Немецкий фабричный инструмент требует внимания к прежним вмешательствам. Привозите «Музиму» на осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "restavratsiya-cheshskogo-kontrabasa",
+          "search_title": "Реставрация чешского контрабаса",
+          "lead": "Если у чешского инструмента есть повреждения или следы старых ремонтов, обсудим восстановление после осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "restavratsiya-kontrabasa-rubner",
+          "search_title": "Реставрация контрабаса Rubner",
+          "lead": "Именной инструмент требует аккуратной работы с подтверждённой конструкцией. Можно обсудить реставрацию в мастерской.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kapitalnyy-remont-kontrabasa",
+          "search_title": "Капитальный ремонт контрабаса",
+          "lead": "Когда повреждений несколько, лучше рассмотреть инструмент целиком. Обсудим план восстановления и сроки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vosstanovit-kontrabas-posle-dolgih-let-bez-igry",
+          "search_title": "Восстановить контрабас после долгих лет без игры",
+          "lead": "Если контрабас долго стоял, можно проверить швы, гриф, подставку и вернуть его к музыкальной практике.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-nizhney-deki-kontrabasa",
+          "search_title": "Ремонт нижней деки контрабаса",
+          "lead": "Если на нижней деке трещина или раскрытый шов, привозите инструмент для осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-verhney-deki-kontrabasa",
+          "search_title": "Ремонт верхней деки контрабаса",
+          "lead": "Повреждение верхней деки требует очной оценки. Обсудим объём реставрации вашего инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "raskleilsya-korpus-kontrabasa",
+          "search_title": "Расклеился корпус контрабаса",
+          "lead": "Если отошёл шов, не обязательно менять инструмент. Можно привезти его для мастерской работы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otkleilas-deka-kontrabasa",
+          "search_title": "Отклеилась дека контрабаса",
+          "lead": "Расхождение клеевого соединения нуждается в осмотре. Мастерская может обсудить восстановление корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "poyavilas-treschina-na-kontrabase",
+          "search_title": "Появилась трещина на контрабасе",
+          "lead": "Если трещина возникла недавно, полезно показать инструмент, не откладывая осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "restavratsiya-kontrabasa-posle-padeniya",
+          "search_title": "Реставрация контрабаса после падения",
+          "lead": "После удара могут пострадать несколько элементов. Привезите инструмент, чтобы оценить повреждения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vosstanovlenie-kontrabasa-posle-perevozki",
+          "search_title": "Восстановление контрабаса после перевозки",
+          "lead": "Если инструмент приехал повреждённым, обсудим осмотр, фиксацию состояния и ремонт.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-podstavki-starinnogo-kontrabasa",
+          "search_title": "Ремонт подставки старинного контрабаса",
+          "lead": "Подставка связана и с акустикой, и с удобством игры. Приглашаем на осмотр инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "izgotovit-podstavku-dlya-kontrabasa",
+          "search_title": "Изготовить подставку для контрабаса",
+          "lead": "Если прежняя подставка не подходит или сломалась, обсудим изготовление и подгонку новой.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "podgonka-podstavki-kontrabasa",
+          "search_title": "Подгонка подставки контрабаса",
+          "lead": "Подставка должна работать с данным корпусом. Мастерская занимается индивидуальной подгонкой после осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-kolkovoy-mehaniki-kontrabasa",
+          "search_title": "Ремонт колковой механики контрабаса",
+          "lead": "Если колки плохо вращаются или держат строй, привозите инструмент на проверку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "zamena-kolkov-na-starom-kontrabase",
+          "search_title": "Замена колков на старом контрабасе",
+          "lead": "Для исторического корпуса сначала выясним тип и состояние механики, затем обсудим возможную замену.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "vosstanovit-grif-kontrabasa-posle-treschiny",
+          "search_title": "Восстановить гриф контрабаса после трещины",
+          "lead": "Повреждение грифа требует осмотра конструкции. Обсудим возможность и объём восстановления.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-pyatki-grifa-kontrabasa",
+          "search_title": "Ремонт пятки грифа контрабаса",
+          "lead": "Если соединение грифа вызывает сомнения, покажите инструмент мастерам для предметного осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "zamena-nakladki-grifa-kontrabasa",
+          "search_title": "Замена накладки грифа контрабаса",
+          "lead": "Изношенная накладка не всегда требует полной замены. Рассмотрим состояние и возможные работы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-staroy-treschiny-na-kontrabase",
+          "search_title": "Ремонт старой трещины на контрабасе",
+          "lead": "Если прежний ремонт снова раскрылся, полезно оценить его историю и текущее состояние.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-neudachnoy-restavratsii",
+          "search_title": "Контрабас после неудачной реставрации",
+          "lead": "Если после чужой работы стало хуже играть или звучать, можно принести инструмент на повторный осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "remont-kontrabasa-posle-syrosti",
+          "search_title": "Ремонт контрабаса после сырости",
+          "lead": "Изменения корпуса после высокой влажности требуют аккуратной оценки. Обсудим состояние инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-suhoy-zimy-trebuet-remonta",
+          "search_title": "Контрабас после сухой зимы требует ремонта",
+          "lead": "Если появились щели или трещины, покажите инструмент: определим, что требует вмешательства.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "restavratsiya-starinnogo-nemetskogo-kontrabasa",
+          "search_title": "Реставрация старинного немецкого контрабаса",
+          "lead": "Работа со старинным немецким инструментом начинается с осмотра, истории ремонтов и реальной конструкции.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "restavratsiya-starogo-cheshskogo-kontrabasa",
+          "search_title": "Реставрация старого чешского контрабаса",
+          "lead": "Чешские фабричные инструменты могут иметь сложную историю ремонта. Обсудим восстановление конкретного корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "podgotovit-kontrabas-k-prodazhe-posle-hraneniya",
+          "search_title": "Подготовить контрабас к продаже после хранения",
+          "lead": "Перед продажей можно привести инструмент на осмотр, оценить его состояние и необходимые работы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "podgotovit-kontrabas-dlya-kontsertnogo-sezona",
+          "search_title": "Подготовить контрабас для концертного сезона",
+          "lead": "Если инструмент давно не обслуживался, можно обсудить контрольную настройку перед возвращением на сцену.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "proverit-kontrabas-pered-gastrolyami",
+          "search_title": "Проверить контрабас перед гастролями",
+          "lead": "Перед дорогой полезно проверить механику и общую устойчивость инструмента. Обсудим осмотр и подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "osmotr-kontrabasa-pered-dorogim-remontom",
+          "search_title": "Осмотр контрабаса перед дорогим ремонтом",
+          "lead": "Сначала нужно понять состояние инструмента и объём работ. Приглашаем на осмотр без готового диагноза по фотографии.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-remonta-ne-derzhit-stroy",
+          "search_title": "Контрабас после ремонта не держит строй",
+          "lead": "Если после вмешательства появились новые проблемы, можно обсудить повторную проверку механики и настройки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    },
+    {
+      "id": "body-compatibility",
+      "title": "Тело, постановка и исполнительская нагрузка",
+      "entries": [
+        {
+          "slug": "kontrabas-neudoben-v-levoy-ruke",
+          "search_title": "Контрабас неудобен в левой руке",
+          "lead": "Если привычная техника требует слишком много усилий, можно рассмотреть настройку и эргономику конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "levaya-ruka-bystro-ustaet-na-kontrabase",
+          "search_title": "Левая рука быстро устаёт на контрабасе",
+          "lead": "Нагрузку не всегда задаёт только техника. Покажите инструмент: проверим, что можно изменить в его геометрии.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "pravaya-ruka-bystro-ustaet-pri-igre-na-kontrabase",
+          "search_title": "Правая рука быстро устаёт при игре на контрабасе",
+          "lead": "Если смычковая работа стала тяжёлой, обсудим акустический отклик и подготовку инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-slishkom-tyazhelyy-dlya-igry-stoya",
+          "search_title": "Контрабас слишком тяжёлый для игры стоя",
+          "lead": "Можно обсудить не только замену инструмента, но и положение опоры, баланс и условия игры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-neudobno-igrat-sidya",
+          "search_title": "Контрабас неудобно играть сидя",
+          "lead": "Если посадка не складывается, можно проверить высоту, баланс и положение конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-ne-stoit-ustoychivo-vo-vremya-igry",
+          "search_title": "Контрабас не стоит устойчиво во время игры",
+          "lead": "Если инструмент приходится всё время удерживать, обсудим опору, шпиль и настройку посадки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "plecho-podnimaetsya-pri-igre-na-kontrabase",
+          "search_title": "Плечо поднимается при игре на контрабасе",
+          "lead": "Если инструмент вынуждает лишнее напряжение, можно сравнить другие корпуса и проверить его эргономику.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "slishkom-shirokaya-sheyka-kontrabasa",
+          "search_title": "Слишком широкая шейка контрабаса",
+          "lead": "Если руке трудно обхватить гриф, мастерская может оценить профиль и возможные изменения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-maloy-menzuroy-dlya-vzroslogo",
+          "search_title": "Контрабас с малой мензурой для взрослого",
+          "lead": "Короткая мензура нужна не только детям. Можно сравнить инструменты по удобству и звучанию.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-igry-s-malenkoy-ladonyu",
+          "search_title": "Контрабас для игры с маленькой ладонью",
+          "lead": "Выбор можно начать со сравнения грифов нескольких экземпляров. Приезжайте знакомиться.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-igry-posle-travmy-ruki",
+          "search_title": "Контрабас для игры после травмы руки",
+          "lead": "Если нагрузку приходится ограничивать, обсудим более удобный инструмент и возможные настройки; медицинских обещаний не даём.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-mnogochasovyh-repetitsiy",
+          "search_title": "Контрабас для многочасовых репетиций",
+          "lead": "При долгой работе излишнее сопротивление особенно заметно. Можно обсудить настройку и подбор.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-trudno-perenosit-po-gorodu",
+          "search_title": "Контрабас трудно переносить по городу",
+          "lead": "Большой инструмент создаёт ежедневные ограничения. Обсудим способы перевозки и временного доступа.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-upiraetsya-v-telo-pri-igre-naverhu",
+          "search_title": "Контрабас упирается в тело при игре наверху",
+          "lead": "Если форма корпуса мешает верхним позициям, приглашаем оценить конструкцию в мастерской.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-zavalivaetsya-na-muzykanta",
+          "search_title": "Контрабас заваливается на музыканта",
+          "lead": "Если баланс инструмента неудобен, можно проверить шпиль, посадку и положение корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "slishkom-dlinnaya-menzura-kontrabasa",
+          "search_title": "Слишком длинная мензура контрабаса",
+          "lead": "Когда расстояния не подходят вашей технике, можно сравнить несколько инструментов с другой геометрией.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "slishkom-vysokaya-podstavka-dlya-ruki",
+          "search_title": "Слишком высокая подставка для руки",
+          "lead": "Высота струн может мешать свободной игре. Привозите инструмент на проверку подставки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-stanovitsya-neudobnym-k-kontsu-repetitsii",
+          "search_title": "Контрабас становится неудобным к концу репетиции",
+          "lead": "Если первые минуты всё хорошо, а затем появляется усталость, обсудим эргономику под длительную работу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-prepodavatelya-s-bolshoy-nagruzkoy",
+          "search_title": "Контрабас для преподавателя с большой нагрузкой",
+          "lead": "Если играете и показываете технику много часов, удобство инструмента становится рабочей необходимостью.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-bystrogo-pitstsikato-bez-zazhima",
+          "search_title": "Контрабас для быстрого пиццикато без зажима",
+          "lead": "Если ритм упирается в высоту и сопротивление струн, можно обсудить джазовую настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-slepa-bez-lishnego-usiliya",
+          "search_title": "Контрабас для слэпа без лишнего усилия",
+          "lead": "Высота струн и настройка влияют на сценическое движение. Договоримся об осмотре или подборе.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-trudno-derzhat-rebenku",
+          "search_title": "Контрабас трудно держать ребёнку",
+          "lead": "Если корпус мешает свободной постановке, можно сравнить другие размеры и обсудить смену инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-vysokogo-rebenka",
+          "search_title": "Контрабас для высокого ребёнка",
+          "lead": "Рост не гарантирует готовности к большому инструменту. В коллекции можно проверить разные размеры в игре.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-tyazhelo-nastroit-podstavku-pod-sebya",
+          "search_title": "Контрабас тяжело настроить подставку под себя",
+          "lead": "Если штатная настройка мешает вашей технике, приглашаем рассмотреть индивидуальную доработку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    }
+  ]
+}
