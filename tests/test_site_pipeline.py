@@ -16,6 +16,7 @@ from site_core import DOMAIN, build, inspect_records, inspect_entrances, inspect
 from entry_router import destination_for_family, destination_for_editorial_group
 from validate_site import validate
 from sensor_n0 import records as sensor_records
+from modulation_audit import audit as modulation_audit
 
 
 class PublicationTests(unittest.TestCase):
@@ -205,6 +206,19 @@ class PublicationTests(unittest.TestCase):
         self.assertIn("накладку", griff.select_one(".entry-modulation").get_text())
         self.assertIn("высоту струн", griff.select_one(".entry-modulation").get_text())
         self.assertNotIn("наш конёк", griff.select_one(".entry-modulation").get_text())
+
+    def test_all_modulation_debt_is_visible_in_editorial_audit(self):
+        result = modulation_audit(ROOT)
+        expected = len(inspect_records(ROOT)) + len(inspect_entrances(ROOT)) + len(sensor_records(ROOT))
+        self.assertEqual(result["published_n0"], expected)
+        self.assertEqual(result["critical_errors"], [])
+        self.assertGreater(result["individual_gpt6_drafts"], 0)
+        self.assertEqual(
+            result["published_n0"],
+            result["individual_gpt6_drafts"] + result["individual_gpt6_reviewed"] + result["editorial_backlog"]
+        )
+        # Existing indexed N.0 pages remain online while each gets its own GPT-6 text.
+        self.assertGreater(result["editorial_backlog"], 0)
 
     def test_ranges_are_real_editorial_collection_anchors(self):
         from entry_router import RANGES, FACTS
