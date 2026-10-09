@@ -10,7 +10,10 @@
       "open_question": "Какая задача стоит перед вами и на каких контрабасах вы уже играли?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В Москве можно познакомиться с контрабасами разных эпох, классов и цен. Найти свой инструмент легче в живой игре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-starinnyy-kontrabas",
@@ -20,7 +23,10 @@
       "open_question": "Что для вас важнее в старинном контрабасе: история, звук или конкретная исполнительская задача?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "У старинного контрабаса важны собственный звук, история и сегодняшнее состояние. Знакомство начинается с конкретного экземпляра.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-manufakturnyy-kontrabas",
@@ -30,7 +36,10 @@
       "open_question": "Вы подбираете инструмент для первых занятий или для уже сложившейся профессиональной техники?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Мануфактурные контрабасы очень различаются после лет игры и настройки. Лучше услышать их, чем судить по происхождению.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-orkestra",
@@ -40,7 +49,10 @@
       "open_question": "Какие оркестровые партии и условия работы вы хотите проверить прежде всего?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для оркестра нужен уверенный низ и свободный смычковый ответ. Эти качества можно сравнить на нескольких инструментах.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-dzhaza",
@@ -50,7 +62,10 @@
       "open_question": "Играете вы главным образом акустически или используете звукосниматель и усиление?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Джазовый бас должен удобно отвечать пальцам. Высота струн, атака и длительность ноты становятся слышны в пиццикато.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-studentu",
@@ -60,7 +75,10 @@
       "open_question": "Какой у вас этап обучения и что сейчас ограничивает ваш нынешний инструмент?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Студенту нужен контрабас для ежедневной работы и растущей программы. Удобство грифа можно проверить на знакомых пассажах.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-posle-arendy",
@@ -70,7 +88,10 @@
       "open_question": "Вы хотите обсудить именно тот контрабас, на котором уже играли, или сравнить его с другими?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После аренды уже понятнее, чего хочется от собственного баса. Можно сравнить новые экземпляры с привычным ощущением.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vybrat-kontrabas-s-vozmozhnostyu-proby",
@@ -80,7 +101,10 @@
       "open_question": "Какие два или три свойства вы хотели бы сравнить во время пробы?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Контрабас можно попробовать до выбора: услышать его под смычком и пальцами, почувствовать гриф и положение корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-poderzhannyy-kontrabas",
@@ -90,7 +114,10 @@
       "open_question": "Вас интересует рабочий инструмент для занятий или экземпляр с определённой историей?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Подержанный контрабас сохраняет следы прежней жизни. Его звук, швы и настройку лучше увидеть вместе при знакомстве.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-rebenka",
@@ -100,7 +127,10 @@
       "open_question": "Сколько лет ученику, какой у него рост и какой размер рекомендует преподаватель?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для ребёнка размер подбирают по руке, посадке и возможности свободно играть, а не только по возрастной таблице.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vybrat-kontrabas-vzroslomu-nachinayuschemu",
@@ -110,7 +140,10 @@
       "open_question": "Какую музыку вы хотите играть и удалось ли уже попробовать контрабас на занятии?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Взрослому новичку важно, чтобы корпус стоял устойчиво, а гриф не требовал лишней силы. Разные размеры можно сравнить.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-solnyh-vystupleniy",
@@ -120,7 +153,10 @@
       "open_question": "Какие сольные произведения лучше всего проявляют требования вашей техники к инструменту?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В сольной программе раскрываются верхние позиции, беглость и певучесть звука. Выбор лучше делать на своей музыке.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-pered-postupleniem",
@@ -130,7 +166,10 @@
       "open_question": "Какой репертуар готовится к поступлению и что на текущем инструменте даётся труднее всего?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед поступлением можно сыграть конкурсные отрывки на нескольких контрабасах и почувствовать нужный смычковый отклик.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-posle-muzykalnoy-shkoly",
@@ -140,7 +179,10 @@
       "open_question": "Что изменилось в вашей программе и какие ограничения прежнего контрабаса вы уже заметили?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После музыкальной школы меняются программа и требования к инструменту. Новый контрабас стоит искать через пробу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-domashney-praktiki",
@@ -150,7 +192,10 @@
       "open_question": "Где будет стоять контрабас и удаётся ли дома заниматься со смычком?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для занятий дома важен инструмент, который не утомляет руку и сохраняет строй между уроками. Подготовка грифа помогает.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-izvestnym-proishozhdeniem",
@@ -160,7 +205,10 @@
       "open_question": "Какой уровень подтверждения происхождения вам нужен для будущего инструмента?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Происхождение контрабаса складывается из корпуса, надписей и истории работы. Эти сведения дополняют его живой звук.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-s-udobnym-grifom",
@@ -170,7 +218,10 @@
       "open_question": "Что именно вызывает неудобство: раскрытие руки, давление на струну или смена позиций?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Удобный гриф можно почувствовать сразу, а при необходимости доработать профиль, накладку и высоту струн под руку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-raboty-so-smychkom",
@@ -180,7 +231,10 @@
       "open_question": "Какие штрихи и диапазоны чаще всего не удаются на вашем нынешнем инструменте?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для смычковой игры важны лёгкое начало звука и ровный ответ всех струн. Это лучше проверить знакомыми штрихами.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-dlya-pervyh-kontsertov",
@@ -190,7 +244,10 @@
       "open_question": "Какой у вас состав и в каком помещении предстоит играть первые программы?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед первыми концертами инструмент должен оставаться надёжным и удобным. Можно сравнить басы на будущей программе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-iz-chastnoy-kollektsii",
@@ -200,7 +257,10 @@
       "open_question": "Что вас больше привлекает: необычная история инструмента или возможность открыть новый звук?",
       "group": "Покупка и подбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Частная коллекция открывает инструменты разных школ и эпох. Сюда приходят знакомиться, играть и находить собственный звук.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }
