@@ -8,13 +8,11 @@ This module only reads, validates, deduplicates and renders.
 """
 from __future__ import annotations
 
-from collections import Counter, defaultdict
-from html import escape
 import json
 from pathlib import Path
 import re
 
-from entry_router import route_panel
+from entry_router import route_panel, destination_for_family
 
 ROOT = Path(__file__).resolve().parents[1]
 ROUTE_ROOT = "/vhod/"
@@ -97,6 +95,7 @@ def records(root: Path = ROOT) -> list[dict]:
                 "title": title,
                 "lead": lead,
                 "description": lead,
+                "bridge": entry.get("bridge", ""),
                 "status": "n0",
                 "source_status": "editorial_hypothesis_not_measured",
             })
@@ -105,132 +104,41 @@ def records(root: Path = ROOT) -> list[dict]:
     return published
 
 
-"""Two-level topic directory and standalone human-phrased N.0 notices.
+"""Search-only N.0 pages are terminal arrival nodes.
 
-For short N.0 we intentionally follow ONTOS.RENT: H1, direct contact,
-four meaningful ranges, four workshop facts, and contextual 'Подробнее'.
-The separately edited lead is preserved as SEO description, never as an
-extraneous sales speech on the public newspaper surface.
+They are listed in sitemap and canonical but never linked from other ads,
+the workshop's public archive, or directory pages. Family taxonomy stays
+in the authored JSON as an editorial tool, not as a public browse menu.
 """
-DIRECTORY_SECTIONS = (
-    ("Инструменты и коллекция", (
-        "familiar-instruments", "sizes-and-form", "private-collection", "learning-and-families",
-    )),
-    ("Покупка и знакомство", ("buy-and-compare", "price-and-ownership")),
-    ("Мастерская и звук", (
-        "ergonomic-neck", "acoustic-response", "repair-restoration", "body-compatibility",
-    )),
-    ("Музыка и сцена", (
-        "classical-performance", "jazz-rockabilly", "recording-film-stage",
-    )),
-    ("Пользование и дорога", (
-        "temporary-access", "strings-bows-hardware", "movement-and-logistics",
-    )),
-    ("Передача и оценка", ("sell-and-transition", "appraisal-and-authentication")),
-)
 
 
 def html_for(record: dict, contact: str, frame) -> str:
     route = record["route"]
+    target, label = destination_for_family(record["family_id"])
     source = {
         "entry_slug": route.strip("/"),
         "search_title": record["title"],
         "entry_kicker": "МАСТЕРСКАЯ КОНТРАБАСА",
         "entry_deck": record["lead"],
+        "entry_modulation": record.get("bridge", ""),
         "description": record["description"],
-        "footer_href": "../",
-        "footer_label": "По теме",
-        "footer_title": record["family_title"],
+        "footer_target": target,
+        "footer_label": label,
     }
     return frame(source, "entry", route_panel(route), contact, route_override=route)
 
 
-def index_page(hub: str, family: dict, subset: list[dict], contact: str, frame) -> str:
-    source = {
-        "entry_slug": hub.strip("/"),
-        "search_title": family["title"],
-        "entry_kicker": "ПОДШИВКА · ПО ТЕМЕ",
-        "entry_deck": family["title"],
-        "description": f"{family['title']}. Объявления мастерской контрабаса в Москве.",
-        "is_index": True,
-        "footer_href": "../",
-        "footer_label": "Все направления",
-    }
-    links = "".join(
-        '<a href="' + escape("/EasyBass.Master" + item["route"], quote=True)
-        + '">' + escape(item["title"]) + '</a>' for item in subset
-    )
-    content = ('<nav class="n0-directory" aria-label="Объявления этого направления">'
-               + links + '</nav>')
-    return frame(source, "entry", content, contact, route_override=hub)
-
-
-def root_page(groups: list[dict], rows: list[dict], contact: str, frame) -> str:
-    indexed = {item["id"]: item for item in groups}
-    counts = Counter(item["family_id"] for item in rows)
-    published = {name for name, n in counts.items() if n}
-    assigned = {name for _, family_ids in DIRECTORY_SECTIONS for name in family_ids}
-    if published != assigned:
-        raise ValueError("Directory chapters do not cover each live announcement family exactly")
-    if len(assigned) != sum(len(ids) for _, ids in DIRECTORY_SECTIONS):
-        raise ValueError("Directory chapter has a duplicate family")
-
-    sections = ['<div class="n0-chapters">']
-    for heading, family_ids in DIRECTORY_SECTIONS:
-        links = []
-        for family_id in family_ids:
-            family = indexed[family_id]
-            url = f"/EasyBass.Master/vhod/{family_id}/"
-            links.append('<a href="' + escape(url, quote=True) + '">'
-                         '<span>' + escape(family["title"]) + '</span>'
-                         f'<small>{counts[family_id]}</small></a>')
-        sections.append('<section class="n0-chapter"><h2>' + escape(heading) + '</h2>'
-                        '<nav class="n0-directory" aria-label="' + escape(heading, quote=True)
-                        + '">' + ''.join(links) + '</nav></section>')
-    sections.append('</div>')
-    source = {
-        "entry_slug": "vhod",
-        "search_title": "Объявления мастерской контрабаса",
-        "entry_kicker": "ПОДШИВКА · ВСЕ НАПРАВЛЕНИЯ",
-        "entry_deck": "Инструменты, мастерская, работа, выбор и знакомство.",
-        "description": "Короткие объявления частной мастерской контрабаса.",
-        "is_index": True,
-        "footer_href": "../archive/",
-        "footer_label": "Подшивка мастерской",
-    }
-    return frame(source, "entry", ''.join(sections), contact, route_override="/vhod/")
-
 def compile_site(root: Path, site: Path, contact: str, frame, write) -> dict:
     authored = families(root)
     rows = records(root)
-    by_family: dict[str, list[dict]] = defaultdict(list)
     for item in rows:
         write(site, item["route"], html_for(item, contact, frame))
-        by_family[item["family_id"]].append(item)
-    for family in authored:
-        family_id = family["id"]
-        if by_family[family_id]:
-            hub = f"{ROUTE_ROOT}{family_id}/"
-            write(site, hub, index_page(hub, family, by_family[family_id], contact, frame))
-    write(site, "/vhod/", root_page(authored, rows, contact, frame))
-    archive = site / "archive/index.html"
-    markup = archive.read_text(encoding="utf-8")
-    hook = "<!-- SENSOR_N0_INDEX -->"
-    if markup.count(hook) != 1:
-        raise ValueError("Missing unique authored entrance insertion point in archive")
-    insertion = (
-        '<section class="archive-list n0-index-link">'
-        '<p class="issue-kicker">ОБЪЯВЛЕНИЯ · КОНТРАБАСНАЯ МАСТЕРСКАЯ</p>'
-        '<article><h2><a href="/EasyBass.Master/vhod/">Подшивка коротких объявлений</a></h2>'
-        + f'<p>{len(rows)} самостоятельных входов, написанных из конкретных '
-        'потребностей и возможностей мастерской.</p></article></section>'
-    )
-    archive.write_text(markup.replace(hook, insertion), encoding="utf-8")
-    return {"n0_pages": len(rows), "families": len(by_family),
-            "hubs": len(by_family) + 1,
+    # No /vhod/ index, no /vhod/<family>/ directories, and no public archive
+    # listings of search ads. No other announcement is reachable from an N.0.
+    return {"n0_pages": len(rows), "families": len(authored), "hubs": 0,
             "first": rows[0]["route"], "last": rows[-1]["route"],
             "source": "explicit-model-authored-corpus",
-            "synthetic_cartesian_pages": 0}
+            "synthetic_cartesian_pages": 0, "closed_entrances": True}
 
 
 if __name__ == "__main__":
