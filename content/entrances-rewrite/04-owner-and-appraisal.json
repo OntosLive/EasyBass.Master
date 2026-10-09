@@ -348,7 +348,10 @@
           "lead": "Год и название фабрики дают только начало истории. Можно показать инструмент для предметной оценки состояния.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Стоимость «Москвича» зависит от конкретного корпуса, истории ремонта и готовности к игре. Начать можно с самого инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenit-muzimu-pered-prodazhey",
@@ -356,7 +359,10 @@
           "lead": "Стоимость старой Musima зависит от конкретного корпуса и его подготовки. Приглашаем на осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед продажей «Музимы» полезно увидеть её состояние, прежние работы и нынешний звук. Это даст предмет для оценки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenit-cheshskiy-kontrabas-cremona",
@@ -364,7 +370,10 @@
           "lead": "Если у вас старый чешский инструмент, обсудим происхождение, конструкцию и состояние перед продажей.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У чешской Cremona важны год, конструкция и состояние, а не только надпись внутри. Инструмент лучше показать целиком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenit-starinnyy-rubner",
@@ -372,7 +381,10 @@
           "lead": "Если предполагаете авторство Rubner, необходимо отличить инструмент от механики с этой маркой. Можно обратиться за осмотром.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для Rubner принципиально различить автора инструмента и маркировку механики. История и устройство корпуса важны при оценке.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-neizvestnym-masterom-otsenka",
@@ -380,7 +392,10 @@
           "lead": "У инструмента нет ясной атрибуции? Можно начать с фотографий, истории владения и очного знакомства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабас без установленного мастера всё равно имеет конструкцию, голос и историю. По ним можно начать предметное знакомство.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "skolko-stoit-moy-staryy-moskvich",
@@ -388,7 +403,10 @@
           "lead": "Общие цены мало говорят о конкретном инструменте. Обсудим конструкцию и состояние вашего экземпляра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Два «Москвича» бывают разными по состоянию. Цену конкретного инструмента стоит связывать с корпусом, грифом и звуком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "skolko-stoit-kontrabas-muzima",
@@ -396,7 +414,10 @@
           "lead": "Разные «Музимы» не взаимозаменяемы по состоянию. Обсудим инструмент, который находится у вас.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Название «Музима» не определяет цену одной цифрой. Сохранность, ремонт и музыкальные качества важны у каждого экземпляра.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenka-fabrichnogo-kontrabasa-gdr",
@@ -404,7 +425,10 @@
           "lead": "Если инструмент немецкий и фабричный, можно обсудить его конструкцию, ремонтную историю и нынешнее состояние.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Фабричный инструмент из ГДР прошёл свой путь. Для оценки нужно видеть гриф, деки и следы предыдущей работы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenka-cheshskogo-kontrabasa-bez-marki",
@@ -412,7 +436,10 @@
           "lead": "Чешский инструмент без надписи может требовать осмотра деталей. Уточним имеющиеся сведения и договоримся.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Даже без маркировки «чеха» можно начать с конструкции, формы корпуса и состояния. Происхождение уточняется по признакам.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenka-instrumenta-posle-dorogoy-restavratsii",
@@ -420,7 +447,10 @@
           "lead": "Если работы уже проведены, важно увидеть их документы и результат на инструменте. Обсудим оценку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После большой реставрации важны выполненные работы и музыкальный результат. Документы и звучание дополняют друг друга.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenka-kontrabasa-pered-strahovaniem",
@@ -428,7 +458,10 @@
           "lead": "Для страхования важны документы и конкретный экземпляр. Можно обсудить, какие сведения мастерская способна подтвердить.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для страховой оценки понадобятся проверяемые сведения о конкретном инструменте. Состояние и происхождение можно исследовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenit-kontrabas-iz-orkestrovogo-fonda",
@@ -436,7 +469,10 @@
           "lead": "Инструмент из фонда имеет свою эксплуатационную историю. Начнём с документов и состояния корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабас из оркестрового фонда имеет историю интенсивной игры. Она читается в грифе, корпусе и сохранившихся ремонтах.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenit-kontrabas-s-bolshoy-treschinoy",
@@ -444,7 +480,10 @@
           "lead": "Повреждение меняет возможные маршруты инструмента. Можно обсудить осмотр до решения о продаже.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Крупная трещина меняет состояние и стоимость инструмента. Сначала важно понять её характер и возможность восстановления.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenka-kontrabasa-bez-dokumentov-o-pokupke",
@@ -452,7 +491,10 @@
           "lead": "Даже без чека можно начать исследование конкретного инструмента. Для выводов потребуется осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Отсутствие чека не мешает предметному знакомству с контрабасом. Его история может сохраняться в других деталях.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "osmotr-pered-pokupkoy-starogo-kontrabasa",
@@ -460,7 +502,10 @@
           "lead": "Если нашли старый инструмент по объявлению, можно обсудить проверку его состояния до расчёта.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед покупкой старого контрабаса стоит услышать его в игре и увидеть состояние швов, грифа и механики.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "atributsiya-kontrabasa-po-etiketke",
@@ -468,7 +513,10 @@
           "lead": "Этикетка является поводом для исследования, а не готовым доказательством автора. Можно обратиться с фотографиями.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Этикетка внутри корпуса является частью истории, но не всегда доказательством автора. Её нужно соотнести с инструментом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-podpisyu-mastera-vnutri",
@@ -476,7 +524,10 @@
           "lead": "Интересует происхождение инструмента? Начнём с сведений о корпусе, этикетке и прошлых владельцах.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Подпись мастера интересна вместе с конструкцией и происхождением. Один знак внутри корпуса не рассказывает всей истории.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-moskovskogo-mastera-bez-dokumentov",
@@ -484,7 +535,10 @@
           "lead": "Если инструмент приписывают московскому мастеру, обсудим, какие признаки вообще доступны для исследования.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Московский мастеровой контрабас можно исследовать по устройству и истории владения, даже если документы не сохранились.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "cheshskaya-cremona-ili-bolgarskaya-kremona",
@@ -492,7 +546,10 @@
           "lead": "Похожие названия могут вести к разным производствам. Уточним этикетку и происхождение конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Cremona и Kremona обозначают разные традиции. Этикетка, география и конструкция помогут понять именно ваш инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "opredelit-vozrast-kontrabasa-po-konstruktsii",
@@ -500,7 +557,10 @@
           "lead": "Год на словах и физические признаки могут расходиться. Можно показать инструмент мастерам.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Возраст контрабаса читается по конструкции, материалу и следам работы. Одна дата на этикетке может быть недостаточной.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenka-starinnogo-kontrabasa-posle-zameny-grifa",
@@ -508,7 +568,10 @@
           "lead": "История переделок важна для предметной оценки. Обсудим инструмент и сохранившиеся документы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После замены грифа важно различать старый корпус и новое игровое устройство. Оценка учитывает обе части его истории.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-neskolkimi-zavodskimi-nomerami",
@@ -516,7 +579,10 @@
           "lead": "Если маркировки различаются, покажите их вместе с корпусом. Можно обсудить происхождение инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Несколько номеров могут относиться к разным деталям и периодам ремонта. Их лучше изучать вместе с самим инструментом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "podgotovit-opisanie-kontrabasa-dlya-prodazhi",
@@ -524,7 +590,10 @@
           "lead": "Перед продажей можно собрать фотографии, конструктивные сведения и историю работ на конкретном инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для продажи пригодятся ясные фотографии, размеры, история работ и живой звук. Описание можно строить вокруг фактов.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otsenka-kontrabasa-v-seme-posle-nasledstva",
@@ -532,7 +601,10 @@
           "lead": "Если о прошлом инструмента почти ничего не известно, можно начать с его предметного осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В наследство иногда остаётся контрабас без известной биографии. Первое знакомство с ним поможет увидеть дальнейшие варианты.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-istoriey-neskolkih-vladeltsev",
@@ -540,7 +612,10 @@
           "lead": "Если сохранились документы и имена прежних музыкантов, обсудим, что подтверждено и как это учитывать.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Имена прежних владельцев придают истории глубину, если они подтверждены. Звучание и нынешнее состояние остаются важными.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }
