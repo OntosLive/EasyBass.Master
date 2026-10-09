@@ -14,6 +14,7 @@ from pathlib import Path
 import re
 
 from bs4 import BeautifulSoup
+from entry_router import route_panel
 
 ROOT = Path(__file__).resolve().parents[1]
 DICT = {
@@ -127,7 +128,7 @@ def records(root: Path = ROOT) -> list[dict]:
 
 
 def html_for(record: dict, contact: str, frame) -> str:
-    """One printed, short answer + direct phone; never imitates an N.1 encyclopedia."""
+    """An address and an invitation, not a miniature lesson."""
     route = record["route"]
     source = {
         "entry_slug": route.strip("/"),
@@ -136,20 +137,21 @@ def html_for(record: dict, contact: str, frame) -> str:
         "entry_deck": record["lead"],
         "description": record["description"],
     }
-    p = (
-        '<section class="master-text n0-sensor">'
-        f'<p class="n0-context">{escape(record["scene"])}. {escape(record["context"])}</p>'
-        f'<p>{escape(record["family_context"])}</p>'
-        f'<p>{escape(record["angle"])}. {escape(record["focus_observation"])}</p>'
+    signal = (
+        '<section class="entry-signal n0-sensor">'
+        f'<p class="n0-context">{escape(record["context"])} '
+        f'{escape(record["focus_observation"])}</p>'
         f'<p class="entrance-question">{escape(record["residual_question"])}</p>'
         '</section>'
     )
-    # Aside from the contact and common archive footer, one useful route goes up
-    # to the question's own printed subject family, never to a fake product.
-    p += (f'<nav class="n0-return" aria-label="Родственные вопросы">'
-          f'<a href="../">Другие вопросы этой темы</a></nav>')
-    return frame(source, "entry", p, contact, route_override=route)
-
+    # The phone is inserted immediately after the search heading by frame().
+    # The question family remains discoverable without claiming N.1 exists.
+    content = (
+        signal + route_panel(route)
+        + '<nav class="n0-return" aria-label="Родственные вопросы">'
+        '<a href="../">Другие вопросы этой темы</a></nav>'
+    )
+    return frame(source, "entry", content, contact, route_override=route)
 
 def index_page(hub: str, family: dict, subset: list[dict], contact: str, frame) -> str:
     """An accessible reading index grouped by scene, not an unwieldy 3K card grid."""
