@@ -370,7 +370,10 @@
           "lead": "Если привычная техника требует слишком много усилий, можно рассмотреть настройку и эргономику конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Гриф может мешать руке не меньше, чем техника. Профиль, накладку и высоту струн можно настроить для свободной игры.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "levaya-ruka-bystro-ustaet-na-kontrabase",
@@ -378,7 +381,10 @@
           "lead": "Нагрузку не всегда задаёт только техника. Покажите инструмент: проверим, что можно изменить в его геометрии.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если левая рука быстро устает, стоит почувствовать другой профиль грифа и высоту струн. Иногда инструмент можно облегчить настройкой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "pravaya-ruka-bystro-ustaet-pri-igre-na-kontrabase",
@@ -386,7 +392,10 @@
           "lead": "Если смычковая работа стала тяжёлой, обсудим акустический отклик и подготовку инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При смычковой нагрузке важен лёгкий отклик струны. Акустическая подготовка позволяет уменьшить необходимость давить.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-slishkom-tyazhelyy-dlya-igry-stoya",
@@ -394,7 +403,10 @@
           "lead": "Можно обсудить не только замену инструмента, но и положение опоры, баланс и условия игры.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Играть стоя становится легче, когда шпиль, угол корпуса и баланс подходят вашему росту и привычной постановке.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-neudobno-igrat-sidya",
@@ -402,7 +414,10 @@
           "lead": "Если посадка не складывается, можно проверить высоту, баланс и положение конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Сидя важно, куда приходится вес корпуса и как свободно работает смычок. Посадку можно искать вместе с инструментом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ne-stoit-ustoychivo-vo-vremya-igry",
@@ -410,7 +425,10 @@
           "lead": "Если инструмент приходится всё время удерживать, обсудим опору, шпиль и настройку посадки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Шпиль и точка опоры меняют устойчивость контрабаса. Можно отрегулировать систему так, чтобы инструмент не требовал постоянной поддержки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "plecho-podnimaetsya-pri-igre-na-kontrabase",
@@ -418,7 +436,10 @@
           "lead": "Если инструмент вынуждает лишнее напряжение, можно сравнить другие корпуса и проверить его эргономику.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если плечо поднимается вслед за инструментом, стоит попробовать другое положение корпуса и проверить рабочую высоту.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "slishkom-shirokaya-sheyka-kontrabasa",
@@ -426,7 +447,10 @@
           "lead": "Если руке трудно обхватить гриф, мастерская может оценить профиль и возможные изменения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Широкая шейка меняет ощущение большого пальца. Её профиль можно оценить и при возможности доработать под вашу кисть.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-maloy-menzuroy-dlya-vzroslogo",
@@ -434,7 +458,10 @@
           "lead": "Короткая мензура нужна не только детям. Можно сравнить инструменты по удобству и звучанию.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Взрослому тоже может подходить небольшая мензура. Важны свободные переходы, удобная посадка и звук живого инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-igry-s-malenkoy-ladonyu",
@@ -442,7 +469,10 @@
           "lead": "Выбор можно начать со сравнения грифов нескольких экземпляров. Приезжайте знакомиться.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для небольшой ладони решают профиль шейки и расстояния между позициями. Можно сравнить их на контрабасах разных размеров.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-igry-posle-travmy-ruki",
@@ -450,7 +480,10 @@
           "lead": "Если нагрузку приходится ограничивать, обсудим более удобный инструмент и возможные настройки; медицинских обещаний не даём.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После травмы может понадобиться более лёгкое движение без лишней силы. Инструменты можно сравнить по удобству и настройке.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-mnogochasovyh-repetitsiy",
@@ -458,7 +491,10 @@
           "lead": "При долгой работе излишнее сопротивление особенно заметно. Можно обсудить настройку и подбор.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Длинная репетиция быстро показывает лишнее сопротивление струн. Гриф, подставку и порожек можно подготовить под ежедневную игру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-trudno-perenosit-po-gorodu",
@@ -466,7 +502,10 @@
           "lead": "Большой инструмент создаёт ежедневные ограничения. Обсудим способы перевозки и временного доступа.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если контрабас приходится носить по городу, вес корпуса и чехол становятся частью выбора. Можно обсудить способы перевозки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-upiraetsya-v-telo-pri-igre-naverhu",
@@ -474,7 +513,10 @@
           "lead": "Если форма корпуса мешает верхним позициям, приглашаем оценить конструкцию в мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда плечи корпуса мешают верхним позициям, важны их форма и переход к грифу. На инструменте можно проверить доступность нот.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-zavalivaetsya-na-muzykanta",
@@ -482,7 +524,10 @@
           "lead": "Если баланс инструмента неудобен, можно проверить шпиль, посадку и положение корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабасу не обязательно заваливаться на вас. Шпиль и точку опоры можно настроить под естественное положение корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "slishkom-dlinnaya-menzura-kontrabasa",
@@ -490,7 +535,10 @@
           "lead": "Когда расстояния не подходят вашей технике, можно сравнить несколько инструментов с другой геометрией.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Длинная мензура ощущается в каждом растяжении. Иногда лучше выбрать другую геометрию, чем постоянно бороться с расстояниями.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "slishkom-vysokaya-podstavka-dlya-ruki",
@@ -498,7 +546,10 @@
           "lead": "Высота струн может мешать свободной игре. Привозите инструмент на проверку подставки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Высокая подставка даёт большой ход струны и требует усилия. Рабочую высоту можно установить под смычок и вашу руку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-stanovitsya-neudobnym-k-kontsu-repetitsii",
@@ -506,7 +557,10 @@
           "lead": "Если первые минуты всё хорошо, а затем появляется усталость, обсудим эргономику под длительную работу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если к концу репетиции рука устаёт, инструмент тоже стоит проверить. Точная высота струн помогает экономить движение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-prepodavatelya-s-bolshoy-nagruzkoy",
@@ -514,7 +568,10 @@
           "lead": "Если играете и показываете технику много часов, удобство инструмента становится рабочей необходимостью.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Преподавателю важна удобная ежедневная игра на инструменте, который легко отвечает и при показе, и в собственной программе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-bystrogo-pitstsikato-bez-zazhima",
@@ -522,7 +579,10 @@
           "lead": "Если ритм упирается в высоту и сопротивление струн, можно обсудить джазовую настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Быстрое пиццикато требует свободной правой руки. Высота и натяжение струн могут заметно изменить ощущение каждой атаки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-slepa-bez-lishnego-usiliya",
@@ -530,7 +590,10 @@
           "lead": "Высота струн и настройка влияют на сценическое движение. Договоримся об осмотре или подборе.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для слэпа можно подобрать струны и высоту так, чтобы движение было свободным, а звук оставался управляемым.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-trudno-derzhat-rebenku",
@@ -538,7 +601,10 @@
           "lead": "Если корпус мешает свободной постановке, можно сравнить другие размеры и обсудить смену инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Ребёнок должен чувствовать инструмент устойчиво, без необходимости всё время его удерживать. Размер и шпиль подбирают в игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-vysokogo-rebenka",
@@ -546,7 +612,10 @@
           "lead": "Рост не гарантирует готовности к большому инструменту. В коллекции можно проверить разные размеры в игре.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Высокому ребёнку не обязательно сразу нужен большой корпус. Важны мензура, посадка и свобода обеих рук.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-tyazhelo-nastroit-podstavku-pod-sebya",
@@ -554,7 +623,10 @@
           "lead": "Если штатная настройка мешает вашей технике, приглашаем рассмотреть индивидуальную доработку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если штатная подставка мешает привычной постановке, можно подготовить её высоту и форму под ваш контрабас.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }
