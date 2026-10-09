@@ -59,7 +59,7 @@ def audit(root: Path = ROOT) -> dict:
         if not (root / p["parent"] / "index.html").exists():
             errors.append(f'{p["slug"]}: missing parent page')
     return {"ready_subjects": len(pages), "ready_entrances": len(entrances),
-            "ready_knowledge": len(knowledge), "verified_model_articles": len(models), "short_sensor_pages": len(n0),
+            "ready_knowledge": len(knowledge), "verified_model_articles": len(models), "research_intersections": len(n0), "short_sensor_pages": 0,
             "hypotheses": len(candidates),
             "hypothesis_repetitions": len(hypotheses) - len(set(hypotheses)),
             "errors": errors}
