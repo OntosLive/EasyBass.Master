@@ -172,3 +172,11 @@ body.cinematic-home { max-width:none;min-height:100vh;padding:0;margin:0;backgro
   .new-master.entry-router .master-lead{padding:20px 12px!important;}
 }
 @media(prefers-reduced-motion:reduce){*{scroll-behavior:auto!important;transition:none!important;animation:none!important;}}
+
+/* Older ONTOS.DEEP issues remain archival, but use the same palette and photographic substrate. */
+.new-master.legacy-issue .mast{
+  background:linear-gradient(90deg,rgba(24,14,10,.94),rgba(24,14,10,.54)),url('../photography/room-evening.webp') center/cover;
+  padding:32px 20px;
+}
+.archive-salon .scene-banner{margin-top:18px}
+@media(max-width:760px){.new-master.legacy-issue .mast{padding:24px 12px}}
