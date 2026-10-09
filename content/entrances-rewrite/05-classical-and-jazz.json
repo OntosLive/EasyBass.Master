@@ -1,0 +1,450 @@
+{
+  "version": 1,
+  "description": "Performance-use authored search entrances",
+  "families": [
+    {
+      "id": "classical-performance",
+      "title": "Оркестр, соло и профессиональная сцена",
+      "entries": [
+        {
+          "slug": "kontrabas-dlya-bolshogo-simfonicheskogo-orkestra",
+          "search_title": "Контрабас для большого симфонического оркестра",
+          "lead": "Для плотной оркестровой группы важны отклик и нижний регистр. Можно познакомиться с инструментами и обсудить подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-kamernogo-orkestra",
+          "search_title": "Контрабас для камерного оркестра",
+          "lead": "В камерной работе слышна каждая деталь звука. Приглашаем сравнить несколько контрабасов на знакомой программе.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-opernogo-orkestra",
+          "search_title": "Контрабас для оперного оркестра",
+          "lead": "Работа в яме предъявляет свои требования к инструменту и музыканту. Обсудим подбор для вашей практики.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-proslushivaniya-v-simfonicheskiy-orkestr",
+          "search_title": "Контрабас для прослушивания в симфонический оркестр",
+          "lead": "Если готовите оркестровые соло, можно сравнить инструменты по отклику именно на этой музыке.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-raboty-v-orkestrovoy-gruppe",
+          "search_title": "Контрабас для работы в оркестровой группе",
+          "lead": "Если предстоят многочасовые репетиции, важны удобство грифа и устойчивость смычковой атаки. Обсудим инструмент.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-orkestra-na-gastroli",
+          "search_title": "Контрабас для оркестра на гастроли",
+          "lead": "Если свой инструмент неудобно везти, можно обсудить временный доступ к контрабасу и условия передачи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "pyatistrunnyy-kontrabas-dlya-simfonicheskoy-partii",
+          "search_title": "Пятиструнный контрабас для симфонической партии",
+          "lead": "Если партитура требует нижних нот, уточним строй, конфигурацию и возможность подходящего инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-mashinkoy-do-dlya-orkestra",
+          "search_title": "Контрабас с машинкой до для оркестра",
+          "lead": "Если нужен расширенный нижний регистр, обсудим именно требуемую систему и исполнение на инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-repetitsii-pered-kontsertom",
+          "search_title": "Контрабас для репетиции перед концертом",
+          "lead": "Нужно время привыкнуть к экземпляру до выхода на сцену? Обсудим аренду и возможную предварительную пробу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-orkestrovogo-proslushivaniya-v-moskve",
+          "search_title": "Контрабас для оркестрового прослушивания в Москве",
+          "lead": "Если приезжаете на прослушивание без своего инструмента, можно обсудить местную аренду и знакомство.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-solnogo-kontserta",
+          "search_title": "Контрабас для сольного концерта",
+          "lead": "В сольной программе особенно важны знакомая геометрия и верхний регистр. Приходите сравнить инструменты.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-konkursnoy-solnoy-programmy",
+          "search_title": "Контрабас для конкурсной сольной программы",
+          "lead": "Готовитесь к конкурсу? Подбор можно начать с пассажей, которые требуют наибольшей надёжности.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-virtuoznoy-solnoy-igry",
+          "search_title": "Контрабас для виртуозной сольной игры",
+          "lead": "Если нужны свобода верхних позиций и беглые переходы, обсудим инструмент и эргономическую подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "solisticheskiy-kontrabas-s-udobnym-grifom",
+          "search_title": "Солистический контрабас с удобным грифом",
+          "lead": "Гриф должен позволять реализовать технику. Можно сравнить экземпляры и обсудить доработку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-solnogo-stroya-na-kontsert",
+          "search_title": "Контрабас для сольного строя на концерт",
+          "lead": "Уточним используемый строй и комплект струн, чтобы обсудить подготовку инструмента под программу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-ekzamena-po-spetsialnosti",
+          "search_title": "Контрабас для экзамена по специальности",
+          "lead": "Если программа известна, можно обсудить подходящий инструмент и время на знакомство до экзамена.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-zacheta-v-uchilische",
+          "search_title": "Контрабас для зачёта в училище",
+          "lead": "В день зачёта меньше всего нужен чужой неудобный инструмент. Обсудим знакомый по геометрии вариант.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-postupleniya-v-konservatoriyu",
+          "search_title": "Контрабас для поступления в консерваторию",
+          "lead": "Можно сыграть конкурсные отрывки на нескольких инструментах и понять, какой отклик вам необходим.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-vystupleniya-v-kamernom-ansamble",
+          "search_title": "Контрабас для выступления в камерном ансамбле",
+          "lead": "Если инструмент нужен на один проект, обсудим аренду под состав и репертуар.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-muzykalnogo-teatra",
+          "search_title": "Контрабас для музыкального театра",
+          "lead": "Театральная работа связана с репетициями, сценой и графиком. Обсудим инструмент и возможную доставку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-raboty-v-barochnom-ansamble",
+          "search_title": "Контрабас для работы в барочном ансамбле",
+          "lead": "Если инструмент ищут под старинную музыку, обсудим строй, исполнительский подход и конкретные экземпляры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-zapisi-orkestrovyh-partiy",
+          "search_title": "Контрабас для записи оркестровых партий",
+          "lead": "Нужен инструмент для студийной группы? Уточним состав, программу и возможность аренды.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-solista-priezzhayuschego-v-moskvu",
+          "search_title": "Контрабас для солиста приезжающего в Москву",
+          "lead": "Если свой инструмент остаётся дома, можно заранее обсудить знакомство и временный доступ в городе.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-podmennogo-orkestranta",
+          "search_title": "Контрабас для подменного оркестранта",
+          "lead": "Нужен инструмент на несколько репетиций или концертов? Обсудим подходящую конфигурацию и срок.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-myagkim-smychkovym-otvetom",
+          "search_title": "Контрабас с мягким смычковым ответом",
+          "lead": "Если ищете определённое сопротивление под смычком, можно сравнить реальные экземпляры в мастерской.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-yarkoy-atakoy-dlya-solnoy-partii",
+          "search_title": "Контрабас с яркой атакой для сольной партии",
+          "lead": "Подбор начнём с той музыки, которую предстоит играть. Можно обсудить подготовку звука и инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dlitelnogo-orkestrovogo-sezona",
+          "search_title": "Контрабас для длительного оркестрового сезона",
+          "lead": "Для регулярной работы важны устойчивость строя и удобство. Обсудим покупку или аренду на нужный срок.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    },
+    {
+      "id": "jazz-rockabilly",
+      "title": "Джаз, рокабилли и акустический бас",
+      "entries": [
+        {
+          "slug": "kupit-kontrabas-dlya-rokabilli",
+          "search_title": "Купить контрабас для рокабилли",
+          "lead": "Для слэпа важны удобная высота струн и рабочий отклик. Обсудим инструмент и настройку под игру.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "rokabilli-kontrabas-s-nastroykoy-dlya-slepa",
+          "search_title": "Рокабилли контрабас с настройкой для слэпа",
+          "lead": "Если играете слэп, можно показать свой инструмент и обсудить подготовку под сценический ритм.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dzhazovogo-trio",
+          "search_title": "Контрабас для джазового трио",
+          "lead": "В трио каждую ноту слышно иначе. Можно сравнить контрабасы в привычном пиццикато.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dzhazovogo-kvarteta",
+          "search_title": "Контрабас для джазового квартета",
+          "lead": "Если нужна стабильная работа в ансамбле, обсудим звук, удобство и возможность усиления.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-big-benda",
+          "search_title": "Контрабас для биг-бэнда",
+          "lead": "В большом составе важен читаемый ритмический низ. Можно обсудить подбор и сценическую настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nedorogoy-kontrabas-dlya-rokabilli",
+          "search_title": "Недорогой контрабас для рокабилли",
+          "lead": "Для первого рокабилли-состава не обязательно начинать с редкого инструмента. Обсудим доступный контрабас.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "moskvich-dlya-rokabilli",
+          "search_title": "Москвич для рокабилли",
+          "lead": "Есть интерес к московскому фабричному контрабасу под слэп? Обсудим настройку и конкретные инструменты.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "cheh-dlya-rokabilli",
+          "search_title": "Чех для рокабилли",
+          "lead": "Если ищете чешский контрабас для живой группы, можно обсудить его подготовку под слэп и пиццикато.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "muzima-dlya-pitstsikato",
+          "search_title": "Музима для пиццикато",
+          "lead": "Интересует старая Musima как акустический бас? Обсудим отклик конкретного корпуса и настройку струн.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-svinga",
+          "search_title": "Контрабас для свинга",
+          "lead": "Если вам нужен акустический пульс для свинга, можно сравнить несколько инструментов по игре пальцами.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dzhazovogo-standarta",
+          "search_title": "Контрабас для джазового стандарта",
+          "lead": "Приходите со знакомым стандартом: разные контрабасы по-разному отвечают на один и тот же ритм.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-zapisi-dzhaza",
+          "search_title": "Контрабас для записи джаза",
+          "lead": "Если готовите студийную сессию, можно обсудить инструмент, звукосниматель и время привыкания.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-kontserta-rokabilli",
+          "search_title": "Контрабас для концерта рокабилли",
+          "lead": "Нужен рабочий инструмент на выступление? Обсудим подготовку под слэп и возможную аренду.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "struny-dlya-slepa-na-kontrabase",
+          "search_title": "Струны для слэпа на контрабасе",
+          "lead": "Если штатный комплект не подходит для рокабилли, обсудим выбор струн под конкретный инструмент.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "slep-slishkom-tyazhelo-na-kontrabase",
+          "search_title": "Слэп слишком тяжело на контрабасе",
+          "lead": "Если движение требует слишком много силы, можно оценить высоту струн и общую настройку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dzhaza-bez-usilitelya",
+          "search_title": "Контрабас для джаза без усилителя",
+          "lead": "Если играете акустически в небольшом составе, можно сравнить разные корпуса по отклику.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-so-zvukosnimatelem-dlya-dzhaza",
+          "search_title": "Контрабас со звукоснимателем для джаза",
+          "lead": "Если инструмент должен играть через пульт, обсудим источник сигнала и подготовку к сцене.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-ulichnogo-dzhaza",
+          "search_title": "Контрабас для уличного джаза",
+          "lead": "Если играете на улице, обсудим удобство переноски и рабочий способ усиления.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-blyuza-i-bugi-vugi",
+          "search_title": "Контрабас для блюза и буги-вуги",
+          "lead": "Если нужен устойчивый низ и быстрый отклик на пиццикато, обсудим подбор и подготовку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-folk-gruppy",
+          "search_title": "Контрабас для фолк-группы",
+          "lead": "Акустический бас может работать в разных составах. Расскажите о группе, подберём путь знакомства.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-elektricheskoy-bas-gitary",
+          "search_title": "Контрабас после электрической бас-гитары",
+          "lead": "Если хотите перейти к акустическому инструменту, можно сыграть знакомые партии на нескольких контрабасах.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-posle-bezladovoy-bas-gitary",
+          "search_title": "Контрабас после безладовой бас-гитары",
+          "lead": "Слух уже знаком с непрерывной интонацией, а геометрия другая. Приглашаем попробовать инструменты в мастерской.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-muzykanta-s-nemetskim-smychkom-i-dzhazom",
+          "search_title": "Контрабас для музыканта с немецким смычком и джазом",
+          "lead": "Если используете и смычок, и пиццикато, обсудим общую настройку вместо жанровой этикетки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-dlya-dzhaza-i-orkestra-odnovremenno",
+          "search_title": "Контрабас для джаза и оркестра одновременно",
+          "lead": "Один инструмент может работать в двух музыкальных средах. Можно сравнить компромиссы на вашей музыке.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nastroit-moskvich-pod-dzhaz",
+          "search_title": "Настроить Москвич под джаз",
+          "lead": "Старый фабричный «Москвич» может быть предметом серьёзной джазовой подготовки. Привозите свой инструмент.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "nastroit-muzimu-pod-rokabilli",
+          "search_title": "Настроить Музиму под рокабилли",
+          "lead": "Если на вашей Musima трудно играть слэп, можно обсудить подходящий комплект и высоту струн.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "rokabilli-bas-s-udobnoy-pravoy-rukoy",
+          "search_title": "Рокабилли бас с удобной правой рукой",
+          "lead": "Если пальцы устают раньше музыки, обсудим струны и настройку на конкретном инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    }
+  ]
+}
