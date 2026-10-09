@@ -357,6 +357,138 @@
           "bridge": "Если строй перестал держаться после ремонта, стоит проверить крепления механики, струны и весь путь их натяжения.",
           "bridge_model": "gpt-6",
           "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "tresnula-obechayka-kontrabasa",
+          "search_title": "Треснула обечайка контрабаса",
+          "lead": "Трещина сбоку корпуса может затрагивать изгиб обечайки и соединение с декой. В мастерской можно оценить повреждение и путь восстановления.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "В треснувшей обечайке смотрят не только на разрыв древесины: важны её изгиб, соседние швы и то, держит ли корпус прежнюю форму.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "razoshlas-fuga-deki-kontrabasa",
+          "search_title": "Разошлась фуга деки контрабаса",
+          "lead": "Если разошёлся центральный стык верхней или нижней деки, это другое повреждение, чем отход деки по краю корпуса. Проверяют соединение и его протяжённость.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Центральная фуга соединяет части деки. Её расхождение исследуют по длине стыка, состоянию древесины и следам прежней склейки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "kontrabas-gremit-vnutri-korpusa",
+          "search_title": "Контрабас гремит внутри корпуса",
+          "lead": "Стук или дребезг внутри контрабаса может проявляться на отдельных нотах, под смычком либо при перемене положения. В мастерской можно локализовать источник призвука.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Внутренний стук прослеживают по нотам и движениям инструмента: раскрытый шов, ослабленное соединение и внешняя фурнитура звучат по-разному.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "grif-kontrabasa-othodit-ot-korpusa",
+          "search_title": "Гриф контрабаса отходит от корпуса",
+          "lead": "Зазор у пятки грифа или изменение угла шейки влияет на геометрию струн и устойчивость инструмента. Оценим соединение и его состояние.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "У соединения грифа с корпусом важны пятка, верхний клец и угол шейки: даже небольшой сдвиг меняет расстояние от струн до накладки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "remont-podgrifnika-kontrabasa",
+          "search_title": "Ремонт подгрифника контрабаса",
+          "lead": "Трещина подгрифника, повреждение его отверстий или износ подвязки требуют проверки всего узла натяжения. В мастерской можно оценить состояние деталей.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Подгрифник удерживает натяжение через подвязку и нижний порожек. При повреждении проверяют древесину, крепёж и передачу нагрузки к корпусу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "lyuftit-kreplenie-shpilya-kontrabasa",
+          "search_title": "Люфтит крепление шпиля контрабаса",
+          "lead": "Шпиль может быть целым, но шататься вместе с гнездом в корпусе. Здесь важно различить износ зажима и повреждение крепления в нижнем узле.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Когда расшатывается именно крепление шпиля, проверяют втулку, посадочное отверстие и древесину вокруг нижнего клеца, а не только зажим.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "podstavka-kontrabasa-naklonilas",
+          "search_title": "Подставка контрабаса наклонилась",
+          "lead": "Наклон подставки меняет опору струн и нагрузку на деку. В мастерской можно проверить изгиб древесины, прилегание ножек и положение подставки.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Наклонившуюся подставку оценивают по форме древесины и посадке ножек: иногда возможно выправление, иногда требуется новая подгонка.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "treschina-kolkovoy-korobki-kontrabasa",
+          "search_title": "Трещина колковой коробки контрабаса",
+          "lead": "Трещина в древесине головки отличается от неисправности металлической механики. По направлению раскола и положению колков можно оценить состояние узла.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "У трещины колковой коробки важны направление раскола и нагрузка от осей колков; регулировка механики сама по себе древесину не укрепит.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "otkleilas-pruzhina-kontrabasa",
+          "search_title": "Отклеилась пружина контрабаса",
+          "lead": "Если есть подозрение на ослабленную внутреннюю пружину, контрабас может давать посторонний призвук. Отделим эту причину от раскрытого шва и внешней фурнитуры.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Внутренняя пружина поддерживает работу деки. При подозрении на отклейку проверяют её соединение с деревом и источник слышимого призвука.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "prodavlena-deka-pod-dushkoy-kontrabasa",
+          "search_title": "Продавлена дека под душкой контрабаса",
+          "lead": "Вмятина, проседание или трещина в месте давления душки относятся к нагруженной зоне деки. Осмотр помогает отличить деформацию свода от повреждения древесины.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Под душкой нагрузка сосредоточена на небольшой площади. Здесь оценивают свод, плотность древесины и состояние самой площадки опоры.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "slomalsya-verhniy-porozhek-kontrabasa",
+          "search_title": "Сломался верхний порожек контрабаса",
+          "lead": "Скол или трещина верхнего порожка меняют высоту струн над накладкой и посадку отдельных струн. В мастерской можно проверить прорези и материал детали.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Верхний порожек задаёт положение струн у начала накладки. При сколе важно проверить каждую прорезь и высоту над первыми позициями.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
+        },
+        {
+          "slug": "slomalsya-nizhniy-porozhek-kontrabasa",
+          "search_title": "Сломался нижний порожек контрабаса",
+          "lead": "Повреждение нижнего порожка связано с подвязкой подгрифника и опорой у края корпуса. Проверим скол, посадку детали и нагрузку в этом узле.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact",
+          "bridge": "Нижний порожек принимает нагрузку от подвязки подгрифника у края корпуса. При трещине смотрят и на деталь, и на прилегающую деку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
