@@ -128,6 +128,48 @@ class PublicationTests(unittest.TestCase):
             self.assertIn('<link rel="canonical" href="' + DOMAIN + "/details/" + essay["slug"] + '/">', deep)
             self.assertIn("../details/" + essay["slug"] + "/", entry)
 
+    def test_three_repair_n1_articles_are_sourced_distinct_and_reachable(self):
+        expected = {
+            "pochemu-raskleivaetsya-kontrabas-shov-i-treschina":
+                ("otoshel-shov-na-kontrabase", "Шов и трещина контрабаса: почему раскрывается корпус"),
+            "geometriya-grifa-kontrabasa-sheyka-nakladka":
+                ("remont-grifa-kontrabasa", "Гриф, шейка и накладка контрабаса: геометрия свободной игры"),
+            "starinnyy-kontrabas-pered-remontom-osmotr-i-istoriya":
+                ("kontrabas-posle-dlitelnogo-hraneniya", "Старинный контрабас перед ремонтом: как читать его состояние"),
+        }
+        essays = {e["slug"]: e for e in inspect_knowledge(ROOT, inspect_entrances(ROOT), inspect_records(ROOT))}
+        self.assertEqual(len(essays), 11)
+        for slug, (entry_slug, title) in expected.items():
+            self.assertIn(slug, essays)
+            essay = essays[slug]
+            self.assertEqual(essay["entrance_slug"], entry_slug)
+            self.assertEqual(essay["title"], title)
+            self.assertGreaterEqual(len(essay["sections"]), 7)
+            self.assertGreaterEqual(len(essay["sources"]), 3)
+            words = sum(len(p.split()) for section in essay["sections"] for p in section["paragraphs"])
+            self.assertGreater(words, 750)
+            self.assertEqual(essay["status"], "ready")
+            self.assertTrue(essay["reviewed"])
+
+        result = build(ROOT, self.site)
+        self.assertEqual(result["independent_knowledge_articles"], 11)
+        sitemap = (self.site / "sitemap.xml").read_text(encoding="utf-8")
+        archive = BeautifulSoup((self.site / "archive/index.html").read_text(encoding="utf-8"), "html.parser")
+        self.assertNotIn("/vhod/", str(archive))
+        for slug, (entry_slug, title) in expected.items():
+            route = "/details/" + slug + "/"
+            entry_html = (self.site / entry_slug / "index.html").read_text(encoding="utf-8")
+            self.assertIn("../details/" + slug + "/", entry_html)
+            page = BeautifulSoup((self.site / route.strip("/") / "index.html").read_text(encoding="utf-8"), "html.parser")
+            self.assertEqual(page.h1.get_text(strip=True), title)
+            self.assertEqual(page.select_one("link[rel='canonical']")["href"], DOMAIN + route)
+            self.assertEqual(len(page.select(".knowledge-text > section")), 8)
+            self.assertGreaterEqual(len(page.select(".knowledge-sources a[href]")), 3)
+            self.assertIn(DOMAIN + route, sitemap)
+            self.assertIn("details/" + slug + "/", str(archive))
+            self.assertIsNotNone(page.select_one(".contact-block"))
+        self.assertEqual(validate(self.site, ROOT)["errors"], [])
+
     def test_official_model_articles_are_sourced_not_storefronts(self):
         models = inspect_model_publications(ROOT)
         self.assertEqual(len(models), 6)
