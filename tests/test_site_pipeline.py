@@ -45,7 +45,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["generated_pair_pages"], 4)
         self.assertEqual(result["hypotheses_retained"], 60)
         self.assertEqual(result["standalone_entrances"], 282)
-        self.assertEqual(result["independent_knowledge_articles"], 8)
+        self.assertEqual(result["independent_knowledge_articles"], 11)
         self.assertEqual(result["official_model_articles"], 6)
         self.assertEqual(result["sensor_n0"]["n0_pages"], len(sensor_records(ROOT)))
         self.assertEqual(result["sensor_n0"]["synthetic_cartesian_pages"], 0)
