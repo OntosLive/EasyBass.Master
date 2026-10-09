@@ -192,7 +192,7 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(old.select(".master-footer a[href]")[-1].get("href"), "../" + dest)
         self.assertEqual(len(archive.select("a[href*='/vhod/']")), 0)
 
-    def test_curated_pre_phone_bridge_only_when_the_request_needs_it(self):
+    def test_request_specific_modulation_before_the_phone(self):
         build(ROOT, self.site)
         page = BeautifulSoup((self.site / "kontrabas-1-2-ili-3-4/index.html").read_text(encoding="utf-8"), "html.parser")
         bridge = page.select_one(".entry-modulation")
@@ -200,9 +200,11 @@ class PublicationTests(unittest.TestCase):
         self.assertIn("по руке", bridge.get_text())
         self.assertLess(str(page).index('class="entry-modulation"'), str(page).index('class="contact-block'))
         musima = BeautifulSoup((self.site / "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html").read_text(encoding="utf-8"), "html.parser")
-        self.assertIsNone(musima.select_one(".entry-modulation"))
+        self.assertIsNotNone(musima.select_one(".entry-modulation"))
         griff = BeautifulSoup((self.site / "vhod/ergonomic-neck/virtuoznyy-grif-dlya-kontrabasa/index.html").read_text(encoding="utf-8"), "html.parser")
-        self.assertIn("наш конёк", griff.select_one(".entry-modulation").get_text())
+        self.assertIn("накладку", griff.select_one(".entry-modulation").get_text())
+        self.assertIn("высоту струн", griff.select_one(".entry-modulation").get_text())
+        self.assertNotIn("наш конёк", griff.select_one(".entry-modulation").get_text())
 
     def test_ranges_are_real_editorial_collection_anchors(self):
         from entry_router import RANGES, FACTS
