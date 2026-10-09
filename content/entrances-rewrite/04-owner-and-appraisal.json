@@ -1,0 +1,458 @@
+{
+  "version": 1,
+  "description": "Owner-side independent short entrance proposals",
+  "families": [
+    {
+      "id": "sell-and-transition",
+      "title": "Продажа владельцем и смена инструмента",
+      "entries": [
+        {
+          "slug": "prodat-moskvich-kontrabas",
+          "search_title": "Продать Москвич контрабас",
+          "lead": "Есть московский фабричный контрабас, с которым хотите расстаться? Мастерская может обсудить осмотр и дальнейший маршрут.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-muzimu-kontrabas",
+          "search_title": "Продать Музиму контрабас",
+          "lead": "Если у вас Musima, расскажите об инструменте и его состоянии. Можно договориться о знакомстве с ним.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-rubner-kontrabas",
+          "search_title": "Продать Rubner контрабас",
+          "lead": "Передавать инструмент такого класса лучше с ясной историей и осмотром. Обсудим возможные условия.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-cheshskiy-kontrabas-posle-ucheby",
+          "search_title": "Продать чешский контрабас после учёбы",
+          "lead": "Когда занятия закончились, контрабас может найти нового музыканта. Обсудим состояние и возможный путь передачи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-posle-smeny-razmera-u-rebenka",
+          "search_title": "Продать контрабас после смены размера у ребёнка",
+          "lead": "Если прежний размер больше не нужен, можно обсудить продажу и выбор следующего инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-posle-orkestrovoy-karery",
+          "search_title": "Продать контрабас после оркестровой карьеры",
+          "lead": "Инструмент много лет работал на сцене? Обсудим его состояние, документы и возможность знакомства с новым владельцем.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-posle-okonchaniya-konservatorii",
+          "search_title": "Продать контрабас после окончания консерватории",
+          "lead": "Музыкальная жизнь меняется, и инструмент может сменить владельца. Приглашаем обсудить конкретный экземпляр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-posle-pereezda-za-granitsu",
+          "search_title": "Продать контрабас после переезда за границу",
+          "lead": "Если инструмент невозможно увезти, расскажите о сроках и состоянии. Обсудим возможный маршрут продажи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-staryy-kontrabas-iz-kvartiry",
+          "search_title": "Продать старый контрабас из квартиры",
+          "lead": "Контрабас давно стоит без игры? Сначала важно увидеть его состояние. Договоримся об осмотре.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-pered-srochnym-pereezdom",
+          "search_title": "Продать контрабас перед срочным переездом",
+          "lead": "Когда времени мало, важны реальные сроки и возможности сделки. Расскажите, какой инструмент и когда нужно передать.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-dva-kontrabasa-iz-kollektsii",
+          "search_title": "Продать два контрабаса из коллекции",
+          "lead": "Если хотите уменьшить личное собрание, можно познакомить мастерскую с несколькими экземплярами и обсудить их судьбу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-radi-pokupki-drugogo",
+          "search_title": "Продать контрабас ради покупки другого",
+          "lead": "Смена инструмента может начинаться с оценки прежнего. В мастерской можно обсудить обе стороны перехода.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-posle-smeny-muzykalnogo-zhanra",
+          "search_title": "Продать контрабас после смены музыкального жанра",
+          "lead": "Если прежняя настройка больше не отвечает вашему репертуару, сначала можно обсудить её изменение либо продажу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-kotoryy-bolshe-ne-ispolzuetsya",
+          "search_title": "Продать контрабас, который больше не используется",
+          "lead": "Если инструмент просто стоит, можно предложить его мастерской для знакомства и обсуждения передачи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-po-nasledstvu-v-moskve",
+          "search_title": "Продать контрабас по наследству в Москве",
+          "lead": "Если инструмент достался семье, поможем начать с осмотра и выяснения того, что о нём известно.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-bez-etiketki-mastera",
+          "search_title": "Продать контрабас без этикетки мастера",
+          "lead": "Отсутствие этикетки не отменяет предметной ценности. Можно обсудить инструмент и предварительный осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-posle-restavratsii-masterskoy",
+          "search_title": "Продать контрабас после реставрации мастерской",
+          "lead": "Есть документы и фотографии проведённых работ? Они помогут начать разговор о конкретном инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-trebuyuschiy-kapitalnogo-remonta",
+          "search_title": "Продать контрабас, требующий капитального ремонта",
+          "lead": "Если восстановление слишком дорого для владельца, можно обсудить состояние и возможные способы передачи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-s-zamenennym-grifom",
+          "search_title": "Продать контрабас с заменённым грифом",
+          "lead": "Смена грифа является частью истории инструмента. Покажите, что было сделано, и обсудим продажу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-s-novoy-podstavkoy",
+          "search_title": "Продать контрабас с новой подставкой",
+          "lead": "Недавняя работа может быть важна для следующего музыканта. Приглашаем осмотреть инструмент.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "predlozhit-starinnyy-kontrabas-chastnoy-kollektsii",
+          "search_title": "Предложить старинный контрабас частной коллекции",
+          "lead": "Если у вас редкий инструмент, можно рассказать его историю и обсудить возможность личной встречи.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-uchenicheskiy-kontrabas-drugogo-razmera",
+          "search_title": "Продать ученический контрабас другого размера",
+          "lead": "Если ребёнок перерос инструмент, обсудим его передачу и знакомство с подходящим следующим размером.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-s-neskolkimi-povrezhdeniyami",
+          "search_title": "Продать контрабас с несколькими повреждениями",
+          "lead": "Передача возможна только после понимания состояния. Привозите на осмотр или обсудим первые сведения.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-s-chehlom-i-smychkom",
+          "search_title": "Продать контрабас с чехлом и смычком",
+          "lead": "Если хотите передать комплект целиком, расскажите об инструменте и принадлежностях; обсудим осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-pyatistrunnyy-kontrabas",
+          "search_title": "Продать пятиструнный контрабас",
+          "lead": "Пятиструнный инструмент нужен не каждому музыканту. Можно обсудить его конфигурацию и возможного следующего владельца.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodat-kontrabas-posle-neudachnoy-pokupki",
+          "search_title": "Продать контрабас после неудачной покупки",
+          "lead": "Если экземпляр не подошёл, покажите его мастерской: обсудим состояние, настройку или передачу.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-na-komissiyu-v-masterskoy",
+          "search_title": "Контрабас на комиссию в мастерской",
+          "lead": "Если рассматриваете комиссионную продажу, сначала выясним, возможен ли такой формат для конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "obmenyat-staryy-kontrabas-na-drugoy",
+          "search_title": "Обменять старый контрабас на другой",
+          "lead": "Если прежний инструмент перестал устраивать, можно обсудить его состояние и возможные пути смены.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "prodazha-kontrabasa-posle-dolgogo-hraneniya",
+          "search_title": "Продажа контрабаса после долгого хранения",
+          "lead": "До объявления стоит узнать, что произошло с инструментом за годы простоя. Начнём с осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "peredat-kontrabas-drugomu-muzykantu-cherez-masterskuyu",
+          "search_title": "Передать контрабас другому музыканту через мастерскую",
+          "lead": "Если важно найти следующего исполнителя, можно обсудить осмотр и способ знакомства с инструментом.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    },
+    {
+      "id": "appraisal-and-authentication",
+      "title": "Оценка, атрибуция и история",
+      "entries": [
+        {
+          "slug": "otsenit-moskvich-kontrabas",
+          "search_title": "Оценить Москвич контрабас",
+          "lead": "Год и название фабрики дают только начало истории. Можно показать инструмент для предметной оценки состояния.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenit-muzimu-pered-prodazhey",
+          "search_title": "Оценить Музиму перед продажей",
+          "lead": "Стоимость старой Musima зависит от конкретного корпуса и его подготовки. Приглашаем на осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenit-cheshskiy-kontrabas-cremona",
+          "search_title": "Оценить чешский контрабас Cremona",
+          "lead": "Если у вас старый чешский инструмент, обсудим происхождение, конструкцию и состояние перед продажей.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenit-starinnyy-rubner",
+          "search_title": "Оценить старинный Rubner",
+          "lead": "Если предполагаете авторство Rubner, необходимо отличить инструмент от механики с этой маркой. Можно обратиться за осмотром.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-neizvestnym-masterom-otsenka",
+          "search_title": "Контрабас с неизвестным мастером оценка",
+          "lead": "У инструмента нет ясной атрибуции? Можно начать с фотографий, истории владения и очного знакомства.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "skolko-stoit-moy-staryy-moskvich",
+          "search_title": "Сколько стоит мой старый Москвич",
+          "lead": "Общие цены мало говорят о конкретном инструменте. Обсудим конструкцию и состояние вашего экземпляра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "skolko-stoit-kontrabas-muzima",
+          "search_title": "Сколько стоит контрабас Музима",
+          "lead": "Разные «Музимы» не взаимозаменяемы по состоянию. Обсудим инструмент, который находится у вас.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenka-fabrichnogo-kontrabasa-gdr",
+          "search_title": "Оценка фабричного контрабаса ГДР",
+          "lead": "Если инструмент немецкий и фабричный, можно обсудить его конструкцию, ремонтную историю и нынешнее состояние.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenka-cheshskogo-kontrabasa-bez-marki",
+          "search_title": "Оценка чешского контрабаса без марки",
+          "lead": "Чешский инструмент без надписи может требовать осмотра деталей. Уточним имеющиеся сведения и договоримся.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenka-instrumenta-posle-dorogoy-restavratsii",
+          "search_title": "Оценка инструмента после дорогой реставрации",
+          "lead": "Если работы уже проведены, важно увидеть их документы и результат на инструменте. Обсудим оценку.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenka-kontrabasa-pered-strahovaniem",
+          "search_title": "Оценка контрабаса перед страхованием",
+          "lead": "Для страхования важны документы и конкретный экземпляр. Можно обсудить, какие сведения мастерская способна подтвердить.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenit-kontrabas-iz-orkestrovogo-fonda",
+          "search_title": "Оценить контрабас из оркестрового фонда",
+          "lead": "Инструмент из фонда имеет свою эксплуатационную историю. Начнём с документов и состояния корпуса.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenit-kontrabas-s-bolshoy-treschinoy",
+          "search_title": "Оценить контрабас с большой трещиной",
+          "lead": "Повреждение меняет возможные маршруты инструмента. Можно обсудить осмотр до решения о продаже.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenka-kontrabasa-bez-dokumentov-o-pokupke",
+          "search_title": "Оценка контрабаса без документов о покупке",
+          "lead": "Даже без чека можно начать исследование конкретного инструмента. Для выводов потребуется осмотр.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "osmotr-pered-pokupkoy-starogo-kontrabasa",
+          "search_title": "Осмотр перед покупкой старого контрабаса",
+          "lead": "Если нашли старый инструмент по объявлению, можно обсудить проверку его состояния до расчёта.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "atributsiya-kontrabasa-po-etiketke",
+          "search_title": "Атрибуция контрабаса по этикетке",
+          "lead": "Этикетка является поводом для исследования, а не готовым доказательством автора. Можно обратиться с фотографиями.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-podpisyu-mastera-vnutri",
+          "search_title": "Контрабас с подписью мастера внутри",
+          "lead": "Интересует происхождение инструмента? Начнём с сведений о корпусе, этикетке и прошлых владельцах.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-moskovskogo-mastera-bez-dokumentov",
+          "search_title": "Контрабас московского мастера без документов",
+          "lead": "Если инструмент приписывают московскому мастеру, обсудим, какие признаки вообще доступны для исследования.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "cheshskaya-cremona-ili-bolgarskaya-kremona",
+          "search_title": "Чешская Cremona или болгарская Kremona",
+          "lead": "Похожие названия могут вести к разным производствам. Уточним этикетку и происхождение конкретного инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "opredelit-vozrast-kontrabasa-po-konstruktsii",
+          "search_title": "Определить возраст контрабаса по конструкции",
+          "lead": "Год на словах и физические признаки могут расходиться. Можно показать инструмент мастерам.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenka-starinnogo-kontrabasa-posle-zameny-grifa",
+          "search_title": "Оценка старинного контрабаса после замены грифа",
+          "lead": "История переделок важна для предметной оценки. Обсудим инструмент и сохранившиеся документы.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-neskolkimi-zavodskimi-nomerami",
+          "search_title": "Контрабас с несколькими заводскими номерами",
+          "lead": "Если маркировки различаются, покажите их вместе с корпусом. Можно обсудить происхождение инструмента.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "podgotovit-opisanie-kontrabasa-dlya-prodazhi",
+          "search_title": "Подготовить описание контрабаса для продажи",
+          "lead": "Перед продажей можно собрать фотографии, конструктивные сведения и историю работ на конкретном инструменте.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "otsenka-kontrabasa-v-seme-posle-nasledstva",
+          "search_title": "Оценка контрабаса в семье после наследства",
+          "lead": "Если о прошлом инструмента почти ничего не известно, можно начать с его предметного осмотра.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        },
+        {
+          "slug": "kontrabas-s-istoriey-neskolkih-vladeltsev",
+          "search_title": "Контрабас с историей нескольких владельцев",
+          "lead": "Если сохранились документы и имена прежних музыкантов, обсудим, что подтверждено и как это учитывать.",
+          "origin": "authored_research_hypothesis",
+          "review_state": "candidate",
+          "intent": "contact"
+        }
+      ]
+    }
+  ]
+}
