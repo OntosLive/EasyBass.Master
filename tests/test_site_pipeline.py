@@ -56,6 +56,31 @@ class PublicationTests(unittest.TestCase):
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
+    def test_custom_domain_is_root_canonical_in_every_public_url(self):
+        from site_core import BASE
+        from validate_site import local_path
+
+        self.assertEqual(DOMAIN, "https://easybassmaster.ru")
+        self.assertEqual(BASE, "")
+        jekyll = (ROOT / "_config.yml").read_text(encoding="utf-8")
+        self.assertIn('baseurl: ""', jekyll)
+        self.assertIn('url: "https://easybassmaster.ru"', jekyll)
+
+        result = build(ROOT, self.site)
+        self.assertEqual(result["public_documents_in_sitemap"], 807)
+        sitemap = (self.site / "sitemap.xml").read_text(encoding="utf-8")
+        robots = (self.site / "robots.txt").read_text(encoding="utf-8")
+        home = (self.site / "index.html").read_text(encoding="utf-8")
+        self.assertIn("https://easybassmaster.ru/", sitemap)
+        self.assertNotIn("ontoslive.github.io/EasyBass.Master", sitemap)
+        self.assertIn("Sitemap: https://easybassmaster.ru/sitemap.xml", robots)
+        self.assertIn('<link rel="canonical" href="https://easybassmaster.ru/">', home)
+        self.assertEqual(local_path(self.site, "/", "https://easybassmaster.ru/collection/"),
+                         self.site / "collection/index.html")
+        self.assertEqual(local_path(self.site, "/collection/", "../workshop/"),
+                         self.site / "workshop/index.html")
+        self.assertEqual(validate(self.site, ROOT)["errors"], [])
+
     def test_generated_page_titles_distinguish_access_and_knowledge(self):
         build(ROOT, self.site)
         access = (self.site / "kupit-masterovoy-kontrabas-v-moskve/index.html").read_text()
