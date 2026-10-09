@@ -22,8 +22,7 @@ ROUTES = [
     ("knowledge", "details/masterovoy-kontrabas/index.html"),
     ("essay", "details/vybor-kontrabasa-kak-znakomstvo/index.html"),
     ("model", "models/eastman-vb305/index.html"),
-    ("sensor-root", "vhod/index.html"),
-    ("sensor-hub", "vhod/familiar-instruments/index.html"),
+    ("size-compare", "kontrabas-1-2-ili-3-4/index.html"),
     ("sensor-n0", "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/index.html"),
     ("sensor-long", "vhod/ergonomic-neck/kontrabas-posle-zameny-nakladki-stal-neudoben/index.html"),
     ("standalone", "kupit-kontrabas-v-moskve/index.html"),
@@ -64,7 +63,7 @@ async def run(site: Path, output: Path) -> dict:
                         redundant = await page.locator("nav.master-links").count()
                         if redundant:
                             raise AssertionError(f"{name}: subject/navigation grid belongs to podshivka")
-                    if name in {"access", "standalone", "sensor-n0", "sensor-long"}:
+                    if name in {"access", "standalone", "sensor-n0", "sensor-long", "size-compare"}:
                         if await page.locator(".entry-router .deck,.entry-router .entry-signal,.entry-router .n0-return").count():
                             raise AssertionError(f"{name}: redundant text inserted in the short entry")
                         title = await page.locator(".entry-router .master-lead").bounding_box()
@@ -73,14 +72,24 @@ async def run(site: Path, output: Path) -> dict:
                             raise AssertionError(f"{name}: contact must follow the short request headline")
                         if width >= 820 and title["y"] < 90:
                             raise AssertionError(f"{name}: short publication loses its top breathing room")
-                    if name == "sensor-root":
-                        if await page.locator(".n0-chapter").count() != 6:
-                            raise AssertionError("Six editorial chapters expected in root directory")
+                        if await page.locator(".master-footer a[href]").count() != 2:
+                            raise AssertionError(f"{name}: footer must have two institutional exits")
+                        if await page.locator(".master-footer").inner_text() and "По теме" in await page.locator(".master-footer").inner_text():
+                            raise AssertionError(f"{name}: ad-directory footer resurrected")
+                        if name == "size-compare":
+                            bridge = page.locator(".entry-modulation")
+                            if await bridge.count() != 1:
+                                raise AssertionError("Ambiguous comparison must have a human bridge")
+                            bridgebox = await bridge.bounding_box()
+                            if not bridgebox or bridgebox["y"] + bridgebox["height"] >= phone["y"]:
+                                raise AssertionError("The bridge must lead into, not follow, the telephone")
+                        if name == "sensor-n0" and await page.locator(".entry-modulation").count():
+                            raise AssertionError("A clear branded request needs no generic filler")
                     overflow = max(0, dims["scroll"] - dims["width"])
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:
                         raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px")
-                    if name in {"home", "archive", "collection", "access", "knowledge", "standalone", "essay", "model", "sensor-root", "sensor-hub", "sensor-n0", "sensor-long", "experience", "delivery"}:
+                    if name in {"home", "archive", "collection", "access", "knowledge", "standalone", "essay", "model", "sensor-n0", "sensor-long", "size-compare", "experience", "delivery":
                         await page.screenshot(path=str(output / f"{name}-{width}.png"),
                                               full_page=True)
                 await page.close()
