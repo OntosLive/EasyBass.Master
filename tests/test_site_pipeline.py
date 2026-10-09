@@ -243,6 +243,49 @@ class PublicationTests(unittest.TestCase):
             self.assertIn("https://easybassmaster.ru" + route, html)
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
+    def test_repair_wave_one_has_independent_subjects_and_valid_public_paths(self):
+        from sensor_n0 import records as repair_records
+        expected = {
+            "tresnula-obechayka-kontrabasa": "Треснула обечайка контрабаса",
+            "razoshlas-fuga-deki-kontrabasa": "Разошлась фуга деки контрабаса",
+            "kontrabas-gremit-vnutri-korpusa": "Контрабас гремит внутри корпуса",
+            "grif-kontrabasa-othodit-ot-korpusa": "Гриф контрабаса отходит от корпуса",
+            "remont-podgrifnika-kontrabasa": "Ремонт подгрифника контрабаса",
+            "lyuftit-kreplenie-shpilya-kontrabasa": "Люфтит крепление шпиля контрабаса",
+            "podstavka-kontrabasa-naklonilas": "Подставка контрабаса наклонилась",
+            "treschina-kolkovoy-korobki-kontrabasa": "Трещина колковой коробки контрабаса",
+            "otkleilas-pruzhina-kontrabasa": "Отклеилась пружина контрабаса",
+            "prodavlena-deka-pod-dushkoy-kontrabasa": "Продавлена дека под душкой контрабаса",
+            "slomalsya-verhniy-porozhek-kontrabasa": "Сломался верхний порожек контрабаса",
+            "slomalsya-nizhniy-porozhek-kontrabasa": "Сломался нижний порожек контрабаса",
+        }
+        records = {record["route"]: record for record in repair_records(ROOT)}
+        self.assertEqual(len(repair_records(ROOT)), 511)
+        for slug, title in expected.items():
+            route = "/vhod/repair-restoration/" + slug + "/"
+            self.assertIn(route, records)
+            self.assertEqual(records[route]["title"], title)
+            self.assertTrue(40 <= len(records[route]["bridge"]) <= 160)
+
+        build(ROOT, self.site)
+        site_map = (self.site / "sitemap.xml").read_text(encoding="utf-8")
+        for slug, title in expected.items():
+            route = "/vhod/repair-restoration/" + slug + "/"
+            filename = self.site / route.strip("/") / "index.html"
+            self.assertTrue(filename.is_file())
+            page = BeautifulSoup(filename.read_text(encoding="utf-8"), "html.parser")
+            self.assertEqual(page.h1.get_text(strip=True), title)
+            self.assertEqual(page.select_one(".entry-modulation").get_text(strip=True), records[route]["bridge"])
+            self.assertEqual(len(page.select("link[rel='canonical']")), 1)
+            self.assertEqual(page.select_one("link[rel='canonical']")["href"], DOMAIN + route)
+            self.assertEqual(len(page.select(".entry-range-grid a[href]")), 4)
+            self.assertEqual(len(page.select(".entry-utilities a[href]")), 4)
+            self.assertEqual(len(page.select(".contact-block")), 1)
+            self.assertIn(DOMAIN + route, site_map)
+            self.assertFalse((self.site / "details" / slug / "index.html").exists())
+            self.assertEqual(page.select(".master-footer a[href]")[-1]["href"], "../../../workshop/")
+        self.assertEqual(validate(self.site, ROOT)["errors"], [])
+
     def test_request_specific_modulation_before_the_phone(self):
         build(ROOT, self.site)
         page = BeautifulSoup((self.site / "kontrabas-1-2-ili-3-4/index.html").read_text(encoding="utf-8"), "html.parser")
