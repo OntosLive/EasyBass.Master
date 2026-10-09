@@ -12,7 +12,10 @@
           "lead": "Если собственный инструмент сейчас в ремонте, можно обсудить временный экземпляр, чтобы занятия не прерывались.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пока собственный контрабас у мастера, музыка не обязана прерываться. На время ремонта можно обсудить близкий по размеру инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-zamenu-pered-kontsertom",
@@ -20,7 +23,10 @@
           "lead": "Если свой инструмент неожиданно недоступен, расскажите о программе и сроке. Обсудим возможную замену.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если концерт близко, важно быстро найти знакомую геометрию и смычковый отклик. Временный контрабас можно согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-odin-kontsert-v-moskve",
@@ -28,7 +34,10 @@
           "lead": "Для одного выступления можно обсудить конкретный инструмент, время знакомства и передачу на площадку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для одного выступления нужен инструмент, который успеете попробовать до выхода на сцену. Срок аренды можно связать с репетицией.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-v-arendu-dlya-priezzhego-muzykanta",
@@ -36,7 +45,10 @@
           "lead": "Если вы приехали без своего баса, обсудим подходящий инструмент и время, когда можно его попробовать.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Приезжему музыканту важны размер, строй и время привыкания. В Москве можно обсудить временный инструмент до концерта.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-naprokat-dlya-orkestrovogo-proekta",
@@ -44,7 +56,10 @@
           "lead": "Если участие ограничено репетициями и концертами, можно обсудить инструмент на время проекта.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для оркестрового проекта нужен бас на весь цикл репетиций и выступлений. Удобство и срок подбираются вместе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-v-arendu-dlya-dzhazovogo-sostava",
@@ -52,7 +67,10 @@
           "lead": "Нужен акустический инструмент на несколько репетиций? Уточним стиль игры и сроки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для джазового состава важны привычное пиццикато и высота струн. Временный инструмент можно подготовить под эту работу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-mesyats-dlya-pervyh-zanyatiy",
@@ -60,7 +78,10 @@
           "lead": "Начало обучения не обязательно требует немедленной покупки. Обсудим аренду подходящего размера.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Первый месяц занятий можно провести с арендованным контрабасом, пока формируются ощущения и требования к своему инструменту.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-semestr-dlya-studenta",
@@ -68,7 +89,10 @@
           "lead": "Если инструмент нужен до конца семестра, можно рассмотреть временный доступ и необходимые условия.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На учебный семестр нужна удобная ежедневная игра. Размер, состояние и настройку арендуемого баса можно согласовать заранее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-uchebnyy-sezon-dlya-orkestranta",
@@ -76,7 +100,10 @@
           "lead": "Когда работа ограничена сезоном, обсудим аренду инструмента и подготовку к программе.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Оркестровый сезон требует стабильного инструмента на репетиции и концерты. Временное пользование позволяет работать весь срок.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-vremya-gastroley-v-moskve",
@@ -84,7 +111,10 @@
           "lead": "Если неудобно перевозить свой, можно заранее договориться о знакомстве с местным инструментом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На гастролях в Москве можно играть на местном контрабасе. Важно оставить время услышать его до первой репетиции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-nedelyu-dlya-master-klassa",
@@ -92,7 +122,10 @@
           "lead": "Если мероприятие проходит в Москве, обсудим временный контрабас и время на привыкание.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для недельного мастер-класса пригодится инструмент с удобной посадкой и привычной высотой струн. Срок можно согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-priglashennogo-solista-v-arendu",
@@ -100,7 +133,10 @@
           "lead": "Если выступаете не на своём инструменте, важно иметь время для пробы. Уточним условия заранее.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Приглашённому солисту особенно важно испытать верхние позиции и смычковый отклик до концерта. Аренду можно обсудить заранее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vremennyy-kontrabas-dlya-studiynoy-zapisi",
@@ -108,7 +144,10 @@
           "lead": "Если инструмент нужен только на сессию, обсудим передачу, рабочий комплект и репетицию.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На студийную сессию нужен контрабас с чистой атакой и устойчивым строем. Время настройки стоит включить в договорённость.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-posle-polomki-svoego",
@@ -116,7 +155,10 @@
           "lead": "Если поломка прервала работу, можно обсудить ремонт и временную замену в одном обращении.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если свой инструмент сломался, можно одновременно обсудить его ремонт и временный контрабас для продолжения занятий.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-s-udobnym-grifom",
@@ -124,7 +166,10 @@
           "lead": "Если временный инструмент нужен для сложной программы, обсудим геометрию и возможность знакомства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У временного контрабаса гриф должен оставаться удобным с первых минут. Лучше сравнить профиль и высоту струн до аренды.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-s-korotkoy-menzuroy",
@@ -132,7 +177,10 @@
           "lead": "Если рука требует меньшего расстояния, обсудим конкретные инструменты для временного пользования.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Короткая мензура помогает сохранить привычные расстояния под рукой. Для аренды можно ориентироваться на этот размер.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-dlya-igry-pitstsikato",
@@ -140,7 +188,10 @@
           "lead": "Под джазовую практику важна настройка струн. Уточним доступные условия и возможный экземпляр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для пиццикато важны лёгкая атака и рабочая высота струн. Временный инструмент можно подобрать под джазовую манеру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-pod-smychkovuyu-programmu",
@@ -148,7 +199,10 @@
           "lead": "Если готовите классику, можно обсудить инструмент с подходящим откликом и время привыкания.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Смычковая программа требует ровного отклика по струнам. На арендованном басе полезно заранее сыграть знакомые штрихи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-dlya-semochnogo-dnya",
@@ -156,7 +210,10 @@
           "lead": "Нужен контрабас в кадре? Уточним, будут ли на нём играть, и обсудим передачу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для съёмки важно знать, будет ли контрабас звучать или останется в кадре. От этого зависит нужный экземпляр.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-dlya-muzykalnogo-spektaklya",
@@ -164,7 +221,10 @@
           "lead": "Если спектакль идёт несколько вечеров, обсудим инструмент и график использования.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Театральный спектакль живёт по графику репетиций и показов. Временный контрабас можно обсудить на весь проект.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-repetitsiy-pered-pokupkoy",
@@ -172,7 +232,10 @@
           "lead": "Если хотите сначала пожить с инструментом, обсудим возможность отдельной аренды до решения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Прежде чем покупать свой контрабас, иногда полезно провести с инструментом больше времени. Возможность аренды рассматривается отдельно.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vzyat-kontrabas-v-arendu-na-leto",
@@ -180,7 +243,10 @@
           "lead": "Если впереди летние занятия или проект, обсудим размер инструмента и возможный срок пользования.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На летние занятия или проект можно взять контрабас на ограниченный срок, подобрав размер и рабочую настройку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-pyatistrunnogo-kontrabasa-v-moskve",
@@ -188,7 +254,10 @@
           "lead": "Если партия требует расширенного низа, уточним необходимый строй и возможность временного доступа.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пятиструнный контрабас нужен для определённых низких нот. Аренду лучше согласовать по строю и привычной геометрии грифа.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-gastrolnyy-tur-po-rossii",
@@ -196,7 +265,10 @@
           "lead": "Если нужен инструмент на несколько городов, обсудим срок, передачу и обслуживание по маршруту.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Гастрольный тур требует устойчивого инструмента и понятного маршрута передачи. Срок и подготовку можно связать с программой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-kontrabasa-dlya-podgotovki-k-proslushivaniyu",
@@ -204,7 +276,10 @@
           "lead": "Если привычного инструмента нет, можно обсудить временный экземпляр под ваши оркестровые соло.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед прослушиванием важно привыкнуть к отклику инструмента. Временный бас можно попробовать на оркестровых соло.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "arenda-nedorogogo-kontrabasa-dlya-vzroslogo",
@@ -212,7 +287,10 @@
           "lead": "Если хотите начать занятия без покупки, обсудим инструмент доступного класса на нужный период.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для взрослого новичка есть доступные контрабасы на время занятий. Главное, чтобы гриф был удобен и корпус подходил.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-v-arendu-na-vyhodnye-dlya-zapisi",
@@ -220,7 +298,10 @@
           "lead": "Если студийная работа короткая, уточним время знакомства и возможный срок доступа.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для записи на выходных полезно взять инструмент с запасом на настройку и знакомство. Аренду можно согласовать по времени.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
