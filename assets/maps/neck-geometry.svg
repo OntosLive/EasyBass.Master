@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="760" viewBox="0 0 1280 760" role="img" aria-labelledby="t d"><title id="t">ГЕОМЕТРИЯ ГРИФА И НАКЛАДКИ</title><desc id="d">Три схематических изображения: боковой профиль грифа контрабаса со струной, накладкой, верхним порожком и подставкой; продольное углубление накладки; поперечная кривизна накладки. Все расстояния условны.</desc><defs><pattern id="grain" width="43" height="46" patternUnits="userSpaceOnUse"><rect width="43" height="46" fill="#d6b38b"/><path d="M5 0q15 19 7 46M34 0q-10 25 5 46M20 0q5 20 -4 46" fill="none" stroke="#b88c60" stroke-width="1" opacity=".33"/></pattern><pattern id="paper" width="80" height="80" patternUnits="userSpaceOnUse"><path d="M2 27h22m28 15h20m-55 25h30" stroke="#b4a38d" opacity=".16"/></pattern><marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0 0L9 5L0 10" fill="none" stroke="#a44c37" stroke-width="1.6"/></marker></defs>
+<rect width="1280" height="760" fill="#f0e7d6"/><rect width="1280" height="760" fill="url(#paper)"/><rect x="18" y="18" width="1244" height="724" fill="none" stroke="#b4a38d"/>
+<rect x="44" y="42" width="46" height="46" fill="none" stroke="#a44c37"/><text x="67" y="72" text-anchor="middle" font-family="Georgia,serif" font-size="26" fill="#a44c37">04</text>
+<text x="111" y="69" font-family="Georgia,serif" font-size="33" fill="#29251f">ГЕОМЕТРИЯ ГРИФА И НАКЛАДКИ</text><text x="46" y="114" font-family="Arial,sans-serif" font-size="17" fill="#766b5e">Три разных вопроса: угол шейки, продольный прогиб и поперечный профиль</text><path d="M46 132H1234" stroke="#b4a38d"/>
+
+<rect x="45" y="160" width="1164" height="339" fill="#fbf6ed" stroke="#b4a38d"/>
+<text x="76" y="195" font-family="Arial,sans-serif" font-size="18" font-weight="700" fill="#a44c37">A · СБОКУ: СТРУНА, НАКЛАДКА, ШЕЙКА, ПОДСТАВКА</text>
+<g>
+<path d="M126 355L144 334 Q361 347 587 397 L610 406 Q598 453 625 468 L611 490 Q399 433 126 403Z" fill="url(#grain)" stroke="#29251f" stroke-width="2.5"/>
+<path d="M144 321 Q350 342 611 386 L635 402Q360 359 145 338Z" fill="#2f2c28" stroke="#171713" stroke-width="2.5"/>
+<path d="M138 316L151 314L152 343L139 344Z" fill="#53412c" stroke="#29251f" stroke-width="1.4"/>
+<path d="M139 315L839 280" stroke="#a44c37" stroke-width="3.5" fill="none"/>
+<path d="M634 385L840 378" stroke="#766b5e" stroke-dasharray="8 7" stroke-width="2" fill="none"/>
+<path d="M580 512Q710 485 940 524" stroke="#8d6948" stroke-width="12" fill="none" stroke-linecap="round"/>
+<path d="M821 514Q838 396 839 282Q860 391 867 515Z" fill="url(#grain)" stroke="#29251f" stroke-width="2.2"/>
+<path d="M837 310h7" stroke="#29251f" stroke-width="4"/>
+<circle cx="611" cy="387" r="7" fill="#a44c37"/>
+<g stroke="#a44c37" stroke-width="2" fill="none" marker-end="url(#arrow)">
+<path d="M251 240L146 319"/><path d="M450 246L377 360"/><path d="M635 235L599 431"/><path d="M983 242L838 294"/>
+</g>
+<g font-family="Arial,sans-serif" font-size="19" font-weight="700" fill="#29251f">
+<text x="146" y="226">Верхний порожек</text><text x="402" y="225">Накладка</text><text x="610" y="217">Пятка грифа</text><text x="940" y="223">Подставка</text>
+</g>
+<path d="M392 307V347" stroke="#a44c37" stroke-width="2" stroke-dasharray="5 5"/><text x="267" y="295" font-family="Arial,sans-serif" font-size="16" fill="#a44c37">высота струны</text>
+<text x="71" y="471" font-family="Arial,sans-serif" font-size="15" fill="#766b5e">Наклон шейки, прогиб накладки и высота подставки рассматриваются вместе</text>
+</g>
+<rect x="45" y="522" width="560" height="142" fill="#fbf6ed" stroke="#b4a38d"/>
+<text x="65" y="547" fill="#a44c37" font-size="15" font-family="Arial,sans-serif" font-weight="700">Б · ПРОДОЛЬНЫЙ ПРОГИБ НАКЛАДКИ</text>
+<path d="M82 602Q300 616 540 602" fill="none" stroke="#2f2c28" stroke-width="8" stroke-linecap="round"/>
+<path d="M82 581L540 581" stroke="#a44c37" stroke-width="2.8"/>
+<path d="M317 581v29" stroke="#a44c37" stroke-width="1.5" stroke-dasharray="4 4"/>
+<text x="82" y="645" fill="#766b5e" font-size="15" font-family="Arial,sans-serif">Расстояние под колебание струны, величина условная</text>
+<rect x="628" y="522" width="581" height="142" fill="#fbf6ed" stroke="#b4a38d"/>
+<text x="650" y="547" fill="#a44c37" font-size="15" font-family="Arial,sans-serif" font-weight="700">В · ПОПЕРЕЧНЫЙ ПРОФИЛЬ НАКЛАДКИ</text>
+<path d="M677 632Q882 553 1156 632L1156 646H677Z" fill="#2f2c28" stroke="#29251f" stroke-width="2"/>
+<path d="M677 632Q882 553 1156 632" fill="none" stroke="#a99e8c" stroke-width="3"/>
+<text x="679" y="651" fill="#766b5e" font-size="14" font-family="Arial,sans-serif">Профиль согласуют с количеством струн и техникой</text>
+<path d="M46 692H1234" stroke="#b4a38d"/><text x="46" y="718" font-size="19" font-family="Georgia,serif" fill="#29251f">EasyBassMaster · Мастерская контрабаса</text><text x="1234" y="718" text-anchor="end" font-size="14" font-family="Arial,sans-serif" fill="#766b5e">Чертёжная карта · пропорции условны</text></svg>
