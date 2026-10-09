@@ -258,7 +258,8 @@
           "lead": "Если ребёнок переходит к половинному размеру, можно познакомиться с подходящими экземплярами.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Выбор половинного размера можно обсудить после знакомства с реальным инструментом."
         },
         {
           "slug": "kontrabas-3-4-dlya-vzroslogo-kupit",
@@ -266,7 +267,8 @@
           "lead": "Три четверти не означает ученический класс. В коллекции можно сравнить такие инструменты разного уровня.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Три четверти бывают разными по звучанию и удобству. Подбор начинается с игры."
         },
         {
           "slug": "kontrabas-4-4-dlya-orkestra-kupit",
