@@ -549,6 +549,8 @@ footer{
 .new-master.entry-router .contact-icons .max-contact-pending{width:30px;height:30px}
 .new-master.entry-router .contact-icons .max-contact-pending svg{width:19px;height:19px}
 @media(max-width:700px){
+  .new-master .contact-icons .max-contact-pending{width:30px;height:30px}
+  .new-master .contact-icons .max-contact-pending svg{width:23px;height:23px}
   .new-master.entry-router .contact-icons .max-contact-pending{width:27px;height:27px}
   .new-master.entry-router .contact-icons .max-contact-pending svg{width:18px;height:18px}
 }
