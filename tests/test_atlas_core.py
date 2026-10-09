@@ -37,6 +37,16 @@ class AtlasContract(unittest.TestCase):
             self.assertIsNone(model["stock"])
             self.assertTrue(model["source"].startswith("https://"))
 
+    def test_coverage_urls_match_the_public_custom_domain(self):
+        from site_core import DOMAIN
+        coverage = json.loads((ROOT / "content/atlas/coverage.json").read_text(encoding="utf-8"))
+        keys = ("published_entrances", "published_pairs", "published_knowledge", "published_models")
+        urls = [entry["public_url"] for key in keys for entry in coverage.get(key, [])
+                if "public_url" in entry]
+        self.assertEqual(len(urls), 300)
+        self.assertEqual(len(set(urls)), len(urls))
+        self.assertTrue(all(url.startswith(DOMAIN + "/") for url in urls))
+
     def test_public_coverage_mapping_does_not_pretend_full_editorial_pass(self):
         self.assertEqual(self.report["mapped_published_entrances"], 282)
         self.assertEqual(self.report["mapped_published_pairs"], 2)
