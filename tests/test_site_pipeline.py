@@ -26,10 +26,16 @@ class PublicationTests(unittest.TestCase):
         self.site = Path(self.temporary.name)
         for path in ("index.html", "styles.css", "collection/index.html",
                      "workshop/index.html", "meeting/index.html",
-                     "experience/index.html", "delivery/index.html"):
+                     "experience/index.html", "delivery/index.html",
+                     "workshop/maps/index.html"):
             target = self.site / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / path, target)
+        # Jekyll carries immutable, hand-authored vectors to the public build.
+        for source in sorted((ROOT / "assets/maps").glob("*.svg")):
+            target = self.site / "assets/maps" / source.name
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
         (self.site / "archive").mkdir(parents=True)
         (self.site / "archive/index.html").write_text(
             '<!doctype html><html lang="ru"><head><meta name="viewport" '
@@ -127,6 +133,54 @@ class PublicationTests(unittest.TestCase):
             self.assertIn(essay["title"], deep)
             self.assertIn('<link rel="canonical" href="' + DOMAIN + "/details/" + essay["slug"] + '/">', deep)
             self.assertIn("../details/" + essay["slug"] + "/", entry)
+
+    def test_five_workshop_maps_are_anatomical_and_connected_to_n1(self):
+        import xml.etree.ElementTree as ET
+        maps = (
+            "anatomy.svg", "internal-structure.svg", "seams-cracks.svg",
+            "neck-geometry.svg", "inspection-zones.svg",
+        )
+        for name in maps:
+            asset = ROOT / "assets/maps" / name
+            self.assertTrue(asset.is_file())
+            doc = ET.parse(asset).getroot()
+            self.assertEqual(doc.attrib["viewBox"], "0 0 1280 760")
+            ns = {"svg": "http://www.w3.org/2000/svg"}
+            self.assertIsNotNone(doc.find("svg:title", ns))
+            self.assertIsNotNone(doc.find("svg:desc", ns))
+            self.assertEqual(doc.findall(".//svg:script", ns), [])
+            self.assertEqual(doc.findall(".//svg:image", ns), [])
+
+        self.assertIn('href="maps/"', (ROOT / "workshop/index.html").read_text(encoding="utf-8"))
+        essays = {a["slug"]: a for a in inspect_knowledge(ROOT, inspect_entrances(ROOT), inspect_records(ROOT))}
+        assignments = {
+            "pochemu-raskleivaetsya-kontrabas-shov-i-treschina":
+                {"seams-cracks.svg", "internal-structure.svg"},
+            "geometriya-grifa-kontrabasa-sheyka-nakladka":
+                {"neck-geometry.svg"},
+            "starinnyy-kontrabas-pered-remontom-osmotr-i-istoriya":
+                {"anatomy.svg", "inspection-zones.svg"},
+        }
+        self.assertEqual({a["file"] for key in assignments for a in essays[key]["maps"]}, set(maps))
+        for key, names in assignments.items():
+            self.assertEqual({m["file"] for m in essays[key]["maps"]}, names)
+
+        compiled = build(ROOT, self.site)
+        self.assertEqual(compiled["public_documents_in_sitemap"], len(list(self.site.rglob("*.html"))))
+        atlas = BeautifulSoup((self.site / "workshop/maps/index.html").read_text(encoding="utf-8"), "html.parser")
+        self.assertEqual(len(atlas.select(".atlas-hub-figure img")), 5)
+        self.assertEqual(len(atlas.select("main > .atlas-page")), 5)
+        self.assertEqual(len(atlas.select("link[rel='canonical']")), 1)
+        self.assertEqual(atlas.select_one("link[rel='canonical']")["href"], DOMAIN + "/workshop/maps/")
+        self.assertEqual(len(atlas.select(".atlas-figure figcaption")), 5)
+        self.assertTrue(all(x.get("alt", "").strip() for x in atlas.select(".atlas-figure img")))
+        for key, names in assignments.items():
+            page = BeautifulSoup((self.site / "details" / key / "index.html").read_text(encoding="utf-8"), "html.parser")
+            self.assertEqual({img["src"].split("/")[-1] for img in page.select(".knowledge-text .atlas-figure img")}, names)
+            self.assertIn("../../workshop/maps/", str(page.select("nav.master-links")))
+            self.assertEqual(len(page.select(".knowledge-text > section")), 8)
+        self.assertIn(DOMAIN + "/workshop/maps/", (self.site / "sitemap.xml").read_text(encoding="utf-8"))
+        self.assertEqual(validate(self.site, ROOT)["errors"], [])
 
     def test_three_repair_n1_articles_are_sourced_distinct_and_reachable(self):
         expected = {
