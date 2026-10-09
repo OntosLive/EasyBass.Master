@@ -12,7 +12,10 @@
           "lead": "Старый «Москвич» можно вернуть к игре после предметного осмотра. Обсудим состояние и необходимую работу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старый московский контрабас можно вернуть к работе с корпусом, грифом и подставкой. Сначала слышим и видим сам инструмент.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "restavratsiya-kontrabasa-musima",
@@ -20,7 +23,10 @@
           "lead": "Немецкий фабричный инструмент требует внимания к прежним вмешательствам. Привозите «Музиму» на осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У Musima часто длинная история игры и ремонтов. Восстановление можно строить бережно, сохраняя характер её звука.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "restavratsiya-cheshskogo-kontrabasa",
@@ -28,7 +34,10 @@
           "lead": "Если у чешского инструмента есть повреждения или следы старых ремонтов, обсудим восстановление после осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Чешский контрабас после многих лет службы заслуживает точной работы со швами, деками и грифом, а не общего ремонта наугад.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "restavratsiya-kontrabasa-rubner",
@@ -36,7 +45,10 @@
           "lead": "Именной инструмент требует аккуратной работы с подтверждённой конструкцией. Можно обсудить реставрацию в мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для Rubner важно сохранить конструкцию и прежние мастеровые решения. Реставрация начинается с истории конкретного корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kapitalnyy-remont-kontrabasa",
@@ -44,7 +56,10 @@
           "lead": "Когда повреждений несколько, лучше рассмотреть инструмент целиком. Обсудим план восстановления и сроки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При капитальном ремонте корпус, гриф и акустика связаны. Работы можно выстроить последовательно, чтобы инструмент снова играл.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vosstanovit-kontrabas-posle-dolgih-let-bez-igry",
@@ -52,7 +67,10 @@
           "lead": "Если контрабас долго стоял, можно проверить швы, гриф, подставку и вернуть его к музыкальной практике.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После лет молчания контрабасу нужно вернуть строй, устойчивые швы и удобную настройку. Инструмент может снова зазвучать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-nizhney-deki-kontrabasa",
@@ -60,7 +78,10 @@
           "lead": "Если на нижней деке трещина или раскрытый шов, привозите инструмент для осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У нижней деки важны линия трещины, состояние рёбер и соединений. Ремонт связывается с сохранением конструкции корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-verhney-deki-kontrabasa",
@@ -68,7 +89,10 @@
           "lead": "Повреждение верхней деки требует очной оценки. Обсудим объём реставрации вашего инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Верхняя дека отвечает за голос контрабаса. Работу с трещинами и швами нужно вести так, чтобы сохранить её движение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "raskleilsya-korpus-kontrabasa",
@@ -76,7 +100,10 @@
           "lead": "Если отошёл шов, не обязательно менять инструмент. Можно привезти его для мастерской работы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Раскрывшийся шов бывает заметен и рукой, и по звуку. Корпус можно восстановить, сохраняя его форму и акустическую работу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otkleilas-deka-kontrabasa",
@@ -84,7 +111,10 @@
           "lead": "Расхождение клеевого соединения нуждается в осмотре. Мастерская может обсудить восстановление корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Отошедшую деку важно вернуть к корпусу без напряжения и перекосов. Такая работа начинается с целого инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "poyavilas-treschina-na-kontrabase",
@@ -92,7 +122,10 @@
           "lead": "Если трещина возникла недавно, полезно показать инструмент, не откладывая осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Свежая трещина меняет состояние корпуса. Её можно осмотреть до новых нагрузок и выбрать аккуратный способ восстановления.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "restavratsiya-kontrabasa-posle-padeniya",
@@ -100,7 +133,10 @@
           "lead": "После удара могут пострадать несколько элементов. Привезите инструмент, чтобы оценить повреждения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После падения страдает не всегда только место удара. Полезно увидеть корпус, шейку и подставку как связанную систему.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vosstanovlenie-kontrabasa-posle-perevozki",
@@ -108,7 +144,10 @@
           "lead": "Если инструмент приехал повреждённым, обсудим осмотр, фиксацию состояния и ремонт.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После перевозки могут измениться швы, строй и положение подставки. Инструмент можно осмотреть и вернуть к привычной игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-podstavki-starinnogo-kontrabasa",
@@ -116,7 +155,10 @@
           "lead": "Подставка связана и с акустикой, и с удобством игры. Приглашаем на осмотр инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У старого контрабаса подставка связана с историей настройки и звуком. Ремонт должен сохранить удобство и опору струн.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "izgotovit-podstavku-dlya-kontrabasa",
@@ -124,7 +166,10 @@
           "lead": "Если прежняя подставка не подходит или сломалась, обсудим изготовление и подгонку новой.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Новая подставка подгоняется к деке и вашему стилю игры. Её высота и форма влияют одновременно на гриф и на звук.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "podgonka-podstavki-kontrabasa",
@@ -132,7 +177,10 @@
           "lead": "Подставка должна работать с данным корпусом. Мастерская занимается индивидуальной подгонкой после осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Точная посадка ножек подставки нужна для передачи звука, а её высота для свободной руки. Оба результата связаны.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-kolkovoy-mehaniki-kontrabasa",
@@ -140,7 +188,10 @@
           "lead": "Если колки плохо вращаются или держат строй, привозите инструмент на проверку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если колки идут рывками или сбрасывают строй, можно восстановить работу механизма, проверив его крепление и износ.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "zamena-kolkov-na-starom-kontrabase",
@@ -148,7 +199,10 @@
           "lead": "Для исторического корпуса сначала выясним тип и состояние механики, затем обсудим возможную замену.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На старинном контрабасе механика составляет часть истории. Для замены важно подобрать устройство без лишнего вмешательства.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vosstanovit-grif-kontrabasa-posle-treschiny",
@@ -156,7 +210,10 @@
           "lead": "Повреждение грифа требует осмотра конструкции. Обсудим возможность и объём восстановления.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Трещина грифа опасна для устойчивости строя и руки. Возможность восстановления зависит от конструкции соединения и древесины.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-pyatki-grifa-kontrabasa",
@@ -164,7 +221,10 @@
           "lead": "Если соединение грифа вызывает сомнения, покажите инструмент мастерам для предметного осмотра.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пятка держит гриф в корпусе. Её повреждение требует точной работы с соединением, чтобы вернуть надёжность и геометрию.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "zamena-nakladki-grifa-kontrabasa",
@@ -172,7 +232,10 @@
           "lead": "Изношенная накладка не всегда требует полной замены. Рассмотрим состояние и возможные работы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Изношенную накладку иногда можно обработать, а иногда нужно заменить. Главное вернуть ровную поверхность и свободное движение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-staroy-treschiny-na-kontrabase",
@@ -180,7 +243,10 @@
           "lead": "Если прежний ремонт снова раскрылся, полезно оценить его историю и текущее состояние.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старый ремонт может вновь раскрыться по прежнему шву. Для восстановления важно понять, как соединение работало раньше.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-neudachnoy-restavratsii",
@@ -188,7 +254,10 @@
           "lead": "Если после чужой работы стало хуже играть или звучать, можно принести инструмент на повторный осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После неудачной реставрации можно вернуть инструменту удобство и звук, разбираясь с конкретными следами вмешательства.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-kontrabasa-posle-syrosti",
@@ -196,7 +265,10 @@
           "lead": "Изменения корпуса после высокой влажности требуют аккуратной оценки. Обсудим состояние инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Сырость меняет древесину и швы. Восстановление требует бережной оценки деформаций корпуса и его нынешнего состояния.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-suhoy-zimy-trebuet-remonta",
@@ -204,7 +276,10 @@
           "lead": "Если появились щели или трещины, покажите инструмент: определим, что требует вмешательства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Сухой сезон может открыть старые швы и трещины. Контрабас можно привести в рабочее состояние перед дальнейшей игрой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "restavratsiya-starinnogo-nemetskogo-kontrabasa",
@@ -212,7 +287,10 @@
           "lead": "Работа со старинным немецким инструментом начинается с осмотра, истории ремонтов и реальной конструкции.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старинный немецкий корпус несёт следы мастерства и многих ремонтов. Их стоит учитывать при восстановлении звука и конструкции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "restavratsiya-starogo-cheshskogo-kontrabasa",
@@ -220,7 +298,10 @@
           "lead": "Чешские фабричные инструменты могут иметь сложную историю ремонта. Обсудим восстановление конкретного корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У старого «чеха» важно сохранить крепость корпуса и рабочую настройку. Реставрацию можно связать с вашей техникой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "podgotovit-kontrabas-k-prodazhe-posle-hraneniya",
@@ -228,7 +309,10 @@
           "lead": "Перед продажей можно привести инструмент на осмотр, оценить его состояние и необходимые работы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После хранения контрабасу полезно вернуть строй, удобный гриф и ясный звук. Подготовка поможет показать его музыканту.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "podgotovit-kontrabas-dlya-kontsertnogo-sezona",
@@ -236,7 +320,10 @@
           "lead": "Если инструмент давно не обслуживался, можно обсудить контрольную настройку перед возвращением на сцену.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К началу концертного сезона инструмент можно проверить по швам, колкам, подставке и высоте струн в привычной программе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "proverit-kontrabas-pered-gastrolyami",
@@ -244,7 +331,10 @@
           "lead": "Перед дорогой полезно проверить механику и общую устойчивость инструмента. Обсудим осмотр и подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед гастролями особенно важны устойчивый строй и надёжная механика. Осмотр помогает подготовить контрабас к дороге.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "osmotr-kontrabasa-pered-dorogim-remontom",
@@ -252,7 +342,10 @@
           "lead": "Сначала нужно понять состояние инструмента и объём работ. Приглашаем на осмотр без готового диагноза по фотографии.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед большой реставрацией полезно увидеть, как связаны повреждения, гриф и акустика. Тогда можно составить ясный план работ.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-remonta-ne-derzhit-stroy",
@@ -260,7 +353,10 @@
           "lead": "Если после вмешательства появились новые проблемы, можно обсудить повторную проверку механики и настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если строй перестал держаться после ремонта, стоит проверить крепления механики, струны и весь путь их натяжения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
