@@ -1101,7 +1101,10 @@
           "lead": "Если занятие уже назначено, можно познакомиться с подходящими по размеру инструментами и обсудить аренду или покупку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К первому уроку важнее удобный размер и готовый к игре инструмент, чем громкое название. Можно познакомиться с несколькими.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-domashney-praktiki-rebenka",
@@ -1109,7 +1112,10 @@
           "lead": "Ищете инструмент, который останется дома между уроками? Обсудим размер, настройку и возможность пользования.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для домашних занятий ребёнку нужен контрабас, на котором удобно повторять движение между уроками. Размер выбирают в игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-muzykalnoy-shkoly-po-sovetu-pedagoga",
@@ -1117,7 +1123,10 @@
           "lead": "Преподаватель дал требования? Можно прийти с ними и познакомиться с несколькими экземплярами.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Рекомендации педагога можно взять за основу и проверить рядом несколько грифов, мензур и вариантов настройки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-pervoklassnika-muzykalnoy-shkoly",
@@ -1125,7 +1134,10 @@
           "lead": "Начало учёбы не требует покупки по одной фотографии. Обсудим удобный размер и форму доступа.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для первого класса важен инструмент, на котором ребёнок свободно держит корпус и достаёт позиции без лишнего усилия.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-rebenka-semi-let",
@@ -1133,7 +1145,10 @@
           "lead": "Размер зависит не только от возраста. Договоримся о сравнении подходящих по геометрии экземпляров.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В семь лет решает не возрастная таблица, а посадка и досягаемость. Небольшие контрабасы лучше попробовать лично.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-rebenka-desyati-let",
@@ -1141,7 +1156,10 @@
           "lead": "Для растущего музыканта можно рассмотреть несколько размеров и форму пользования на ближайший этап.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В десять лет ребёнок может играть на разных размерах. Выберем по тому, как стоят руки и насколько свободна смена позиций.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-pri-smene-razmera-u-uchenika",
@@ -1149,7 +1167,10 @@
           "lead": "Прежний инструмент стал мал? В мастерской можно обсудить следующий экземпляр и судьбу старого.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда ученик вырос из прежнего размера, следующий контрабас лучше проверить вместе с педагогом и знакомой программой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-rebenku-posle-violoncheli",
@@ -1157,7 +1178,10 @@
           "lead": "Если ребёнок меняет инструмент, можно сначала познакомиться с контрабасом и его посадкой в мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После виолончели меняются корпус и расстояния под рукой. Ребёнку полезно попробовать контрабас в спокойной обстановке.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "uchenicheskiy-kontrabas-s-horoshim-grifom",
@@ -1165,7 +1189,10 @@
           "lead": "Для первых занятий особенно важна комфортная работа руки. Обсудим подбор и настройку грифа.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На ученическом контрабасе гриф особенно важен: ровная накладка и рабочая высота струн дают руке свободу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-bez-tyazhelogo-usiliya-dlya-uchenika",
@@ -1173,7 +1200,10 @@
           "lead": "Занятия не должны превращаться в борьбу со струнами. Можно показать инструмент и обсудить доработку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Лишнее усилие на первых занятиях часто связано с настройкой. Высоту струн и профиль грифа можно подготовить под ученика.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zanyatiy-v-muzykalnom-uchilische",
@@ -1181,7 +1211,10 @@
           "lead": "Для серьёзной ежедневной практики можно познакомиться с контрабасами нескольких классов и обсудить подбор.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В училище инструмент нужен для ежедневного смычка и растущего репертуара. Можно сравнить контрабасы разных характеров.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-podgotovki-k-postupleniyu",
@@ -1189,7 +1222,10 @@
           "lead": "Если готовите программу, можно сравнить инструменты именно на её трудных местах.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К поступлению удобно взять знакомые конкурсные отрывки и попробовать их на нескольких контрабасах в одной комнате.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-studenta-pervogo-kursa",
@@ -1197,7 +1233,10 @@
           "lead": "Впереди ежедневная профессиональная работа. Подберём направление знакомства и обсудим аренду или покупку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Первый курс приносит другую нагрузку на руки и инструмент. Важно, чтобы контрабас легко отвечал на привычные штрихи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zanyatiy-s-professorom",
@@ -1205,7 +1244,10 @@
           "lead": "Есть конкретные рекомендации профессора? Возьмём их за основу разговора о подходящем инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "С рекомендацией профессора можно прийти к реальным инструментам и проверить, как требуемые качества ощущаются в игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-okonchaniya-muzykalnoy-shkoly",
@@ -1213,7 +1255,10 @@
           "lead": "Следующий учебный этап может потребовать другой инструмент. Можно сравнить варианты и обсудить смену.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После музыкальной школы новые произведения могут потребовать иного звука или мензуры. Сравнить инструменты можно лично.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-obucheniya-vzroslogo-s-nulya",
@@ -1221,7 +1266,10 @@
           "lead": "Первое знакомство возможно без заранее выбранной марки. Приходите услышать разные инструменты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Взрослому для первых занятий тоже нужен удобный гриф и подходящий корпус. Начать можно с живого знакомства с коллекцией.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-vozvrascheniya-k-uchebe-vzroslomu",
@@ -1229,7 +1277,10 @@
           "lead": "Если занятия возобновились после паузы, можно подобрать инструмент под нынешнюю технику и нагрузку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После паузы знакомые движения возвращаются легче на инструменте, который спокойно отвечает и не требует лишней силы.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zanyatiy-bez-svoego-instrumenta",
@@ -1237,7 +1288,10 @@
           "lead": "Временный доступ помогает продолжать уроки, пока собственный инструмент ещё не выбран.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пока своего контрабаса нет, занятия могут продолжаться на арендованном. Подходящий размер и настройку можно согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-pervyh-publichnyh-vystupleniy",
@@ -1245,7 +1299,10 @@
           "lead": "Если впереди первый концерт, обсудим инструмент под вашу программу и возможность репетиционной пробы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед первым выходом на сцену полезно проверить знакомые пассажи на инструменте и почувствовать уверенный отклик.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-detskogo-ansamblya",
@@ -1253,7 +1310,10 @@
           "lead": "В ансамбле важна способность ребёнка свободно играть на своём размере. Можно обсудить подбор и настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В детском ансамбле важно, чтобы размер не мешал слушать партнёров. Посадку и настройку можно подобрать для ребёнка.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-shkoly-iskusstv",
@@ -1261,7 +1321,10 @@
           "lead": "Для учебного фонда важны разные размеры и условия использования. Расскажите, какие инструменты нужны учреждению.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Школе искусств могут потребоваться несколько размеров и рабочая настройка каждого. Мастерская занимается контрабасами.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-po-trebovaniyam-uchilischa",
@@ -1269,7 +1332,10 @@
           "lead": "Если вам дали список требований к инструменту, обсудим конкретные варианты без угадывания модели.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Требования училища можно соотнести с реальными грифами, корпусами и звуком, а не только со списком характеристик.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-kontrabas-posle-probnogo-uroka",
@@ -1277,7 +1343,10 @@
           "lead": "Первое занятие состоялось? Теперь можно познакомиться с инструментами для регулярной практики.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После пробного урока уже понятно, что рука почувствовала на инструменте. Следующий можно выбирать по этому опыту.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "vybor-kontrabasa-pered-pervym-urokom",
@@ -1285,7 +1354,10 @@
           "lead": "Если педагог ещё не определил размер, можно начать с разговора и живого знакомства с инструментами.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "До первого урока удобно познакомиться с размерами и понять, какой корпус ребёнку действительно подходит.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "smenit-neudobnyy-uchenicheskiy-kontrabas",
@@ -1293,7 +1365,10 @@
           "lead": "Если ребёнок технически вырос из прежнего инструмента, обсудим сравнение и возможную доработку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если ученический контрабас мешает движениям, иногда помогает новая настройка грифа, а иногда нужен другой размер.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }
