@@ -28,7 +28,7 @@
       ],
       "provenance": "Existing EasyBass.Master pages approved for structural migration",
       "reviewed": true,
-      "bridge": "Мастеровой контрабас можно выбрать в игре: услышать его голос, почувствовать гриф и отклик. В коллекции представлены разные инструменты.",
+      "bridge": "В мастеровых контрабасах каждый гриф и голос индивидуален. В коллекции можно услышать разные инструменты и сыграть свою музыку.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -57,7 +57,7 @@
       ],
       "provenance": "Existing EasyBass.Master pages approved for structural migration",
       "reviewed": true,
-      "bridge": "Московские контрабасы различаются историей, конструкцией и сегодняшним звучанием. Можно сравнить конкретные экземпляры в игре.",
+      "bridge": "Московский контрабас может хранить историю фабрики или мастера. Конкретный инструмент лучше услышать и почувствовать в игре.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     }

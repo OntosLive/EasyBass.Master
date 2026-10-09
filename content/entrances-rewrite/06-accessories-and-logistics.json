@@ -12,7 +12,10 @@
           "lead": "Если нужен смычок под уже знакомый инструмент, обсудим баланс, школу держания и возможность личной пробы.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старому контрабасу нужен смычок, который свободно начинает звук. Вес, баланс и волос лучше почувствовать на своём инструменте.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-nemetskiy-kontrabasnyy-smychok-v-moskve",
@@ -20,7 +23,10 @@
           "lead": "Если играете немецкой системой, можно обсудить подходящие смычки и знакомство с ними.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Немецкий смычок выбирают по балансу и удобству колодки. Знакомую оркестровую фразу полезно сыграть до решения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kupit-frantsuzskiy-smychok-dlya-kontrabasa",
@@ -28,7 +34,10 @@
           "lead": "Если нужна французская колодка, уточним ваш опыт и возможность подобрать конкретный смычок.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Французский смычок должен естественно лежать в руке и отвечать на штрих. Это лучше проверить с вашим контрабасом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroit-kontrabas-pod-nemetskiy-smychok",
@@ -36,7 +45,10 @@
           "lead": "Если нынешний инструмент тяжело отвечает при немецкой технике, обсудим акустическую подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При немецкой системе важно, как инструмент принимает тихую атаку. Струны и подставку можно подготовить под ваш смычок.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroit-kontrabas-pod-frantsuzskiy-smychok",
@@ -44,7 +56,10 @@
           "lead": "Если атака требует избыточного усилия, можно исследовать инструмент именно с вашей техникой.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Французская техника по-своему ощущает сопротивление струны. Акустическую настройку можно связать с вашим штрихом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "perevolosit-kontrabasnyy-smychok",
@@ -52,7 +67,10 @@
           "lead": "Если волос изношен или потерял захват, расскажите о смычке: обсудим возможный маршрут обслуживания.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Свежий волос возвращает смычку привычный захват струны. Обслуживание лучше начинать с состояния самого смычка.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-kolodki-kontrabasnogo-smychka",
@@ -60,7 +78,10 @@
           "lead": "При повреждении колодки нужен осмотр конкретного смычка. Уточним, какую работу можно выполнить.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Колодка отвечает за баланс и удержание смычка. Если она повреждена, нужно сохранить геометрию и свободный ход.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-trosti-kontrabasnogo-smychka",
@@ -68,7 +89,10 @@
           "lead": "Если смычок получил повреждение, его можно сначала показать мастерам, прежде чем решать судьбу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Трость хранит упругость и баланс смычка. Повреждение требует предметного осмотра, прежде чем выбирать работу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "smychok-dlya-solnoy-programmy-kontrabasa",
@@ -76,7 +100,10 @@
           "lead": "При подготовке сольного репертуара полезно попробовать подходящий смычок на вашем инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для сольной программы удобство смычка слышно в длинной фразе и быстрых штрихах. Проба на своей пьесе многое покажет.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "smychok-dlya-orkestrovogo-kontrabasa",
@@ -84,7 +111,10 @@
           "lead": "В длинной оркестровой работе баланс и отклик имеют значение. Обсудим возможное знакомство со смычками.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В оркестре смычок работает часами. Его баланс и уверенное начало ноты важнее случайного названия модели.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kanifol-dlya-kontrabasnogo-smychka-kupit",
@@ -92,7 +122,10 @@
           "lead": "Если привычная канифоль не устраивает, можно уточнить тип смычка, струны и нужный отклик.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Канифоль меняет захват волоса и характер начала звука. Выбор лучше связать с вашим смычком и комплектом струн.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-starogo-kontrabasa-musima",
@@ -100,7 +133,10 @@
           "lead": "При смене струн на Musima учитывают конкретный инструмент. Обсудим комплект и настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старая Musima может совсем иначе отвечать на новый комплект. Натяжение струн стоит подбирать под её корпус и гриф.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-kontrabasa-moskvich",
@@ -108,7 +144,10 @@
           "lead": "Если хотите поменять струны на «Москвиче», обсудим игровую задачу и подготовку инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На «Москвиче» струны и высота особенно заметно меняют усилие левой руки. Комплект можно подобрать вместе с настройкой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-cheshskogo-kontrabasa",
@@ -116,7 +155,10 @@
           "lead": "У чешских инструментов разный размер и настройка. Поможем обсудить подходящий комплект.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У чешского инструмента важны реальная мензура, состояние подставки и ваша манера игры. По ним выбирают струны.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-rubner-kontrabasa",
@@ -124,7 +166,10 @@
           "lead": "Если меняете комплект на Rubner, важно сохранить привычный отклик. Обсудим строй и задачу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для Rubner комплект стоит подбирать по строю и акустическому характеру конкретного инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "orkestrovye-struny-dlya-kontrabasa-kupit",
@@ -132,7 +177,10 @@
           "lead": "Нужен комплект под регулярную смычковую работу? Обсудим инструмент, строй и предпочтения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Оркестровые струны должны уверенно отвечать на тихий смычок. Комплект и настройку лучше рассматривать вместе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-solnogo-stroya-kupit",
@@ -140,7 +188,10 @@
           "lead": "Если играете в сольном строе, уточним нужный комплект и его совместимость с контрабасом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Сольный строй требует других рабочих натяжений. Подходящий комплект поможет инструменту сохранить певучий ответ.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nizkonatyazhnye-struny-dlya-kontrabasa",
@@ -148,7 +199,10 @@
           "lead": "Если струны тяжело прижимать, можно обсудить более подходящий комплект и регулировку инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Меньшее натяжение может облегчить пальцам работу, но звучание тоже меняется. Комплект нужно слышать на конкретном басе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-dzhazovogo-pitstsikato",
@@ -156,7 +210,10 @@
           "lead": "Если играете пальцами, выбор струн связан с высотой, атакой и характером инструмента. Обсудим комплект.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для джаза струна должна свободно отвечать пальцу и держать понятный низ. Натяжение связано с рабочей высотой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-rokabilli-i-slepa",
@@ -164,7 +221,10 @@
           "lead": "Нужен иной отклик для слэпа? Можно обсудить струны и подготовку своего контрабаса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Слэп требует своего характера отскока. Струны и настройку удобно выбирать под реальное движение правой руки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "perestavit-struny-na-kontrabase-dlya-solo",
@@ -172,7 +232,10 @@
           "lead": "Если меняете оркестровый строй на сольный, обсудим комплект и настройку инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "При переходе на сольный строй важны не только новые струны, но и отклик подставки и корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "zamenit-struny-na-starinnom-kontrabase",
@@ -180,7 +243,10 @@
           "lead": "Для старого инструмента можно обсудить совместимый комплект и подготовку без поспешного вмешательства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На старинном инструменте новый комплект должен бережно согласоваться с его конструкцией и привычным звуком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "shpil-dlya-kontrabasa-kupit",
@@ -188,7 +254,10 @@
           "lead": "Если прежний шпиль неудобен или повреждён, уточним конструкцию инструмента и возможную замену.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Шпиль определяет высоту и опору контрабаса. Подходящий механизм делает посадку устойчивее в вашей игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "remont-shpilya-kontrabasa",
@@ -196,7 +265,10 @@
           "lead": "Когда опора не фиксируется, привезите контрабас на осмотр механизма.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если шпиль не фиксируется, играть спокойно трудно. Опору можно проверить и вернуть ей надёжный ход.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kolkovaya-mehanika-rubner-dlya-kontrabasa",
@@ -204,7 +276,10 @@
           "lead": "Ищете именно механику Rubner? Уточним размеры, тип и совместимость с вашим корпусом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Механика Rubner имеет разные исполнения. Перед подбором важно знать тип крепления и размеры колковой коробки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "zamena-kolkovoy-mehaniki-na-moskviche",
@@ -212,7 +287,10 @@
           "lead": "Если старые колки плохо работают, можно обсудить ремонт или замену подходящего комплекта.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На старом «Москвиче» новая механика должна подходить корпусу. Можно оценить крепление и ход существующих колков.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "zvukosnimatel-dlya-kontrabasa-pitstsikato",
@@ -220,7 +298,10 @@
           "lead": "Если выходите на сцену с акустическим басом, обсудим звукосниматель и рабочую настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для пиццикато звукосниматель должен передавать атаку и низ без лишних призвуков. Установка связана с подставкой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "zvukosnimatel-dlya-rokabilli-kontrabasa",
@@ -228,7 +309,10 @@
           "lead": "Для слэпа важно передать и низ, и атаку. Уточним вашу сценическую цепочку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В рокабилли слышны и басовая нота, и удар слэпа. Сигнал со звукоснимателя нужно настроить под обе составляющие.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "chehol-dlya-starogo-bolshogo-kontrabasa",
@@ -236,7 +320,10 @@
           "lead": "Если обычный чехол не подходит по плечам или длине, обсудим размеры конкретного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старому большому корпусу нужен чехол по реальным плечам и длине. Номинальный размер может не совпасть.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "chehol-dlya-kontrabasa-moskvich",
@@ -244,7 +331,10 @@
           "lead": "При выборе чехла важны реальные габариты «Москвича». Можно обсудить измерение корпуса.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "У «Москвича» габариты зависят от конкретного выпуска. Чехол лучше подбирать по меркам самого инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "telezhka-dlya-perevozki-tyazhelogo-kontrabasa",
@@ -252,7 +342,10 @@
           "lead": "Если инструмент сложно носить, поговорим о транспортировке и подходящем приспособлении.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Тележка помогает перевозить тяжёлый контрабас, сохраняя удобство рук для самой музыки. Важны опора и размеры корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
@@ -266,7 +359,10 @@
           "lead": "Контрабас большой и хрупкий. Обсудим конкретный инструмент, упаковку и возможный способ отправки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Контрабас можно отправить из Москвы по России. Для конкретного корпуса подбирают защиту, перевозку и условия передачи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "perevozka-kontrabasa-po-moskve",
@@ -274,7 +370,10 @@
           "lead": "Если инструмент нужно переместить в пределах города, обсудим размер корпуса, упаковку и нужный маршрут.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "По Москве контрабасу нужны аккуратная перевозка и подходящий транспорт. Высота корпуса и время встречи важны заранее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dostavka-kontrabasa-do-kontsertnoy-ploschadki",
@@ -282,7 +381,10 @@
           "lead": "Площадка, время заноса и размер инструмента влияют на передачу. Уточним условия заранее.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К сцене инструмент должен приехать до музыканта и успеть настроиться. Доставку можно связать с графиком репетиции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "dostavka-kontrabasa-v-studiyu-zvukozapisi",
@@ -290,7 +392,10 @@
           "lead": "Если инструмент нужен к началу сессии, обсудим репетицию, транспорт и время настройки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К записи контрабас важно привезти с запасом времени на строй и знакомство с помещением. Маршрут можно согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-v-poezdku-na-poezde",
@@ -298,7 +403,10 @@
           "lead": "Если везёте большой инструмент поездом, можно обсудить защиту корпуса и варианты временной аренды на месте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В поездке на поезде басу нужна защита корпуса и грифа. Иногда удобнее познакомиться с инструментом уже на месте.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-gastroley-bez-svoego-instrumenta",
@@ -306,7 +414,10 @@
           "lead": "Когда свой инструмент остаётся дома, можно обсудить знакомство с контрабасом на месте выступления.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если свой контрабас остаётся дома, для гастролей можно обсудить аренду местного инструмента и время на привыкание.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "chehol-dlya-dalnih-perevozok-kontrabasa",
@@ -314,7 +425,10 @@
           "lead": "Если обычная защита не устраивает, расскажите о корпусе и способе поездок. Обсудим варианты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для дальнего пути чехол или футляр выбирают по реальным размерам и рискам перевозки конкретного корпуса.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "perevozka-starinnogo-kontrabasa",
@@ -322,7 +436,10 @@
           "lead": "Для редкого инструмента подготовка к дороге особенно важна. Можно проконсультироваться с мастерской о его состоянии.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старинный контрабас требует особенно бережной дороги. Состояние швов и защита деки здесь имеют значение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-aviatsionnoy-perevozki",
@@ -330,7 +447,10 @@
           "lead": "Если после полёта появились новые проблемы, привозите инструмент на осмотр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После перелёта инструмент стоит услышать и проверить по швам, подставке и строю. При повреждении возможен ремонт.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-zimney-perevozki",
@@ -338,7 +458,10 @@
           "lead": "Резкая смена температуры может изменить состояние корпуса. Можно оценить инструмент после поездки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После зимней перевозки корпус и швы могут реагировать на смену температуры. Инструмент можно привести к рабочему состоянию.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "hranenie-kontrabasa-posle-pereezda",
@@ -346,7 +469,10 @@
           "lead": "Если инструмент пока не используется, обсудим осмотр и разумные условия дальнейшего хранения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если после переезда контрабас пока не играет, важно сохранить корпус и гриф в подходящей среде хранения.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-ne-pomeschaetsya-v-mashinu",
@@ -354,7 +480,10 @@
           "lead": "Если перевозка стала постоянной проблемой, можно обсудить более удобную геометрию или временный инструмент на месте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда бас не входит в машину, размер и форма корпуса становятся практической задачей. Можно обсудить перевозку или аренду.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "otpravit-kontrabas-s-chehlom-i-smychkom",
@@ -362,7 +491,10 @@
           "lead": "Если передаётся комплект, важно согласовать упаковку всех предметов. Обсудим детали.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Вместе с контрабасом часто едут смычок и чехол. Для каждого предмета важно выбрать безопасный способ передачи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-dolgogo-hraneniya-na-balkone",
@@ -370,7 +502,10 @@
           "lead": "Если инструмент много лет подвергался перепадам температуры, сначала нужен осмотр состояния.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Долгое хранение на балконе может сказаться на швах и грифе. Перед возвращением к игре инструмент лучше увидеть целиком.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-sezon-v-drugom-gorode",
@@ -378,7 +513,10 @@
           "lead": "Если едете работать в другом городе, можно обсудить временный доступ вместо перевозки собственного инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На сезон в другом городе можно взять подходящий контрабас на время, не перевозя собственный между концертами.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "poluchit-kontrabas-iz-moskvy-po-dogovorennosti",
@@ -386,7 +524,10 @@
           "lead": "Если нашли интересный инструмент в мастерской, детали передачи согласуются после знакомства с экземпляром.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Передача контрабаса из Москвы начинается с знакомства с конкретным инструментом, затем согласуются дорога и получение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }

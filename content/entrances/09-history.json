@@ -10,7 +10,10 @@
       "open_question": "Какие фотографии корпуса и конструктивных деталей у вас есть для первого осмотра?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Старинный контрабас без этикетки всё равно хранит свою историю в конструкции, древесине и следах прежних ремонтов.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "opredelit-mastera-kontrabasa-po-fotografii",
@@ -20,7 +23,10 @@
       "open_question": "Какие детали инструмента вы можете сфотографировать и есть ли известная история владения?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "По фотографии можно увидеть форму и отдельные признаки инструмента. Историю мастера лучше связывать с самим корпусом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "etiketka-vnutri-kontrabasa",
@@ -30,7 +36,10 @@
       "open_question": "Что написано на этикетке и сохранились ли другие документы об инструменте?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Этикетка интересна как свидетельство, но происхождение контрабаса подтверждают также устройство и его история.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "nomer-kontrabasa-v-kollektsii",
@@ -40,7 +49,10 @@
       "open_question": "Есть ли у вашего инструмента прежние номера или записи, по которым можно восстановить историю?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Номер в частной коллекции сохраняет жизнь конкретного инструмента: звук, владельцев, ремонты и встречи.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "istoriya-restavratsiy-kontrabasa",
@@ -50,7 +62,10 @@
       "open_question": "Какие работы над инструментом известны вам и когда они выполнялись?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "История реставраций помогает понять, какие части корпуса изменялись и как сегодня отвечает контрабас.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "moskovskie-mastera-kontrabasov",
@@ -60,7 +75,10 @@
       "open_question": "Вы ищете сведения об определённом мастере или хотите сравнить инструменты московской работы?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В Москве работали разные мастерские и фабрики. Их инструменты интереснее всего узнавать по конструкции и живому голосу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "italyanskiy-kontrabas-proishozhdenie",
@@ -70,7 +88,10 @@
       "open_question": "Есть ли подтверждённые сведения о конкретном итальянском инструменте, который вас заинтересовал?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Итальянское происхождение требует предметного исследования, а не одной красивой этикетки. Начать можно с корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "nemetskiy-kontrabas-istoriya-i-konstruktsiya",
@@ -80,7 +101,10 @@
       "open_question": "Вы рассматриваете конкретный контрабас с известным происхождением или пока ищете школу изготовления?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "У немецкого контрабаса могут быть разные школа, эпоха и мастерская. Конструкция и нынешнее звучание раскрывают различия.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "cheshskiy-manufakturnyy-kontrabas",
@@ -90,7 +114,10 @@
       "open_question": "Какой чешский инструмент или изготовитель вас интересует и для какой игры он нужен?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Чешский мануфактурный инструмент узнают по фабричной традиции, но его нынешний характер складывается из целой жизни.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "fabrichnyy-kontrabas-nachala-xx-veka",
@@ -100,7 +127,10 @@
       "open_question": "Известны ли изготовитель и приблизительное десятилетие создания рассматриваемого экземпляра?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Фабричный контрабас начала прошлого века сохранил следы многих рук. Его состояние и звук важнее возраста на бумаге.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-neizvestnogo-goda-izgotovleniya",
@@ -110,7 +140,10 @@
       "open_question": "Какие признаки позволили вам предположить возраст контрабаса и есть ли старые фотографии?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если точный год неизвестен, историю инструмента можно начать по его конструкции, лаку и следам прежней работы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "frantsuzskiy-kontrabas-masterskaya-traditsiya",
@@ -120,7 +153,10 @@
       "open_question": "Что именно привлекает вас во французском контрабасе: происхождение, конструкция или опыт игры?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Французская традиция имеет свои формы и пропорции корпуса. Происхождение конкретного контрабаса стоит исследовать отдельно.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "starinnyy-kontrabas-posle-peredelki",
@@ -130,7 +166,10 @@
       "open_question": "Какие вмешательства видны на инструменте и есть ли сведения о времени их выполнения?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После переделки старинный контрабас соединяет прежний корпус с новой геометрией грифа. Обе части важны для его истории.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "staraya-etiketka-na-kontrabase",
@@ -140,7 +179,10 @@
       "open_question": "Какие именно надписи вы видите и согласуются ли они с известной историей инструмента?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Старая этикетка не обязана совпадать с реальным возрастом корпуса. Её можно сопоставить с конструкцией инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-s-sohranivshimsya-starym-lakom",
@@ -150,7 +192,10 @@
       "open_question": "Что вас беспокоит в покрытии: повреждение, внешний вид или желание сохранить его подлинность?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Сохранённый старый лак является частью жизни корпуса. При знакомстве важны и его состояние, и звучание.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "starinnyy-kontrabas-s-zamenennym-grifom",
@@ -160,7 +205,10 @@
       "open_question": "Известно ли, когда меняли гриф и какие исполнительские задачи этим решали?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Новый гриф меняет игровую геометрию старого инструмента. Историю корпуса и переделки лучше рассматривать вместе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-s-orkestrovoy-biografiey",
@@ -170,7 +218,10 @@
       "open_question": "Какие оркестры или музыканты действительно связаны с этим инструментом по документам?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "У оркестрового контрабаса история слышна в звуке и видна по износу, настройкам и следам больших сцен.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "masterskoy-nomer-na-kontrabase",
@@ -180,7 +231,10 @@
       "open_question": "Есть ли у вас номер, по которому можно найти прежнюю запись об инструменте?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Мастерской номер может быть связан с изготовлением, ремонтом или учётом. Его смысл ищут в истории самого корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-sohranit-biografiyu-kontrabasa",
@@ -190,7 +244,10 @@
       "open_question": "Какие события жизни контрабаса вы можете восстановить уже сейчас?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Биографию контрабаса можно сохранять через фотографии, записи звука, сведения о мастерах и владельцах.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-s-istoriey-neskolkih-vladeltsev",
@@ -200,7 +257,10 @@
       "open_question": "Какие прежние владельцы действительно известны и какие документы подтверждают переходы инструмента?",
       "group": "Происхождение и история",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Несколько владельцев оставляют инструменту многослойную историю. Он остаётся одним конкретным контрабасом со своим голосом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }

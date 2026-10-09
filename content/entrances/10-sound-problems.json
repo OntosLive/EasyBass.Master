@@ -10,7 +10,10 @@
       "open_question": "На какой ноте возникает неустойчивость и меняется ли она с силой смычка?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Волчья нота проявляется на определённой высоте и при знакомом штрихе. Её можно услышать вместе и искать подходящую настройку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-stal-zvuchat-gluho",
@@ -20,7 +23,10 @@
       "open_question": "Когда звук стал глуше и проводились ли перед этим настройки или перевозка?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если контрабас стал глухим, иногда меняются струны, положение подставки и душки. Звучание можно восстановить настройкой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-zvuchit-slishkom-yarko",
@@ -30,7 +36,10 @@
       "open_question": "Где яркость мешает сильнее: на записи, в зале или непосредственно под ухом?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Слишком яркий звук может утомлять под смычком. Характер атаки можно смягчить подбором струн и работой с подставкой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "slabyy-zvuk-na-odnoy-strune-kontrabasa",
@@ -40,7 +49,10 @@
       "open_question": "Какая струна звучит слабее и одинаково ли это при смычке и пиццикато?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Когда одна струна выпадает из общего звука, важно сравнить её отклик с соседними. Настройка затрагивает весь инструмент.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-nerovno-zvuchit-po-registram",
@@ -50,7 +62,10 @@
       "open_question": "В каком регистре контрабас кажется вам менее устойчивым и при какой динамике?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Неровность между регистрами слышна в одной гамме. Баланс можно искать через струны, подставку и душку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-ne-stroit-v-vysokih-pozitsiyah",
@@ -60,7 +75,10 @@
       "open_question": "Какие позиции вызывают устойчивое отклонение и наблюдалось ли оно на другом контрабасе?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В высоких позициях интонация зависит и от ровности накладки, и от высоты струн. Эти детали можно привести в порядок.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "struny-drebezzhat-pri-pitstsikato",
@@ -70,7 +88,10 @@
       "open_question": "На каких нотах и с какой силой пиццикато возникает дребезг?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Дребезг при пиццикато часто связан с движением струны над накладкой. Рабочую высоту можно настроить под вашу атаку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-shumit-na-zapisi",
@@ -80,7 +101,10 @@
       "open_question": "Шум появляется при любом звуке или только при определённых нотах и движениях?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Лишний шум в микрофоне бывает слышнее, чем в комнате. Подготовку можно начать с призвуков грифа и корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "niz-kontrabasa-teryaetsya-v-ansamble",
@@ -90,7 +114,10 @@
       "open_question": "В каком составе вы играете и какие фразы чаще всего исчезают из общего звучания?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В ансамбле низ должен сохранять ясную атаку, даже когда вокруг много звука. Инструмент можно подготовить под ваш состав.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-ploho-slyshno-v-orkestre",
@@ -100,7 +127,10 @@
       "open_question": "Какая оркестровая фактура мешает вам чувствовать присутствие собственного контрабаса?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Оркестровый бас должен отвечать на смычок в группе без лишнего давления. Акустическую настройку можно проверить на партии.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-ploho-zvuchit-v-malenkoy-komnate",
@@ -110,7 +140,10 @@
       "open_question": "Какая именно нота или часть диапазона звучит дома иначе, чем в большом пространстве?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В маленькой комнате низкие ноты слышатся иначе. При знакомстве полезно различить акустику помещения и голос инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "silnyy-rezonans-odnoy-noty-kontrabasa",
@@ -120,7 +153,10 @@
       "open_question": "На какой ноте возникает резонанс и повторяется ли он в разных помещениях?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Одна слишком резонансная нота нарушает ровную линию баса. Её можно найти в игре и настроить баланс корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "trudno-igrat-tiho-na-kontrabase",
@@ -130,7 +166,10 @@
       "open_question": "При каком штрихе или на какой струне тихий звук возникает с наибольшим трудом?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Тихая игра требует свободного начала ноты. Струны, подставка и акустический отклик связаны с этим движением.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "trudno-igrat-bystryy-shtrih-na-kontrabase",
@@ -140,7 +179,10 @@
       "open_question": "В какой части смычка и на каком темпе движение перестаёт быть свободным?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Быстрый штрих проявляет лишнее сопротивление струны. Инструмент можно подготовить к лёгкой атаке и ровному отклику.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "zvuk-teryaetsya-v-verhnih-pozitsiyah-kontrabasa",
@@ -150,7 +192,10 @@
       "open_question": "На какой струне и с какой позиции начинается потеря устойчивости звука?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если в верхних позициях звук быстро гаснет, стоит услышать этот участок на вашем контрабасе и настроить отклик.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "raznye-struny-kontrabasa-zvuchat-neodinakovo",
@@ -160,7 +205,10 @@
       "open_question": "Между какими струнами переход звучит особенно резко или неудобно?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Четыре струны должны складываться в один голос. Их баланс зависит от комплекта, подставки и настройки корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-posle-zameny-strun-zvuchit-inache",
@@ -170,7 +218,10 @@
       "open_question": "Что изменилось сильнее всего: удобство, тембр, громкость или устойчивость атаки?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После замены струн контрабас иногда звучит совсем иначе. Новый комплект можно согласовать с его акустической работой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-stal-zvuchat-huzhe-posle-nastroyki-podstavki",
@@ -180,7 +231,10 @@
       "open_question": "Какие работы проводились с подставкой и что вы услышали сразу после них?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Подставка меняет передачу звука и удобство грифа. Если после её настройки стало хуже, можно вернуть нужный баланс.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-zvuchit-s-hripom",
@@ -190,7 +244,10 @@
       "open_question": "Хрип появляется на всех нотах или привязан к определённой струне и регистру?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Хрип в звуке может приходить от струны, детали корпуса или накладки. Важно услышать его на конкретной ноте.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-slishkom-tyazhelyy-dlya-muzykanta",
@@ -200,7 +257,10 @@
       "open_question": "Что устаёт раньше всего: спина, плечо, левая рука или ноги?",
       "group": "Звучание и исполнительские препятствия",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Тяжёлый корпус и неудобный баланс мешают свободной игре. Шпиль, посадку и возможный другой инструмент можно сравнить.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }

@@ -10,7 +10,10 @@
       "open_question": "Что вы знаете об инструменте и почему решили расстаться с ним именно сейчас?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если контрабас меняет владельца в Москве, можно начать с его состояния и истории. Мастерская готова познакомиться с инструментом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "otsenit-kontrabas-pered-prodazhey",
@@ -20,7 +23,10 @@
       "open_question": "Есть ли у вас фотографии, документы и сведения о предыдущем ремонте контрабаса?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед продажей важно услышать контрабас и увидеть корпус, гриф и следы ремонта. Это помогает говорить о конкретной цене.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vykup-kontrabasa-masterskoy",
@@ -30,7 +36,10 @@
       "open_question": "Важнее получить определённость быстро или вы готовы ждать другого маршрута продажи?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "При прямом выкупе условия зависят от инструмента и его состояния. Начать можно с предметного знакомства в мастерской.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-masterovoy-kontrabas",
@@ -40,7 +49,10 @@
       "open_question": "Сохранились ли сведения о мастере, времени изготовления и истории ремонтов?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Мастеровой контрабас стоит представлять через голос, устройство и историю. Эти качества важны будущему музыканту.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-starinnyy-kontrabas",
@@ -50,7 +62,10 @@
       "open_question": "Известно ли, откуда инструмент появился у предыдущего владельца и какие работы проводились?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Старинный инструмент сохраняет следы времени и прежней игры. При продаже важны его происхождение и нынешний звук.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-posle-obucheniya",
@@ -60,7 +75,10 @@
       "open_question": "Какой размер инструмента и сколько времени он использовался для занятий?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После окончания занятий контрабас может продолжить звучать у другого ученика. Размер и состояние помогут найти путь передачи.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-trebuyuschiy-remonta",
@@ -70,7 +88,10 @@
       "open_question": "Что именно повреждено и проводился ли уже осмотр специалистом?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Повреждённый инструмент тоже может заслуживать восстановления. Его состояние стоит оценить прежде продажи.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-s-neizvestnym-proishozhdeniem",
@@ -80,7 +101,10 @@
       "open_question": "Какие надписи или документы у вас сохранились и есть ли фотографии корпуса?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Даже без установленного изготовителя у контрабаса есть характер и конструкция. Можно показать его мастерской.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-poluchennyy-po-nasledstvu",
@@ -90,7 +114,10 @@
       "open_question": "Сохранились ли рассказы о прежнем музыканте и документы, сопровождавшие контрабас?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Семейный контрабас может хранить неизвестную историю. Начнём со сведений, которые остались, и самого инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-posle-dolgogo-hraneniya",
@@ -100,7 +127,10 @@
       "open_question": "Сколько лет контрабас не использовался и как он хранился всё это время?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После долгого хранения полезно увидеть швы, гриф и колки. Так яснее, что нужно инструменту перед передачей.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-srochno",
@@ -110,7 +140,10 @@
       "open_question": "Какой срок для вас действительно критичен и что известно о состоянии инструмента?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "При срочной продаже важны срок, конкретный экземпляр и возможные условия. Осмотр поможет понять реальный маршрут.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-pered-pereezdom",
@@ -120,7 +153,10 @@
       "open_question": "Когда предстоит переезд и можно ли увидеть инструмент до указанной даты?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед переездом контрабас можно познакомить с мастерской, согласовав время осмотра и передачу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-povrezhdennyy-kontrabas",
@@ -130,7 +166,10 @@
       "open_question": "Какая часть инструмента пострадала и можно ли показать её на фотографиях?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Повреждение меняет состояние, но не отменяет судьбу инструмента. Его можно рассмотреть как объект ремонта и передачи.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-s-dokumentami",
@@ -140,7 +179,10 @@
       "open_question": "Какие документы сохранились и совпадают ли в них номера или особые признаки инструмента?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Документы и история владения помогают точнее представить контрабас. Звучание и состояние корпуса остаются главными.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-uchenicheskiy-kontrabas",
@@ -150,7 +192,10 @@
       "open_question": "Какой у него размер и удобно ли было ученику заниматься на нём до продажи?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Ученический инструмент может понадобиться следующему музыканту. Важно показать размер и готовность к занятиям.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-bez-dokumentov",
@@ -160,7 +205,10 @@
       "open_question": "Какие сведения о покупке или прежнем владельце вы можете восстановить по памяти?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если документы не сохранились, начать можно с устройства контрабаса, его звука и следов прежней работы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-3-4",
@@ -170,7 +218,10 @@
       "open_question": "Измеряли ли вы длину звучащей струны и известен ли изготовитель контрабаса?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Три четверти встречаются у разных классов инструментов. При продаже размер важен вместе с грифом и состоянием корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-pri-smene-razmera",
@@ -180,7 +231,10 @@
       "open_question": "С какого размера вы переходите и что теперь стало неудобно в старом инструменте?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Когда ребёнок вырос из размера, прежний бас может перейти следующему ученику. Подготовка к игре помогает этому переходу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-iz-orkestra",
@@ -190,7 +244,10 @@
       "open_question": "Как давно контрабас использовался в оркестре и какие ремонтные работы ему проводили?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Оркестровый контрабас хранит опыт большой сцены. Его рабочая настройка и смычковый ответ важны новому музыканту.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "prodat-kontrabas-posle-restavratsii",
@@ -200,7 +257,10 @@
       "open_question": "Какие работы завершены и сохранились ли фотографии инструмента до реставрации?",
       "group": "Продажа владельцем и оценка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После реставрации инструмент обретает новую игровую жизнь. Историю работ и результат можно показать будущему владельцу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }

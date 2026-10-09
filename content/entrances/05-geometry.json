@@ -11,7 +11,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Размер удобнее выбирать в игре: как стоит корпус, насколько свободна левая рука и какая мензура подходит. У нас можно сравнить несколько инструментов.",
+      "bridge": "Размер контрабаса ощущается в посадке, мензуре и свободе обеих рук. Рядом можно попробовать несколько корпусов.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -24,7 +24,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Важно, как рука достаёт позиции, как стоит корпус и насколько свободно ребёнку играть. Оба размера можно попробовать рядом.",
+      "bridge": "Для выбора между 1/2 и 3/4 важно, как рука достаёт позиции и как стоит корпус. Оба размера можно попробовать рядом.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -37,7 +37,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Разницу между 3/4 и 4/4 лучше почувствовать в игре: посадка, расстояния под рукой и звук. Можно попробовать оба размера.",
+      "bridge": "Три четверти и полный размер отличаются не одной цифрой. Их удобно сравнить по звуку, посадке и привычным переходам.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -50,7 +50,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Мензура ощущается в расстояниях между позициями. В коллекции можно сравнить контрабасы с разной геометрией под вашу руку.",
+      "bridge": "Мензура задаёт расстояния между нотами. В коллекции можно сравнить разные грифы и почувствовать подходящую длину.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -63,7 +63,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "У каждого старинного и современного контрабаса свой голос и характер под рукой. Инструменты разных эпох можно послушать рядом.",
+      "bridge": "Старинный и современный контрабасы могут отвечать совсем по-разному. Звук конкретного экземпляра слышнее любой эпохи.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -76,7 +76,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "В одной коллекции можно сыграть на фабричных и мастеровых инструментах и почувствовать разницу в звуке и отклике.",
+      "bridge": "Мастеровой и мануфактурный инструмент интересны в сравнении: гриф, акустический ответ и характер корпуса важны в игре.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -89,7 +89,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Плоская и выпуклая деки по-разному устроены. Их звучание и ощущения удобнее сравнить на реальных контрабасах.",
+      "bridge": "Плоская и выпуклая деки имеют разное устройство. Их звучание лучше сравнить на конкретных инструментах.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -102,7 +102,7 @@
       "group": "Конструкция и выбор",
       "status": "ready",
       "origin": "editorial_hypothesis",
-      "bridge": "Пятая струна добавляет нижний регистр и меняет ощущение грифа. Выбор лучше сделать на вашей музыке, попробовав обе системы.",
+      "bridge": "Пять струн дают нижний регистр, но меняют ширину грифа. Обе системы можно почувствовать на знакомых партиях.",
       "bridge_model": "gpt-6",
       "bridge_status": "gpt6_draft"
     },
@@ -114,7 +114,10 @@
       "open_question": "Есть ли у вас уже конкретный инструмент, состояние которого вызывает сомнения?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перед покупкой можно увидеть состояние швов, грифа, механики и услышать контрабас целиком.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-ponyat-proishozhdenie-kontrabasa",
@@ -124,7 +127,10 @@
       "open_question": "Какие сведения о происхождении инструмента подтверждаются документами, а какие передаются устно?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Происхождение инструмента читается по конструкции, надписям и истории ремонта. Это начало знакомства с его биографией.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-vybrat-kontrabas-po-rostu",
@@ -134,7 +140,10 @@
       "open_question": "Какой у вас рост и в каких положениях на контрабасе ощущается напряжение?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Рост музыканта ещё не определяет размер контрабаса. Гораздо важнее посадка, длина руки и свобода смены позиций.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-opredelit-vozrast-kontrabasa",
@@ -144,7 +153,10 @@
       "open_question": "Что именно заставляет предполагать определённый возраст вашего контрабаса?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Возраст инструмента часто виден в конструкции и следах работы. Этикетка дополняет историю, но не рассказывает её целиком.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "forma-plech-kontrabasa-i-igra-v-vysokih-pozitsiyah",
@@ -154,7 +166,10 @@
       "open_question": "Какой диапазон вы используете и где корпус начинает мешать смене позиции?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В верхних позициях чувствуются плечи корпуса и переход к грифу. Это удобнее проверить на вашей сольной музыке.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-7-8-i-razmer-korpusa",
@@ -164,7 +179,10 @@
       "open_question": "Какой контрабас вы считаете своим ориентиром по мензуре и удобству?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "У размера 7/8 бывают разные реальные габариты. Важно примерить мензуру и корпус, а не выбирать только по обозначению.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "pyatistrunnyy-kontrabas-dlya-orkestra",
@@ -174,7 +192,10 @@
       "open_question": "Какая оркестровая программа требует расширенного нижнего регистра и в каком строе вы играете?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Пятиструнный бас даёт доступ к низким нотам партитуры. Сначала удобно почувствовать ширину грифа и ответ нижней струны.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "skripichnaya-ili-violnaya-forma-kontrabasa",
@@ -184,7 +205,10 @@
       "open_question": "Какие конструктивные особенности привлекли вас в инструменте определённой формы?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Виольная и скрипичная формы меняют доступ к верхним позициям и посадку. Разница слышна и ощущается в игре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "tolschina-grifa-kontrabasa",
@@ -194,7 +218,10 @@
       "open_question": "На каких позициях вы особенно остро ощущаете неподходящий профиль грифа?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Толщина и профиль грифа влияют на беглость. Их можно сравнить, а на своём инструменте при необходимости доработать.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-slushat-kontrabas-v-bolshom-zale",
@@ -204,7 +231,10 @@
       "open_question": "Где вы обычно выступаете и удавалось ли услышать свой инструмент из зала?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Большой зал меняет восприятие баса. Инструмент лучше услышать из пространства и под своим смычком.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-proverit-smychkovyy-otklik-kontrabasa",
@@ -214,7 +244,10 @@
       "open_question": "Какая конкретная смычковая задача стала для вас главным критерием выбора?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Смычковый отклик проявляется на тихой атаке и быстрых штрихах. Несколько контрабасов можно проверить одной фразой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-sravnit-zvuchanie-dvuh-kontrabasov",
@@ -224,7 +257,10 @@
       "open_question": "Какие различия вы хотите услышать: атаку, плотность низов, верхний регистр или удобство?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Чтобы услышать разницу двух контрабасов, достаточно одной знакомой музыки в одной комнате и времени на игру.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }

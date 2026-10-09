@@ -10,7 +10,10 @@
       "open_question": "Какой у вашего инструмента корпус и насколько часто вы переносите его вне дома?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Чехол должен защищать именно ваш корпус: длину, плечи, подставку и колковую коробку. Размер лучше снимать с инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-vybrat-chehol-dlya-kontrabasa",
@@ -20,7 +23,10 @@
       "open_question": "Вы чаще переносите контрабас пешком, в автомобиле или на общественном транспорте?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Одинаковые обозначения 3/4 не означают одинаковых габаритов. Чехол подбирают по настоящим меркам контрабаса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "telezhka-dlya-kontrabasa",
@@ -30,7 +36,10 @@
       "open_question": "Какие покрытия и лестницы встречаются на вашем обычном пути с контрабасом?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Тележка помогает везти тяжёлый корпус, сохраняя инструмент устойчивым. Важны опора, колёса и размеры.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "perevozka-kontrabasa-v-avtomobile",
@@ -40,7 +49,10 @@
       "open_question": "Какая у вас машина и в каком чехле предполагается перевозить инструмент?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В машине контрабасу нужны место для корпуса и защита грифа. Перед дорогой стоит оценить реальные габариты.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "perevozka-kontrabasa-samoletom",
@@ -50,7 +62,10 @@
       "open_question": "Каким рейсом и авиакомпанией предстоит лететь и какой кейс у вас имеется?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Перелёт требует особенно надёжной защиты корпуса и согласования способа перевозки. Можно обсудить подготовку инструмента.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "perevozka-kontrabasa-poezdom",
@@ -60,7 +75,10 @@
       "open_question": "Какой тип вагона и длительность поездки вы рассматриваете?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В поезде важно, как расположен контрабас и что защищает его деку и гриф. Габариты определяют маршрут.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "hranenie-kontrabasa-doma",
@@ -70,7 +88,10 @@
       "open_question": "Где сейчас стоит контрабас и что в этом месте вызывает сомнение?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Дома инструменту нужно устойчивое место без резких перепадов температуры и влажности. Так он дольше остаётся в строю.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vlazhnost-dlya-kontrabasa-zimoy",
@@ -80,7 +101,10 @@
       "open_question": "Есть ли у вас измерение влажности и замечали ли вы сезонные изменения в контрабасе?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Зимой сухой воздух меняет состояние деки и швов. Контрабас можно осмотреть и подготовить к отопительному сезону.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-posle-smeny-temperatury",
@@ -90,7 +114,10 @@
       "open_question": "Какой была разница температур и что изменилось сразу после переноса инструмента?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "После резкой смены температуры контрабасу лучше дать привыкнуть к помещению и проверить строй, швы и подставку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "stoyka-dlya-kontrabasa",
@@ -100,7 +127,10 @@
       "open_question": "Где будет стоять стойка и кто пользуется этим пространством?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Стойка должна удерживать большой инструмент без давления на деку и гриф. Подбирают её по корпусу и опоре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-perenosit-kontrabas-po-lestnitse",
@@ -110,7 +140,10 @@
       "open_question": "Какая у вас лестница и есть ли лифт на пути из дома до репетиции?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На лестнице важны свободные руки и защита широкого корпуса. Чехол и способ переноса можно подобрать под ваш маршрут.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "shpil-dlya-kontrabasa",
@@ -120,7 +153,10 @@
       "open_question": "Какую высоту инструмента вы используете и что неудобно в нынешнем шпиле?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Шпиль помогает найти высоту и устойчивость корпуса в игре. Его устройство и длину выбирают по посадке.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "podstavka-dlya-hraneniya-kontrabasa",
@@ -130,7 +166,10 @@
       "open_question": "Как сейчас хранится инструмент и почему вы хотите изменить это место?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для хранения контрабасу нужна надёжная опора, которая не нагружает хрупкие части корпуса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "futlyar-dlya-kontrabasnogo-smychka",
@@ -140,7 +179,10 @@
       "open_question": "Вы носите смычок отдельно или хотите разместить его вместе с контрабасным чехлом?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Футляр смычка защищает трость и колодку в дороге. Важно, чтобы смычок входил без усилия и лишнего люфта.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-na-vyezdnoy-repetitsii",
@@ -150,7 +192,10 @@
       "open_question": "Где будет проходить репетиция и кто отвечает за инструмент между занятиями?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На выездной репетиции инструменту нужны доставка, время на настройку и привычная высота струн.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-na-ulitse-zimoy",
@@ -160,7 +205,10 @@
       "open_question": "Сколько времени инструмент проводит на холоде и какие изменения вы уже замечали?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На улице зимой контрабас сталкивается с резким перепадом температуры. Корпус и швы требуют бережного обращения.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-kino-i-semok",
@@ -170,7 +218,10 @@
       "open_question": "Контрабас будет использоваться в игре или только присутствовать в кадре?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для съёмок стоит заранее различить рабочий инструмент и предмет в кадре. От этого зависит настройка и передача.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-na-tesnoy-stsene",
@@ -180,7 +231,10 @@
       "open_question": "Каков размер сцены и кто будет находиться рядом с контрабасистом?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На тесной сцене важны положение шпиля, свободный ход смычка и место для корпуса. Инструмент можно подготовить.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-izmerit-kontrabas-dlya-chehla",
@@ -190,7 +244,10 @@
       "open_question": "Есть ли у вас измерения высоты корпуса и его ширины в плечах?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Мерки для чехла снимают по корпусу, плечам, колковой коробке и общей длине, а не только по дроби размера.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-dlya-dlitelnyh-poezdok",
@@ -200,7 +257,10 @@
       "open_question": "Как часто вы перемещаетесь с контрабасом и какой транспорт используете?",
       "group": "Хранение и перевозка",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В долгой поездке важна надёжная защита и возможность играть сразу после дороги. Чехол и настройка работают вместе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }

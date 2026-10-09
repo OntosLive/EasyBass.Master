@@ -17,7 +17,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Чешская Cremona и Strunal связаны общей производственной историей. Выбирать стоит по конкретному корпусу и сегодняшнему звуку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "chto-takoe-musima-na-kontrabase",
@@ -34,7 +37,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Musima знакома многим музыкантам как немецкий фабричный контрабас. У каждого экземпляра своя настройка, гриф и голос.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "strunal-cremona-5-5wa",
@@ -51,7 +57,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Обозначение Strunal/Cremona 5/5WA имеет смысл сверять с реальным инструментом, его размером и состоянием.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "strunal-cremona-50-1-d",
@@ -68,7 +77,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Для Cremona 50/1 D важен конкретный выпуск. Цифры модели не заменяют звук и ощущение грифа в игре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "cheshskiy-kontrabas-i-nemetskiy-kontrabas",
@@ -85,7 +97,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Немецкий и чешский контрабасы могут отличаться школой корпуса, но характер определяет конкретный инструмент.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "cheshskaya-cremona-i-bolgarskaya-kremona",
@@ -102,7 +117,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Похожие имена Cremona и Kremona относятся к разным производственным историям. Конструкцию лучше изучать вместе с этикеткой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "hora-kontrabas-iz-rumynii",
@@ -119,7 +137,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Румынская HORA встречается в разных размерах и конфигурациях. Инструмент стоит оценивать по своей музыкальной задаче.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "hora-master-gamba",
@@ -136,7 +157,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Название HORA Master Gamba описывает конкретную линию. Важно проверить размер, форму и реальную подготовку экземпляра.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "hora-student-flat-back",
@@ -153,7 +177,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Для HORA Student Flat Back важна работа ученического грифа и удобство корпуса, а не только обозначение модели.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "gewa-germania-i-gewa-premium",
@@ -170,7 +197,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "У GEWA Germania и Premium различаются линии изготовления. Сравнение по названию стоит дополнить живой игрой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "gewa-maestro-rubner",
@@ -187,7 +217,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Сочетание GEWA Maestro Rubner требует точного понимания модели и происхождения. Этикетка и корпус рассматриваются вместе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "stentor-student-ii-dlya-kontrabasa",
@@ -204,7 +237,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "У Stentor Student II важнее всего реальная геометрия и настройка ученического экземпляра. Марка не гарантирует удобства.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "eastman-vb65-i-vb305",
@@ -221,7 +257,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Eastman VB65 и VB305 относятся к разным обозначениям. Звук, гриф и состояние конкретных инструментов сравнивают отдельно.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "eastman-vb605-i-forma-busan",
@@ -238,7 +277,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "В Eastman VB605 и исполнении формы Busan важно не смешивать модель и очертания корпуса. Выбор остаётся за живым инструментом.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "yamaha-silent-bass-i-obychnyy-kontrabas",
@@ -255,7 +297,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Yamaha SILENT Bass решает задачу другой звуковой и физической системы. С акустическим контрабасом её лучше сравнить в игре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "h-fner-h5-7-i-razmery-korpusa",
@@ -272,7 +317,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "У Höfner H5/7 размер корпуса и исполнение связаны с конкретной моделью. Удобство лучше проверять на экземпляре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "moskvich-kontrabas-4-4",
@@ -289,7 +337,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "У большого «Москвича» важны настоящий корпус, мензура и подготовка грифа. Полный размер ощущается не по названию.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "nemetskiy-kontrabas-gdr",
@@ -306,7 +357,10 @@
         "manufacturer-hora",
         "ru-retailer",
         "ru-market-listing"
-      ]
+      ],
+      "bridge": "Немецкие контрабасы эпохи ГДР сохранились в разном состоянии. Их звук и исторический путь раскрываются в каждом экземпляре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }

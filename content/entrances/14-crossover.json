@@ -16,7 +16,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Первая встреча бас-гитариста с контрабасом начинается с нового корпуса, расстояний между нотами и живого отклика струны.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "s-bas-gitary-na-kontrabas-dlya-dzhaza",
@@ -32,7 +35,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Переход в джазе открывает акустическое пиццикато и другую работу левой руки. Знакомую линию можно сыграть на контрабасе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "elektrobas-i-kontrabas-v-odnom-sostave",
@@ -48,7 +54,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "В одном составе электро- и контрабас решают разные музыкальные задачи. Их характер лучше услышать рядом в вашей музыке.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "bezladovaya-bas-gitara-i-kontrabas",
@@ -64,7 +73,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Безладовый бас знакомит с непрерывной интонацией, но у контрабаса другая геометрия, корпус и смычковая возможность.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "chto-takoe-elektrokontrabas",
@@ -80,7 +92,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Электроконтрабас сохраняет вертикальную технику в другом корпусе. Сравнить его с акустическим лучше по ощущениям игры.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "elektrokontrabas-protiv-akusticheskogo",
@@ -96,7 +111,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Акустический контрабас отвечает всем корпусом, а электрический иначе передаёт вибрацию. Оба пути имеют свою музыку.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-bas-gitaristu-privyknut-k-kontrabasnoy-menzure",
@@ -112,7 +130,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "После ладового баса новая мензура чувствуется в первых позициях. Подходящий контрабас можно выбрать по свободе руки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "slep-na-kontrabase-i-slep-na-bas-gitare",
@@ -128,7 +149,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Слэп на контрабасе связан с упругостью струны и работой корпуса. Настройка отличается от электробасовой техники.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "rokabilli-kontrabas-dlya-bas-gitarista",
@@ -144,7 +168,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Для бас-гитариста в рокабилли важны свободная струна и удобная высота под слэп. Инструмент можно подготовить.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "pitstsikato-na-kontrabase-posle-elektrobasa",
@@ -160,7 +187,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Пиццикато на контрабасе рождается другой атакой и отдачей корпуса. Привычный грув помогает услышать разницу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-basistu-vpervye-vzyat-kontrabasnyy-smychok",
@@ -176,7 +206,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Смычок открывает бас-гитаристу новую связь руки и звука. Подходящий инструмент должен легко отвечать на первую ноту.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabasnaya-partiya-posle-bas-gitary",
@@ -192,7 +225,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Электробасовую партию можно перенести на контрабас, но изменятся артикуляция, длительность ноты и ощущение грифа.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "bas-gitara-ili-kontrabas-dlya-zapisi",
@@ -208,7 +244,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Для записи у электробаса и контрабаса разные голоса. Выбор проще сделать по музыке и тому, как низ работает в аранжировке.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "mozhno-li-igrat-kontrabas-cherez-basovyy-kombik",
@@ -224,7 +263,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "С басовым комбиком контрабасу нужен подходящий вход и чистый сигнал. Звукосниматель и усиление лучше согласовать вместе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "peza-ili-magnit-na-kontrabas",
@@ -240,7 +282,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Пьезодатчик и магнитная система по-разному передают атаку и струну. Подходящий вариант зависит от вашей сценической игры.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "neylonovye-struny-i-kontrabasnyy-slep",
@@ -256,7 +301,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Для рокабилли важны ощущение струны и свободный слэп. Материал комплекта выбирают вместе с рабочей высотой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabas-i-bezladovyy-bas-intonatsiya",
@@ -272,7 +320,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Безладовый бас и контрабас оба требуют слуха, но движение руки и точка опоры различаются. Это заметно с первой фразы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "pereyti-na-kontrabas-posle-violoncheli",
@@ -288,7 +339,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "После виолончели контрабас открывает больший корпус и иные расстояния. Знакомую смычковую музыку можно сыграть для сравнения.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kontrabasist-igraet-na-bas-gitare",
@@ -304,7 +358,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Контрабасисту на бас-гитаре придётся иначе ощущать струны и артикуляцию. Опыт басового слуха остаётся с вами.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "chem-kontrabas-otlichaetsya-ot-bas-gitary",
@@ -320,7 +377,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Бас-гитара даёт электрический звук и иной корпус, контрабас отвечает всей древесиной. Разница особенно слышна в живой комнате.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kak-uslyshat-kontrabasnyy-zvuk-na-bezlade",
@@ -336,7 +396,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Безлад можно приблизить к акустической манере, но контрабасный корпус звучит иначе. Эти инструменты интересно сравнить.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "rokabilli-i-kontrabas-v-odnoy-gruppe",
@@ -352,7 +415,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "В рокабилли бас держит пульс и работает на сцене телом. Удобство слэпа зависит от настройки настоящего контрабаса.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "cheshskiy-kontrabas-glazami-bas-gitarista",
@@ -368,7 +434,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "Чешский контрабас после электрического баса важно почувствовать в пиццикато: струна, гриф и корпус дают новую отдачу.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "kupit-kontrabas-posle-rokabilli-na-elektrobase",
@@ -384,7 +453,10 @@
         "ru-electric-upright",
         "ru-bows-slap",
         "ru-crossover-strings"
-      ]
+      ],
+      "bridge": "После рокабилли на электробасе можно перейти к акустическому инструменту, подготовленному под привычный ритм и слэп.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }

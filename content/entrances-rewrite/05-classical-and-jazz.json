@@ -12,7 +12,10 @@
           "lead": "Для плотной оркестровой группы важны отклик и нижний регистр. Можно познакомиться с инструментами и обсудить подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В большом оркестре контрабас должен держать низ и отвечать на тихий смычок. Эти качества лучше услышать на своей партии.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-kamernogo-orkestra",
@@ -20,7 +23,10 @@
           "lead": "В камерной работе слышна каждая деталь звука. Приглашаем сравнить несколько контрабасов на знакомой программе.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Камерная музыка быстро открывает тембр и интонацию инструмента. Можно сравнить контрабасы на знакомом фрагменте.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-opernogo-orkestra",
@@ -28,7 +34,10 @@
           "lead": "Работа в яме предъявляет свои требования к инструменту и музыканту. Обсудим подбор для вашей практики.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В оперной яме важны свободная смычковая атака и уверенный низ. Подходящий инструмент стоит проверить в работе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-proslushivaniya-v-simfonicheskiy-orkestr",
@@ -36,7 +45,10 @@
           "lead": "Если готовите оркестровые соло, можно сравнить инструменты по отклику именно на этой музыке.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Оркестровые соло сразу показывают отклик и удобство грифа. Их можно сыграть на нескольких контрабасах перед выбором.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-raboty-v-orkestrovoy-gruppe",
@@ -44,7 +56,10 @@
           "lead": "Если предстоят многочасовые репетиции, важны удобство грифа и устойчивость смычковой атаки. Обсудим инструмент.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Длинная работа в группе требует ровного звука и удобной руки. Гриф и подставку можно подготовить под ежедневную практику.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-orkestra-na-gastroli",
@@ -52,7 +67,10 @@
           "lead": "Если свой инструмент неудобно везти, можно обсудить временный доступ к контрабасу и условия передачи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если свой бас неудобно везти на гастроли, можно обсудить инструмент на месте выступления и время для знакомства с ним.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "pyatistrunnyy-kontrabas-dlya-simfonicheskoy-partii",
@@ -60,7 +78,10 @@
           "lead": "Если партитура требует нижних нот, уточним строй, конфигурацию и возможность подходящего инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пятиструнный контрабас даёт нижние ноты, нужные в партитуре. Важно почувствовать и ширину грифа, и ответ пятой струны.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-mashinkoy-do-dlya-orkestra",
@@ -68,7 +89,10 @@
           "lead": "Если нужен расширенный нижний регистр, обсудим именно требуемую систему и исполнение на инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для низкой до важна система расширения и её удобство под рукой. Конкретную машинку и инструмент стоит рассматривать вместе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-repetitsii-pered-kontsertom",
@@ -76,7 +100,10 @@
           "lead": "Нужно время привыкнуть к экземпляру до выхода на сцену? Обсудим аренду и возможную предварительную пробу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед концертом полезно поиграть на незнакомом басе заранее. Для временного инструмента это часть музыкальной подготовки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-orkestrovogo-proslushivaniya-v-moskve",
@@ -84,7 +111,10 @@
           "lead": "Если приезжаете на прослушивание без своего инструмента, можно обсудить местную аренду и знакомство.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К прослушиванию в Москве можно подобрать контрабас, на котором знакомые оркестровые соло отвечают привычно.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-solnogo-kontserta",
@@ -92,7 +122,10 @@
           "lead": "В сольной программе особенно важны знакомая геометрия и верхний регистр. Приходите сравнить инструменты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для сольного концерта особенно важны верхние позиции и длинный поющий звук. Это можно сравнить в живой игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-konkursnoy-solnoy-programmy",
@@ -100,7 +133,10 @@
           "lead": "Готовитесь к конкурсу? Подбор можно начать с пассажей, которые требуют наибольшей надёжности.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Конкурсная программа показывает инструмент без скидок: беглость, чистая атака и переходы между регистрами должны быть удобны.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-virtuoznoy-solnoy-igry",
@@ -108,7 +144,10 @@
           "lead": "Если нужны свобода верхних позиций и беглые переходы, обсудим инструмент и эргономическую подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для виртуозного соло гриф должен давать руке свободу. Профиль и накладка здесь так же важны, как качество звука.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "solisticheskiy-kontrabas-s-udobnym-grifom",
@@ -116,7 +155,10 @@
           "lead": "Гриф должен позволять реализовать технику. Можно сравнить экземпляры и обсудить доработку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Солистический гриф ощущается в каждом переходе наверх. Подходящий инструмент можно найти среди разных конструкций.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-solnogo-stroya-na-kontsert",
@@ -124,7 +166,10 @@
           "lead": "Уточним используемый строй и комплект струн, чтобы обсудить подготовку инструмента под программу.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Сольный строй требует соответствующих струн и привычного отклика. Инструмент можно подготовить под ваш концертный репертуар.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-ekzamena-po-spetsialnosti",
@@ -132,7 +177,10 @@
           "lead": "Если программа известна, можно обсудить подходящий инструмент и время на знакомство до экзамена.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед экзаменом важно чувствовать инструмент своим. Трудные места программы помогут сравнить отклик и работу грифа.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zacheta-v-uchilische",
@@ -140,7 +188,10 @@
           "lead": "В день зачёта меньше всего нужен чужой неудобный инструмент. Обсудим знакомый по геометрии вариант.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "К зачёту в училище удобнее приходить с инструментом, на котором смычок и рука уже работают уверенно.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-postupleniya-v-konservatoriyu",
@@ -148,7 +199,10 @@
           "lead": "Можно сыграть конкурсные отрывки на нескольких инструментах и понять, какой отклик вам необходим.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Поступление в консерваторию требует надёжного ответа в соло и виртуозных пассажах. Это можно проверить на реальных контрабасах.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-vystupleniya-v-kamernom-ansamble",
@@ -156,7 +210,10 @@
           "lead": "Если инструмент нужен на один проект, обсудим аренду под состав и репертуар.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В камерном ансамбле особенно слышны оттенки басовой линии. Можно выбрать инструмент по вашей партии и составу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-muzykalnogo-teatra",
@@ -164,7 +221,10 @@
           "lead": "Театральная работа связана с репетициями, сценой и графиком. Обсудим инструмент и возможную доставку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Театральная работа соединяет сцену, репетиции и перемещения. Временный контрабас можно обсудить под реальный график.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-raboty-v-barochnom-ansamble",
@@ -172,7 +232,10 @@
           "lead": "Если инструмент ищут под старинную музыку, обсудим строй, исполнительский подход и конкретные экземпляры.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для барочного ансамбля важны исполнительский строй и характер звука. Разные инструменты можно услышать в вашей музыке.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zapisi-orkestrovyh-partiy",
@@ -180,7 +243,10 @@
           "lead": "Нужен инструмент для студийной группы? Уточним состав, программу и возможность аренды.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Студийная оркестровая партия требует стабильного строя и чистого начала нот. Подготовку инструмента можно согласовать с записью.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-solista-priezzhayuschego-v-moskvu",
@@ -188,7 +254,10 @@
           "lead": "Если свой инструмент остаётся дома, можно заранее обсудить знакомство и временный доступ в городе.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если солист приезжает в Москву без баса, важно найти знакомый по геометрии инструмент и успеть на нём поиграть.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-podmennogo-orkestranta",
@@ -196,7 +265,10 @@
           "lead": "Нужен инструмент на несколько репетиций или концертов? Обсудим подходящую конфигурацию и срок.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Подменному оркестранту нужен привычный отклик с первых репетиций. Инструмент можно сравнить по настройке и размеру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-myagkim-smychkovym-otvetom",
@@ -204,7 +276,10 @@
           "lead": "Если ищете определённое сопротивление под смычком, можно сравнить реальные экземпляры в мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Мягкий смычковый ответ слышен на тихом начале длинной ноты. Струны и акустическую настройку можно подобрать под такое движение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-yarkoy-atakoy-dlya-solnoy-partii",
@@ -212,7 +287,10 @@
           "lead": "Подбор начнём с той музыки, которую предстоит играть. Можно обсудить подготовку звука и инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Яркая атака помогает сольной линии выделиться в зале. Разные контрабасы и настройку лучше проверить на вашей программе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dlitelnogo-orkestrovogo-sezona",
@@ -220,7 +298,10 @@
           "lead": "Для регулярной работы важны устойчивость строя и удобство. Обсудим покупку или аренду на нужный срок.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Оркестровый сезон измеряется сотнями часов игры. Удобство грифа и устойчивый звук важны весь этот срок.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     },
@@ -234,7 +315,10 @@
           "lead": "Для слэпа важны удобная высота струн и рабочий отклик. Обсудим инструмент и настройку под игру.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В рокабилли важны свободный слэп и устойчивый низ. Гриф, высоту струн и характер атаки можно подобрать под вашу группу.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "rokabilli-kontrabas-s-nastroykoy-dlya-slepa",
@@ -242,7 +326,10 @@
           "lead": "Если играете слэп, можно показать свой инструмент и обсудить подготовку под сценический ритм.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для слэпа инструмент настраивают иначе, чем под чистую смычковую игру. Высоту и комплект струн можно подготовить.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dzhazovogo-trio",
@@ -250,7 +337,10 @@
           "lead": "В трио каждую ноту слышно иначе. Можно сравнить контрабасы в привычном пиццикато.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В джазовом трио хорошо слышно каждую басовую ноту. Контрабасы можно сравнить по плотности пиццикато и длительности звука.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dzhazovogo-kvarteta",
@@ -258,7 +348,10 @@
           "lead": "Если нужна стабильная работа в ансамбле, обсудим звук, удобство и возможность усиления.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В квартете бас должен поддерживать ритм и свободно отвечать пальцам. Инструмент лучше попробовать в знакомом стандарте.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-big-benda",
@@ -266,7 +359,10 @@
           "lead": "В большом составе важен читаемый ритмический низ. Можно обсудить подбор и сценическую настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В биг-бэнде нужен чёткий низ, который держит пульс. Настройку и возможное усиление можно связать с составом.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nedorogoy-kontrabas-dlya-rokabilli",
@@ -274,7 +370,10 @@
           "lead": "Для первого рокабилли-состава не обязательно начинать с редкого инструмента. Обсудим доступный контрабас.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для первых концертов рокабилли подойдёт и доступный контрабас, если гриф, струны и высота подготовлены для слэпа.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "moskvich-dlya-rokabilli",
@@ -282,7 +381,10 @@
           "lead": "Есть интерес к московскому фабричному контрабасу под слэп? Обсудим настройку и конкретные инструменты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Московский «Москвич» может стать хорошей основой для рокабилли после настройки струн и подставки под пальцевую игру.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "cheh-dlya-rokabilli",
@@ -290,7 +392,10 @@
           "lead": "Если ищете чешский контрабас для живой группы, можно обсудить его подготовку под слэп и пиццикато.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Чешский контрабас лучше оценить в слэпе и пиццикато: насколько легко двигается струна и держится низ.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "muzima-dlya-pitstsikato",
@@ -298,7 +403,10 @@
           "lead": "Интересует старая Musima как акустический бас? Обсудим отклик конкретного корпуса и настройку струн.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старая «Музима» под пальцами раскрывается через собственный отклик. Струны и рабочую высоту можно подготовить для джаза.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-svinga",
@@ -306,7 +414,10 @@
           "lead": "Если вам нужен акустический пульс для свинга, можно сравнить несколько инструментов по игре пальцами.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Свинг требует ровного шага и ясного начала ноты. Контрабас стоит выбирать по тому, как удобно держится пульс.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dzhazovogo-standarta",
@@ -314,7 +425,10 @@
           "lead": "Приходите со знакомым стандартом: разные контрабасы по-разному отвечают на один и тот же ритм.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Один знакомый стандарт помогает сравнить атаку, затухание и движение левой руки на нескольких инструментах.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zapisi-dzhaza",
@@ -322,7 +436,10 @@
           "lead": "Если готовите студийную сессию, можно обсудить инструмент, звукосниматель и время привыкания.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В студийном джазе важны чистая пальцевая атака и отсутствие лишних призвуков. Контрабас можно подготовить к микрофону.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-kontserta-rokabilli",
@@ -330,7 +447,10 @@
           "lead": "Нужен рабочий инструмент на выступление? Обсудим подготовку под слэп и возможную аренду.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для рокабилли-концерта нужен не только бас в кадре, но и свободный слэп вживую. Настройка зависит от музыки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "struny-dlya-slepa-na-kontrabase",
@@ -338,7 +458,10 @@
           "lead": "Если штатный комплект не подходит для рокабилли, обсудим выбор струн под конкретный инструмент.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Струны для слэпа подбирают под высоту и привычное движение пальцев. От комплекта меняется ощущение всей игры.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "slep-slishkom-tyazhelo-na-kontrabase",
@@ -346,7 +469,10 @@
           "lead": "Если движение требует слишком много силы, можно оценить высоту струн и общую настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Когда слэп требует слишком много силы, стоит изменить рабочую высоту и комплект струн. Инструмент может стать легче под рукой.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dzhaza-bez-usilitelya",
@@ -354,7 +480,10 @@
           "lead": "Если играете акустически в небольшом составе, можно сравнить разные корпуса по отклику.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В акустическом джазе особенно важны корпус и естественная длительность ноты. Это удобно слушать без усилителя.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-so-zvukosnimatelem-dlya-dzhaza",
@@ -362,7 +491,10 @@
           "lead": "Если инструмент должен играть через пульт, обсудим источник сигнала и подготовку к сцене.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Со звукоснимателем важна ясная атака без лишнего шума. Сценический сигнал лучше согласовать с настройкой инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-ulichnogo-dzhaza",
@@ -370,7 +502,10 @@
           "lead": "Если играете на улице, обсудим удобство переноски и рабочий способ усиления.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На улице басу нужны удобная перевозка и читаемый звук. Контрабас и усиление можно обсудить как один сценический комплект.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-blyuza-i-bugi-vugi",
@@ -378,7 +513,10 @@
           "lead": "Если нужен устойчивый низ и быстрый отклик на пиццикато, обсудим подбор и подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Блюзовая басовая линия держится на упругом пиццикато. Высоту струн и отклик стоит проверять на привычном груве.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-folk-gruppy",
@@ -386,7 +524,10 @@
           "lead": "Акустический бас может работать в разных составах. Расскажите о группе, подберём путь знакомства.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для фолк-группы нужен бас, который поддерживает акустический состав. Его можно услышать рядом с инструментами вашей музыки.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-elektricheskoy-bas-gitary",
@@ -394,7 +535,10 @@
           "lead": "Если хотите перейти к акустическому инструменту, можно сыграть знакомые партии на нескольких контрабасах.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "После бас-гитары контрабас по-другому отвечает пальцам и корпусом. Знакомую басовую линию можно сыграть на нескольких экземплярах.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-posle-bezladovoy-bas-gitary",
@@ -402,7 +546,10 @@
           "lead": "Слух уже знаком с непрерывной интонацией, а геометрия другая. Приглашаем попробовать инструменты в мастерской.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Опыт безладовой гитары помогает слуху, но контрабас меняет расстояния и движение рук. Начать лучше с живого инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-muzykanta-s-nemetskim-smychkom-i-dzhazom",
@@ -410,7 +557,10 @@
           "lead": "Если используете и смычок, и пиццикато, обсудим общую настройку вместо жанровой этикетки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если вы играете и смычком, и пальцами, настройка должна поддерживать обе техники. Компромисс можно искать на своём басе.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dzhaza-i-orkestra-odnovremenno",
@@ -418,7 +568,10 @@
           "lead": "Один инструмент может работать в двух музыкальных средах. Можно сравнить компромиссы на вашей музыке.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Один контрабас способен работать и в оркестре, и в джазе. Подставка, струны и общая настройка помогают совместить задачи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroit-moskvich-pod-dzhaz",
@@ -426,7 +579,10 @@
           "lead": "Старый фабричный «Москвич» может быть предметом серьёзной джазовой подготовки. Привозите свой инструмент.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "«Москвич» для джаза можно приготовить к свободному пиццикато, настроив рабочую высоту и отклик на пальцевую атаку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "nastroit-muzimu-pod-rokabilli",
@@ -434,7 +590,10 @@
           "lead": "Если на вашей Musima трудно играть слэп, можно обсудить подходящий комплект и высоту струн.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Старую «Музиму» для рокабилли можно подготовить под слэп, сохраняя характер корпуса и удобство грифа.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "rokabilli-bas-s-udobnoy-pravoy-rukoy",
@@ -442,7 +601,10 @@
           "lead": "Если пальцы устают раньше музыки, обсудим струны и настройку на конкретном инструменте.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Правая рука в рокабилли должна свободно двигать струну. Высота и натяжение выбираются под вашу атаку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }
