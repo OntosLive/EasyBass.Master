@@ -23,7 +23,7 @@ def local_path(site: Path, relative_url: str, href: str) -> Path | None:
     if not href or href.startswith(("tel:", "mailto:", "javascript:", "#")):
         return site / relative_url.strip("/") / "index.html" if href.startswith("#") else None
     parts = urlsplit(href)
-    if parts.scheme not in ("", "https") or parts.netloc not in ("", "ontoslive.github.io"):
+    if parts.scheme not in ("", "https") or parts.netloc not in ("", urlsplit(DOMAIN).netloc):
         return None
     absolute = urlsplit(urljoin(DOMAIN + relative_url, href))
     path = unquote(absolute.path)
