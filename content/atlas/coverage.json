@@ -2715,13 +2715,15 @@
   "short_sensor": {
     "generator": "scripts/sensor_n0.py",
     "source": "content/entrances-rewrite/*.json",
-    "status": "Authored human-intent N.0; atlas hypotheses never published automatically",
+    "status": "Authored search-only N.0; no public ad browsing directories or archive links",
     "count": 497,
-    "category_index_pages": 18,
-    "root_index": "/vhod/",
+    "category_index_pages": 0,
+    "root_index": null,
     "retired_cartesian_count": 3290,
     "retired_synthetic_publication": true,
-    "site_html_documents": 826,
-    "last_confirmed_release": "f2660dc31d37dec1bf612db05c07b6d1a6299d39"
+    "site_html_documents": 807,
+    "last_confirmed_release": "fc09cff2551eeb42d986c9ed8e62cd29632b72e7",
+    "closed_entrances": true,
+    "confirmed_ci_run": 37880881357
   }
 }
