@@ -259,7 +259,9 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Выбор половинного размера можно обсудить после знакомства с реальным инструментом."
+          "bridge": "Для половинного контрабаса важны и габариты, и мензура. Подходящий инструмент можно выбрать в игре, проверив посадку и руку.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-3-4-dlya-vzroslogo-kupit",
@@ -268,7 +270,9 @@
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
           "intent": "contact",
-          "bridge": "Три четверти бывают разными по звучанию и удобству. Подбор начинается с игры."
+          "bridge": "Размер 3/4 бывает и у профессиональных контрабасов. Можно сравнить их по звуку, мензуре и удобству в собственной игре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-4-4-dlya-orkestra-kupit",
