@@ -282,7 +282,10 @@
           "lead": "Для записи важны не только часы студии, но и возможность познакомиться с инструментом заранее. Обсудим аренду.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На студийный день нужен контрабас, который успеет настроиться и ответить с первой записи. Временный инструмент можно согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zapisi-klassicheskoy-muzyki",
@@ -290,7 +293,10 @@
           "lead": "Если пишете смычковую партию, обсудим нужный отклик, настройку и время подготовки к сессии.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для записи классики важны ровный смычковый звук и тихая атака. Подготовку контрабаса можно связать с вашим репертуаром.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-zapisi-dzhazovogo-alboma",
@@ -298,7 +304,10 @@
           "lead": "В студии пиццикато слышно во всех деталях. Обсудим инструмент и сценическую конфигурацию.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В джазовой записи слышна фактура пиццикато и каждый призвук. Инструмент лучше подобрать под микрофон и музыканта.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-semki-muzykalnogo-filma",
@@ -306,7 +315,10 @@
           "lead": "Если инструмент должен прозвучать в кадре, уточним исполнительскую задачу и возможность аренды.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В музыкальном фильме контрабас должен отвечать и кадру, и живой игре. Важно заранее знать, что прозвучит на съёмке.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-kak-rekvizit-dlya-kino",
@@ -314,7 +326,10 @@
           "lead": "Если нужен только внешний образ контрабаса, условия отличаются от аренды рабочего инструмента. Обсудим запрос.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если контрабас нужен только в кадре, его роль отличается от рабочего концертного инструмента. Условия аренды можно согласовать.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-fotosessiyu-muzykanta",
@@ -322,7 +337,10 @@
           "lead": "Если инструмент нужен для съёмки, заранее уточним время, место и возможность передачи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для фотосессии важны внешний вид корпуса, возможность бережно установить инструмент и удобное время передачи.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-teatralnoy-postanovki",
@@ -330,7 +348,10 @@
           "lead": "В театре инструмент может звучать или быть частью сцены. Расскажите о постановке, обсудим вариант.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Театральной постановке нужен контрабас на репетиции и показы. Важно согласовать его сценическую роль и график.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-kontsertnogo-zala-v-moskve",
@@ -338,7 +359,10 @@
           "lead": "Если инструмент нужен на площадке к конкретному часу, обсудим сроки и возможность доставки.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В концертном зале басу нужно время для доставки, настройки и знакомства с акустикой. Передачу можно обсудить заранее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-v-komplekt-s-orkestrovym-smychkom",
@@ -346,7 +370,10 @@
           "lead": "Если нужен рабочий комплект, уточним систему смычка и программу, под которую он требуется.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для смычковой работы нужен подходящий комплект контрабаса и смычка. Система держания и баланс имеют значение.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-akusticheskoy-zapisi-bez-pezy",
@@ -354,7 +381,10 @@
           "lead": "Если звукосниматель не нужен, обсудим инструмент и работу с микрофонами в студии.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "В акустической записи важны естественный голос корпуса и чистота атаки. Инструмент можно подготовить для микрофона.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-s-pezodatchikom-dlya-stseny",
@@ -362,7 +392,10 @@
           "lead": "Если играете через усиление, обсудим подготовку выхода и настройку под площадку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На сцене пьезодатчик должен передавать бас без лишнего шума. Его установку лучше согласовать с подставкой инструмента.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-dzhazovogo-festivalya",
@@ -370,7 +403,10 @@
           "lead": "Если инструмент нужен на несколько выступлений, уточним график и условия временного доступа.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На джазовом фестивале важны время пробы и привычная высота струн. Временный бас можно подобрать под ваш состав.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-festivalya-klassicheskoy-muzyki",
@@ -378,7 +414,10 @@
           "lead": "Большой инструмент не всегда удобно везти между городами. Обсудим местный экземпляр.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для классического фестиваля нужен инструмент, который удобно отвечает на привычные штрихи. Аренду можно обсудить до репетиции.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-gastrolnyy-kontsert-priezzhego-solista",
@@ -386,7 +425,10 @@
           "lead": "Если свой инструмент остаётся дома, можно договориться о знакомстве до репетиции.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Приезжему солисту лучше познакомиться с контрабасом до выхода на сцену. Гриф и смычковый ответ должны стать знакомыми.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-muzykalnoe-video",
@@ -394,7 +436,10 @@
           "lead": "Если снимаете клип, уточним, будет ли живая игра, и обсудим аренду подходящего инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для клипа может понадобиться живая игра или только образ инструмента. От этого зависит подготовка и форма аренды.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-reklamnoy-semki",
@@ -402,7 +447,10 @@
           "lead": "Если нужен инструмент в кадре, можно обсудить условия передачи и бережного обращения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На рекламной съёмке важны размеры, состояние корпуса и условия бережного обращения. Конкретный инструмент обсуждается заранее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-saundcheka-pered-kontsertom",
@@ -410,7 +458,10 @@
           "lead": "Если будете играть на временном инструменте, обсудим время знакомства и подготовку к первому звуку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Саундчек нужен, чтобы услышать контрабас в зале и настроить усиление. Для временного инструмента стоит оставить это время.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-muzykalnogo-nomera-na-meropriyatii",
@@ -418,7 +469,10 @@
           "lead": "Если музыкант приглашён на вечер, уточним требования исполнителя и условия предоставления инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "На музыкальном мероприятии контрабас должен соответствовать сцене и исполнителю. Размер и настройку лучше уточнить заранее.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-na-zamenu-vo-vremya-festivalya",
@@ -426,7 +480,10 @@
           "lead": "Если основной инструмент недоступен, обсудим возможный резерв и необходимый срок.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Если на фестивале основной бас недоступен, можно искать замену по привычной мензуре, строю и времени до концерта.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-kamernoy-zapisi-ansamblya",
@@ -434,7 +491,10 @@
           "lead": "Когда инструменты пишутся вместе, важен баланс тембров. Можно обсудить подбор под существующий состав.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для камерной записи важно, как бас слышен рядом с другими инструментами. Отклик можно проверить на вашей партитуре.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-kontsertnogo-raydera",
@@ -442,7 +502,10 @@
           "lead": "Если в техническом райдере указана конфигурация, пришлите её: выясним возможности и условия выполнения.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Райдер может задавать строй, количество струн и систему усиления. По этим условиям и подбирают конкретный контрабас.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-po-zaprosu-priglashennogo-dirizhera",
@@ -450,7 +513,10 @@
           "lead": "Если нужен особый состав или расширенный нижний регистр, обсудим именно требуемые инструменты.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Пожелания дирижёра иногда касаются нижнего регистра и конфигурации. Важно соотнести их с реальными инструментами.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-repetitsii-pered-studiey",
@@ -458,7 +524,10 @@
           "lead": "Если нужно освоить временный инструмент заранее, можно обсудить доступ до записи.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Перед студией музыканту полезно привыкнуть к временному басу. На знакомом фрагменте быстрее слышны его особенности.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         },
         {
           "slug": "kontrabas-dlya-vystupleniya-na-otkrytoy-ploschadke",
@@ -466,7 +535,10 @@
           "lead": "Если концерт под открытым небом, согласуем акустическую задачу, усиление и перевозку инструмента.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Для открытой площадки важно сочетание акустического баса, защиты инструмента и усиления. Подготовку можно обсудить по условиям.",
+          "bridge_model": "gpt-6",
+          "bridge_status": "gpt6_draft"
         }
       ]
     }
