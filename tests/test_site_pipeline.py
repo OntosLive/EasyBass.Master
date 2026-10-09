@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "scripts"))
 from link_audit import audit
 from site_core import DOMAIN, build, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, read_json
 from validate_site import validate
+from sensor_n0 import records as sensor_records
 
 
 class PublicationTests(unittest.TestCase):
@@ -31,7 +32,7 @@ class PublicationTests(unittest.TestCase):
             'content="width=device-width,initial-scale=1"><title>Подшивка</title>'
             '<link rel="stylesheet" href="../styles.css"></head><body>'
             '<h1>Подшивка</h1><a href="../">Главная</a>'
-            '<!-- GENERATED_SUBJECT_INDEX --></body></html>', encoding="utf-8")
+            '<!-- GENERATED_SUBJECT_INDEX --><!-- SENSOR_N0_INDEX --></body></html>', encoding="utf-8")
 
     def test_full_compilation_preserves_existing_home_and_publishes_only_ready(self):
         original = (self.site / "index.html").read_bytes()
@@ -42,6 +43,8 @@ class PublicationTests(unittest.TestCase):
         self.assertEqual(result["standalone_entrances"], 240)
         self.assertEqual(result["independent_knowledge_articles"], 8)
         self.assertEqual(result["official_model_articles"], 6)
+        self.assertEqual(result["sensor_n0"]["n0_pages"], 3290)
+        self.assertEqual(result["sensor_n0"]["hubs"], 21)
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
@@ -102,6 +105,21 @@ class PublicationTests(unittest.TestCase):
             self.assertIn('Данные изготовителя', html)
             self.assertIn(model["sources"][0]["url"], html)
             self.assertNotIn("в наличии", html.lower())
+
+    def test_3290_short_entries_are_real_pages_with_stable_canonical_and_no_fake_details(self):
+        subjects = sensor_records(ROOT)
+        self.assertEqual(len(subjects), 3290)
+        self.assertEqual(len({s["route"] for s in subjects}), 3290)
+        self.assertTrue(all("?" in s["residual_question"] for s in subjects))
+        build(ROOT, self.site)
+        for topic in [subjects[0], subjects[len(subjects)//2], subjects[-1]]:
+            filename = self.site / topic["route"].strip("/") / "index.html"
+            self.assertTrue(filename.exists())
+            html = filename.read_text(encoding="utf-8")
+            self.assertIn(topic["title"], html)
+            self.assertIn(DOMAIN + topic["route"], html)
+            self.assertIn("tel:+79096945544", html)
+            self.assertNotIn('href="../../../details/', html)
 
     def test_broken_archive_marker_stops_build(self):
         (self.site / "archive/index.html").write_text("<html><head></head><body></body></html>")
