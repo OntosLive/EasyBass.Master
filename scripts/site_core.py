@@ -19,7 +19,6 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
-from entry_router import route_panel
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = "https://ontoslive.github.io/EasyBass.Master"
@@ -324,7 +323,6 @@ def make_entry(p: dict, contact: str) -> str:
     content = (
         '<section class="entry-signal"><p>'
         + escape(p["entry_body"]) + '</p></section>'
-        + route_panel(route)
         + '<p class="entry-continuation"><a href="../details/'
         + escape(p["slug"], quote=True)
         + '/">Подробнее об инструменте</a></p>'
@@ -332,7 +330,7 @@ def make_entry(p: dict, contact: str) -> str:
     return frame(p, "entry", content, contact)
 
 def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | None = None) -> str:
-    """A newspaper opening: one recognizable question, phone, and eight routes."""
+    """Publish AI-authored editorial copy, not an automated navigation template."""
     source = {
         "entry_slug": p["slug"],
         "search_title": p["search_title"],
@@ -342,9 +340,9 @@ def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | No
     }
     route = f"/{p['slug']}/"
     content = (
-        '<section class="entry-signal"><p class="entrance-question">'
+        '<section class="entry-signal"><p class="entry-authored-body">'
+        + escape(p["body"]) + '</p><p class="entrance-question">'
         + escape(p["open_question"]) + '</p></section>'
-        + route_panel(route)
     )
     if deeper and p["slug"] in deeper:
         article = deeper[p["slug"]]
@@ -539,14 +537,19 @@ def build(root: Path = ROOT, site: Path | None = None) -> dict:
     for item in models:
         write(site, "/models/" + item["slug"] + "/", make_model_publication(item, contact))
     archive_index(site, pages, entrances, knowledge, models)
-    from sensor_n0 import compile_site as compile_sensor
-    n0_report = compile_sensor(root, site, contact, frame, write)
+    # The semantic atlas is research, not a factory of public copy.
+    # Its 3,290 cross-products have no permission to create public URLs.
+    from sensor_n0 import records as research_intersections
+    research_count = len(research_intersections(root))
+    archive = site / "archive/index.html"
+    archive.write_text(archive.read_text(encoding="utf-8").replace(
+        "<!-- SENSOR_N0_INDEX -->", ""), encoding="utf-8")
     urls = canonicals_and_sitemap(site)
     return {
         "generated_subjects": len(pages),
         "generated_pair_pages": 2 * len(pages),
         "standalone_entrances": len(entrances),
-        "sensor_n0": n0_report,
+        "sensor_n0": {"research_intersections": research_count, "n0_pages": 0, "hubs": 0},
         "independent_knowledge_articles": len(knowledge),
         "official_model_articles": len(models),
         "hypotheses_retained": len(read_json(root / "content/candidates.json")["candidates"]),
