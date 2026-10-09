@@ -12,7 +12,8 @@
           "lead": "Если беглая игра упирается в гриф, привозите инструмент на осмотр. Возможна индивидуальная эргономическая доработка.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Эргономика и удобство, наш конёк. Дорабатываем гриф под конкретную руку и технику."
         },
         {
           "slug": "grif-kontrabasa-dlya-begloy-igry",
@@ -28,7 +29,8 @@
           "lead": "Работаем с удобством игры под конкретного музыканта. Можно приехать со своим контрабасом.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Гриф, накладка и высота струн настраиваются под конкретного музыканта."
         },
         {
           "slug": "dorabotka-grifa-kontrabasa-pod-ruku",
@@ -156,7 +158,8 @@
           "lead": "Инструмент требует излишнего усилия наверху? Обсудим накладку, подставку и индивидуальную подготовку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Удобство высоких позиций можно обсудить на вашем инструменте, в знакомой музыке."
         },
         {
           "slug": "neudobno-derzhat-kontrabas-pri-igre",
@@ -298,7 +301,8 @@
           "lead": "Если звучание не устраивает, начнём с вашего инструмента. Обсудим акустическую подготовку под вашу игру.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Доработка звука начинается с вашего инструмента и того, как вы на нём играете."
         },
         {
           "slug": "akusticheskaya-dorabotka-kontrabasa-dlya-solo",
@@ -322,7 +326,8 @@
           "lead": "Тихое вступление требует уверенного начала ноты. Мастерская может изучить инструмент и настройку.",
           "origin": "authored_research_hypothesis",
           "review_state": "candidate",
-          "intent": "contact"
+          "intent": "contact",
+          "bridge": "Настройку отклика проверяем на конкретном инструменте, в игре."
         },
         {
           "slug": "kontrabas-tyazhelo-nachinaet-zvuk-smychkom",

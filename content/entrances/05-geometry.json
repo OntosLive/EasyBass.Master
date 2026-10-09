@@ -10,7 +10,8 @@
       "open_question": "Для кого выбирают контрабас и какой размер уже удалось попробовать?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В мастерской можно подобрать размер на реальных инструментах, по руке и привычной технике."
     },
     {
       "slug": "kontrabas-1-2-ili-3-4",
@@ -20,7 +21,8 @@
       "open_question": "Какого роста музыкант и что в его текущем размере стало неудобно?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Размер определим при знакомстве: по руке, посадке и свободе движения, а не одной дроби."
     },
     {
       "slug": "kontrabas-3-4-ili-4-4",
@@ -30,7 +32,8 @@
       "open_question": "Какие пассажи на инструменте 3/4 или 4/4 сейчас требуют лишнего усилия?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Сравним конкретные инструменты по звуку, корпусу и удобству игры."
     },
     {
       "slug": "menzura-kontrabasa-i-udobstvo-igry",
@@ -40,7 +43,8 @@
       "open_question": "Измеряли ли вы мензуру своего контрабаса и где возникают трудные растяжения?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Можно сравнить разные мензуры и подобрать удобную геометрию инструмента."
     },
     {
       "slug": "starinnyy-ili-sovremennyy-kontrabas",
@@ -50,7 +54,8 @@
       "open_question": "Что в вашем поиске связано с возрастом инструмента, а что — с ожидаемым звуком?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В коллекции можно познакомиться с инструментами разных эпох и выбрать свой в игре."
     },
     {
       "slug": "masterovoy-ili-manufakturnyy-kontrabas",
@@ -60,7 +65,8 @@
       "open_question": "Что для вас важнее: история изготовления или конкретное изменение в исполнительском опыте?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Знакомство с разными традициями изготовления начинается с реальных инструментов."
     },
     {
       "slug": "ploskaya-ili-vypuklaya-zadnyaya-deka",
@@ -70,7 +76,8 @@
       "open_question": "Удалось ли вам сравнить контрабасы с разной задней декой в одном помещении?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Различия конструкции лучше почувствовать, сыграв на нескольких инструментах."
     },
     {
       "slug": "chetyrehstrunnyy-ili-pyatistrunnyy-kontrabas",
@@ -80,7 +87,8 @@
       "open_question": "Какие нижние ноты вам необходимы и на каком инструменте вы играете сейчас?",
       "group": "Конструкция и выбор",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Подбор начинается с вашей музыки: нижний регистр, строй и удобство грифа."
     },
     {
       "slug": "proverka-sostoyaniya-kontrabasa",

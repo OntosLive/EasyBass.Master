@@ -10,7 +10,8 @@ import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
 
-from site_core import BASE, DOMAIN, PHONE, ROOT, SITEMAP_NS, group_anchor, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, pretty_route
+from site_core import BASE, DOMAIN, PHONE, ROOT, SITEMAP_NS, inspect_records, inspect_entrances, inspect_knowledge, inspect_model_publications, pretty_route
+from entry_router import destination_for_family, destination_for_editorial_group
 from sensor_n0 import records as sensor_records
 
 
@@ -42,7 +43,7 @@ def validate(site: Path, root: Path = ROOT) -> dict:
     models = inspect_model_publications(root)
     n0 = sensor_records(root)
     n0_urls = {p["route"] for p in n0}
-    n0_hubs = {p["hub"] for p in n0} | {"/vhod/"}
+    n0_hubs = set()  # Search ads have no public browse directory.
     entry_urls = {f"/{p['entry_slug']}/" for p in ready} | {f"/{e['slug']}/" for e in entries} | n0_urls
     expected = {f"/{p['entry_slug']}/" for p in ready}
     expected |= {f"/details/{p['slug']}/" for p in ready}
@@ -113,8 +114,11 @@ def validate(site: Path, root: Path = ROOT) -> dict:
         if route in entry_urls:
             if d.select_one(".master-lead .deck") or d.select_one(".entry-signal") or d.select_one(".n0-return"):
                 errors.append(f"{route}: newspaper entry repeats explanatory or related-call text")
-            if len(d.select(".master-footer a[href]")) != 1:
-                errors.append(f"{route}: contextual footer must have exactly one route")
+            foot = d.select(".master-footer a[href]")
+            if len(foot) != 2 or "footer-workshop-home" not in (foot[0].get("class", []) if foot else []):
+                errors.append(f"{route}: linked workshop title and direct institutional exit required")
+            if foot and foot[0].get("href") != "../" * len(route.strip("/").split("/")):
+                errors.append(f"{route}: workshop title must link to the homepage")
             primary = d.select(".entry-range-grid a[href]")
             secondary = d.select(".entry-utilities a[href]")
             if len(primary) != 4 or len(secondary) != 4:
@@ -136,11 +140,15 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             if not d.h1 or d.h1.get_text(" ", strip=True) != entry["search_title"]:
                 errors.append(f"{route}: edited entrance title differs from source")
             contextual = [e for e in essays if e["entrance_slug"] == entry["slug"]]
-            foot = d.select_one(".master-footer a[href]")
-            expected_foot = (f"../details/{contextual[0]['slug']}/" if contextual
-                             else f"../archive/#{group_anchor(entry['group'])}")
-            if foot is None or foot.get("href") != expected_foot:
-                errors.append(f"{route}: footer must lead to its own knowledge or thematic archive")
+            primary = d.select(".master-footer a[href]")
+            target, label = destination_for_editorial_group(entry["group"])
+            expected_foot = (f"../details/{contextual[0]['slug']}/" if contextual else "../" + target)
+            if len(primary) != 2 or primary[-1].get("href") != expected_foot:
+                errors.append(f"{route}: final exit must open an institutional page or N.1")
+            expected_bridge = entry.get("bridge", "")
+            actual_bridge = d.select_one(".entry-modulation")
+            if (actual_bridge.get_text(" ", strip=True) if actual_bridge else "") != expected_bridge:
+                errors.append(f"{route}: curated pre-contact bridge mismatch")
     for essay in essays:
         route = f"/details/{essay['slug']}/"
         d = docs.get(route)
@@ -179,39 +187,39 @@ def validate(site: Path, root: Path = ROOT) -> dict:
         route = topic["route"]
         page = docs.get(route)
         if not page:
-            errors.append(f"Missing scene-question page {route}")
+            errors.append(f"Missing authored search entrance {route}")
             continue
         if not page.h1 or page.h1.get_text(" ", strip=True) != topic["title"]:
-            errors.append(f"{route}: semantic scene/question title lost")
-        if page.select_one(".issue.master-lead .deck"):
-            errors.append(f"{route}: H1 must turn straight to the phone")
-        if page.select_one(".n0-return") or page.select_one(".entry-signal"):
-            errors.append(f"{route}: redundant copy under the telephone")
-        foot = page.select_one(".master-footer a[href]")
-        if foot is None or foot.get("href") != "../":
-            errors.append(f"{route}: short announcement must link to its family directory")
-        if not any(a.get("href") == "../" for a in page.select(".master-footer a[href]")):
-            errors.append(f"{route}: contextual footer must lead to parent family")
-    for route in n0_hubs:
-        if route not in docs:
-            errors.append(f"Missing N.0 family index {route}")
-    directory = docs.get("/vhod/")
-    if directory:
-        if len(directory.select(".n0-chapter")) != 6:
-            errors.append("The entrance archive needs six broad editorial chapters")
-        if len(directory.select(".n0-chapter .n0-directory a[href]")) != len(n0_hubs) - 1:
-            errors.append("Each independent family needs its own visible entrance in the directory")
-    if not any(a.get("href", "").endswith("/vhod/") for a in docs.get("/archive/", BeautifulSoup("", "html.parser")).select("a[href]")):
-        errors.append("Archive has no entry to authored short announcements")
+            errors.append(f"{route}: independent authored H1 lost")
+        if page.select_one(".issue.master-lead .deck") or page.select_one(".n0-return,.entry-signal"):
+            errors.append(f"{route}: repeated explanation or advertisement navigation")
+        expected_bridge = topic.get("bridge", "")
+        bridge = page.select_one(".entry-modulation")
+        if (bridge.get_text(" ", strip=True) if bridge else "") != expected_bridge:
+            errors.append(f"{route}: authored modulation mismatch")
+        target, label = destination_for_family(topic["family_id"])
+        footer_links = page.select(".master-footer a[href]")
+        if len(footer_links) != 2 or footer_links[-1].get("href") != "../../../" + target:
+            errors.append(f"{route}: footer must open an institutional space")
+    if (site / "vhod/index.html").exists():
+        errors.append("Public ad directory must not exist")
+    if any((site / "vhod" / item["family_id"] / "index.html").exists() for item in n0):
+        errors.append("Public family ad directories must not exist")
     archive = docs.get("/archive/")
     if not archive:
         errors.append("Archive missing")
     else:
-        # Authored short announcements live under human-editable family indexes.
-        # Archive links to /vhod/, which links families, then individual entries.
-        for route in expected - n0_urls:
+        if any(a.get("href", "").endswith("/vhod/") for a in archive.select("a[href]")):
+            errors.append("Archive must not advertise a directory of SEO entrances")
+        for route in expected - entry_urls:
             if not any(link.get("href", "").endswith(route) for link in archive.select('a[href]')):
-                errors.append(f"Archive does not link to {route}")
+                errors.append(f"Archive does not link to institutional knowledge {route}")
+    # The site may expose real N.1 essays, collection and workshop, but not
+    # links between or into the search-only N.0 announcement network.
+    for route, links in graph.items():
+        targets = links & entry_urls
+        if targets:
+            errors.append(f"{route}: exposed search ads through internal navigation: {sorted(targets)[:3]}")
     seen, queue = set(), deque(["/"])
     while queue:
         route = queue.popleft()
@@ -219,18 +227,9 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             continue
         seen.add(route)
         queue.extend(graph[route] - seen)
-    for route in expected | n0_hubs:
+    for route in expected - entry_urls:
         if route not in seen:
-            errors.append(f"Unreachable publication: {route}")
-    if n0_urls - seen:
-        print("REACHABILITY_DIAGNOSTIC", {
-            "root": sorted(graph["/"])[:12],
-            "archive": sorted(graph["/archive/"])[:12],
-            "sensor_root": sorted(graph["/vhod/"])[:12],
-            "first_family": sorted(graph["/vhod/buy-entry/"])[:12],
-            "sensor_seen": len(seen & (n0_urls | n0_hubs)),
-            "sensor_total": len(n0_urls | n0_hubs),
-        })
+            errors.append(f"Unreachable institutional knowledge: {route}")
     try:
         xml = ET.parse(site / "sitemap.xml").getroot()
         locations = [n.text for n in xml.findall(f"{{{SITEMAP_NS}}}url/{{{SITEMAP_NS}}}loc")]
@@ -242,9 +241,9 @@ def validate(site: Path, root: Path = ROOT) -> dict:
             errors.append(f"{route}: pair missing from sitemap")
     counts = Counter(locations)
     sitemap_index = set(locations)
-    for route in n0_urls | n0_hubs:
+    for route in n0_urls:
         if DOMAIN + route not in sitemap_index:
-            errors.append(f"Missing N.0 URL from sitemap: {route}")
+            errors.append(f"Missing search-only N.0 URL from sitemap: {route}")
     errors += [f"Duplicate sitemap URL: {link}" for link, count in counts.items() if count != 1]
     existent_urls = {DOMAIN + url for url in docs}
     for loc in locations:

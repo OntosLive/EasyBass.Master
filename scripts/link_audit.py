@@ -49,8 +49,8 @@ def audit(root: Path = ROOT) -> dict:
     archive = (root / "archive/index.html").read_text(encoding="utf-8")
     if archive.count("<!-- GENERATED_SUBJECT_INDEX -->") != 1:
         errors.append("Archive must have exactly one generated index marker")
-    if archive.count("<!-- SENSOR_N0_INDEX -->") != 1:
-        errors.append("Archive must contain exactly one short-sensor insertion marker")
+    if "<!-- SENSOR_N0_INDEX -->" in archive:
+        errors.append("The workshop archive must not expose the search-only entrance directory")
     if "site.pages" not in archive:
         errors.append("Historical Jekyll issue collection lost from archive")
     if "Пространство, в котором можно найти свой." not in (root / "index.html").read_text(encoding="utf-8"):

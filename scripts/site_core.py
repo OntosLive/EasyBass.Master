@@ -19,7 +19,7 @@ from urllib.parse import urlsplit
 import xml.etree.ElementTree as ET
 
 from bs4 import BeautifulSoup
-from entry_router import route_panel
+from entry_router import route_panel, destination_for_editorial_group
 
 ROOT = Path(__file__).resolve().parents[1]
 DOMAIN = "https://ontoslive.github.io/EasyBass.Master"
@@ -300,26 +300,35 @@ def frame(p: dict, role: str, content: str, contact: str, route_override: str | 
     mast = (f'<div class="rule"></div><div class="meta"><a href="{level}">'
             'EASYBASSMASTER</a><span>МОСКВА</span></div>' + ('' if access else brand()))
 
-    # ONTOS.RENT short-page principle: H1 -> telephone -> four ranges -> four facts
-    # -> contextual editorial footer. Rich explanatory copy stays in the separately
-    # indexed N.1 or the family directory; metadata retains the authored N.0 lead.
-    lead = '' if access else f'<p class="deck">{escape(p["editorial_deck"])}</p>'
+    # A few ambiguous requests need one genuine human bridge BEFORE the phone.
+    # Never synthesize it for every topic or repeat the full SEO description.
+    bridge = str(p.get("entry_modulation", "")).strip() if access else ""
+    if bridge and (len(bridge) > 160 or "?" in bridge):
+        raise ValueError(f"Entry modulation must be one brief assertion: {route}")
+    lead = (f'<p class="entry-modulation">{escape(bridge)}</p>' if bridge
+            else ('' if access else f'<p class="deck">{escape(p["editorial_deck"])}</p>'))
     header = ('<section class="issue master-lead">'
               f'<p class="issue-kicker">{escape(kicker)}</p>'
               f'<h1>{escape(page_title)}</h1>' + lead + '</section>')
 
-    footer_href = p.get("footer_href", level + "archive/")
-    footer_label = p.get("footer_label", "Подшивка")
+    footer_href = p.get("footer_href") or (
+        level + p.get("footer_target", "meeting/") if access else level + "archive/")
+    footer_label = p.get("footer_label", "Знакомство" if access else "Подшивка")
     footer_title = p.get("footer_title", "")
     footer_attr = f' title="{escape(footer_title, quote=True)}"' if footer_title else ""
-    footer = (f'<footer class="master-footer"><span>МАСТЕРСКАЯ КОНТРАБАСА</span>'
+    footer_left = (f'<a class="footer-workshop-home" href="{level}">'
+                   'МАСТЕРСКАЯ КОНТРАБАСА</a>' if access
+                   else '<span>МАСТЕРСКАЯ КОНТРАБАСА</span>')
+    footer = (f'<footer class="master-footer">{footer_left}'
               f'<a href="{escape(footer_href, quote=True)}"{footer_attr}>'
               f'{escape(footer_label)}</a></footer>')
 
     main_content = contact + content if access else content + contact
     full = mast + '<main>' + header + main_content + footer + '</main>'
     if access:
-        page_class = 'entry-router entry-index' if p.get("is_index") else 'entry-router entry-short'
+        page_class = 'entry-router entry-short'
+        if bridge:
+            page_class += ' entry-has-modulation'
     else:
         page_class = 'deep-editorial'
     return (f'<!doctype html><html lang="ru"><head><meta charset="utf-8">'
@@ -346,15 +355,16 @@ def make_entry(p: dict, contact: str) -> str:
 def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | None = None) -> str:
     """One direct human request, eight routes, and one deep editorial exit."""
     route = f"/{p['slug']}/"
+    target, label = destination_for_editorial_group(p["group"])
     source = {
         "entry_slug": p["slug"],
         "search_title": p["search_title"],
         "description": p["lead"],
         "entry_kicker": "МАСТЕРСКАЯ КОНТРАБАСА",
         "entry_deck": p["lead"],
-        "footer_href": f"../archive/#{group_anchor(p['group'])}",
-        "footer_label": "По теме",
-        "footer_title": p["group"],
+        "entry_modulation": p.get("bridge", ""),
+        "footer_target": target,
+        "footer_label": label,
     }
     if deeper and p["slug"] in deeper:
         source["footer_href"] = f"../details/{deeper[p['slug']]['slug']}/"
@@ -364,8 +374,8 @@ def make_standalone_entrance(p: dict, contact: str, deeper: dict[str, dict] | No
 
 def make_deep(p: dict, by_slug: dict[str, dict], contact: str) -> str:
     paragraphs = "".join(f'<p>{escape(v)}</p>' for v in p["editorial_paragraphs"])
-    links = [(f"../../{p['entry_slug']}/", "Покупка и знакомство"),
-             (f"../../{p['parent']}/", "Коллекция" if p["parent"] == "collection" else "Мастерская")]
+    links = [(f"../../{p['parent']}/", "Коллекция" if p["parent"] == "collection" else "Мастерская"),
+             ("../../meeting/", "Знакомство")]
     links += [(f"../{slug}/", by_slug[slug]["editorial_title"]) for slug in p.get("related", [])]
     content = f'<section class="master-text">{paragraphs}</section>' + nav(links)
     return frame(p, "deep", content, contact)
@@ -394,8 +404,9 @@ def make_knowledge_article(item: dict, contact: str, entrance_names: dict[str, s
                          'rel="noopener noreferrer">'
                          f'{escape(source_item["title"])}</a></li>')
         parts.append('</ul></details>')
-    links = [(f"../../{item['entrance_slug']}/", "Вернуться к вопросу")]
-    links += [(f"../../{target}/", entrance_names[target]) for target in item.get("related", [])]
+    # Essays lead into the real institution rather than back into search ads.
+    links = [("../../collection/", "Коллекция"), ("../../workshop/", "Мастерская"),
+             ("../../meeting/", "Знакомство")]
     parts.append(nav(links))
     return frame(source, "deep", "".join(parts), contact)
 
@@ -436,12 +447,10 @@ def archive_index(site: Path, pages: list[dict], entrances: list[dict], knowledg
     entries = []
     for p in pages:
         deep = f"{BASE}/details/{p['slug']}/"
-        entry = f"{BASE}/{p['entry_slug']}/"
         entries.append(
             '<article>'
             f'<h2><a href="{deep}">{escape(p["editorial_title"])}</a></h2>'
             f'<p>{escape(p["editorial_deck"])}</p>'
-            f'<a href="{entry}">{escape(p["search_title"])}</a>'
             '</article>')
     generated = ('<section class="archive-list" aria-label="Предметная подшивка">'
                  '<p class="issue-kicker">КОНТРАБАСЫ · ПОДШИВКА</p>'
@@ -463,25 +472,7 @@ def archive_index(site: Path, pages: list[dict], entrances: list[dict], knowledg
         generated += ('<section class="archive-list" aria-label="Каталог подтверждённых моделей">'
                       '<p class="issue-kicker">МОДЕЛИ · ПЕРВОИСТОЧНИКИ</p>'
                       + model_links + '</section>')
-    if entrances:
-        grouped = {}
-        for item in entrances:
-            grouped.setdefault(item["group"], []).append(item)
-        out = ['<section class="archive-entrances" aria-label="Входы и объявления">',
-               '<p class="issue-kicker">САМОСТОЯТЕЛЬНЫЕ ВХОДЫ</p>']
-        for group, records in grouped.items():
-            out.append('<details class="archive-group" id="' + group_anchor(group) + '"><summary>'
-                       + escape(group) + f' <span>{len(records)}</span></summary>'
-                       '<div class="archive-list">')
-            for item in records:
-                url = f"{BASE}/{item['slug']}/"
-                out.append('<article>'
-                           f'<h2><a href="{escape(url, quote=True)}">{escape(item["search_title"])}</a></h2>'
-                           f'<p>{escape(item["lead"])}</p>'
-                           '</article>')
-            out.append('</div></details>')
-        out.append('</section>')
-        generated += "".join(out)
+    # Search-only N.0 entrances are intentionally not a public catalogue.
     path.write_text(text.replace(token, generated), encoding="utf-8")
 
 
