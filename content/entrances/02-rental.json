@@ -10,7 +10,10 @@
       "open_question": "На какой срок нужен контрабас и в каких условиях он будет храниться?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На долгий срок удобнее привыкнуть к одному контрабасу и его звуку. Аренду можно согласовать под реальную программу занятий.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-zanyatiy",
@@ -20,7 +23,10 @@
       "open_question": "Сколько занятий в неделю планируется и что рекомендует ваш преподаватель?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для регулярных уроков нужен контрабас подходящего размера и удобной настройки. Временное пользование позволяет начать играть.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-studentu-konservatorii",
@@ -30,7 +36,10 @@
       "open_question": "Какая программа сейчас основная и какой контрабас вы уже используете?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "В консерватории инструмент работает ежедневно. Арендованный контрабас важно выбирать по программе, грифу и отклику.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-na-uchebnyy-god",
@@ -40,7 +49,10 @@
       "open_question": "Когда начинаются занятия и какое изменение программы ожидается в течение года?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На учебный год можно взять один привычный инструмент, а позже менять размер или класс по мере роста музыкальных задач.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-pered-pokupkoy",
@@ -50,7 +62,10 @@
       "open_question": "Вы уже выбрали конкретный инструмент или хотите сначала сравнить несколько вариантов?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Если хочется сначала узнать инструмент в длительной игре, аренда даёт время почувствовать его до решения о покупке.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-na-vremya-remonta",
@@ -60,7 +75,10 @@
       "open_question": "Как долго ваш инструмент будет в ремонте и какие занятия нельзя прерывать?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Пока свой контрабас ремонтируют, занятия и репетиции могут продолжаться на инструменте близкого размера и настройки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-gastroley",
@@ -70,7 +88,10 @@
       "open_question": "Где предстоят выступления и кто отвечает за перевозку и хранение инструмента?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На гастроли не всегда удобно везти большой корпус. Можно согласовать временный бас на месте выступления.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-orkestrovogo-kontrabasa",
@@ -80,7 +101,10 @@
       "open_question": "Для какой программы и какого состава нужен инструмент, и есть ли требования райдера?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Оркестровому контрабасу нужна чистая смычковая атака и рабочий нижний регистр. Эти качества важны и при аренде.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-3-4",
@@ -90,7 +114,10 @@
       "open_question": "Какой контрабасный размер вы используете сейчас и что в нём неудобно?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "У размера 3/4 бывают разные мензуры и грифы. Арендуемый инструмент лучше попробовать своей рукой.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-na-mesyats",
@@ -100,7 +127,10 @@
       "open_question": "Это месяц регулярной практики, концертной подготовки или знакомства перед выбором?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Месяца достаточно для регулярных занятий, если контрабас подходит по размеру и уже подготовлен к игре.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-na-semestr",
@@ -110,7 +140,10 @@
       "open_question": "К какому зачёту или учебному рубежу должен быть готов контрабас?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На семестр нужен устойчивый строй и удобная ежедневная техника. Срок и инструмент можно согласовать вместе.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-muzykalnoy-shkoly",
@@ -120,7 +153,10 @@
       "open_question": "Какого возраста ученик и какой размер инструмента рекомендует преподаватель?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для музыкальной школы важны рекомендации педагога и подходящий размер. Аренда позволяет пройти учебный этап без покупки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-orkestrovoy-repetitsii",
@@ -130,7 +166,10 @@
       "open_question": "Где проходит репетиция и какие именно партии должен исполнять контрабас?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для оркестровой репетиции инструмент должен отвечать на привычные штрихи. Лучше оставить время для короткой пробы.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-zapisi",
@@ -140,7 +179,10 @@
       "open_question": "Что именно записывается и каким образом предполагается снимать звук контрабаса?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "На записи слышен каждый призвук, поэтому временный бас стоит подобрать по чистоте атаки и состоянию струн.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-kontserta",
@@ -150,7 +192,10 @@
       "open_question": "Какой репертуар планируется и будет ли время привыкнуть к инструменту до выступления?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для концерта важен знакомый по ощущениям инструмент и время на настройку. Аренду можно связать с репетициями.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-dzhazovogo-proekta",
@@ -160,7 +205,10 @@
       "open_question": "Вы выступаете акустически или планируете подключение к усилителю?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Джазовому проекту нужен бас с удобной пальцевой атакой и рабочей высотой струн. Временное пользование можно согласовать.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-nachinayuschego-vzroslogo",
@@ -170,7 +218,10 @@
       "open_question": "Какой у вас рост, есть ли преподаватель и какую музыку хочется играть?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Взрослому для начала занятий достаточно подходящего инструмента на ближайший этап, без немедленной покупки.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-probnogo-obucheniya",
@@ -180,7 +231,10 @@
       "open_question": "На какой период вы хотите попробовать обучение и где будут проходить занятия?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для пробных уроков можно взять контрабас на время и понять, как складывается ежедневная игра.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "arenda-kontrabasa-dlya-domashnego-muzitsirovaniya",
@@ -190,7 +244,10 @@
       "open_question": "Есть ли дома место для безопасного хранения и игры со смычком?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Для домашнего музицирования нужен инструмент, который удобно держать и приятно брать в руки каждый день.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     },
     {
       "slug": "vremennyy-kontrabas-vmesto-pokupki",
@@ -200,7 +257,10 @@
       "open_question": "Какую задачу контрабас должен решить сейчас и насколько предсказуем срок пользования?",
       "group": "Аренда и пользование",
       "status": "ready",
-      "origin": "editorial_hypothesis"
+      "origin": "editorial_hypothesis",
+      "bridge": "Когда покупка пока не определилась, аренда сохраняет доступ к музыке. Можно выбрать размер и срок под ваш ритм.",
+      "bridge_model": "gpt-6",
+      "bridge_status": "gpt6_draft"
     }
   ]
 }
