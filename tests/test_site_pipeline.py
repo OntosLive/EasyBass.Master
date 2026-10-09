@@ -97,7 +97,9 @@ class PublicationTests(unittest.TestCase):
         self.assertIn('tel:+79096945544', access)
         self.assertIn('aria-label="Telegram"', deep)
         self.assertIn(DOMAIN + '/details/masterovoy-kontrabas/', deep)
-        self.assertNotIn("MAX", access)
+        self.assertIn('class="max-contact-pending"', access)
+        self.assertIn("https://t.me/+79096945544", access)
+        self.assertNotIn('href="https://max.ru/', access)
 
     def test_internal_files_stay_outside_public_site(self):
         build(ROOT, self.site)
@@ -277,7 +279,8 @@ class PublicationTests(unittest.TestCase):
             self.assertIsNotNone(soup.select_one(".meta a[href]"))
             self.assertLess(html.index('class="contact-block'), html.index('class="entry-range-grid'))
             self.assertIn('href="tel:+79096945544"', html)
-            self.assertNotIn("MAX", html)
+            self.assertEqual(len(soup.select(".max-contact-pending")), 1)
+            self.assertIsNone(soup.select_one('a[aria-label="MAX"]'))
         self.assertIn("../details/masterovoy-kontrabas/",
                       (self.site / examples[0]).read_text(encoding="utf-8"))
         self.assertEqual(
