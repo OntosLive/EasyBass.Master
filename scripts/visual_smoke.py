@@ -184,7 +184,17 @@ async def run(site: Path, output: Path) -> dict:
                     overflow = max(0, dims["scroll"] - dims["width"])
                     checks.append({"page": name, "viewport": width, "overflow_px": overflow})
                     if overflow > 2:
-                        raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px")
+                        offenders = await page.evaluate("""() => {
+                            const w = document.documentElement.clientWidth;
+                            return [...document.querySelectorAll('body *')].map(el => {
+                                const r = el.getBoundingClientRect();
+                                return {tag: el.tagName.toLowerCase(), id: el.id,
+                                        cls: typeof el.className === 'string' ? el.className.slice(0,65) : '',
+                                        left: Math.round(r.left), right: Math.round(r.right), width: Math.round(r.width)};
+                            }).filter(x => x.right > w+3 && x.width > 0)
+                              .sort((a,b) => b.right-a.right).slice(0,12);
+                        }""")
+                        raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px, offenders={offenders}")
                     if name == "workshop-maps" and width in (390, 1366):
                         await page.locator(".atlas-hub-figure").first.screenshot(
                             path=str(output / f"workshop-maps-{width}.png"))
