@@ -52,9 +52,7 @@ jobs:
       - name: Preserve text-only site as the independent reference version
         run: python scripts/dual_view.py snapshot --site _site --snapshot _audit/text-snapshot
       - name: Render visual site and copy the same content to /text/
-        run: |
-          git fetch --no-tags --depth=1 origin codex/room-foyer-integration-20261011
-          python scripts/dual_view.py compose --site _site --snapshot _audit/text-snapshot --design-ref FETCH_HEAD
+        run: python scripts/dual_view.py compose --site _site --snapshot _audit/text-snapshot
       - name: Validate both versions, paths and search-canonical boundaries
         run: python scripts/dual_view.py verify --site _site
       - name: Test visual room, existing knowledge pages and Courtier guests
