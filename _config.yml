@@ -8,6 +8,7 @@ exclude:
   - README.md
   - AGENTS.md
   - docs
+  - design
   - content
   - scripts
   - tests
