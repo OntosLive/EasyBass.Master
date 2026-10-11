@@ -49,6 +49,36 @@ jobs:
         run: python scripts/validate_site.py --site _site --output _audit/validation.json
       - name: Check real browser layout at 390 and 1366 pixels
         run: python scripts/visual_smoke.py --site _site --output _audit/screens
+      - name: Publish isolated, noindex room preview
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --depth=1 origin codex/room-foyer-integration-20261011
+          mkdir -p _site/preview-room/assets/photography
+          git show FETCH_HEAD:index.html > _site/preview-room/index.html
+          for photo in room-golden.webp row-amber.webp room-evening.webp; do
+            git show "FETCH_HEAD:assets/photography/$photo" > "_site/preview-room/assets/photography/$photo"
+          done
+          python - <<'PY'
+          from pathlib import Path
+          from bs4 import BeautifulSoup
+          page = Path('_site/preview-room/index.html')
+          html = page.read_text(encoding='utf-8')
+          if html.count('Пространство, в котором можно найти свой.') < 1:
+              raise SystemExit('Room preview: approved heading is missing')
+          html = html.replace('</head>', '<meta name="robots" content="noindex,nofollow">\\n</head>', 1)
+          html = html.replace('href="archive/"', 'href="../archive/"')
+          html = html.replace('<title>Мастерская контрабаса · EasyBassMaster</title>',
+                              '<title>Предпросмотр комнаты · EasyBassMaster</title>', 1)
+          page.write_text(html, encoding='utf-8')
+          doc = BeautifulSoup(html, 'html.parser')
+          for img in doc.select('img[src]'):
+              src = img['src']
+              if not (page.parent / src).is_file():
+                  raise SystemExit(f'Room preview missing image: {src}')
+          if len(doc.select('meta[name="robots"][content="noindex,nofollow"]')) != 1:
+              raise SystemExit('Room preview must not be indexed')
+          print('Isolated room preview ready at /preview-room/')
+          PY
       - name: Save diagnostic reports
         if: always()
         uses: actions/upload-artifact@v4
