@@ -49,103 +49,18 @@ jobs:
         run: python scripts/validate_site.py --site _site --output _audit/validation.json
       - name: Check real browser layout at 390 and 1366 pixels
         run: python scripts/visual_smoke.py --site _site --output _audit/screens
-      - name: Publish isolated, noindex room preview
+      - name: Preserve text-only site as the independent reference version
+        run: python scripts/dual_view.py snapshot --site _site --snapshot _audit/text-snapshot
+      - name: Render visual site and copy the same content to /text/
         run: |
-          set -euo pipefail
           git fetch --no-tags --depth=1 origin codex/room-foyer-integration-20261011
-          mkdir -p _site/preview-room/assets/photography
-          git show FETCH_HEAD:index.html > _site/preview-room/index.html
-          for photo in room-golden.webp row-amber.webp room-evening.webp; do
-            git show "FETCH_HEAD:assets/photography/$photo" > "_site/preview-room/assets/photography/$photo"
-          done
-          python - <<'PY'
-          from pathlib import Path
-          from bs4 import BeautifulSoup
-          page = Path('_site/preview-room/index.html')
-          html = page.read_text(encoding='utf-8')
-          if html.count('Пространство, в котором можно найти свой.') < 1:
-              raise SystemExit('Room preview: approved heading is missing')
-          html = html.replace('</head>', '<meta name="robots" content="noindex,nofollow">\\n</head>', 1)
-          html = html.replace('href="archive/"', 'href="../archive/"')
-          html = html.replace('<title>Мастерская контрабаса · EasyBassMaster</title>',
-                              '<title>Предпросмотр комнаты · EasyBassMaster</title>', 1)
-          page.write_text(html, encoding='utf-8')
-          doc = BeautifulSoup(html, 'html.parser')
-          cta = doc.select('.cards-3 .info-card:last-child > a.btn[href="#contact"]')
-          if len(cta) != 1 or cta[0].get_text(' ', strip=True) != 'Договориться о встрече':
-              raise SystemExit('Preview CTA nesting is invalid')
-          for img in doc.select('img[src]'):
-              src = img['src']
-              if not src:  # Runtime lightbox starts empty until a thumbnail is opened.
-                  continue
-              if not (page.parent / src).is_file():
-                  raise SystemExit(f'Room preview missing image: {src}')
-          if len(doc.select('meta[name="robots"][content="noindex,nofollow"]')) != 1:
-              raise SystemExit('Room preview must not be indexed')
-          print('Isolated room preview ready at /preview-room/')
-          PY
-      - name: Publish standalone foyer and test it in a real browser
+          python scripts/dual_view.py compose --site _site --snapshot _audit/text-snapshot --design-ref FETCH_HEAD
+      - name: Validate both versions, paths and search-canonical boundaries
+        run: python scripts/dual_view.py verify --site _site
+      - name: Test visual room, guest doors and reading layouts in the browser
         run: |
-          set -euo pipefail
-          git fetch --no-tags --depth=1 origin codex/room-foyer-integration-20261011
-          mkdir -p _site/preview-foyer/assets/photography
-          git show FETCH_HEAD:design/foyer/index.html > _site/preview-foyer/index.html
-          git show FETCH_HEAD:assets/photography/room-golden.webp > _site/preview-foyer/assets/photography/room-golden.webp
-          python - <<'PY'
-          import asyncio
-          from pathlib import Path
-          import shutil
-          from bs4 import BeautifulSoup
-          from playwright.async_api import async_playwright
-
-          site = Path('_site').resolve()
-          entry = site / 'preview-foyer/index.html'
-          html = entry.read_text(encoding='utf-8')
-          doc = BeautifulSoup(html, 'html.parser')
-          assert len(doc.select('h1')) == 1, 'Foyer must have one H1'
-          assert 'Прихожая' in doc.title.text, 'Foyer is not a distinct document'
-          assert not doc.select_one('h1').get_text(' ', strip=True).startswith('Пространство, в котором'), 'Copied room instead of foyer'
-          assert len(doc.select('a.primary[href="../preview-room/"]')) == 1, 'Main door does not lead to room'
-          assert doc.select_one('meta[name="robots"][content="noindex,nofollow"]'), 'Preview must not index'
-          for img in doc.select('img[src]'):
-              assert (entry.parent / img['src']).is_file(), f"Missing preview photograph: {img['src']}"
-          for a in doc.select('a[href]'):
-              if a['href'].startswith('../preview-room/'):
-                  assert (site / 'preview-room/index.html').exists(), 'Room destination unavailable'
-
-          async def browser_check():
-              chrome = shutil.which('google-chrome') or shutil.which('chromium')
-              if not chrome:
-                  raise RuntimeError('Browser executable missing')
-              async with async_playwright() as p:
-                  browser = await p.chromium.launch(executable_path=chrome, headless=True, args=['--no-sandbox', '--allow-file-access-from-files'])
-                  try:
-                      for width in (390, 728, 1366):
-                          page = await browser.new_page(viewport={'width': width, 'height': 900}, device_scale_factor=1)
-                          await page.goto(entry.as_uri(), wait_until='load')
-                          await page.wait_for_function("() => document.querySelector('.door-photo').naturalWidth > 0")
-                          data = await page.evaluate("""() => {
-                            const rect = selector => document.querySelector(selector).getBoundingClientRect();
-                            const button = rect('.primary'), photo = rect('.door-surround'), title = rect('h1');
-                            return {overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
-                                    buttonWidth: button.width, buttonRight: button.right,
-                                    photoWidth: photo.width, titleWidth: title.width,
-                                    h1: document.querySelector('h1').textContent.trim()};
-                          }""")
-                          assert data['overflow'] <= 1, f'Foyer horizontal overflow {width}px: {data}'
-                          assert 170 < data['buttonWidth'] <= width, f'Foyer CTA collapsed {width}px: {data}'
-                          assert 200 < data['photoWidth'] <= width, f'Foyer doorway collapsed {width}px: {data}'
-                          assert 200 < data['titleWidth'] <= width, f'Foyer heading broken {width}px: {data}'
-                          await page.screenshot(path=str(Path('_audit') / f'foyer-{width}.png'), full_page=True, animations='disabled')
-                          await page.locator('a.primary').click()
-                          assert '/preview-room/' in page.url, 'Door opens wrong document'
-                          print(f'FOYER_OK {width}px {data}')
-                          await page.close()
-                  finally:
-                      await browser.close()
-
-          asyncio.run(browser_check())
-          PY
+          git show FETCH_HEAD:scripts/visual_smoke.py > _audit/visual_smoke.py
+          python _audit/visual_smoke.py --site _site --output _audit/visual-screens
       - name: Save diagnostic reports
         if: always()
         uses: actions/upload-artifact@v4
@@ -153,6 +68,13 @@ jobs:
           name: easybass-audit
           path: _audit/
           retention-days: 14
+      - name: Save reviewable two-mode site on PR
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: easybass-one-domain-two-versions
+          path: _site/
+          retention-days: 7
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
