@@ -11,7 +11,7 @@
 5. [Архитектура знакомства R1](docs/meeting-architecture-r1.md) — как человек после Придворного различает конкретные инструменты и достигает реальной встречи. **Это проект следующего слоя, а не готовые функции сайта.**
 6. [Полевой протокол первого контрабаса](docs/first-instrument-pilot-r1.md) — пустой паспорт реального экземпляра, свидетельства и контроль честного A/B; не содержит вымышленных инструментов.
 7. [Текущий рабочий журнал](docs/CURRENT-WORK-STATE.md), затем фактический `main`, workflow, `scripts/dual_view.py` и связанные исходники.
-7. [ONTOS CORE · Закон когерентного воплощения](https://github.com/OntosLive/ontos-core/blob/main/canon/coherence-of-expression.md).
+8. [ONTOS CORE · Закон когерентного воплощения](https://github.com/OntosLive/ontos-core/blob/main/canon/coherence-of-expression.md).
 
 ## Текущая главная концепция
 
