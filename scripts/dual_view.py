@@ -75,6 +75,14 @@ def make_visual(site, snap, ref):
         home = home.replace("</head>", '<link rel="canonical" href="' + DOMAIN + '/">\n</head>', 1)
     if home.count('class="contact-block"') != 1:
         raise ValueError("Visual home lost the real contact")
+    # A single visual parent: the approved room's FIRST style block is reused
+    # by every N.0 foyer. Do not compose another newspaper-like stylesheet.
+    room_doc = BeautifulSoup(home, "html.parser")
+    room_styles = room_doc.select("head style")
+    if not room_styles or "--content-width" not in room_styles[0].get_text():
+        raise ValueError("Approved room visual foundation is missing")
+    write(site / "assets/visual/room-parent.css",
+          room_styles[0].get_text().encode("utf-8"))
     write(site / "index.html", home.encode("utf-8"))
 
     tool = snap.parent / "foyer_wrap_from_design.py"

@@ -103,96 +103,138 @@ def transform(raw: str, relative: Path) -> tuple[str, str]:
     for element in (lead, contact, router, footer, brand, enter):
         element.extract()
     body.clear()
-    body["class"] = sorted(classes | {"courtier-page"})
+    body["class"] = sorted(classes | {"courtier-page", "room-child"})
     body["data-courtier"] = mode
 
     if soup.head is None:
         raise ValueError(f"{relative}: no head")
     if not soup.head.select_one('link[rel="canonical"]'):
         raise ValueError(f"{relative}: canonical missing")
-    css = soup.new_tag("link", rel="stylesheet",
-                       href=root + "assets/visual/courtier.css")
-    soup.head.append(css)
+    # Text/newspaper styling stays exclusively in /text/. A build-time
+    # extracted CSS snapshot from the approved ROOM is our only visual parent.
+    for old_style in list(soup.head.select('link[rel="stylesheet"]')):
+        old_style.decompose()
+    for name in ("room-parent.css", "courtier.css"):
+        css = soup.new_tag("link", rel="stylesheet",
+                           href=root + "assets/visual/" + name)
+        soup.head.append(css)
 
-    header = soup.new_tag("header")
-    header["class"] = ["courtier-header"]
-    header.append(brand)
-    header.append(new_text(soup, "span", "courtier-header-tag",
-                           "МАСТЕРСКАЯ · КОЛЛЕКЦИЯ · КЛУБ"))
+    # An N.0 is a CHILD of the already approved room, not a new design
+    # and not the short newspaper skin. The room remains unchanged.
+    def el(name: str, cls: str = "", txt: str | None = None, **attrs):
+        item = soup.new_tag(name, **attrs)
+        if cls:
+            item["class"] = cls.split()
+        if txt is not None:
+            item.string = txt
+        return item
+
+    header = el("header", "topbar courtier-header")
+    bar = el("div", "topbar-inner")
+    logo = el("a", "brand", href=root)
+    logo.append(el("span", "brand-mark", "EASYBASS.MASTER"))
+    logo.append(el("span", "brand-sub", "Мастерская · коллекция · клуб"))
+    bar.append(logo)
+    nav = el("nav", "nav", **{"aria-label": "Основная навигация"})
+    for anchor, label in (
+        ("collection", "Коллекция"), ("workshop", "Мастерская"),
+        ("selection", "Знакомство"), ("gallery", "Галерея"),
+        ("contact", "Контакты"),
+    ):
+        nav.append(el("a", txt=label, href=root + "#" + anchor))
+    bar.append(nav)
+    bar.append(el("a", "mode-switch courtier-header-entry",
+                  "Войти в мастерскую", href=root))
+    header.append(bar)
     body.append(header)
 
-    main = soup.new_tag("main")
-    main["class"] = ["courtier-main"]
-    body.append(main)
+    hero = el("section", "hero courtier-hero")
+    media = el("div", "hero-media")
+    media.append(el("img", src=root + "assets/photography/room-golden.webp",
+                    alt="Коллекция контрабасов в мастерской",
+                    loading="eager", decoding="sync"))
+    hero.append(media)
+    stage = el("div", "hero-grid courtier-stage",
+               **{"aria-label": "Придворный принимает ваш запрос"})
+    greeting = el("div", "hero-copy courtier-greeting")
+    greeting.append(el("div", "eyebrow", "Москва · частная мастерская"))
 
-    stage = soup.new_tag("section")
-    stage["class"] = ["courtier-stage"]
-    stage["aria-label"] = "Встреча с мастерской контрабаса"
-    main.append(stage)
-
-    greeting = soup.new_tag("div")
-    greeting["class"] = ["courtier-greeting"]
-    stage.append(greeting)
-    greeting.append(new_text(soup, "p", "courtier-foreword",
-                             "ВАШ ВОПРОС · НАЧАЛО ЗНАКОМСТВА"))
+    lead["class"] = ["issue", "master-lead", "courtier-lead"]
+    heading["class"] = ["hero-title"]
+    bridge = exact_one(lead, ".entry-modulation", str(relative))
+    bridge["class"] = sorted(set(bridge.get("class", [])) | {"hero-subtitle"})
     greeting.append(lead)
 
-    choices = soup.new_tag("div")
-    choices["class"] = ["courtier-choices"]
-    choices["aria-label"] = "Связаться или войти"
-    greeting.append(choices)
-
-    phone = soup.new_tag("div")
-    phone["class"] = ["courtier-call"]
-    phone.append(new_text(soup, "span", "courtier-choice-label",
-                          "СРАЗУ СВЯЗАТЬСЯ"))
-    phone.append(contact)
-    choices.append(phone)
-
-    way_in = soup.new_tag("div")
-    way_in["class"] = ["courtier-entry"]
-    way_in.append(new_text(soup, "span", "courtier-choice-label",
-                           "ИЛИ ВОЙТИ В КОМНАТУ"))
+    choices = el("div", "hero-actions courtier-choices",
+                 **{"aria-label": "Позвонить или войти в мастерскую"})
+    call = el("div", "courtier-call")
+    contact["id"] = "contact-foyer"
+    call.append(contact)
+    choices.append(call)
+    enter["class"] = ["btn", "primary", "courtier-enter", "foyer-door-enter"]
     enter["href"] = root
-    enter["class"] = ["foyer-door-enter", "courtier-enter"]
     enter.clear()
     enter.append("Войти в мастерскую")
-    enter.append(new_text(soup, "span", "courtier-enter-arrow", "↗"))
-    way_in.append(enter)
-    choices.append(way_in)
+    choices.append(enter)
+    greeting.append(choices)
+    stage.append(greeting)
 
+    card_captions = {
+        "collection": ("Коллекция", "Разные контрабасы рядом"),
+        "room": ("Коллекция", "Комната контрабасов"),
+        "evening": ("Коллекция", "Вечерний салон"),
+        "neck": ("Мастерская", "Геометрия грифа и накладки"),
+        "seams": ("Мастерская", "Швы и соединения корпуса"),
+        "anatomy": ("Мастерская", "Устройство контрабаса"),
+    }
     art_path, alt = IMAGES[mode]
-    portal = soup.new_tag("a", href=root)
-    portal["class"] = ["courtier-portal"]
-    portal["data-art"] = "diagram" if mode in {"neck","seams","anatomy"} else "photo"
-    portal["aria-label"] = "Войти в общую комнату EasyBassMaster"
-    image = soup.new_tag("img", src=root + art_path, alt=alt,
-                         loading="eager", decoding="sync")
-    portal.append(image)
-    caption = soup.new_tag("span")
-    caption["class"] = ["courtier-portal-caption"]
-    caption.append(new_text(soup, "span", "courtier-portal-eyebrow",
-                            "ПО ТУ СТОРОНУ ДВЕРИ"))
-    caption.append(new_text(soup, "span", "courtier-portal-title",
-                            "Пространство, в котором можно найти свой."))
-    caption.append(new_text(soup, "span", "courtier-portal-arrow", "↗"))
-    portal.append(caption)
+    caption_tag, caption_title = card_captions[mode]
+    portal = el("a", "card mini-card courtier-portal", href=root,
+                **{"aria-label": "Открыть главную комнату мастерской",
+                   "data-art": ("diagram" if mode in {"neck", "seams", "anatomy"}
+                                else "photo")})
+    card_media = el("span", "media courtier-art")
+    card_media.append(el("img", src=root + art_path, alt=alt,
+                         loading="eager", decoding="sync"))
+    portal.append(card_media)
+    card_content = el("span", "content courtier-portal-copy")
+    card_content.append(el("span", "card-tag", caption_tag))
+    card_content.append(el("span", "courtier-portal-title", caption_title))
+    card_content.append(el("span", "courtier-portal-action",
+                           "Войти в пространство ↗"))
+    portal.append(card_content)
     stage.append(portal)
+    hero.append(stage)
+    body.append(hero)
 
-    horizon = soup.new_tag("section")
-    horizon["class"] = ["courtier-horizon"]
-    horizon["aria-label"] = "Возможности мастерской"
-    horizon.append(new_text(soup, "p", "courtier-horizon-kicker",
-                            "ЗА ПРЕДЕЛАМИ ПЕРВОГО ВОПРОСА"))
-    horizon.append(new_text(soup, "h2", "courtier-horizon-title",
-                            "Один инструмент открывает целый мир различий."))
-    horizon.append(router)
-    main.append(horizon)
+    strip = el("div", "hero-strip courtier-range-strip")
+    for item in ranges.select("a[href]"):
+        item["class"] = sorted(set(item.get("class", [])) | {"stat"})
+    ranges["class"] = ["hero-stats", "entry-range-grid"]
+    strip.append(ranges)
+    body.append(strip)
 
-    exit_section = soup.new_tag("div")
-    exit_section["class"] = ["courtier-footer"]
-    exit_section.append(footer)
-    main.append(exit_section)
+    main = el("main", "courtier-main")
+    section = el("section", "section courtier-horizon", id="possibilities")
+    head = el("div", "section-head")
+    head.append(el("h2", txt="Больше, чем один вопрос."))
+    head.append(el("p", txt="Коллекция, работа мастерской и знакомство "
+                   "с инструментами. Можно продолжить с того, "
+                   "что важно именно вам."))
+    section.append(head)
+    for item in utilities.select("a[href]"):
+        item["class"] = sorted(set(item.get("class", [])) | {"card", "info-card"})
+    utilities["class"] = ["cards-3", "entry-utilities"]
+    section.append(utilities)
+    main.append(section)
+    body.append(main)
+
+    page_footer = el("footer", "courtier-footer master-footer")
+    inner = el("div", "footer-inner")
+    for item in footer.select("a[href]"):
+        inner.append(item.extract())
+    page_footer.append(inner)
+    body.append(page_footer)
 
     result = str(soup)
     check = BeautifulSoup(result, "html.parser")
