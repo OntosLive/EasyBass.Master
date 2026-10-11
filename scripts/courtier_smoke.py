@@ -104,10 +104,10 @@ async def inspect(site: Path, report: Path) -> dict:
                             raise AssertionError(f"{name}: two editorial exits lost")
                         if await page.locator('a.courtier-enter[href]').count() != 1:
                             raise AssertionError(f"{name}: direct room action missing")
-                        if await page.locator("a.courtier-portal[href]").count() != 1:
-                            raise AssertionError(f"{name}: physical doorway missing")
+                        if await page.locator(".hero-actions a.foyer-door-enter[href]").count() != 1:
+                            raise AssertionError(f"{name}: approved room entrance missing")
                         await page.wait_for_function(
-                            "() => {let i=document.querySelector('.courtier-portal img');"
+                            "() => {let i=document.querySelector('#heroImage');"
                             "return i && i.complete && i.naturalWidth>0;}", timeout=15000)
                         await page.wait_for_function(
                             "() => {let i=document.querySelector('.hero-media img');"
