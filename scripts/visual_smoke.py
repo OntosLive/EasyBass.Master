@@ -31,7 +31,7 @@ ROUTES = [
     ("sensor-long", "vhod/ergonomic-neck/kontrabas-posle-zameny-nakladki-stal-neudoben/index.html"),
     ("standalone", "kupit-kontrabas-v-moskve/index.html"),
 ]
-WIDTHS = (390, 760, 820, 1366)
+WIDTHS = (390, 728, 760, 820, 1366)
 
 
 async def run(site: Path, output: Path) -> dict:
@@ -123,10 +123,12 @@ async def run(site: Path, output: Path) -> dict:
                                 titleWidth: title.getBoundingClientRect().width,
                                 copyWidth: copy.getBoundingClientRect().width,
                                 panelWidth: panel.getBoundingClientRect().width,
-                                sectionWidth: section.getBoundingClientRect().width
+                                sectionWidth: section.getBoundingClientRect().width,
+                                paragraphTransform: getComputedStyle(copy.querySelector('p')).textTransform
                             };
                         }""")
                         if (contact_geometry.get("missing") or contact_geometry["insideLink"] or
+                                contact_geometry["paragraphTransform"] == "uppercase" or
                                 contact_geometry["panelWidth"] < contact_geometry["sectionWidth"] * .85 or
                                 contact_geometry["titleWidth"] < contact_geometry["copyWidth"] * .75):
                             raise AssertionError(
