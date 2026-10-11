@@ -586,6 +586,34 @@
     body.room-home .mobile-sheet{display:none;}
     body.room-home.menu-open .mobile-sheet{display:block;transform:none;}
   }
+  @media(max-width:1180px){
+    body.room-home .cards-3,
+    body.room-home .grid-2,
+    body.room-home .mini-stack,
+    body.room-home .contact-grid{grid-template-columns:minmax(0,1fr);}
+  }
+  @media(max-width:760px){
+    body.room-home main,
+    body.room-home .section,
+    body.room-home .gallery-wrap,
+    body.room-home .gallery-stage,
+    body.room-home .gallery-toolbar,
+    body.room-home .gallery-tabs,
+    body.room-home .card,
+    body.room-home .info-card,
+    body.room-home .cards-3,
+    body.room-home .grid-2,
+    body.room-home .mini-stack,
+    body.room-home .thumbs,
+    body.room-home .section-head{min-width:0;max-width:100%;}
+    body.room-home .section{width:100%;box-sizing:border-box;}
+    body.room-home .cards-3,
+    body.room-home .thumbs{grid-template-columns:minmax(0,1fr);}
+    body.room-home .btn{max-width:100%;min-width:0;box-sizing:border-box;white-space:normal;overflow-wrap:anywhere;text-align:center;}
+    body.room-home .section-head{grid-template-columns:minmax(0,1fr);}
+    body.room-home .section-head h2,
+    body.room-home .section-head p{min-width:0;max-width:100%;overflow-wrap:break-word;}
+  }
   @media(max-width:760px){
     body.room-home .hero-grid,
     body.room-home .grid-2,
