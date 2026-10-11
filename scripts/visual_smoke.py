@@ -194,7 +194,21 @@ async def run(site: Path, output: Path) -> dict:
                             }).filter(x => x.right > w+3 && x.width > 0)
                               .sort((a,b) => b.right-a.right).slice(0,12);
                         }""")
-                        raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px, offenders={offenders}")
+                        meta = await page.evaluate("""() => {
+                          const selectors=['.hero-grid','.grid-2','.contact-grid','.contact-copy','.hero-actions','.topbar-inner','.mobile-sheet','.btn'];
+                          const dims=Object.fromEntries(selectors.map(sel=>{
+                            const el=document.querySelector(sel);
+                            if(!el) return [sel,null];
+                            const r=el.getBoundingClientRect();const cs=getComputedStyle(el);
+                            return [sel,{display:cs.display,columns:cs.gridTemplateColumns,flex:cs.flexDirection,
+                              width:cs.width,minWidth:cs.minWidth,boxRight:r.right,scrollWidth:el.scrollWidth}];
+                          }));
+                          return {innerWidth:innerWidth,documentWidth:document.documentElement.clientWidth,
+                            meta:document.querySelector('meta[name="viewport"]')?.content,
+                            isMobile:matchMedia('(max-width:760px)').matches,
+                            isTablet:matchMedia('(max-width:1180px)').matches,dims};
+                        }""")
+                        raise AssertionError(f"{name} at width {width}: horizontal overflow {overflow}px, offenders={offenders}, computed={meta}")
                     if name == "workshop-maps" and width in (390, 1366):
                         await page.locator(".atlas-hub-figure").first.screenshot(
                             path=str(output / f"workshop-maps-{width}.png"))
