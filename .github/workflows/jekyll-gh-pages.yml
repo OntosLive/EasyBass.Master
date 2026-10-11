@@ -71,6 +71,9 @@ jobs:
                               '<title>Предпросмотр комнаты · EasyBassMaster</title>', 1)
           page.write_text(html, encoding='utf-8')
           doc = BeautifulSoup(html, 'html.parser')
+          cta = doc.select('.cards-3 .info-card:last-child > a.btn[href="#contact"]')
+          if len(cta) != 1 or cta[0].get_text(' ', strip=True) != 'Договориться о встрече':
+              raise SystemExit('Preview CTA nesting is invalid')
           for img in doc.select('img[src]'):
               src = img['src']
               if not src:  # Runtime lightbox starts empty until a thumbnail is opened.
