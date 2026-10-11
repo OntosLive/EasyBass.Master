@@ -88,14 +88,50 @@ async def run(site: Path, output: Path) -> dict:
                         if icons["max"]["color"] != icons["telegram"]["color"]:
                             raise AssertionError(f"{name}: MAX is not monochrome like Telegram")
                     if name == "home":
-                        border_widths = await page.locator(".master-directions > a").evaluate_all(
-                            "(items) => items.map(item => parseFloat(getComputedStyle(item).borderLeftWidth))")
-                        if len(border_widths) != 3:
-                            raise AssertionError("Homepage must retain three independent linked spaces")
-                        if width > 760 and any(border < 1 for border in border_widths[1:]):
-                            raise AssertionError(f"Missing desktop column divider at {width}px: {border_widths}")
-                        if width <= 760 and any(border > 0 for border in border_widths):
-                            raise AssertionError(f"Spurious mobile column divider at {width}px: {border_widths}")
+                        if await page.locator("h1").count() != 1:
+                            raise AssertionError("Exactly one room H1 is required")
+                        if await page.locator(".hero-stats .stat").count() != 4:
+                            raise AssertionError("The four original room stats must stay intact")
+                        if await page.locator(".contact-block").count() != 1:
+                            raise AssertionError("The room must publish exactly one verified contact")
+                        await page.wait_for_function(
+                            "() => { const img=document.querySelector('#heroImage');"
+                            " return img && img.complete && img.naturalWidth > 0 }", timeout=10000)
+                        if not await page.locator('h1').inner_text() == "Пространство, в котором можно найти свой.":
+                            raise AssertionError("Original room H1 was changed")
+                        switch = page.locator("#modeSwitch")
+                        if not await switch.count():
+                            raise AssertionError("The original daylight/evening switch is missing")
+                        await switch.click()
+                        await page.wait_for_function(
+                            "() => document.querySelector('#heroImage').getAttribute('src').includes('room-evening.webp')",
+                            timeout=10000)
+                        await switch.click()
+                        await page.wait_for_function(
+                            "() => document.querySelector('#heroImage').getAttribute('src').includes('room-golden.webp')",
+                            timeout=10000)
+                        if width == 1366:
+                            await page.locator("#galleryMain").click()
+                            if not await page.locator("#lightbox").evaluate(
+                                "(el) => el.classList.contains('open')"):
+                                raise AssertionError("Original room gallery lightbox is not working")
+                            await page.keyboard.press("Escape")
+                            if await page.locator("#lightbox").evaluate(
+                                "(el) => el.classList.contains('open')"):
+                                raise AssertionError("Escape must close the room gallery")
+                    else:
+                        if await page.locator("body.foyer-page").count() != 1:
+                            raise AssertionError(f"{name}: guest route lost the foyer body marker")
+                        door = page.locator(".foyer-door")
+                        if await door.count() != 1:
+                            raise AssertionError(f"{name}: one entrance to the room required")
+                        if await page.locator(".foyer-door-enter[href]").count() != 1:
+                            raise AssertionError(f"{name}: missing direct room-entry link")
+                        if name in {"sensor-n0", "access", "knowledge", "collection", "archive"} and width in (390, 1366):
+                            await page.locator(".foyer-door-image img").evaluate("(img) => img.loading='eager'")
+                            await page.wait_for_function(
+                                "() => { const img=document.querySelector('.foyer-door-image img');"
+                                " return img && img.complete && img.naturalWidth > 0 }", timeout=12000)
                     if name in {"collection", "workshop", "meeting"}:
                         redundant = await page.locator("nav.master-links").count()
                         if redundant:
