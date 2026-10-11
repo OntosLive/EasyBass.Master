@@ -82,6 +82,20 @@ class FoyerTests(unittest.TestCase):
             self.assertEqual(len(doc.select('link[href$="courtier.css"]')),1)
             self.assertEqual(doc.select_one('link[rel="canonical"]')["href"],
                              f"https://easybassmaster.ru/{route.parent.as_posix()}/")
+            # The APPROVED ROOM is the visual parent of every N.0. No
+            # newspaper stylesheet or separately invented Courtier skin.
+            styles = [x["href"] for x in doc.select('head link[rel="stylesheet"]')]
+            self.assertEqual(styles, ["../../../assets/visual/room-parent.css",
+                                      "../../../assets/visual/courtier.css"])
+            self.assertIn("room-child", doc.body.get("class", []))
+            self.assertEqual(len(doc.select(".topbar .brand-mark")), 1)
+            self.assertEqual(len(doc.select(".hero .hero-media img")), 1)
+            self.assertEqual(len(doc.select(".hero-grid.courtier-stage")), 1)
+            self.assertEqual(len(doc.select(".hero-title")), 1)
+            self.assertEqual(len(doc.select(".hero-strip .hero-stats a.stat")), 4)
+            self.assertEqual(len(doc.select(".entry-utilities a.card.info-card")), 4)
+            self.assertEqual(len(doc.select(".courtier-portal.card.mini-card")), 1)
+            self.assertEqual(len(doc.select("a.courtier-enter.btn.primary")), 1)
             self.assertEqual(transform(out,route)[0],out)
 
     def test_non_n0_preserved(self):
