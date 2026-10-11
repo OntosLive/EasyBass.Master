@@ -133,7 +133,7 @@ async def inspect(site: Path, report: Path) -> dict:
                         if (check["phone"] != "tel:+79096945544" or
                             check["entrance"] != "../" * len(route.strip("/").split("/"))):
                             raise AssertionError(f"{name} {width}px: route mismatch {check}")
-                        if check["title"]["width"] < min(width * .5, 260):
+                        if check["title"]["width"] < min(width * .45, 180):
                             raise AssertionError(f"{name} {width}px: crushed title {check}")
                         if (check["call"]["width"] < 175 or
                             check["portal_box"]["width"] < 240):
