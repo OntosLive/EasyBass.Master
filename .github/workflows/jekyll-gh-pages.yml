@@ -45,6 +45,8 @@ jobs:
         run: sudo chown -R "$(id -u):$(id -g)" _site
       - name: Compile canonical subject pages and archive
         run: python scripts/site_core.py --site _site --report _audit/build.json
+      - name: Dress existing search and editorial pages as the foyer
+        run: python scripts/foyer_wrap.py --site _site --report _audit/foyer.json
       - name: Validate complete public artifact
         run: python scripts/validate_site.py --site _site --output _audit/validation.json
       - name: Check real browser layout at 390 and 1366 pixels
@@ -56,6 +58,13 @@ jobs:
           name: easybass-audit
           path: _audit/
           retention-days: 14
+      - name: Save complete downloadable foyer and room preview for PR
+        if: github.event_name == 'pull_request'
+        uses: actions/upload-artifact@v4
+        with:
+          name: easybass-room-and-foyer-preview
+          path: _site/
+          retention-days: 10
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
