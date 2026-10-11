@@ -103,8 +103,15 @@ async def run(site: Path, output: Path) -> dict:
                         # A missing '</a>' used to capture most of the document inside
                         # a pill-shaped CTA without generating any horizontal overflow.
                         club_cta = page.locator(".cards-3 .info-card:last-child > a.btn[href='#contact']")
-                        if await club_cta.count() != 1 or (await club_cta.inner_text()).strip() != "Договориться о встрече":
-                            raise AssertionError("Club CTA must be a properly closed, standalone anchor")
+                        cta_count = await club_cta.count()
+                        cta_text = await club_cta.inner_text() if cta_count == 1 else None
+                        if cta_count != 1 or cta_text.strip() != "Договориться о встрече":
+                            club_debug = await page.evaluate("""() => [...document.querySelectorAll('.cards-3 a')]
+                              .map(el => ({href:el.getAttribute('href'),text:el.innerText.slice(0,100),
+                                html:el.outerHTML.slice(0,180)}))""")
+                            raise AssertionError(
+                                f"Malformed club CTA at {width}px: count={cta_count}, "
+                                f"text={cta_text!r}, links={club_debug}")
                         contact_geometry = await page.evaluate("""() => {
                             const section = document.querySelector('#contact');
                             const panel = section?.querySelector('.contact-panel');
