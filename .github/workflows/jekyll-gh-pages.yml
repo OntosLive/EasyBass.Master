@@ -84,6 +84,68 @@ jobs:
               raise SystemExit('Room preview must not be indexed')
           print('Isolated room preview ready at /preview-room/')
           PY
+      - name: Publish standalone foyer and test it in a real browser
+        run: |
+          set -euo pipefail
+          git fetch --no-tags --depth=1 origin codex/room-foyer-integration-20261011
+          mkdir -p _site/preview-foyer/assets/photography
+          git show FETCH_HEAD:design/foyer/index.html > _site/preview-foyer/index.html
+          git show FETCH_HEAD:assets/photography/room-golden.webp > _site/preview-foyer/assets/photography/room-golden.webp
+          python - <<'PY'
+          import asyncio
+          from pathlib import Path
+          import shutil
+          from bs4 import BeautifulSoup
+          from playwright.async_api import async_playwright
+
+          site = Path('_site').resolve()
+          entry = site / 'preview-foyer/index.html'
+          html = entry.read_text(encoding='utf-8')
+          doc = BeautifulSoup(html, 'html.parser')
+          assert len(doc.select('h1')) == 1, 'Foyer must have one H1'
+          assert 'Прихожая' in doc.title.text, 'Foyer is not a distinct document'
+          assert not doc.select_one('h1').get_text(' ', strip=True).startswith('Пространство, в котором'), 'Copied room instead of foyer'
+          assert len(doc.select('a.primary[href="../preview-room/"]')) == 1, 'Main door does not lead to room'
+          assert doc.select_one('meta[name="robots"][content="noindex,nofollow"]'), 'Preview must not index'
+          for img in doc.select('img[src]'):
+              assert (entry.parent / img['src']).is_file(), f"Missing preview photograph: {img['src']}"
+          for a in doc.select('a[href]'):
+              if a['href'].startswith('../preview-room/'):
+                  assert (site / 'preview-room/index.html').exists(), 'Room destination unavailable'
+
+          async def browser_check():
+              chrome = shutil.which('google-chrome') or shutil.which('chromium')
+              if not chrome:
+                  raise RuntimeError('Browser executable missing')
+              async with async_playwright() as p:
+                  browser = await p.chromium.launch(executable_path=chrome, headless=True, args=['--no-sandbox', '--allow-file-access-from-files'])
+                  try:
+                      for width in (390, 728, 1366):
+                          page = await browser.new_page(viewport={'width': width, 'height': 900}, device_scale_factor=1)
+                          await page.goto(entry.as_uri(), wait_until='load')
+                          await page.wait_for_function("() => document.querySelector('.door-photo').naturalWidth > 0")
+                          data = await page.evaluate("""() => {
+                            const rect = selector => document.querySelector(selector).getBoundingClientRect();
+                            const button = rect('.primary'), photo = rect('.door-surround'), title = rect('h1');
+                            return {overflow: document.documentElement.scrollWidth - document.documentElement.clientWidth,
+                                    buttonWidth: button.width, buttonRight: button.right,
+                                    photoWidth: photo.width, titleWidth: title.width,
+                                    h1: document.querySelector('h1').textContent.trim()};
+                          }""")
+                          assert data['overflow'] <= 1, f'Foyer horizontal overflow {width}px: {data}'
+                          assert 170 < data['buttonWidth'] <= width, f'Foyer CTA collapsed {width}px: {data}'
+                          assert 200 < data['photoWidth'] <= width, f'Foyer doorway collapsed {width}px: {data}'
+                          assert 200 < data['titleWidth'] <= width, f'Foyer heading broken {width}px: {data}'
+                          await page.screenshot(path=str(Path('_audit') / f'foyer-{width}.png'), full_page=True, animations='disabled')
+                          await page.locator('a.primary').click()
+                          assert '/preview-room/' in page.url, 'Door opens wrong document'
+                          print(f'FOYER_OK {width}px {data}')
+                          await page.close()
+                  finally:
+                      await browser.close()
+
+          asyncio.run(browser_check())
+          PY
       - name: Save diagnostic reports
         if: always()
         uses: actions/upload-artifact@v4
