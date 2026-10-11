@@ -105,7 +105,7 @@ def make_visual(site, snap):
         html = path.read_text(encoding="utf-8")
         if len(DOOR.findall(html)) != 1:
             raise ValueError("Visual page missing exactly one doorway: " + str(path))
-        transformed, mode = render_courtier(html, path.relative_to(site))
+        transformed, mode = render_courtier(html, path.relative_to(site), home)
         if mode != "not-n0":
             n0_foyers += 1
             scenes[mode] = scenes.get(mode, 0) + 1
@@ -213,9 +213,15 @@ def verify(site):
             source = site / "text" / doc.relative_to(site)
             reference = BeautifulSoup(source.read_text(encoding="utf-8"), "html.parser")
             if (len(d.select("h1")) != 1 or
-                not d.select_one(".courtier-stage .courtier-portal") or
-                d.select_one(".courtier-portal")["href"] != expected_home or
-                len(d.select(".courtier-choices .contact-block")) != 1 or
+                d.body.get("data-room-template") != "design/visual-home/index.html" or
+                "room-foyer" not in d.body.get("class", []) or
+                not d.select_one(".site-shell .hero .hero-copy.master-lead") or
+                not d.select_one(".topbar #modeSwitch") or
+                not d.select_one("#mobileSheet") or
+                not d.select_one("#galleryMain") or
+                not d.select_one("#lightbox") or
+                len(d.select(".hero-actions a.courtier-call[href='tel:+79096945544']")) != 1 or
+                len(d.select(".hero-actions a.foyer-door-enter[href]")) != 1 or
                 len(d.select(".entry-range-grid a")) != 4 or
                 len(d.select(".entry-utilities a")) != 4 or
                 len(d.select(".master-footer a")) != 2):
