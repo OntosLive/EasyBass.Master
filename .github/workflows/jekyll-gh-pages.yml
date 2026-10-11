@@ -7,6 +7,7 @@ on:
   workflow_dispatch:
 permissions:
   contents: read
+  actions: read
   pages: write
   id-token: write
 concurrency:
@@ -73,6 +74,20 @@ jobs:
           name: easybass-one-domain-two-versions
           path: _site/
           retention-days: 7
+      - name: Publish isolated R5 visual review from pinned successful PR artifact
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          echo 'Review only: publishing R5 under /preview/r5/, leaving every production route unchanged'
+          actual="$(gh api repos/OntosLive/EasyBass.Master/actions/runs/38117952280 --jq '.head_sha')"
+          test "$actual" = '3a9f71f49bdd999093311edf7284df8c919153cc'
+          mkdir -p _audit/r5-preview-source
+          if gh run download 38117952280 --repo OntosLive/EasyBass.Master \
+            --name easybass-one-domain-two-versions --dir _audit/r5-preview-source; then
+            python scripts/publish_r5_preview.py --source _audit/r5-preview-source --site _site
+          else
+            echo '::warning::R5 preview artifact expired or unavailable; standard production publication unaffected'
+          fi
       - name: Upload GitHub Pages artifact
         if: github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v3
