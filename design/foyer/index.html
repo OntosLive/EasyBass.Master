@@ -1,0 +1,175 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark">
+  <meta name="robots" content="noindex,nofollow">
+  <title>Прихожая · EasyBassMaster</title>
+  <meta name="description" content="Прихожая мастерской контрабаса EasyBassMaster. Начните знакомство с коллекцией, мастерской и пространством живой встречи.">
+  <style>
+    :root {
+      --ink: #120c09;
+      --ground: #17100c;
+      --bronze: #d9b085;
+      --bronze-strong: #f1c79c;
+      --paper: #f3e7d6;
+      --muted: #c3ab94;
+      --line: rgba(241,199,156,.2);
+      --shadow: 0 25px 70px rgba(0,0,0,.36);
+    }
+    * {box-sizing: border-box}
+    html {scroll-behavior: smooth}
+    body {margin: 0; min-height:100vh; background:
+      radial-gradient(ellipse at 64% 43%, rgba(149,87,42,.14), transparent 42%),
+      radial-gradient(ellipse at 0% 0%, rgba(106,61,36,.2), transparent 45%),
+      var(--ground);
+      color:var(--paper); font: 400 16px/1.5 Georgia, 'Times New Roman', serif;
+      overflow-x:clip}
+    a {color:inherit;text-decoration:none}
+    button, a { -webkit-tap-highlight-color:transparent }
+    a:focus-visible {outline:2px solid var(--bronze-strong);outline-offset:5px}
+    ::selection {background:var(--bronze);color:var(--ink)}
+    .shell {position:relative;min-height:100svh;max-width:1600px;margin:0 auto;padding:0 clamp(22px,5vw,86px)}
+    .shell:before {content:"";position:absolute;inset:0 14px;pointer-events:none;border-left:1px solid rgba(246,216,187,.05);border-right:1px solid rgba(246,216,187,.05)}
+    .masthead {display:flex;align-items:center;justify-content:space-between;gap:28px;min-height:100px;border-bottom:1px solid var(--line);position:relative;z-index:2}
+    .brand {display:flex;flex-direction:column;gap:6px;line-height:1}
+    .brand-name {font-size:clamp(20px,1.7vw,26px);letter-spacing:.075em;white-space:nowrap;font-weight:600}
+    .brand-sub {font:400 10px/1.3 Georgia,serif;letter-spacing:.23em;text-transform:uppercase;color:var(--bronze)}
+    .mast-right {display:flex;align-items:center;gap:24px;color:var(--muted);font-size:12px;letter-spacing:.055em}
+    .mast-right .dot {width:4px;height:4px;background:var(--bronze);border-radius:50%}
+    .threshold {min-height:calc(100svh - 194px);display:grid;grid-template-columns:minmax(0,1.12fr) minmax(360px,.88fr);align-items:center;gap:clamp(40px,6vw,108px);padding:60px 0 72px}
+    .intro {max-width:680px;position:relative;z-index:1}
+    .eyebrow {margin:0 0 clamp(34px,5vh,64px);display:flex;align-items:center;gap:18px;color:var(--bronze);letter-spacing:.23em;text-transform:uppercase;font:400 11px/1.3 Georgia,serif}
+    .eyebrow:after {content:"";height:1px;width:clamp(48px,5vw,90px);background:var(--line)}
+    .eyebrow .number {font-variant-numeric:tabular-nums;white-space:nowrap;color:#e9c69f}
+    .prelude {margin:0 0 21px;color:var(--muted);font-size:clamp(16px,1.45vw,21px)}
+    h1 {font-weight:400;letter-spacing:-.045em;font-size:clamp(51px,6.3vw,101px);line-height:.96;margin:0 0 34px;max-width:12ch;text-wrap:balance}
+    h1 em {font-weight:400;color:var(--bronze-strong);font-style:italic}
+    .lede {max-width:540px;font-size:clamp(17px,1.38vw,21px);line-height:1.7;color:#dac7b3;margin:0 0 34px}
+    .lede strong {font-weight:400;color:var(--paper)}
+    .actions {display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+    .primary {display:inline-flex;align-items:center;justify-content:space-between;gap:32px;padding:19px 21px 19px 26px;border:1px solid rgba(245,210,169,.4);background:linear-gradient(112deg,#b48c66,#e4bd90);color:#1b100b;font-weight:600;font-size:16px;letter-spacing:.015em;border-radius:4px;box-shadow:0 12px 36px rgba(0,0,0,.18);transition:background .2s,transform .2s}
+    .primary svg {width:21px;height:21px;flex:none}
+    .primary:hover {transform:translateY(-2px);background:linear-gradient(112deg,#c6a47d,#f2d0a7)}
+    .minor {padding:13px 7px;display:inline-flex;align-items:center;gap:10px;font-size:14px;line-height:1.3;color:var(--muted);border-bottom:1px solid rgba(241,199,156,.25)}
+    .minor:hover,.minor:focus-visible {color:var(--paper);border-bottom-color:var(--paper)}
+    .below {display:flex;align-items:center;gap:12px;margin-top:46px;color:#ab9078;font-size:12px;letter-spacing:.04em}
+    .below:before {content:"";display:block;width:38px;height:1px;background:#805c41}
+    .portal {margin:0;display:flex;flex-direction:column;align-items:center;gap:19px;min-width:0}
+    .door-surround {position:relative;display:block;width:min(100%,490px);padding:13px;border:1px solid rgba(237,193,140,.42);background:linear-gradient(100deg,#28180f 0%,#49301d 5%,#24150f 11%,#372318 17%,#2b1a10 85%,#60422b 94%,#21110b 100%);box-shadow:var(--shadow),inset 0 0 0 4px #180e0a,0 0 0 6px rgba(191,141,94,.075);transition:transform .35s}
+    .door-surround:hover {transform:translateY(-4px)}
+    .door-inner {position:relative;display:block;width:100%;height:clamp(390px,65vh,700px);overflow:hidden;background:#24170f;border:2px solid rgba(250,207,149,.32);box-shadow:inset 0 0 36px rgba(0,0,0,.3)}
+    .door-inner:after {content:"";position:absolute;inset:0;pointer-events:none;background:linear-gradient(180deg,rgba(14,8,5,.72),transparent 19%,transparent 61%,rgba(11,7,5,.72)),linear-gradient(90deg,rgba(15,8,4,.35),transparent 20%,transparent 80%,rgba(15,8,4,.35))}
+    .door-photo {display:block;width:100%;height:100%;object-fit:cover;object-position:48% 50%;filter:saturate(.91) brightness(.84);transition:transform .65s,filter .65s}
+    .door-surround:hover .door-photo,.door-surround:focus-visible .door-photo {transform:scale(1.045);filter:saturate(1.02) brightness(.94)}
+    .lintel {position:absolute;z-index:1;left:19px;right:19px;top:25px;display:flex;justify-content:space-between;align-items:center;color:#f4d9ba;letter-spacing:.2em;font-size:10px;text-transform:uppercase}
+    .lintel:after {content:"";height:1px;width:36px;background:currentColor;opacity:.5}
+    .threshold-sign {position:absolute;z-index:2;bottom:26px;left:25px;right:25px;display:flex;align-items:end;justify-content:space-between;gap:14px;color:#fff2df}
+    .threshold-sign span {max-width:250px;font-size:clamp(26px,2.3vw,37px);line-height:1.06}
+    .threshold-sign .arrow {display:grid;place-items:center;width:50px;height:50px;flex:none;border:1px solid rgba(255,225,194,.6);border-radius:50%;font-size:27px;line-height:1;background:rgba(16,10,7,.38);transition:background .2s}
+    .door-surround:hover .arrow {background:rgba(194,131,77,.43)}
+    .portal figcaption {width:min(100%,490px);display:flex;justify-content:space-between;gap:12px;color:#ad927b;font-size:11px;letter-spacing:.045em}
+    .portal figcaption span:last-child {white-space:nowrap}
+    .footer {border-top:1px solid var(--line);display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;min-height:94px;color:var(--muted);font-size:13px}
+    .footer p {margin:0}
+    .paths {display:flex;align-items:center;flex-wrap:wrap;gap:clamp(18px,3vw,42px)}
+    .paths a {display:inline-block;padding:6px 0;border-bottom:1px solid transparent;color:#e1c5a5;transition:border-color .2s}
+    .paths a:hover {border-bottom-color:currentColor}
+    @media (max-width:1060px) {
+      .threshold {grid-template-columns:minmax(0,1fr) minmax(300px,.8fr);gap:32px}
+      .door-inner {height:clamp(370px,57vw,570px)}
+      h1 {font-size:clamp(53px,6vw,78px)}
+    }
+    @media (max-width:800px) {
+      .masthead {min-height:88px}
+      .mast-right span:last-child,.mast-right .dot {display:none}
+      .threshold {min-height:0;grid-template-columns:minmax(0,1fr);gap:46px;padding:44px 0 48px}
+      .intro {max-width:660px}
+      .eyebrow {margin-bottom:32px}
+      h1 {font-size:clamp(58px,10vw,94px);max-width:13ch}
+      .door-surround {width:min(100%,530px)}
+      .door-inner {height:clamp(370px,80vw,560px)}
+      .portal figcaption {width:min(100%,530px)}
+      .footer {padding:24px 0;min-height:0}
+    }
+    @media (max-width:480px) {
+      .shell {padding:0 20px}
+      .masthead {min-height:80px}
+      .brand-name {font-size:20px}
+      .brand-sub {font-size:9px;letter-spacing:.12em}
+      .mast-right {font-size:11px}
+      .threshold {padding:39px 0 38px;gap:39px}
+      .prelude {font-size:15px}
+      h1 {font-size:clamp(47px,12.6vw,62px);margin-bottom:23px}
+      .lede {font-size:17px;line-height:1.62;margin-bottom:27px}
+      .actions {align-items:stretch;flex-direction:column;gap:13px}
+      .primary {width:100%;padding:17px 17px 17px 19px;font-size:15px}
+      .minor {align-self:start}
+      .below {margin-top:30px}
+      .door-surround {width:100%;padding:9px}
+      .door-inner {height:clamp(350px,117vw,520px)}
+      .threshold-sign {bottom:17px;left:16px;right:16px}
+      .threshold-sign .arrow {width:43px;height:43px}
+      .threshold-sign span {font-size:26px}
+      .portal figcaption {font-size:10px}
+      .footer {align-items:start;flex-direction:column;gap:15px}
+      .paths {gap:21px}
+    }
+    @media (prefers-reduced-motion:reduce) {
+      html {scroll-behavior:auto}
+      .door-surround,.door-photo,.primary,.threshold-sign .arrow {transition:none}
+    }
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <header class="masthead">
+      <a class="brand" href="../preview-room/" aria-label="Войти на главную EasyBassMaster">
+        <span class="brand-name">EASYBASS.MASTER</span>
+        <span class="brand-sub">Мастерская · Коллекция · Клуб</span>
+      </a>
+      <div class="mast-right"><span>Москва</span><span class="dot" aria-hidden="true"></span><span>Встречи по договорённости</span></div>
+    </header>
+
+    <main class="threshold" id="entrance">
+      <section class="intro" aria-labelledby="threshold-title">
+        <p class="eyebrow"><span class="number">01 / 02</span><span>Прихожая</span></p>
+        <p class="prelude">Вы у порога мастерской контрабаса.</p>
+        <h1 id="threshold-title">Здесь можно<br>просто <em>войти.</em></h1>
+        <p class="lede">С любым вопросом и без готового решения. <strong>За этой дверью начинается знакомство</strong> с инструментами, их голосами и людьми мастерской.</p>
+        <div class="actions">
+          <a class="primary" href="../preview-room/">
+            <span>Войти в мастерскую</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+              <path d="M4 12h16M13 5l7 7-7 7"/>
+            </svg>
+          </a>
+          <a class="minor" href="../preview-room/#contact">Договориться о встрече <span aria-hidden="true">↗</span></a>
+        </div>
+        <p class="below">Можно посмотреть, послушать, сравнить. Решение подождёт.</p>
+      </section>
+
+      <figure class="portal">
+        <a class="door-surround" href="../preview-room/" aria-label="Открыть комнату с контрабасами">
+          <span class="door-inner">
+            <img class="door-photo" src="assets/photography/room-golden.webp" alt="Зал с контрабасами в художественной обработке" width="1448" height="1086">
+            <span class="lintel">По ту сторону двери</span>
+            <span class="threshold-sign"><span>Комната<br>контрабасов</span><span class="arrow" aria-hidden="true">↗</span></span>
+          </span>
+        </a>
+        <figcaption><span>Взгляд внутрь мастерской</span><span>02 / 02 · Комната</span></figcaption>
+      </figure>
+    </main>
+
+    <footer class="footer">
+      <p>Начать можно с того, что вам интересно.</p>
+      <nav class="paths" aria-label="Пути в мастерскую">
+        <a href="../preview-room/#collection">Коллекция ↗</a>
+        <a href="../preview-room/#workshop">Мастерская ↗</a>
+        <a href="../preview-room/#contact">Знакомство ↗</a>
+      </nav>
+    </footer>
+  </div>
+</body>
+</html>
