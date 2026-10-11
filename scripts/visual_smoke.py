@@ -88,6 +88,12 @@ async def run(site: Path, output: Path) -> dict:
                         if icons["max"]["color"] != icons["telegram"]["color"]:
                             raise AssertionError(f"{name}: MAX is not monochrome like Telegram")
                     if name == "home":
+                        hidden = await page.evaluate("""() => Array.from(document.querySelectorAll('.reveal'))
+                          .filter(el => Number(getComputedStyle(el).opacity) < .99)
+                          .slice(0, 5).map(el => el.className)""")
+                        if hidden:
+                            raise AssertionError(
+                                f"Room sections must stay visible without scrolling/JS: {hidden}")
                         if await page.locator("h1").count() != 1:
                             raise AssertionError("Exactly one room H1 is required")
                         if await page.locator(".hero-stats .stat").count() != 4:
