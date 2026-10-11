@@ -104,7 +104,7 @@ async def run(site: Path, output: Path) -> dict:
                         # a pill-shaped CTA without generating any horizontal overflow.
                         club_cta = page.locator(".cards-3 .info-card:last-child > a.btn[href='#contact']")
                         cta_count = await club_cta.count()
-                        cta_text = await club_cta.inner_text() if cta_count == 1 else None
+                        cta_text = await club_cta.text_content() if cta_count == 1 else None
                         if cta_count != 1 or cta_text.strip() != "Договориться о встрече":
                             club_debug = await page.evaluate("""() => [...document.querySelectorAll('.cards-3 a')]
                               .map(el => ({href:el.getAttribute('href'),text:el.innerText.slice(0,100),
