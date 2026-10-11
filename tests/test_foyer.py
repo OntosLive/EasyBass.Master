@@ -21,7 +21,7 @@ class RoomFoyerTests(unittest.TestCase):
                 '<body class="new-master entry-router entry-short"><main>'
                 '<section class="issue master-lead"><h1>Купить контрабас</h1>'
                 '<p class="entry-modulation">Индивидуальное различение</p></section>'
-                '<section class="contact-block">Телефон</section>'
+                '<section aria-label="Контакт" class="contact-block">Телефон</section>'
                 '<nav class="entry-range-grid">4 routes</nav>'
                 '<nav class="entry-utilities">4 routes</nav>'
                 '<footer class="master-footer">Контакты</footer></main></body></html>')
@@ -42,7 +42,7 @@ class RoomFoyerTests(unittest.TestCase):
     def test_article_remains_intact_before_the_door(self):
         text = '<article class="knowledge-text"><h2>Сведения</h2><p>Источник</p></article>'
         html = ('<html><head></head><body class="new-master deep-editorial"><main>'
-                '<h1>Контрабас</h1>' + text + '<section class="contact-block">Телефон</section>'
+                '<h1>Контрабас</h1>' + text + '<section aria-label="Контакт" class="contact-block">Телефон</section>'
                 '</main></body></html>')
         out, kind = transform(html, Path('details/bass/index.html'))
         self.assertEqual(kind, 'knowledge')
