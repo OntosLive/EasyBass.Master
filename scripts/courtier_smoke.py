@@ -123,6 +123,9 @@ async def inspect(site: Path, report: Path) -> dict:
                             await page.locator(".entry-modulation").inner_text() != author_copy):
                             raise AssertionError(f"{name}: text/visual authorship diverged")
                         await page.goto(root + route, wait_until="load")
+                        await page.locator(".courtier-portal img").evaluate(
+                            "(img) => img.decode()")
+                        await page.evaluate("document.fonts.ready")
                         await page.screenshot(
                             path=str(report / f"courtier-{name}-{width}.png"),
                             full_page=True,animations="disabled")
