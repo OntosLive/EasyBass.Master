@@ -202,6 +202,10 @@ body.courtier-page.entry-router .courtier-call .contact-icons .max-contact-pendi
   width:30px;
   height:30px;
 }
+body.courtier-page.entry-router .courtier-call .contact-icons .max-contact-pending svg {
+  width:18px;
+  height:18px;
+}
 
 body.courtier-page.entry-router .courtier-entry .foyer-door-enter.courtier-enter {
   margin:0;
