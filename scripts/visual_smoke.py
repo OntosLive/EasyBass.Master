@@ -100,6 +100,30 @@ async def run(site: Path, output: Path) -> dict:
                             raise AssertionError("The four original room stats must stay intact")
                         if await page.locator(".contact-block").count() != 1:
                             raise AssertionError("The room must publish exactly one verified contact")
+                        # A missing '</a>' used to capture most of the document inside
+                        # a pill-shaped CTA without generating any horizontal overflow.
+                        club_cta = page.locator(".cards-3 .info-card:last-child > a.btn[href='#contact']")
+                        if await club_cta.count() != 1 or (await club_cta.inner_text()).strip() != "Договориться о встрече":
+                            raise AssertionError("Club CTA must be a properly closed, standalone anchor")
+                        contact_geometry = await page.evaluate("""() => {
+                            const section = document.querySelector('#contact');
+                            const panel = section?.querySelector('.contact-panel');
+                            const copy = panel?.querySelector('.contact-copy');
+                            const title = copy?.querySelector('h2');
+                            if (!section || !panel || !copy || !title) return {missing: true};
+                            return {
+                                insideLink: !!section.closest('a'),
+                                titleWidth: title.getBoundingClientRect().width,
+                                copyWidth: copy.getBoundingClientRect().width,
+                                panelWidth: panel.getBoundingClientRect().width,
+                                sectionWidth: section.getBoundingClientRect().width
+                            };
+                        }""")
+                        if (contact_geometry.get("missing") or contact_geometry["insideLink"] or
+                                contact_geometry["panelWidth"] < contact_geometry["sectionWidth"] * .85 or
+                                contact_geometry["titleWidth"] < contact_geometry["copyWidth"] * .75):
+                            raise AssertionError(
+                                f"Broken contact geometry at {width}px: {contact_geometry}")
                         await page.wait_for_function(
                             "() => { const img=document.querySelector('#heroImage');"
                             " return img && img.complete && img.naturalWidth > 0 }", timeout=10000)
