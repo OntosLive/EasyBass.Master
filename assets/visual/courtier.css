@@ -96,14 +96,24 @@ body.courtier-page {
   background:linear-gradient(180deg,rgba(16,10,7,.07) 0%,
      rgba(16,10,7,.04) 37%,rgba(16,10,7,.88) 100%);
 }
-.courtier-page .courtier-portal[data-art="diagram"] .media {background:#e6dac4}
+/* Technical drawings are paper plates inside a salon card.
+   Keep every caption on dark wood: no pale-on-pale text over the drawing. */
+.courtier-page .courtier-portal[data-art="diagram"] {background:#20140e}
+.courtier-page .courtier-portal[data-art="diagram"] .media {
+  top:0;right:0;left:0;bottom:40%;background:#e6dac4;
+}
 .courtier-page .courtier-portal[data-art="diagram"] .media img {
-  object-fit:contain;object-position:center 22%;
-  padding:15px 14px 145px;background:#e8ddc9;filter:none;
+  width:100%;height:100%;object-fit:contain;object-position:center;
+  padding:17px;background:#e8ddc9;filter:none;
 }
 .courtier-page .courtier-portal[data-art="diagram"] .media::after {
-  background:linear-gradient(180deg,rgba(16,10,7,0) 0%,
-     rgba(16,10,7,0) 43%,rgba(16,10,7,.96) 100%);
+  display:none;
+}
+.courtier-page .courtier-portal[data-art="diagram"] .content {
+  position:absolute;left:0;right:0;bottom:0;width:100%;min-height:40%;
+  padding:22px 24px;
+  background:linear-gradient(180deg,#2d1b11,#150d08);
+  justify-content:center;
 }
 .courtier-page .courtier-portal .content {
   position:relative;z-index:1;display:flex;flex-direction:column;
@@ -195,7 +205,8 @@ body.courtier-page {
     min-height:300px;height:360px;margin-top:12px;
   }
   .courtier-page .courtier-portal .media img {object-position:center 45%}
-  .courtier-page .courtier-portal[data-art="diagram"] .media img {padding-bottom:115px}
+  .courtier-page .courtier-portal[data-art="diagram"] .media img {padding:11px}
+  .courtier-page .courtier-portal[data-art="diagram"] .content {padding:16px 20px}
   .courtier-page .entry-range-grid {
     grid-template-columns:repeat(2,minmax(0,1fr));
   }
