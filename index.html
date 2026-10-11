@@ -587,10 +587,28 @@
     body.room-home.menu-open .mobile-sheet{display:block;transform:none;}
   }
   @media(max-width:1180px){
+    /* Tablet as well as phone: the one-column cards must never keep
+       their previous two-column min-content width. */
+    body.room-home .hero-grid,
     body.room-home .cards-3,
     body.room-home .grid-2,
     body.room-home .mini-stack,
     body.room-home .contact-grid{grid-template-columns:minmax(0,1fr);}
+    body.room-home main,
+    body.room-home .section,
+    body.room-home .cards-3,
+    body.room-home .grid-2,
+    body.room-home .mini-stack,
+    body.room-home .card,
+    body.room-home .contact-grid,
+    body.room-home .contact-copy,
+    body.room-home .gallery-wrap,
+    body.room-home .gallery-toolbar,
+    body.room-home .gallery-stage,
+    body.room-home .thumbs,
+    body.room-home .section-head{min-width:0;max-width:100%;box-sizing:border-box;}
+    body.room-home .section{width:100%;}
+    body.room-home .btn{max-width:100%;min-width:0;box-sizing:border-box;white-space:normal;overflow-wrap:anywhere;text-align:center;}
   }
   @media(max-width:760px){
     body.room-home main,
