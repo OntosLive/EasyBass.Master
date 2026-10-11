@@ -149,6 +149,8 @@ body.courtier-page.entry-router.entry-short .courtier-greeting .entry-modulation
   display:block;
   min-width:0;
 }
+.courtier-page .courtier-call {flex:1 0 260px;min-width:260px}
+.courtier-page .courtier-entry {flex:0 0 auto}
 body.courtier-page.entry-router.entry-short.entry-has-modulation .courtier-call>.contact-block,
 body.courtier-page.entry-router .courtier-call>.contact-block {
   margin:0;
@@ -436,6 +438,7 @@ body.courtier-page.entry-router .courtier-entry .courtier-enter:hover {
     font-size:17px;line-height:1.46;margin-top:17px;
   }
   .courtier-page .courtier-choices{flex-direction:column;align-items:stretch;gap:21px}
+  .courtier-page .courtier-call,.courtier-page .courtier-entry{flex:none;min-width:0;width:100%}
   .courtier-page .courtier-call .contact {gap:6px 12px}
   .courtier-page .courtier-call .contact-phone {font-size:clamp(20px,6vw,27px)}
   .courtier-page .courtier-portal {height:350px;padding:9px}
