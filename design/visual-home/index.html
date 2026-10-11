@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Мастерская контрабаса · EasyBassMaster</title>
+  <meta name="color-scheme" content="dark light" />
+  <meta name="description" content="Частная коллекция контрабасов и мастерская в Москве. Познакомиться с инструментами, сыграть, услышать различия, обсудить покупку, аренду и настройку." />
+  <style>
+    :root {
+      --bg: #120b08;
+      --bg-2: #1b100b;
+      --panel: rgba(28, 16, 11, 0.78);
+      --panel-2: rgba(18, 11, 8, 0.88);
+      --line: rgba(255, 226, 194, 0.14);
+      --paper: #f5e7d2;
+      --muted: #cfb18a;
+      --accent: #e5a35d;
+      --accent-2: #f3be83;
+      --shadow: 0 24px 60px rgba(0,0,0,.35);
+      --radius: 24px;
+      --radius-sm: 16px;
+      --max-width: 1400px;
+      --content-width: 1220px;
+      --header-h: 78px;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body {
+      margin: 0;
+      font-family: Georgia, 'Times New Roman', serif;
+      background:
+        radial-gradient(circle at 20% 0%, rgba(229,163,93,.12), transparent 35%),
+        radial-gradient(circle at 90% 10%, rgba(243,190,131,.08), transparent 25%),
+        linear-gradient(180deg, #1a100c 0%, #120b08 28%, #0f0907 100%);
+      color: var(--paper);
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    body.menu-open { overflow: hidden; }
+
+    a { color: inherit; text-decoration: none; }
+    img { max-width: 100%; display: block; }
+    button { font: inherit; }
+
+    .site-shell { position: relative; }
+
+    .topbar {
+      position: sticky;
+      top: 0;
+      z-index: 50;
+      backdrop-filter: blur(18px);
+      background: linear-gradient(180deg, rgba(22,13,9,.96), rgba(22,13,9,.78));
+      border-bottom: 1px solid var(--line);
+    }
+
+    .topbar-inner {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      height: var(--header-h);
+      padding: 0 26px;
+      display: grid;
+      grid-template-columns: auto 1fr auto auto;
+      gap: 28px;
+      align-items: center;
+    }
+
+    .brand { display: grid; gap: 5px; }
+    .brand-mark {
+      letter-spacing: .09em;
+      font-size: clamp(1.25rem, 2vw, 1.8rem);
+      line-height: 1;
+      white-space: nowrap;
+    }
+    .brand-sub {
+      font-size: .76rem;
+      letter-spacing: .34em;
+      text-transform: uppercase;
+      color: var(--muted);
+      white-space: nowrap;
+    }
+
+    .nav { display: flex; justify-content: center; gap: 24px; }
+    .nav a {
+      position: relative;
+      font-size: .9rem;
+      letter-spacing: .06em;
+      color: rgba(245,231,210,.88);
+      padding: 6px 0;
+      text-transform: uppercase;
+    }
+    .nav a::after {
+      content: '';
+      position: absolute;
+      left: 0;
+      bottom: -2px;
+      width: 100%;
+      height: 1px;
+      transform-origin: left;
+      transform: scaleX(0);
+      background: linear-gradient(90deg, transparent, var(--accent), transparent);
+      transition: transform .25s ease;
+    }
+    .nav a:hover::after, .nav a:focus-visible::after { transform: scaleX(1); }
+
+    .lang-switch, .menu-btn, .mode-switch {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--paper);
+      border-radius: 999px;
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: background .25s ease, border-color .25s ease, transform .25s ease;
+    }
+    .lang-switch:hover, .menu-btn:hover, .mode-switch:hover {
+      background: rgba(255,255,255,.05);
+      border-color: rgba(229,163,93,.32);
+      transform: translateY(-1px);
+    }
+
+    .lang-switch .active { color: var(--accent-2); }
+    .mode-switch .label { font-size: .84rem; color: var(--muted); }
+    .mode-switch strong { font-size: .88rem; font-weight: 600; }
+
+    .menu-btn { display: none; justify-content: center; width: 46px; height: 46px; padding: 0; }
+    .menu-btn span, .menu-btn::before, .menu-btn::after {
+      content: '';
+      display: block;
+      width: 18px;
+      height: 1.5px;
+      background: var(--paper);
+      border-radius: 99px;
+      transition: transform .24s ease, opacity .24s ease;
+    }
+    .menu-btn .stack { display: grid; gap: 4px; }
+    body.menu-open .menu-btn .stack span:nth-child(1) { transform: translateY(5.5px) rotate(45deg); }
+    body.menu-open .menu-btn .stack span:nth-child(2) { opacity: 0; }
+    body.menu-open .menu-btn .stack span:nth-child(3) { transform: translateY(-5.5px) rotate(-45deg); }
+
+    .mobile-sheet {
+      position: fixed;
+      inset: calc(var(--header-h) + 1px) 0 0;
+      z-index: 40;
+      background: rgba(16,10,7,.97);
+      backdrop-filter: blur(18px);
+      transform: translateX(100%);
+      transition: transform .28s ease;
+      padding: 28px 24px 36px;
+      display: none;
+    }
+    body.menu-open .mobile-sheet { transform: translateX(0); }
+    .mobile-sheet nav { display: grid; gap: 12px; }
+    .mobile-sheet a {
+      padding: 14px 16px;
+      border: 1px solid var(--line);
+      border-radius: 14px;
+      background: rgba(255,255,255,.03);
+      font-size: .96rem;
+      text-transform: uppercase;
+      letter-spacing: .06em;
+    }
+    .mobile-sheet .mobile-meta { margin-top: 28px; display: grid; gap: 12px; color: var(--muted); }
+
+    .hero {
+      position: relative;
+      min-height: min(100vh - var(--header-h), 980px);
+      display: grid;
+      align-items: stretch;
+      overflow: clip;
+      border-bottom: 1px solid var(--line);
+    }
+
+    .hero-media { position: absolute; inset: 0; }
+    .hero-media img {
+      width: 100%; height: 100%; object-fit: cover;
+      transform: scale(1.03);
+      filter: saturate(1.07) contrast(1.04) brightness(.9);
+    }
+    .hero-media::after {
+      content: '';
+      position: absolute; inset: 0;
+      background:
+        linear-gradient(90deg, rgba(17,10,7,.9) 0%, rgba(17,10,7,.64) 28%, rgba(17,10,7,.18) 60%, rgba(17,10,7,.28) 100%),
+        linear-gradient(180deg, rgba(17,10,7,.22) 0%, rgba(17,10,7,.12) 35%, rgba(17,10,7,.86) 100%);
+      pointer-events: none;
+    }
+
+    .hero-grid {
+      position: relative;
+      z-index: 1;
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      padding: 36px 26px 58px;
+      display: grid;
+      grid-template-columns: minmax(0, 1.1fr) minmax(280px, .55fr);
+      gap: 28px;
+      align-items: end;
+      min-height: inherit;
+    }
+
+    .eyebrow {
+      display: inline-flex; align-items: center; gap: 10px;
+      margin-bottom: 18px;
+      color: var(--accent-2);
+      font-size: .85rem;
+      letter-spacing: .14em;
+      text-transform: uppercase;
+    }
+    .eyebrow::before { content: ''; width: 48px; height: 1px; background: currentColor; opacity: .8; }
+
+    .hero-copy { max-width: 700px; padding-top: 72px; }
+    .hero-title {
+      font-size: clamp(3.4rem, 7vw, 6.8rem);
+      line-height: .92;
+      margin: 0 0 18px;
+      letter-spacing: -.04em;
+      text-wrap: balance;
+    }
+    .hero-subtitle {
+      max-width: 560px;
+      font-size: clamp(1.1rem, 2vw, 1.55rem);
+      line-height: 1.5;
+      margin: 0 0 22px;
+      color: rgba(245,231,210,.92);
+    }
+    .hero-text {
+      max-width: 560px;
+      margin: 0 0 32px;
+      color: rgba(245,231,210,.72);
+      font-size: 1.03rem;
+      line-height: 1.7;
+    }
+
+    .hero-actions { display: flex; flex-wrap: wrap; gap: 14px; }
+    .btn {
+      display: inline-flex; align-items: center; justify-content: center;
+      gap: 10px;
+      padding: 14px 22px;
+      border-radius: 999px;
+      border: 1px solid rgba(229,163,93,.35);
+      background: rgba(255,255,255,.04);
+      color: var(--paper);
+      letter-spacing: .06em;
+      text-transform: uppercase;
+      font-size: .84rem;
+      transition: transform .25s ease, background .25s ease, border-color .25s ease;
+    }
+    .btn:hover { transform: translateY(-2px); background: rgba(255,255,255,.06); border-color: rgba(229,163,93,.65); }
+    .btn.primary { background: linear-gradient(135deg, rgba(229,163,93,.18), rgba(243,190,131,.08)); }
+
+    .hero-note {
+      justify-self: end;
+      align-self: end;
+      margin-bottom: 18px;
+      width: min(360px, 100%);
+      padding: 24px 24px 22px;
+      border: 1px solid rgba(255,255,255,.12);
+      border-radius: var(--radius);
+      background: rgba(28,16,11,.5);
+      backdrop-filter: blur(10px);
+      box-shadow: var(--shadow);
+    }
+    .hero-note p {
+      margin: 0;
+      font-size: 1.45rem;
+      line-height: 1.25;
+      color: rgba(245,231,210,.92);
+      font-style: italic;
+    }
+    .hero-note small { display: block; margin-top: 18px; color: var(--muted); letter-spacing: .12em; text-transform: uppercase; }
+
+    .hero-strip {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      width: 100%;
+      position: relative;
+      z-index: 2;
+      padding: 0 26px 0;
+      transform: translateY(-28px);
+    }
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0,1fr));
+      gap: 0;
+      border: 1px solid var(--line);
+      border-radius: 22px;
+      overflow: hidden;
+      background: linear-gradient(180deg, rgba(27,16,11,.96), rgba(18,11,8,.92));
+      box-shadow: var(--shadow);
+    }
+    .stat { padding: 24px 24px 22px; position: relative; }
+    .stat + .stat { border-left: 1px solid var(--line); }
+    .stat strong { display: block; font-size: 1.75rem; margin-bottom: 6px; color: var(--accent-2); }
+    .stat span { display: block; font-size: .92rem; color: rgba(245,231,210,.76); }
+
+    main { padding-bottom: 80px; }
+
+    .section { max-width: var(--content-width); margin: 0 auto; padding: 0 26px; }
+    .section-head {
+      display: flex; align-items: end; justify-content: space-between; gap: 16px;
+      margin: 38px 0 24px;
+    }
+    .section-head h2 { font-size: clamp(2rem, 4vw, 3.3rem); line-height: .95; margin: 0; letter-spacing: -.03em; }
+    .section-head p { max-width: 560px; margin: 0; color: rgba(245,231,210,.7); line-height: 1.7; }
+
+    .grid-2 {
+      display: grid;
+      grid-template-columns: minmax(0, 1.15fr) minmax(300px, .85fr);
+      gap: 24px;
+    }
+
+    .card {
+      position: relative;
+      border-radius: var(--radius);
+      overflow: clip;
+      border: 1px solid var(--line);
+      background: linear-gradient(180deg, rgba(27,16,11,.88), rgba(17,10,7,.92));
+      box-shadow: var(--shadow);
+    }
+
+    .visual-card { min-height: 560px; }
+    .visual-card .media, .mini-card .media { position: absolute; inset: 0; }
+    .visual-card .media img, .mini-card .media img { width: 100%; height: 100%; object-fit: cover; }
+    .visual-card .media::after {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(90deg, rgba(16,10,7,.78) 0%, rgba(16,10,7,.26) 58%, rgba(16,10,7,.15) 100%), linear-gradient(180deg, transparent 0%, rgba(16,10,7,.74) 100%);
+    }
+    .visual-card .content {
+      position: relative; z-index: 1; max-width: 420px; padding: 32px 30px 34px;
+      display: flex; flex-direction: column; justify-content: end; min-height: 560px;
+    }
+
+    .mini-stack { display: grid; gap: 24px; }
+    .mini-card { min-height: 268px; display: grid; align-items: end; }
+    .mini-card .media::after {
+      content: ''; position: absolute; inset: 0;
+      background: linear-gradient(180deg, rgba(16,10,7,.02) 0%, rgba(16,10,7,.75) 100%);
+    }
+    .mini-card .content { position: relative; z-index: 1; padding: 24px; max-width: 90%; }
+
+    .card-tag {
+      display: inline-flex;
+      font-size: .76rem;
+      text-transform: uppercase;
+      letter-spacing: .16em;
+      color: var(--accent-2);
+      margin-bottom: 10px;
+    }
+    .card h3 { font-size: clamp(1.85rem, 3vw, 2.7rem); line-height: .95; margin: 0 0 14px; }
+    .card p { margin: 0 0 18px; line-height: 1.7; color: rgba(245,231,210,.77); }
+
+    .cards-3 { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 20px; margin-top: 22px; }
+    .info-card {
+      padding: 26px;
+      min-height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .info-card p { margin-top: 14px; }
+    .info-card .icon {
+      width: 48px; height: 48px;
+      display: grid; place-items: center;
+      border: 1px solid rgba(229,163,93,.3);
+      border-radius: 14px;
+      color: var(--accent-2);
+      margin-bottom: 18px;
+      background: rgba(255,255,255,.02);
+      font-size: 1.15rem;
+    }
+
+    .gallery-wrap {
+      margin-top: 22px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(180deg, rgba(22,13,9,.88), rgba(14,8,6,.96));
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .gallery-toolbar {
+      display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between;
+      gap: 18px;
+      padding: 22px 24px;
+      border-bottom: 1px solid var(--line);
+    }
+    .gallery-tabs { display: flex; flex-wrap: wrap; gap: 10px; }
+    .tab {
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: rgba(245,231,210,.84);
+      border-radius: 999px;
+      padding: 10px 14px;
+      cursor: pointer;
+      transition: all .25s ease;
+    }
+    .tab.active { background: rgba(229,163,93,.12); border-color: rgba(229,163,93,.45); color: var(--paper); }
+
+    .gallery-stage { padding: 24px; display: grid; gap: 18px; }
+    .gallery-main {
+      position: relative;
+      aspect-ratio: 16 / 9;
+      border-radius: 22px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #1a100c;
+      cursor: pointer;
+    }
+    .gallery-main img { width: 100%; height: 100%; object-fit: cover; }
+    .gallery-main::after {
+      content: 'Открыть крупно';
+      position: absolute;
+      right: 16px; bottom: 16px;
+      border: 1px solid rgba(255,255,255,.18);
+      background: rgba(16,10,7,.55);
+      color: rgba(245,231,210,.86);
+      padding: 8px 12px;
+      border-radius: 999px;
+      font-size: .82rem;
+      letter-spacing: .08em;
+      text-transform: uppercase;
+    }
+    .thumbs { display: grid; grid-template-columns: repeat(3, minmax(0,1fr)); gap: 14px; }
+    .thumb {
+      position: relative;
+      aspect-ratio: 4 / 3;
+      border-radius: 18px;
+      overflow: hidden;
+      border: 1px solid var(--line);
+      background: #1a100c;
+      cursor: pointer;
+    }
+    .thumb img { width: 100%; height: 100%; object-fit: cover; }
+    .thumb.active { outline: 1px solid rgba(229,163,93,.7); box-shadow: 0 0 0 4px rgba(229,163,93,.12); }
+    .thumb-label { position: absolute; left: 12px; bottom: 12px; padding: 8px 10px; border-radius: 999px; font-size: .74rem; background: rgba(16,10,7,.62); }
+
+    .quote-band {
+      margin-top: 42px;
+      padding: 32px;
+      border: 1px solid var(--line);
+      border-radius: 28px;
+      background: linear-gradient(135deg, rgba(229,163,93,.09), rgba(255,255,255,.02));
+      display: grid; gap: 16px;
+    }
+    .quote-band p { margin: 0; font-size: clamp(1.5rem, 3vw, 2.55rem); line-height: 1.18; max-width: 1000px; }
+    .quote-band small { color: var(--muted); letter-spacing: .16em; text-transform: uppercase; }
+
+    .contact-panel {
+      margin-top: 40px;
+      padding: 0;
+      overflow: hidden;
+    }
+    .contact-grid {
+      display: grid;
+      grid-template-columns: minmax(0, 1.02fr) minmax(300px, .98fr);
+    }
+    .contact-copy, .contact-aside { padding: 34px; }
+    .contact-copy { background: linear-gradient(180deg, rgba(22,13,9,.84), rgba(14,8,6,.98)); }
+    .contact-aside { background: linear-gradient(180deg, rgba(229,163,93,.07), rgba(255,255,255,.02)); border-left: 1px solid var(--line); }
+    .contact-copy h2 { margin: 0 0 16px; font-size: clamp(2rem,4vw,3.2rem); line-height: .95; }
+    .contact-copy p, .contact-aside p { color: rgba(245,231,210,.72); line-height: 1.7; }
+    .phone-row {
+      display: flex; align-items: center; gap: 18px; flex-wrap: wrap;
+      margin-top: 24px;
+      font-size: clamp(1.5rem,3vw,2.3rem);
+    }
+    .messengers { display: flex; gap: 12px; flex-wrap: wrap; }
+    .messengers a, .messengers span {
+      width: 46px; height: 46px;
+      display: grid; place-items: center;
+      border-radius: 50%;
+      border: 1px solid var(--line);
+      background: rgba(255,255,255,.03);
+      color: var(--paper);
+      transition: all .25s ease;
+      font-size: 1rem;
+    }
+    .messengers a:hover { transform: translateY(-2px); border-color: rgba(229,163,93,.45); }
+    .messengers svg { display:block; width:22px; height:22px; fill:currentColor; }
+    .messengers span { cursor:default; }
+
+    .contact-list { list-style: none; padding: 0; margin: 22px 0 0; display: grid; gap: 14px; }
+    .contact-list li { padding: 14px 16px; border: 1px solid var(--line); border-radius: 14px; background: rgba(255,255,255,.02); }
+    .contact-list strong { display: block; margin-bottom: 4px; color: var(--paper); }
+    .contact-list span { color: var(--muted); font-size: .96rem; }
+
+    footer {
+      margin-top: 58px;
+      border-top: 1px solid var(--line);
+      padding: 24px 26px 42px;
+    }
+    .footer-inner {
+      max-width: var(--content-width);
+      margin: 0 auto;
+      display: flex; flex-wrap: wrap; justify-content: space-between; gap: 16px;
+      color: rgba(245,231,210,.58);
+      font-size: .92rem;
+    }
+
+    /* The entire room remains visible without JS, including screenshots and previews. */
+    .reveal { opacity: 1; transform: none; }
+    .reveal.visible { opacity: 1; transform: none; }
+
+    .lightbox {
+      position: fixed; inset: 0; z-index: 80;
+      display: none; place-items: center;
+      padding: 28px;
+      background: rgba(7,4,3,.88);
+      backdrop-filter: blur(10px);
+    }
+    .lightbox.open { display: grid; }
+    .lightbox-inner { position: relative; max-width: min(1320px, 100%); max-height: 100%; }
+    .lightbox img { max-width: 100%; max-height: calc(100vh - 100px); border-radius: 18px; border: 1px solid rgba(255,255,255,.1); box-shadow: var(--shadow); }
+    .lightbox-close {
+      position: absolute; top: -14px; right: -14px;
+      width: 42px; height: 42px; border-radius: 50%; border: 1px solid var(--line);
+      background: rgba(22,13,9,.9); color: var(--paper); cursor: pointer;
+      font-size: 1.2rem;
+    }
+
+    @media (max-width: 1180px) {
+      .topbar-inner { grid-template-columns: auto 1fr auto; }
+      .nav, .lang-switch { display: none; }
+      .menu-btn { display: inline-flex; }
+      .mobile-sheet { display: block; }
+      .hero-grid, .grid-2, .contact-grid { grid-template-columns: 1fr; }
+      .hero-note { justify-self: start; max-width: 480px; }
+      .hero-stats { grid-template-columns: repeat(2, minmax(0,1fr)); }
+      .stat:nth-child(3) { border-left: 0; border-top: 1px solid var(--line); }
+      .stat:nth-child(4) { border-top: 1px solid var(--line); }
+      .cards-3 { grid-template-columns: 1fr; }
+    }
+
+    @media (max-width: 760px) {
+      :root { --header-h: 70px; }
+      .topbar-inner { display:flex; justify-content:space-between; padding: 0 12px; gap: 8px; }
+      .brand { flex:1; min-width:0; }
+      .mode-switch { flex:none; padding:9px; }
+      .mode-switch .label { display:none; }
+      .mode-switch strong { font-size:.72rem; }
+      .menu-btn { flex:none; width:42px; height:42px; }
+      .brand-mark { font-size: clamp(.94rem, 4vw, 1.12rem); letter-spacing:.055em; }
+      .brand-sub { font-size: .55rem; letter-spacing: .12em; }
+      .hero-grid { padding: 24px 16px 44px; }
+      .hero-strip { padding: 0 16px; transform: translateY(-18px); }
+      .hero-copy { padding-top: 32px; }
+      .hero-title { max-width: 10ch; }
+      .hero-note { padding: 20px; width: 100%; }
+      .hero-note p { font-size: 1.2rem; }
+      .hero-stats { grid-template-columns: 1fr; }
+      .stat + .stat { border-left: 0; border-top: 1px solid var(--line); }
+      .section { padding: 0 16px; }
+      .section-head { margin-top: 28px; display:grid; grid-template-columns:minmax(0,1fr); gap:16px; }
+      .section-head h2, .section-head p { max-width:100%; }
+      .visual-card, .visual-card .content { min-height: 420px; }
+      .mini-card { min-height: 230px; }
+      .gallery-toolbar, .gallery-stage, .contact-copy, .contact-aside { padding: 18px; }
+      .thumbs { grid-template-columns: 1fr; }
+      .gallery-main { aspect-ratio: 4 / 5; }
+      footer { padding: 20px 16px 36px; }
+    }
+  </style>
+  <style>
+  /* Integration compatibility. The composition above is the approved room. */
+  body.room-home {max-width:none;padding:0;margin:0;}
+  body.room-home footer{display:block;}
+  body.room-home footer .footer-inner{font:400 .92rem/1.5 Georgia,serif;}
+  .room-home .contact-copy .contact-block {margin:22px 0 0;padding:18px 0 0;border-top:1px solid var(--line);border-bottom:0;background:transparent;}
+  .room-home .contact-copy .contact {display:flex;flex-wrap:wrap;justify-content:flex-start;gap:12px;align-items:center;}
+  .room-home .contact-copy .contact-phone {font-family:Georgia,serif;font-size:clamp(1.35rem,2.65vw,2.05rem);white-space:nowrap;text-decoration:none;}
+  .room-home .contact-copy .contact-icons {display:flex;gap:8px;align-items:center;}
+  .room-home .contact-copy .contact-icons a {width:38px;height:38px;border:1px solid var(--line);border-radius:50%;display:grid;place-items:center;}
+  .room-home .contact-copy .contact-icons svg {width:22px;height:22px;fill:currentColor;}
+  .room-home .contact-copy .max-contact-pending {border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;display:grid;place-items:center;width:38px;height:38px;}
+  .room-home .contact-copy .max-contact-pending svg {width:22px;height:22px;display:block;}
+  @media(max-width:760px) { .room-home .contact-copy .contact-phone {font-size:clamp(1.1rem,5vw,1.5rem);} .room-home .contact-copy .contact-icons {gap:2px;} .room-home .contact-copy .contact-icons a,.room-home .contact-copy .max-contact-pending{width:32px;height:32px;} }
+  /* Mobile: keep the original room and contact inside the physical viewport.
+     The hidden off-canvas nav must not contribute to scroll width. */
+  @media(max-width:1180px){
+    body.room-home .mobile-sheet{display:none;}
+    body.room-home.menu-open .mobile-sheet{display:block;transform:none;}
+  }
+  @media(max-width:1180px){
+    /* Tablet as well as phone: the one-column cards must never keep
+       their previous two-column min-content width. */
+    body.room-home .hero-grid,
+    body.room-home .cards-3,
+    body.room-home .grid-2,
+    body.room-home .mini-stack,
+    body.room-home .contact-grid{grid-template-columns:minmax(0,1fr);}
+    body.room-home main,
+    body.room-home .section,
+    body.room-home .cards-3,
+    body.room-home .grid-2,
+    body.room-home .mini-stack,
+    body.room-home .card,
+    body.room-home .contact-grid,
+    body.room-home .contact-copy,
+    body.room-home .gallery-wrap,
+    body.room-home .gallery-toolbar,
+    body.room-home .gallery-stage,
+    body.room-home .thumbs,
+    body.room-home .section-head{min-width:0;max-width:100%;box-sizing:border-box;}
+    body.room-home .section{width:100%;}
+    body.room-home .btn{max-width:100%;min-width:0;box-sizing:border-box;white-space:normal;overflow-wrap:anywhere;text-align:center;}
+  }
+  @media(max-width:760px){
+    body.room-home main,
+    body.room-home .section,
+    body.room-home .gallery-wrap,
+    body.room-home .gallery-stage,
+    body.room-home .gallery-toolbar,
+    body.room-home .gallery-tabs,
+    body.room-home .card,
+    body.room-home .info-card,
+    body.room-home .cards-3,
+    body.room-home .grid-2,
+    body.room-home .mini-stack,
+    body.room-home .thumbs,
+    body.room-home .section-head{min-width:0;max-width:100%;}
+    body.room-home .section{width:100%;box-sizing:border-box;}
+    body.room-home .cards-3,
+    body.room-home .thumbs{grid-template-columns:minmax(0,1fr);}
+    body.room-home .btn{max-width:100%;min-width:0;box-sizing:border-box;white-space:normal;overflow-wrap:anywhere;text-align:center;}
+    body.room-home .section-head{grid-template-columns:minmax(0,1fr);}
+    body.room-home .section-head h2,
+    body.room-home .section-head p{min-width:0;max-width:100%;overflow-wrap:break-word;}
+  }
+  @media(max-width:760px){
+    body.room-home .hero-grid,
+    body.room-home .grid-2,
+    body.room-home .contact-grid{grid-template-columns:minmax(0,1fr);}
+    body.room-home .contact-panel,
+    body.room-home .contact-copy,
+    body.room-home .contact-aside,
+    body.room-home .contact-block,
+    body.room-home .contact{min-width:0;max-width:100%;}
+    body.room-home .contact-phone{font-size:clamp(1rem,4.3vw,1.45rem);max-width:100%;}
+    body.room-home .contact-icons{margin-left:0;}
+  }
+  </style>
+</head>
+<body class="room-home">
+  <div class="site-shell">
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#top" aria-label="EasyBass.Master">
+          <span class="brand-mark">EASYBASS.MASTER</span>
+          <span class="brand-sub">Мастерская · коллекция · клуб</span>
+        </a>
+
+        <nav class="nav" aria-label="Основная навигация">
+          <a href="#collection">Коллекция</a>
+          <a href="#workshop">Мастерская</a>
+          <a href="#selection">Знакомство</a>
+          <a href="#gallery">Галерея</a>
+          <a href="#contact">Контакты</a>
+        </nav>
+
+        <button class="mode-switch" id="modeSwitch" type="button" aria-label="Переключить атмосферу мастерской">
+          <span class="label">Атмосфера</span>
+          <strong id="modeLabel">Золотой час</strong>
+        </button>
+
+        <button class="menu-btn" id="menuBtn" type="button" aria-label="Открыть меню">
+          <span class="stack"><span></span><span></span><span></span></span>
+        </button>
+      </div>
+    </header>
+
+    <aside class="mobile-sheet" id="mobileSheet" aria-label="Мобильное меню">
+      <nav>
+        <a href="#collection">Коллекция</a>
+        <a href="#workshop">Мастерская</a>
+        <a href="#selection">Знакомство</a>
+        <a href="#gallery">Галерея</a>
+        <a href="#contact">Контакты</a>
+      </nav>
+      <div class="mobile-meta">
+        <div>Москва · мастерская контрабаса</div>
+        <div>+7 (909) 694-55-44</div>
+      </div>
+    </aside>
+
+    <section class="hero" id="top">
+      <div class="hero-media">
+        <img id="heroImage" src="assets/photography/room-golden.webp" alt="Интерьер мастерской EasyBass.Master с рядами контрабасов" />
+      </div>
+      <div class="hero-grid">
+        <div class="hero-copy reveal visible">
+          <div class="eyebrow">Москва · частная мастерская</div>
+          <h1 class="hero-title">Пространство, в котором можно найти свой.</h1>
+          <p class="hero-subtitle">Частная коллекция контрабасов, мастерская и пространство встречи музыкантов с инструментами.</p>
+          <p class="hero-text">
+            Старинные и современные, доступные и редкие контрабасы стоят рядом. Здесь можно сыграть, сравнить голоса, почувствовать отклик в руках и понять, какой инструмент хочется взять с собой в музыку.
+          </p>
+          <div class="hero-actions">
+            <a class="btn primary" href="#collection">Познакомиться с коллекцией</a>
+            <a class="btn" href="#contact">Договориться о встрече</a>
+          </div>
+        </div>
+
+        <aside class="hero-note reveal visible">
+          <p id="heroQuote">Возможно, выбор делать не придётся. Он сложится сам.</p>
+          <small id="heroQuoteMeta">Мастерская · Золотой час</small>
+        </aside>
+      </div>
+    </section>
+
+    <div class="hero-strip">
+      <div class="hero-stats reveal visible">
+        <div class="stat">
+          <strong>15 лет</strong>
+          <span>Работы с контрабасами и музыкантами</span>
+        </div>
+        <div class="stat">
+          <strong>1000+</strong>
+          <span>Контрабасов прошли через наши руки</span>
+        </div>
+        <div class="stat">
+          <strong>3</strong>
+          <span>Коллекция · мастерская · знакомство</span>
+        </div>
+        <div class="stat">
+          <strong>∞</strong>
+          <span>Поводов вернуться: звук, творчество, разговор</span>
+        </div>
+      </div>
+    </div>
+
+    <main>
+      <section class="section" id="collection">
+        <div class="section-head reveal">
+          <h2>У каждого инструмента<br/>свой голос.</h2>
+          <p>Старинные и современные, фабричные и мастеровые, ученические и профессиональные. Их можно сравнить рядом: по звуку, свободе движения, сопротивлению струны и тому, как инструмент отвечает именно вам.</p>
+        </div>
+
+        <div class="grid-2">
+          <article class="card visual-card reveal">
+            <div class="media"><img src="assets/photography/room-golden.webp" alt="Комната с рядами контрабасов в тёплом вечернем свете" /></div>
+            <div class="content">
+              <span class="card-tag">Коллекция</span>
+              <h3>Войти в комнату. Начать слушать.</h3>
+              <p>Можно приехать за одним конкретным контрабасом и обнаружить рядом другие. Сыграть знакомый пассаж, провести смычком, услышать, как меняется характер звука от инструмента к инструменту.</p>
+              <a class="btn" href="#gallery">Увидеть пространство</a>
+            </div>
+          </article>
+
+          <div class="mini-stack">
+            <article class="card mini-card reveal">
+              <div class="media"><img src="assets/photography/row-amber.webp" alt="Ряд контрабасов крупным планом" /></div>
+              <div class="content">
+                <span class="card-tag">Различия</span>
+                <h3>Один силуэт. Разные голоса.</h3>
+                <p>Похожие внешне контрабасы могут совершенно по-разному отвечать на смычок и руку. Сравнение начинается с нескольких сыгранных нот.</p>
+              </div>
+            </article>
+            <article class="card mini-card reveal">
+              <div class="media"><img id="miniNightImage" src="assets/photography/room-evening.webp" alt="Мастерская вечером при ламповом свете" /></div>
+              <div class="content">
+                <span class="card-tag">Время</span>
+                <h3>У дерева есть биография.</h3>
+                <p>Лак, следы игры, старые ремонты и время оставляют свои знаки. А главное открывается сегодня, когда инструмент снова звучит.</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="workshop">
+        <div class="section-head reveal">
+          <h2>Ремесло слышно<br/>в игре.</h2>
+          <p>Гриф, подставка, душка, струны, деки. Каждая деталь участвует в одном движении музыканта. Работа мастерской становится настоящей, когда руке свободнее, а инструмент отвечает яснее.</p>
+        </div>
+
+        <div class="cards-3">
+          <article class="card info-card reveal">
+            <div>
+              <div class="icon">✦</div>
+              <span class="card-tag">Мастерская</span>
+              <h3>Инструмент должен отвечать.</h3>
+              <p>Настройка, ремонт и реставрация имеют музыкальную цель. Мы смотрим, как контрабас ведёт себя в руках, что мешает исполнителю и какое изменение действительно необходимо.</p>
+            </div>
+            <a class="btn" href="#contact">Обсудить свой инструмент</a>
+          </article>
+          <article class="card info-card reveal">
+            <div>
+              <div class="icon">⌘</div>
+              <span class="card-tag">Коллекция</span>
+              <h3>Каждый экземпляр отдельный.</h3>
+              <p>Происхождение, мензура, конструкция, возраст, состояние и звучание складываются в характер конкретного инструмента. Коллекция даёт возможность увидеть и услышать эти различия рядом.</p>
+            </div>
+            <a class="btn" href="#selection">Как происходит знакомство</a>
+          </article>
+          <article class="card info-card reveal">
+            <div>
+              <div class="icon">∞</div>
+              <span class="card-tag">Клуб</span>
+              <h3>Здесь можно вернуться.</h3>
+              <p>Привезти свой контрабас, попробовать другой, обсудить струны, привести ученика. Встреча может закончиться покупкой, работой в мастерской или желанием прийти снова.</p>
+            </div>
+            <a class="btn" href="#contact">Договориться о встрече</a>
+          </article>
+        </div>
+      </section>
+
+      <section class="section" id="selection">
+        <div class="section-head reveal">
+          <h2>Сначала знакомство.<br/>Затем — решение.</h2>
+          <p>Можно приехать с определённым бюджетом, любимой маркой или музыкальной задачей. Сначала полезно попробовать несколько инструментов. Тогда цена и условия обсуждаются уже вокруг того контрабаса, который стал вам понятен.</p>
+        </div>
+
+        <div class="quote-band reveal">
+          <small>Как складывается выбор</small>
+          <p>Посмотреть. Послушать. Сыграть. Сравнить. Иногда после этого выбор складывается сам.</p>
+        </div>
+      </section>
+
+      <section class="section" id="gallery">
+        <div class="section-head reveal">
+          <h2>Комната, увиденная<br/>как картина.</h2>
+          <p>Золотой свет, ряд инструментов, вечерняя тишина. Это художественно обработанные образы мастерской, выросшие из фотографий реального пространства. А звук и встреча ждут вас за пределами экрана.</p>
+        </div>
+
+        <div class="gallery-wrap reveal">
+          <div class="gallery-toolbar">
+            <div class="gallery-tabs" role="tablist" aria-label="Режимы галереи">
+              <button class="tab active" data-gallery-index="0" type="button">Золотой час</button>
+              <button class="tab" data-gallery-index="1" type="button">Ряд и фактура</button>
+              <button class="tab" data-gallery-index="2" type="button">Вечерний салон</button>
+            </div>
+            <div style="color:var(--muted);">Нажмите на изображение, чтобы рассмотреть ближе</div>
+          </div>
+          <div class="gallery-stage">
+            <div class="gallery-main" id="galleryMain" tabindex="0" role="button" aria-label="Открыть текущую фотографию крупно">
+              <img id="galleryMainImage" src="assets/photography/room-golden.webp" alt="Золотой час в мастерской" />
+            </div>
+            <div class="thumbs" id="thumbs">
+              <button class="thumb active" type="button" data-gallery-index="0">
+                <img src="assets/photography/room-golden.webp" alt="Миниатюра мастерской в золотом часе" />
+                <span class="thumb-label">Золотой час</span>
+              </button>
+              <button class="thumb" type="button" data-gallery-index="1">
+                <img src="assets/photography/row-amber.webp" alt="Миниатюра ряда контрабасов крупным планом" />
+                <span class="thumb-label">Ряд и фактура</span>
+              </button>
+              <button class="thumb" type="button" data-gallery-index="2">
+                <img src="assets/photography/room-evening.webp" alt="Миниатюра мастерской вечером" />
+                <span class="thumb-label">Вечерний салон</span>
+              </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section" id="contact">
+        <div class="card contact-panel reveal">
+          <div class="contact-grid">
+            <div class="contact-copy">
+              <span class="card-tag">Контакты</span>
+              <h2>Начать знакомство.</h2>
+              <p>Расскажите, для кого ищете контрабас, в какой музыке он будет звучать и что хочется найти. Можно договориться о встрече, послушать несколько инструментов и спокойно сравнить их в игре. По предварительной договорённости.</p>
+              <section class="contact-block" aria-label="Контакт">
+      <div class="contact">
+        <a class="contact-phone" href="tel:+79096945544" aria-label="Позвонить +7 (909) 694-55-44">+7 (909) 694-55-44</a>
+        <div class="contact-icons" aria-label="Мессенджеры">
+          <a href="https://t.me/+79096945544" rel="noopener noreferrer" aria-label="Telegram" title="Telegram"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M7 23.5 39.5 9.8c1.6-.7 3 .4 2.5 2.2l-6.2 27.7c-.4 1.9-1.7 2.3-3.3 1.4l-9.6-7.1-4.7 4.5c-.5.5-1 .9-1.9.9l.7-9.8 17.9-16.2c.8-.7-.2-1.1-1.2-.4L11.6 26.9l-9.5-3c-2.1-.7-2.1-2 .4-3z"/></svg></a>
+          <a href="https://wa.me/79096945544" rel="noopener noreferrer" aria-label="WhatsApp" title="WhatsApp"><svg viewBox="0 0 48 48" aria-hidden="true"><path d="M24 6C14.1 6 6 13.6 6 23c0 3.3 1 6.4 2.8 9.1L6 42l10.2-2.6A18.7 18.7 0 0 0 24 41c9.9 0 18-7.6 18-17S33.9 6 24 6zm0 31.7c-2.7 0-5.2-.7-7.4-2l-.5-.3-6 1.6 1.6-5.6-.3-.5A13.5 13.5 0 0 1 9.2 23c0-7.6 6.6-13.8 14.8-13.8S38.8 15.4 38.8 23 32.2 37.7 24 37.7zm8.1-10.3c-.4-.2-2.5-1.2-2.9-1.3-.4-.1-.7-.2-1 .2-.3.5-1.1 1.3-1.4 1.6-.3.3-.5.4-1 .1-2.7-1.2-4.5-2.2-6.3-5-.5-.8.5-.8 1.5-2.5.2-.3.1-.6 0-.9l-1.3-3c-.3-.7-.7-.7-1-.7h-.8c-.3 0-.8.1-1.2.6-.4.5-1.6 1.5-1.6 3.7s1.6 4.3 1.8 4.6c.2.3 3.2 5 7.9 6.8 4.7 1.8 4.7 1.2 5.6 1.1.9-.1 2.5-1 2.9-2 .4-1-.4.4-1.9.3-2-.1-.3-.5-.4-.9-.6z"/></svg></a>
+          <span class="max-contact-pending" role="img" aria-label="MAX — скоро подключим" title="MAX · скоро подключим"><svg viewBox="7 7 34 34" aria-hidden="true"><path d="M11 25a13 13 0 0 1 26-1c0 7-5.5 12-12.4 12-2.3 0-4.4-.6-6.3-1.6l-7 1.9 2.1-6.5A12.7 12.7 0 0 1 11 25Zm8.5-.7c0 2.6 1.9 4.5 4.5 4.5s4.6-1.9 4.6-4.5-2-4.6-4.6-4.6-4.5 2-4.5 4.6Z" fill="currentColor" fill-rule="evenodd"/></svg></span>
+        </div>
+      </div>
+    </section>
+            </div>
+            <div class="contact-aside">
+              <span class="card-tag">Как происходит встреча</span>
+              <p>У каждого музыканта свой путь к инструменту. Обычно достаточно начать с трёх вещей:</p>
+              <ul class="contact-list">
+                <li><strong>Расскажите о своей музыке</strong><span>Оркестр, соло, джаз, обучение; инструмент для ребёнка или взрослого. Это помогает понять, что предложить для знакомства.</span></li>
+                <li><strong>Послушайте и попробуйте</strong><span>Несколько контрабасов рядом. Знакомый музыкальный фрагмент, смычок и пиццикато. Сравнение того, что действительно важно вам.</span></li>
+                <li><strong>Найдите свой маршрут</strong><span>Покупка, аренда, настройка, реставрация или следующее знакомство. Условия и возможности обсуждаем лично.</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="footer-inner">
+        <div>EASYBASS.MASTER · ЧАСТНАЯ КОЛЛЕКЦИЯ · МАСТЕРСКАЯ · КЛУБ</div>
+        <div>Москва · встречи по предварительной договорённости · <a href="archive/">Подшивка ↗</a></div>
+      </div>
+    </footer>
+  </div>
+
+  <div class="lightbox" id="lightbox" aria-hidden="true">
+    <div class="lightbox-inner">
+      <button class="lightbox-close" id="lightboxClose" type="button" aria-label="Закрыть">×</button>
+      <img id="lightboxImage" src="" alt="Крупный просмотр фотографии мастерской" />
+    </div>
+  </div>
+
+  <script>
+    const heroModes = [
+      {
+        key: 'day',
+        label: 'Золотой час',
+        image: 'assets/photography/room-golden.webp',
+        quote: 'Возможно, выбор делать не придётся. Он сложится сам.',
+        meta: 'Мастерская · Золотой час'
+      },
+      {
+        key: 'night',
+        label: 'Вечерний салон',
+        image: 'assets/photography/room-evening.webp',
+        quote: 'У каждого инструмента своя история. Для встречи с ним нужно лишь немного времени.',
+        meta: 'Мастерская · Вечерний салон'
+      }
+    ];
+
+    const galleryItems = [
+      { title: 'Золотой час', src: 'assets/photography/room-golden.webp', alt: 'Золотой час в мастерской EasyBass.Master' },
+      { title: 'Ряд и фактура', src: 'assets/photography/row-amber.webp', alt: 'Крупный план ряда контрабасов в мастерской' },
+      { title: 'Вечерний салон', src: 'assets/photography/room-evening.webp', alt: 'Вечерний салон в мастерской EasyBass.Master' }
+    ];
+
+    const heroImage = document.getElementById('heroImage');
+    const heroQuote = document.getElementById('heroQuote');
+    const heroQuoteMeta = document.getElementById('heroQuoteMeta');
+    const modeSwitch = document.getElementById('modeSwitch');
+    const modeLabel = document.getElementById('modeLabel');
+    const miniNightImage = document.getElementById('miniNightImage');
+
+    let currentMode = 0;
+
+    function applyHeroMode(index) {
+      currentMode = index;
+      const mode = heroModes[index];
+      heroImage.src = mode.image;
+      heroQuote.textContent = mode.quote;
+      heroQuoteMeta.textContent = mode.meta;
+      modeLabel.textContent = mode.label;
+      modeSwitch.setAttribute('aria-label', 'Переключить атмосферу мастерской. Сейчас: ' + mode.label);
+      miniNightImage.src = heroModes[(index + 1) % heroModes.length].image;
+    }
+
+    modeSwitch?.addEventListener('click', () => applyHeroMode((currentMode + 1) % heroModes.length));
+
+    const galleryMainImage = document.getElementById('galleryMainImage');
+    const tabButtons = [...document.querySelectorAll('[data-gallery-index]')].filter(el => el.classList.contains('tab') || el.classList.contains('thumb'));
+    const tabsOnly = [...document.querySelectorAll('.tab[data-gallery-index]')];
+    const thumbsOnly = [...document.querySelectorAll('.thumb[data-gallery-index]')];
+    let currentGallery = 0;
+
+    function applyGallery(index) {
+      currentGallery = index;
+      const item = galleryItems[index];
+      galleryMainImage.src = item.src;
+      galleryMainImage.alt = item.alt;
+      tabsOnly.forEach(btn => btn.classList.toggle('active', Number(btn.dataset.galleryIndex) === index));
+      thumbsOnly.forEach(btn => btn.classList.toggle('active', Number(btn.dataset.galleryIndex) === index));
+    }
+
+    tabButtons.forEach(btn => {
+      btn.addEventListener('click', () => applyGallery(Number(btn.dataset.galleryIndex)));
+    });
+
+    const lightbox = document.getElementById('lightbox');
+    const lightboxImage = document.getElementById('lightboxImage');
+    const lightboxClose = document.getElementById('lightboxClose');
+    const galleryMain = document.getElementById('galleryMain');
+
+    function openLightbox() {
+      const item = galleryItems[currentGallery];
+      lightboxImage.src = item.src;
+      lightboxImage.alt = item.alt;
+      lightbox.classList.add('open');
+      lightbox.setAttribute('aria-hidden', 'false');
+      document.body.style.overflow = 'hidden';
+    }
+    function closeLightbox() {
+      lightbox.classList.remove('open');
+      lightbox.setAttribute('aria-hidden', 'true');
+      document.body.style.overflow = '';
+    }
+
+    galleryMain.addEventListener('click', openLightbox);
+    galleryMain.addEventListener('keydown', (e) => { if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); openLightbox(); } });
+    lightboxClose.addEventListener('click', closeLightbox);
+    lightbox.addEventListener('click', (e) => { if (e.target === lightbox) closeLightbox(); });
+    document.addEventListener('keydown', (e) => { if (e.key === 'Escape') closeLightbox(); });
+
+    const menuBtn = document.getElementById('menuBtn');
+    const mobileSheet = document.getElementById('mobileSheet');
+    menuBtn?.addEventListener('click', () => {
+      document.body.classList.toggle('menu-open');
+    });
+    mobileSheet?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => document.body.classList.remove('menu-open')));
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) entry.target.classList.add('visible');
+      });
+    }, { threshold: 0.15 });
+    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+    applyHeroMode(0);
+    applyGallery(0);
+  </script>
+</body>
+</html>
