@@ -12,6 +12,7 @@ import sys
 from urllib.parse import urljoin, urlsplit, unquote
 
 from bs4 import BeautifulSoup
+from courtier_foyer import transform as render_courtier
 
 DOMAIN = "https://easybassmaster.ru"
 COUNT = 825
@@ -62,6 +63,8 @@ def make_visual(site, snap, ref):
               design(ref, "assets/photography/" + name))
     write(site / "assets/visual/foyer.css",
           design(ref, "assets/visual/foyer.css"))
+    if not (site / "assets/visual/courtier.css").is_file():
+        raise ValueError("Courtier CSS not in source build")
 
     home = design(ref, "index.html").decode("utf-8")
     if 'class="room-home"' not in home or "Пространство, в котором можно найти свой." not in home:
@@ -80,20 +83,27 @@ def make_visual(site, snap, ref):
                     "--report", str(snap.parent / "foyer-report.json")],
                    check=True)
     ndoors = 0
+    n0_foyers = 0
+    scenes = {}
     for path in pages(site):
         if path == site / "index.html":
             continue
         html = path.read_text(encoding="utf-8")
         if len(DOOR.findall(html)) != 1:
             raise ValueError("Visual page missing exactly one doorway: " + str(path))
-        html = DOOR.sub(lambda m: m.group(1) + m.group(2) + "foyer/" + m.group(3),
-                        html, count=1)
-        if html.count(">Войти в мастерскую <span") != 1:
-            raise ValueError("Expected doorway caption not found: " + str(path))
-        html = html.replace(">Войти в мастерскую <span",
-                            ">Открыть дверь <span", 1)
+        transformed, mode = render_courtier(html, path.relative_to(site))
+        if mode != "not-n0":
+            n0_foyers += 1
+            scenes[mode] = scenes.get(mode, 0) + 1
+            html = transformed
+        # The source door already contains a relative link to /. It never
+        # needs to pass through a compulsory second /foyer/ page.
+        if len(BeautifulSoup(html, "html.parser").select("a.foyer-door-enter[href]")) != 1:
+            raise ValueError("Courtier lost the direct-room door: " + str(path))
         path.write_text(html, encoding="utf-8")
         ndoors += 1
+    if n0_foyers != 795:
+        raise ValueError(f"Expected 795 individually authored N.0 foyers, got {n0_foyers}")
 
     foyer = design(ref, "design/foyer/index.html").decode("utf-8")
     if "<title>Прихожая" not in foyer:
@@ -128,7 +138,8 @@ def make_visual(site, snap, ref):
 
     shutil.rmtree(snap)
     output = {"phase": "compose", "visual_pages": COUNT, "text_pages": COUNT,
-              "visual_doors": ndoors, "standalone_foyer": 1,
+              "visual_doors": ndoors, "courtier_foyers": n0_foyers,
+              "art_modes": scenes, "standalone_foyer": 1,
               "public_base": "/", "reference_base": "/text/"}
     (snap.parent / "dual-view.json").write_text(
         json.dumps(output, ensure_ascii=False, indent=2) + "\n",
@@ -174,19 +185,46 @@ def verify(site):
         source = doc.read_text(encoding="utf-8")
         if source.count(TEXT_META) != 1:
             raise ValueError("Technical text copy can be indexed: " + str(doc))
+    verified_foyers = 0
     for doc in visual:
-        if doc != site / "index.html":
-            d = BeautifulSoup(doc.read_text(encoding="utf-8"), "html.parser")
-            a = d.select("a.foyer-door-enter[href]")
-            if len(a) != 1 or not a[0]["href"].endswith("foyer/"):
-                raise ValueError("Visual door is not routed through foyer: " + str(doc))
+        if doc == site / "index.html":
+            continue
+        d = BeautifulSoup(doc.read_text(encoding="utf-8"), "html.parser")
+        a = d.select("a.foyer-door-enter[href]")
+        expected_home = "../" * (len(doc.relative_to(site).parts) - 1)
+        if len(a) != 1 or a[0]["href"] != expected_home:
+            raise ValueError("Visual door must directly open the room: " + str(doc))
+        if "courtier-page" in (d.body.get("class", []) if d.body else []):
+            verified_foyers += 1
+            source = site / "text" / doc.relative_to(site)
+            reference = BeautifulSoup(source.read_text(encoding="utf-8"), "html.parser")
+            if (len(d.select("h1")) != 1 or
+                not d.select_one(".courtier-stage .courtier-portal") or
+                d.select_one(".courtier-portal")["href"] != expected_home or
+                len(d.select(".courtier-choices .contact-block")) != 1 or
+                len(d.select(".entry-range-grid a")) != 4 or
+                len(d.select(".entry-utilities a")) != 4 or
+                len(d.select(".master-footer a")) != 2):
+                raise ValueError("Incomplete Courtier scene: " + str(doc))
+            for selector in (".issue.master-lead h1", ".entry-modulation", ".contact-phone"):
+                lhs = d.select_one(selector)
+                rhs = reference.select_one(selector)
+                if (lhs is None or rhs is None or
+                    lhs.get_text(" ", strip=True) != rhs.get_text(" ", strip=True)):
+                    raise ValueError("Authored text and visual foyer disagree: " +
+                                     str(doc) + " " + selector)
+            if any("/foyer/" in link.get("href", "") for link in d.select("a[href]")):
+                raise ValueError("N.0 still sends visitors through a third foyer: " + str(doc))
+    if verified_foyers != 795:
+        raise ValueError(f"Courtier page inventory differs: {verified_foyers} vs 795")
     for doc in visual + text + [site / "foyer/index.html"]:
         check_links(site, doc)
     sitemap = (site / "sitemap.xml").read_text(encoding="utf-8")
     if "/text/" in sitemap or "/foyer/" in sitemap:
         raise ValueError("Duplicate technical pages in sitemap")
     return {"phase": "verify", "visual": len(visual), "text": len(text),
-            "noindex_copies": len(text), "standalone_foyer": True, "errors": 0}
+            "courtier_foyers": verified_foyers, "noindex_copies": len(text),
+            "standalone_foyer": True, "errors": 0}
 
 
 def main():
