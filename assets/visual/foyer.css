@@ -105,6 +105,8 @@ body.foyer-page a {text-underline-offset:4px;}
 .foyer-page .collection-range {border-color:var(--line);}
 
 @media(max-width:760px){
+  .foyer-page .mast h1 {font-size:clamp(27px,7vw,46px);letter-spacing:-.07em;overflow-wrap:anywhere;}
+  .foyer-page .mast .mastline{min-width:0;}
   .foyer-page.entry-router .master-lead {padding:19px 13px;}
   .foyer-door,.foyer-door-search {grid-template-columns:1fr;margin:22px 0 27px;}
   .foyer-door-image img,.foyer-door-search .foyer-door-image img {height:195px;min-height:0;max-height:195px;}
