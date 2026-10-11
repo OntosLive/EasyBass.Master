@@ -164,12 +164,16 @@ async def run(site: Path, output: Path) -> dict:
                         if await page.locator("body.courtier-page").count() == 1:
                             if await page.locator(".foyer-door").count():
                                 raise AssertionError(f"{name}: stale third-door advertising card")
-                            if await page.locator(".courtier-portal[href]").count() != 1:
-                                raise AssertionError(f"{name}: physical Courtier door missing")
+                            if await page.locator("body.room-home.room-foyer").count() != 1:
+                                raise AssertionError(f"{name}: foyer did not clone the room template")
+                            if await page.locator(".site-shell #modeSwitch").count() != 1:
+                                raise AssertionError(f"{name}: original room controls missing")
+                            if await page.locator(".hero-actions .courtier-call").count() != 1:
+                                raise AssertionError(f"{name}: no immediate phone action")
                             if await page.locator(".foyer-door-enter[href]").count() != 1:
                                 raise AssertionError(f"{name}: one direct CTA required")
                             await page.wait_for_function(
-                                "() => { const img=document.querySelector('.courtier-portal img');"
+                                "() => { const img=document.querySelector('.hero-media img');"
                                 " return img && img.complete && img.naturalWidth > 0 }", timeout=12000)
                         else:
                             door = page.locator(".foyer-door")

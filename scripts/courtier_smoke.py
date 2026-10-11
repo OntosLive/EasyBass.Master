@@ -70,25 +70,31 @@ async def inspect(site: Path, report: Path) -> dict:
                         inherited = await page.evaluate("""() => ({
                            styles: [...document.querySelectorAll('head link[rel="stylesheet"]')]
                              .map(el => el.getAttribute('href')),
+                           inline_styles: document.querySelectorAll('head style').length,
+                           room: document.body.classList.contains('room-home') &&
+                             document.body.dataset.roomTemplate === 'design/visual-home/index.html',
+                           shell: !!document.querySelector('.site-shell #mobileSheet'),
+                           switch: !!document.querySelector('#modeSwitch'),
+                           gallery: !!document.querySelector('#galleryMain'),
+                           lightbox: !!document.querySelector('#lightbox'),
                            header: !!document.querySelector('.topbar .topbar-inner .brand-mark'),
                            photo: !!document.querySelector('.hero .hero-media img'),
                            label: !!document.querySelector('h1.hero-title'),
                            action: !!document.querySelector('.hero-actions a.btn.primary'),
                            ranges: document.querySelectorAll('.hero-strip .hero-stats a.stat').length,
-                           facts: document.querySelectorAll('.entry-utilities a.card.info-card').length,
+                           facts: document.querySelectorAll('.entry-utilities .card.info-card').length,
                            font: getComputedStyle(document.querySelector('h1')).fontFamily,
                            theme: getComputedStyle(document.documentElement).getPropertyValue('--accent-2').trim()
                         })""")
-                        if (not inherited["styles"][-2:] == [
-                                "../" * len(route.strip("/").split("/")) +
-                                "assets/visual/room-parent.css",
-                                "../" * len(route.strip("/").split("/")) +
-                                "assets/visual/courtier.css"] or
-                            not inherited["header"] or not inherited["photo"] or
-                            not inherited["label"] or not inherited["action"] or
-                            inherited["ranges"] != 4 or inherited["facts"] != 4 or
-                            not inherited["theme"] or "Georgia" not in inherited["font"]):
-                            raise AssertionError(f"{name} {width}px: separate visual templates {inherited}")
+                        if (inherited["styles"] or inherited["inline_styles"] < 2 or
+                            not inherited["room"] or not inherited["shell"] or
+                            not inherited["switch"] or not inherited["gallery"] or
+                            not inherited["lightbox"] or not inherited["header"] or
+                            not inherited["photo"] or not inherited["label"] or
+                            not inherited["action"] or inherited["ranges"] != 4 or
+                            inherited["facts"] != 4 or not inherited["theme"] or
+                            "Georgia" not in inherited["font"]):
+                            raise AssertionError(f"{name} {width}px: failed to inherit the literal room {inherited}")
                         if await page.locator(".contact-block").count() != 1:
                             raise AssertionError(f"{name}: no direct contact")
                         if (await page.locator(".entry-range-grid a").count() != 4 or
@@ -98,10 +104,10 @@ async def inspect(site: Path, report: Path) -> dict:
                             raise AssertionError(f"{name}: two editorial exits lost")
                         if await page.locator('a.courtier-enter[href]').count() != 1:
                             raise AssertionError(f"{name}: direct room action missing")
-                        if await page.locator("a.courtier-portal[href]").count() != 1:
-                            raise AssertionError(f"{name}: physical doorway missing")
+                        if await page.locator(".hero-actions a.foyer-door-enter[href]").count() != 1:
+                            raise AssertionError(f"{name}: approved room entrance missing")
                         await page.wait_for_function(
-                            "() => {let i=document.querySelector('.courtier-portal img');"
+                            "() => {let i=document.querySelector('#heroImage');"
                             "return i && i.complete && i.naturalWidth>0;}", timeout=15000)
                         await page.wait_for_function(
                             "() => {let i=document.querySelector('.hero-media img');"
@@ -116,20 +122,18 @@ async def inspect(site: Path, report: Path) -> dict:
                             scroll:document.documentElement.scrollWidth,
                             h1:document.querySelector('h1')?.innerText,
                             answered:document.querySelector('.entry-modulation')?.innerText,
-                            phone:document.querySelector('.contact-phone')?.getAttribute('href'),
+                            phone:document.querySelector('.hero-actions .courtier-call')?.getAttribute('href'),
                             entrance:document.querySelector('.courtier-enter')?.getAttribute('href'),
-                            portal:document.querySelector('.courtier-portal')?.getAttribute('href'),
                             title:box('.courtier-greeting h1'),call:box('.courtier-call'),
-                            portal_box:box('.courtier-portal'),stage:box('.courtier-stage')
+                            portal_box:box('.hero-note'),stage:box('.hero-grid')
                           };
                         }""")
                         if check["scroll"] - check["vw"] > 2:
                             raise AssertionError(f"{name} {width}px: horizontally clipped {check}")
                         if (check["phone"] != "tel:+79096945544" or
-                            check["entrance"] != "../" * len(route.strip("/").split("/")) or
-                            check["portal"] != check["entrance"]):
+                            check["entrance"] != "../" * len(route.strip("/").split("/"))):
                             raise AssertionError(f"{name} {width}px: route mismatch {check}")
-                        if check["title"]["width"] < min(width * .5, 260):
+                        if check["title"]["width"] < min(width * .45, 180):
                             raise AssertionError(f"{name} {width}px: crushed title {check}")
                         if (check["call"]["width"] < 175 or
                             check["portal_box"]["width"] < 240):
@@ -150,9 +154,34 @@ async def inspect(site: Path, report: Path) -> dict:
                             await page.locator(".entry-modulation").inner_text() != author_copy):
                             raise AssertionError(f"{name}: text/visual authorship diverged")
                         await page.goto(root + route, wait_until="load")
-                        await page.locator(".courtier-portal img").evaluate(
+                        await page.locator(".hero-media img").evaluate(
                             "(img) => img.decode()")
                         await page.evaluate("document.fonts.ready")
+                        # Prove the inherited HTML contains *working* room behavior,
+                        # not decorative copies of switch, gallery and mobile menu.
+                        if name == "purchase" and width in (390, 1366):
+                            await page.locator("#modeSwitch").click()
+                            await page.wait_for_function(
+                                "() => document.querySelector('#heroImage')"
+                                ".getAttribute('src').includes('room-evening.webp')")
+                            await page.locator("#modeSwitch").click()
+                            await page.wait_for_function(
+                                "() => document.querySelector('#heroImage')"
+                                ".getAttribute('src').includes('room-golden.webp')")
+                            await page.locator("#galleryMain").click()
+                            if not await page.locator("#lightbox").evaluate(
+                                "(el) => el.classList.contains('open')"):
+                                raise AssertionError("Inherited gallery lightbox did not open")
+                            await page.keyboard.press("Escape")
+                            if await page.locator("#lightbox").evaluate(
+                                "(el) => el.classList.contains('open')"):
+                                raise AssertionError("Inherited gallery lightbox did not close")
+                            if width == 390:
+                                await page.locator("#menuBtn").click()
+                                if not await page.locator("body").evaluate(
+                                    "(el) => el.classList.contains('menu-open')"):
+                                    raise AssertionError("Inherited mobile menu is not interactive")
+                                await page.locator("#menuBtn").click()
                         await page.screenshot(
                             path=str(report / f"courtier-{name}-{width}.png"),
                             full_page=True,animations="disabled")
