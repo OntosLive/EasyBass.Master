@@ -73,6 +73,8 @@ jobs:
           doc = BeautifulSoup(html, 'html.parser')
           for img in doc.select('img[src]'):
               src = img['src']
+              if not src:  # Runtime lightbox starts empty until a thumbnail is opened.
+                  continue
               if not (page.parent / src).is_file():
                   raise SystemExit(f'Room preview missing image: {src}')
           if len(doc.select('meta[name="robots"][content="noindex,nofollow"]')) != 1:
