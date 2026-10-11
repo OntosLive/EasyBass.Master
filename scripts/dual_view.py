@@ -24,13 +24,19 @@ def pages(folder):
     return sorted(folder.rglob("*.html"))
 
 
-def design(ref, name):
-    p = subprocess.run(["git", "show", ref + ":" + name],
-                       capture_output=True, check=False)
-    if p.returncode:
-        raise RuntimeError("Cannot read design " + name + ": " +
-                           p.stderr.decode(errors="replace")[:300])
-    return p.stdout
+ROOT = Path(__file__).resolve().parents[1]
+
+
+def design(name: str) -> bytes:
+    """Read the exact approved visual sources from this Git checkout.
+
+    The source is now versioned by the SAME commit as the Python compiler.
+    An unrelated mutable Git branch must never silently change production.
+    """
+    candidate = (ROOT / name).resolve()
+    if not candidate.is_relative_to(ROOT) or not candidate.is_file():
+        raise ValueError("Missing or escaping bundled design source: " + name)
+    return candidate.read_bytes()
 
 
 def write(path, content):
@@ -52,7 +58,7 @@ def take_snapshot(site, snapshot):
     return {"phase": "snapshot", "text_pages": COUNT}
 
 
-def make_visual(site, snap, ref):
+def make_visual(site, snap):
     if len(pages(snap)) != COUNT:
         raise ValueError("Text snapshot incomplete")
     if (site / "text").exists():
@@ -60,13 +66,13 @@ def make_visual(site, snap, ref):
 
     for name in ["room-golden.webp", "room-evening.webp", "row-amber.webp"]:
         write(site / "assets/photography" / name,
-              design(ref, "assets/photography/" + name))
+              design("assets/photography/" + name))
     write(site / "assets/visual/foyer.css",
-          design(ref, "assets/visual/foyer.css"))
+          design("assets/visual/foyer.css"))
     if not (site / "assets/visual/courtier.css").is_file():
         raise ValueError("Courtier CSS not in source build")
 
-    home = design(ref, "index.html").decode("utf-8")
+    home = design("design/visual-home/index.html").decode("utf-8")
     if 'class="room-home"' not in home or "Пространство, в котором можно найти свой." not in home:
         raise ValueError("Visual homepage does not match approved room")
     if '<link rel="canonical"' not in home:
@@ -86,7 +92,7 @@ def make_visual(site, snap, ref):
     write(site / "index.html", home.encode("utf-8"))
 
     tool = snap.parent / "foyer_wrap_from_design.py"
-    write(tool, design(ref, "scripts/foyer_wrap.py"))
+    write(tool, design("scripts/foyer_wrap.py"))
     subprocess.run([sys.executable, str(tool), "--site", str(site),
                     "--report", str(snap.parent / "foyer-report.json")],
                    check=True)
@@ -113,7 +119,7 @@ def make_visual(site, snap, ref):
     if n0_foyers != 795:
         raise ValueError(f"Expected 795 individually authored N.0 foyers, got {n0_foyers}")
 
-    foyer = design(ref, "design/foyer/index.html").decode("utf-8")
+    foyer = design("design/foyer/index.html").decode("utf-8")
     if "<title>Прихожая" not in foyer:
         raise ValueError("Standalone foyer does not exist")
     foyer = foyer.replace("../preview-room/", "../")
@@ -121,7 +127,7 @@ def make_visual(site, snap, ref):
         raise ValueError("Temporary preview link leaked into foyer")
     write(site / "foyer/index.html", foyer.encode("utf-8"))
     write(site / "foyer/assets/photography/room-golden.webp",
-          design(ref, "assets/photography/room-golden.webp"))
+          design("assets/photography/room-golden.webp"))
 
     def ignore_root(dir_name, files):
         if Path(dir_name).resolve() == snap.resolve():
@@ -240,14 +246,13 @@ def main():
     p.add_argument("phase", choices=["snapshot", "compose", "verify"])
     p.add_argument("--site", type=Path, default=Path("_site"))
     p.add_argument("--snapshot", type=Path, default=Path("_audit/text-snapshot"))
-    p.add_argument("--design-ref", default="FETCH_HEAD")
     opts = p.parse_args()
     site = opts.site.resolve()
     snap = opts.snapshot.resolve()
     if opts.phase == "snapshot":
         r = take_snapshot(site, snap)
     elif opts.phase == "compose":
-        r = make_visual(site, snap, opts.design_ref)
+        r = make_visual(site, snap)
     else:
         r = verify(site)
     print(json.dumps(r, ensure_ascii=False))
