@@ -80,7 +80,8 @@ class PublicationTests(unittest.TestCase):
         self.assertIn("творчество", home.select_one(".hero-stats").get_text(" ", strip=True))
         self.assertIsNotNone(home.select_one("#modeSwitch"))
         self.assertEqual(len(list((ROOT / "assets/photography").glob("*.webp"))), 3)
-        self.assertIn('href="styles.css"', str(home))
+        self.assertTrue(home.select("style"))  # exact room layout is intentionally self-styled
+        self.assertFalse(home.select('link[href="styles.css"]'))  # no inherited typography conflict
         self.assertIn('src="assets/photography/room-golden.webp"', str(home))
         self.assertEqual(len(home.select(".foyer-door")), 0)
 
