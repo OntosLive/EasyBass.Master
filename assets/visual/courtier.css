@@ -198,6 +198,11 @@ body.courtier-page.entry-router .courtier-call .contact-phone {
   background:transparent!important;
   box-shadow:none!important;
 }
+body.courtier-page.entry-router .courtier-call .contact-icons .max-contact-pending {
+  width:30px;
+  height:30px;
+}
+
 body.courtier-page.entry-router .courtier-entry .foyer-door-enter.courtier-enter {
   margin:0;
   background:linear-gradient(120deg,#c69b70,#efc99b);
