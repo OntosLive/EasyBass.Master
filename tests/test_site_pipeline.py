@@ -31,6 +31,13 @@ class PublicationTests(unittest.TestCase):
             target = self.site / path
             target.parent.mkdir(parents=True, exist_ok=True)
             shutil.copyfile(ROOT / path, target)
+        # The approved hero is composed from exactly three image files.
+        # Simulate Jekyll's copying of normal static artwork and foyer CSS.
+        for source in (list((ROOT / "assets/photography").glob("*.webp")) +
+                       [ROOT / "assets/visual/foyer.css"]):
+            target = self.site / source.relative_to(ROOT)
+            target.parent.mkdir(parents=True, exist_ok=True)
+            shutil.copyfile(source, target)
         # Jekyll carries immutable, hand-authored vectors to the public build.
         for source in sorted((ROOT / "assets/maps").glob("*.svg")):
             target = self.site / "assets/maps" / source.name
@@ -61,6 +68,21 @@ class PublicationTests(unittest.TestCase):
         self.assertIn("Пространство", (self.site / "index.html").read_text(encoding="utf-8"))
         self.assertNotEqual(original, (self.site / "index.html").read_bytes())  # one canonical added
         self.assertEqual(validate(self.site, ROOT)["errors"], [])
+
+    def test_approved_home_is_single_room_without_secondary_homepage(self):
+        from bs4 import BeautifulSoup
+        home = BeautifulSoup((ROOT / "index.html").read_text(encoding="utf-8"), "html.parser")
+        self.assertEqual(len(home.select("h1")), 1)
+        self.assertEqual(home.select_one("h1").get_text(strip=True),
+                         "Пространство, в котором можно найти свой.")
+        self.assertEqual(len(home.select(".contact-block")), 1)
+        self.assertEqual(len(home.select(".hero-stats .stat")), 4)
+        self.assertIn("творчество", home.select_one(".hero-stats").get_text(" ", strip=True))
+        self.assertIsNotNone(home.select_one("#modeSwitch"))
+        self.assertEqual(len(list((ROOT / "assets/photography").glob("*.webp"))), 3)
+        self.assertIn('href="styles.css"', str(home))
+        self.assertIn('src="assets/photography/room-golden.webp"', str(home))
+        self.assertEqual(len(home.select(".foyer-door")), 0)
 
     def test_custom_domain_is_root_canonical_in_every_public_url(self):
         from site_core import BASE
@@ -103,7 +125,7 @@ class PublicationTests(unittest.TestCase):
 
     def test_internal_files_stay_outside_public_site(self):
         build(ROOT, self.site)
-        for d in ("content", "docs", "scripts", "tests"):
+        for d in ("content", "docs", "scripts", "tests", "design"):
             self.assertFalse((self.site / d).exists())
 
     def test_prepublication_research_is_not_a_public_offer(self):
