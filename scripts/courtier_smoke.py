@@ -25,7 +25,7 @@ EXAMPLES = [
     ("first-instrument", "kontrabas-1-2-ili-3-4/", "room"),
     ("musima", "vhod/familiar-instruments/kontrabas-musima-kupit-v-moskve/", "collection"),
 ]
-WIDTHS = [390, 728, 820, 1366]
+WIDTHS = [390, 728, 820, 1366, 1680]
 
 
 class QuietHandler(SimpleHTTPRequestHandler):
@@ -65,6 +65,30 @@ async def inspect(site: Path, report: Path) -> dict:
                             raise AssertionError(f"{name}: duplicated question")
                         if await page.locator(".entry-modulation").count() != 1:
                             raise AssertionError(f"{name}: authored answer lost")
+                        # Room and N.0 must use the exact same first-party
+                        # stylesheet, component vocabulary and image backdrop.
+                        inherited = await page.evaluate("""() => ({
+                           styles: [...document.querySelectorAll('head link[rel="stylesheet"]')]
+                             .map(el => el.getAttribute('href')),
+                           header: !!document.querySelector('.topbar .topbar-inner .brand-mark'),
+                           photo: !!document.querySelector('.hero .hero-media img'),
+                           label: !!document.querySelector('h1.hero-title'),
+                           action: !!document.querySelector('.hero-actions a.btn.primary'),
+                           ranges: document.querySelectorAll('.hero-strip .hero-stats a.stat').length,
+                           facts: document.querySelectorAll('.entry-utilities a.card.info-card').length,
+                           font: getComputedStyle(document.querySelector('h1')).fontFamily,
+                           theme: getComputedStyle(document.documentElement).getPropertyValue('--accent-2').trim()
+                        })""")
+                        if (not inherited["styles"][-2:] == [
+                                "../" * len(route.strip("/").split("/")) +
+                                "assets/visual/room-parent.css",
+                                "../" * len(route.strip("/").split("/")) +
+                                "assets/visual/courtier.css"] or
+                            not inherited["header"] or not inherited["photo"] or
+                            not inherited["label"] or not inherited["action"] or
+                            inherited["ranges"] != 4 or inherited["facts"] != 4 or
+                            not inherited["theme"] or "Georgia" not in inherited["font"]):
+                            raise AssertionError(f"{name} {width}px: separate visual templates {inherited}")
                         if await page.locator(".contact-block").count() != 1:
                             raise AssertionError(f"{name}: no direct contact")
                         if (await page.locator(".entry-range-grid a").count() != 4 or
@@ -78,6 +102,9 @@ async def inspect(site: Path, report: Path) -> dict:
                             raise AssertionError(f"{name}: physical doorway missing")
                         await page.wait_for_function(
                             "() => {let i=document.querySelector('.courtier-portal img');"
+                            "return i && i.complete && i.naturalWidth>0;}", timeout=15000)
+                        await page.wait_for_function(
+                            "() => {let i=document.querySelector('.hero-media img');"
                             "return i && i.complete && i.naturalWidth>0;}", timeout=15000)
                         check = await page.evaluate("""() => {
                           const box = sel => {
