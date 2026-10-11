@@ -57,10 +57,8 @@ jobs:
           python scripts/dual_view.py compose --site _site --snapshot _audit/text-snapshot --design-ref FETCH_HEAD
       - name: Validate both versions, paths and search-canonical boundaries
         run: python scripts/dual_view.py verify --site _site
-      - name: Test visual room, guest doors and reading layouts in the browser
-        run: |
-          git show FETCH_HEAD:scripts/visual_smoke.py > _audit/visual_smoke.py
-          python _audit/visual_smoke.py --site _site --output _audit/visual-screens
+      - name: Test visual room, existing knowledge pages and Courtier guests
+        run: python scripts/visual_presentation_smoke.py --site _site --output _audit/visual-screens
       - name: Check Courtier as a real two-choice search foyer at 390/728/820/1366px
         run: python scripts/courtier_smoke.py --site _site --output _audit/courtier-screens
       - name: Save diagnostic reports
