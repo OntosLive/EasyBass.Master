@@ -98,7 +98,7 @@ def make_visual(site, snap, ref):
             html = transformed
         # The source door already contains a relative link to /. It never
         # needs to pass through a compulsory second /foyer/ page.
-        if len(DOOR.findall(html)) != 1:
+        if len(BeautifulSoup(html, "html.parser").select("a.foyer-door-enter[href]")) != 1:
             raise ValueError("Courtier lost the direct-room door: " + str(path))
         path.write_text(html, encoding="utf-8")
         ndoors += 1
