@@ -167,7 +167,7 @@ def transform(raw: str, relative: Path) -> tuple[str, str]:
     portal["data-art"] = "diagram" if mode in {"neck","seams","anatomy"} else "photo"
     portal["aria-label"] = "Войти в общую комнату EasyBassMaster"
     image = soup.new_tag("img", src=root + art_path, alt=alt,
-                         loading="eager", decoding="async")
+                         loading="eager", decoding="sync")
     portal.append(image)
     caption = soup.new_tag("span")
     caption["class"] = ["courtier-portal-caption"]
