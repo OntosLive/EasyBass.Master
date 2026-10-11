@@ -9,7 +9,7 @@ from bs4 import BeautifulSoup
 
 ROOT = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(ROOT / "scripts"))
-from courtier_foyer import transform, scene_for
+from courtier_foyer import ROOM, transform, scene_for
 
 
 def example(title: str, depth: int = 1) -> tuple[str, Path]:
@@ -54,49 +54,69 @@ def example(title: str, depth: int = 1) -> tuple[str, Path]:
 
 
 class FoyerTests(unittest.TestCase):
-    def test_direct_entry_and_preserved_author_voice(self):
-        for title,mode in [
+    def test_room_is_the_literal_template_for_every_foyer(self):
+        original = BeautifulSoup(ROOM.read_text(encoding="utf-8"), "html.parser")
+        original_sections = [x["id"] for x in original.select(".site-shell main > section[id]")]
+        for title, mode in [
             ("Купить мастеровой контрабас в Москве", "collection"),
             ("Ремонт грифа контрабаса", "neck"),
             ("Контрабас 1/2 или 3/4", "room"),
             ("Аренда контрабаса для концерта", "evening"),
             ("Отошёл шов на контрабасе", "seams"),
         ]:
-            raw,route=example(title,depth=3)
-            out,kind=transform(raw,route)
-            self.assertEqual(kind,mode)
-            doc=BeautifulSoup(out,"html.parser")
-            self.assertEqual(doc.h1.get_text(" ",strip=True),title)
-            self.assertEqual(doc.select_one(".entry-modulation").get_text(" ",strip=True),
+            raw, route = example(title, depth=3)
+            out, kind = transform(raw, route)
+            self.assertEqual(kind, mode)
+            doc = BeautifulSoup(out, "html.parser")
+            self.assertEqual(doc.body.get("data-room-template"),
+                             "design/visual-home/index.html")
+            self.assertIn("room-home", doc.body.get("class", []))
+            self.assertIn("room-foyer", doc.body.get("class", []))
+            self.assertEqual(doc.body.get("data-courtier"), mode)
+            self.assertEqual(doc.h1.get_text(" ", strip=True), title)
+            self.assertEqual(doc.select_one(".entry-modulation").get_text(" ", strip=True),
                              "Индивидуальный ответ на конкретный вопрос.")
-            self.assertEqual(doc.select_one(".courtier-enter")["href"],"../../../")
-            self.assertEqual(doc.select_one(".courtier-portal")["href"],"../../../")
-            self.assertFalse(doc.select('a[href*="/foyer/"]'))
-            self.assertEqual(len(doc.select('a[href^="tel:"]')),1)
-            self.assertEqual(len(doc.select(".entry-range-grid a")),4)
-            self.assertEqual(len(doc.select(".entry-utilities a")),4)
-            self.assertEqual(len(doc.select(".master-footer a")),2)
-            self.assertEqual(len(doc.select("h1")),1)
-            self.assertEqual(len(doc.select(".contact-block")),1)
-            self.assertEqual(len(doc.select("a.foyer-door-enter")),1)
-            self.assertEqual(len(doc.select('link[href$="courtier.css"]')),1)
+            self.assertEqual([x["id"] for x in doc.select(".site-shell main > section[id]")],
+                             original_sections)
+            for selector in (".site-shell", ".topbar .topbar-inner", "#mobileSheet",
+                             ".hero .hero-grid .hero-note", "#modeSwitch",
+                             "#galleryMain", "#lightbox", ".contact-panel",
+                             ".gallery-tabs", ".hero-title"):
+                self.assertEqual(len(doc.select(selector)), len(original.select(selector)),
+                                 selector)
+            for index in (0, 1):
+                self.assertEqual(doc.select("head style")[index].get_text(),
+                                 original.select("head style")[index].get_text())
+            self.assertEqual(len(doc.select("script")), len(original.select("script")))
+            self.assertIn("applyHeroMode", doc.select_one("script").get_text())
+            self.assertFalse(doc.select('link[href$="styles.css"]'))
+            self.assertFalse(doc.select('link[href$="courtier.css"]'))
+            self.assertFalse(doc.select('link[href$="foyer.css"]'))
+            self.assertEqual(doc.select_one(".hero-actions a.courtier-call")["href"],
+                             "tel:+79096945544")
+            self.assertEqual(doc.select_one(".hero-actions a.courtier-enter")["href"],
+                             "../../../")
+            self.assertEqual(len(doc.select(".entry-range-grid a.stat")), 4)
+            self.assertEqual(len(doc.select(".entry-utilities .card.info-card")), 4)
+            self.assertEqual(len(doc.select(".entry-utilities a.btn[href]")), 4)
+            self.assertEqual(len(doc.select(".master-footer a[href]")), 2)
+            self.assertEqual(len(doc.select("h1")), 1)
+            self.assertEqual(len(doc.select(".contact-block")), 1)
+            self.assertEqual(len(doc.select("a.foyer-door-enter")), 1)
             self.assertEqual(doc.select_one('link[rel="canonical"]')["href"],
                              f"https://easybassmaster.ru/{route.parent.as_posix()}/")
-            # The APPROVED ROOM is the visual parent of every N.0. No
-            # newspaper stylesheet or separately invented Courtier skin.
-            styles = [x["href"] for x in doc.select('head link[rel="stylesheet"]')]
-            self.assertEqual(styles, ["../../../assets/visual/room-parent.css",
-                                      "../../../assets/visual/courtier.css"])
-            self.assertIn("room-child", doc.body.get("class", []))
-            self.assertEqual(len(doc.select(".topbar .brand-mark")), 1)
-            self.assertEqual(len(doc.select(".hero .hero-media img")), 1)
-            self.assertEqual(len(doc.select(".hero-grid.courtier-stage")), 1)
-            self.assertEqual(len(doc.select(".hero-title")), 1)
-            self.assertEqual(len(doc.select(".hero-strip .hero-stats a.stat")), 4)
-            self.assertEqual(len(doc.select(".entry-utilities a.card.info-card")), 4)
-            self.assertEqual(len(doc.select(".courtier-portal.card.mini-card")), 1)
-            self.assertEqual(len(doc.select("a.courtier-enter.btn.primary")), 1)
-            self.assertEqual(transform(out,route)[0],out)
+            self.assertFalse(doc.select('a[href*="/foyer/"]'))
+            self.assertEqual(transform(out, route)[0], out)
+
+    def test_room_is_not_rewritten_to_create_a_foyer(self):
+        original = ROOM.read_bytes()
+        raw, route = example("Ремонт грифа контрабаса")
+        out, kind = transform(raw, route)
+        self.assertEqual(kind, "neck")
+        self.assertEqual(ROOM.read_bytes(), original)
+        doc = BeautifulSoup(out, "html.parser")
+        self.assertEqual(len(doc.select("#collection .mini-card .media img[src$='neck-geometry.svg']")), 1)
+        self.assertEqual(doc.select_one("#modeSwitch").name, "button")
 
     def test_non_n0_preserved(self):
         raw='<html><body class="new-master deep-editorial"><h1>Знание</h1></body></html>'
