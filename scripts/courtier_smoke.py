@@ -157,6 +157,31 @@ async def inspect(site: Path, report: Path) -> dict:
                         await page.locator(".hero-media img").evaluate(
                             "(img) => img.decode()")
                         await page.evaluate("document.fonts.ready")
+                        # Prove the inherited HTML contains *working* room behavior,
+                        # not decorative copies of switch, gallery and mobile menu.
+                        if name == "purchase" and width in (390, 1366):
+                            await page.locator("#modeSwitch").click()
+                            await page.wait_for_function(
+                                "() => document.querySelector('#heroImage')"
+                                ".getAttribute('src').includes('room-evening.webp')")
+                            await page.locator("#modeSwitch").click()
+                            await page.wait_for_function(
+                                "() => document.querySelector('#heroImage')"
+                                ".getAttribute('src').includes('room-golden.webp')")
+                            await page.locator("#galleryMain").click()
+                            if not await page.locator("#lightbox").evaluate(
+                                "(el) => el.classList.contains('open')"):
+                                raise AssertionError("Inherited gallery lightbox did not open")
+                            await page.keyboard.press("Escape")
+                            if await page.locator("#lightbox").evaluate(
+                                "(el) => el.classList.contains('open')"):
+                                raise AssertionError("Inherited gallery lightbox did not close")
+                            if width == 390:
+                                await page.locator("#menuBtn").click()
+                                if not await page.locator("body").evaluate(
+                                    "(el) => el.classList.contains('menu-open')"):
+                                    raise AssertionError("Inherited mobile menu is not interactive")
+                                await page.locator("#menuBtn").click()
                         await page.screenshot(
                             path=str(report / f"courtier-{name}-{width}.png"),
                             full_page=True,animations="disabled")
