@@ -10,7 +10,7 @@ permalink: /archive/
   <meta name="viewport" content="width=device-width,initial-scale=1">
   <meta name="description" content="Подшивка мастерской контрабаса">
   <title>Подшивка · EasyBassMaster</title>
-  <link rel="stylesheet" href="{{ site.baseurl }}/styles.css">
+  <link rel="stylesheet" href="../styles.css">
 </head>
 <body>
   <div class="rule"></div>
@@ -18,7 +18,7 @@ permalink: /archive/
 
   <header class="mast">
     <div class="mastline">
-      <h1><a href="{{ site.baseurl }}/" style="text-decoration:none">EASYBASS<span>.</span>MASTER</a></h1>
+      <h1><a href="../" style="text-decoration:none">EASYBASS<span>.</span>MASTER</a></h1>
       <small>Мастерская контрабаса</small>
     </div>
   </header>
@@ -31,7 +31,7 @@ permalink: /archive/
     {% for item in issues %}
       <article>
         <div class="meta"><span>№ {{ item.number }}</span><span>{{ item.date_label }}</span></div>
-        <h2 style="font-size:clamp(26px,4vw,48px);margin:8px 0"><a href="{{ site.baseurl }}{{ item.url }}" style="text-decoration:none">{{ item.title }}</a></h2>
+        <h2 style="font-size:clamp(26px,4vw,48px);margin:8px 0"><a href="{{ item.url | remove_first: '/archive/' }}" style="text-decoration:none">{{ item.title }}</a></h2>
         <p style="margin:0;color:var(--muted)">{{ item.description }}</p>
       </article>
     {% endfor %}
