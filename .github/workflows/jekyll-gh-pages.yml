@@ -61,6 +61,8 @@ jobs:
         run: |
           git show FETCH_HEAD:scripts/visual_smoke.py > _audit/visual_smoke.py
           python _audit/visual_smoke.py --site _site --output _audit/visual-screens
+      - name: Check Courtier as a real two-choice search foyer at 390/728/820/1366px
+        run: python scripts/courtier_smoke.py --site _site --output _audit/courtier-screens
       - name: Save diagnostic reports
         if: always()
         uses: actions/upload-artifact@v4
