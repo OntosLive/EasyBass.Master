@@ -580,6 +580,24 @@
   .room-home .contact-copy .max-contact-pending {border:0!important;border-radius:0!important;background:transparent!important;box-shadow:none!important;display:grid;place-items:center;width:38px;height:38px;}
   .room-home .contact-copy .max-contact-pending svg {width:22px;height:22px;display:block;}
   @media(max-width:760px) { .room-home .contact-copy .contact-phone {font-size:clamp(1.1rem,5vw,1.5rem);} .room-home .contact-copy .contact-icons {gap:2px;} .room-home .contact-copy .contact-icons a,.room-home .contact-copy .max-contact-pending{width:32px;height:32px;} }
+  /* Mobile: keep the original room and contact inside the physical viewport.
+     The hidden off-canvas nav must not contribute to scroll width. */
+  @media(max-width:1180px){
+    body.room-home .mobile-sheet{display:none;}
+    body.room-home.menu-open .mobile-sheet{display:block;transform:none;}
+  }
+  @media(max-width:760px){
+    body.room-home .hero-grid,
+    body.room-home .grid-2,
+    body.room-home .contact-grid{grid-template-columns:minmax(0,1fr);}
+    body.room-home .contact-panel,
+    body.room-home .contact-copy,
+    body.room-home .contact-aside,
+    body.room-home .contact-block,
+    body.room-home .contact{min-width:0;max-width:100%;}
+    body.room-home .contact-phone{font-size:clamp(1rem,4.3vw,1.45rem);max-width:100%;}
+    body.room-home .contact-icons{margin-left:0;}
+  }
   </style>
 </head>
 <body class="room-home">
