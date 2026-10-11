@@ -92,14 +92,14 @@ def transform(html: str, relative_path: Path) -> tuple[str, str]:
     if is_search:
         # Preserve the precise query -> single authored sentence -> phone order.
         # The visitor then sees the door before the original 4 + 4 routes.
-        match = re.search(r'<section\s+class="contact-block"[\s\S]*?</section>', html)
+        match = re.search(r'<section\b[^>]*class="[^"]*\bcontact-block\b[^"]*"[^>]*>[\s\S]*?</section>', html)
         if not match:
             raise ValueError(f'{relative_path}: N.0 has no verified contact block')
         html = html[:match.end()] + door + html[match.end():]
     else:
         # On deep knowledge and institutional pages, read the actual material
         # before the invitation. Nothing is inserted between source sections.
-        match = re.search(r'<section\s+class="contact-block"', html)
+        match = re.search(r'<section\b[^>]*class="[^"]*\bcontact-block\b[^"]*"[^>]*>', html)
         if match:
             html = html[:match.start()] + door + html[match.start():]
         elif '</main>' in html:
